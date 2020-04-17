@@ -1,0 +1,10 @@
+== Teknologi yang Digunakan ==
+Database ini menggunakan teknologi [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code> dan <code>.mediawiki</code>) dan [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#github GitHub] ''flavored'' [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#md-markdown Markdown] untuk markah dokumentasi repositori. Untuk ''[https://id.wikipedia.org/wiki/JSON database]'', Ryuuganime menggunakan format berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#json JSON] untuk versi terbaru, dan [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#html HTML] untuk versi lama (dan tidak dilanjutkan).
+
+Sistem "''hierarki''" folder repo ini berbentuk <code>formatBerkas/tahun/musimPenayangan/Judul Anime.****</code>.
+
+== Kontribusi ==
+Untuk informasi terkait kontribusi, kamu bisa melihat langkah-langkahnya di [https://wiki.ryuuganime.my.id/kontribusi-data/format-json sini].
+
+== Daftar Entri Database Anime ==
+Untuk melihat database anime dalam ''[https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#repositori-kendali-versi repo]'' ini, silakan buka [[animelist.wiki]].
