@@ -8,3 +8,6 @@ Untuk informasi terkait kontribusi, kamu bisa melihat langkah-langkahnya di [htt
 
 == Daftar Entri Database Anime ==
 Untuk melihat database anime dalam ''[https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#repositori-kendali-versi repo]'' ini, silakan buka [[animelist.wiki]].
+
+== Lisensi ==
+Repositori ''database'' ini berada di bawah lisensi [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]]
