@@ -1,3 +1,10 @@
+== ryuuganime-db ==
+Database Utama Situs Ryuuganime Berbasis JSON dan HTML (deprecated)
+
+__TOC__
+
+----
+
 == Teknologi yang Digunakan ==
 Database ini menggunakan teknologi [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code> dan <code>.mediawiki</code>) dan [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#github GitHub] ''flavored'' [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#md-markdown Markdown] untuk markah dokumentasi repositori. Untuk ''[https://id.wikipedia.org/wiki/JSON database]'', Ryuuganime menggunakan format berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#json JSON] untuk versi terbaru, dan [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#html HTML] untuk versi lama (dan tidak dilanjutkan).
 
@@ -10,4 +17,4 @@ Untuk informasi terkait kontribusi, kamu bisa melihat langkah-langkahnya di [htt
 Untuk melihat database anime dalam ''[https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#repositori-kendali-versi repo]'' ini, silakan buka [[animelist.wiki]].
 
 == Lisensi ==
-Repositori ''database'' ini berada di bawah lisensi [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]]
+Repositori ''database'' ini berada di bawah lisensi [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]].
