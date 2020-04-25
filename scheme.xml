@@ -3,12 +3,12 @@
     Ryuuganime Database Scheme
     Author  :   Ryuuganime
     Version :   1.0-b
-    License :   CC BY-SA 1.0
+    License :   CC BY-SA 4.0
     JSON    :   1
     XML     :   1
     HTML    :   0
-    Note    :   This XML file is not mandatory, please to use JSON scheme instead.
-                Use XML as an alternative.
+    Note    :   This XML file is not mandatory, but JSON does. Please to use JSON scheme
+                instead. Use XML as an alternative.
 -->
 <scheme>
     <anime>
