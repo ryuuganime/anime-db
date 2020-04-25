@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Ryuuganime Database Scheme
+    Author  :   Ryuuganime
+    Version :   1.0-b
+    License :   CC BY-SA 1.0
+    JSON    :   1
+    XML     :   1
+    HTML    :   0
+    Note    :   This XML file is not mandatory, please to use JSON scheme instead.
+                Use XML as an alternative.
+-->
+<scheme>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe></notifyMoe>
+        <path>
+            <json>json/1.json</json>
+            <xml></xml>
+        </path>
+        <ryuuganime>1</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <ja_JP></ja_JP>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe></notifyMoe>
+        <path>
+            <json>json/1.json</json>
+            <xml></xml>
+        </path>
+        <ryuuganime>1</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <ja_JP></ja_JP>
+        </title>
+    </anime>
+</scheme>

@@ -1,0 +1,316 @@
+{
+    "title": {
+        "native": "",
+        "en_Latn": "",
+        "ar_001": "",
+        "hu_HU": "",
+        "he_IL": "",
+        "id_ID": "",
+        "en_US": "",
+        "ja_JP": "",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "backdrop": "",
+    "visualKey": "",
+    "synopsis": {
+        "ar_001": "",
+        "hu_HU": "",
+        "he_IL": "",
+        "id_ID": "",
+        "en_US": "",
+        "ja_JP": "",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": "",
+            "ar_001": "",
+            "hu_HU": "",
+            "he_IL": "",
+            "id_ID": "",
+            "en_US": "",
+            "ja_JP": "",
+            "de_DE": "",
+            "ko_KR": "",
+            "fr_FR": "",
+            "pt_PT": "",
+            "ru_RU": "",
+            "es_ES": "",
+            "zh_Hans": "",
+            "zh_Hant": "",
+            "vi_VN": ""
+        },
+        "type": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "status": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "serialGenre": {
+            "en_US": [
+                "",
+                ""
+            ],
+            "id_ID": [
+                "",
+                ""
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                "",
+                ""
+            ],
+            "id_ID": [
+                "",
+                ""
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "",
+            "id_ID": "",
+            "ja_JP": "",
+            "ko_JP": "",
+            "zh_Hans": "",
+            "zh_Hant": ""
+        },
+        "releaseYear": 0,
+        "episode": 0,
+        "releaseDate": 0,
+        "endDate": 0,
+        "duration": 0,
+        "totalDuration": 0,
+        "studio": "",
+        "rating": "",
+        "adaptation": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "country": {
+            "en_US": "",
+            "id_ID": ""
+        }
+    },
+    "scores": {
+        "aniDB": {
+            "id": 0,
+            "score": ""
+        },
+        "AniList": {
+            "id": 0,
+            "score": ""
+        },
+        "AnimePlanet": {
+            "url": "",
+            "score": ""
+        },
+        "ANN": {
+            "id": 0,
+            "score": ""
+        },
+        "aniSearch": {
+            "url": "",
+            "score": ""
+        },
+        "Annict": {
+            "id": 0,
+            "score": ""
+        },
+        "IMDb": {
+            "code": "",
+            "score": ""
+        },
+        "KinoPoisk": {
+            "id": 0,
+            "score": ""
+        },
+        "Kitsu": {
+            "slug": "",
+            "score": ""
+        },
+        "LiveChart": {
+            "id": 0,
+            "score": ""
+        },
+        "MyAnimeList": {
+            "id": 0,
+            "score": ""
+        },
+        "MyShows": {
+            "id": 0,
+            "score": ""
+        },
+        "Nautiljon": {
+            "url": "",
+            "score": ""
+        },
+        "Notify": {
+            "base64": "",
+            "score": ""
+        },
+        "OtakOtaku": {
+            "id": 0,
+            "score": ""
+        },
+        "Shikimori": {
+            "id": 0,
+            "score": ""
+        },
+        "SIMKL": {
+            "id": 0,
+            "score": ""
+        },
+        "TMDB": {
+            "url": "",
+            "score": ""
+        },
+        "Trakt": {
+            "url": "",
+            "score": ""
+        },
+        "TVTime": {
+            "id": 0,
+            "score": ""
+        }
+    },
+    "updatedDate": 0,
+    "updatedTime": {
+        "time": 0,
+        "timeZone": "+7"
+    },
+    "fansub": {
+        "idn": {
+            "Aibou": "",
+            "Aizukara": "",
+            "Allsub": "",
+            "Alter": "",
+            "AnimeGokil": "",
+            "AniToki": "",
+            "AoiTenshi": "",
+            "Arks": "",
+            "ASubs": "",
+            "AWSubs": "",
+            "Bentoo": "",
+            "Caramel": "",
+            "Cijanepoi": "",
+            "Conan": "",
+            "DAnimeSubs": "",
+            "Del": "",
+            "DNFI": "",
+            "Durandal": "",
+            "EmotPekmen": "",
+            "Excalibur": "",
+            "Gantz": "",
+            "Gin": "",
+            "Haruna": "",
+            "Haruzora": "",
+            "Hopper": "",
+            "HunterNoSekai": "",
+            "IA": "",
+            "Inazumaotoshi": "",
+            "Indis": "",
+            "Inform0930": "",
+            "Isekai": "",
+            "Ito": "",
+            "Junk": "",
+            "Kazefuri": "",
+            "Kinshiru": "",
+            "KO": "",
+            "Kopaja": "",
+            "LCC": "",
+            "MangaNekoTranslation": "",
+            "Meitanteibayoo": "",
+            "Melody": "",
+            "Mite": "",
+            "NgidolYuk": "",
+            "Neo": "",
+            "OPLovers": "",
+            "Ougi": "",
+            "Panagayan": "",
+            "Pendekar": "",
+            "Pucuk": "",
+            "Quinime": "",
+            "RevieXion": "",
+            "Samehadaku": "",
+            "SilverYasha": "",
+            "Sora": "",
+            "TTOD": "",
+            "Vedify": "",
+            "Warung": "",
+            "Wibu": "",
+            "Yuki": "",
+            "Zen": ""
+        },
+        "eng": {
+            "Horrible": ""
+        }
+    },
+    "fanshare": {
+        "idn": {
+            "AniBatch": "",
+            "Bakacan": "",
+            "Drivenime": "",
+            "Hinime": "",
+            "Koenime": "",
+            "Kusonime": "",
+            "Mikanime": "",
+            "Moenime": "",
+            "WibuDesu": ""
+        },
+        "eng": {
+            "AnimeKayo": ""
+        }
+    },
+    "fanstream": {
+        "idn": {
+            "AnimeCracks": "",
+            "AnimeHADE": "",
+            "AnimeIndoNET": "",
+            "AnimeIndoTO": "",
+            "anoBoy": "",
+            "Gomunime": "",
+            "Moeclip": "",
+            "Neonime": "",
+            "Onnime": "",
+            "RuangOtaku": ""
+        },
+        "eng": {
+            "4anime": "",
+            "9anime": "",
+            "AnimeDaisuki": "",
+            "AnimeTwist": "",
+            "Animeflix": "",
+            "AnimeHeaven": "",
+            "Animelon": "",
+            "Animeultima": "",
+            "AnimeXD": "",
+            "DaiWEEB": "",
+            "GogoAnime": "",
+            "KissAnime": "",
+            "WonderfulSubs": ""
+        }
+    },
+    "library": {
+        "Nyaa": "",
+        "PerpusIndo": "",
+        "Shallty": ""
+    }
+}

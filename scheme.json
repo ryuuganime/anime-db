@@ -1,0 +1,29 @@
+{
+    "scheme": [{
+        "myAnimeList": 0,
+        "kitsu": 0,
+        "aniList": 0,
+        "aniDb": 0,
+        "notifyMoe": "",
+        "title": {
+            "en_Latn": "",
+            "en_US": "",
+            "ja_JP": ""
+        },
+        "ryuuganime": 1,
+        "path": "json/1.json"
+    }, {
+        "myAnimeList": 0,
+        "kitsu": 0,
+        "aniList": 0,
+        "aniDb": 0,
+        "notifyMoe": "",
+        "title": {
+            "en_Latn": "",
+            "en_US": "",
+            "ja_JP": ""
+        },
+        "ryuuganime": 2,
+        "path": "json/2.json"
+    }]
+}
