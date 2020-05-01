@@ -5,93 +5,44 @@ This wiki maybe loads slower than expected.
 __TOC__
 
 = JSON =
-== # ==
-== A ==
-* [[json/1.json|Asatir: Mirai no Mukashi Banashi]]
-== B ==
-== C ==
-== D ==
-== E ==
-== F ==
-== G ==
-== H ==
-== I ==
-== J ==
-== K ==
-== L ==
-== M ==
-== N ==
-== O ==
-== P ==
-== Q ==
-== R ==
-== S ==
-== T ==
-== U ==
-== V ==
-== W ==
-== X ==
-== Y ==
-== Z ==
-== & ==
+# [[json/1.json|Asatir: Mirai no Mukashi Banashi]]
 
 = XML =
-== # ==
-== A ==
-* [[xml/1.xml|Asatir: Mirai no Mukashi Banashi]]
-== B ==
-== C ==
-== D ==
-== E ==
-== F ==
-== G ==
-== H ==
-== I ==
-== J ==
-== K ==
-== L ==
-== M ==
-== N ==
-== O ==
-== P ==
-== Q ==
-== R ==
-== S ==
-== T ==
-== U ==
-== V ==
-== W ==
-== X ==
-== Y ==
-== Z ==
-== & ==
+# [[xml/1.xml|Asatir: Mirai no Mukashi Banashi]]
 
 = HTML =
-== # ==
-== A ==
-== B ==
-== C ==
-== D ==
-== E ==
-== F ==
-== G ==
-== H ==
-== I ==
-== J ==
-== K ==
-== L ==
-== M ==
-== N ==
-== O ==
-== P ==
-== Q ==
-== R ==
-== S ==
-== T ==
-== U ==
-== V ==
-== W ==
-== X ==
-== Y ==
-== Z ==
-== & ==
+# [[html/3D Kanojo_ Real Girl 2nd Season.html]]
+# [[html/7 Seeds.html]]
+# [[html/Actors_ Song Connection.html]]
+# [[html/Africa no Salaryman (TV).html]]
+# [[html/Aggressive Retsuko_ We Wish You a Metal Christmas.html]]
+# [[html/Ahiru no Sora.html]]
+# [[html/Aikatsu Friends!_ Kagayaki no Jewel.html]]
+# [[html/Ani ni Tsukeru Kusuri wa Nai! 3.html]]
+# [[html/Araburu Kisetsu no Otome-domo yo.html]]
+# [[html/Arifureta Shokugyou de Sekai Saikyou.html]]
+# [[html/Assassins Pride.html]]
+# [[html/Azur Lane.html]]
+# [[html/Babylon.html]]
+# [[html/Bakumatsu_ Ren'ai Bakumatsu Kareshi Gaiden - Crisis.html]]
+# [[html/Bananya_ Fushigi na Nakamatachi.html]]
+# [[html/Beastars.html]]
+# [[html/BEM.html]]
+# [[html/Boku no Hero Academia 4th Season.html]]
+# [[html/Bokutachi wa Benkyou ga Dekinai.html]]
+# [[html/Bokutachi wa Benkyou ga Dekinai!.html]]
+# [[html/Bungou Stray Dogs 3rd Season.html]]
+# [[html/Business Fish.html]]
+# [[html/Cardfight!! Vanguard_ Shinemon-hen.html]]
+# [[html/Carole _ Tuesday.html]]
+# [[html/Chou Kadou Girl __ Amazing Stranger.html]]
+# [[html/Chuubyou Gekihatsu Boy.html]]
+# [[html/Diamond no Ace_ Act II.html]]
+# [[html/Dororo.html]]
+# [[html/Enen no Shouboutai.html]]
+# [[html/Fairy Gone.html]]
+# [[html/Fate_Grand Order_ Zettai Majuu Sensen Babylonia.html]]
+# [[html/Honzuki no Gekokujou_ Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen.html]]
+# [[html/Katsudou Shashin.html]]
+# [[html/Namakura Gatana.html]]
+# [[html/Shin Chuuka Ichiban!.html]]
