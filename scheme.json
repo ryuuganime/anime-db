@@ -1,17 +1,21 @@
 {
     "scheme": [{
-        "myAnimeList": 0,
-        "kitsu": 0,
-        "aniList": 0,
-        "aniDb": 0,
-        "notifyMoe": "",
+        "myAnimeList": 41120,
+        "kitsu": 43056,
+        "aniList": 114888,
+        "aniDb": 15364,
+        "notifyMoe": "TM1LPA8Wg",
         "title": {
-            "en_Latn": "",
-            "en_US": "",
-            "ja_JP": ""
+            "en_Latn": "Fugou Keiji: Balance:Unlimited",
+            "en_US": "The Millionaire Detective – Balance: UNLIMITED",
+            "native": "富豪刑事 Balance:UNLIMITED"
         },
         "ryuuganime": 1,
-        "path": "json/1.json"
+        "path": {
+            "json": "json/1.json",
+            "hjson": "hjson/1.hjson",
+            "xml": "xml/1.xml"
+        }
     }, {
         "myAnimeList": 0,
         "kitsu": 0,
@@ -21,9 +25,13 @@
         "title": {
             "en_Latn": "",
             "en_US": "",
-            "ja_JP": ""
+            "native": ""
         },
         "ryuuganime": 2,
-        "path": "json/2.json"
+        "path": {
+            "json": "",
+            "hjson": "",
+            "xml": ""
+        }
     }]
 }

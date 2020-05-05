@@ -1,0 +1,777 @@
+#hjson
+/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
+|                               | |                              | | [str] merupakan markah teks, |
+|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
+|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
+| ----------------------------- | |                              | |   ral,  yakni angka dan null |
+|                               | \^----------------------------^/ |   saja.                      |
+| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
+|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
+|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
+|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
+|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
+|                               | |                          ''' | | [arr] merupakan markah array |
+\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
+/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
+|                               | | ru pada suatu value          | |   ta yang berbeda.           |
+| <url>  String  berisi  tautan | |                              | |                              |
+|   url.                        | \^----------------------------^/ \^----------------------------^/
+| <dmy> numeral  berisi  format |
+|   penanggalan DDMMYYYY, yakni |
+|   D sebagai  tanggal, M seba- |
+|   gai  bulan,  dan Y  sebagai |  
+|   tahun. Contoh: 26122020 un- |
+|   tuk 26 Desember 2020.       |
+| <arb>  string  dapat  berubah |
+|   menjadi array apabila objek |
+|   dalam satu  value lebih ba- |
+|   nyak daripada satu.         |
+| <hms> numeral  berisi  format |
+|   jam HHMMSS dalam  bentuk 24 |
+|   jam, dengan H adalah pukul, |
+|   M  adalah Menit, dan S ada- | 
+|   lah detik.  Contoh:  182033 |
+|   untuk jam 6 sore, 20 menit, |
+|   33 detik.                   |
+|                               |
+\^-----------------------------*/
+
+{ 
+  // Petunjuk awal:
+  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
+  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
+  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
+  //    tanda koma.
+  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
+  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
+  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
+  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
+  //    id_ID: 
+  //        '''
+  //            Ini hanyalah informasi \"percobaan\",
+  //            harap untuk dapat dimaklumi
+  //        '''
+  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
+  //    contoh pengisian.
+
+  # title:
+  # Merupakan judul suatu serial.
+  title: 
+  {
+    # native [str]
+    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
+    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
+    #   yang ditayang di Jepang.
+    native: "" 
+
+    # en_Latn [str]
+    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
+    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    en_Latn: ""
+
+    # ar_001 [str]
+    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: ""
+
+    # hu_HU [str]
+    # = Judul dalam bahasa Hungaria.
+    hu_HU: ""
+
+    # he_IL [str]
+    # = Judul dalam bahasa Ibrani Israel.
+    he_IL: ""
+
+    # id_ID [str]
+    # = Judul dalam bahasa Indonesia.
+    id_ID: ""
+
+    # en_US [str]
+    # = Judul dalam bahasa Inggris.
+    en_US: ""
+
+    # ja_JP [str]
+    # = Judul dalam bahasa Jepang.
+    ja_JP: ""
+
+    # de_DE [str]
+    # = Judul dalam bahasa Jerman.
+    de_DE: ""
+
+    # ko_KR [str]
+    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    ko_KR: ""
+
+    # fr_FR [str]
+    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    fr_FR: ""
+
+    # pt_PT [str]
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: ""
+
+    # ru_RU [str]
+    # = Judul dalam bahasa Rusia.
+    ru_RU: ""
+
+    # es_ES [str]
+    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: ""
+
+    # zh_Hans [str]
+    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    zh_Hans: ""
+
+    # zh_Hant [str]
+    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    zh_Hant: ""
+
+    # vi_VN [str]
+    # = Judul dalam bahasa Vietnam.
+    vi_VN: ""
+  }
+
+  # backdrop [str] <url>
+  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
+  #   situs yang diperbolehkan.
+  backdrop: ""
+
+  # visualKey [str] <url>
+  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
+  #   yang diperbolehkan.
+  visualKey: ""
+
+  # synopsis:
+  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  synopsis:
+  {
+    # ar_001 [str]
+    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: ""
+
+    # hu_HU [str]
+    # = Sinopsis dalam bahasa Hungaria.
+    hu_HU: ""
+
+    # he_IL [str]
+    # = Sinopsis dalam bahasa Ibrani Israel.
+    he_IL: ""
+
+    # id_ID [str]
+    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
+    #   Indonesia.
+    id_ID: ""
+
+    # en_US [str]
+    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
+    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    en_US: ""
+
+    # ja_JP [str]
+    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    ja_JP: ""
+
+    # de_DE [str]
+    # = Sinopsis dalam bahasa Jerman.
+    de_DE: ""
+
+    # ko_KR [str]
+    # = Sinopsis dalam bahasa Korea Selatan.
+    ko_KR: ""
+
+    # fr_FR [str]
+    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
+    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    fr_FR: ""
+
+    # pt_PT [str]
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: ""
+
+    # ru_RU [str]
+    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    ru_RU: ""
+
+    # es_ES [str]
+    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: ""
+
+    # zh_Hans [str]
+    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
+    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    zh_Hans: ""
+
+    # zh_Hant [str]
+    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
+    #   menggunakan aksara Kanton dalam database mereka.
+    zh_Hant: ""
+
+    # vi_VN [str]
+    # = Sinopsis dalam bahasa Vietnam.
+    vi_VN: ""
+  }
+
+  # information
+  # = Merupakan kumpulan informasi mengenai serial.
+  information:
+  {
+    # synonyms
+    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    synonyms:
+    {
+      en_Latn: ""
+      ar_001: ""
+      hu_HU: ""
+      he_IL: ""
+      id_ID: ""
+      en_US: ""
+      ja_JP: ""
+      de_DE: ""
+      ko_KR: ""
+      fr_FR: ""
+      pt_PT: ""
+      ru_RU: ""
+      es_ES: ""
+      zh_Hans: ""
+      zh_Hant: ""
+      vi_VN: ""
+    }
+
+    # type
+    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    type:
+    {
+      // Argumen yang diperbolehkan ialah:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      en_US: ""
+
+      // Argumen yang diperbolehkan ialah:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      id_ID: ""
+    }
+
+    # status
+    # = Menjelaskan status penanyangan serial.
+    status:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Aired, Airing, Planned, TBA, dan Unknown
+      en_US: ""
+
+      // Argumen yang diperbolehkan ialah
+      // Ditanyangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
+      //   Diketahui
+      id_ID: ""
+    }
+
+    # serialGenre
+    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    serialGenre:
+    {
+      # en_US [arr] [str]
+      # = Genre serial dalam bahasa Inggris.
+      en_US:
+      [
+        ""
+        ""
+      ]
+
+      # id_ID [arr] [str]
+      # = Genre serial dalam bahasa Indonesia.
+      id_ID:
+      [
+        ""
+        ""
+      ]
+    }
+
+    # serialTags
+    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
+    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    serialTags:
+    {
+      # en_US [arr] [str]
+      # = Tag serial dalam bahasa Inggris
+      en_US:
+      [
+        ""
+        ""
+      ]
+
+      # id_ID [arr] [str]
+      # = Tag serial dalam bahasa Indonesia
+      id_ID:
+      [
+        ""
+        ""
+      ]
+    }
+
+    # releaseSeason
+    # = Musim rilisan serial.
+    releaseSeason:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Winter, Spring, Summer, Fall, dan Unknown
+      en_US: ""
+
+      // Argumen yang diperbolehkan ialah
+      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      id_ID: ""
+
+      // Argumen yang diperbolehkan ialah
+      // 冬, 春, 夏, 秋, dan 不明
+      ja_JP: ""
+
+      // Argumen yang diperbolehkan ialah
+      // 겨울, 봄, 여름, 가을, dan 알
+      ko_KR: ""
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hans: ""
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hant: ""
+    }
+
+    # releaseYear [num]
+    # = Tahun rilis serial, menggunakan format numeral.
+    releaseYear: 0
+
+    # episode [num]
+    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    episode: 0
+
+    # releaseDate [num] <dmy>
+    # = Tanggal rilis serial, menggunakan format DDMMYYYY. Apabila tidak
+    #   diketahui, isi null.
+    releaseDate: 0
+
+    # endDate [num] <dmy>
+    # = Tanggal tamat serial, menggunakan format DDMMYYYY. Apabila tidak
+    #   diketahui, isi null.
+    endDate: 0
+
+    # duration [num]
+    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    duration: 0
+
+    # totalDuration [num]
+    # = Durasi total serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    totalDuration: 0
+
+    # studio [str] <arb>
+    # = Studio yang memproduksi serial.
+    studio: ""
+
+    # rating [str]
+    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    // Argumen yang diperbolehkan ialah
+    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    rating: ""
+
+    # isNsfw [boo]
+    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
+    #   false, yakni aman.
+    // Argumen yang diperbolehkan ialah
+    // true dan false
+    "isNsfw": false
+
+    # adaptation [str] <arb>
+    # = Ialah adaptasi asal tayangan.
+    adaptation:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Original, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
+      // Drama, dan null
+      en_US: ""
+
+      // Argumen yang diperbolehkan ialah
+      // Orisinal, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
+      // Drama dan null
+      id_ID: ""
+    }
+
+    # country [str]
+    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    country:
+    {
+      en_US: ""
+      id_ID: ""
+    }
+  }
+
+  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  scores:
+  {
+    // https://anidb.net
+    aniDB:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+    
+    // https://anilist.co
+    AniList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://anime-planet.com
+    AnimePlanet:
+    {
+      url: ""
+      score: ""
+    }
+    ANN:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://anisearch.com
+    aniSearch:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: ""
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
+    Annict:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://imdb.com
+    IMDb:
+    {
+      # code
+      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
+      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
+      #   dan 6751668 merupakan ID serial
+      code: ""
+      score: ""
+    }
+
+    // https://kinopoisk.ru
+    KinoPoisk:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://kitsu.io
+    Kitsu:
+    {
+      slug: ""
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
+      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://livechart.me
+    LiveChart:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://myanimelist.net
+    MyAnimeList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+    
+    // https://en.myshows.me/
+    MyShows:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // http://nautiljon.com/
+    Nautiljon:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: ""
+      score: ""
+    }
+
+    // https://notify.moe/
+    Notify:
+    {
+      # base64 [str]
+      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      base64: ""
+      score: ""
+    }
+
+    // http://otakotaku.com/
+    OtakOtaku:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // http://shikimori.org/
+    Shikimori:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://simkl.com
+    SIMKL:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+
+    // https://www.themoviedb.org/
+    TMDB:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: ""
+      score: ""
+    }
+
+    // https://trakt.tv/
+    Trakt:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: ""
+      score: ""
+    }
+
+    // https://www.tvtime.com/en
+    TVTime:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: ""
+    }
+  }
+
+  # updatedDate [num] <dmy>
+  # = Tanggal terakhir pengambilan data informasi dan skor entri terkait.
+  #   Menggunakan format DDMMYYYY. 
+  updatedDate: 0
+
+  # updatedTime
+  # = Jam terakhir pengambilan data informasi dan skor entri terkait.
+  updatedTime:
+  {
+    # time [num] <hms>
+    # = Format yang digunakan ialah HHMMSS dalam format 24 jam, dengan
+    #   H adalah pukul, M adalah menit, dan S adalah detik. 
+    time: 0
+
+    # timeZone
+    # = Zona wilayah kontributor.
+    // WIB = +7, WITA = +8, WIT = +9
+    // UTC/GMT = 0
+    // EST = -5, MST = -6, PST =-7
+    timeZone: +7
+  }
+  fansub:
+  {
+    idn:
+    {
+      Aibou: ""
+      Aizukara: ""
+      Allsub: ""
+      Alter: ""
+      AnimeGokil: ""
+      AniToki: ""
+      AoiTenshi: ""
+      Arks: ""
+      ASubs: ""
+      AWSubs: ""
+      Bentoo: ""
+      Caramel: ""
+      Cijanepoi: ""
+      Conan: ""
+      DAnimeSubs: ""
+      Del: ""
+      DNFI: ""
+      Durandal: ""
+      EmotPekmen: ""
+      Excalibur: ""
+      Gantz: ""
+      Gin: ""
+      Haruna: ""
+      Haruzora: ""
+      Hopper: ""
+      HunterNoSekai: ""
+      IA: ""
+      Inazumaotoshi: ""
+      Indis: ""
+      Inform0930: ""
+      Isekai: ""
+      Ito: ""
+      Junk: ""
+      Kazefuri: ""
+      Kinshiru: ""
+      KO: ""
+      Kopaja: ""
+      LCC: ""
+      MangaNekoTranslation: ""
+      Meitanteibayoo: ""
+      Melody: ""
+      Mite: ""
+      NgidolYuk: ""
+      Neo: ""
+      OPLovers: ""
+      Ougi: ""
+      Panagayan: ""
+      Pendekar: ""
+      Pucuk: ""
+      Quinime: ""
+      RevieXion: ""
+      Samehadaku: ""
+      SilverYasha: ""
+      Sora: ""
+      TTOD: ""
+      Vedify: ""
+      Warung: ""
+      Wibu: ""
+      Yuki: ""
+      Zen: ""
+    }
+    eng:
+    {
+      Horrible: ""
+    }
+  }
+  fanshare:
+  {
+    idn:
+    {
+      AniBatch: ""
+      Bakacan: ""
+      Drivenime: ""
+      Hinime: ""
+      Koenime: ""
+      Kusonime: ""
+      Mikanime: ""
+      Moenime: ""
+      WibuDesu: ""
+    }
+    eng:
+    {
+      AnimeKayo: ""
+    }
+  }
+  fanstream:
+  {
+    idn:
+    {
+      AnimeCracks: ""
+      AnimeHADE: ""
+      AnimeIndoNET: ""
+      AnimeIndoTO: ""
+      anoBoy: ""
+      Gomunime: ""
+      Moeclip: ""
+      Neonime: ""
+      Onnime: ""
+      RuangOtaku: ""
+    }
+    eng:
+    {
+      4anime: ""
+      9anime: ""
+      AnimeDaisuki: ""
+      AnimeTwist: ""
+      Animeflix: ""
+      AnimeHeaven: ""
+      Animelon: ""
+      Animeultima: ""
+      AnimeXD: ""
+      DaiWEEB: ""
+      GogoAnime: ""
+      KissAnime: ""
+      WonderfulSubs: ""
+    }
+  }
+  library:
+  {
+    Nyaa: ""
+    PerpusIndo: ""
+    Shallty: ""
+  }
+}

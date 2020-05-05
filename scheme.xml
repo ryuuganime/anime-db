@@ -21,31 +21,33 @@
         <path>
             <json></json>
             <xml></xml>
+            <hjson></hjson>
         </path>
         <ryuuganime>1</ryuuganime>
         <title>
             <en_Latn></en_Latn>
             <en_US></en_US>
-            <ja_JP></ja_JP>
+            <native></native>
         </title>
     </anime>
 -->
 <scheme>
     <anime>
-        <aniDb>0</aniDb>
-        <aniList>0</aniList>
-        <kitsu>0</kitsu>
-        <myAnimeList>0</myAnimeList>
-        <notifyMoe></notifyMoe>
+        <aniDb>15364</aniDb>
+        <aniList>114888</aniList>
+        <kitsu>43056</kitsu>
+        <myAnimeList>41120</myAnimeList>
+        <notifyMoe>TM1LPA8Wg</notifyMoe>
         <path>
             <json>json/1.json</json>
-            <xml></xml>
+            <xml>xml/1.xml</xml>
+            <hjson>hjson/1.hsjon</hjson>
         </path>
         <ryuuganime>1</ryuuganime>
         <title>
-            <en_Latn></en_Latn>
-            <en_US></en_US>
-            <ja_JP></ja_JP>
+            <en_Latn>Fugou Keiji: Balance:Unlimited</en_Latn>
+            <en_US>The Millionaire Detective – Balance: UNLIMITED</en_US>
+            <native>富豪刑事 Balance:UNLIMITED</native>
         </title>
     </anime>
     <anime>
@@ -62,7 +64,7 @@
         <title>
             <en_Latn></en_Latn>
             <en_US></en_US>
-            <ja_JP></ja_JP>
+            <native></native>
         </title>
     </anime>
 </scheme>

@@ -4,7 +4,7 @@ Database Utama Situs Ryuuganime Berbasis JSON dan HTML (deprecated)
 __NOTOC__
 
 = Teknologi yang Digunakan =
-Database ini menggunakan teknologi [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code> dan <code>.mediawiki</code>)  untuk markah dokumentasi repositori. Untuk ''[https://id.wikipedia.org/wiki/JSON database]'', Ryuuganime menggunakan format berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#json JSON] dan XML untuk versi terbaru.
+Database ini menggunakan teknologi [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code> dan <code>.mediawiki</code>)  untuk markah dokumentasi repositori. Untuk ''[https://id.wikipedia.org/wiki/JSON database]'', Ryuuganime menggunakan format berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#json JSON], HJSON, dan XML untuk versi terbaru.
 Berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#html HTML] dan XLSX untuk repositori database lama tidak digunakan lagi.
 
 Sistem hirarki repo ini berbentuk <code>formatBerkas/idRyuuganime.ekstensi</code>.

@@ -5,10 +5,13 @@ This wiki maybe loads slower than expected.
 __TOC__
 
 = JSON =
-# [[json/1.json|Asatir: Mirai no Mukashi Banashi]]
+# [[json/1.json|Fugou Keiji Balance:UNLIMITED]]
 
 = XML =
-# [[xml/1.xml|Asatir: Mirai no Mukashi Banashi]]
+# [[xml/1.xml|Fugou Keiji Balance:UNLIMITED]]
+
+= HJSON =
+# [[hjson/1.hjson|Fugou Keiji Balance:UNLIMITED]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]
