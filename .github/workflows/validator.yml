@@ -16,4 +16,4 @@ jobs:
           uses: OrRosenblatt/validate-json-action@0.1.0
           env:
             INPUT_SCHEMA: ./schema.json
-            INPUT_JSON: ./json/*.json
+            INPUT_JSONS: ./json/1.json, ./json/2.json, ./json/3.json, ./json/4.json, ./json/5.json
