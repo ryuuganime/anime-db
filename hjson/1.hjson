@@ -14,12 +14,18 @@
 \^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
 /^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
 |                               | | ru pada suatu value          | |   ta yang berbeda.           |
-| <url>  String  berisi  tautan | |                              | |                              |
-|   url.                        | \^----------------------------^/ \^----------------------------^/
-| <arb>  string  dapat  berubah |
-|   menjadi array apabila objek |
-|   dalam satu  value lebih ba- |
-|   nyak daripada satu.         |
+| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
+|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
+| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
+|   menjadi array apabila objek |                                  |   value di dalamnya.         |
+|   dalam satu  value lebih ba- |                                  |                              |
+|   nyak daripada satu.         |                                  \^----------------------------^/
+| <nab> array dapat dihilangkan |
+|   tanda  kurungnya, dan dija- |
+|   dikan sebagai null.         |
+| <nbl> string, numeral, atau   |
+|   array terkait tidak bisa    |
+|   diubah menjadi null.        |
 |                               |
 \^-----------------------------*/
 
@@ -116,18 +122,19 @@
 
     # vi_VN [str]
     # = Judul dalam bahasa Vietnam.
-    vi_VN: Phú hào Hình sự Balance:UNLIMITED
+    vi_VN: Thám Tử Triệu Phú
+    /* Alih Bahasa Vietnam oleh V1sion */
   }
 
   # backdrop [str] <url>
   # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
   #   situs yang diperbolehkan.
-  backdrop: "https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg"
+  backdrop: https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg
 
   # visualKey [str] <url>
   # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
   #   yang diperbolehkan.
-  visualKey: "https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg"
+  visualKey: https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg
 
   # synopsis:
   # = Ialah sinopis suatu serial dalam beberapa bahasa.
@@ -155,7 +162,7 @@
     # en_US [str]
     # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
     #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
-    en_US: ''''The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katō.'''
+    en_US: '''The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.'''
 
     # ja_JP [str]
     # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
@@ -213,19 +220,19 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
   # = Merupakan kumpulan informasi mengenai serial.
   information:
   {
-    # synonyms
+    # synonyms [arr] <nab>
     # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
     synonyms:
     {
       en_Latn: [ 
-        "Fugō Keiji Balance: Unlimited"
-        "FugouKeijiBUL" 
+        Fugō Keiji Balance: Unlimited
+        FugouKeijiBUL 
       ]
       ar_001: null
       hu_HU: null
       he_IL: null
       id_ID: null
-      en_US: "Wealthy Detective"
+      en_US: Wealthy Detective
       ja_JP: null
       de_DE: null
       ko_KR: null
@@ -238,7 +245,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       vi_VN: null
     }
 
-    # type
+    # type <nbl>
     # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
     type:
     {
@@ -274,20 +281,20 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       # = Genre serial dalam bahasa Inggris.
       en_US:
       [
-        "Drama"
-        "Mystery"
-        "Comedy"
-        "Crime"
+        Drama
+        Mystery
+        Comedy
+        Crime
       ]
 
       # id_ID [arr] [str]
       # = Genre serial dalam bahasa Indonesia.
       id_ID:
       [
-        "Drama"
-        "Misteri"
-        "Komedi"
-        "Kriminalitas"
+        Drama
+        Misteri
+        Komedi
+        Kriminalitas
       ]
     }
 
@@ -300,22 +307,22 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       # = Tag serial dalam bahasa Inggris
       en_US:
       [
-        "Detectives"
-        "Police"
-        "Billionaire"
-        "Investigation"
-        "Male Protagonist"
+        Detectives
+        Police
+        Billionaire
+        Investigation
+        Male Protagonist
       ]
 
       # id_ID [arr] [str]
       # = Tag serial dalam bahasa Indonesia
       id_ID:
       [
-        "Detektif"
-        "Polisi"
-        "Milyuner"
-        "Investigasi"
-        "Tokoh Utama Laki-Laki"
+        Detektif
+        Polisi
+        Milyuner
+        Investigasi
+        Tokoh Utama Laki-Laki
       ]
     }
 
@@ -356,10 +363,10 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
     episode: 11
 
-    # releaseDate [num] <dmy>
-    # = Tanggal rilis serial, menggunakan format DDMMYYYY. Apabila tidak
+    # endDate [str]
+    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    releaseDate: 10042020
+    releaseDate: 2020-04-10
 
     # endDate [num] <dmy>
     # = Tanggal tamat serial, menggunakan format DDMMYYYY. Apabila tidak
@@ -392,7 +399,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     #   false, yakni aman.
     // Argumen yang diperbolehkan ialah
     // true dan false
-    "isNsfw": false
+    isNsfw: false
 
     # adaptation [str] <arb>
     # = Ialah adaptasi asal tayangan.
@@ -429,7 +436,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 15364
-      score: "6.07"
+      score: 6.07
     }
     
     // https://anilist.co
@@ -440,14 +447,20 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 114888
-      score: "73%"
+      score: 73
     }
 
     // https://anime-planet.com
     AnimePlanet:
     {
       url: https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited
-      score: "4.207"
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 14492
+      score: 4.207
     }
     ANN:
     {
@@ -464,14 +477,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: "https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited"
+      url: https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14906
-      score: "71%"
+      score: 71
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -482,7 +495,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 7271
-      score: "86.67%"
+      score: 86.67
     }
 
     // https://imdb.com
@@ -492,8 +505,8 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
       #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
       #   dan 6751668 merupakan ID serial
-      code: "tt12117218"
-      score: "8.1"
+      code: tt12117218
+      score: 8.1
     }
 
     // https://kinopoisk.ru
@@ -510,14 +523,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     // https://kitsu.io
     Kitsu:
     {
-      slug: "fugou-keiji-balance-unlimited"
+      slug: fugou-keiji-balance-unlimited
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
       #   atau tanyakan kepada pengembang untuk informasi terkait.
       id: 43056
-      score: "80.56%"
+      score: 80.56
     }
 
     // https://livechart.me
@@ -528,7 +541,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 9777
-      score: "8.27"
+      score: 8.27
     }
 
     // https://myanimelist.net
@@ -539,7 +552,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 41120
-      score: "7.51"
+      score: 7.51
     }
     
     // https://en.myshows.me/
@@ -550,7 +563,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 66109
-      score: "4.44 of 5"
+      score: 4.44
     }
 
     // http://nautiljon.com/
@@ -558,8 +571,8 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: "https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html"
-      score: "8.97"
+      url: https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html
+      score: 8.97
     }
 
     // https://notify.moe/
@@ -567,8 +580,8 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     {
       # base64 [str]
       # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
-      base64: "TM1LPA8Wg"
-      score: "8.32"
+      base64: TM1LPA8Wg
+      score: 8.32
     }
 
     // http://otakotaku.com/
@@ -579,7 +592,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1724
-      score: "9"
+      score: 9
     }
 
     // http://shikimori.org/
@@ -590,7 +603,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 41120
-      score: "7.51"
+      score: 7.51
     }
 
     // https://simkl.com
@@ -601,7 +614,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1247789
-      score: "8.6"
+      score: 8.6
     }
 
     // https://www.themoviedb.org/
@@ -609,14 +622,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: "https://www.themoviedb.org/tv/98491-balance-unlimited"
+      url: https://www.themoviedb.org/tv/98491-balance-unlimited
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 98491
-      score: "80%"
+      score: 80
     }
 
     // https://trakt.tv/
@@ -624,8 +637,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: "https://trakt.tv/shows/157673"
-      score: "73%"
+      url: https://trakt.tv/shows/157673
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 157673
+      score: 73
     }
 
     // https://www.tvtime.com/en
@@ -636,7 +655,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 376211
-      score: "9.76 / 10"
+      score: 9.76
     }
   }
 
@@ -661,9 +680,9 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
   {
     idn:
     {
-      Aibou: "https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html"
-      Aizukara: "https://www.aizukara.web.id/search/label/Fugou%20Keiji"
-      AWSubs: "http://awsubs.co/anime/fugou-keiji-balanceunlimited/"
+      Aibou: https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html
+      Aizukara: https://www.aizukara.web.id/search/label/Fugou%20Keiji
+      AWSubs: http://awsubs.co/anime/fugou-keiji-balanceunlimited/
       Bentoo: null
       Caramel: null
       Cijanepoi: null
@@ -679,14 +698,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       Haruna: null
       Haruzora: null
       Hopper: null
-      HunterNoSekai: "https://www.huntersekai.website/search/label/Fugou?&max-results=8"
+      HunterNoSekai: https://www.huntersekai.website/search/label/Fugou?&max-results=8
       IA: null
       Inazumaotoshi: null
       Indis: null
       Inform0930: null
       Isekai: null
       Ito: null
-      Junk: "https://www.junksubs.com/search/label/Unlimited"
+      Junk: https://www.junksubs.com/search/label/Unlimited
       Kazefuri: null
       Kinshiru: null
       KO: null
@@ -696,7 +715,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
       Meitanteibayoo: null
       Melody: null
       Mite: null
-      Nanairo: "https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited"
+      Nanairo: https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited
       NgidolYuk: null
       Neo: null
       OPLovers: null
@@ -718,7 +737,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     }
     eng:
     {
-      Horrible: "https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01"
+      Horrible: https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01
     }
   }
   fanshare:
@@ -726,51 +745,51 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     idn:
     {
       AniBatch: null
-      Bakacan: "https://bakacan.id/anime/fugou-keiji-balanceunlimited/"
+      Bakacan: https://bakacan.id/anime/fugou-keiji-balanceunlimited/
       Drivenime: null
       Hinime: null
       Koenime: null
       Kusonime: null
       Mikanime: null
-      Moenime: "https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/"
+      Moenime: https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/
       WibuDesu: null
     }
     eng:
     {
-      AnimeKayo: "https://animekayo.com/?s=Fugou+Keiji"
+      AnimeKayo: https://animekayo.com/?s=Fugou+Keiji
     }
   }
   fanstream:
   {
     idn:
     {
-      AnimeIndoNET: "http://animeindo.moe/anime/fugou-keiji-balanceunlimited"
-      anoBoy: "https://anoboy.us/anime/fugou-keiji-balanceunlimited/"
+      AnimeIndoNET: http://animeindo.moe/anime/fugou-keiji-balanceunlimited
+      anoBoy: https://anoboy.us/anime/fugou-keiji-balanceunlimited/
       Gomunime: null
-      Moeclip: "https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/"
-      Neonime: "https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/"
-      Onnime: "https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/"
+      Moeclip: https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/
+      Neonime: https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/
+      Onnime: https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/
     }
     eng:
     {
-      4anime: "https://4anime.to/anime/fugou-keiji-balanceunlimited"
-      9anime: "https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q"
-      AnimeDaisuki: "https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited"
-      AnimeTwist: "https://twist.moe/a/fugou-keiji-balance-unlimited/1"
-      Animeflix: "https://animeflix.io/shows/fugou-keiji-balanceunlimited"
-      AnimeHeaven: "https://animeheaven.ru/detail/fugou-keiji-balance-unlimited"
+      4anime: https://4anime.to/anime/fugou-keiji-balanceunlimited
+      9anime: https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q
+      AnimeDaisuki: https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited
+      AnimeTwist: https://twist.moe/a/fugou-keiji-balance-unlimited/1
+      Animeflix: https://animeflix.io/shows/fugou-keiji-balanceunlimited
+      AnimeHeaven: https://animeheaven.ru/detail/fugou-keiji-balance-unlimited
       Animelon: null
-      Animeultima: "https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044"
-      AniWatch: "https://aniwatch.me/anime/2315"
+      Animeultima: https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044
+      AniWatch: https://aniwatch.me/anime/2315
       DaiWEEB: null
-      GogoAnime: "https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited"
-      KissAnime: "https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited"
-      WonderfulSubs: "https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited"
+      GogoAnime: https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited
+      KissAnime: https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited
+      WonderfulSubs: https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited
     }
   }
   library:
   {
-    Nyaa: "https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji"
+    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji
     PerpusIndo: null
     Shallty: null
   }
