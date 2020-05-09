@@ -6,12 +6,18 @@ __TOC__
 
 = JSON =
 # [[json/1.json|Fugou Keiji Balance:UNLIMITED]]
+# [[json/2.json|Sword Art Online: Alicization]]
+# [[json/3.json|Boku no Hero Academia]]
 
 = XML =
 # [[xml/1.xml|Fugou Keiji Balance:UNLIMITED]]
+# [[xml/2.xml|Sword Art Online: Alicization]]
+# [[xml/3.xml|Boku no Hero Academia]]
 
 = HJSON =
 # [[hjson/1.hjson|Fugou Keiji Balance:UNLIMITED]]
+# [[hjson/2.hjson|Sword Art Online: Alicization]]
+# [[hjson/3.hjson|Boku no Hero Academia]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]

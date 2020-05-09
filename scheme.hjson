@@ -53,22 +53,22 @@
             }
         }
         {
-            myAnimeList: 0
-            kitsu: 0
-            aniList: 0
-            aniDb: 0
-            notifyMoe: ""
+            myAnimeList: 36474,
+            kitsu: 13893,
+            aniList: 100182,
+            aniDb: 13493,
+            notifyMoe: GWyShKmiR
             title:
             {
-                en_Latn: ""
-                en_US: ""
-                native: ""
+                en_Latn: Sword Art Online: Alicization
+                en_US: Sword Art Online: Alicization
+                native: ソードアート・オンライン アリシゼーション
             }
-            ryuuganime: 2
-            path:
+            ryuuganime: 2,
+            path: 
             {
                 json: /json/2.json
-                hjson: /hjson/2.hjson
+               hjson: /hjson/2.hjson
                 xml: /xml/2.xml
             }
         }

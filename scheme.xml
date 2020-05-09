@@ -4,9 +4,13 @@
     Author  :   Ryuuganime
     Version :   1.0-b
     License :   CC BY-SA 4.0
-    JSON    :   1
-    XML     :   1
-    HTML    :   0
+    JSON    :   true
+    HJSON   :   true
+    XML     :   true
+    HTML    :   false
+    YAML    :   false
+    SQL     :   false
+    SGML    :   false
     Note    :   This XML file is not mandatory, but JSON does. Please to use JSON scheme
                 instead. Use XML as an alternative.
 -->
@@ -17,7 +21,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/0.hjson</hjson>
             <json>/json/0.json</json>
@@ -51,11 +55,11 @@
         </title>
     </anime>
     <anime>
-        <aniDb>0</aniDb>
-        <aniList>0</aniList>
-        <kitsu>0</kitsu>
-        <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+        <aniDb>13493</aniDb>
+        <aniList>100182</aniList>
+        <kitsu>13893</kitsu>
+        <myAnimeList>36474</myAnimeList>
+        <notifyMoe>GWyShKmiR</notifyMoe>
         <path>
             <hjson>/hjson/2.hjson</hjson>
             <json>/json/2.json</json>
@@ -63,9 +67,9 @@
         </path>
         <ryuuganime>2</ryuuganime>
         <title>
-            <en_Latn></en_Latn>
-            <en_US></en_US>
-            <native></native>
+            <en_Latn>Sword Art Online: Alicization</en_Latn>
+            <en_US>Sword Art Online: Alicization</en_US>
+            <native>ソードアート・オンライン アリシゼーション</native>
         </title>
     </anime>
     <anime>
@@ -91,7 +95,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/4.hjson</hjson>
             <json>/json/4.json</json>
@@ -109,7 +113,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/5.hjson</hjson>
             <json>/json/5.json</json>
@@ -127,7 +131,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/6.hjson</hjson>
             <json>/json/6.json</json>
@@ -145,7 +149,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/7.hjson</hjson>
             <json>/json/7.json</json>
@@ -163,7 +167,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/8.hjson</hjson>
             <json>/json/8.json</json>
@@ -181,7 +185,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/9.json</hjson>
             <json>/json/9.json</json>
@@ -199,7 +203,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe />
+         <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/10.json</hjson>
             <json>/json/10.json</json>
