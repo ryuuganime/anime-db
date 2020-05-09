@@ -226,7 +226,9 @@
       ]
       hu_HU: null
       he_IL: null
-      id_ID: null
+      id_ID: [
+        Bokuaka
+      ]
       en_US: [
         BNHA
         heroaca
@@ -717,129 +719,129 @@
   {
     idn:
     {
-      Aibou: 
-      Aizukara: 
-      Allsub: 
-      Alter: 
-      AnimeGokil: 
-      AniToki: 
-      AoiTenshi: 
-      Arks: 
-      ASubs: 
-      AWSubs: 
-      Bentoo: 
-      Caramel: 
-      Cijanepoi: 
-      Conan: 
-      DAnimeSubs: 
-      Del: 
-      DNFI: 
-      Durandal: 
-      EmotPekmen: 
-      Excalibur: 
-      Gantz: 
-      Gin: 
-      Haruna: 
-      Haruzora: 
-      Hopper: 
-      HunterNoSekai: 
-      IA: 
-      Inazumaotoshi: 
-      Indis: 
-      Inform0930: 
-      Isekai: 
-      Ito: 
-      Junk: 
-      Kazefuri: 
-      Kinshiru: 
-      KO: 
-      Kopaja: 
-      LCC: 
-      MangaNekoTranslation: 
-      Meitanteibayoo: 
-      Melody: 
-      Mite: 
-      Nanairo: 
-      NgidolYuk: 
-      Neo: 
-      OPLovers: 
-      Ougi: 
-      Panagayan: 
-      Pendekar: 
-      Pucuk: 
-      Quinime: 
-      RevieXion: 
-      Samehadaku: 
-      SilverYasha: 
-      Sora: 
-      TTOD: 
-      Vedify: 
-      Warung: 
-      Wibu: 
-      Yuki: 
-      Zen: 
+      Aibou: null
+      Aizukara: null
+      Allsub: null
+      Alter: null
+      AnimeGokil: null
+      AniToki: null
+      AoiTenshi: null
+      Arks: null
+      ASubs: null
+      AWSubs: https://awsubs.co/anime/boku-no-hero-academia/
+      Bentoo: https://bentoosubs.blogspot.com/2017/04/boku-no-hero-academia-bluray-batch.html
+      Caramel: null
+      Cijanepoi: null
+      Conan: null
+      DAnimeSubs: null
+      Del: null
+      DNFI: null
+      Durandal: null
+      EmotPekmen: null
+      Excalibur: null
+      Gantz: null
+      Gin: http://www.ginsub.net/p/boku-no-hero-academia-subtitle-indonesia.html
+      Haruna: null
+      Haruzora: null
+      Hopper: null
+      HunterNoSekai: null
+      IA: null
+      Inazumaotoshi: null
+      Indis: null
+      Inform0930: null
+      Isekai: null
+      Ito: null
+      Junk: null
+      Kazefuri: null
+      Kinshiru: null
+      KO: null
+      Kopaja: null
+      LCC: null
+      MangaNekoTranslation: null
+      Meitanteibayoo: null
+      Melody: null
+      Mite: null
+      Nanairo: null
+      NgidolYuk: null
+      Neo: null
+      OPLovers: https://www.oploverz.in/series/boku-no-hero-academia/
+      Ougi: null
+      Panagayan: null
+      Pendekar: null
+      Pucuk: null
+      Quinime: null
+      RevieXion: null
+      Samehadaku: null
+      SilverYasha: null
+      Sora: null
+      TTOD: null
+      Vedify: null
+      Warung: null
+      Wibu: null
+      Yuki: null
+      Zen: null
     }
     eng:
     {
-      Horrible: 
+      Horrible: https://horriblesubs.info/shows/boku-no-hero-academia/
     }
   }
   fanshare:
   {
     idn:
     {
-      AniBatch: 
-      AnimeKompi: 
-      AnimeSAVE: 
-      Bakacan: 
-      Drivenime: 
-      Hinime: 
-      Koenime: 
-      Kusonime: 
-      Mikanime: 
-      Moenime: 
-      Ryuukoi: 
-      WibuDesu: 
+      AniBatch: https://www.anibatch.me/?s=Boku%20no%20Hero%20Academia
+      AnimeKompi: null
+      AnimeSAVE: http://www.animesave.com/boku-no-hero-academia-subtitle-indonesia/
+      Bakacan: https://bakacan.id/anime/boku-no-hero-academia/
+      Drivenime: https://drivenime.com/boku-no-hero-academia-subtitle-indo/ 
+      Hinime: https://hinime.com/boku-no-hero-academia-seaso1-sub-indo/
+      Koenime: https://www.koenime.com/bokuhero-sub-indo/
+      Kusonime: https://kusonime.com/bokuaka-sub-indo/
+      Mikanime: https://mikanime.com/boku-no-hero-academia-s1-sub-indo/
+      Moenime: https://moenime.web.id/bokuhiro-s1-sub-indo/
+      Ryuukoi: https://ryuukoi.web.id/anime/boku-no-hero-academia/
+      WibuDesu: https://wibudesu.com/bnhabdsubid/
     }
     eng:
     {
-      AnimeKayo: 
+      AnimeKayo: https://animekayo.com/anime-series/boku-no-hero-academia-720p-10bit-bd-dual-audio-hevc/
     }
   }
   fanstream:
   {
     idn:
     {
-      AnimeIndoNET: 
-      anoBoy: 
-      Gomunime: 
-      Moeclip: 
-      Neonime: 
-      Onnime: 
-      OtakuIndo: 
+      AnimeIndoNET: http://animeindo.moe/anime/boku-no-hero-academia
+      anoBoy: https://anoboy.us/anime/boku-no-hero-academia/
+      Gomunime: null
+      Moeclip: https://moeclip.com/anime/bokuhiro-s1-sub-indo/
+      Neonime: https://neonime.org/tvshows/boku-no-hero-academia-subtitle-indonesia/
+      Onnime: https://onnime.net/anime/boku-no-hero-academia.dzqRERZ1/
+      OtakuIndo: https://otakuindo.org/nonton/boku-hero-s1-sub-indo/
     }
     eng:
     {
-      4anime: 
-      9anime: 
-      AnimeDaisuki: 
-      AnimeTwist: 
-      Animeflix: 
-      AnimeHeaven: 
-      Animelon: 
-      Animeultima: 
-      AnimeXD: 
-      AniWatch: 
-      DaiWEEB: 
-      GogoAnime: 
-      KissAnime: 
-      WonderfulSubs: 
+      4anime: https://4anime.to/anime/boku-no-hero-academia
+      9anime: https://9anime.ru/watch/boku-no-hero-academia.jvl2
+      AnimeDaisuki: https://animedaisuki.moe/anime/4/boku-no-hero-academia
+      AnimeTwist: https://twist.moe/a/boku-no-hero-academia/1
+      Animeflix: https://animeflix.io/shows/boku-no-hero-academia
+      AnimeHeaven: https://animeheaven.ru/detail/boku-no-hero-academia-sub.98579
+      Animelon: https://animelon.com/series/Boku%20no%20Hero%20Academia%20(My%20Hero%20Academia)
+      Animeultima: https://www1.animeultima.to/a/boku-no-hero-academia_791758
+      AnimeXD: null
+      AniWatch: https://aniwatch.me/anime/119
+      DaiWEEB: null
+      GogoAnime: https://gogoanimes.co/category/boku-no-hero-academia
+      KissAnime: http://kissanime.ru/Anime/Boku-no-Hero-Academia-My-Hero-Academia
+      WonderfulSubs: https://beta.wonderfulsubs.com/watch/myheroacademia
     }
   }
   library:
   {
-    Nyaa: 
-    PerpusIndo: 
-    Shallty: 
+    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Boku+no+Hero+Academia
+    PerpusIndo: https://www.perpusindo.info/anime/31964
+    Shallty: https://shallty.moe/browse?search=Boku%20no%20Hero%20Academia
   }
 }
