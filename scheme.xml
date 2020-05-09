@@ -17,13 +17,13 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe></notifyMoe>
+        <notifyMoe />
         <path>
-            <json></json>
-            <xml></xml>
-            <hjson></hjson>
+            <hjson>/hjson/0.hjson</hjson>
+            <json>/json/0.json</json>
+            <xml>/xml/0.xml</xml>
         </path>
-        <ryuuganime>1</ryuuganime>
+        <ryuuganime>0</ryuuganime>
         <title>
             <en_Latn></en_Latn>
             <en_US></en_US>
@@ -39,9 +39,9 @@
         <myAnimeList>41120</myAnimeList>
         <notifyMoe>TM1LPA8Wg</notifyMoe>
         <path>
-            <json>json/1.json</json>
-            <xml>xml/1.xml</xml>
-            <hjson>hjson/1.hsjon</hjson>
+            <hjson>/hjson/1.hjson</hjson>
+            <json>/json/1.json</json>
+            <xml>/xml/1.xml</xml>
         </path>
         <ryuuganime>1</ryuuganime>
         <title>
@@ -55,12 +55,157 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-        <notifyMoe></notifyMoe>
+        <notifyMoe />
         <path>
-            <json>json/1.json</json>
-            <xml></xml>
+            <hjson>/hjson/2.hjson</hjson>
+            <json>/json/2.json</json>
+            <xml>/xml/2.xml</xml>
         </path>
-        <ryuuganime>1</ryuuganime>
+        <ryuuganime>2</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>11739</aniDb>
+        <aniList>21459</aniList>
+        <kitsu>11469</kitsu>
+        <myAnimeList>31964</myAnimeList>
+        <notifyMoe>9iIjtFiig</notifyMoe>
+        <path>
+            <hjson>/hjson/3.hjson</hjson>
+            <json>/json/3.json</json>
+            <xml>/xml/3.xml</xml>
+        </path>
+        <ryuuganime>3</ryuuganime>
+        <title>
+            <en_Latn>Boku no Hero Academia</en_Latn>
+            <en_US>My Hero Academia</en_US>
+            <native>僕のヒーローアカデミア</native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/4.hjson</hjson>
+            <json>/json/4.json</json>
+            <xml>/xml/4.xml</xml>
+        </path>
+        <ryuuganime>4</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/5.hjson</hjson>
+            <json>/json/5.json</json>
+            <xml>/xml/5.xml</xml>
+        </path>
+        <ryuuganime>5</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/6.hjson</hjson>
+            <json>/json/6.json</json>
+            <xml>/xml/6.xml</xml>
+        </path>
+        <ryuuganime>6</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/7.hjson</hjson>
+            <json>/json/7.json</json>
+            <xml>/xml/7.xml</xml>
+        </path>
+        <ryuuganime>7</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/8.hjson</hjson>
+            <json>/json/8.json</json>
+            <xml>/xml/8.xml</xml>
+        </path>
+        <ryuuganime>8</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/9.json</hjson>
+            <json>/json/9.json</json>
+            <xml>/xml/9.xml</xml>
+        </path>
+        <ryuuganime>9</ryuuganime>
+        <title>
+            <en_Latn></en_Latn>
+            <en_US></en_US>
+            <native></native>
+        </title>
+    </anime>
+    <anime>
+        <aniDb>0</aniDb>
+        <aniList>0</aniList>
+        <kitsu>0</kitsu>
+        <myAnimeList>0</myAnimeList>
+        <notifyMoe />
+        <path>
+            <hjson>/hjson/10.json</hjson>
+            <json>/json/10.json</json>
+            <xml>/xml/10.xml</xml>
+        </path>
+        <ryuuganime>10</ryuuganime>
         <title>
             <en_Latn></en_Latn>
             <en_US></en_US>
