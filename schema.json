@@ -1,0 +1,753 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ryuuganime Entry",
+  "description": "Anime Entry of Ryuuganime",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "A serial title in multiple languages. Based on ICU locales",
+      "type": "object",
+      "properties": {
+        "native": {
+          "description": "A serial title in native language. Including, but not limited to: Japanese, Chinese, and Korean",
+          "type": "string"
+        },
+        "en_Latn": {
+          "description": "A serial title in romanizated form",
+          "type": "string"
+        },
+        "ar_001": {
+          "$id": "#title",
+          "description": "A serial title in Modern Standard Arabic",
+          "oneOf": [ {"type": "string"}, {"type": "null"} ]
+        },
+        "hu_HU": {
+          "$ref": "#title",
+          "description": "A serial title in Hungarian"
+        },
+        "he_IL": {
+          "$ref": "#title",
+          "description": "A serial title in Israel Hebrew"
+        },
+        "id_ID": {
+          "$ref": "#title",
+          "description": "A serial title in Indonesian"
+        },
+        "en_US": {
+          "$ref": "#title",
+          "description": "A serial title in American English"
+        },
+        "ja_JP": {
+          "$ref": "#title",
+          "description": "A serial title in Japanese"
+        },
+        "de_DE": {
+          "$ref": "#title",
+          "description": "A serial title in German"
+        },
+        "ko_KR": {
+          "$ref": "#title",
+          "description": "A serial title in Korean"
+        },
+        "fr_FR": {
+          "$ref": "#title",
+          "description": "A serial title in French"
+        },
+        "pt_PT": {
+          "$ref": "#title",
+          "description": "A serial title in Portuguese"
+        },
+        "ru_RU": {
+          "$ref": "#title",
+          "description": "A serial title in Russian"
+        },
+        "es_ES": {
+          "$ref": "#title",
+          "description": "A serial title in Spain Spanish"
+        },
+        "zh_Hans": {
+          "$ref": "#title",
+          "description": "A serial title in Simplified Chinese"
+        },
+        "zh_Hant": {
+          "$ref": "#title",
+          "description": "A serial title in Traditional Chinese"
+        },
+        "vi_VN": {
+          "$ref": "#title",
+          "description": "A serial title in Vietnamese"
+        }
+      },
+      "required": [ "native", "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
+    },
+    "backdrop": {
+      "$id": "#linkChecker",
+      "description": "A backdrop/background image URL of serial",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^(https?|wss?|ftp)://"
+    },
+    "visualKey": {
+      "description": "A visual key/poster image URL of serial",
+      "$ref": "#linkChecker"
+    },
+    "synopsis": {
+      "description": "A synopsis/plot of story of serial in several languages. Based on ICU locales",
+      "type": "object",
+      "properties": {
+        "ar_001": { "$id": "#synopsis", "oneOf": [ {"type": "string", "minLength": 20}, {"type": "null"} ] },
+        "hu_HU": { "$ref": "#synopsis" },
+        "he_IL": { "$ref": "#synopsis" },
+        "id_ID": { "$ref": "#synopsis" },
+        "en_US": { "$ref": "#synopsis" },
+        "ja_JP": { "$ref": "#synopsis" },
+        "de_DE": { "$ref": "#synopsis" },
+        "ko_KR": { "$ref": "#synopsis" },
+        "fr_FR": { "$ref": "#synopsis" },
+        "pt_PT": { "$ref": "#synopsis"},
+        "ru_RU": { "$ref": "#synopsis" },
+        "es_ES": { "$ref": "#synopsis" },
+        "zh_Hans": { "$ref": "#synopsis" },
+        "zh_Hant": { "$ref": "#synopsis" },
+        "vi_VN": { "$ref": "#synopsis" }
+      },
+      "required": [ "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
+    },
+    "information": {
+      "description": "An advanced information about related serial",
+      "type": "object",
+      "properties": {
+        "synonyms": {
+          "description": "Serial title synonyms in several languages. Based on ICU locales",
+          "type": "object",
+          "properties": {
+            "en_Latn": { "$id": "#synonyms", "oneOf": [ {"type": "array"}, {"type": "null"} ] },
+            "ar_001": { "$ref": "#synonyms" },
+            "hu_HU": { "$ref": "#synonyms" },
+            "he_IL": { "$ref": "#synonyms" },
+            "id_ID": { "$ref": "#synonyms" },
+            "en_US": { "$ref": "#synonyms" },
+            "ja_JP": { "$ref": "#synonyms" },
+            "de_DE": { "$ref": "#synonyms" },
+            "ko_KR": { "$ref": "#synonyms" },
+            "fr_FR": { "$ref": "#synonyms" },
+            "pt_PT": { "$ref": "#synonyms" },
+            "ru_RU": { "$ref": "#synonyms" },
+            "es_ES": { "$ref": "#synonyms" },
+            "zh_Hans": { "$ref": "#synonyms" },
+            "zh_Hant": { "$ref": "#synonyms" },
+            "vi_VN": { "$ref": "#synonyms" }
+          },
+          "required": [ "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
+        },
+        "type": {
+          "description": "Type of series",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "type": "string",
+              "enum": [ "TV", "ONA", "OVA", "OAD", "Special", "Music", "Movie", "Unknown" ]
+            },
+            "id_ID": {
+              "type": "string",
+              "enum": [ "Serial TV", "ONA", "OVA", "OAD", "Spesial", "Musik", "Film", "Tidak Diketahui" ]
+            }
+          },
+          "required": [ "en_US", "id_ID" ],
+          "additionalProperties": false
+        },
+        "status": {
+          "description": "Explains airing status of serial",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "type": "string",
+              "enum": [ "Aired", "Airing", "Planned", "TBA", "Unknown" ]
+            },
+            "id_ID": {
+              "type": "string",
+              "enum": [ "Ditayangkan", "Mengudara", "Direncanakan", "Akan Diumumkan", "Tidak Diketahui"]
+            }
+          },
+          "required": [ "en_US", "id_ID"],
+          "additionalProperties": false
+        },
+        "serialGenre": {
+          "description": "Genre(s) of the serial",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "type":"array",
+              "contains": {
+                "enum": [ "Action", "Adventure", "Biography", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "History", "Horror", "Music", "Musical", "Mystery", "Romance", "Sci-Fi", "Sport", "Thriller", "War" ]
+              }
+            },
+            "id_ID": {
+              "type":"array",
+              "contains": {
+                "enum": [ "Aksi", "Petualangan", "Biografi", "Komedi", "Kriminalitas", "Dokumentasi", "Drama", "Fantasi", "Sejarah", "Horror", "Musik", "Musikal", "Misteri", "Romansa", "Sci-Fi", "Olahraga", "Thriller", "Peperangan" ]
+              }
+            }
+          },
+          "required": [ "en_US", "id_ID"],
+          "additionalProperties": false
+        },
+        "serialTags": {
+          "description": "Tag(s) of the serial. Basically its more like specific genre",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "$id": "#tags",
+              "oneOf": [ {"type":"string"}, {"type":"array"}, {"type":"null"} ]
+            },
+            "id_ID": {
+              "$ref": "#tags"
+            }
+          },
+          "required": [ "en_US", "id_ID" ],
+          "additionalProperties": false
+        },
+        "releaseSeason": {
+          "description": "Season of serial aired",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "type": "string",
+              "enum": [ "Winter", "Spring", "Summer", "Fall", "Unknown"]
+            },
+            "id_ID": {
+              "type": "string",
+              "enum": [ "Dingin", "Semi", "Panas", "Gugur", "Tidak Diketahui" ]
+            },
+            "ja_JP": {
+              "type": "string",
+              "enum": [ "冬", "春", "夏", "秋", "不明" ]
+            },
+            "ko_KR": {
+              "type": "string",
+              "enum": [ "겨울", "봄", "여름", "가을", "알" ]
+            },
+            "zh_Hans": {
+              "type": "string",
+              "enum": [ "冬天", "春天", "夏天", "秋天", "未知" ]
+            },
+            "zh_Hant": {
+              "type": "string",
+              "enum": [ "冬天", "春天", "夏天", "秋天", "未知" ]
+            }
+          },
+          "required": [ "en_US", "id_ID", "ja_JP", "ko_KR", "zh_Hans", "zh_Hant" ],
+          "additionalProperties": false
+        },
+        "releaseYear": {
+          "description": "Released Year of serial",
+          "oneOf": [ {"type": "number","minimum": 1900,"maximum": 2999}, {"type": "null"} ]
+        },
+        "episode": {
+          "$id": "#countNumeral",
+          "description": "Total episodes of serial",
+          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
+        },
+        "releaseDate": {
+          "$id": "#serialDate",
+          "description": "Releasing date of serial",
+          "oneOf": [ {"type":"string", "format": "date"}, {"type":"null"} ]
+        },
+        "endDate": {
+          "description": "Finished aring date of serial",
+          "$ref": "#serialDate"
+        },
+        "duration": {
+          "description": "Episode duration in minutes",
+          "$ref": "#countNumeral"
+        },
+        "totalDuration": {
+          "description": "Total serial duration in minutes",
+          "$ref": "#countNumeral"
+        },
+        "studio": {
+          "description": "Studio of serial",
+          "type": "string"
+        },
+        "rating": {
+          "description": "Content rating of the serial",
+          "oneOf": [ {"type": "string", "enum": ["G0+", "PS2+", "PG7+", "PG13+", "R18+", "GU21+"]}, {"type":"null"}]
+        },
+        "isNsfw": {
+          "description": "Mark the serial if not safe for work",
+          "type": "boolean"
+        },
+        "adaptation": {
+          "description": "Mark the serial if it's adapted from different source or not",
+          "type": "object",
+          "properties": {
+            "en_US": {
+              "oneOf": [{
+                "type": "string",
+                "enum": [ "Original", "Comic", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Game", "Music", "Drama", "4-koma", "Fairy Tale" ]
+              }, {
+                "type": "null"
+              }, {
+                "type": "array"
+              }]
+            },
+            "id_ID": {
+              "oneOf": [{
+                "type": "string",
+                "enum": [ "Orisinal", "Komik", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Gim", "Musik", "Drama", "4-panel", "Dongeng" ]
+              }, {
+                "type": "null"
+              }, {
+                "type": "array"
+              }]
+            }
+          },
+          "required": [ "en_US", "id_ID" ],
+          "additionalProperties": false
+        },
+        "country": {
+          "description": "Country of Origin",
+          "type": "object",
+          "properties": {
+            "en_US": {"type": "string"},
+            "id_ID": {"type": "string"}
+          },
+          "required": [ "en_US", "id_ID" ],
+          "additionalProperties": false
+        }
+      },
+      "required": ["synonyms", "type", "status", "serialGenre", "serialTags", "releaseSeason", "releaseYear", "episode", "releaseDate", "endDate", "duration", "totalDuration", "studio", "rating", "isNsfw", "adaptation", "country"]
+    },
+    "scores": {
+      "description": "Scores from several websites",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aniDB", "AniList", "AnimePlanet", "ANN", "aniSearch", "Annict", "IMDb", "KinoPoisk", "Kitsu", "LiveChart", "MyAnimeList", "MyShows", "Nautiljon", "Notify", "OtakOtaku", "Shikimori", "SIMKL", "TMDB", "Trakt", "TVTime"],
+      "properties": {
+        "aniDB": {
+          "description": "Score from https://anidb.net/",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$id": "#showId",
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
+            },
+            "score": {
+              "$id": "#score10.00",
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "AniList": {
+          "description": "Score from https://anilist.co",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$id": "#score100P",
+              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "AnimePlanet": {
+          "description": "Score from https://anime-planet.com",
+          "type": "object",
+          "properties": {
+            "url": {
+              "$id": "#showUrl",
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?|wss?|ftp)://"
+              }, {
+                "type": "null"
+              }]
+            },
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 5.000 }, {"type":"null"}]
+            }
+          },
+          "required": ["url", "score"],
+          "additionalProperties": true
+        },
+        "ANN": {
+          "description": "Score from https://animenewsnetwork.com",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$id": "#score10.000",
+              "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 10.000 }, {"type":"null"}]
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "aniSearch": {
+          "description": "Score from https://anisearch.com",
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#showUrl"
+            },
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score100P"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": true
+        },
+        "Annict": {
+          "description": "Score from https://annict.com",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$id": "#score100.00P",
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "IMDb": {
+          "description": "Score from https://imdb.com",
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "pattern": "^tt?[0-9]{5,}"
+            },
+            "score": {
+              "$id": "#score10.0",
+              "oneOf": [{"type":"number", "minimum": 0.0, "maximum": 10.0 }, {"type":"null"}]
+            }
+          },
+          "required": ["code", "score"],
+          "additionalProperties": false
+        },
+        "KinoPoisk": {
+          "description": "Score from https://kinopoisk.ru",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.000"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "Kitsu": {
+          "description": "Score from https://kitsu.io",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "oneOf": [{"type":"string" }, {"type":"null"}]
+            },
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score100.00P"
+            }
+          },
+          "required": ["id", "score"],
+          "dependencies": {
+            "id": ["slug"]
+          },
+          "additionalProperties": false
+        },
+        "LiveChart": {
+          "description": "Score from https://livechart.me",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "MyAnimeList": {
+          "description": "Score from https://myanimelist.net",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "MyShows": {
+          "description": "Score from https://en.myshows.me",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 5.00 }, {"type":"null"}]
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "Nautiljon": {
+          "description": "Score from http://nautiljon.com",
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#showUrl"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["url", "score"],
+          "additionalProperties": false
+        },
+        "Notify": {
+          "description": "Score from https://notify.moe",
+          "type": "object",
+          "properties": {
+            "base64": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_\\-]"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["base64", "score"],
+          "additionalProperties": false
+        },
+        "OtakOtaku": {
+          "description": "Score from http://otakotaku.com",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "Shikimori": {
+          "description": "Score from https://shikimori.org or https://shikimori.one",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "SIMKL": {
+          "description": "Score from https://simkl.com",
+           "type": "object",
+           "properties": {
+             "id": {
+               "$ref": "#showId"
+             },
+             "score": {
+               "$ref": "#score10.0"
+             }
+           },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        },
+        "TMDB": {
+          "description": "Score from https://themoviedb.org",
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#showUrl"
+            },
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score100P"
+            }
+          },
+          "required": ["url", "score"],
+          "dependencies": {
+            "id": ["url"]
+          },
+          "additionalProperties": true
+        },
+        "Trakt": {
+          "description": "Score from https://trakt.tv",
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#showUrl"
+            },
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score100P"
+            }
+          },
+          "required": ["url", "score"],
+          "dependencies": {
+            "id": ["url"]
+          },
+          "additionalProperties": true
+        },
+        "TVTime": {
+          "description": "Score from https://www.tvtime.com/en",
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#showId"
+            },
+            "score": {
+              "$ref": "#score10.00"
+            }
+          },
+          "required": ["id", "score"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "updatedDate": {
+      "description": "Date and time of latest changes to JSON. Based on ISO 8601",
+      "type": "string",
+      "format": "date-time",
+      "examples": [
+        {
+          "updatedDate": "2020-05-05T16:54:42+07:00"
+        }
+      ]
+    },
+    "fansub": {
+      "type": "object",
+      "required": ["idn", "eng"],
+      "properties": {
+        "idn": {
+          "type": "object",
+          "properties": {
+            "Aibou": {
+              "$id": "#externalLink",
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?|wss?|ftp)://"
+              }, {
+                "type": "null"
+              }]
+            }
+          },
+          "required":["Aibou","Aizukara","AWSubs","Bentoo","Caramel","Cijanepoi","Conan","DAnimeSubs","Del","DNFI","Durandal","EmotPekmen","Excalibur","Gantz","Gin","Haruna","Haruzora","Hopper","HunterNoSekai","IA","Inazumaotoshi","Indis","Inform0930","Isekai","Ito","Junk","Kazefuri","Kinshiru","KO","Kopaja","LCC","MangaNekoTranslation","Meitanteibayoo","Melody","Mite","Nanairo","NgidolYuk","Neo","OPLovers","Ougi","Panagayan","Pendekar","Pucuk","Quinime","RevieXion","Samehadaku","SilverYasha","Sora","TTOD","Vedify","Warung","Wibu","Yuki","Zen"],
+          "additionalProperties": {"$ref": "#externalLink"}
+        },
+        "eng": {
+          "type": "object",
+          "properties": {
+            "Horrible": {
+              "$ref": "#externalLink"
+            }
+          },
+          "required": ["Horrible"],
+          "additionalProperties": {"$ref": "#externalLink"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "fanshare": {
+      "type": "object",
+      "required": ["idn", "eng"],
+      "properties": {
+        "idn": {
+          "type": "object",
+          "properties": {
+            "AniBatch": { "$ref": "#externalLink"}
+          },
+          "required":["AniBatch","Bakacan","Drivenime","Hinime","Koenime","Kusonime","Mikanime","Moenime","WibuDesu"],
+          "additionalProperties": { "$ref": "#externalLink" }
+        },
+        "eng": {
+          "type": "object",
+          "properties": {
+            "AnimeKayo": {
+              "$ref": "#externalLink"
+            }
+          },
+          "required": ["AnimeKayo"],
+          "additionalProperties": {"$ref": "#externalLink"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "fanstream": {
+      "type": "object",
+      "required": ["idn", "eng"],
+      "properties": {
+        "idn": {
+          "type": "object",
+          "properties": {
+            "AnimeIndoNET": { "$ref": "#externalLink"}
+          },
+          "required":["AnimeIndoNET", "anoBoy", "Gomunime", "Moeclip", "Neonime", "Onnime"],
+          "additionalProperties": { "$ref": "#externalLink" }
+        },
+        "eng": {
+          "type": "object",
+          "properties": {
+            "4anime": {
+              "$ref": "#externalLink"
+            }
+          },
+          "required": ["4anime", "9anime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "DaiWEEB", "GogoAnime", "KissAnime", "WonderfulSubs"],
+          "additionalProperties": {"$ref": "#externalLink"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "library": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#externalLink"},
+      "required": ["Nyaa", "PerpusIndo", "Shallty"],
+      "properties": {
+        "Nyaa": { "$ref": "#externalLink" }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["title", "backdrop", "visualKey", "synopsis", "information", "scores", "updatedDate", "fansub", "fanshare", "fanstream", "library"]
+}
