@@ -729,11 +729,11 @@
         "eng": {
           "type": "object",
           "properties": {
-            "4anime": {
+            "fourAnime": {
               "$ref": "#externalLink"
             }
           },
-          "required": ["4anime", "9anime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "DaiWEEB", "GogoAnime", "KissAnime", "WonderfulSubs"],
+          "required": ["fourAnime", "nineAnime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "DaiWEEB", "GogoAnime", "KissAnime", "WonderfulSubs"],
           "additionalProperties": {"$ref": "#externalLink"}
         }
       },
