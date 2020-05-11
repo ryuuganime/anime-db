@@ -1,0 +1,393 @@
+---
+title:
+  native: 僕のヒーローアカデミア
+  en_Latn: Boku no Hero Academia
+  ar_001: أكاديميتي للأبطال
+  hu_HU: Hősakadémia
+  he_IL: אקדמיית הגיבורים שלי
+  id_ID: Pahlawanku Academia
+  en_US: My Hero Academia
+  ja_JP: 僕のヒーローアカデミア
+  de_DE: Boku no Hero Academia
+  ko_KR: 나의 히어로 아카데미아
+  fr_FR: My Hero Academia
+  pt_PT: Minha Academia de Heróis
+  ru_RU: Моя геройская академия
+  es_ES: My Hero Academia
+  zh_Hans: 我的英雄学院
+  zh_Hant: 我的英雄學院
+  vi_VN: Học Viện Siêu Anh Hùng
+backdrop: https://artworks.thetvdb.com/banners/fanart/original/305074-11.jpg
+visualKey: https://artworks.thetvdb.com/banners/posters/305074-5.jpg
+synopsis:
+  ar_001: إيزوكو ميدوريا كان مجرد تلميذ عادي في المرحلة المتوسطة في عالم يسكنه أناس
+    غير عاديين لديهم قوى خارقه للطبيعه كأبطال المجلات المصورة الأمريكية، لطالما أراد
+    أن يكون بطلاً على الرغم من أن زملاءه يسخرون منه و يتنمرون عليه لأنه لا يمتلك قوة
+    خارقه للطبيعه، في أحد الأيام شاهد وحش شرير يهاجم صديق طفولته كاتوسكي فتدخل ايزوكو
+    وأنقذه، أقوى بطل خارق في العالم أوول مايت شاهد ايزوكو و أعجب بشجاعته فطلب منه
+    وراثه قوته الخارقة و ساعده بعد ذلك على الاندراج في أكاديمية يو إيه التي تتخصص
+    في تخريج أبطال خارقين
+  hu_HU: 
+  he_IL: בנקודה מסויימת בהיסטוריה, האנושות החלה לפתח לעצמה כוחות על-טבעיים, כאשר 80%
+    מהאוכלוסיה רכשו את אותן היכולות. תופעה זו הובילה לעלייתם של גיבורי על ונבלים הנאבקים
+    זה בזה, ובכדי לשמר את הסדר הציבורי, נפתחו מוסדות שונים להכשרת הגיבורים לעתיד.
+    איזוקו מידוריה שואף להפוך לגיבור ולהתקבל לתיכון היוקרתי לגיבורים "יו.איי", אך
+    לצערו הוא משתייך ל-20% מהאוכלוסיה ללא התכונות האינדיבידואליות. יחד עם זאת, אין
+    בכוונתו לוותר על חלומו, ומצבו מקבל תפנית כאשר הוא פוגש בגיבור העל "אול-מייט" אשר
+    מסכים להכשירו.
+  id_ID: |-
+    Midoriya Izuku hanya seorang siswa biasa yang hidup di dunia dimana banyak orang memiliki kekuatan super yang disebut dengan "Quirk" (Kosei). Meskipun tidak memiliki kekuatan super, namun ia bermimpi suatu hari nanti bisa menjadi hero (pahlawan).
+    Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seorang pahlawan terkuat bernama All Might memberikan kekuatan padanya. Setelah kejadian itu, Izuku melanjutkan sekolah di SMA Yuuei (U.A), sebuah sekolah khusus yang mendidik para calon hero masa depan.
+  en_US: Mankind has developed superpowers known as "Quirks" with 80% of the population
+    having some kind of superpower. These new abilities see the rise of both superheroes
+    and villains. A prestigious school known as the The Hero Academy trains superpowered
+    hopefuls into the heroes the world needs. Middle school student Izuku Midoriya
+    wants to be a hero more than anything, but he's part the 20% without a Quirk.
+    Unwilling to give up his dream, he plans to take the exam and be accepted into
+    a high school for budding heroes. Through a series of serendipitous events, he
+    catches the eye of the greatest hero, All Might, who agrees to train him.
+  ja_JP: 事の始まりは中国、軽慶市。『発光する赤児が産まれた』というニュースだった。 以降各地で「超常」は発見され、いつしか「超常」は「日常」に、「架空(ゆめ)」は「現実」となった。
+    世界総人口の約八割が何らかの「特異体質」である現在、個性を悪用する敵(ヴィラン)により混乱渦巻く世の中で、かつて誰もが空想し憧れた一つの職業が、脚光を浴びていた。そう、「ヒーロー」と呼ばれる職業である！
+    主人公である「緑谷出久」(通称デク)もまた、将来ヒーローになりたいと願う少年。 しかし彼は、今の世の中では珍しい完全な「無個性」の人間だった。 高校入試を控え、夢と現実の間で悩むデクは、ふとしたきっかけからトップヒーローである「オールマイト」と出会う。
+    オールマイトにヒーローの素質を見出されたデクは、１０ヶ月に及ぶ特訓の末に彼の”譲渡する個性”「ワン・フォー・オール」を引継ぐ。 ぶっつけ本番で挑んだ実技入試において、同会場で知り合った少女「麗日お茶子」のピンチを救おうと飛び出した勇気が認められ、デクは見事憧れの名門「雄英高校」に合格する。
+  de_DE: 'Izuku ist ein schwächlicher „Normalo“. In einer Welt, in der die Mehrzahl
+    der Menschen mit übermenschlichen Fähigkeiten geboren werden, besitzt er leider
+    überhaupt keine angeborene „Spezialität“. Trotzdem möchte er ein Superheld werden
+    und andere Menschen retten – so wie sein großes Idol „All Might“ - der mächtigste
+    aller Superhelden. Izuku hat Glück: All Might nimmt ihn unter seine Fittiche und
+    macht Izuku für die superschwere Aufnahmeprüfung an der elitären Hero Academy
+    fit.'
+  ko_KR: 가공의 세계가 현실로!이것은 내가 최고의 히어로가 되기까지의 이야기다.시작은 중국의 경경 시에서 빛을 내뿜는 아기가 태어났다는 뉴스였다.
+    이후에 각지에서 초현실적 현상이 발견되고 원인도 밝혀지지 않은 채 세월이 흐른다.세계 총인구의 80%가 어떤 형태로든 특이체질인 초인사회가
+    된 현재.선천적으로 타고난 특별한 힘인 ‘개성’을 악용하는 범죄자 ‘빌런’이 갈수록 늘어난다. 이에 마찬가지로 ‘개성’을 가진 자들이 ‘히어로’로서
+    빌런과 재해에 맞서며 사람들을 구하는 사회를 확립한다.일찍이 누구나 상상하며 동경하는 ‘히어로’가 현실이 된 세계에서 미도리야 이즈쿠도 히어로가
+    되는 것을 꿈꾼다. 유명한 히어로를 다수 배출한 유에이 고교에 입학을 목표로 삼고 있지만 아무런 특이체질도 아닌 ‘무개성’의 낙오자로 절망에
+    빠진다. 그러던 어느 날, 자신이 가장 동경하는 최고의 히어로 올마이트를 우연히 만난 것을 계기로 운명을 크게 바꾸게 된다. 친구, 스승,
+    라이벌, 빌런... 가지각색의 인물, 수많은 시련과 마주하면서 미도리야 이즈쿠는 최고의 히어로가 되기 위해 성장해 간다. 신세대의 열띤 히어로
+    스토리가 지금 시작된다!
+  fr_FR: Dans un monde où le paranormal est normal, où l'humanité est souvent menacée
+    par l'attaque de divers monstres, chaque humain est doté d'un pouvoir particulier
+    nommé "Alters". Grâce à celui-ci, devenir un héros n'est pas impossible pour eux.
+    Le manga suit les aventures d'Izuku Midoriya, l'un des rares humains ne possédant
+    pas d'alter, qui rêve pourtant de rejoindre la filière super-héroïque du grand
+    lycée Yūei et de devenir un jour un grand héros.
+  pt_PT: 'Por toda a sua vida, Izuku sonhou ser um heroi, um objetivo ambicioso para
+    qualquer um, mas especialmente desafiador para um garoto sem superpoderes. Isso
+    mesmo: em um mundo onde 80% da população tem algum tipo de Dom especial, Izuku
+    teve a má sorte de nascer completamente normal. Mas isso não vai impedi-lo de
+    se matricular em uma das academias de herois mais prestigiosas do mundo.'
+  ru_RU: Четырнадцатилетний Идзуку Мидория рано осознал, что люди не рождаются равными.
+    А пришло это понимание, когда его начали дразнить одноклассники, одарённые особой
+    силой. Несмотря на то, что большинство людей в этом мире рождаются с необычными
+    способностями, Идзуку оказался среди тех немногих, кто напрочь их лишён. Однако
+    это не стало помехой для мальчика в стремлении стать таким же легендарным героем,
+    как Всемогущий. Для осуществления мечты, Идзуку, не без помощи своего кумира,
+    поступает в самую престижную академию героев — Юэй, но это, как известно, лишь
+    начало его удивительных приключений.
+  es_ES: En un mundo en el que la mayor parte de la población nace con un Don, una
+    habilidad extraordinaria diferente en cada cual, no tardaron en aparecer tanto
+    villanos como héroes dispuestos a detenerlos. Con el tiempo los héroes pasaron
+    a ser funcionarios del gobierno, estando regulados y viviendo de su trabajo, además
+    de convertirse en objeto de admiración de muchos. Ahora, ser héroe es el sueño
+    de la gran mayoría de niños, que esperan desde muy pequeños a que su Don se manifieste
+    para comenzar a entrenar y soñar con convertirse en los héroes número uno.
+  zh_Hans: 这个世界从某一天开始，新生的人们突然开始展现出名为「个性」的特殊能力，本该只出现在架空故事中的超能力者成为现实的存在，让整个人类社会陷入变化与动盪。在一片混乱之际，心怀邪念的人开始以「个性」为非作歹，而就在政府对这些突如其来的灾祸束手无策之际，身负力量与正义感的人开始如同超人漫画般的揭竿而起，展现正义的「英雄」也相继而生。现今，有五分之四的人都拥有「个性」的超人社会俨然成形，为了对抗滥用「个性」於犯罪用途的罪犯，政府将英雄定位为特殊的公务职员，依其功绩给予报酬。丰厚的报酬与体现正义的荣耀，加上享有民众的声援与支持，英雄成为所有人嚮往的最棒职业。
+    主角绿谷出久是个没有个性的少年，但他仍憧憬并渴望成为一位英雄，也期望自己能进入培育英雄的菁英学校雄英高校就读。但周围的人都不看好没有个性的他能成为英雄，让他总是在他人的嘲笑与轻视中度过。直到他遇上了自己最仰慕的英雄，被人称为「和平的象徵」的欧尔麦特，他的梦想将因此获得会化为现实的可能性。
+  zh_Hant: 這個世界從某一天開始，新生的人們突然開始展現出名為「個性」的特殊能力，本該只出現在架空故事中的超能力者成為現實的存在，讓整個人類社會陷入變化與動盪。在一片混亂之際，心懷邪念的人開始以「個性」為非作歹，而就在政府對這些突如其來的災禍束手無策之際，身負力量與正義感的人開始如同超人漫畫般的揭竿而起，展現正義的「英雄」也相繼而生。現今，有五分之四的人都擁有「個性」的超人社會儼然成形，為了對抗濫用「個性」於犯罪用途的罪犯，政府將英雄定位為特殊的公務職員，依其功績給予報酬。豐厚的報酬與體現正義的榮耀，加上享有民眾的聲援與支持，英雄成為所有人嚮往的最棒職業。
+    主角綠谷出久是個沒有個性的少年，但他仍憧憬並渴望成為一位英雄，也期望自己能進入培育英雄的菁英學校雄英高校就讀。但周圍的人都不看好沒有個性的他能成為英雄，讓他總是在他人的嘲笑與輕視中度過。直到他遇上了自己最仰慕的英雄，被人稱為「和平的象徵」的歐爾麥特，他的夢想將因此獲得會化為現實的可能性。
+  vi_VN: Trong thế giới mà 80% dân số đều sở hữu những khả năng đặc biệt được gọi
+    là "Quirks" (cá tính) và nó đã chuẩn mực của xã hội. Thông thường các nhân vật
+    anh hùng sẽ có vẻ ngoài soái khí ngời ngời, nhưng Midoriya Izuku, một học sinh
+    cấp 2 lại là ngoại lệ. Mặt cậu có quá nhiều tàn nhang, tóc hình con nhím có chút
+    quê mùa khó tả. Thậm chí khi câu chuyện mới bắt đầu, cậu còn không có cá tính
+    gì nổi bật, bị bạn bè bắt nạt vì không có năng lực, nói chung khá là thảm hại.
+    Tuy nhiên, Midoriya Izuku vẫn thu hút khán giả bởi tính cách lạc quan, yêu đời,
+    thích giúp đỡ người khác. Cậu có ước mơ trở thành một anh hùng (ヒーロー Hīrō). Cứ
+    tưởng chừng không có cơ hội để thực hiện mơ ước, All Might, anh hùng số một thế
+    giới và cũng là thần tượng của Izuku, đã ban cho cậu năng lực "One for All". Câu
+    chuyện theo chân Izuku cùng với những người bạn mới tại Học viện U.A, ngôi trường
+    danh tiếng đào đạo các hệ anh hùng tương lai.
+information:
+  synonyms:
+    en_Latn:
+    - Boku no hîrô akademia
+    ar_001:
+    - أبطال الغد
+    - أكاديمية بطلي
+    hu_HU: 
+    he_IL: 
+    id_ID:
+    - Bokuaka
+    en_US:
+    - BNHA
+    - heroaca
+    ja_JP:
+    - ヒロアカ
+    de_DE: 
+    ko_KR: 
+    fr_FR: 
+    pt_PT: 
+    ru_RU:
+    - Моята академия на героите
+    es_ES: 
+    zh_Hans: 
+    zh_Hant: 
+    vi_VN: 
+  type:
+    en_US: TV
+    id_ID: Serial TV
+  status:
+    en_US: Aired
+    id_ID: Ditayangkan
+  serialGenre:
+    en_US:
+    - Action
+    - Adventure
+    - Comedy
+    - Fantasy
+    - Sci-Fi
+    - Drama
+    id_ID:
+    - Aksi
+    - Petualangan
+    - Komedi
+    - Fantasi
+    - Sci-Fi
+    - Drama
+  serialTags:
+    en_US:
+    - Superhero
+    - Superpower
+    - Shounen
+    - School Life
+    - High School
+    - Martial Arts
+    - Future
+    - Monster
+    - Psi-Powers
+    - Slapstick
+    - Present
+    - Revenge
+    - Teamwork
+    - Training
+    - Bullying
+    - Violence
+    - Fighting
+    - Competition
+    id_ID:
+    - Pahlawan Super
+    - Kekuatan Super
+    - Shounen
+    - Kehidupan Sekolah
+    - SMA
+    - Bela Diri
+    - Masa Depan
+    - Monster
+    - Kekuatan Psikis
+    - Dagelan
+    - Sekarang
+    - Balas Dendam
+    - Kerja Tim
+    - Pelatihan
+    - Pembulian
+    - Kekerasan
+    - Perkelahian
+    - Kompetisi
+  releaseSeason:
+    en_US: Spring
+    id_ID: Semi
+    ja_JP: 春
+    ko_KR: 봄
+    zh_Hans: 春天
+    zh_Hant: 春天
+  releaseYear: 2016
+  episode: 13
+  releaseDate: '2016-04-03'
+  endDate: '2016-06-26'
+  duration: 24
+  totalDuration: 312
+  studio: Bones
+  rating: PG13+
+  isNsfw: false
+  adaptation:
+    en_US: Manga
+    id_ID: Manga
+  country:
+    en_US: Japan
+    id_ID: Jepang
+scores:
+  aniDB:
+    id: 11739
+    score: 7.67
+  AniList:
+    id: 21459
+    score: 81
+  AnimePlanet:
+    url: https://www.anime-planet.com/anime/my-hero-academia
+    id: 7585
+    score: 4.515
+  ANN:
+    id: 17786
+    score: 8.218
+  aniSearch:
+    url: https://www.anisearch.com/anime/10978,my-hero-academia
+    id: 10978
+    score: 82
+  Annict:
+    id: 4616
+    score: 83.93
+  IMDb:
+    code: tt5626028
+    score: 8.5
+  KinoPoisk:
+    id: 975897
+    score: 7.651
+  Kitsu:
+    slug: boku-no-hero-academia
+    id: 11469
+    score: 84.69
+  LiveChart:
+    id: 1895
+    score: 8.45
+  MyAnimeList:
+    id: 31964
+    score: 8.29
+  MyShows:
+    id: 48577
+    score: 4.49
+  Nautiljon:
+    url: https://www.nautiljon.com/animes/boku+no+hero+academia.html
+    score: 8.83
+  Notify:
+    base64: 9iIjtFiig
+    score: 8.38
+  OtakOtaku:
+    id: 245
+    score: 8.2
+  Shikimori:
+    id: 31964
+    score: 8.29
+  SIMKL:
+    id: 532942
+    score: 8.5
+  TMDB:
+    url: https://www.themoviedb.org/tv/65930
+    id: 65930
+    score: 
+  Trakt:
+    url: https://trakt.tv/shows/my-hero-academia
+    id: 104311
+    score: 87
+  TVTime:
+    id: 305074
+    score: 9.68
+updatedDate: '2020-05-09T19:20:07+07:00'
+fansub:
+  idn:
+    Aibou: 
+    Aizukara: 
+    Allsub: 
+    Alter: 
+    AnimeGokil: 
+    AniToki: 
+    AoiTenshi: 
+    Arks: 
+    ASubs: 
+    AWSubs: https://awsubs.co/anime/boku-no-hero-academia/
+    Bentoo: https://bentoosubs.blogspot.com/2017/04/boku-no-hero-academia-bluray-batch.html
+    Caramel: 
+    Cijanepoi: 
+    Conan: 
+    DAnimeSubs: 
+    Del: 
+    DNFI: 
+    Durandal: 
+    EmotPekmen: 
+    Excalibur: 
+    Gantz: 
+    Gin: http://www.ginsub.net/p/boku-no-hero-academia-subtitle-indonesia.html
+    Haruna: 
+    Haruzora: 
+    Hopper: 
+    HunterNoSekai: 
+    IA: 
+    Inazumaotoshi: 
+    Indis: 
+    Inform0930: 
+    Isekai: 
+    Ito: 
+    Junk: 
+    Kazefuri: 
+    Kinshiru: 
+    KO: 
+    Kopaja: 
+    LCC: 
+    MangaNekoTranslation: 
+    Meitanteibayoo: 
+    Melody: 
+    Mite: 
+    Nanairo: 
+    NgidolYuk: 
+    Neo: 
+    OPLovers: https://www.oploverz.in/series/boku-no-hero-academia/
+    Ougi: 
+    Panagayan: 
+    Pendekar: 
+    Pucuk: 
+    Quinime: 
+    RevieXion: 
+    Samehadaku: 
+    SilverYasha: 
+    Sora: 
+    TTOD: 
+    Vedify: 
+    Warung: 
+    Wibu: 
+    Yuki: 
+    Zen: 
+  eng:
+    Horrible: https://horriblesubs.info/shows/boku-no-hero-academia/
+fanshare:
+  idn:
+    AniBatch: https://www.anibatch.me/?s=Boku%20no%20Hero%20Academia
+    AnimeKompi: 
+    AnimeSAVE: http://www.animesave.com/boku-no-hero-academia-subtitle-indonesia/
+    Bakacan: https://bakacan.id/anime/boku-no-hero-academia/
+    Drivenime: https://drivenime.com/boku-no-hero-academia-subtitle-indo/
+    Hinime: https://hinime.com/boku-no-hero-academia-seaso1-sub-indo/
+    Koenime: https://www.koenime.com/bokuhero-sub-indo/
+    Kusonime: https://kusonime.com/bokuaka-sub-indo/
+    Mikanime: https://mikanime.com/boku-no-hero-academia-s1-sub-indo/
+    Moenime: https://moenime.web.id/bokuhiro-s1-sub-indo/
+    Ryuukoi: https://ryuukoi.web.id/anime/boku-no-hero-academia/
+    WibuDesu: https://wibudesu.com/bnhabdsubid/
+  eng:
+    AnimeKayo: https://animekayo.com/anime-series/boku-no-hero-academia-720p-10bit-bd-dual-audio-hevc/
+fanstream:
+  idn:
+    AnimeIndoNET: http://animeindo.moe/anime/boku-no-hero-academia
+    anoBoy: https://anoboy.us/anime/boku-no-hero-academia/
+    Gomunime: 
+    Moeclip: https://moeclip.com/anime/bokuhiro-s1-sub-indo/
+    Neonime: https://neonime.org/tvshows/boku-no-hero-academia-subtitle-indonesia/
+    Onnime: https://onnime.net/anime/boku-no-hero-academia.dzqRERZ1/
+    OtakuIndo: https://otakuindo.org/nonton/boku-hero-s1-sub-indo/
+  eng:
+    4anime: https://4anime.to/anime/boku-no-hero-academia
+    9anime: https://9anime.ru/watch/boku-no-hero-academia.jvl2
+    AnimeDaisuki: https://animedaisuki.moe/anime/4/boku-no-hero-academia
+    AnimeTwist: https://twist.moe/a/boku-no-hero-academia/1
+    Animeflix: https://animeflix.io/shows/boku-no-hero-academia
+    AnimeHeaven: https://animeheaven.ru/detail/boku-no-hero-academia-sub.98579
+    Animelon: https://animelon.com/series/Boku%20no%20Hero%20Academia%20(My%20Hero%20Academia)
+    Animeultima: https://www1.animeultima.to/a/boku-no-hero-academia_791758
+    AnimeXD: 
+    AniWatch: https://aniwatch.me/anime/119
+    DaiWEEB: 
+    GogoAnime: https://gogoanimes.co/category/boku-no-hero-academia
+    KissAnime: http://kissanime.ru/Anime/Boku-no-Hero-Academia-My-Hero-Academia
+    WonderfulSubs: https://beta.wonderfulsubs.com/watch/myheroacademia
+library:
+  Nyaa: https://nyaa.si/?f=0&c=0_0&q=Boku+no+Hero+Academia
+  PerpusIndo: https://www.perpusindo.info/anime/31964
+  Shallty: https://shallty.moe/browse?search=Boku%20no%20Hero%20Academia
