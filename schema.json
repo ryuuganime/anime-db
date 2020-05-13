@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Ryuuganime Entry",
-  "description": "Anime Entry of Ryuuganime",
+  "title": "Ryuuganime JSON Schema for Anime Database, v.2-b",
+  "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
   "type": "object",
   "properties": {
     "title": {
@@ -14,102 +14,133 @@
         },
         "en_Latn": {
           "description": "A serial title in romanizated form",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[\\w\\s\\S]+$"
         },
         "ar_001": {
-          "$id": "#title",
           "description": "A serial title in Modern Standard Arabic",
-          "oneOf": [ {"type": "string"}, {"type": "null"} ]
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+$"}, {"type": "null"} ]
         },
         "hu_HU": {
-          "$ref": "#title",
-          "description": "A serial title in Hungarian"
+          "description": "A serial title in Hungarian",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+$"}, {"type": "null"} ]
         },
         "he_IL": {
-          "$ref": "#title",
-          "description": "A serial title in Israel Hebrew"
+          "description": "A serial title in Israel Hebrew",
+          "oneOf": [ {"type": "string", "pattern": "^[\u0590-\u05ff\\w\\s\\S]+$"}, {"type": "null"} ]
         },
         "id_ID": {
-          "$ref": "#title",
-          "description": "A serial title in Indonesian"
+          "description": "A serial title in Indonesian",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+$"}, {"type": "null"} ]
         },
         "en_US": {
-          "$ref": "#title",
-          "description": "A serial title in American English"
+          "description": "A serial title in American English",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+$"}, {"type": "null"} ]
         },
         "ja_JP": {
-          "$ref": "#title",
-          "description": "A serial title in Japanese"
+          "description": "A serial title in Japanese",
+          "oneOf": [ {"type": "string", "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+$"}, {"type": "null"} ]
         },
         "de_DE": {
-          "$ref": "#title",
-          "description": "A serial title in German"
+          "description": "A serial title in German",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SöäüÖÄÜß]+$"}, {"type": "null"} ]
         },
         "ko_KR": {
-          "$ref": "#title",
-          "description": "A serial title in Korean"
+          "description": "A serial title in Korean",
+          "oneOf": [ {"type": "string", "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+$"}, {"type": "null"} ]
         },
         "fr_FR": {
-          "$ref": "#title",
-          "description": "A serial title in French"
+          "description": "A serial title in French",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+$"}, {"type": "null"} ]
         },
         "pt_PT": {
-          "$ref": "#title",
-          "description": "A serial title in Portuguese"
+          "description": "A serial title in Portuguese",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+$"}, {"type": "null"} ]
         },
         "ru_RU": {
-          "$ref": "#title",
-          "description": "A serial title in Russian"
+          "description": "A serial title in Russian",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\u0400-\u04FF]+$"}, {"type": "null"} ]
         },
         "es_ES": {
-          "$ref": "#title",
-          "description": "A serial title in Spain Spanish"
+          "description": "A serial title in Spain Spanish",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SÀ-ÿ]+$"}, {"type": "null"} ]
         },
         "zh_Hans": {
-          "$ref": "#title",
-          "description": "A serial title in Simplified Chinese"
+          "description": "A serial title in Simplified Chinese",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"}, {"type": "null"} ]
         },
         "zh_Hant": {
-          "$ref": "#title",
-          "description": "A serial title in Traditional Chinese"
+          "description": "A serial title in Traditional Chinese",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"}, {"type": "null"} ]
         },
         "vi_VN": {
-          "$ref": "#title",
-          "description": "A serial title in Vietnamese"
+          "description": "A serial title in Vietnamese",
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{VN}]+$"}, {"type": "null"} ]
         }
       },
       "required": [ "native", "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
     },
     "backdrop": {
-      "$id": "#linkChecker",
       "description": "A backdrop/background image URL of serial",
       "type": "string",
       "format": "uri",
-      "pattern": "^(https?|wss?|ftp)://"
+      "pattern": "^(https?)\\:\\/\\/"
     },
     "visualKey": {
       "description": "A visual key/poster image URL of serial",
-      "$ref": "#linkChecker"
+      "type": "string",
+      "format": "uri",
+      "pattern": "^(https?)\\:\\/\\/"
     },
     "synopsis": {
       "description": "A synopsis/plot of story of serial in several languages. Based on ICU locales",
       "type": "object",
       "properties": {
-        "ar_001": { "$id": "#synopsis", "oneOf": [ {"type": "string", "minLength": 20}, {"type": "null"} ] },
-        "hu_HU": { "$ref": "#synopsis" },
-        "he_IL": { "$ref": "#synopsis" },
-        "id_ID": { "$ref": "#synopsis" },
-        "en_US": { "$ref": "#synopsis" },
-        "ja_JP": { "$ref": "#synopsis" },
-        "de_DE": { "$ref": "#synopsis" },
-        "ko_KR": { "$ref": "#synopsis" },
-        "fr_FR": { "$ref": "#synopsis" },
-        "pt_PT": { "$ref": "#synopsis"},
-        "ru_RU": { "$ref": "#synopsis" },
-        "es_ES": { "$ref": "#synopsis" },
-        "zh_Hans": { "$ref": "#synopsis" },
-        "zh_Hant": { "$ref": "#synopsis" },
-        "vi_VN": { "$ref": "#synopsis" }
+        "ar_001": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "hu_HU": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "he_IL": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\u0590-\u05ff\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "id_ID": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "en_US": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "ja_JP": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "de_DE": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SöäüÖÄÜß]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "ko_KR": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "fr_FR": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "pt_PT": { 
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "ru_RU": {
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\u0400-\u04FF]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "es_ES": {
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SÀ-ÿ]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "zh_Hans": {
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "zh_Hant": {
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+", "minLength": 20}, {"type": "null"} ]
+        },
+        "vi_VN": {
+          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{VN}]+", "minLength": 20}, {"type": "null"} ]
+        }
       },
       "required": [ "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
     },
@@ -121,22 +152,230 @@
           "description": "Serial title synonyms in several languages. Based on ICU locales",
           "type": "object",
           "properties": {
-            "en_Latn": { "$id": "#synonyms", "oneOf": [ {"type": "array"}, {"type": "null"} ] },
-            "ar_001": { "$ref": "#synonyms" },
-            "hu_HU": { "$ref": "#synonyms" },
-            "he_IL": { "$ref": "#synonyms" },
-            "id_ID": { "$ref": "#synonyms" },
-            "en_US": { "$ref": "#synonyms" },
-            "ja_JP": { "$ref": "#synonyms" },
-            "de_DE": { "$ref": "#synonyms" },
-            "ko_KR": { "$ref": "#synonyms" },
-            "fr_FR": { "$ref": "#synonyms" },
-            "pt_PT": { "$ref": "#synonyms" },
-            "ru_RU": { "$ref": "#synonyms" },
-            "es_ES": { "$ref": "#synonyms" },
-            "zh_Hans": { "$ref": "#synonyms" },
-            "zh_Hant": { "$ref": "#synonyms" },
-            "vi_VN": { "$ref": "#synonyms" }
+            "en_Latn": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ar_001": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "contains": {
+                        "type": "string",
+                        "pattern": "^[\\w\\s\\S\\W\\p{L}{Arabic}]+$"
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+            "hu_HU": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\WáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "he_IL": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\u0590-\u05ff\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "id_ID": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "en_US": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ja_JP": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "de_DE": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\WöäüÖÄÜß]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ko_KR": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S\\W]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fr_FR": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W«»À-Üà-øoù-ÿŒœ]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pt_PT": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\Wáâãàçéêíóôõú]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ru_RU": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W\u0400-\u04FF]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "es_ES": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\WÀ-ÿ]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "zh_Hans": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "zh_Hant": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "vi_VN":{
+              "oneOf": [
+                {
+                  "type": "array",
+                  "contains": {
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S\\W\\p{L}{VN}]+$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
           },
           "required": [ "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
         },
@@ -197,11 +436,10 @@
           "type": "object",
           "properties": {
             "en_US": {
-              "$id": "#tags",
-              "oneOf": [ {"type":"string"}, {"type":"array"}, {"type":"null"} ]
+              "oneOf": [ {"type":"array", "contains": {"type":"string", "pattern": "^[\\w\\s\\S]+$"}}, {"type":"null"} ]
             },
             "id_ID": {
-              "$ref": "#tags"
+              "oneOf": [ {"type":"array", "contains": {"type":"string", "pattern": "^[\\w\\s\\S]+$"}}, {"type":"null"} ]
             }
           },
           "required": [ "en_US", "id_ID" ],
@@ -241,29 +479,27 @@
         },
         "releaseYear": {
           "description": "Released Year of serial",
-          "oneOf": [ {"type": "number","minimum": 1900,"maximum": 2999}, {"type": "null"} ]
+          "oneOf": [ {"type": "number","minimum": 1000,"maximum": 2999}, {"type": "null"} ]
         },
         "episode": {
-          "$id": "#countNumeral",
           "description": "Total episodes of serial",
           "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
         },
         "releaseDate": {
-          "$id": "#serialDate",
           "description": "Releasing date of serial",
-          "oneOf": [ {"type":"string", "format": "date"}, {"type":"null"} ]
+          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
         },
         "endDate": {
           "description": "Finished aring date of serial",
-          "$ref": "#serialDate"
+          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
         },
         "duration": {
           "description": "Episode duration in minutes",
-          "$ref": "#countNumeral"
+          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
         },
         "totalDuration": {
           "description": "Total serial duration in minutes",
-          "$ref": "#countNumeral"
+          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
         },
         "studio": {
           "description": "Studio of serial",
@@ -329,11 +565,9 @@
           "type": "object",
           "properties": {
             "id": {
-              "$id": "#showId",
               "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$id": "#score10.00",
               "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
@@ -345,10 +579,9 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$id": "#score100P",
               "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
             }
           },
@@ -360,17 +593,16 @@
           "type": "object",
           "properties": {
             "url": {
-              "$id": "#showUrl",
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?|wss?|ftp)://"
+                "pattern": "^(https?)\\:\\/\\/www\\.anime-planet\\.com\\/anime\\/[a-z0-9\\-]+"
               }, {
                 "type": "null"
               }]
             },
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
               "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 5.000 }, {"type":"null"}]
@@ -384,10 +616,9 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$id": "#score10.000",
               "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 10.000 }, {"type":"null"}]
             }
           },
@@ -399,13 +630,19 @@
           "type": "object",
           "properties": {
             "url": {
-              "$ref": "#showUrl"
-            },
+              "oneOf": [{
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^(https?)\\:\\/\\/(www\\.anisearch|anisearch)(\\.com|\\.de)\\/anime\\/([0-9]+|[0-9]+,[\\w\\-])"
+                }, {
+                  "type": "null"
+                }]
+              },
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score100P"
+              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -416,10 +653,9 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$id": "#score100.00P",
               "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
             }
           },
@@ -435,7 +671,6 @@
               "pattern": "^tt?[0-9]{5,}"
             },
             "score": {
-              "$id": "#score10.0",
               "oneOf": [{"type":"number", "minimum": 0.0, "maximum": 10.0 }, {"type":"null"}]
             }
           },
@@ -447,10 +682,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.000"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -461,13 +696,13 @@
           "type": "object",
           "properties": {
             "slug": {
-              "oneOf": [{"type":"string" }, {"type":"null"}]
+              "oneOf": [{"type":"string", "pattern": "^[\\w\\-]+" }, {"type":"null"}]
             },
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score100.00P"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -481,10 +716,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -495,10 +730,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -509,7 +744,7 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
               "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 5.00 }, {"type":"null"}]
@@ -523,10 +758,16 @@
           "type": "object",
           "properties": {
             "url": {
-              "$ref": "#showUrl"
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/(www\\.nautiljon|nautiljon)\\.com\\/animes\\/[\\w\\+]+\\.html"
+              }, {
+                "type": "null"
+              }]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["url", "score"],
@@ -538,10 +779,10 @@
           "properties": {
             "base64": {
               "type": "string",
-              "pattern": "^[A-Za-z0-9_\\-]"
+              "pattern": "^[A-Za-z0-9_\\-]+"
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["base64", "score"],
@@ -552,10 +793,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -566,10 +807,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -580,10 +821,10 @@
            "type": "object",
            "properties": {
              "id": {
-               "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
              },
              "score": {
-               "$ref": "#score10.0"
+              "oneOf": [{"type":"number", "minimum": 0.0, "maximum": 10.0 }, {"type":"null"}]
              }
            },
           "required": ["id", "score"],
@@ -594,13 +835,19 @@
           "type": "object",
           "properties": {
             "url": {
-              "$ref": "#showUrl"
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/(www\\.themoviedb|themoviedb)\\.org\\/(movie|tv)\\/[0-9]+"
+              }, {
+                "type": "null"
+              }]
             },
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score100P"
+              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
             }
           },
           "required": ["url", "score"],
@@ -614,13 +861,18 @@
           "type": "object",
           "properties": {
             "url": {
-              "$ref": "#showUrl"
-            },
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/trakt\\.tv\\/(movies|shows)\\/([0-9]+|[\\w\\-]+)"
+              }, {
+                "type": "null"
+              }]            },
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score100P"
+              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
             }
           },
           "required": ["url", "score"],
@@ -634,10 +886,10 @@
           "type": "object",
           "properties": {
             "id": {
-              "$ref": "#showId"
+              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
             },
             "score": {
-              "$ref": "#score10.00"
+              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
             }
           },
           "required": ["id", "score"],
@@ -649,6 +901,7 @@
       "description": "Date and time of latest changes to JSON. Based on ISO 8601",
       "type": "string",
       "format": "date-time",
+      "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})\\+([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
       "examples": [
         {
           "updatedDate": "2020-05-05T16:54:42+07:00"
@@ -663,28 +916,49 @@
           "type": "object",
           "properties": {
             "Aibou": {
-              "$id": "#externalLink",
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?|wss?|ftp)://"
+                "pattern": "^(https?)\\:\\/\\/"
               }, {
                 "type": "null"
               }]
             }
           },
           "required":["Aibou","Aizukara","AWSubs","Bentoo","Caramel","Cijanepoi","Conan","DAnimeSubs","Del","DNFI","Durandal","EmotPekmen","Excalibur","Gantz","Gin","Haruna","Haruzora","Hopper","HunterNoSekai","IA","Inazumaotoshi","Indis","Inform0930","Isekai","Ito","Junk","Kazefuri","Kinshiru","KO","Kopaja","LCC","MangaNekoTranslation","Meitanteibayoo","Melody","Mite","Nanairo","NgidolYuk","Neo","OPLovers","Ougi","Panagayan","Pendekar","Pucuk","Quinime","RevieXion","Samehadaku","SilverYasha","Sora","TTOD","Vedify","Warung","Wibu","Yuki","Zen"],
-          "additionalProperties": {"$ref": "#externalLink"}
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         },
         "eng": {
           "type": "object",
           "properties": {
             "Horrible": {
-              "$ref": "#externalLink"
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/"
+              }, {
+                "type": "null"
+              }]
             }
           },
           "required": ["Horrible"],
-          "additionalProperties": {"$ref": "#externalLink"}
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         }
       },
       "additionalProperties": false
@@ -696,20 +970,50 @@
         "idn": {
           "type": "object",
           "properties": {
-            "AniBatch": { "$ref": "#externalLink"}
+            "AniBatch": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/"
+              }, {
+                "type": "null"
+              }]
+            }
           },
           "required":["AniBatch","Bakacan","Drivenime","Hinime","Koenime","Kusonime","Mikanime","Moenime","WibuDesu"],
-          "additionalProperties": { "$ref": "#externalLink" }
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         },
         "eng": {
           "type": "object",
           "properties": {
             "AnimeKayo": {
-              "$ref": "#externalLink"
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/"
+              }, {
+                "type": "null"
+              }]
             }
           },
           "required": ["AnimeKayo"],
-          "additionalProperties": {"$ref": "#externalLink"}
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         }
       },
       "additionalProperties": false
@@ -721,30 +1025,76 @@
         "idn": {
           "type": "object",
           "properties": {
-            "AnimeIndoNET": { "$ref": "#externalLink"}
+            "AnimeIndoNET": { 
+              "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
           },
           "required":["AnimeIndoNET", "anoBoy", "Gomunime", "Moeclip", "Neonime", "Onnime"],
-          "additionalProperties": { "$ref": "#externalLink" }
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         },
         "eng": {
           "type": "object",
           "properties": {
             "fourAnime": {
-              "$ref": "#externalLink"
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/"
+              }, {
+                "type": "null"
+              }]
             }
           },
           "required": ["fourAnime", "nineAnime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "DaiWEEB", "GogoAnime", "KissAnime", "WonderfulSubs"],
-          "additionalProperties": {"$ref": "#externalLink"}
+          "additionalProperties": {
+            "oneOf": [{
+              "type": "string",
+              "format": "uri",
+              "pattern": "^(https?)\\:\\/\\/"
+            }, {
+              "type": "null"
+            }]
+          }
         }
       },
       "additionalProperties": false
     },
     "library": {
       "type": "object",
-      "additionalProperties": {"$ref": "#externalLink"},
+      "additionalProperties": {
+        "oneOf": [{
+          "type": "string",
+          "format": "uri",
+          "pattern": "^(https?)\\:\\/\\/"
+        }, {
+          "type": "null"
+        }]
+      },
       "required": ["Nyaa", "PerpusIndo", "Shallty"],
       "properties": {
-        "Nyaa": { "$ref": "#externalLink" }
+        "Nyaa": {
+          "oneOf": [{
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
+          }, {
+            "type": "null"
+          }]
+        }
       }
     }
   },
