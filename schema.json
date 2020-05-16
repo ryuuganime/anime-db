@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Ryuuganime JSON Schema for Anime Database, v.2-b",
+  "title": "Ryuuganime JSON Schema for Anime Database, v.3-b",
   "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
   "type": "object",
   "properties": {
@@ -487,11 +487,11 @@
         },
         "releaseDate": {
           "description": "Releasing date of serial",
-          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
+          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
         },
         "endDate": {
           "description": "Finished aring date of serial",
-          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
+          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
         },
         "duration": {
           "description": "Episode duration in minutes",
@@ -507,7 +507,7 @@
         },
         "rating": {
           "description": "Content rating of the serial",
-          "oneOf": [ {"type": "string", "enum": ["G0+", "PS2+", "PG7+", "PG13+", "R18+", "GU21+"]}, {"type":"null"}]
+          "enum": ["G0+", "PS2+", "PG7+", "PG13+", "R18+", "GU21+", null]
         },
         "isNsfw": {
           "description": "Mark the serial if not safe for work",
@@ -519,20 +519,14 @@
           "properties": {
             "en_US": {
               "oneOf": [{
-                "type": "string",
-                "enum": [ "Original", "Comic", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Game", "Music", "Drama", "4-koma", "Fairy Tale" ]
-              }, {
-                "type": "null"
+                "enum": [ "Original", "Comic", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Game", "Music", "Drama", "4-koma", "Fairy Tale", null ]
               }, {
                 "type": "array"
               }]
             },
             "id_ID": {
               "oneOf": [{
-                "type": "string",
-                "enum": [ "Orisinal", "Komik", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Gim", "Musik", "Drama", "4-panel", "Dongeng" ]
-              }, {
-                "type": "null"
+                "enum": [ "Orisinal", "Komik", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Gim", "Musik", "Drama", "4-panel", "Dongeng", null ]
               }, {
                 "type": "array"
               }]
@@ -761,7 +755,7 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/(www\\.nautiljon|nautiljon)\\.com\\/animes\\/[\\w\\+]+\\.html"
+                "pattern": "^(https?)\\:\\/\\/(www\\.)?nautiljon\\.com\\/animes\\/"
               }, {
                 "type": "null"
               }]
@@ -901,7 +895,7 @@
       "description": "Date and time of latest changes to JSON. Based on ISO 8601",
       "type": "string",
       "format": "date-time",
-      "pattern": "^[12]{1}[0-9]{3}-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[1-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\\-|\\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
+      "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\\-|\\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
       "examples": [
         {
           "updatedDate": "2020-05-05T16:54:42+07:00"
@@ -919,21 +913,521 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/"
+                "pattern": "^(https?)\\:\\/\\/www\\.aibouanime\\.site"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Aizukara": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.aizukara\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Allsub": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.allsubindo\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Alter": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.altersubs\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeGokil": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animegokilz\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AniToki": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/anitoki\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AoiTenshi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/aoitenshi\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Arks": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.arksfs\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "ASubs": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/asubs\\-fansub\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AWSubs": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/awsubs\\.co"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Bentoo": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/bentoosubs\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Caramel": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/caramel\\.fansub\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Cijanepoi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/cijanepoi\\.blogspot\\.co\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Conan": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.conan\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "DAnimeSubs": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/danimesub\\.wordpress\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Del": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/delima\\.fansub\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "DNFI": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/doranobi\\-fansub\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Durandal": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.durandalsub\\.ga"
+              }, {
+                "type": "null"
+              }]
+            },
+            "EmotPekmen": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/emotpekmen\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Excalibur": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/exldfansub\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Gantz": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/gantzid\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Gin": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.ginsub\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Haruna": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.harunasubs\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Haruzora": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/haruzorasubs\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "HunterNoSekai": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.huntersekai\\.website"
+              }, {
+                "type": "null"
+              }]
+            },
+            "IA": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.iasubs\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Inazumaotoshi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.inazumaotoshifansub\\.xyz"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Indis": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/indissubs\\.wordpress\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Inform0930": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/inform0930\\.xyz"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Isekai": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.isekaisubs\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Junk": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.junksubs\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Kazefuri": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/kazefuri\\.me"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Kinshiru": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.kinshirusubs\\.top"
+              }, {
+                "type": "null"
+              }]
+            },
+            "KO": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.kosub\\.xyz"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Kopaja": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/blog\\.kopajasubs\\.info/"
+              }, {
+                "type": "null"
+              }]
+            },
+            "LCC": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.loliclubscorp\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "MangaNekoTranslation": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/komikempus\\.wordpress\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Melody": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/melodysubs\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Mite": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/mitefansub\\.us"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Nanairo": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/nanairo\\-sub\\.livejournal\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Neo": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/neosubs\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "OPLovers": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.oploverz\\.in"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Ougi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.ougi\\-subs\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Panagayan": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/panayagan\\-fansub\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Pendekar": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/pendekarsubs\\.us"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Pucuk": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/pucuktranslation\\.pw"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Quinime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/quinimefansub\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "RevieXion": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/reviexion\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Samehadaku": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/samehadaku\\.vip"
+              }, {
+                "type": "null"
+              }]
+            },
+            "SilverYasha": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/silveryasha\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Sora": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/sorairosubs\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "TTOD": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/ttod\\.xyz"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Vedifi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/vedifi\\.blogspot\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Warung": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.warungfansub\\.xyz/"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Wibu": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.wibusubs\\.moe"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Yuki": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/yukisubs\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Zen": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/zensubs\\.xyz"
               }, {
                 "type": "null"
               }]
             }
           },
-          "required":["Aibou","Aizukara","AWSubs","Bentoo","Caramel","Cijanepoi","Conan","DAnimeSubs","Del","DNFI","Durandal","EmotPekmen","Excalibur","Gantz","Gin","Haruna","Haruzora","Hopper","HunterNoSekai","IA","Inazumaotoshi","Indis","Inform0930","Isekai","Ito","Junk","Kazefuri","Kinshiru","KO","Kopaja","LCC","MangaNekoTranslation","Meitanteibayoo","Melody","Mite","Nanairo","NgidolYuk","Neo","OPLovers","Ougi","Panagayan","Pendekar","Pucuk","Quinime","RevieXion","Samehadaku","SilverYasha","Sora","TTOD","Vedify","Warung","Wibu","Yuki","Zen"],
+          "required":["Aibou","Aizukara","Allsub","AnimeGokil","AniToki","AoiTenshi","Arks","ASubs","AWSubs","Bentoo","Caramel","Cijanepoi","Conan","DAnimeSubs","Del","DNFI","Durandal","EmotPekmen","Excalibur","Gantz","Gin","Haruna","Haruzora","HunterNoSekai","IA","Inazumaotoshi","Indis","Inform0930","Isekai","Junk","Kazefuri","Kinshiru","KO","Kopaja","LCC","MangaNekoTranslation","Melody","Mite","Nanairo","Neo","OPLovers","Ougi","Panagayan","Pendekar","Pucuk","Quinime","RevieXion","Samehadaku","SilverYasha","Sora","TTOD","Vedifi","Warung","Wibu","Yuki","Zen"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
           }
         },
         "eng": {
@@ -943,7 +1437,7 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/"
+                "pattern": "^(https?)\\:\\/\\/horriblesubs\\.info\\/shows\\/[\\w\\-]+(\\/?)"
               }, {
                 "type": "null"
               }]
@@ -951,13 +1445,9 @@
           },
           "required": ["Horrible"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
           }
         }
       },
@@ -974,21 +1464,116 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/"
+                "pattern": "^(https?)\\:\\/\\/www\\.anibatch\\.me"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeKompi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animekompi\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeSAVE": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.animesave\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Bakacan": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/bakacan\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Drivenime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/drivenime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Hinime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/hinime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Koenime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/www\\.koenime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Kusonime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/kusonime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Mikanime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/mikanime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Moenime": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/moenime\\.(web\\.id|com)"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Ryuukoi": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/ryuukoi\\.web\\.id"
+              }, {
+                "type": "null"
+              }]
+            },
+            "WibuDesu": {
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/wibudesu\\.com"
               }, {
                 "type": "null"
               }]
             }
           },
-          "required":["AniBatch","Bakacan","Drivenime","Hinime","Koenime","Kusonime","Mikanime","Moenime","WibuDesu"],
+          "required":["AniBatch","AnimeKompi","AnimeSAVE","Bakacan","Drivenime","Hinime","Koenime","Kusonime","Mikanime","Moenime","Ryuukoi","WibuDesu"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
           }
         },
         "eng": {
@@ -1006,13 +1591,9 @@
           },
           "required": ["AnimeKayo"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/animekayo\\.com"
           }
         }
       },
@@ -1027,23 +1608,73 @@
           "properties": {
             "AnimeIndoNET": { 
               "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
-          }
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animeindo\\.moe"
+              }, {
+                "type": "null"
+              }]
+            },
+            "anoBoy": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/anoboy\\.us"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Gomunime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/gomunime\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Moeclip": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/moeclip\\.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Neonime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/neonime\\.org"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Onnime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/onnime\\.net"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Otakuindo": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/otakuindo\\.org"
+              }, {
+                "type": "null"
+              }]
+            }
           },
-          "required":["AnimeIndoNET", "anoBoy", "Gomunime", "Moeclip", "Neonime", "Onnime"],
+          "required":["AnimeIndoNET", "anoBoy", "Gomunime", "Moeclip", "Neonime", "Onnime", "OtakuIndo"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
           }
         },
         "eng": {
@@ -1053,21 +1684,116 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/"
+                "pattern": "^(https?)\\:\\/\\/4anime\\.to"
+              }, {
+                "type": "null"
+              }]
+            },
+            "nineAnime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/9anime\\.(to|ru|nl|tv|live|one|love|life|page|video)"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeDaisuki": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animedaisuki\\.moe"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeTwist": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/twist\\.moe"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Animeflix": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animeflix\\.io"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AnimeHeaven": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animeheaven\\.ru"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Animelon": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/animelon.com"
+              }, {
+                "type": "null"
+              }]
+            },
+            "Animeultima": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?animeultima\\.to"
+              }, {
+                "type": "null"
+              }]
+            },
+            "AniWatch": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/aniwatch\\.me"
+              }, {
+                "type": "null"
+              }]
+            },
+            "GogoAnime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?gogoanimes?\\.(io|co|tv|video)"
+              }, {
+                "type": "null"
+              }]
+            },
+            "KissAnime": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/kissanime\\.ru"
+              }, {
+                "type": "null"
+              }]
+            },
+            "WonderfulSubs": { 
+              "oneOf": [{
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?)\\:\\/\\/((www|beta)\\.)?wonderfulsubs\\.com"
               }, {
                 "type": "null"
               }]
             }
           },
-          "required": ["fourAnime", "nineAnime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "DaiWEEB", "GogoAnime", "KissAnime", "WonderfulSubs"],
+          "required": ["fourAnime", "nineAnime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "GogoAnime", "KissAnime", "WonderfulSubs"],
           "additionalProperties": {
-            "oneOf": [{
-              "type": "string",
-              "format": "uri",
-              "pattern": "^(https?)\\:\\/\\/"
-            }, {
-              "type": "null"
-            }]
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
           }
         }
       },
@@ -1076,13 +1802,9 @@
     "library": {
       "type": "object",
       "additionalProperties": {
-        "oneOf": [{
-          "type": "string",
-          "format": "uri",
-          "pattern": "^(https?)\\:\\/\\/"
-        }, {
-          "type": "null"
-        }]
+        "type": "string",
+        "format": "uri",
+        "pattern": "^(https?)\\:\\/\\/"
       },
       "required": ["Nyaa", "PerpusIndo", "Shallty"],
       "properties": {
@@ -1090,7 +1812,25 @@
           "oneOf": [{
             "type": "string",
             "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
+            "pattern": "^(https?)\\:\\/\\/nyaa\\.si"
+          }, {
+            "type": "null"
+          }]
+        },
+        "PerpusIndo": {
+          "oneOf": [{
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/www\\.perpusindo\\.info"
+          }, {
+            "type": "null"
+          }]
+        },
+        "Shallty": {
+          "oneOf": [{
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/(next\\.)?shallty\\.moe"
           }, {
             "type": "null"
           }]
