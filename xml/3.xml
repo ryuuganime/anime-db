@@ -23,7 +23,7 @@
     <visualKey>https://artworks.thetvdb.com/banners/posters/305074-5.jpg</visualKey>
     <synopsis>
         <ar_001>إيزوكو ميدوريا كان مجرد تلميذ عادي في المرحلة المتوسطة في عالم يسكنه أناس غير عاديين لديهم قوى خارقه للطبيعه كأبطال المجلات المصورة الأمريكية، لطالما أراد أن يكون بطلاً على الرغم من أن زملاءه يسخرون منه و يتنمرون عليه لأنه لا يمتلك قوة خارقه للطبيعه، في أحد الأيام شاهد وحش شرير يهاجم صديق طفولته كاتوسكي فتدخل ايزوكو وأنقذه، أقوى بطل خارق في العالم أوول مايت شاهد ايزوكو و أعجب بشجاعته فطلب منه وراثه قوته الخارقة و ساعده بعد ذلك على الاندراج في أكاديمية يو إيه التي تتخصص في تخريج أبطال خارقين</ar_001>
-        <hu_HU/>
+        <hu_HU />
         <he_IL>בנקודה מסויימת בהיסטוריה, האנושות החלה לפתח לעצמה כוחות על-טבעיים, כאשר 80% מהאוכלוסיה רכשו את אותן היכולות. תופעה זו הובילה לעלייתם של גיבורי על ונבלים הנאבקים זה בזה, ובכדי לשמר את הסדר הציבורי, נפתחו מוסדות שונים להכשרת הגיבורים לעתיד. איזוקו מידוריה שואף להפוך לגיבור ולהתקבל לתיכון היוקרתי לגיבורים &quot;יו.איי&quot;, אך לצערו הוא משתייך ל-20% מהאוכלוסיה ללא התכונות האינדיבידואליות. יחד עם זאת, אין בכוונתו לוותר על חלומו, ומצבו מקבל תפנית כאשר הוא פוגש בגיבור העל &quot;אול-מייט&quot; אשר מסכים להכשירו.</he_IL>
         <id_ID>Midoriya Izuku hanya seorang siswa biasa yang hidup di dunia dimana banyak orang memiliki kekuatan super yang disebut dengan &quot;Quirk&quot; (Kosei). Meskipun tidak memiliki kekuatan super, namun ia bermimpi suatu hari nanti bisa menjadi hero (pahlawan).
 Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seorang pahlawan terkuat bernama All Might memberikan kekuatan padanya. Setelah kejadian itu, Izuku melanjutkan sekolah di SMA Yuuei (U.A), sebuah sekolah khusus yang mendidik para calon hero masa depan.</id_ID>
@@ -44,21 +44,21 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
             <en_Latn>Boku no hîrô akademia</en_Latn>
             <ar_001>أبطال الغد</ar_001>
             <ar_001>أكاديمية بطلي</ar_001>
-            <hu_HU/>
-            <he_IL/>
+            <hu_HU />
+            <he_IL />
             <id_ID>Bokuaka</id_ID>
             <en_US>BNHA</en_US>
             <en_US>heroaca</en_US>
             <ja_JP>ヒロアカ</ja_JP>
-            <de_DE/>
-            <ko_KR/>
-            <fr_FR/>
-            <pt_PT/>
+            <de_DE />
+            <ko_KR />
+            <fr_FR />
+            <pt_PT />
             <ru_RU>Моята академия на героите</ru_RU>
-            <es_ES/>
-            <zh_Hans/>
-            <zh_Hant/>
-            <vi_VN/>
+            <es_ES />
+            <zh_Hans />
+            <zh_Hant />
+            <vi_VN />
         </synonyms>
         <type>
             <en_US>TV</en_US>
@@ -221,7 +221,7 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
         <TMDB>
             <url>https://www.themoviedb.org/tv/65930</url>
             <id>65930</id>
-            <score/>
+            <score />
         </TMDB>
         <Trakt>
             <url>https://trakt.tv/shows/my-hero-academia</url>
@@ -236,67 +236,63 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
     <updatedDate>2020-05-09T19:20:07+07:00</updatedDate>
     <fansub>
         <idn>
-            <Aibou/>
-            <Aizukara/>
-            <Allsub/>
-            <Alter/>
-            <AnimeGokil/>
-            <AniToki/>
-            <AoiTenshi/>
-            <Arks/>
-            <ASubs/>
+            <Aibou />
+            <Aizukara />
+            <Allsub />
+            <Alter />
+            <AnimeGokil />
+            <AniToki />
+            <AoiTenshi />
+            <Arks />
+            <ASubs />
             <AWSubs>https://awsubs.co/anime/boku-no-hero-academia/</AWSubs>
             <Bentoo>https://bentoosubs.blogspot.com/2017/04/boku-no-hero-academia-bluray-batch.html</Bentoo>
-            <Caramel/>
-            <Cijanepoi/>
-            <Conan/>
-            <DAnimeSubs/>
-            <Del/>
-            <DNFI/>
-            <Durandal/>
-            <EmotPekmen/>
-            <Excalibur/>
-            <Gantz/>
+            <Caramel />
+            <Cijanepoi />
+            <Conan />
+            <DAnimeSubs />
+            <Del />
+            <DNFI />
+            <Durandal />
+            <EmotPekmen />
+            <Excalibur />
+            <Gantz />
             <Gin>http://www.ginsub.net/p/boku-no-hero-academia-subtitle-indonesia.html</Gin>
-            <Haruna/>
-            <Haruzora/>
-            <Hopper/>
-            <HunterNoSekai/>
-            <IA/>
-            <Inazumaotoshi/>
-            <Indis/>
-            <Inform0930/>
-            <Isekai/>
-            <Ito/>
-            <Junk/>
-            <Kazefuri/>
-            <Kinshiru/>
-            <KO/>
-            <Kopaja/>
-            <LCC/>
-            <MangaNekoTranslation/>
-            <Meitanteibayoo/>
-            <Melody/>
-            <Mite/>
-            <Nanairo/>
-            <NgidolYuk/>
-            <Neo/>
+            <Haruna />
+            <Haruzora />
+            <HunterNoSekai />
+            <IA />
+            <Inazumaotoshi />
+            <Indis />
+            <Inform0930 />
+            <Isekai />
+            <Junk />
+            <Kazefuri />
+            <Kinshiru />
+            <KO />
+            <Kopaja />
+            <LCC />
+            <MangaNekoTranslation />
+            <Melody />
+            <Mite />
+            <Nanairo />
+            <Neo />
             <OPLovers>https://www.oploverz.in/series/boku-no-hero-academia/</OPLovers>
-            <Ougi/>
-            <Panagayan/>
-            <Pendekar/>
-            <Pucuk/>
-            <Quinime/>
-            <RevieXion/>
-            <Samehadaku/>
-            <SilverYasha/>
-            <Sora/>
-            <TTOD/>
-            <Vedify/>
-            <Warung/>
-            <Wibu/>
-            <Yuki/>
-            <Zen/>
+            <Ougi />
+            <Panagayan />
+            <Pendekar />
+            <Pucuk />
+            <Quinime />
+            <RevieXion />
+            <Samehadaku />
+            <SilverYasha />
+            <Sora />
+            <TTOD />
+            <Vedifi />
+            <Warung />
+            <Wibu />
+            <Yuki />
+            <Zen />
         </idn>
         <eng>
             <Horrible>https://horriblesubs.info/shows/boku-no-hero-academia/</Horrible>
@@ -305,7 +301,7 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
     <fanshare>
         <idn>
             <AniBatch>https://www.anibatch.me/?s=Boku%20no%20Hero%20Academia</AniBatch>
-            <AnimeKompi/>
+            <AnimeKompi />
             <AnimeSAVE>http://www.animesave.com/boku-no-hero-academia-subtitle-indonesia/</AnimeSAVE>
             <Bakacan>https://bakacan.id/anime/boku-no-hero-academia/</Bakacan>
             <Drivenime>https://drivenime.com/boku-no-hero-academia-subtitle-indo/</Drivenime>
@@ -325,7 +321,7 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
         <idn>
             <AnimeIndoNET>http://animeindo.moe/anime/boku-no-hero-academia</AnimeIndoNET>
             <anoBoy>https://anoboy.us/anime/boku-no-hero-academia/</anoBoy>
-            <Gomunime/>
+            <Gomunime />
             <Moeclip>https://moeclip.com/anime/bokuhiro-s1-sub-indo/</Moeclip>
             <Neonime>https://neonime.org/tvshows/boku-no-hero-academia-subtitle-indonesia/</Neonime>
             <Onnime>https://onnime.net/anime/boku-no-hero-academia.dzqRERZ1/</Onnime>
@@ -340,9 +336,7 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
             <AnimeHeaven>https://animeheaven.ru/detail/boku-no-hero-academia-sub.98579</AnimeHeaven>
             <Animelon>https://animelon.com/series/Boku%20no%20Hero%20Academia%20(My%20Hero%20Academia)</Animelon>
             <Animeultima>https://www1.animeultima.to/a/boku-no-hero-academia_791758</Animeultima>
-            <AnimeXD/>
             <AniWatch>https://aniwatch.me/anime/119</AniWatch>
-            <DaiWEEB/>
             <GogoAnime>https://gogoanimes.co/category/boku-no-hero-academia</GogoAnime>
             <KissAnime>http://kissanime.ru/Anime/Boku-no-Hero-Academia-My-Hero-Academia</KissAnime>
             <WonderfulSubs>https://beta.wonderfulsubs.com/watch/myheroacademia</WonderfulSubs>
