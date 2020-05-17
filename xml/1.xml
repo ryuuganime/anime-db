@@ -27,11 +27,11 @@
         <hu_HU />
         <he_IL />
         <id_ID>Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.</id_ID>
-        <en_US>The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.</en_US>
+        <en_US>The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the &quot;Modern Crimes Task Unit&quot; — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.</en_US>
         <ja_JP>ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。 そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。 常識を超えた捜査が今、始まる――！</ja_JP>
         <de_DE>Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.
 Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können.</de_DE>
-        <ko_KR>부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.
+        <ko_KR>부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 &#x27;현대 본부&#x27;.
 그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.
 대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.
 상식을 뛰어넘는 수사가 지금, 시작된다-</ko_KR>
@@ -216,6 +216,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
             <Aibou>https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html</Aibou>
             <Aizukara>https://www.aizukara.web.id/search/label/Fugou%20Keiji</Aizukara>
             <AWSubs />
+            <Allsub />
             <Alter />
             <AnimeGokil />
             <AniToki />
@@ -236,14 +237,12 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
             <Gin />
             <Haruna />
             <Haruzora />
-            <Hopper />
-            <HunterNoSekai>https://www.huntersekai.website/search/label/Fugou?&max-results=8</HunterNoSekai>
+            <HunterNoSekai>https://www.huntersekai.website/search/label/Fugou?&amp;max-results=8</HunterNoSekai>
             <IA />
             <Inazumaotoshi />
             <Indis />
             <Inform0930 />
             <Isekai />
-            <Ito />
             <Junk>https://www.junksubs.com/search/label/Unlimited</Junk>
             <Kazefuri />
             <Kinshiru />
@@ -251,11 +250,9 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
             <Kopaja />
             <LCC />
             <MangaNekoTranslation />
-            <Meitanteibayoo />
             <Melody />
             <Mite />
             <Nanairo>https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited</Nanairo>
-            <NgidolYuk />
             <Neo />
             <OPLovers />
             <Ougi />
@@ -268,7 +265,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
             <SilverYasha />
             <Sora />
             <TTOD />
-            <Vedify />
+            <Vedifi />
             <Warung />
             <Wibu />
             <Yuki />
@@ -317,15 +314,14 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
             <Animelon />
             <Animeultima>https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044</Animeultima>
             <AniWatch>https://aniwatch.me/anime/2315</AniWatch>
-            <DaiWEEB />
             <GogoAnime>https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited</GogoAnime>
             <KissAnime>https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited</KissAnime>
             <WonderfulSubs>https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited</WonderfulSubs>
         </eng>
     </fanstream>
     <library>
-        <Nyaa>https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji</Nyaa>
-        <PerpusIndo />
+        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Fugou+Keiji</Nyaa>
+        <PerpusIndo>https://www.perpusindo.info/sharelist/?kat=&amp;user=&amp;cari=fugou%20keiji&amp;kartel=</PerpusIndo>
         <Shallty />
     </library>
-</root>
+</ryuuganime>
