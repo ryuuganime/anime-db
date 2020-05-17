@@ -17,6 +17,7 @@ title:
   zh_Hans: 富豪刑事 Balance:UNLIMITED
   zh_Hant: 富豪刑事 Balance:UNLIMITED
   vi_VN: Thám Tử Triệu Phú
+  # Terjemahan bahasa Vietnam oleh V1sion
 backdrop: https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg
 visualKey: https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg
 synopsis:
@@ -235,6 +236,7 @@ fansub:
     Aibou: https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html
     Aizukara: https://www.aizukara.web.id/search/label/Fugou%20Keiji
     AWSubs: 
+    Allsub: 
     Alter: 
     AnimeGokil: 
     AniToki: 
@@ -255,14 +257,12 @@ fansub:
     Gin: 
     Haruna: 
     Haruzora: 
-    Hopper: 
     HunterNoSekai: https://www.huntersekai.website/search/label/Fugou?&max-results=8
     IA: 
     Inazumaotoshi: 
     Indis: 
     Inform0930: 
     Isekai: 
-    Ito: 
     Junk: https://www.junksubs.com/search/label/Unlimited
     Kazefuri: 
     Kinshiru: 
@@ -270,11 +270,9 @@ fansub:
     Kopaja: 
     LCC: 
     MangaNekoTranslation: 
-    Meitanteibayoo: 
     Melody: 
     Mite: 
     Nanairo: https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited
-    NgidolYuk: 
     Neo: 
     OPLovers: 
     Ougi: 
@@ -287,7 +285,7 @@ fansub:
     SilverYasha: 
     Sora: 
     TTOD: 
-    Vedify: 
+    Vedifi: 
     Warung: 
     Wibu: 
     Yuki: 
@@ -329,7 +327,6 @@ fanstream:
     Animelon: 
     Animeultima: https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044
     AniWatch: https://aniwatch.me/anime/2315
-    DaiWEEB: 
     GogoAnime: https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited
     KissAnime: https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited
     WonderfulSubs: https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited
@@ -337,3 +334,4 @@ library:
   Nyaa: https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji
   PerpusIndo: https://www.perpusindo.info/sharelist/?kat=&user=&cari=fugou%20keiji&kartel=
   Shallty: 
+...
