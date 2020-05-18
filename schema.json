@@ -1693,7 +1693,7 @@
               "oneOf": [{
                 "type": "string",
                 "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/9anime\\.(to|ru|nl|tv|live|one|love|life|page|video)"
+                "pattern": "^(https?)\\:\\/\\/(www\\.)?9anime\\.(to|ru|nl|tv|live|one|love|life|page|video)"
               }, {
                 "type": "null"
               }]
