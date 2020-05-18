@@ -93,16 +93,16 @@
             }
         }
         {
-            myAnimeList: 0
-            kitsu: 0
-            aniList: 0
-            aniDb: 0
-            notifyMoe: ""
+            myAnimeList: 40591
+            kitsu: 42632
+            aniList: 112641
+            aniDb: 15207
+            notifyMoe: "fehNO08Zg"
             title:
             {
-                en_Latn: ""
-                en_US: ""
-                native: ""
+                en_Latn: "Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen"
+                en_US: "Kaguya-sama: Love is War Season 2"
+                native: "かぐや様は告らせたい？～天才たちの恋愛頭脳戦～"
             }
             ryuuganime: 4
             path:

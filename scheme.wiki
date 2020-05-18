@@ -8,16 +8,19 @@ __TOC__
 # [[json/1.json|Fugou Keiji Balance:UNLIMITED]]
 # [[json/2.json|Sword Art Online: Alicization]]
 # [[json/3.json|Boku no Hero Academia]]
+# [[json/4.json|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 
 = XML =
 # [[xml/1.xml|Fugou Keiji Balance:UNLIMITED]]
 # [[xml/2.xml|Sword Art Online: Alicization]]
 # [[xml/3.xml|Boku no Hero Academia]]
+# [[xml/4.xml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 
 = HJSON =
 # [[hjson/1.hjson|Fugou Keiji Balance:UNLIMITED]]
 # [[hjson/2.hjson|Sword Art Online: Alicization]]
 # [[hjson/3.hjson|Boku no Hero Academia]]
+# [[hjson/4.hjson|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]
