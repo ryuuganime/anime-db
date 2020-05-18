@@ -21,7 +21,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/0.hjson</hjson>
             <json>/json/0.json</json>
@@ -91,11 +91,11 @@
         </title>
     </anime>
     <anime>
-        <aniDb>0</aniDb>
-        <aniList>0</aniList>
-        <kitsu>0</kitsu>
-        <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <aniDb>15207</aniDb>
+        <aniList>112641</aniList>
+        <kitsu>42632</kitsu>
+        <myAnimeList>40591</myAnimeList>
+        <notifyMoe>fehNO08Zg</notifyMoe>
         <path>
             <hjson>/hjson/4.hjson</hjson>
             <json>/json/4.json</json>
@@ -103,9 +103,9 @@
         </path>
         <ryuuganime>4</ryuuganime>
         <title>
-            <en_Latn></en_Latn>
-            <en_US></en_US>
-            <native></native>
+            <en_Latn>Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen</en_Latn>
+            <en_US>Kaguya-sama: Love is War Season 2</en_US>
+            <native>かぐや様は告らせたい？～天才たちの恋愛頭脳戦～</native>
         </title>
     </anime>
     <anime>
@@ -113,7 +113,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/5.hjson</hjson>
             <json>/json/5.json</json>
@@ -131,7 +131,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/6.hjson</hjson>
             <json>/json/6.json</json>
@@ -149,7 +149,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/7.hjson</hjson>
             <json>/json/7.json</json>
@@ -167,7 +167,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/8.hjson</hjson>
             <json>/json/8.json</json>
@@ -185,7 +185,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/9.json</hjson>
             <json>/json/9.json</json>
@@ -203,7 +203,7 @@
         <aniList>0</aniList>
         <kitsu>0</kitsu>
         <myAnimeList>0</myAnimeList>
-         <notifyMoe></notifyMoe>
+        <notifyMoe></notifyMoe>
         <path>
             <hjson>/hjson/10.json</hjson>
             <json>/json/10.json</json>
