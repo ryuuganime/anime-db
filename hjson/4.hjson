@@ -232,8 +232,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     synonyms:
     {
       en_Latn: [
-        Kaguya-sama wa kokurasetai? ~ Tensai tachi no ren'ai zunô sen ~,
-        Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season,
+        Kaguya-sama wa kokurasetai? ~ Tensai tachi no ren'ai zunô sen ~
+        Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season
         Kaguya-sama wa Kokurasetai 2
       ]
       ar_001: [
@@ -242,14 +242,14 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       hu_HU: null
       he_IL: null
       id_ID: [
-        Kaguya-sama: Cinta adalah Perang?,
+        Kaguya-sama: Cinta adalah Perang?
         Kaguya Ingin Ditembak?: Perang Cinta dan Nalar Antara Cerdikiawan
       ]
       en_US: [
-        Kaguya-Sama: Love is War 2,
-        Kaguya-Sama: L̵o̵v̵e̵ ̵i̵s̵ ̵W̵a̵r̵,
-        Kaguya Wants to be Confessed To: The Geniuses' War of Love and Brains 2nd Season,
-        Kaguya-sama: Love is War 2nd Season,
+        Kaguya-Sama: Love is War 2
+        Kaguya-Sama: L̵o̵v̵e̵ ̵i̵s̵ ̵W̵a̵r̵
+        Kaguya Wants to be Confessed To: The Geniuses' War of Love and Brains 2nd Season
+        Kaguya-sama: Love is War 2nd Season
         Kaguya-Sama: Love is War
       ]
       ja_JP: [
@@ -263,9 +263,9 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       ]
       pt_PT: null
       ru_RU: [
-        Госпожа Кагуя: в любви как на войне?,
-        Кагуя хочет,
-        чтобы ей признались: Гении — Война любви и разума 2,
+        Госпожа Кагуя: в любви как на войне?
+        Кагуя хочет
+        чтобы ей признались: Гении — Война любви и разума 2
       ]
       es_ES: null
       zh_Hans: null
@@ -311,8 +311,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # = Genre serial dalam bahasa Inggris.
       en_US:
       [
-        Romance,
-        Comedy,
+        Romance
+        Comedy
         Drama
       ]
 
@@ -320,8 +320,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # = Genre serial dalam bahasa Indonesia.
       id_ID:
       [
-        Romansa,
-        Komedi,
+        Romansa
+        Komedi
         Drama
       ]
     }
@@ -335,17 +335,17 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # = Tag serial dalam bahasa Inggris
       en_US:
       [
-        Seinen,
-        Psychological,
-        School,
+        Seinen
+        Psychological
+        School
         School Life
-        High School,
-        Students' Council,
-        Parody,
-        Ensemble Cast,
-        Tsundere,
-        School Club,
-        Love Confession,
+        High School
+        Students' Council
+        Parody
+        Ensemble Cast
+        Tsundere
+        School Club
+        Love Confession
         Slapstick
       ]
 
@@ -353,17 +353,17 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # = Tag serial dalam bahasa Indonesia
       id_ID:
       [
-        Seinen,
-        Psikologis,
-        Sekolah,
-        Kehidupan Sekolah,
-        SMA,
-        OSIS,
-        Parodi,
-        Tokoh Ansambel,
-        Tsundere,
-        Klub Sekolah,
-        Pengakuan Cinta,
+        Seinen
+        Psikologis
+        Sekolah
+        Kehidupan Sekolah
+        SMA
+        OSIS
+        Parodi
+        Tokoh Ansambel
+        Tsundere
+        Klub Sekolah
+        Pengakuan Cinta
         Dagelan
       ]
     }
