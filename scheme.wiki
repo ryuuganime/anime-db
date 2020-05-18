@@ -22,6 +22,12 @@ __TOC__
 # [[hjson/3.hjson|Boku no Hero Academia]]
 # [[hjson/4.hjson|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 
+= YAML =
+# [[yaml/1.yaml|Fugou Keiji Balance:UNLIMITED]]
+# [[yaml/2.yaml|Sword Art Online: Alicization]]
+# [[yaml/3.yaml|Boku no Hero Academia]]
+# [[yaml/4.yaml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
+
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]
 # [[html/7 Seeds.html]]

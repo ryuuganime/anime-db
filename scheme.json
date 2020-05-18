@@ -15,7 +15,8 @@
             "path": {
                 "json": "/json/1.json",
                 "hjson": "/hjson/1.hjson",
-                "xml": "/xml/1.xml"
+                "xml": "/xml/1.xml",
+                "yaml": "/yaml/1.yaml"
             }
         },
         {
@@ -33,7 +34,8 @@
             "path": {
                 "json": "/json/2.json",
                 "hjson": "/hjson/2.hjson",
-                "xml": "/xml/2.xml"
+                "xml": "/xml/2.xml",
+                "yaml": "/yaml/2.yaml"
             }
         },
         {
@@ -51,7 +53,8 @@
             "path": {
                 "json": "/json/3.json",
                 "hjson": "/hjson/3.hjson",
-                "xml": "/xml/3.xml"
+                "xml": "/xml/3.xml",
+                "yaml": "/yaml/3.yaml"
             }
         },
         {
@@ -69,7 +72,8 @@
             "path": {
                 "json": "/json/4.json",
                 "hjson": "/hjson/4.hjson",
-                "xml": "/xml/4.xml"
+                "xml": "/xml/4.xml",
+                "yaml": "/yaml/4.yaml"
             }
         },
         {
@@ -87,7 +91,8 @@
             "path": {
                 "json": "/json/5.json",
                 "hjson": "/hjson/5.hjson",
-                "xml": "/xml/5.xml"
+                "xml": "/xml/5.xml",
+                "yaml": "/yaml/5.yaml"
             }
         },
         {
@@ -105,7 +110,8 @@
             "path": {
                 "json": "/json/6.json",
                 "hjson": "/hjson/6.hjson",
-                "xml": "/xml/6.xml"
+                "xml": "/xml/6.xml",
+                "yaml": "/yaml/6.yaml"
             }
         },
         {
@@ -123,7 +129,8 @@
             "path": {
                 "json": "/json/7.json",
                 "hjson": "/hjson/7.hjson",
-                "xml": "/xml/7.xml"
+                "xml": "/xml/7.xml",
+                "yaml": "/yaml/7.yaml"
             }
         },
         {
@@ -141,7 +148,8 @@
             "path": {
                 "json": "/json/8.json",
                 "hjson": "/hjson/8.hjson",
-                "xml": "/xml/8.xml"
+                "xml": "/xml/8.xml",
+                "yaml": "/yaml/8.yaml"
             }
         },
         {
@@ -159,7 +167,8 @@
             "path": {
                 "json": "/json/9.json",
                 "hjson": "/hjson/9.json",
-                "xml": "/xml/9.xml"
+                "xml": "/xml/9.xml",
+                "yaml": "/yaml/9.yaml"
             }
         },
         {
@@ -177,7 +186,8 @@
             "path": {
                 "json": "/json/10.json",
                 "hjson": "/hjson/10.json",
-                "xml": "/xml/10.xml"
+                "xml": "/xml/10.xml",
+                "yaml": "/yaml/10.yaml"
             }
         }
     ]
