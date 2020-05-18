@@ -1,1843 +1,3245 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Ryuuganime JSON Schema for Anime Database, v.3-b",
-  "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
-  "type": "object",
-  "properties": {
-    "title": {
-      "description": "A serial title in multiple languages. Based on ICU locales",
-      "type": "object",
-      "properties": {
-        "native": {
-          "description": "A serial title in native language. Including, but not limited to: Japanese, Chinese, and Korean",
-          "type": "string"
-        },
-        "en_Latn": {
-          "description": "A serial title in romanizated form",
-          "type": "string",
-          "pattern": "^[\\w\\s\\S]+$"
-        },
-        "ar_001": {
-          "description": "A serial title in Modern Standard Arabic",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+$"}, {"type": "null"} ]
-        },
-        "hu_HU": {
-          "description": "A serial title in Hungarian",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+$"}, {"type": "null"} ]
-        },
-        "he_IL": {
-          "description": "A serial title in Israel Hebrew",
-          "oneOf": [ {"type": "string", "pattern": "^[\u0590-\u05ff\\w\\s\\S]+$"}, {"type": "null"} ]
-        },
-        "id_ID": {
-          "description": "A serial title in Indonesian",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+$"}, {"type": "null"} ]
-        },
-        "en_US": {
-          "description": "A serial title in American English",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+$"}, {"type": "null"} ]
-        },
-        "ja_JP": {
-          "description": "A serial title in Japanese",
-          "oneOf": [ {"type": "string", "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+$"}, {"type": "null"} ]
-        },
-        "de_DE": {
-          "description": "A serial title in German",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SöäüÖÄÜß]+$"}, {"type": "null"} ]
-        },
-        "ko_KR": {
-          "description": "A serial title in Korean",
-          "oneOf": [ {"type": "string", "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+$"}, {"type": "null"} ]
-        },
-        "fr_FR": {
-          "description": "A serial title in French",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+$"}, {"type": "null"} ]
-        },
-        "pt_PT": {
-          "description": "A serial title in Portuguese",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+$"}, {"type": "null"} ]
-        },
-        "ru_RU": {
-          "description": "A serial title in Russian",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\u0400-\u04FF]+$"}, {"type": "null"} ]
-        },
-        "es_ES": {
-          "description": "A serial title in Spain Spanish",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SÀ-ÿ]+$"}, {"type": "null"} ]
-        },
-        "zh_Hans": {
-          "description": "A serial title in Simplified Chinese",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"}, {"type": "null"} ]
-        },
-        "zh_Hant": {
-          "description": "A serial title in Traditional Chinese",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"}, {"type": "null"} ]
-        },
-        "vi_VN": {
-          "description": "A serial title in Vietnamese",
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{VN}]+$"}, {"type": "null"} ]
-        }
-      },
-      "required": [ "native", "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
-    },
-    "backdrop": {
-      "description": "A backdrop/background image URL of serial",
-      "type": "string",
-      "format": "uri",
-      "pattern": "^(https?)\\:\\/\\/"
-    },
-    "visualKey": {
-      "description": "A visual key/poster image URL of serial",
-      "type": "string",
-      "format": "uri",
-      "pattern": "^(https?)\\:\\/\\/"
-    },
-    "synopsis": {
-      "description": "A synopsis/plot of story of serial in several languages. Based on ICU locales",
-      "type": "object",
-      "properties": {
-        "ar_001": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "hu_HU": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "he_IL": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\u0590-\u05ff\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "id_ID": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "en_US": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "ja_JP": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "de_DE": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SöäüÖÄÜß]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "ko_KR": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "fr_FR": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "pt_PT": { 
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "ru_RU": {
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\u0400-\u04FF]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "es_ES": {
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\SÀ-ÿ]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "zh_Hans": {
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "zh_Hant": {
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+", "minLength": 20}, {"type": "null"} ]
-        },
-        "vi_VN": {
-          "oneOf": [ {"type": "string", "pattern": "^[\\w\\s\\S\\p{L}{VN}]+", "minLength": 20}, {"type": "null"} ]
-        }
-      },
-      "required": [ "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
-    },
-    "information": {
-      "description": "An advanced information about related serial",
-      "type": "object",
-      "properties": {
-        "synonyms": {
-          "description": "Serial title synonyms in several languages. Based on ICU locales",
-          "type": "object",
-          "properties": {
-            "en_Latn": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W]+$"
-                  }
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.3-b",
+    "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
+    "type": "object",
+    "properties": {
+        "title": {
+            "description": "A serial title in multiple languages. Based on ICU locales",
+            "type": "object",
+            "properties": {
+                "native": {
+                    "description": "A serial title in native language. Including, but not limited to: Japanese, Chinese, and Korean",
+                    "type": "string"
                 },
-                {
-                  "type": "null"
+                "en_Latn": {
+                    "description": "A serial title in romanizated form",
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\S]+$"
+                },
+                "ar_001": {
+                    "description": "A serial title in Modern Standard Arabic",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hu_HU": {
+                    "description": "A serial title in Hungarian",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "he_IL": {
+                    "description": "A serial title in Israel Hebrew",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\u0590-\u05ff\\w\\s\\S]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "id_ID": {
+                    "description": "A serial title in Indonesian",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "en_US": {
+                    "description": "A serial title in American English",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ja_JP": {
+                    "description": "A serial title in Japanese",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "de_DE": {
+                    "description": "A serial title in German",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SöäüÖÄÜß]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ko_KR": {
+                    "description": "A serial title in Korean",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "fr_FR": {
+                    "description": "A serial title in French",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "pt_PT": {
+                    "description": "A serial title in Portuguese",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ru_RU": {
+                    "description": "A serial title in Russian",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\u0400-\u04FF]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "es_ES": {
+                    "description": "A serial title in Spain Spanish",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SÀ-ÿ]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "zh_Hans": {
+                    "description": "A serial title in Simplified Chinese",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "zh_Hant": {
+                    "description": "A serial title in Traditional Chinese",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "vi_VN": {
+                    "description": "A serial title in Vietnamese",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{L}{VN}]+$"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 }
-              ]
             },
-            "ar_001": {
-                  "oneOf": [
-                    {
-                      "type": "array",
-                      "contains": {
-                        "type": "string",
-                        "pattern": "^[\\w\\s\\S\\W\\p{L}{Arabic}]+$"
-                      }
+            "required": [
+                "native",
+                "en_Latn",
+                "ar_001",
+                "hu_HU",
+                "he_IL",
+                "id_ID",
+                "en_US",
+                "ja_JP",
+                "de_DE",
+                "ko_KR",
+                "fr_FR",
+                "pt_PT",
+                "ru_RU",
+                "es_ES",
+                "zh_Hans",
+                "zh_Hant",
+                "vi_VN"
+            ]
+        },
+        "backdrop": {
+            "description": "A backdrop/background image URL of serial",
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
+        },
+        "visualKey": {
+            "description": "A visual key/poster image URL of serial",
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?)\\:\\/\\/"
+        },
+        "synopsis": {
+            "description": "A synopsis/plot of story of serial in several languages. Based on ICU locales",
+            "type": "object",
+            "properties": {
+                "ar_001": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "hu_HU": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "he_IL": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\u0590-\u05ff\\w\\s\\S]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "id_ID": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "en_US": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ja_JP": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "de_DE": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SöäüÖÄÜß]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ko_KR": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "fr_FR": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S«»À-Üà-øoù-ÿŒœ]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "pt_PT": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\Sáâãàçéêíóôõú]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "ru_RU": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\u0400-\u04FF]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "es_ES": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\SÀ-ÿ]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "zh_Hans": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "zh_Hant": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{Lo}{Han}]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "vi_VN": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "pattern": "^[\\w\\s\\S\\p{L}{VN}]+",
+                            "minLength": 20
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "ar_001",
+                "hu_HU",
+                "he_IL",
+                "id_ID",
+                "en_US",
+                "ja_JP",
+                "de_DE",
+                "ko_KR",
+                "fr_FR",
+                "pt_PT",
+                "ru_RU",
+                "es_ES",
+                "zh_Hans",
+                "zh_Hant",
+                "vi_VN"
+            ]
+        },
+        "information": {
+            "description": "An advanced information about related serial",
+            "type": "object",
+            "properties": {
+                "synonyms": {
+                    "description": "Serial title synonyms in several languages. Based on ICU locales",
+                    "type": "object",
+                    "properties": {
+                        "en_Latn": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "ar_001": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W\\p{L}{Arabic}]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "hu_HU": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\WáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "he_IL": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\u0590-\u05ff\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id_ID": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "en_US": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "ja_JP": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "de_DE": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\WöäüÖÄÜß]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "ko_KR": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S\\W]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "fr_FR": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W«»À-Üà-øoù-ÿŒœ]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "pt_PT": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\Wáâãàçéêíóôõú]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "ru_RU": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W\u0400-\u04FF]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "es_ES": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\WÀ-ÿ]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "zh_Hans": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "zh_Hant": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "vi_VN": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S\\W\\p{L}{VN}]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
                     },
-                    {
-                      "type": "null"
+                    "required": [
+                        "en_Latn",
+                        "ar_001",
+                        "hu_HU",
+                        "he_IL",
+                        "id_ID",
+                        "en_US",
+                        "ja_JP",
+                        "de_DE",
+                        "ko_KR",
+                        "fr_FR",
+                        "pt_PT",
+                        "ru_RU",
+                        "es_ES",
+                        "zh_Hans",
+                        "zh_Hant",
+                        "vi_VN"
+                    ]
+                },
+                "type": {
+                    "description": "Type of series",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "type": "string",
+                            "enum": [
+                                "TV",
+                                "ONA",
+                                "OVA",
+                                "OAD",
+                                "Special",
+                                "Music",
+                                "Movie",
+                                "Unknown"
+                            ]
+                        },
+                        "id_ID": {
+                            "type": "string",
+                            "enum": [
+                                "Serial TV",
+                                "ONA",
+                                "OVA",
+                                "OAD",
+                                "Spesial",
+                                "Musik",
+                                "Film",
+                                "Tidak Diketahui"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                },
+                "status": {
+                    "description": "Explains airing status of serial",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "type": "string",
+                            "enum": [
+                                "Aired",
+                                "Airing",
+                                "Planned",
+                                "TBA",
+                                "Unknown"
+                            ]
+                        },
+                        "id_ID": {
+                            "type": "string",
+                            "enum": [
+                                "Ditayangkan",
+                                "Mengudara",
+                                "Direncanakan",
+                                "Akan Diumumkan",
+                                "Tidak Diketahui"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                },
+                "serialGenre": {
+                    "description": "Genre(s) of the serial",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "type": "array",
+                            "contains": {
+                                "enum": [
+                                    "Action",
+                                    "Adventure",
+                                    "Biography",
+                                    "Comedy",
+                                    "Crime",
+                                    "Documentary",
+                                    "Drama",
+                                    "Fantasy",
+                                    "History",
+                                    "Horror",
+                                    "Music",
+                                    "Musical",
+                                    "Mystery",
+                                    "Romance",
+                                    "Sci-Fi",
+                                    "Slice of Life",
+                                    "Sport",
+                                    "Thriller",
+                                    "War"
+                                ]
+                            }
+                        },
+                        "id_ID": {
+                            "type": "array",
+                            "contains": {
+                                "enum": [
+                                    "Aksi",
+                                    "Petualangan",
+                                    "Biografi",
+                                    "Komedi",
+                                    "Kriminalitas",
+                                    "Dokumentasi",
+                                    "Drama",
+                                    "Fantasi",
+                                    "Sejarah",
+                                    "Horror",
+                                    "Musik",
+                                    "Musikal",
+                                    "Misteri",
+                                    "Romansa",
+                                    "Sci-Fi",
+                                    "Potongan Kehidupan",
+                                    "Olahraga",
+                                    "Thriller",
+                                    "Peperangan"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                },
+                "serialTags": {
+                    "description": "Tag(s) of the serial. Basically its more like specific genre",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id_ID": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "contains": {
+                                        "type": "string",
+                                        "pattern": "^[\\w\\s\\S]+$"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                },
+                "releaseSeason": {
+                    "description": "Season of serial aired",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "type": "string",
+                            "enum": [
+                                "Winter",
+                                "Spring",
+                                "Summer",
+                                "Fall",
+                                "Unknown"
+                            ]
+                        },
+                        "id_ID": {
+                            "type": "string",
+                            "enum": [
+                                "Dingin",
+                                "Semi",
+                                "Panas",
+                                "Gugur",
+                                "Tidak Diketahui"
+                            ]
+                        },
+                        "ja_JP": {
+                            "type": "string",
+                            "enum": [
+                                "冬",
+                                "春",
+                                "夏",
+                                "秋",
+                                "不明"
+                            ]
+                        },
+                        "ko_KR": {
+                            "type": "string",
+                            "enum": [
+                                "겨울",
+                                "봄",
+                                "여름",
+                                "가을",
+                                "알"
+                            ]
+                        },
+                        "zh_Hans": {
+                            "type": "string",
+                            "enum": [
+                                "冬天",
+                                "春天",
+                                "夏天",
+                                "秋天",
+                                "未知"
+                            ]
+                        },
+                        "zh_Hant": {
+                            "type": "string",
+                            "enum": [
+                                "冬天",
+                                "春天",
+                                "夏天",
+                                "秋天",
+                                "未知"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID",
+                        "ja_JP",
+                        "ko_KR",
+                        "zh_Hans",
+                        "zh_Hant"
+                    ],
+                    "additionalProperties": false
+                },
+                "releaseYear": {
+                    "description": "Released Year of serial",
+                    "oneOf": [
+                        {
+                            "type": "number",
+                            "minimum": 1000,
+                            "maximum": 2999
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "episode": {
+                    "description": "Total episodes of serial",
+                    "oneOf": [
+                        {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "releaseDate": {
+                    "description": "Releasing date of serial",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "date",
+                            "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "endDate": {
+                    "description": "Finished aring date of serial",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "date",
+                            "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "duration": {
+                    "description": "Episode duration in minutes",
+                    "oneOf": [
+                        {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "totalDuration": {
+                    "description": "Total serial duration in minutes",
+                    "oneOf": [
+                        {
+                            "type": "number",
+                            "minimum": 0
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "studio": {
+                    "description": "Studio of serial",
+                    "type": "string"
+                },
+                "rating": {
+                    "description": "Content rating of the serial",
+                    "enum": [
+                        "G0+",
+                        "PS2+",
+                        "PG7+",
+                        "PG13+",
+                        "R18+",
+                        "GU21+",
+                        null
+                    ]
+                },
+                "isNsfw": {
+                    "description": "Mark the serial if not safe for work",
+                    "type": "boolean"
+                },
+                "adaptation": {
+                    "description": "Mark the serial if it's adapted from different source or not",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "oneOf": [
+                                {
+                                    "enum": [
+                                        "Original",
+                                        "Comic",
+                                        "Manga",
+                                        "Manhwa",
+                                        "Manhua",
+                                        "Webtoon",
+                                        "Doujin",
+                                        "Novel",
+                                        "Game",
+                                        "Music",
+                                        "Drama",
+                                        "4-koma",
+                                        "Fairy Tale",
+                                        null
+                                    ]
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ]
+                        },
+                        "id_ID": {
+                            "oneOf": [
+                                {
+                                    "enum": [
+                                        "Orisinal",
+                                        "Komik",
+                                        "Manga",
+                                        "Manhwa",
+                                        "Manhua",
+                                        "Webtoon",
+                                        "Doujin",
+                                        "Novel",
+                                        "Gim",
+                                        "Musik",
+                                        "Drama",
+                                        "4-panel",
+                                        "Dongeng",
+                                        null
+                                    ]
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                },
+                "country": {
+                    "description": "Country of Origin",
+                    "type": "object",
+                    "properties": {
+                        "en_US": {
+                            "type": "string"
+                        },
+                        "id_ID": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "en_US",
+                        "id_ID"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "synonyms",
+                "type",
+                "status",
+                "serialGenre",
+                "serialTags",
+                "releaseSeason",
+                "releaseYear",
+                "episode",
+                "releaseDate",
+                "endDate",
+                "duration",
+                "totalDuration",
+                "studio",
+                "rating",
+                "isNsfw",
+                "adaptation",
+                "country"
+            ]
+        },
+        "scores": {
+            "description": "Scores from several websites",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "aniDB",
+                "AniList",
+                "AnimePlanet",
+                "ANN",
+                "aniSearch",
+                "Annict",
+                "IMDb",
+                "KinoPoisk",
+                "Kitsu",
+                "LiveChart",
+                "MyAnimeList",
+                "MyShows",
+                "Nautiljon",
+                "Notify",
+                "OtakOtaku",
+                "Shikimori",
+                "SIMKL",
+                "TMDB",
+                "Trakt",
+                "TVTime"
+            ],
+            "properties": {
+                "aniDB": {
+                    "description": "Score from https://anidb.net/",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "AniList": {
+                    "description": "Score from https://anilist.co",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 100
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "AnimePlanet": {
+                    "description": "Score from https://anime-planet.com",
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.anime-planet\\.com\\/anime\\/[a-z0-9\\-]+"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.000,
+                                    "maximum": 5.000
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "url",
+                        "score"
+                    ],
+                    "additionalProperties": true
+                },
+                "ANN": {
+                    "description": "Score from https://animenewsnetwork.com",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.000,
+                                    "maximum": 10.000
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "aniSearch": {
+                    "description": "Score from https://anisearch.com",
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.anisearch|anisearch)(\\.com|\\.de)\\/anime\\/([0-9]+|[0-9]+,[\\w\\-])"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 100
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": true
+                },
+                "Annict": {
+                    "description": "Score from https://annict.com",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 100.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "IMDb": {
+                    "description": "Score from https://imdb.com",
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "type": "string",
+                            "pattern": "^tt?[0-9]{5,}"
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.0,
+                                    "maximum": 10.0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "code",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "KinoPoisk": {
+                    "description": "Score from https://kinopoisk.ru",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 100.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "Kitsu": {
+                    "description": "Score from https://kitsu.io",
+                    "type": "object",
+                    "properties": {
+                        "slug": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "pattern": "^[\\w\\-]+"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 100.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "dependencies": {
+                        "id": [
+                            "slug"
+                        ]
+                    },
+                    "additionalProperties": false
+                },
+                "LiveChart": {
+                    "description": "Score from https://livechart.me",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "MyAnimeList": {
+                    "description": "Score from https://myanimelist.net",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "MyShows": {
+                    "description": "Score from https://en.myshows.me",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 5.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "Nautiljon": {
+                    "description": "Score from http://nautiljon.com",
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.)?nautiljon\\.com\\/animes\\/"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "url",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "Notify": {
+                    "description": "Score from https://notify.moe",
+                    "type": "object",
+                    "properties": {
+                        "base64": {
+                            "type": "string",
+                            "pattern": "^[A-Za-z0-9_\\-]+"
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "base64",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "OtakOtaku": {
+                    "description": "Score from http://otakotaku.com",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "Shikimori": {
+                    "description": "Score from https://shikimori.org or https://shikimori.one",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "SIMKL": {
+                    "description": "Score from https://simkl.com",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.0,
+                                    "maximum": 10.0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                },
+                "TMDB": {
+                    "description": "Score from https://themoviedb.org",
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.themoviedb|themoviedb)\\.org\\/(movie|tv)\\/[0-9]+"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 100
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "url",
+                        "score"
+                    ],
+                    "dependencies": {
+                        "id": [
+                            "url"
+                        ]
+                    },
+                    "additionalProperties": true
+                },
+                "Trakt": {
+                    "description": "Score from https://trakt.tv",
+                    "type": "object",
+                    "properties": {
+                        "url": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/trakt\\.tv\\/(movies|shows)\\/([0-9]+|[\\w\\-]+)"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 100
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "url",
+                        "score"
+                    ],
+                    "dependencies": {
+                        "id": [
+                            "url"
+                        ]
+                    },
+                    "additionalProperties": true
+                },
+                "TVTime": {
+                    "description": "Score from https://www.tvtime.com/en",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "score": {
+                            "oneOf": [
+                                {
+                                    "type": "number",
+                                    "minimum": 0.00,
+                                    "maximum": 10.00
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "score"
+                    ],
+                    "additionalProperties": false
+                }
+            }
+        },
+        "updatedDate": {
+            "description": "Date and time of latest changes to JSON. Based on ISO 8601",
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\\-|\\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
+            "examples": [
+                {
+                    "updatedDate": "2020-05-05T16:54:42+07:00"
+                }
+            ]
+        },
+        "fansub": {
+            "type": "object",
+            "required": [
+                "idn",
+                "eng"
+            ],
+            "properties": {
+                "idn": {
+                    "type": "object",
+                    "properties": {
+                        "Aibou": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.aibouanime\\.site"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Aizukara": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.aizukara\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Allsub": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.allsubindo\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Alter": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.altersubs\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeGokil": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animegokilz\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AniToki": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/anitoki\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AoiTenshi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/aoitenshi\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Arks": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.arksfs\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "ASubs": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/asubs\\-fansub\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AWSubs": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/awsubs\\.co"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Bentoo": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/bentoosubs\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Caramel": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/caramel\\.fansub\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Cijanepoi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/cijanepoi\\.blogspot\\.co\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Conan": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.conan\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "DAnimeSubs": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/danimesub\\.wordpress\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Del": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/delima\\.fansub\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "DNFI": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/doranobi\\-fansub\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Durandal": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.durandalsub\\.ga"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "EmotPekmen": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/emotpekmen\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Excalibur": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/exldfansub\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Gantz": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/gantzid\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Gin": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.ginsub\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Haruna": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.harunasubs\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Haruzora": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/haruzorasubs\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "HunterNoSekai": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.huntersekai\\.website"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "IA": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.iasubs\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Inazumaotoshi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.inazumaotoshifansub\\.xyz"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Indis": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/indissubs\\.wordpress\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Inform0930": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/inform0930\\.xyz"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Isekai": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.isekaisubs\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Junk": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.junksubs\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Kazefuri": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/kazefuri\\.me"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Kinshiru": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.kinshirusubs\\.top"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "KO": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.kosub\\.xyz"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Kopaja": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/blog\\.kopajasubs\\.info/"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "LCC": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.loliclubscorp\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "MangaNekoTranslation": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/komikempus\\.wordpress\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Melody": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/melodysubs\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Mite": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/mitefansub\\.us"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Nanairo": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/nanairo\\-sub\\.livejournal\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Neo": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/neosubs\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "OPLovers": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.oploverz\\.in"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Ougi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.ougi\\-subs\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Panagayan": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/panayagan\\-fansub\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Pendekar": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/pendekarsubs\\.us"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Pucuk": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/pucuktranslation\\.pw"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Quinime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/quinimefansub\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "RevieXion": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/reviexion\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Samehadaku": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/samehadaku\\.vip"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "SilverYasha": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/silveryasha\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Sora": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/sorairosubs\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "TTOD": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/ttod\\.xyz"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Vedifi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/vedifi\\.blogspot\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Warung": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.warungfansub\\.xyz/"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Wibu": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.wibusubs\\.moe"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Yuki": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/yukisubs\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Zen": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/zensubs\\.xyz"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "Aibou",
+                        "Aizukara",
+                        "Allsub",
+                        "AnimeGokil",
+                        "AniToki",
+                        "AoiTenshi",
+                        "Arks",
+                        "ASubs",
+                        "AWSubs",
+                        "Bentoo",
+                        "Caramel",
+                        "Cijanepoi",
+                        "Conan",
+                        "DAnimeSubs",
+                        "Del",
+                        "DNFI",
+                        "Durandal",
+                        "EmotPekmen",
+                        "Excalibur",
+                        "Gantz",
+                        "Gin",
+                        "Haruna",
+                        "Haruzora",
+                        "HunterNoSekai",
+                        "IA",
+                        "Inazumaotoshi",
+                        "Indis",
+                        "Inform0930",
+                        "Isekai",
+                        "Junk",
+                        "Kazefuri",
+                        "Kinshiru",
+                        "KO",
+                        "Kopaja",
+                        "LCC",
+                        "MangaNekoTranslation",
+                        "Melody",
+                        "Mite",
+                        "Nanairo",
+                        "Neo",
+                        "OPLovers",
+                        "Ougi",
+                        "Panagayan",
+                        "Pendekar",
+                        "Pucuk",
+                        "Quinime",
+                        "RevieXion",
+                        "Samehadaku",
+                        "SilverYasha",
+                        "Sora",
+                        "TTOD",
+                        "Vedifi",
+                        "Warung",
+                        "Wibu",
+                        "Yuki",
+                        "Zen"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/"
                     }
-                  ]
                 },
-            "hu_HU": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\WáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
-                  }
-                },
-                {
-                  "type": "null"
+                "eng": {
+                    "type": "object",
+                    "properties": {
+                        "Horrible": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/horriblesubs\\.info\\/shows\\/[\\w\\-]+(\\/?)"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "Horrible"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/"
+                    }
                 }
-              ]
             },
-            "he_IL": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\u0590-\u05ff\\w\\s\\S\\W]+$"
-                  }
+            "additionalProperties": false
+        },
+        "fanshare": {
+            "type": "object",
+            "required": [
+                "idn",
+                "eng"
+            ],
+            "properties": {
+                "idn": {
+                    "type": "object",
+                    "properties": {
+                        "AniBatch": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.anibatch\\.me"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeKompi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animekompi\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeSAVE": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.animesave\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Bakacan": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/bakacan\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Drivenime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/drivenime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Hinime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/hinime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Koenime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/www\\.koenime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Kusonime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/kusonime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Mikanime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/mikanime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Moenime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/moenime\\.(web\\.id|com)"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Ryuukoi": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/ryuukoi\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "WibuDesu": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/wibudesu\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "AniBatch",
+                        "AnimeKompi",
+                        "AnimeSAVE",
+                        "Bakacan",
+                        "Drivenime",
+                        "Hinime",
+                        "Koenime",
+                        "Kusonime",
+                        "Mikanime",
+                        "Moenime",
+                        "Ryuukoi",
+                        "WibuDesu"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/"
+                    }
                 },
-                {
-                  "type": "null"
+                "eng": {
+                    "type": "object",
+                    "properties": {
+                        "AnimeKayo": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "AnimeKayo"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/animekayo\\.com"
+                    }
                 }
-              ]
             },
-            "id_ID": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W]+$"
-                  }
+            "additionalProperties": false
+        },
+        "fanstream": {
+            "type": "object",
+            "required": [
+                "idn",
+                "eng"
+            ],
+            "properties": {
+                "idn": {
+                    "type": "object",
+                    "properties": {
+                        "AnimeIndoNET": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animeindo\\.moe"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "anoBoy": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/anoboy\\.us"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Gomunime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/gomunime\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Moeclip": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/moeclip\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Neonime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/neonime\\.org"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Onnime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/onnime\\.net"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "OtakuIndo": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/otakuindo\\.org"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "AnimeIndoNET",
+                        "anoBoy",
+                        "Gomunime",
+                        "Moeclip",
+                        "Neonime",
+                        "Onnime",
+                        "OtakuIndo"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/"
+                    }
                 },
-                {
-                  "type": "null"
+                "eng": {
+                    "type": "object",
+                    "properties": {
+                        "fourAnime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/4anime\\.to"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "nineAnime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.)?9anime\\.(to|ru|nl|tv|live|one|love|life|page|video)"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeDaisuki": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animedaisuki\\.moe"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeTwist": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/twist\\.moe"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Animeflix": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animeflix\\.io"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AnimeHeaven": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animeheaven\\.ru"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Animelon": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/animelon.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "Animeultima": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?animeultima\\.to"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "AniWatch": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/aniwatch\\.me"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "GogoAnime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?gogoanimes?\\.(io|co|tv|video)"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "KissAnime": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/kissanime\\.ru"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
+                        "WonderfulSubs": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/((www|beta)\\.)?wonderfulsubs\\.com"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "fourAnime",
+                        "nineAnime",
+                        "AnimeDaisuki",
+                        "AnimeTwist",
+                        "Animeflix",
+                        "AnimeHeaven",
+                        "Animelon",
+                        "Animeultima",
+                        "AniWatch",
+                        "GogoAnime",
+                        "KissAnime",
+                        "WonderfulSubs"
+                    ],
+                    "additionalProperties": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^(https?)\\:\\/\\/"
+                    }
                 }
-              ]
             },
-            "en_US": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "ja_JP": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\u4E00-\u9FA0\u3041-\u3094\u30A1-\u30F4\u30FC\uFF41-\uFF5A\uFF21-\uFF3A\uFF10-\uFF19\u3005\u3006\u3024\\w\\s\\S\\W]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "de_DE": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\WöäüÖÄÜß]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "ko_KR": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\\w\\s\\S\\W]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "fr_FR": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W«»À-Üà-øoù-ÿŒœ]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "pt_PT": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\Wáâãàçéêíóôõú]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "ru_RU": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W\u0400-\u04FF]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "es_ES": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\WÀ-ÿ]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "zh_Hans": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "zh_Hant": {
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W\\p{Lo}{Han}]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "vi_VN":{
-              "oneOf": [
-                {
-                  "type": "array",
-                  "contains": {
-                    "type": "string",
-                    "pattern": "^[\\w\\s\\S\\W\\p{L}{VN}]+$"
-                  }
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            }
-          },
-          "required": [ "en_Latn", "ar_001", "hu_HU", "he_IL", "id_ID", "en_US", "ja_JP", "de_DE", "ko_KR", "fr_FR", "pt_PT", "ru_RU", "es_ES", "zh_Hans", "zh_Hant", "vi_VN" ]
+            "additionalProperties": false
         },
-        "type": {
-          "description": "Type of series",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "type": "string",
-              "enum": [ "TV", "ONA", "OVA", "OAD", "Special", "Music", "Movie", "Unknown" ]
-            },
-            "id_ID": {
-              "type": "string",
-              "enum": [ "Serial TV", "ONA", "OVA", "OAD", "Spesial", "Musik", "Film", "Tidak Diketahui" ]
-            }
-          },
-          "required": [ "en_US", "id_ID" ],
-          "additionalProperties": false
-        },
-        "status": {
-          "description": "Explains airing status of serial",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "type": "string",
-              "enum": [ "Aired", "Airing", "Planned", "TBA", "Unknown" ]
-            },
-            "id_ID": {
-              "type": "string",
-              "enum": [ "Ditayangkan", "Mengudara", "Direncanakan", "Akan Diumumkan", "Tidak Diketahui"]
-            }
-          },
-          "required": [ "en_US", "id_ID"],
-          "additionalProperties": false
-        },
-        "serialGenre": {
-          "description": "Genre(s) of the serial",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "type":"array",
-              "contains": {
-                "enum": [ "Action", "Adventure", "Biography", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "History", "Horror", "Music", "Musical", "Mystery", "Romance", "Sci-Fi", "Slice of Life", "Sport", "Thriller", "War" ]
-              }
-            },
-            "id_ID": {
-              "type":"array",
-              "contains": {
-                "enum": [ "Aksi", "Petualangan", "Biografi", "Komedi", "Kriminalitas", "Dokumentasi", "Drama", "Fantasi", "Sejarah", "Horror", "Musik", "Musikal", "Misteri", "Romansa", "Sci-Fi", "Potongan Kehidupan", "Olahraga", "Thriller", "Peperangan" ]
-              }
-            }
-          },
-          "required": [ "en_US", "id_ID"],
-          "additionalProperties": false
-        },
-        "serialTags": {
-          "description": "Tag(s) of the serial. Basically its more like specific genre",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "oneOf": [ {"type":"array", "contains": {"type":"string", "pattern": "^[\\w\\s\\S]+$"}}, {"type":"null"} ]
-            },
-            "id_ID": {
-              "oneOf": [ {"type":"array", "contains": {"type":"string", "pattern": "^[\\w\\s\\S]+$"}}, {"type":"null"} ]
-            }
-          },
-          "required": [ "en_US", "id_ID" ],
-          "additionalProperties": false
-        },
-        "releaseSeason": {
-          "description": "Season of serial aired",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "type": "string",
-              "enum": [ "Winter", "Spring", "Summer", "Fall", "Unknown"]
-            },
-            "id_ID": {
-              "type": "string",
-              "enum": [ "Dingin", "Semi", "Panas", "Gugur", "Tidak Diketahui" ]
-            },
-            "ja_JP": {
-              "type": "string",
-              "enum": [ "冬", "春", "夏", "秋", "不明" ]
-            },
-            "ko_KR": {
-              "type": "string",
-              "enum": [ "겨울", "봄", "여름", "가을", "알" ]
-            },
-            "zh_Hans": {
-              "type": "string",
-              "enum": [ "冬天", "春天", "夏天", "秋天", "未知" ]
-            },
-            "zh_Hant": {
-              "type": "string",
-              "enum": [ "冬天", "春天", "夏天", "秋天", "未知" ]
-            }
-          },
-          "required": [ "en_US", "id_ID", "ja_JP", "ko_KR", "zh_Hans", "zh_Hant" ],
-          "additionalProperties": false
-        },
-        "releaseYear": {
-          "description": "Released Year of serial",
-          "oneOf": [ {"type": "number","minimum": 1000,"maximum": 2999}, {"type": "null"} ]
-        },
-        "episode": {
-          "description": "Total episodes of serial",
-          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
-        },
-        "releaseDate": {
-          "description": "Releasing date of serial",
-          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
-        },
-        "endDate": {
-          "description": "Finished aring date of serial",
-          "oneOf": [ {"type":"string", "format": "date", "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})"}, {"type":"null"} ]
-        },
-        "duration": {
-          "description": "Episode duration in minutes",
-          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
-        },
-        "totalDuration": {
-          "description": "Total serial duration in minutes",
-          "oneOf": [ {"type":"number","minimum": 0}, {"type":"null"} ]
-        },
-        "studio": {
-          "description": "Studio of serial",
-          "type": "string"
-        },
-        "rating": {
-          "description": "Content rating of the serial",
-          "enum": ["G0+", "PS2+", "PG7+", "PG13+", "R18+", "GU21+", null]
-        },
-        "isNsfw": {
-          "description": "Mark the serial if not safe for work",
-          "type": "boolean"
-        },
-        "adaptation": {
-          "description": "Mark the serial if it's adapted from different source or not",
-          "type": "object",
-          "properties": {
-            "en_US": {
-              "oneOf": [{
-                "enum": [ "Original", "Comic", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Game", "Music", "Drama", "4-koma", "Fairy Tale", null ]
-              }, {
-                "type": "array"
-              }]
-            },
-            "id_ID": {
-              "oneOf": [{
-                "enum": [ "Orisinal", "Komik", "Manga", "Manhwa", "Manhua", "Webtoon", "Doujin", "Novel", "Gim", "Musik", "Drama", "4-panel", "Dongeng", null ]
-              }, {
-                "type": "array"
-              }]
-            }
-          },
-          "required": [ "en_US", "id_ID" ],
-          "additionalProperties": false
-        },
-        "country": {
-          "description": "Country of Origin",
-          "type": "object",
-          "properties": {
-            "en_US": {"type": "string"},
-            "id_ID": {"type": "string"}
-          },
-          "required": [ "en_US", "id_ID" ],
-          "additionalProperties": false
-        }
-      },
-      "required": ["synonyms", "type", "status", "serialGenre", "serialTags", "releaseSeason", "releaseYear", "episode", "releaseDate", "endDate", "duration", "totalDuration", "studio", "rating", "isNsfw", "adaptation", "country"]
-    },
-    "scores": {
-      "description": "Scores from several websites",
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["aniDB", "AniList", "AnimePlanet", "ANN", "aniSearch", "Annict", "IMDb", "KinoPoisk", "Kitsu", "LiveChart", "MyAnimeList", "MyShows", "Nautiljon", "Notify", "OtakOtaku", "Shikimori", "SIMKL", "TMDB", "Trakt", "TVTime"],
-      "properties": {
-        "aniDB": {
-          "description": "Score from https://anidb.net/",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "AniList": {
-          "description": "Score from https://anilist.co",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "AnimePlanet": {
-          "description": "Score from https://anime-planet.com",
-          "type": "object",
-          "properties": {
-            "url": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.anime-planet\\.com\\/anime\\/[a-z0-9\\-]+"
-              }, {
-                "type": "null"
-              }]
-            },
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 5.000 }, {"type":"null"}]
-            }
-          },
-          "required": ["url", "score"],
-          "additionalProperties": true
-        },
-        "ANN": {
-          "description": "Score from https://animenewsnetwork.com",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.000, "maximum": 10.000 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "aniSearch": {
-          "description": "Score from https://anisearch.com",
-          "type": "object",
-          "properties": {
-            "url": {
-              "oneOf": [{
-                  "type": "string",
-                  "format": "uri",
-                  "pattern": "^(https?)\\:\\/\\/(www\\.anisearch|anisearch)(\\.com|\\.de)\\/anime\\/([0-9]+|[0-9]+,[\\w\\-])"
-                }, {
-                  "type": "null"
-                }]
-              },
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": true
-        },
-        "Annict": {
-          "description": "Score from https://annict.com",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "IMDb": {
-          "description": "Score from https://imdb.com",
-          "type": "object",
-          "properties": {
-            "code": {
-              "type": "string",
-              "pattern": "^tt?[0-9]{5,}"
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.0, "maximum": 10.0 }, {"type":"null"}]
-            }
-          },
-          "required": ["code", "score"],
-          "additionalProperties": false
-        },
-        "KinoPoisk": {
-          "description": "Score from https://kinopoisk.ru",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "Kitsu": {
-          "description": "Score from https://kitsu.io",
-          "type": "object",
-          "properties": {
-            "slug": {
-              "oneOf": [{"type":"string", "pattern": "^[\\w\\-]+" }, {"type":"null"}]
-            },
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 100.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "dependencies": {
-            "id": ["slug"]
-          },
-          "additionalProperties": false
-        },
-        "LiveChart": {
-          "description": "Score from https://livechart.me",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "MyAnimeList": {
-          "description": "Score from https://myanimelist.net",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "MyShows": {
-          "description": "Score from https://en.myshows.me",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 5.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "Nautiljon": {
-          "description": "Score from http://nautiljon.com",
-          "type": "object",
-          "properties": {
-            "url": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/(www\\.)?nautiljon\\.com\\/animes\\/"
-              }, {
-                "type": "null"
-              }]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["url", "score"],
-          "additionalProperties": false
-        },
-        "Notify": {
-          "description": "Score from https://notify.moe",
-          "type": "object",
-          "properties": {
-            "base64": {
-              "type": "string",
-              "pattern": "^[A-Za-z0-9_\\-]+"
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["base64", "score"],
-          "additionalProperties": false
-        },
-        "OtakOtaku": {
-          "description": "Score from http://otakotaku.com",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "Shikimori": {
-          "description": "Score from https://shikimori.org or https://shikimori.one",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "SIMKL": {
-          "description": "Score from https://simkl.com",
-           "type": "object",
-           "properties": {
-             "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-             },
-             "score": {
-              "oneOf": [{"type":"number", "minimum": 0.0, "maximum": 10.0 }, {"type":"null"}]
-             }
-           },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        },
-        "TMDB": {
-          "description": "Score from https://themoviedb.org",
-          "type": "object",
-          "properties": {
-            "url": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/(www\\.themoviedb|themoviedb)\\.org\\/(movie|tv)\\/[0-9]+"
-              }, {
-                "type": "null"
-              }]
-            },
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
-            }
-          },
-          "required": ["url", "score"],
-          "dependencies": {
-            "id": ["url"]
-          },
-          "additionalProperties": true
-        },
-        "Trakt": {
-          "description": "Score from https://trakt.tv",
-          "type": "object",
-          "properties": {
-            "url": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/trakt\\.tv\\/(movies|shows)\\/([0-9]+|[\\w\\-]+)"
-              }, {
-                "type": "null"
-              }]            },
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0, "maximum": 100 }, {"type":"null"}]
-            }
-          },
-          "required": ["url", "score"],
-          "dependencies": {
-            "id": ["url"]
-          },
-          "additionalProperties": true
-        },
-        "TVTime": {
-          "description": "Score from https://www.tvtime.com/en",
-          "type": "object",
-          "properties": {
-            "id": {
-              "oneOf": [{"type":"number", "exclusiveMinimum": 0}, {"type":"null"}]
-            },
-            "score": {
-              "oneOf": [{"type":"number", "minimum": 0.00, "maximum": 10.00 }, {"type":"null"}]
-            }
-          },
-          "required": ["id", "score"],
-          "additionalProperties": false
-        }
-      }
-    },
-    "updatedDate": {
-      "description": "Date and time of latest changes to JSON. Based on ISO 8601",
-      "type": "string",
-      "format": "date-time",
-      "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\\-|\\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
-      "examples": [
-        {
-          "updatedDate": "2020-05-05T16:54:42+07:00"
-        }
-      ]
-    },
-    "fansub": {
-      "type": "object",
-      "required": ["idn", "eng"],
-      "properties": {
-        "idn": {
-          "type": "object",
-          "properties": {
-            "Aibou": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.aibouanime\\.site"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Aizukara": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.aizukara\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Allsub": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.allsubindo\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Alter": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.altersubs\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeGokil": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animegokilz\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AniToki": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/anitoki\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AoiTenshi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/aoitenshi\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Arks": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.arksfs\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "ASubs": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/asubs\\-fansub\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AWSubs": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/awsubs\\.co"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Bentoo": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/bentoosubs\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Caramel": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/caramel\\.fansub\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Cijanepoi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/cijanepoi\\.blogspot\\.co\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Conan": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.conan\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "DAnimeSubs": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/danimesub\\.wordpress\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Del": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/delima\\.fansub\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "DNFI": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/doranobi\\-fansub\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Durandal": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.durandalsub\\.ga"
-              }, {
-                "type": "null"
-              }]
-            },
-            "EmotPekmen": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/emotpekmen\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Excalibur": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/exldfansub\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Gantz": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/gantzid\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Gin": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.ginsub\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Haruna": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.harunasubs\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Haruzora": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/haruzorasubs\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "HunterNoSekai": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.huntersekai\\.website"
-              }, {
-                "type": "null"
-              }]
-            },
-            "IA": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.iasubs\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Inazumaotoshi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.inazumaotoshifansub\\.xyz"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Indis": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/indissubs\\.wordpress\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Inform0930": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/inform0930\\.xyz"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Isekai": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.isekaisubs\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Junk": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.junksubs\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Kazefuri": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/kazefuri\\.me"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Kinshiru": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.kinshirusubs\\.top"
-              }, {
-                "type": "null"
-              }]
-            },
-            "KO": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.kosub\\.xyz"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Kopaja": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/blog\\.kopajasubs\\.info/"
-              }, {
-                "type": "null"
-              }]
-            },
-            "LCC": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.loliclubscorp\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "MangaNekoTranslation": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/komikempus\\.wordpress\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Melody": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/melodysubs\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Mite": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/mitefansub\\.us"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Nanairo": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/nanairo\\-sub\\.livejournal\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Neo": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/neosubs\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "OPLovers": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.oploverz\\.in"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Ougi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.ougi\\-subs\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Panagayan": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/panayagan\\-fansub\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Pendekar": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/pendekarsubs\\.us"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Pucuk": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/pucuktranslation\\.pw"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Quinime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/quinimefansub\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "RevieXion": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/reviexion\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Samehadaku": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/samehadaku\\.vip"
-              }, {
-                "type": "null"
-              }]
-            },
-            "SilverYasha": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/silveryasha\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Sora": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/sorairosubs\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "TTOD": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/ttod\\.xyz"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Vedifi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/vedifi\\.blogspot\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Warung": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.warungfansub\\.xyz/"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Wibu": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.wibusubs\\.moe"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Yuki": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/yukisubs\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Zen": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/zensubs\\.xyz"
-              }, {
-                "type": "null"
-              }]
-            }
-          },
-          "required":["Aibou","Aizukara","Allsub","AnimeGokil","AniToki","AoiTenshi","Arks","ASubs","AWSubs","Bentoo","Caramel","Cijanepoi","Conan","DAnimeSubs","Del","DNFI","Durandal","EmotPekmen","Excalibur","Gantz","Gin","Haruna","Haruzora","HunterNoSekai","IA","Inazumaotoshi","Indis","Inform0930","Isekai","Junk","Kazefuri","Kinshiru","KO","Kopaja","LCC","MangaNekoTranslation","Melody","Mite","Nanairo","Neo","OPLovers","Ougi","Panagayan","Pendekar","Pucuk","Quinime","RevieXion","Samehadaku","SilverYasha","Sora","TTOD","Vedifi","Warung","Wibu","Yuki","Zen"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
-          }
-        },
-        "eng": {
-          "type": "object",
-          "properties": {
-            "Horrible": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/horriblesubs\\.info\\/shows\\/[\\w\\-]+(\\/?)"
-              }, {
-                "type": "null"
-              }]
-            }
-          },
-          "required": ["Horrible"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
-          }
-        }
-      },
-      "additionalProperties": false
-    },
-    "fanshare": {
-      "type": "object",
-      "required": ["idn", "eng"],
-      "properties": {
-        "idn": {
-          "type": "object",
-          "properties": {
-            "AniBatch": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.anibatch\\.me"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeKompi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animekompi\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeSAVE": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.animesave\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Bakacan": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/bakacan\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Drivenime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/drivenime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Hinime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/hinime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Koenime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/www\\.koenime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Kusonime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/kusonime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Mikanime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/mikanime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Moenime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/moenime\\.(web\\.id|com)"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Ryuukoi": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/ryuukoi\\.web\\.id"
-              }, {
-                "type": "null"
-              }]
-            },
-            "WibuDesu": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/wibudesu\\.com"
-              }, {
-                "type": "null"
-              }]
-            }
-          },
-          "required":["AniBatch","AnimeKompi","AnimeSAVE","Bakacan","Drivenime","Hinime","Koenime","Kusonime","Mikanime","Moenime","Ryuukoi","WibuDesu"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
-          }
-        },
-        "eng": {
-          "type": "object",
-          "properties": {
-            "AnimeKayo": {
-              "oneOf": [{
+        "library": {
+            "type": "object",
+            "additionalProperties": {
                 "type": "string",
                 "format": "uri",
                 "pattern": "^(https?)\\:\\/\\/"
-              }, {
-                "type": "null"
-              }]
+            },
+            "required": [
+                "Nyaa",
+                "PerpusIndo",
+                "Shallty"
+            ],
+            "properties": {
+                "Nyaa": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^(https?)\\:\\/\\/nyaa\\.si"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "PerpusIndo": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^(https?)\\:\\/\\/www\\.perpusindo\\.info"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "Shallty": {
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^(https?)\\:\\/\\/(next\\.)?shallty\\.moe"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
             }
-          },
-          "required": ["AnimeKayo"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/animekayo\\.com"
-          }
         }
-      },
-      "additionalProperties": false
     },
-    "fanstream": {
-      "type": "object",
-      "required": ["idn", "eng"],
-      "properties": {
-        "idn": {
-          "type": "object",
-          "properties": {
-            "AnimeIndoNET": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animeindo\\.moe"
-              }, {
-                "type": "null"
-              }]
-            },
-            "anoBoy": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/anoboy\\.us"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Gomunime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/gomunime\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Moeclip": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/moeclip\\.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Neonime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/neonime\\.org"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Onnime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/onnime\\.net"
-              }, {
-                "type": "null"
-              }]
-            },
-            "OtakuIndo": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/otakuindo\\.org"
-              }, {
-                "type": "null"
-              }]
-            }
-          },
-          "required":["AnimeIndoNET", "anoBoy", "Gomunime", "Moeclip", "Neonime", "Onnime", "OtakuIndo"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
-          }
-        },
-        "eng": {
-          "type": "object",
-          "properties": {
-            "fourAnime": {
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/4anime\\.to"
-              }, {
-                "type": "null"
-              }]
-            },
-            "nineAnime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/(www\\.)?9anime\\.(to|ru|nl|tv|live|one|love|life|page|video)"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeDaisuki": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animedaisuki\\.moe"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeTwist": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/twist\\.moe"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Animeflix": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animeflix\\.io"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AnimeHeaven": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animeheaven\\.ru"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Animelon": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/animelon.com"
-              }, {
-                "type": "null"
-              }]
-            },
-            "Animeultima": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?animeultima\\.to"
-              }, {
-                "type": "null"
-              }]
-            },
-            "AniWatch": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/aniwatch\\.me"
-              }, {
-                "type": "null"
-              }]
-            },
-            "GogoAnime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?gogoanimes?\\.(io|co|tv|video)"
-              }, {
-                "type": "null"
-              }]
-            },
-            "KissAnime": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/kissanime\\.ru"
-              }, {
-                "type": "null"
-              }]
-            },
-            "WonderfulSubs": { 
-              "oneOf": [{
-                "type": "string",
-                "format": "uri",
-                "pattern": "^(https?)\\:\\/\\/((www|beta)\\.)?wonderfulsubs\\.com"
-              }, {
-                "type": "null"
-              }]
-            }
-          },
-          "required": ["fourAnime", "nineAnime", "AnimeDaisuki", "AnimeTwist", "Animeflix", "AnimeHeaven", "Animelon", "Animeultima", "AniWatch", "GogoAnime", "KissAnime", "WonderfulSubs"],
-          "additionalProperties": {
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/"
-          }
-        }
-      },
-      "additionalProperties": false
-    },
-    "library": {
-      "type": "object",
-      "additionalProperties": {
-        "type": "string",
-        "format": "uri",
-        "pattern": "^(https?)\\:\\/\\/"
-      },
-      "required": ["Nyaa", "PerpusIndo", "Shallty"],
-      "properties": {
-        "Nyaa": {
-          "oneOf": [{
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/nyaa\\.si"
-          }, {
-            "type": "null"
-          }]
-        },
-        "PerpusIndo": {
-          "oneOf": [{
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/www\\.perpusindo\\.info"
-          }, {
-            "type": "null"
-          }]
-        },
-        "Shallty": {
-          "oneOf": [{
-            "type": "string",
-            "format": "uri",
-            "pattern": "^(https?)\\:\\/\\/(next\\.)?shallty\\.moe"
-          }, {
-            "type": "null"
-          }]
-        }
-      }
-    }
-  },
-  "additionalProperties": false,
-  "required": ["title", "backdrop", "visualKey", "synopsis", "information", "scores", "updatedDate", "fansub", "fanshare", "fanstream", "library"]
+    "additionalProperties": false,
+    "required": [
+        "title",
+        "backdrop",
+        "visualKey",
+        "synopsis",
+        "information",
+        "scores",
+        "updatedDate",
+        "fansub",
+        "fanshare",
+        "fanstream",
+        "library"
+    ]
 }
