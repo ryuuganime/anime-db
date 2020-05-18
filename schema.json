@@ -763,7 +763,6 @@
                                 "enum": [
                                     "Action",
                                     "Adventure",
-                                    "Biography",
                                     "Comedy",
                                     "Crime",
                                     "Documentary",
@@ -773,13 +772,16 @@
                                     "Hentai",
                                     "History",
                                     "Horror",
+                                    "Mahou Shoujo",
+                                    "Mecha",
                                     "Music",
-                                    "Musical",
                                     "Mystery",
+                                    "Psychological",
                                     "Romance",
                                     "Sci-Fi",
                                     "Slice of Life",
                                     "Sport",
+                                    "Supernatural",
                                     "Thriller",
                                     "War"
                                 ]
@@ -791,7 +793,6 @@
                                 "enum": [
                                     "Aksi",
                                     "Petualangan",
-                                    "Biografi",
                                     "Komedi",
                                     "Kriminalitas",
                                     "Dokumentasi",
@@ -801,13 +802,16 @@
                                     "Hentai",
                                     "Sejarah",
                                     "Horror",
+                                    "Mahou Shoujo",
+                                    "Mecha",
                                     "Musik",
-                                    "Musikal",
                                     "Misteri",
+                                    "Psikologis",
                                     "Romansa",
                                     "Sci-Fi",
                                     "Potongan Kehidupan",
                                     "Olahraga",
+                                    "Supernatural",
                                     "Thriller",
                                     "Peperangan"
                                 ]
