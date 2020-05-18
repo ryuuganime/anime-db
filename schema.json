@@ -418,13 +418,13 @@
             "en_US": {
               "type":"array",
               "contains": {
-                "enum": [ "Action", "Adventure", "Biography", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "History", "Horror", "Music", "Musical", "Mystery", "Romance", "Sci-Fi", "Sport", "Thriller", "War" ]
+                "enum": [ "Action", "Adventure", "Biography", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "History", "Horror", "Music", "Musical", "Mystery", "Romance", "Sci-Fi", "Slice of Life", "Sport", "Thriller", "War" ]
               }
             },
             "id_ID": {
               "type":"array",
               "contains": {
-                "enum": [ "Aksi", "Petualangan", "Biografi", "Komedi", "Kriminalitas", "Dokumentasi", "Drama", "Fantasi", "Sejarah", "Horror", "Musik", "Musikal", "Misteri", "Romansa", "Sci-Fi", "Olahraga", "Thriller", "Peperangan" ]
+                "enum": [ "Aksi", "Petualangan", "Biografi", "Komedi", "Kriminalitas", "Dokumentasi", "Drama", "Fantasi", "Sejarah", "Horror", "Musik", "Musikal", "Misteri", "Romansa", "Sci-Fi", "Potongan Kehidupan", "Olahraga", "Thriller", "Peperangan" ]
               }
             }
           },
