@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
+<ryuuganime>
     <title>
         <native>グレイプニル</native>
         <en_Latn>Gleipnir</en_Latn>
@@ -360,4 +360,11 @@
         <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Gleipnir&amp;kartel=</PerpusIndo>
         <Shallty>https://shallty.moe/browse?search=Gleipnir</Shallty>
     </library>
-</root>
+    <signature>
+        <name>Natsu Tadama</name>
+        <username>@nattadasu</username>
+        <discordId>384089845527478300</discordId>
+        <submissionDateTime>2020-05-19T15:52:00+07:00</submissionDateTime>
+        <sign>RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=</sign>
+    </signature>
+</ryuuganime>

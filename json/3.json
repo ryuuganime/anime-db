@@ -364,5 +364,12 @@
         "Nyaa": "https://nyaa.si/?f=0&c=0_0&q=Boku+no+Hero+Academia",
         "PerpusIndo": "https://www.perpusindo.info/anime/31964",
         "Shallty": "https://shallty.moe/browse?search=Boku%20no%20Hero%20Academia"
+    },
+    "signature": {
+        "name": "Natsu Tadama",
+        "username": "@nattadasu",
+        "discordId": 384089845527478300,
+        "submissionDateTime": "2020-05-05T18:12:00+07:00",
+        "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
     }
 }

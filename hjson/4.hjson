@@ -846,4 +846,46 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kaguya-sama%20wa%20Kokurasetai&kartel=
     Shallty: https://shallty.moe/browse?search=Kaguya-sama%20wa%20Kokurasetai
   }
+  
+  # signature
+  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  signature:
+  {
+    # name [str] <nbl>
+    # = Nama Anda, boleh menggunakan nama pena.
+    name: Natsu Tadama
+
+    # username [str] <nbl>
+    # = Nama pengguna Anda di GitHub
+    username: @nattadasu
+
+    # discordId [num] <nbl>
+    # = Merupakan ID unik pengguna Anda di Discord.
+    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    discordId: 384089845527478272
+
+    # submissionDateTime [str] <nbl>
+    # = Tanggal dan waktu sebelum submisi (commit/push).
+    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+    // Tata cara pengisian data
+    // Format: YYYY-MM-DDThh:mm:ssTZD
+    // Yang mana:
+    // YYYY = tahun (2020)
+    // MM   = bulan (12)
+    // DD   = tanggal (21)
+    // hh   = pukul, format 24 jam (22)
+    // mm   = menit (45)
+    // ss   = detik (33)
+    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // 
+    // WIB = +07:00, WITA = +08:00, WIT = +09:00
+    submissionDateTime: 2020-05-18T17:32:00+07:00
+
+    # sign [str][num] <nbl>
+    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
+    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
+    #   Base64.
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+  }
 }

@@ -278,4 +278,10 @@ library:
     Nyaa: 'https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji'
     PerpusIndo: 'https://www.perpusindo.info/sharelist/?kat=&user=&cari=fugou%20keiji&kartel='
     Shallty: null
+signature:
+    name: 'Natsu Tadama'
+    username: '@nattadasu'
+    discordId: '384089845527478300'
+    submissionDateTime: '2020-05-05T17:26:00+07:00'
+    sign: 'RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE='
 ...

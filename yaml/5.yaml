@@ -400,4 +400,10 @@ library:
     Nyaa: 'https://nyaa.si/?f=0&c=0_0&q=Gleipnir'
     PerpusIndo: 'https://www.perpusindo.info/sharelist?kat=&user=&cari=Gleipnir&kartel='
     Shallty: 'https://shallty.moe/browse?search=Gleipnir'
+signature:
+    name: 'Natsu Tadama'
+    username: '@nattadasu'
+    discordId: '384089845527478300'
+    submissionDateTime: '2020-05-19T15:52:00+07:00'
+    sign: 'RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE='
 ...

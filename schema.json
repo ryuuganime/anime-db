@@ -3247,6 +3247,64 @@
                     ]
                 }
             }
+        },
+        "signature": {
+            "description": "A virtual signature of entry contributor",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Contributor's name",
+                    "type": "string",
+                    "pattern": "^[\\w\\s\\W\\S]+"
+                },
+                "username": {
+                    "description": "Contributor GitHub username",
+                    "type": "string",
+                    "pattern": "^\\@[\\w\\s\\W\\S\\.\\-\\_]+",
+                    "examples": [
+                        "@nattadasu",
+                        "@Yae-chan"
+                    ]
+                },
+                "discordId": {
+                    "description": "Discord User ID",
+                    "type": "number",
+                    "pattern": "^[0-9]+",
+                    "examples": [
+                        384089845527478272
+                    ]
+                },
+                "submissionDateTime": {
+                    "description": "Date and time of submission",
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^[12]{1}[0-9]{3}\\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\\-|\\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})",
+                    "examples": [
+                        {
+                            "submissionDateTime": "2020-05-05T16:54:42+07:00"
+                        }
+                    ]
+                },
+                "sign": {
+                    "description": "Unique random characters made by contributor",
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "name",
+                "username",
+                "discordId",
+                "submissionDateTime",
+                "sign"
+            ]
         }
     },
     "additionalProperties": false,
@@ -3261,6 +3319,7 @@
         "fansub",
         "fanshare",
         "fanstream",
-        "library"
+        "library",
+        "signature"
     ]
 }
