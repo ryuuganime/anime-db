@@ -118,16 +118,16 @@
             }
         }
         {
-            myAnimeList: 0
-            kitsu: 0
-            aniList: 0
-            aniDb: 0
-            notifyMoe: ""
+            myAnimeList: 39463
+            kitsu: 42173
+            aniList: 108241
+            aniDb: 14721
+            notifyMoe: "q9yku_3ig"
             title:
             {
-                en_Latn: ""
-                en_US: ""
-                native: ""
+                en_Latn: "Gleipnir"
+                en_US: "Gleipnir"
+                native: "グレイプニル"
             }
             ryuuganime: 5
             path:
