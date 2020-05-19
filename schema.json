@@ -2163,6 +2163,18 @@
                                 }
                             ]
                         },
+                        "exTonan": {
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "format": "uri",
+                                    "pattern": "^(https?)\\:\\/\\/extonan\\.web\\.id"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
+                        },
                         "Gantz": {
                             "oneOf": [
                                 {
@@ -2628,6 +2640,7 @@
                         "Durandal",
                         "EmotPekmen",
                         "Excalibur",
+                        "exTonan",
                         "Gantz",
                         "Gin",
                         "Haruna",
