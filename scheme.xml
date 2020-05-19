@@ -8,7 +8,7 @@
     HJSON   :   true
     XML     :   true
     HTML    :   false
-    YAML    :   false
+    YAML    :   true
     SQL     :   false
     SGML    :   false
     Note    :   This XML file is not mandatory, but JSON does. Please to use JSON scheme
@@ -26,6 +26,7 @@
             <hjson>/hjson/0.hjson</hjson>
             <json>/json/0.json</json>
             <xml>/xml/0.xml</xml>
+            <yaml>/yaml/0.yaml</yaml>
         </path>
         <ryuuganime>0</ryuuganime>
         <title>
@@ -46,6 +47,7 @@
             <hjson>/hjson/1.hjson</hjson>
             <json>/json/1.json</json>
             <xml>/xml/1.xml</xml>
+            <yaml>/yaml/1.yaml</yaml>
         </path>
         <ryuuganime>1</ryuuganime>
         <title>
@@ -64,6 +66,7 @@
             <hjson>/hjson/2.hjson</hjson>
             <json>/json/2.json</json>
             <xml>/xml/2.xml</xml>
+            <yaml>/yaml/2.yaml</yaml>
         </path>
         <ryuuganime>2</ryuuganime>
         <title>
@@ -82,6 +85,7 @@
             <hjson>/hjson/3.hjson</hjson>
             <json>/json/3.json</json>
             <xml>/xml/3.xml</xml>
+            <yaml>/yaml/3.yaml</yaml>
         </path>
         <ryuuganime>3</ryuuganime>
         <title>
@@ -100,6 +104,7 @@
             <hjson>/hjson/4.hjson</hjson>
             <json>/json/4.json</json>
             <xml>/xml/4.xml</xml>
+            <yaml>/yaml/4.yaml</yaml>
         </path>
         <ryuuganime>4</ryuuganime>
         <title>
@@ -109,21 +114,22 @@
         </title>
     </anime>
     <anime>
-        <aniDb>0</aniDb>
-        <aniList>0</aniList>
-        <kitsu>0</kitsu>
-        <myAnimeList>0</myAnimeList>
-        <notifyMoe></notifyMoe>
+        <aniDb>14721</aniDb>
+        <aniList>108241</aniList>
+        <myAnimeList>39463</myAnimeList>
+        <kitsu>42173</kitsu>
+        <notifyMoe>q9yku_3ig</notifyMoe>
         <path>
             <hjson>/hjson/5.hjson</hjson>
             <json>/json/5.json</json>
             <xml>/xml/5.xml</xml>
+            <yaml>/yaml/5.yaml</yaml>
         </path>
         <ryuuganime>5</ryuuganime>
         <title>
-            <en_Latn></en_Latn>
-            <en_US></en_US>
-            <native></native>
+            <en_Latn>Gleipnir</en_Latn>
+            <en_US>Gleipnir</en_US>
+            <native>グレイプニル</native>
         </title>
     </anime>
     <anime>
@@ -136,6 +142,7 @@
             <hjson>/hjson/6.hjson</hjson>
             <json>/json/6.json</json>
             <xml>/xml/6.xml</xml>
+            <yaml>/yaml/6.yaml</yaml>
         </path>
         <ryuuganime>6</ryuuganime>
         <title>
@@ -154,6 +161,7 @@
             <hjson>/hjson/7.hjson</hjson>
             <json>/json/7.json</json>
             <xml>/xml/7.xml</xml>
+            <yaml>/yaml/7.yaml</yaml>
         </path>
         <ryuuganime>7</ryuuganime>
         <title>
@@ -172,6 +180,7 @@
             <hjson>/hjson/8.hjson</hjson>
             <json>/json/8.json</json>
             <xml>/xml/8.xml</xml>
+            <yaml>/yaml/8.yaml</yaml>
         </path>
         <ryuuganime>8</ryuuganime>
         <title>
@@ -190,6 +199,7 @@
             <hjson>/hjson/9.json</hjson>
             <json>/json/9.json</json>
             <xml>/xml/9.xml</xml>
+            <yaml>/yaml/9.yaml</yaml>
         </path>
         <ryuuganime>9</ryuuganime>
         <title>
@@ -208,6 +218,7 @@
             <hjson>/hjson/10.json</hjson>
             <json>/json/10.json</json>
             <xml>/xml/10.xml</xml>
+            <yaml>/yaml/10.yaml</yaml>
         </path>
         <ryuuganime>10</ryuuganime>
         <title>
