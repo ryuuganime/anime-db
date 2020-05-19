@@ -2978,7 +2978,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/onnime\\.net"
+                                    "pattern": "^(https?)\\:\\/\\/onnime\\.(net|moe)"
                                 },
                                 {
                                     "type": "null"
