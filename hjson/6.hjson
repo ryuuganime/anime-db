@@ -1,0 +1,904 @@
+#hjson
+/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
+|                               | |                              | | [str] merupakan markah teks, |
+|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
+|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
+| ----------------------------- | |                              | |   ral,  yakni angka dan null |
+|                               | \^----------------------------^/ |   saja.                      |
+| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
+|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
+|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
+|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
+|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
+|                               | |                          ''' | | [arr] merupakan markah array |
+\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
+/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
+|                               | | ru pada suatu value          | |   ta yang berbeda.           |
+| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
+|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
+| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
+|   menjadi array apabila objek |                                  |   value di dalamnya.         |
+|   dalam satu  value lebih ba- |                                  |                              |
+|   nyak daripada satu.         |                                  \^----------------------------^/
+| <nab> array dapat dihilangkan |
+|   tanda  kurungnya, dan dija- |
+|   dikan sebagai null.         |
+| <nbl> string, numeral, atau   |
+|   array terkait tidak bisa    |
+|   diubah menjadi null.        |
+|                               |
+\^-----------------------------*/
+
+{ 
+  // Petunjuk awal:
+  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
+  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
+  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
+  //    tanda koma.
+  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
+  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
+  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
+  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
+  //    id_ID: 
+  //        '''
+  //            Ini hanyalah informasi \"percobaan\",
+  //            harap untuk dapat dimaklumi
+  //        '''
+  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
+  //    contoh pengisian.
+
+  # title [obj]
+  # Merupakan judul suatu serial.
+  title: 
+  {
+    # native [str] <nbl>
+    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
+    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
+    #   yang ditayang di Jepang.
+    native: 神之塔
+
+    # en_Latn [str] <nbl>
+    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
+    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    en_Latn: Kami no Tou
+
+    # ar_001 [str] <nab>
+    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: برج السيد
+
+    # hu_HU [str] <nab>
+    # = Judul dalam bahasa Hungaria.
+    hu_HU: null
+
+    # he_IL [str] <nab>
+    # = Judul dalam bahasa Ibrani Israel.
+    he_IL: null
+
+    # id_ID [str] <nab>
+    # = Judul dalam bahasa Indonesia.
+    id_ID: Tower of God
+
+    # en_US [str] <nab>
+    # = Judul dalam bahasa Inggris.
+    en_US: Tower of God
+
+    # ja_JP [str] <nab>
+    # = Judul dalam bahasa Jepang.
+    ja_JP: 神之塔
+
+    # de_DE [str] <nab>
+    # = Judul dalam bahasa Jerman.
+    de_DE: Tower of God
+
+    # ko_KR [str] <nab>
+    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    ko_KR: 신의 탑
+
+    # fr_FR [str] <nab>
+    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    fr_FR: Tower of God
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: Torre de Deus
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia.
+    ru_RU: Башня Бога
+
+    # es_ES [str] <nab>
+    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: Torre de Dios
+
+    # zh_Hans [str] <nab>
+    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    zh_Hans: 神之塔
+
+    # zh_Hant [str] <nab>
+    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    zh_Hant: 神之塔
+
+    # vi_VN [str] <nab>
+    # = Judul dalam bahasa Vietnam.
+    vi_VN: Tower of God
+  }
+
+  # backdrop [str] <url>
+  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
+  #   situs yang diperbolehkan.
+  backdrop: https://artworks.thetvdb.com/banners/series/376729/backgrounds/5e83e84259d99.jpg
+
+  # visualKey [str] <url>
+  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
+  #   yang diperbolehkan.
+  visualKey: https://artworks.thetvdb.com/banners/series/376729/posters/62106354.jpg
+
+  # synopsis [obj]
+  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  synopsis:
+  {
+    # ar_001 [str] <nab>
+    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: '''“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.'''
+
+    # hu_HU [str] <nab>
+    # = Sinopsis dalam bahasa Hungaria.
+    hu_HU: null
+
+    # he_IL [str]
+    # = Sinopsis dalam bahasa Ibrani Israel.
+    he_IL: null
+
+    # id_ID [str] <nab>
+    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
+    #   Indonesia.
+    id_ID: '''Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya, Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk menemukan teman dekatnya.'''
+
+    # en_US [str] <nab>
+    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
+    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    en_US: '''There is a tower that summons chosen people called "Regulars" with the promise of granting their deepest desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.
+
+Twenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.
+
+Thus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind "Irregulars"—beings that have shaken the very foundation of the Tower each time they set foot inside it.'''
+
+    # ja_JP [str] <nab>
+    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    ja_JP: '''神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）'''
+
+    # de_DE [str] <nab>
+    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
+    #   untuk sinopsis Jerman.
+    de_DE: '''Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.
+
+Der Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm lebend zu verlassen. <br>Quelle: <a href="https://www.anisearch.de/anime/14974,kami-no-tou">aniSearch.de</a>'''
+
+    # ko_KR [str] <nab>
+    # = Sinopsis dalam bahasa Korea Selatan.
+    ko_KR: '''탑에 오르면, 모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서 탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.'''
+
+    # fr_FR [str] <nab>
+    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
+    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    fr_FR: '''Afin de retrouver Rachel, la seule personne chère à ses yeux, Bam décide de prendre tous les risques pour atteindre le sommet d'une mystérieuse tour. Pour passer chaque étage, il devra réussir un test complexe dans lequel il jouera à chaque fois sa vie.
+
+Bam en sortira t-il indemne ?'''
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: '''A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos "regulares", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam "regulares" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um "irregular" - ele entrou sem ser convidado, abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!'''
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    ru_RU: '''Башня бога — место, в котором сбываются мечты и разбиваются сердца, только сильный духом сможет добраться до самого верха. Именно этого всю жизнь хотела Рахиль, и Двадцать пятый Баам отправился за ней, потому как эта девушка была для него единственным лучиком света в этом мрачном и недружелюбном мире. При входе в башню больше не будет пути назад — только наверх, к новым испытаниям. Многое здесь ждёт главных героев: радость и волнения, победы и поражения, боль и утрата. Смогут ли они добраться до вершины?'''
+
+    # es_ES [str] <nab>
+    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: '''La serie se centra en el viaje de un chico mientras se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.'''
+
+    # zh_Hans [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
+    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    zh_Hans: '''如果登上塔，一切就都可以得到。 塔顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。'''
+
+    # zh_Hant [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
+    #   menggunakan aksara Kanton dalam database mereka.
+    zh_Hant: '''如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。'''
+
+    # vi_VN [str] <nab>
+    # = Sinopsis dalam bahasa Vietnam.
+    vi_VN: '''Tower of God xoay quanh một cậu bé tên là Twenty-Fifth Bam, người dành phần lớn cuộc đời mắc kẹt dưới một tòa tháp rộng lớn và bí ẩn cùng người bạn thân Rachel. Khi Rachel vào Tháp, Bam cũng theo sau vào đó và kết cục cậu phải đối mặt với thử thách ở mỗi tầng tòa tháp này với mong muốn tìm lại người bạn đồng hành của mình.'''
+  }
+
+  # information [obj]
+  # = Merupakan kumpulan informasi mengenai serial.
+  information:
+  {
+    # synonyms [obj] > [arr] <nab>
+    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    synonyms:
+    {
+      en_Latn: [
+        Kami no Tō
+        ToG
+      ]
+      ar_001: [
+        برج الإله
+      ]
+      hu_HU: null
+      he_IL: null
+      id_ID: [
+        Menara Dewa
+      ]
+      en_US: null
+      ja_JP: [
+        神之塔 -Tower of God-
+        タワーオブ・ゴッド
+        神の塔
+      ]
+      de_DE: null
+      ko_KR: null
+      fr_FR: null
+      pt_PT: null
+      ru_RU: null
+      es_ES: null
+      zh_Hans: null
+      zh_Hant: null
+      vi_VN: null
+    }
+
+    # type [obj] > [str] <nbl>
+    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    type:
+    {
+      // Argumen yang diperbolehkan ialah:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      en_US: TV
+
+      // Argumen yang diperbolehkan ialah:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      id_ID: Serial TV
+    }
+
+    # status [obj] > [str] <nbl>
+    # = Menjelaskan status penanyangan serial.
+    status:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Aired, Airing, Planned, TBA, dan Unknown
+      en_US: Airing
+
+      // Argumen yang diperbolehkan ialah
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
+      //   Diketahui
+      id_ID: Mengudara
+    }
+
+    # serialGenre [obj]
+    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    serialGenre:
+    {
+      # en_US [arr] <nbl>
+      # = Genre serial dalam bahasa Inggris.
+      en_US:
+      [
+        Action
+        Adventure
+        Drama
+        Fantasy
+        Mystery
+        Comedy
+        Romance
+        Sci-Fi
+        Supernatural
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Genre serial dalam bahasa Indonesia.
+      id_ID:
+      [
+        Aksi
+        Petualangan
+        Drama
+        Fantasi
+        Misteri
+        Komedi
+        Romansa
+        Fiksi Ilmiah
+        Supernatural
+      ]
+    }
+
+    # serialTags [obj]
+    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
+    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    serialTags:
+    {
+      # en_US [arr] <nbl>
+      # = Tag serial dalam bahasa Inggris
+      en_US:
+      [
+        Super Power
+        Shounen
+        Magic
+        Conspiracy
+        Battle Royale
+        Politics
+        Tsundere
+        Swordplay
+        Tragedy
+        Circus
+        PVP
+        PVE
+        Guns
+        Monster
+        Martial Arts
+        Beastmen
+        Psi-Powers
+        Fantasy World
+        Dreams
+        Friendship
+        Survival
+        Violence
+        Dark Fantasy
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Tag serial dalam bahasa Indonesia
+      id_ID:
+      [
+        Kekuatan Super
+        Shounen
+        Sihir
+        Konspirasi
+        Battle Royale
+        Politik
+        Tsundere
+        Permainan Anggar
+        Tragedi
+        Sirkus
+        PVT
+        PVE
+        Senjata Api
+        Monster
+        Seni bela diri
+        Manusia Buas
+        Kekuatan Psikis
+        Dunia Fantasi
+        Mimpi
+        Persahabatan
+        Bertahan Hidup
+        Kekerasan
+        Fantasi Gelap
+      ]
+    }
+
+    # releaseSeason [obj] > [str] <nbl>
+    # = Musim rilisan serial.
+    releaseSeason:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Winter, Spring, Summer, Fall, dan Unknown
+      en_US: Spring
+
+      // Argumen yang diperbolehkan ialah
+      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      id_ID: Semi
+
+      // Argumen yang diperbolehkan ialah
+      // 冬, 春, 夏, 秋, dan 不明
+      ja_JP: 春
+
+      // Argumen yang diperbolehkan ialah
+      // 겨울, 봄, 여름, 가을, dan 알
+      ko_KR: 봄
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hans: 春天
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hant: 春天
+    }
+
+    # releaseYear [num] <nbl>
+    # = Tahun rilis serial, menggunakan format numeral.
+    releaseYear: 2020
+
+    # episode [num] <nbl>
+    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    episode: 13
+
+    # releaseDate [str]
+    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    releaseDate: 2020-04-02
+
+    # endDate [str]
+    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    endDate: null
+
+    # duration [num] <nab>
+    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    duration: 24
+
+    # totalDuration [num] <nab>
+    # = Durasi total serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    totalDuration: 312
+
+    # studio [str] <arb> <nab>
+    # = Studio yang memproduksi serial.
+    studio: Telecom Animation Film
+
+    # rating [str] <nab>
+    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    // Argumen yang diperbolehkan ialah
+    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    rating: PG13+
+
+    # isNsfw [boo] <nbl>
+    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
+    #   false, yakni aman.
+    // Argumen yang diperbolehkan ialah
+    // true dan false
+    "isNsfw": false
+
+    # adaptation [obj] > [str] <arb> <nab>
+    # = Ialah adaptasi asal tayangan.
+    adaptation:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
+      // Drama, 4-koma, Fairy Tale, dan null
+      en_US: Webtoon
+
+      // Argumen yang diperbolehkan ialah
+      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
+      // Drama, 4-panel, Dongeng, dan null
+      id_ID: Webtoon
+    }
+
+    # country [str] <nbl>
+    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    country:
+    {
+      en_US: Japan
+      id_ID: Japan
+    }
+  }
+
+  // scores [obj] > [str]/[num] <nab>
+  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  scores:
+  {
+    // https://anidb.net
+    aniDB:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 15391
+      score: 6.16
+    }
+    
+    // https://anilist.co
+    AniList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 115230
+      score: 76
+    }
+
+    // https://anime-planet.com
+    AnimePlanet:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anime-planet.com/anime/tower-of-god
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 14552
+      score: 4.375
+    }
+    ANN:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 23068
+      score: null
+    }
+
+    // https://anisearch.com
+    aniSearch:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anisearch.com/anime/14974,kami-no-tou
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 14974
+      score: 73
+    }
+
+    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
+    Annict:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 7325
+      score: 75.57
+    }
+
+    // https://imdb.com
+    IMDb:
+    {
+      # code
+      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
+      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
+      #   dan 6751668 merupakan ID serial
+      code: tt12057106
+      score: 8.4
+    }
+
+    // https://kinopoisk.ru
+    KinoPoisk:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1363114
+      score: null
+    }
+
+    // https://kitsu.io
+    Kitsu:
+    {
+      # slug [str]
+      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      slug: tower-of-god
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
+      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      id: 43004
+      score: 82.28
+    }
+
+    // https://livechart.me
+    LiveChart:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 9793
+      score: 8.50
+    }
+
+    // https://myanimelist.net
+    MyAnimeList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 40221
+      score: 8.06
+    }
+    
+    // https://en.myshows.me/
+    MyShows:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 66157
+      score: 4.43
+    }
+
+    // http://nautiljon.com/
+    Nautiljon:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.nautiljon.com/animes/kami+no+tou+-+tower+of+god+-.html
+      score: 9.03
+    }
+
+    // https://notify.moe/
+    Notify:
+    {
+      # base64 [str]
+      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      base64: m1ZLrsUWg
+      score: 7.91
+    }
+
+    // http://otakotaku.com/
+    OtakOtaku:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1740
+      score: 8.00
+    }
+
+    // http://shikimori.org/
+    Shikimori:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 40221
+      score: 8.06
+    }
+
+    // https://simkl.com
+    SIMKL:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1255681
+      score: 8.2
+    }
+
+    // https://www.themoviedb.org/
+    TMDB:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.themoviedb.org/tv/97860
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 97860
+      score: 92
+    }
+
+    // https://trakt.tv/
+    Trakt:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://trakt.tv/shows/tower-of-god
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 158032
+      score: 84
+    }
+
+    // https://www.tvtime.com/en
+    TVTime:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 376729
+      score: 9.84
+    }
+  }
+
+  # updatedDate [str] <nbl>
+  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
+  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+  // Tata cara pengisian data
+  // Format: YYYY-MM-DDThh:mm:ssTZD
+  // Yang mana:
+  // YYYY = tahun (2020)
+  // MM   = bulan (12)
+  // DD   = tanggal (21)
+  // hh   = pukul, format 24 jam (22)
+  // mm   = menit (45)
+  // ss   = detik (33)
+  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // 
+  // WIB = +07:00, WITA = +08:00, WIT = +09:00
+  updatedDate: 2020-05-20T17:58:57+07:00
+  fansub:
+  {
+    idn:
+    {
+      Aibou: null
+      Aizukara: null
+      Allsub: https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&m=1
+      Alter: null
+      AnimeGokil: null
+      AniToki: null
+      AoiTenshi: null
+      Arks: null
+      ASubs: null
+      AWSubs: http://awsubs.co/anime/tower-of-god/
+      Bentoo: null
+      Caramel: null
+      Cijanepoi: null
+      Conan: null
+      DAnimeSubs: null
+      Del: null
+      DNFI: https://www.doranobi-fansub.id/category/tower-of-god/
+      Durandal: null
+      EmotPekmen: null
+      Excalibur: null
+      exTonan: https://extonan.web.id/kami-no-tou
+      Gantz: null
+      Gin: null
+      Haruna: null
+      Haruzora: null
+      HunterNoSekai: https://www.huntersekai.website/search/label/Kami%20no%20Tou?&max-results=8
+      IA: https://www.iasubs.com/search/label/Kami%20no%20Tou
+      Inazumaotoshi: null
+      Indis: null
+      Inform0930: null
+      Isekai: null
+      Junk: null
+      Kazefuri: https://kazefuri.me/kami-no-tou/
+      Kinshiru: null
+      KO: null
+      Kopaja: null
+      LCC: null
+      MangaNekoTranslation: null
+      Melody: null
+      Mite: null
+      Nanairo: null
+      Neo: null
+      OPLovers: https://www.oploverz.in/series/tower-of-god/
+      Ougi: null
+      Panagayan: null
+      Pendekar: https://pendekarsubs.us/anime/kami-no-tou/
+      Pucuk: null
+      Quinime: null
+      RevieXion: null
+      Samehadaku: https://samehadaku.vip/anime/tower-of-god/
+      SilverYasha: null
+      Sora: null
+      TTOD: null
+      Vedifi: null
+      Warung: null
+      Wibu: null
+      Yuki: null
+      Zen: http://zensubs.xyz/?s=Anaak+Jahad
+    }
+    eng:
+    {
+      Horrible: https://horriblesubs.info/shows/tower-of-god
+    }
+  }
+  fanshare:
+  {
+    idn:
+    {
+      AniBatch: null
+      AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
+      AnimeSAVE: null
+      Bakacan: https://bakacan.id/anime/kami-no-tou/
+      Drivenime: null
+      Hinime: null
+      Koenime: null
+      Kusonime: null
+      Mikanime: null
+      Moenime: https://moenime.web.id/kaminoto-sub-indo/
+      Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
+      WibuDesu: null
+    }
+    eng:
+    {
+      AnimeKayo: https://animekayo.com/?s=Tower+of+God
+    }
+  }
+  fanstream:
+  {
+    idn:
+    {
+      AnimeIndoNET: http://animeindo.moe/anime/tower-of-god
+      anoBoy: https://anoboy.us/anime/kami-no-tou/
+      Gomunime: null
+      Moeclip: https://moeclip.com/anime/kami-no-tou-sub-indo/
+      Neonime: https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/
+      Onnime: https://onnime.net/anime/kami-no-tou.Xz1olYGa/
+      OtakuIndo: https://otakuindo.org/nonton/tower-of-god-sub-indo/
+    }
+    eng:
+    {
+      fourAnime: https://4anime.to/anime/kami-no-tou
+      nineAnime: https://9anime.to/watch/kami-no-tou-tower-of-god-dub.m9qz
+      AnimeDaisuki: https://animedaisuki.moe/anime/911/tower-of-god
+      AnimeTwist: https://twist.moe/a/kami-no-tou-tower-of-god/1
+      Animeflix: https://animeflix.io/shows/kami-no-tou
+      AnimeHeaven: https://animeheaven.ru/detail/kami-no-tou.83556
+      Animelon: null
+      Animeultima: https://www1.animeultima.to/a/kami-no-tou_365090
+      AniWatch: https://aniwatch.me/anime/2345
+      GogoAnime: https://www16.gogoanime.io/category/kami-no-tou
+      KissAnime: https://kissanime.ru/Anime/Kami-no-Tou
+      WonderfulSubs: https://beta.wonderfulsubs.com/watch/towerofgod
+    }
+  }
+  library:
+  {
+    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kami+no+Tou
+    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kami%20no%20Tou&kartel=
+    Shallty: null
+  }
+  
+  # signature
+  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  signature:
+  {
+    # name [str] <nbl>
+    # = Nama Anda, boleh menggunakan nama pena.
+    name: Natsu Tadama
+
+    # username [str] <nbl>
+    # = Nama pengguna Anda di GitHub
+    username: @nattadasu
+
+    # discordId [num] <nbl>
+    # = Merupakan ID unik pengguna Anda di Discord.
+    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    discordId: 384089845527478272
+
+    # submissionDateTime [str] <nbl>
+    # = Tanggal dan waktu sebelum submisi (commit/push).
+    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+    // Tata cara pengisian data
+    // Format: YYYY-MM-DDThh:mm:ssTZD
+    // Yang mana:
+    // YYYY = tahun (2020)
+    // MM   = bulan (12)
+    // DD   = tanggal (21)
+    // hh   = pukul, format 24 jam (22)
+    // mm   = menit (45)
+    // ss   = detik (33)
+    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // 
+    // WIB = +07:00, WITA = +08:00, WIT = +09:00
+    submissionDateTime: 2020-05-20T18:13:25+07:00
+
+    # sign [str][num] <nbl>
+    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
+    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
+    #   Base64.
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+  }
+}

@@ -1,0 +1,344 @@
+{
+    "title": {
+        "native": "イエスタデイをうたって",
+        "en_Latn": "Yesterday wo Utatte",
+        "ar_001": "غني “الأمس” لي",
+        "hu_HU": null,
+        "he_IL": null,
+        "id_ID": "Nyanyikan \"Kemarin\" Padaku",
+        "en_US": "Sing \"Yesterday\" for Me",
+        "ja_JP": "イエスタデイをうたって",
+        "de_DE": null,
+        "ko_KR": "예스터데이를 노래하며",
+        "fr_FR": null,
+        "pt_PT": "Cante \"Yesterday\" Pra Mim",
+        "ru_RU": "Спой для меня «Вчера»",
+        "es_ES": null,
+        "zh_Hans": "昨日之歌",
+        "zh_Hant": "昨日之歌",
+        "vi_VN": null
+    },
+    "backdrop": "https://artworks.thetvdb.com/banners/series/372534/backgrounds/5e85c27183d55.jpg",
+    "visualKey": "https://artworks.thetvdb.com/banners/series/372534/posters/62002246.jpg",
+    "synopsis": {
+        "ar_001": "تدور القصة حول شاب جامعي يدعى ريكو الذي يجد عمل في متجر. يعيش حياته بشكل رتيب حتى يقابل حبيبته السابقة وزميلته هارو نوناكا التي تمتلك غراب كحيوان أليف.",
+        "hu_HU": null,
+        "he_IL": null,
+        "id_ID": "Setelah lulus kuliah, Rikuo Uozumi yang hidup tanpa ambisi, bekerja di sebuah toko. Hari-harinya berlalu dengan tenang sampai ia bertemu dengan teman kuliahnya, Shinako dan wanita misterius bernama Haru bersama gagak peliharaannya.",
+        "en_US": "Rikuo has graduated from college, but has zero ambition or direction and works in a convenience store. A strange high-school dropout, Haru, keeps coming around with her pet crow. Rikuo still has a crush on his senior Shinako, who is beginning a teaching career, and who shows up in the store one day. Rikuo's relationships with the girls, and his feelings about his life, keep changing as the story evolves, bringing in other important characters—Rikuo's co-worker, the coworker's sister, and a childhood friend of Shinako's, etc.",
+        "ja_JP": "大学卒業後、コンビニでバイトをする魚住。そんな彼の前に、ある日カラスを連れた少女・ハルが現れた…。 「49％後ろ向きで、51％前向きで…」　へそ曲がりだけれども正直な彼らの心は、舞い落ちる桜のようにゆらゆら揺れて…。",
+        "de_DE": "Rikuo Uozumi hat die Hochschule abgeschlossen, aber in seinem Leben weder Ambitionen noch Zielrichtung. Er beginnt daher einen Job in einem Mischwarenladen und führt so ein eher unspektakuläres Leben – abgesehen von den gelegentlichen Besuchen der Schülerin Haru Nonaka, die eines Tages im Geschäft auftaucht und die sich stets in Begleitung ihres Haustiers, eines Raben, befindet. Auch Rikuos Ex-Freundin und ehemalige Klassenkameradin Shinako erscheint eines Tages im Laden. Shinako, für die Rikuo insgeheim immer noch Gefühle hegt, strebt eine Karriere als Lehrerin an. Mit den beiden Frauen und weiteren Menschen, die im Rahmen seiner Arbeit in Rikuos Leben treten, wird für ihn ein neuer Lebensabschnitt angestoßen und er beginnt damit, sich und seine aktuelle Situation mehr zu hinterfragen.",
+        "ko_KR": "고민하고 방황하면서도 열심히 사는 네 남녀의 인생과 사랑 이야기를 그린 애니메이션",
+        "fr_FR": "À la fin de ses études universitaires, Rikuo Uozumi, un garçon sans réelle ambition dans la vie, a trouvé un petit job dans un konbini, une petite supérette ouverte 24h/24, très populaire au Japon. Les jours se suivent et se ressemblent pour Rikuo jusqu'à sa rencontre avec son ancienne camarade de classe mais surtout avec la troublante Haru Nonaka, toujours accompagnée de son fidèle corbeau...",
+        "pt_PT": "Depois da faculdade, Rikuo Uozumi, um rapaz sem muita ambição na vida, assume um emprego em uma loja de conveniência. Os dias passam sem grandes mudanças para Rikuo até que ele re-encontra sua ex-namorada, mas também especialmente graças a incomum Haru Nonaka e seu corvo de estimação...",
+        "ru_RU": "Всего полгода прошло с тех пор, как Рикуо Уодзуми окончил университет и наконец вступил во взрослую жизнь. Однако та оказалась куда более неприглядной, чем он мог представить себе, когда ещё был студентом. С того времени желания приуменьшились, мечты — поубавились. И даже занятие фотографией, которое всегда нравилось, словно потеряло для него всякий смысл. «Чего я на самом деле хочу?» — важный вопрос для кого-то, но не особо волнующий Рикуо. Бесперспективной работёнки в небольшом минимаркете, кажется, ему вполне хватает, а большего и не надо...\nНо что, если апатичный и немногословный парень встретит девушку, чей характер прямо противоположен его собственному? Весёлую и энергичную, но вместе с тем весьма странную Хару Нонаку, одевающуюся в чёрное и таскающую за собой хромого ручного ворона. Сможет ли она помочь сбившемуся с пути, указав верное направление в жизни, дать толчок, пинок и затрещину?\nИли с этой задачей лучше справится Синако Мориномэ, бывшая одногруппница Рикуо, в которую он всё ещё влюблен? Как знать. Ведь не для этого ли она решила возобновить с ним их прежние дружеские отношения?",
+        "es_ES": "Después de la universidad, Rikuo Uozumi, un chico sin muchas ambiciones en la vida, toma un trabajo en una tienda de conveniencia. Los días pasan sin problemas para Rikuo hasta que se encuentra con la especialmente inusual Haru Nonaka, y su cuervo mascota…",
+        "zh_Hans": "鱼住陆生，在大学毕业後没有继续升学或找正式的工作，就开始了便利商店打工的生活。鱼住的单恋对象是大学好友─森之目榀子，个性积极努力又聪明，在一所高中担任代课老师。但榀子因为记挂家乡一段无解的过去，始终不曾正面接受过任何人的感情。另一方面，半年前自高中辍学，很早就独立而住在外面的野中晴，她在五年前一次际会之後喜欢上了鱼住，直到现在又再度相遇。她知道了榀子与鱼住之间的事情，决定正大光明地向榀子宣战。",
+        "zh_Hant": "魚住陸生，在大學畢業後沒有繼續升學或找正式的工作，就開始了便利商店打工的生活。魚住的單戀對象是大學好友─森之目榀子，個性積極努力又聰明，在一所高中擔任代課老師。但榀子因為記挂家鄉一段無解的過去，始終不曾正面接受過任何人的感情。另一方面，半年前自高中輟學，很早就獨立而住在外面的野中晴，她在五年前一次際會之後喜歡上了魚住，直到現在又再度相遇。她知道了榀子與魚住之間的事情，決定正大光明地向榀子宣戰。",
+        "vi_VN": "Sau khi học xong đại học, Uozumi Rikuo, một chàng trai thiếu tham vọng nhận việc làm ở một cửa hàng tiện dụng (Thực chất là thất nghiệp sau khi tốt nghiệp đại học rồi mới xin vào đây). Nhiều ngày tẻ nhạt trôi qua cho đến khi cậu gặp lại một người bạn học và cũng là bạn gái cũ, nhưng điều thực sự đáng lưu ý là sự xuất hiện của Nonaka Haru, một cô gái khác thường, cùng với con quạ cưng của cô..."
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": [
+                "Yesterday o Utatte"
+            ],
+            "ar_001": null,
+            "hu_HU": null,
+            "he_IL": null,
+            "id_ID": null,
+            "en_US": [
+                "Sing Yesterday (2020)"
+            ],
+            "ja_JP": null,
+            "de_DE": null,
+            "ko_KR": null,
+            "fr_FR": null,
+            "pt_PT": null,
+            "ru_RU": [
+                "Спой мне «Yesterday»"
+            ],
+            "es_ES": null,
+            "zh_Hans": null,
+            "zh_Hant": null,
+            "vi_VN": null
+        },
+        "type": {
+            "en_US": "TV",
+            "id_ID": "Serial TV"
+        },
+        "status": {
+            "en_US": "Airing",
+            "id_ID": "Mengudara"
+        },
+        "serialGenre": {
+            "en_US": [
+                "Drama",
+                "Romance",
+                "Slice of Life"
+            ],
+            "id_ID": [
+                "Drama",
+                "Romansa",
+                "Potongan Kehidupan"
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                "Seinen",
+                "Work",
+                "Photography",
+                "Love Triangle",
+                "Convenience Store",
+                "Mature Romance",
+                "University",
+                "Reunion"
+            ],
+            "id_ID": [
+                "Seinen",
+                "Pekerjaan",
+                "Fotografi",
+                "Cinta Segitiga",
+                "Toserba",
+                "Romansa Dewasa",
+                "Universitas",
+                "Reuni"
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "Spring",
+            "id_ID": "Semi",
+            "ja_JP": "春",
+            "ko_KR": "봄",
+            "zh_Hans": "春天",
+            "zh_Hant": "春天"
+        },
+        "releaseYear": 2020,
+        "episode": 18,
+        "releaseDate": "2020-04-05",
+        "endDate": null,
+        "duration": 23,
+        "totalDuration": 414,
+        "studio": "Doga Kobo",
+        "rating": "PG13+",
+        "isNsfw": false,
+        "adaptation": {
+            "en_US": "Manga",
+            "id_ID": "Manga"
+        },
+        "country": {
+            "en_US": "Japan",
+            "id_ID": "Jepang"
+        }
+    },
+    "scores": {
+        "aniDB": {
+            "id": 14822,
+            "score": 6.95
+        },
+        "AniList": {
+            "id": 109020,
+            "score": 75
+        },
+        "AnimePlanet": {
+            "url": "https://www.anime-planet.com/anime/sing-yesterday-for-me",
+            "id": 13245,
+            "score": 4.193
+        },
+        "ANN": {
+            "id": 22975,
+            "score": null
+        },
+        "aniSearch": {
+            "url": "https://www.anisearch.com/anime/14347,yesterday-o-utatte",
+            "id": 14347,
+            "score": 74
+        },
+        "Annict": {
+            "id": 7158,
+            "score": 96.84
+        },
+        "IMDb": {
+            "code": "tt10204658",
+            "score": 7.9
+        },
+        "KinoPoisk": {
+            "id": 1355620,
+            "score": null
+        },
+        "Kitsu": {
+            "slug": "yesterday-wo-utatte",
+            "id": 43063,
+            "score": 79.8
+        },
+        "LiveChart": {
+            "id": 9412,
+            "score": 8.28
+        },
+        "MyAnimeList": {
+            "id": 39710,
+            "score": 7.84
+        },
+        "MyShows": {
+            "id": 66116,
+            "score": 4.16
+        },
+        "Nautiljon": {
+            "url": "https://www.nautiljon.com/animes/yesterday+wo+utatte.html",
+            "score": 8.55
+        },
+        "Notify": {
+            "base64": "9KfX5A8Wg",
+            "score": 8.14
+        },
+        "OtakOtaku": {
+            "id": 1686,
+            "score": 8.33
+        },
+        "Shikimori": {
+            "id": 39710,
+            "score": 7.84
+        },
+        "SIMKL": {
+            "id": 1073749,
+            "score": 7.4
+        },
+        "TMDB": {
+            "url": "https://www.themoviedb.org/tv/95550",
+            "id": 95550,
+            "score": 84
+        },
+        "Trakt": {
+            "url": "https://trakt.tv/shows/sing-yesterday-for-me",
+            "id": 155397,
+            "score": 70
+        },
+        "TVTime": {
+            "id": 372534,
+            "score": 9.74
+        }
+    },
+    "updatedDate": "2020-05-21T12:12:36+07:00",
+    "fansub": {
+        "idn": {
+            "Aibou": null,
+            "Aizukara": null,
+            "Allsub": null,
+            "Alter": null,
+            "AnimeGokil": null,
+            "AniToki": null,
+            "AoiTenshi": null,
+            "Arks": null,
+            "ASubs": null,
+            "AWSubs": "http://awsubs.co/anime/yesterday-wo-utatte/",
+            "Bentoo": null,
+            "Caramel": null,
+            "Cijanepoi": null,
+            "Conan": null,
+            "DAnimeSubs": null,
+            "Del": null,
+            "DNFI": null,
+            "Durandal": null,
+            "EmotPekmen": null,
+            "Excalibur": null,
+            "exTonan": "https://extonan.web.id/yesterday-wo-utatte",
+            "Gantz": null,
+            "Gin": null,
+            "Haruna": null,
+            "Haruzora": null,
+            "HunterNoSekai": "https://www.huntersekai.website/search/label/Yesterday%20wo%20Utatte?&max-results=8",
+            "IA": null,
+            "Inazumaotoshi": null,
+            "Indis": null,
+            "Inform0930": null,
+            "Isekai": null,
+            "Junk": null,
+            "Kazefuri": null,
+            "Kinshiru": null,
+            "KO": null,
+            "Kopaja": null,
+            "LCC": null,
+            "Lokal": "https://www.lokalsubs.net/search/label/Yesterday%20wo%20Utatte",
+            "MangaNekoTranslation": null,
+            "Melody": "https://melodysubs.net/anime/yesterday-wo-utatte/",
+            "Mite": null,
+            "Nanairo": null,
+            "Neo": null,
+            "OPLovers": null,
+            "Ougi": null,
+            "Panagayan": null,
+            "Pendekar": null,
+            "PNTL": "https://www.pnzoku.my.id/search/label/Yesterday%20wo%20Utatte",
+            "Pucuk": null,
+            "Quinime": null,
+            "RevieXion": null,
+            "Samehadaku": "https://samehadaku.vip/anime/yesterday-wo-utatte/",
+            "SilverYasha": null,
+            "Sora": null,
+            "TTOD": "https://ttod.xyz/?s=yesterday+wo+utatte",
+            "Vedifi": null,
+            "Warung": null,
+            "Wibu": null,
+            "Yuki": "https://yukisubs.com/category/yesterday-wo-utatte/",
+            "Zen": "http://zensubs.xyz/?s=AMBYAR+KEMARIN"
+        },
+        "eng": {
+            "Horrible": "https://horriblesubs.info/shows/yesterday-wo-utatte/#01"
+        }
+    },
+    "fanshare": {
+        "idn": {
+            "AniBatch": null,
+            "AnimeKompi": "http://animekompi.web.id/series/yesterday-wo-utatte/",
+            "AnimeSAVE": null,
+            "Bakacan": "https://bakacan.id/anime/yesterday-wo-utatte/",
+            "Drivenime": null,
+            "Hinime": null,
+            "Koenime": null,
+            "Kusonime": null,
+            "Mikanime": null,
+            "Moenime": "https://moenime.web.id/yesterday-wo-utatte-sub-indo/",
+            "Ryuukoi": "https://ryuukoi.web.id/anime/yesterday-wo-utatte/",
+            "WibuDesu": null
+        },
+        "eng": {
+            "AnimeKayo": "https://animekayo.com/?s=Yesterday+wo+Utatte"
+        }
+    },
+    "fanstream": {
+        "idn": {
+            "AnimeIndoNET": "http://animeindo.moe/anime/yesterday-wo-utatte",
+            "anoBoy": "https://anoboy.us/anime/yesterday-wo-utatte/",
+            "Gomunime": null,
+            "Moeclip": "https://moeclip.com/anime/yesterday-wo-utatte-sub-indo/",
+            "Neonime": "https://neonime.moe/tvshows/yesterday-wo-utatte-subtitle-indonesia/",
+            "Onnime": "https://onnime.net/anime/yesterday-wo-utatte.lGKQ5Ez6/",
+            "OtakuIndo": "https://otakuindo.org/nonton/yesterday-wo-utatte-sub-indo/"
+        },
+        "eng": {
+            "fourAnime": "https://4anime.to/anime/yesterday-wo-utatte",
+            "nineAnime": "https://9anime.to/watch/sing-yesterday-for-me.mkv8",
+            "AnimeDaisuki": "https://animedaisuki.moe/anime/918/yesterday-wo-utatte",
+            "AnimeTwist": "https://twist.moe/a/yesterday-wo-utatte/1",
+            "Animeflix": "https://animeflix.io/shows/yesterday-wo-utatte",
+            "AnimeHeaven": "https://animeheaven.ru/detail/yesterday-wo-utatte",
+            "Animelon": null,
+            "Animeultima": "https://www1.animeultima.to/a/yesterday-wo-utatte_889172",
+            "AniWatch": "https://aniwatch.me/anime/2169",
+            "GogoAnime": "https://www17.gogoanime.io/category/yesterday-wo-utatte",
+            "KissAnime": "https://kissanime.ru/Anime/Yesterday-wo-Utatte",
+            "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/singyesterdayforme"
+        }
+    },
+    "library": {
+        "Nyaa": "https://nyaa.si/?f=0&c=0_0&q=Yesterday+wo+Utatte",
+        "PerpusIndo": "https://www.perpusindo.info/sharelist?kat=&user=&cari=Yesterday%20wo%20Utatte&kartel=",
+        "Shallty": null
+    },
+    "signature": {
+        "name": "Natsu Tadama",
+        "username": "@nattadasu",
+        "discordId": 384089845527478300,
+        "submissionDateTime": "2020-05-21T12:28:52+07:00",
+        "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
+    }
+}
