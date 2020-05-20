@@ -2120,7 +2120,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/doranobi\\-fansub\\.id"
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.)?doranobi\\-fansub\\.id"
                                 },
                                 {
                                     "type": "null"
