@@ -2979,7 +2979,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/neonime\\.org"
+                                    "pattern": "^(https?)\\:\\/\\/neonime\\.(org|moe)"
                                 },
                                 {
                                     "type": "null"
