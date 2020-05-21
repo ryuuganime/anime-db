@@ -29,30 +29,6 @@
                         }
                     ]
                 },
-                "hu_HU": {
-                    "description": "A serial title in Hungarian",
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "he_IL": {
-                    "description": "A serial title in Israel Hebrew",
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "pattern": "^[\u0590-\u05ff\\w\\s\\S]+$"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
                 "id_ID": {
                     "description": "A serial title in Indonesian",
                     "oneOf": [
@@ -202,8 +178,6 @@
                 "native",
                 "en_Latn",
                 "ar_001",
-                "hu_HU",
-                "he_IL",
                 "id_ID",
                 "en_US",
                 "ja_JP",
@@ -216,7 +190,17 @@
                 "zh_Hans",
                 "zh_Hant",
                 "vi_VN"
-            ]
+            ],
+            "additionalProperties": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
         },
         "backdrop": {
             "description": "A backdrop/background image URL of serial",
@@ -239,30 +223,6 @@
                         {
                             "type": "string",
                             "pattern": "^[\\w\\s\\S\\p{L}{Arabic}]+",
-                            "minLength": 20
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "hu_HU": {
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "pattern": "^[\\w\\s\\SáéúőóüöíÁÉÚŐÓÜÖÍ]+",
-                            "minLength": 20
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "he_IL": {
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "pattern": "^[\u0590-\u05ff\\w\\s\\S]+",
                             "minLength": 20
                         },
                         {
@@ -417,8 +377,6 @@
             },
             "required": [
                 "ar_001",
-                "hu_HU",
-                "he_IL",
                 "id_ID",
                 "en_US",
                 "ja_JP",
@@ -431,7 +389,17 @@
                 "zh_Hans",
                 "zh_Hant",
                 "vi_VN"
-            ]
+            ],
+            "additionalProperties": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            }
         },
         "information": {
             "description": "An advanced information about related serial",
@@ -462,34 +430,6 @@
                                     "contains": {
                                         "type": "string",
                                         "pattern": "^[\\w\\s\\S\\W\\p{L}{Arabic}]+$"
-                                    }
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
-                        },
-                        "hu_HU": {
-                            "oneOf": [
-                                {
-                                    "type": "array",
-                                    "contains": {
-                                        "type": "string",
-                                        "pattern": "^[\\w\\s\\S\\WáéúőóüöíÁÉÚŐÓÜÖÍ]+$"
-                                    }
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
-                        },
-                        "he_IL": {
-                            "oneOf": [
-                                {
-                                    "type": "array",
-                                    "contains": {
-                                        "type": "string",
-                                        "pattern": "^[\u0590-\u05ff\\w\\s\\S\\W]+$"
                                     }
                                 },
                                 {
@@ -669,8 +609,6 @@
                     "required": [
                         "en_Latn",
                         "ar_001",
-                        "hu_HU",
-                        "he_IL",
                         "id_ID",
                         "en_US",
                         "ja_JP",
@@ -683,7 +621,20 @@
                         "zh_Hans",
                         "zh_Hant",
                         "vi_VN"
-                    ]
+                    ],
+                    "additionalProperties": {
+                        "oneOf": [
+                            {
+                                "type": "array",
+                                "contains": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    }
                 },
                 "type": {
                     "description": "Type of series",
