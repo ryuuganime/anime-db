@@ -137,16 +137,16 @@
         }
     }
     {
-        myAnimeList: 0
-        kitsu: 0
-        aniList: 0
-        aniDb: 0
-        notifyMoe: ""
+        myAnimeList: 40221
+        kitsu: 43004
+        aniList: 115230
+        aniDb: 15391
+        notifyMoe: "m1ZLrsUWg"
         title:
         {
-            en_Latn: ""
-            en_US: ""
-            native: ""
+            en_Latn: "Kami no Tou"
+            en_US: "Tower of God"
+            native: "神之塔"
         }
         ryuuganime: 6
         path:
@@ -158,16 +158,16 @@
         }
     }
     {
-        myAnimeList: 0
-        kitsu: 0
-        aniList: 0
-        aniDb: 0
-        notifyMoe: ""
+        myAnimeList: 39710
+        kitsu: 43063
+        aniList: 109020
+        aniDb: 14822
+        notifyMoe: "9KfX5A8Wg"
         title:
         {
-            en_Latn: ""
-            en_US: ""
-            native: ""
+            en_Latn: "Yesterday wo Utatte"
+            en_US: Sing "Yesterday" for Me
+            native: "イエスタデイをうたって"
         }
         ryuuganime: 7
         path:

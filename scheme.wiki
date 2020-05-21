@@ -10,6 +10,8 @@ __TOC__
 # [[json/3.json|Boku no Hero Academia]]
 # [[json/4.json|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 # [[json/5.json|Gleipnir]]
+# [[json/6.json|Kami no Tou]]
+# [[json/7.json|Yesterday wo Utatte]]
 
 = XML =
 # [[xml/1.xml|Fugou Keiji Balance:UNLIMITED]]
@@ -17,6 +19,8 @@ __TOC__
 # [[xml/3.xml|Boku no Hero Academia]]
 # [[xml/4.xml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 # [[xml/5.xml|Gleipnir]]
+# [[xml/6.xml|Kami no Tou]]
+# [[xml/7.xml|Yesterday wo Utatte]]
 
 = HJSON =
 # [[hjson/1.hjson|Fugou Keiji Balance:UNLIMITED]]
@@ -24,6 +28,8 @@ __TOC__
 # [[hjson/3.hjson|Boku no Hero Academia]]
 # [[hjson/4.hjson|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 # [[hjson/5.hjson|Gleipnir]]
+# [[hjson/6.hjson|Kami no Tou]]
+# [[hjson/7.hjson|Yesterday wo Utatte]]
 
 = YAML =
 # [[yaml/1.yaml|Fugou Keiji Balance:UNLIMITED]]
@@ -31,6 +37,8 @@ __TOC__
 # [[yaml/3.yaml|Boku no Hero Academia]]
 # [[yaml/4.yaml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
 # [[yaml/5.yaml|Gleipnir]]
+# [[yaml/6.yaml|Kami no Tou]]
+# [[yaml/7.yaml|Yesterday wo Utatte]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]
