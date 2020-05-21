@@ -3,8 +3,8 @@ title:
     native: 神之塔
     en_Latn: Kami no Tou
     ar_001: برج السيد
-    hu_HU: 
-    he_IL: 
+    hu_HU: null
+    he_IL: null
     id_ID: Tower of God
     en_US: Tower of God
     ja_JP: 神之塔
@@ -24,8 +24,8 @@ synopsis:
         “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول
         أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته
         المقربة."
-    hu_HU: 
-    he_IL: 
+    hu_HU: null
+    he_IL: null
     id_ID: Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar
         hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya,
         Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk
@@ -80,24 +80,24 @@ information:
         - ToG
         ar_001:
         - برج الإله
-        hu_HU: 
-        he_IL: 
+        hu_HU: null
+        he_IL: null
         id_ID:
         - Menara Dewa
-        en_US: 
+        en_US: null
         ja_JP:
         - 神之塔 -Tower of God-
         - タワーオブ・ゴッド
         - 神の塔
-        de_DE: 
-        ko_KR: 
-        fr_FR: 
-        pt_PT: 
-        ru_RU: 
-        es_ES: 
-        zh_Hans: 
-        zh_Hant: 
-        vi_VN: 
+        de_DE: null
+        ko_KR: null
+        fr_FR: null
+        pt_PT: null
+        ru_RU: null
+        es_ES: null
+        zh_Hans: null
+        zh_Hant: null
+        vi_VN: null
     type:
         en_US: TV
         id_ID: Serial TV
@@ -184,7 +184,7 @@ information:
     releaseYear: 2020
     episode: 13
     releaseDate: '2020-04-02'
-    endDate: 
+    endDate: null
     duration: 24
     totalDuration: 312
     studio: Telecom Animation Film
@@ -209,7 +209,7 @@ scores:
         score: 4.375
     ANN:
         id: 23068
-        score: 
+        score: null
     aniSearch:
         url: https://www.anisearch.com/anime/14974,kami-no-tou
         id: 14974
@@ -222,7 +222,7 @@ scores:
         score: 8.4
     KinoPoisk:
         id: 1363114
-        score: 
+        score: null
     Kitsu:
         slug: tower-of-god
         id: 43004
@@ -265,87 +265,87 @@ scores:
 updatedDate: '2020-05-20T17:58:57+07:00'
 fansub:
     idn:
-        Aibou: 
-        Aizukara: 
+        Aibou: null
+        Aizukara: null
         Allsub: https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&m=1
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
+        Alter: null
+        AnimeGokil: null
+        AniToki: null
+        AoiTenshi: null
+        Arks: null
+        ASubs: null
         AWSubs: http://awsubs.co/anime/tower-of-god/
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
+        Bentoo: null
+        Caramel: null
+        Cijanepoi: null
+        Conan: null
+        DAnimeSubs: null
+        Del: null
         DNFI: https://www.doranobi-fansub.id/category/tower-of-god/
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
+        Durandal: null
+        EmotPekmen: null
+        Excalibur: null
         exTonan: https://extonan.web.id/kami-no-tou
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
+        Gantz: null
+        Gin: null
+        Haruna: null
+        Haruzora: null
         HunterNoSekai: https://www.huntersekai.website/search/label/Kami%20no%20Tou?&max-results=8
         IA: https://www.iasubs.com/search/label/Kami%20no%20Tou
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
+        Inazumaotoshi: null
+        Indis: null
+        Inform0930: null
+        Isekai: null
+        Junk: null
         Kazefuri: https://kazefuri.me/kami-no-tou/
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
+        Kinshiru: null
+        KO: null
+        Kopaja: null
+        LCC: null
+        MangaNekoTranslation: null
+        Melody: null
+        Mite: null
+        Nanairo: null
+        Neo: null
         OPLovers: https://www.oploverz.in/series/tower-of-god/
-        Ougi: 
-        Panagayan: 
+        Ougi: null
+        Panagayan: null
         Pendekar: https://pendekarsubs.us/anime/kami-no-tou/
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
+        Pucuk: null
+        Quinime: null
+        RevieXion: null
         Samehadaku: https://samehadaku.vip/anime/tower-of-god/
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
+        SilverYasha: null
+        Sora: null
+        TTOD: null
+        Vedifi: null
+        Warung: null
+        Wibu: null
+        Yuki: null
         Zen: http://zensubs.xyz/?s=Anaak+Jahad
     eng:
         Horrible: https://horriblesubs.info/shows/tower-of-god
 fanshare:
     idn:
-        AniBatch: 
+        AniBatch: null
         AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
-        AnimeSAVE: 
+        AnimeSAVE: null
         Bakacan: https://bakacan.id/anime/kami-no-tou/
-        Drivenime: 
-        Hinime: 
-        Koenime: 
-        Kusonime: 
-        Mikanime: 
+        Drivenime: null
+        Hinime: null
+        Koenime: null
+        Kusonime: null
+        Mikanime: null
         Moenime: https://moenime.web.id/kaminoto-sub-indo/
         Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
-        WibuDesu: 
+        WibuDesu: null
     eng:
         AnimeKayo: https://animekayo.com/?s=Tower+of+God
 fanstream:
     idn:
         AnimeIndoNET: http://animeindo.moe/anime/tower-of-god
         anoBoy: https://anoboy.us/anime/kami-no-tou/
-        Gomunime: 
+        Gomunime: null
         Moeclip: https://moeclip.com/anime/kami-no-tou-sub-indo/
         Neonime: https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/
         Onnime: https://onnime.net/anime/kami-no-tou.Xz1olYGa/
@@ -357,7 +357,7 @@ fanstream:
         AnimeTwist: https://twist.moe/a/kami-no-tou-tower-of-god/1
         Animeflix: https://animeflix.io/shows/kami-no-tou
         AnimeHeaven: https://animeheaven.ru/detail/kami-no-tou.83556
-        Animelon: 
+        Animelon: null
         Animeultima: https://www1.animeultima.to/a/kami-no-tou_365090
         AniWatch: https://aniwatch.me/anime/2345
         GogoAnime: https://www16.gogoanime.io/category/kami-no-tou
@@ -366,7 +366,7 @@ fanstream:
 library:
     Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kami+no+Tou
     PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kami%20no%20Tou&kartel=
-    Shallty: 
+    Shallty: null
 signature:
     name: Natsu Tadama
     username: "@nattadasu"
