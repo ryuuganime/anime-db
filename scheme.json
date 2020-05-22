@@ -12,10 +12,10 @@
         },
         "ryuuganime": 1,
         "path": {
-            "json": "/json/1.json",
-            "hjson": "/hjson/1.hjson",
-            "xml": "/xml/1.xml",
-            "yaml": "/yaml/1.yaml"
+            "json": "/json/000/001.json",
+            "hjson": "/hjson/000/001.hjson",
+            "xml": "/xml/000/001.xml",
+            "yaml": "/yaml/000/001.yaml"
         }
     },
     {
@@ -31,10 +31,10 @@
         },
         "ryuuganime": 2,
         "path": {
-            "json": "/json/2.json",
-            "hjson": "/hjson/2.hjson",
-            "xml": "/xml/2.xml",
-            "yaml": "/yaml/2.yaml"
+            "json": "/json/000/002.json",
+            "hjson": "/hjson/000/002.hjson",
+            "xml": "/xml/000/002.xml",
+            "yaml": "/yaml/000/002.yaml"
         }
     },
     {
@@ -50,10 +50,10 @@
         },
         "ryuuganime": 3,
         "path": {
-            "json": "/json/3.json",
-            "hjson": "/hjson/3.hjson",
-            "xml": "/xml/3.xml",
-            "yaml": "/yaml/3.yaml"
+            "json": "/json/000/003.json",
+            "hjson": "/hjson/000/003.hjson",
+            "xml": "/xml/000/003.xml",
+            "yaml": "/yaml/000/003.yaml"
         }
     },
     {
@@ -69,10 +69,10 @@
         },
         "ryuuganime": 4,
         "path": {
-            "json": "/json/4.json",
-            "hjson": "/hjson/4.hjson",
-            "xml": "/xml/4.xml",
-            "yaml": "/yaml/4.yaml"
+            "json": "/json/000/004.json",
+            "hjson": "/hjson/000/004.hjson",
+            "xml": "/xml/000/004.xml",
+            "yaml": "/yaml/000/004.yaml"
         }
     },
     {
@@ -88,10 +88,10 @@
         },
         "ryuuganime": 5,
         "path": {
-            "json": "/json/5.json",
-            "hjson": "/hjson/5.hjson",
-            "xml": "/xml/5.xml",
-            "yaml": "/yaml/5.yaml"
+            "json": "/json/000/005.json",
+            "hjson": "/hjson/000/005.hjson",
+            "xml": "/xml/000/005.xml",
+            "yaml": "/yaml/000/005.yaml"
         }
     },
     {
@@ -107,10 +107,10 @@
         },
         "ryuuganime": 6,
         "path": {
-            "json": "/json/6.json",
-            "hjson": "/hjson/6.hjson",
-            "xml": "/xml/6.xml",
-            "yaml": "/yaml/6.yaml"
+            "json": "/json/000/006.json",
+            "hjson": "/hjson/000/006.hjson",
+            "xml": "/xml/000/006.xml",
+            "yaml": "/yaml/000/006.yaml"
         }
     },
     {
@@ -126,10 +126,10 @@
         },
         "ryuuganime": 7,
         "path": {
-            "json": "/json/7.json",
-            "hjson": "/hjson/7.hjson",
-            "xml": "/xml/7.xml",
-            "yaml": "/yaml/7.yaml"
+            "json": "/json/000/007.json",
+            "hjson": "/hjson/000/007.hjson",
+            "xml": "/xml/000/007.xml",
+            "yaml": "/yaml/000/007.yaml"
         }
     },
     {
@@ -145,10 +145,10 @@
         },
         "ryuuganime": 8,
         "path": {
-            "json": "/json/8.json",
-            "hjson": "/hjson/8.hjson",
-            "xml": "/xml/8.xml",
-            "yaml": "/yaml/8.yaml"
+            "json": "/json/000/008.json",
+            "hjson": "/hjson/000/008.hjson",
+            "xml": "/xml/000/008.xml",
+            "yaml": "/yaml/000/008.yaml"
         }
     },
     {
@@ -164,10 +164,10 @@
         },
         "ryuuganime": 9,
         "path": {
-            "json": "/json/9.json",
-            "hjson": "/hjson/9.json",
-            "xml": "/xml/9.xml",
-            "yaml": "/yaml/9.yaml"
+            "json": "/json/000/009.json",
+            "hjson": "/hjson/000/009.json",
+            "xml": "/xml/000/009.xml",
+            "yaml": "/yaml/000/009.yaml"
         }
     },
     {
@@ -183,10 +183,10 @@
         },
         "ryuuganime": 10,
         "path": {
-            "json": "/json/10.json",
-            "hjson": "/hjson/10.json",
-            "xml": "/xml/10.xml",
-            "yaml": "/yaml/10.yaml"
+            "json": "/json/000/0010.json",
+            "hjson": "/hjson/000/0010.json",
+            "xml": "/xml/000/010.xml",
+            "yaml": "/yaml/000/010.yaml"
         }
     }
 ]

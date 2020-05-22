@@ -29,10 +29,10 @@
         </title>
         <ryuuganime>0</ryuuganime>
         <path>
-            <json>/json/0.json</json>
-            <hjson>/hjson/0.hjson</hjson>
-            <xml>/xml/0.xml</xml>
-            <yaml>/yaml/0.yaml</yaml>
+            <json>/json/000/000.json</json>
+            <hjson>/hjson/000/000.hjson</hjson>
+            <xml>/xml/000/000.xml</xml>
+            <yaml>/yaml/000/000.yaml</yaml>
         </path>
     </entry>
 -->
@@ -50,10 +50,10 @@
         </title>
         <ryuuganime>1</ryuuganime>
         <path>
-            <json>/json/1.json</json>
-            <hjson>/hjson/1.hjson</hjson>
-            <xml>/xml/1.xml</xml>
-            <yaml>/yaml/1.yaml</yaml>
+            <json>/json/000/001.json</json>
+            <hjson>/hjson/000/001.hjson</hjson>
+            <xml>/xml/000/001.xml</xml>
+            <yaml>/yaml/000/001.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -69,10 +69,10 @@
         </title>
         <ryuuganime>2</ryuuganime>
         <path>
-            <json>/json/2.json</json>
-            <hjson>/hjson/2.hjson</hjson>
-            <xml>/xml/2.xml</xml>
-            <yaml>/yaml/2.yaml</yaml>
+            <json>/json/000/002.json</json>
+            <hjson>/hjson/000/002.hjson</hjson>
+            <xml>/xml/000/002.xml</xml>
+            <yaml>/yaml/000/002.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -88,10 +88,10 @@
         </title>
         <ryuuganime>3</ryuuganime>
         <path>
-            <json>/json/3.json</json>
-            <hjson>/hjson/3.hjson</hjson>
-            <xml>/xml/3.xml</xml>
-            <yaml>/yaml/3.yaml</yaml>
+            <json>/json/000/003.json</json>
+            <hjson>/hjson/000/003.hjson</hjson>
+            <xml>/xml/000/003.xml</xml>
+            <yaml>/yaml/000/003.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -107,10 +107,10 @@
         </title>
         <ryuuganime>4</ryuuganime>
         <path>
-            <json>/json/4.json</json>
-            <hjson>/hjson/4.hjson</hjson>
-            <xml>/xml/4.xml</xml>
-            <yaml>/yaml/4.yaml</yaml>
+            <json>/json/000/004.json</json>
+            <hjson>/hjson/000/004.hjson</hjson>
+            <xml>/xml/000/004.xml</xml>
+            <yaml>/yaml/000/004.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -126,10 +126,10 @@
         </title>
         <ryuuganime>5</ryuuganime>
         <path>
-            <json>/json/5.json</json>
-            <hjson>/hjson/5.hjson</hjson>
-            <xml>/xml/5.xml</xml>
-            <yaml>/yaml/5.yaml</yaml>
+            <json>/json/000/005.json</json>
+            <hjson>/hjson/000/005.hjson</hjson>
+            <xml>/xml/000/005.xml</xml>
+            <yaml>/yaml/000/005.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -145,10 +145,10 @@
         </title>
         <ryuuganime>6</ryuuganime>
         <path>
-            <json>/json/6.json</json>
-            <hjson>/hjson/6.hjson</hjson>
-            <xml>/xml/6.xml</xml>
-            <yaml>/yaml/6.yaml</yaml>
+            <json>/json/000/006.json</json>
+            <hjson>/hjson/000/006.hjson</hjson>
+            <xml>/xml/000/006.xml</xml>
+            <yaml>/yaml/000/006.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -164,10 +164,10 @@
         </title>
         <ryuuganime>7</ryuuganime>
         <path>
-            <json>/json/7.json</json>
-            <hjson>/hjson/7.hjson</hjson>
-            <xml>/xml/7.xml</xml>
-            <yaml>/yaml/7.yaml</yaml>
+            <json>/json/000/007.json</json>
+            <hjson>/hjson/000/007.hjson</hjson>
+            <xml>/xml/000/007.xml</xml>
+            <yaml>/yaml/000/007.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -183,10 +183,10 @@
         </title>
         <ryuuganime>8</ryuuganime>
         <path>
-            <json>/json/8.json</json>
-            <hjson>/hjson/8.hjson</hjson>
-            <xml>/xml/8.xml</xml>
-            <yaml>/yaml/8.yaml</yaml>
+            <json>/json/000/008.json</json>
+            <hjson>/hjson/000/008.hjson</hjson>
+            <xml>/xml/000/008.xml</xml>
+            <yaml>/yaml/000/008.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -202,10 +202,10 @@
         </title>
         <ryuuganime>9</ryuuganime>
         <path>
-            <json>/json/9.json</json>
-            <hjson>/hjson/9.json</hjson>
-            <xml>/xml/9.xml</xml>
-            <yaml>/yaml/9.yaml</yaml>
+            <json>/json/000/009.json</json>
+            <hjson>/hjson/000/009.json</hjson>
+            <xml>/xml/000/009.xml</xml>
+            <yaml>/yaml/000/009.yaml</yaml>
         </path>
     </entry>
     <entry>
@@ -221,10 +221,10 @@
         </title>
         <ryuuganime>10</ryuuganime>
         <path>
-            <json>/json/10.json</json>
-            <hjson>/hjson/10.json</hjson>
-            <xml>/xml/10.xml</xml>
-            <yaml>/yaml/10.yaml</yaml>
+            <json>/json/000/010.json</json>
+            <hjson>/hjson/000/010.json</hjson>
+            <xml>/xml/000/010.xml</xml>
+            <yaml>/yaml/000/010.yaml</yaml>
         </path>
     </entry>
 </database>
