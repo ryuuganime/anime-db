@@ -12,6 +12,7 @@ __TOC__
 # [[json/000/005.json|Gleipnir]]
 # [[json/000/006.json|Kami no Tou]]
 # [[json/000/007.json|Yesterday wo Utatte]]
+# [[json/000/008.json|Kimi no Suizou wo Tabetai]]
 
 = XML =
 # [[xml/000/001.xml|Fugou Keiji Balance:UNLIMITED]]
@@ -21,6 +22,7 @@ __TOC__
 # [[xml/000/005.xml|Gleipnir]]
 # [[xml/000/006.xml|Kami no Tou]]
 # [[xml/000/007.xml|Yesterday wo Utatte]]
+# [[xml/000/008.xml|Kimi no Suizou wo Tabetai]]
 
 = HJSON =
 # [[hjson/000/001.hjson|Fugou Keiji Balance:UNLIMITED]]
@@ -30,6 +32,7 @@ __TOC__
 # [[hjson/000/005.hjson|Gleipnir]]
 # [[hjson/000/006.hjson|Kami no Tou]]
 # [[hjson/000/007.hjson|Yesterday wo Utatte]]
+# [[hjson/000/008.hjson|Kimi no Suizou wo Tabetai]]
 
 = YAML =
 # [[yaml/000/001.yaml|Fugou Keiji Balance:UNLIMITED]]
@@ -39,6 +42,7 @@ __TOC__
 # [[yaml/000/005.yaml|Gleipnir]]
 # [[yaml/000/006.yaml|Kami no Tou]]
 # [[yaml/000/007.yaml|Yesterday wo Utatte]]
+# [[yaml/000/008.yaml|Kimi no Suizou wo Tabetai]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]

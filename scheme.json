@@ -133,15 +133,15 @@
         }
     },
     {
-        "myAnimeList": 0,
-        "kitsu": 0,
-        "aniList": 0,
-        "aniDb": 0,
-        "notifyMoe": "",
+        "myAnimeList": 36098,
+        "kitsu": 13723,
+        "aniList": 99750,
+        "aniDb": 13363,
+        "notifyMoe": "3RRI2FiiR",
         "title": {
-            "en_Latn": "",
-            "en_US": "",
-            "native": ""
+            "en_Latn": "Kimi no Suizou wo Tabetai",
+            "en_US": "I want to eat your pancreas",
+            "native": "君の膵臓をたべたい"
         },
         "ryuuganime": 8,
         "path": {
@@ -183,8 +183,8 @@
         },
         "ryuuganime": 10,
         "path": {
-            "json": "/json/000/0010.json",
-            "hjson": "/hjson/000/0010.json",
+            "json": "/json/000/010.json",
+            "hjson": "/hjson/000/010.json",
             "xml": "/xml/000/010.xml",
             "yaml": "/yaml/000/010.yaml"
         }
