@@ -144,7 +144,7 @@ Unfortunately for him and the ladies, sexual interactions between species is for
         <AnimePlanet>
             <url>https://www.anime-planet.com/anime/monster-musume-no-iru-nichijou</url>
             <id>7098</id>
-            <score>7.16</score>
+            <score>3.741</score>
         </AnimePlanet>
         <ANN>
             <id>16856</id>
@@ -244,6 +244,7 @@ Unfortunately for him and the ladies, sexual interactions between species is for
             <Durandal />
             <EmotPekmen />
             <Excalibur />
+            <exTonan />
             <Gantz />
             <Gin />
             <Haruna />
@@ -317,29 +318,29 @@ Unfortunately for him and the ladies, sexual interactions between species is for
         </idn>
         <eng>
             <fourAnime>https://4anime.to/anime/monster-musume-no-iru-nichijou</fourAnime>
-            <nineAnime>https://www.nineanime.com/manga/MONSTER_MUSUME_NO_IRU_NICHIJOU.html</nineAnime>
+            <nineAnime>https://9anime.ru/watch/monster-musume-no-iru-nichijou.ywx</nineAnime>
             <AnimeDaisuki>https://animedaisuki.moe/anime/238/monster-musume-no-iru-nichijou</AnimeDaisuki>
-            <AnimeTwist />
+            <AnimeTwist>https://twist.moe/a/monster-musume-no-iru-nichijou/1</AnimeTwist>
             <Animeflix />
             <AnimeHeaven>https://animeheaven.ru/detail/monster-musume-no-iru-nichijou.31068</AnimeHeaven>
             <Animelon />
             <Animeultima>https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927</Animeultima>
-            <AniWatch />
-            <GogoAnime>https://www6.gogoanimehub.tv/category/monster-musume-no-iru-nichijou</GogoAnime>
-            <KissAnime />
+            <AniWatch>https://aniwatch.me/anime/336</AniWatch>
+            <GogoAnime>https://gogoanimes.co/category/monster-musume-no-iru-nichijou</GogoAnime>
+            <KissAnime>http://kissanime.ru/Anime/Monster-Musume-no-Iru-Nichijou</KissAnime>
             <WonderfulSubs />
         </eng>
     </fanstream>
     <library>
-        <Nyaa>https://nyaa.si/view/1189835</Nyaa>
+        <Nyaa>https://nyaa.si/?q=Monster+Musume&amp;f=0&amp;c=0_0</Nyaa>
         <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Monster%20Musume&amp;kartel=</PerpusIndo>
         <Shallty>https://shallty.moe/browse?search=monster%20musume</Shallty>
     </library>
     <signature>
         <name>Yamashita Kazuhito</name>
-        <username>Yamashita Kazuhito</username>
+        <username>@YamashitaKazuhito</username>
         <discordId>584207131671134200</discordId>
-        <submissionDateTime>2020-06-03T15:33:10+07.00</submissionDateTime>
+        <submissionDateTime>2020-06-03T15:33:10+07:00</submissionDateTime>
         <sign>RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM=</sign>
     </signature>
 </ryuuganime>
