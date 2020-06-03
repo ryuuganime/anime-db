@@ -851,7 +851,7 @@
     // maka, 2020-12-21T22:45:33+07:00 adalah valid.
     // 
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime:2020-06-03T15:33:10+07.00
+    submissionDateTime:2020-06-03T15:33:10+07:00
 
     # sign [str][num] <nbl>
     # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
