@@ -1,0 +1,844 @@
+#hjson
+/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
+|                               | |                              | | [str] merupakan markah teks, |
+|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
+|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
+| ----------------------------- | |                              | |   ral,  yakni angka dan null |
+|                               | \^----------------------------^/ |   saja.                      |
+| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
+|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
+|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
+|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
+|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
+|                               | |                          ''' | | [arr] merupakan markah array |
+\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
+/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
+|                               | | ru pada suatu value          | |   ta yang berbeda.           |
+| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
+|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
+| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
+|   menjadi array apabila objek |                                  |   value di dalamnya.         |
+|   dalam satu  value lebih ba- |                                  |                              |
+|   nyak daripada satu.         |                                  \^----------------------------^/
+| <nab> array dapat dihilangkan |
+|   tanda  kurungnya, dan dija- |
+|   dikan sebagai null.         |
+| <nbl> string, numeral, atau   |
+|   array terkait tidak bisa    |
+|   diubah menjadi null.        |
+|                               |
+\^-----------------------------*/
+
+{ 
+  // Petunjuk awal:
+  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
+  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
+  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
+  //    tanda koma.
+  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
+  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
+  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
+  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
+  //    id_ID: 
+  //        '''
+  //            Ini hanyalah informasi \"percobaan\",
+  //            harap untuk dapat dimaklumi
+  //        '''
+  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
+  //    contoh pengisian.
+
+  # title [obj]
+  # Merupakan judul suatu serial.
+  title: 
+  {
+    # native [str] <nbl>
+    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
+    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
+    #   yang ditayang di Jepang.
+    native: モンスター娘のいる日常
+
+    # en_Latn [str] <nbl>
+    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
+    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    en_Latn: Monster Musume no Iru Nichijou
+
+    # ar_001 [str] <nab>
+    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: gimana dapat arabnya :v
+
+    # id_ID [str] <nab>
+    # = Judul dalam bahasa Indonesia.
+    id_ID: Kehidupan Sehari Hari Dengan Gadis Monster 
+
+    # en_US [str] <nab>
+    # = Judul dalam bahasa Inggris.
+    en_US: Everyday Life With Monster Girls
+
+    # ja_JP [str] <nab>
+    # = Judul dalam bahasa Jepang.
+    ja_JP: モンスター娘のいる日常
+
+    # de_DE [str] <nab>
+    # = Judul dalam bahasa Jerman.
+    de_DE: Die Monster Mädchen
+
+    # ko_KR [str] <nab>
+    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    ko_KR: 몬스터 아가씨가 있는 일상
+
+    # fr_FR [str] <nab>
+    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    fr_FR: Monster Musume no Iru Nichijou
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: Monster Musume no Iru Nichijou
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia.
+    ru_RU: Повседневная жизнь с девушкой-монстром
+
+    # es_ES [str] <nab>
+    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: Monster Musume no Iru Nichijou
+
+    # zh_Hans [str] <nab>
+    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    zh_Hans: 魔物娘的同居日常
+
+    # zh_Hant [str] <nab>
+    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    zh_Hant: 
+
+    # vi_VN [str] <nab>
+    # = Judul dalam bahasa Vietnam.
+    vi_VN: null
+  }
+
+  # backdrop [str] <url>
+  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
+  #   situs yang diperbolehkan.
+  backdrop: https://image.tmdb.org/t/p/original/igIOe1g8xRYOFgiCgkd29y8UcVH.jpg
+
+  # visualKey [str] <url>
+  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
+  #   yang diperbolehkan.
+  visualKey: https://image.tmdb.org/t/p/original/8leXiwIwPRPQqHXKDhqgf4OIwBU.jpg
+
+  # synopsis [obj]
+  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  synopsis:
+  {
+    # ar_001 [str] <nab>
+    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: null
+
+    # id_ID [str] <nab>
+    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
+    #   Indonesia.
+    id_ID: ''''''Ketika Kurusu Kimihito dilantik sebagai relawan program pertukaran budaya antar spesies, kehidupannya berubah. Gadis "Lamia" manusia setengah hewan yg menyerupai ular bernama Miia datang untuk tinggal bersama, Kurusu ditugaskan untuk merawatnya. Semenjak itu Kurusu sering berurusan dengan gadis monster dari berbagai spesies.
+
+    # en_US [str] <nab>
+    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
+    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    en_US: ''''''With his parents abroad, Kimihito Kurusu lived a quiet, unremarkable life alone until monster girls came crowding in! This alternate reality presents cutting-edge Japan, the first country to promote the integration of non-human species into society. After the incompetence of interspecies exchange coordinator Agent Smith leaves Kimihito as the homestay caretaker of a Lamia named Miia, the newly-minted "Darling" quickly attracts girls of various breeds, resulting in an ever-growing harem flush with eroticism and attraction.
+          ''''''Unfortunately for him and the ladies, sexual interactions between species is forbidden by the Interspecies Exchange Act! The only loophole is through an experimental marriage provision. Kimihito's life becomes fraught with an abundance of creature-specific caveats and sensitive interspecies law as the passionate, affectionate, and lusty women hound his every move, seeking his romantic and sexual affections. With new species often appearing and events materializing out of thin air, where Kimihito and his harem go is anyone's guess!
+
+    # ja_JP [str] <nab>
+    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    ja_JP: null
+
+    # de_DE [str] <nab>
+    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
+    #   untuk sinopsis Jerman.
+    de_DE: '''''' Monster ‒ sie sind real! Und sie wollen mit uns ausgehen! Vor drei Jahren erfuhr die Menschheit von der Existenz von Harpien, Zentauren, Katzenmädchen und allen möglichen anderen Kreaturen, die nun mehr als nur Fabelwesen sind. Sie sind Fleisch und Blut, außerdem noch Schuppen, Federn, Hörner und Reißzähne. Und durch das „Gesetz über kulturellen Austausch zwischen den Spezies“ haben sich diese einst mystischen Wesen in unsere Gesellschaft integriert. Na gut, sie versuchen es zumindest. Als der Pechvogel Kurusu Kimihito als „Freiwilliger“ in das Austauschprogramm der Regierung aufgenommen wird, steht seine Welt plötzlich Kopf. Die schlangenähnliche Lamia Miia lebt nun bei ihm und Kurusus Aufgabe ist es, sich um sie zu kümmern und dafür zu sorgen, dass sie sich in sein tägliches Leben integriert. Zu seinem Pech sieht Miia unglaublich scharf aus, aber das Gesetz gegen zwischenrassische Fortpflanzung ist sehr streng. Es kommt jedoch noch schlimmer, als auch noch ein hinreißendes Zentauren-Mädchen und eine kokette Harpie bei ihm einziehen. Wird der junge Mann sich trotz seiner rasenden Hormone an das Gesetz halten können?
+
+    # ko_KR [str] <nab>
+    # = Sinopsis dalam bahasa Korea Selatan.
+    ko_KR: ''''''「타종족간 교류법」 시행에 의해, 인간 이외의 종족과의 교류가 인정된 일본. 쿠루스 키미히토는 교류 코디네이터의 실수로 인해 타종족의 여자아이와 집에서 공동생활을 하게 되는데…?! 인기폭발 하렘 상태지만 타종족과의 깊~은 교류(♡)는 법으로 엄격하게 금지되어 있었다. 사랑스럽지만 조금 특별한 몬스터 아가씨들과 지내는 매일이 시작된다
+
+    # fr_FR [str] <nab>
+    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
+    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    fr_FR: ''''''Les monstres… ils existent, et elles sont monstrueusement sexy ! Il y a trois ans, le monde appris que les lamias, harpies, centaures et autres créatures fantastiques mi-femmes mi-monstres étaient bien réelles, et fut très vite lancé un vaste programme visant à les intégrer à notre société, en les plaçant dans des familles d’accueil. Désigné volontaire, Kimihito héberge désormais chez lui Miia, une lamia, mi-femme mi-serpent, qui se démène pour gagner les faveurs de son Darling d’amour. Mais si Miia est déjà encombrante, Kimihito n’est pas au bout de ses peines, car d’autres demoiselles viendront bientôt une à une se rajouter dans la joyeuse maisonnée que va devenir son domicile.
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: ''''''Monstros são reais e querem namorar conosco! Há três anos o mundo descobriu que harpias, centauros e todo tipo de criatura fabulosa não são apenas ficção. Elas são de carne e osso, isso para não mencionar escamas, penas, chifres e presas. Graças ao "Ato de Intercâmbio Cultural Entre as Espécies", essas criaturas antes míticas foram assimiladas à sociedade, ou ao menos estão tentando. Quando um humano infeliz chamado Kurusu Kihimitsu é introduzido como voluntário no programa do governo, seu mundo é virado do avesso. Uma lâmia tipo cobra chamada Miia vem viver com ele e o trabalho de Kurusu é cuidar dela e integrá-la à sua vida. Infelizmente para Kurusu, Miia é irresistivelmente sensual e a lei de anti-cruzamento entre espécies é muito severa. Pra piorar, quando uma linda garota centauro e uma harpia sedutora se mudam para a casa dele, o que um jovem com sangue fervente e hormônios enlouquecidos pode fazer?
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    ru_RU: ''''''Помимо людей, существуют и различные монстры чье тело наполовину является человеком и наполовину каким либо животным. Раньше правительство скрывало их существование. Однако, три года назад существование монстров было раскрыто и был подписан закон о культурном обмене между видами. Согласно этому закону представители полулюдей будут селиться среди людей и знакомиться с человеческим обществом. За каждым участвующим в культурном обмене получеловеком закрепляется определенный хозяин. Хозяин должен всегда сопровождать своего гостя, в противном случае гостя депортируют из страны. Также людям и полулюдям запрещено нападать друг на друга. Под запретом находятся и межвидовые сексуальные отношения. Кимихито Курусу — один из людей участвующих в культурном обмене. К нему поселили полузмею, Мию, которая постоянно пытается его соблазнить несмотря на законодательные запреты. Позднее дом Кимихито пополняется новыми девушками-монстрами претендующими на его сердце. Кроме того, запрет на межвидовые отношения ослабляется и в порядке эксперимента Кимихито разрешают жениться на живущи
+
+    # es_ES [str] <nab>
+    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: ''''''Durante años, el gobierno japonés ha mantenido en secreto que criaturas míticas como los centauras, las lamias o las arpías, existen de verdad. Tres años antes del inicio de la historia, el gobierno hizo pública la existencia de estas criaturas y aprobó la ley del “Intercambio Cultural Interespecies”. Desde entonces, los “liminals” se han convertido en parte de la sociedad humanas, viviendo con familias humanas, aunque con diferentes deberes y restricciones. Kurusu Kimihito no se ofreció voluntario para acoger a uno de estos “liminals” en su hogar, pero cuando por error le llevan a su casa a una asustada y avergonzada Miia, no se ve capaz de rechazarla y acaba viviendo con ella. Poco a poco la casa de Kimihito se convertirá más y más en un hogar repleto de chicas liminals, quiera él o no. Y lo peor llega cuando por unos cambios en la ley que afecta a la relación entre ambas especies, deberá casarse con una de ellas.
+
+    # zh_Hans [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
+    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    zh_Hans: ''''''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
+
+    # zh_Hant [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
+    #   menggunakan aksara Kanton dalam database mereka.
+    zh_Hant: ''''''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
+
+    # vi_VN [str] <nab>
+    # = Sinopsis dalam bahasa Vietnam.
+    vi_VN: null
+  }
+
+  # information [obj]
+  # = Merupakan kumpulan informasi mengenai serial.
+  information:
+  {
+    # synonyms [obj] > [arr] <nab>
+    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    synonyms:
+    {
+      en_Latn: [
+        MonMusu
+      ]
+      ar_001: [
+        
+      ]
+      id_ID: [
+        MonMusu
+      ]
+      en_US: [
+        MonMusu
+      ]
+      ja_JP: [
+        
+      ]
+      de_DE: [
+        
+      ]
+      ko_KR: [
+        
+      ]
+      fr_FR: [
+        
+      ]
+      pt_PT: [
+        
+      ]
+      ru_RU: [
+        
+      ]
+      es_ES: [
+        
+      ]
+      zh_Hans: [
+        
+      ]
+      zh_Hant: [
+        
+      ]
+      vi_VN: [
+        
+      ]
+    }
+
+    # type [obj] > [str] <nbl>
+    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    type:
+    {
+      // Argumen yang diperbolehkan ialah:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      en_US: TV
+
+      // Argumen yang diperbolehkan ialah:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      id_ID: Serial TV
+    }
+
+    # status [obj] > [str] <nbl>
+    # = Menjelaskan status penanyangan serial.
+    status:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Aired, Airing, Planned, TBA, dan Unknown
+      en_US: Aired
+
+      // Argumen yang diperbolehkan ialah
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
+      //   Diketahui
+      id_ID: Ditayangkan
+    }
+
+    # serialGenre [obj]
+    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    serialGenre:
+    {
+      # en_US [arr] <nbl>
+      # = Genre serial dalam bahasa Inggris.
+      en_US:
+      [
+        Harem
+        Fantasy
+        Romance
+        Comedy
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Genre serial dalam bahasa Indonesia.
+      id_ID:
+      [
+        Harem
+        Fantasi
+        Romansa
+        Komedi
+      ]
+    }
+
+    # serialTags [obj]
+    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
+    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    serialTags:
+    {
+      # en_US [arr] <nbl>
+      # = Tag serial dalam bahasa Inggris
+      en_US:
+      [
+        Seinen
+        Ecchi
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Tag serial dalam bahasa Indonesia
+      id_ID:
+      [
+        Seinen
+        Ecchi
+      ]
+    }
+
+    # releaseSeason [obj] > [str] <nbl>
+    # = Musim rilisan serial.
+    releaseSeason:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Winter, Spring, Summer, Fall, dan Unknown
+      en_US: Summer
+
+      // Argumen yang diperbolehkan ialah
+      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      id_ID: Panas
+
+      // Argumen yang diperbolehkan ialah
+      // 冬, 春, 夏, 秋, dan 不明
+      ja_JP: 春
+
+      // Argumen yang diperbolehkan ialah
+      // 겨울, 봄, 여름, 가을, dan 알
+      ko_KR: 봄
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hans: 春天
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hant: 春天
+    }
+
+    # releaseYear [num] <nbl>
+    # = Tahun rilis serial, menggunakan format numeral.
+    releaseYear: 2015
+
+    # episode [num] <nbl>
+    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    episode: 12
+
+    # releaseDate [str]
+    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    releaseDate: 2015 Jul 08 
+
+    # endDate [str]
+    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    endDate: 2015 Sep 23
+
+    # duration [num] <nab>
+    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    duration: 23
+
+    # totalDuration [num] <nab>
+    # = Durasi total serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    totalDuration: null
+
+    # studio [str] <arb> <nab>
+    # = Studio yang memproduksi serial.
+    studio: Studio Hibari, TOHO animation, Genco
+
+    # rating [str] <nab>
+    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    // Argumen yang diperbolehkan ialah
+    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    rating: R18+
+
+    # isNsfw [boo] <nbl>
+    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
+    #   false, yakni aman.
+    // Argumen yang diperbolehkan ialah
+    // true dan false
+    "isNsfw": true
+
+    # adaptation [obj] > [str] <arb> <nab>
+    # = Ialah adaptasi asal tayangan.
+    adaptation:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
+      // Drama, 4-koma, Fairy Tale, dan null
+      en_US:  Manga
+
+      // Argumen yang diperbolehkan ialah
+      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
+      // Drama, 4-panel, Dongeng, dan null
+      id_ID: Manga
+    }
+
+    # country [str] <nbl>
+    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    country:
+    {
+      en_US: Japan
+      id_ID: Jepang
+    }
+  }
+
+  // scores [obj] > [str]/[num] <nab>
+  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  scores:
+  {
+    // https://anidb.net
+    aniDB:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 11130
+      score: 6.63
+    }
+    
+    // https://anilist.co
+    AniList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 21093
+      score: 68
+    }
+
+    // https://anime-planet.com
+    AnimePlanet:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anime-planet.com/anime/monster-musume-no-iru-nichijou
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 7098
+      score: 7.16
+    }
+    ANN:
+    
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 16856
+      score: 7.043
+    }
+
+    // https://anisearch.com
+    aniSearch:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anisearch.com/anime/10270,monster-musume-everyday-life-with-monster-girls
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 10270
+      score: 3.47
+    }
+
+    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
+    Annict:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 4372
+      score: 100
+    }
+
+    // https://imdb.com
+    IMDb:
+    {
+      # code
+      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
+      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
+      #   dan 6751668 merupakan ID serial
+      code: tt4831392
+      score: 6.7
+    }
+
+    // https://kinopoisk.ru
+    KinoPoisk:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 921030
+      score: 6.9
+    }
+
+    // https://kitsu.io
+    Kitsu:
+    {
+      # slug [str]
+      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      slug: monster-musume-no-iru-nichijou
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
+      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      id: 10748
+      score: 71.91
+    }
+
+    // https://livechart.me
+    LiveChart:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1439
+      score: 7.22
+    }
+
+    // https://myanimelist.net
+    MyAnimeList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 30307
+      score: 7.16
+    }
+    
+    // https://en.myshows.me/
+    MyShows:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 43617
+      score: 3.77
+    }
+
+    // http://nautiljon.com/
+    Nautiljon:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.nautiljon.com/animes/monster+musume+no+iru+nichijou.html
+      score: 7.44
+    }
+
+    // https://notify.moe/
+    Notify:
+    {
+      # base64 [str]
+      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      base64: FSrwpKimg
+      score: 7.1
+    }
+
+    // http://otakotaku.com/
+    OtakOtaku:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 33
+      score: 6.78
+    }
+
+    // http://shikimori.org/
+    Shikimori:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: z30307
+      score: 7.17
+    }
+
+    // https://simkl.com
+    SIMKL:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 479722
+      score: 7.3
+    }
+
+    // https://www.themoviedb.org/
+    TMDB:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: 
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 63187
+      score: 76
+    }
+
+    // https://trakt.tv/
+    Trakt:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://trakt.tv/shows/monster-musume-everyday-life-with-monster-girls
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: 72
+    }
+
+    // https://www.tvtime.com/en
+    TVTime:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: 0
+      # ga ge isi :v ga bisa di buka di pc ge, trims...
+    }
+  }
+
+  # updatedDate [str] <nbl>
+  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
+  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+  // Tata cara pengisian data
+  // Format: YYYY-MM-DDThh:mm:ssTZD
+  // Yang mana:
+  // YYYY = tahun (2020)
+  // MM   = bulan (12)
+  // DD   = tanggal (21)
+  // hh   = pukul, format 24 jam (22)
+  // mm   = menit (45)
+  // ss   = detik (33)
+  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // 
+  // WIB = +07:00, WITA = +08:00, WIT = +09:00
+  updatedDate: 
+  fansub:
+  {
+    idn:
+    {
+      Aibou: 
+      Aizukara: 
+      Allsub: 
+      Alter: 
+      AnimeGokil: 
+      AniToki: 
+      AoiTenshi: 
+      Arks: 
+      ASubs: 
+      AWSubs: 
+      Bentoo: 
+      Caramel: 
+      Cijanepoi: 
+      Conan: 
+      DAnimeSubs: 
+      Del: 
+      DNFI: 
+      Durandal: 
+      EmotPekmen: 
+      Excalibur: 
+      Gantz: 
+      Gin: 
+      Haruna: 
+      Haruzora: 
+      HunterNoSekai: 
+      IA: 
+      Inazumaotoshi: 
+      Indis: 
+      Inform0930: 
+      Isekai: 
+      Junk: 
+      Kazefuri: 
+      Kinshiru: 
+      KO: 
+      Kopaja: 
+      LCC: 
+      MangaNekoTranslation: 
+      Melody: 
+      Mite: 
+      Nanairo: 
+      Neo: 
+      OPLovers: 
+      Ougi: 
+      Panagayan: 
+      Pendekar: 
+      Pucuk: 
+      Quinime: 
+      RevieXion: 
+      Samehadaku: 
+      SilverYasha: 
+      Sora: 
+      TTOD: 
+      Vedifi: 
+      Warung: 
+      Wibu: 
+      Yuki: 
+      Zen: 
+    }
+    eng:
+    {
+      Horrible: 
+    }
+  }
+  fanshare:
+  {
+    idn:
+    {
+      AniBatch: https://www.anibatch.me/monster-musume
+      AnimeKompi: http://animekompi.web.id/series/monster-musume-no-iru-nichijou/
+      AnimeSAVE: http://www.animesave.com/monster-musume-no-iru-nichijou-bd-subtitle-indonesia/
+      Bakacan: https://bakacan.id/anime/monster-musume-no-iru-nichijou/
+      Drivenime: null
+      Hinime: null
+      Koenime: https://www.koenime.com/monmusu-sub-indo/
+      Kusonime: https://kusonime.com/monmusu-batch-sub-indo/
+      Mikanime: https://mikanime.com/monster-musume-sub-indo/
+      Moenime: https://moenime.web.id/monster-musume-no-iru-nichijou-sub-indo/
+      Ryuukoi: null
+      WibuDesu: https://wibudesu.com/bd-monster-musume-no-iru-nichijou-subtitle-indonesia/
+    }
+    eng:
+    {
+      AnimeKayo: null
+    }
+  }
+  fanstream:
+  {
+    idn:
+    {
+      AnimeIndoNET: null
+      anoBoy: https://anoboy.us/anime/monster-musume-no-iru-nichijou/
+      Gomunime: null
+      Moeclip: https://moeclip.com/anime/monster-musume-no-iru-nichijou-sub-indo/
+      Neonime: https://neonime.moe/episode/monster-musume-no-iru-nichijou-bd-1x1/
+      Onnime: https://onnime.net/anime/monster-musume-no-iru-nichijou.6G78b20Q/
+      OtakuIndo: null
+    }
+    eng:
+    {
+      fourAnime: https://4anime.to/anime/monster-musume-no-iru-nichijou
+      nineAnime: https://www.nineanime.com/manga/MONSTER_MUSUME_NO_IRU_NICHIJOU.html
+      AnimeDaisuki: https://animedaisuki.moe/anime/238/monster-musume-no-iru-nichijou
+      AnimeTwist: null
+      Animeflix: null
+      AnimeHeaven: https://animeheaven.ru/detail/monster-musume-no-iru-nichijou.31068
+      Animelon: null
+      Animeultima: https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927
+      AniWatch: null
+      GogoAnime: https://www6.gogoanimehub.tv/category/monster-musume-no-iru-nichijou
+      KissAnime: null
+      WonderfulSubs: null
+    }
+  }
+  library:
+  {
+    Nyaa: https://nyaa.si/view/1189835
+    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Monster%20Musume&kartel=
+    Shallty: https://shallty.moe/browse?search=monster%20musume
+  }
+
+  # signature
+  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  signature:
+  {
+    # name [str] <nbl>
+    # = Nama Anda, boleh menggunakan nama pena.
+    name: Yamashita Kazuhito
+
+    # username [str] <nbl>
+    # = Nama pengguna Anda di GitHub
+    username:Yamashita Kazuhito
+
+    # discordId [num] <nbl>
+    # = Merupakan ID unik pengguna Anda di Discord.
+    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    discordId: YamashitaKazuhito#9781
+
+    # submissionDateTime [str] <nbl>
+    # = Tanggal dan waktu sebelum submisi (commit/push).
+    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+    // Tata cara pengisian data
+    // Format: YYYY-MM-DDThh:mm:ssTZD
+    // Yang mana:
+    // YYYY = tahun (2020)
+    // MM   = bulan (12)
+    // DD   = tanggal (21)
+    // hh   = pukul, format 24 jam (22)
+    // mm   = menit (45)
+    // ss   = detik (33)
+    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // 
+    // WIB = +07:00, WITA = +08:00, WIT = +09:00
+    submissionDateTime:2020-06-03T15:33:10+07.00
+
+    # sign [str][num] <nbl>
+    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
+    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
+    #   Base64.
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM=
+  }
+}
