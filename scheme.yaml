@@ -128,15 +128,15 @@
         xml: /xml/000/008.xml
         yaml: /yaml/000/008.yaml
 -
-    myAnimeList: 0
-    kitsu: 0
-    aniList: 0
-    aniDb: 0
-    notifyMoe: ""
+    myAnimeList: 30307
+    kitsu: 10748
+    aniList: 21093
+    aniDb: 11130
+    notifyMoe: FSrwpKimg
     title:
-        en_Latn: ""
-        en_US: ""
-        native: ""
+        en_Latn: Monster Musume no Iru Nichijou
+        en_US: Everyday Life With Monster Girls
+        native: モンスター娘のいる日常
     ryuuganime: 9
     path:
         json: /json/000/009.json
