@@ -66,7 +66,7 @@
     # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
     #   bahwa menggunakan logat Arab Modern yang telah distandarkan
     #   (Arabic MSA).
-    ar_001: gimana dapat arabnya :v
+    ar_001: الحياة اليومية للفتيات الوحوش
 
     # id_ID [str] <nab>
     # = Judul dalam bahasa Indonesia.
@@ -110,7 +110,7 @@
 
     # zh_Hant [str] <nab>
     # = Judul dalam bahasa China beraksara Kanton (Traditional).
-    zh_Hant: 
+    zh_Hant: 魔物娘的同居日常
 
     # vi_VN [str] <nab>
     # = Judul dalam bahasa Vietnam.
@@ -135,58 +135,58 @@
     # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
     #   bahwa menggunakan logat Arab Modern yang telah distandarkan
     #   (Arabic MSA).
-    ar_001: null
+    ar_001: '''قبل ثلاثة سنوات علِمَ العالم الطماع عن وجود مخلوقات رائعة و جميلة و خلابة من لحمٍ و دم و أيضًا ريشٍ و قرون، وبفضل قانون التبادل الثقافي أيقنت هذهِ المخلوقات الأسطورية عن طمعهم، وكان هنالك بشري تعيس في سن المراهقة اسمه كورسو كيميهيتو التحق في برنامج التبادل الحكومي وقد قُلب عالمه رأسًا على عقب، و أتت فتاة تُدعى ميا كانت وظيفتها العيش مع كورسو لتعتني به و تتأكد أنَّ حياته تسير بتماشٍ مع التبادل، لسوء الحظ بالنسبة لكورسو فإنَّ ميا فتاة جميلة و مثيرة و لا يمكنه إنكار ذلك، و يوجد قانون صارمٌ للغاية يمنع تزاوج الاجناس المختلفة و الأسوء من ذلك بأنها ساحرة ، ماذا سيفعل الإنسان المراهق الهرموني؟ تابعوا الانمي لمزيد من التفاصيل'''
 
     # id_ID [str] <nab>
     # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
     #   Indonesia.
-    id_ID: ''''''Ketika Kurusu Kimihito dilantik sebagai relawan program pertukaran budaya antar spesies, kehidupannya berubah. Gadis "Lamia" manusia setengah hewan yg menyerupai ular bernama Miia datang untuk tinggal bersama, Kurusu ditugaskan untuk merawatnya. Semenjak itu Kurusu sering berurusan dengan gadis monster dari berbagai spesies.
+    id_ID: '''Ketika Kurusu Kimihito dilantik sebagai relawan program pertukaran budaya antar spesies, kehidupannya berubah. Gadis "Lamia" manusia setengah hewan yg menyerupai ular bernama Miia datang untuk tinggal bersama, Kurusu ditugaskan untuk merawatnya. Semenjak itu Kurusu sering berurusan dengan gadis monster dari berbagai spesies.'''
 
     # en_US [str] <nab>
     # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
     #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
-    en_US: ''''''With his parents abroad, Kimihito Kurusu lived a quiet, unremarkable life alone until monster girls came crowding in! This alternate reality presents cutting-edge Japan, the first country to promote the integration of non-human species into society. After the incompetence of interspecies exchange coordinator Agent Smith leaves Kimihito as the homestay caretaker of a Lamia named Miia, the newly-minted "Darling" quickly attracts girls of various breeds, resulting in an ever-growing harem flush with eroticism and attraction.
-          ''''''Unfortunately for him and the ladies, sexual interactions between species is forbidden by the Interspecies Exchange Act! The only loophole is through an experimental marriage provision. Kimihito's life becomes fraught with an abundance of creature-specific caveats and sensitive interspecies law as the passionate, affectionate, and lusty women hound his every move, seeking his romantic and sexual affections. With new species often appearing and events materializing out of thin air, where Kimihito and his harem go is anyone's guess!
-
+    en_US: '''With his parents abroad, Kimihito Kurusu lived a quiet, unremarkable life alone until monster girls came crowding in! This alternate reality presents cutting-edge Japan, the first country to promote the integration of non-human species into society. After the incompetence of interspecies exchange coordinator Agent Smith leaves Kimihito as the homestay caretaker of a Lamia named Miia, the newly-minted "Darling" quickly attracts girls of various breeds, resulting in an ever-growing harem flush with eroticism and attraction.
+    Unfortunately for him and the ladies, sexual interactions between species is forbidden by the Interspecies Exchange Act! The only loophole is through an experimental marriage provision. Kimihito's life becomes fraught with an abundance of creature-specific caveats and sensitive interspecies law as the passionate, affectionate, and lusty women hound his every move, seeking his romantic and sexual affections. With new species often appearing and events materializing out of thin air, where Kimihito and his harem go is anyone's guess!
+    '''       
     # ja_JP [str] <nab>
     # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
-    ja_JP: null
+    ja_JP: '''「他種族間交流法」の施行により、 人間以外の種族との交流が認められた日本。 ある手違いにより、主人公・来留主公人のもとに他種族の 女の子（モンスター娘）たちが続々と 転がり込んできて、共同生活を送ることに…！？ モテモテハーレム状態だけど、 他種族とのふか～い交流（♡）は、 法律で厳しく禁止されていて…？ 可愛いけれど、ちょっとちがうモンスター娘たちと過ごす、 少し変わった毎日がはじまる…♡'''
 
     # de_DE [str] <nab>
     # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
     #   untuk sinopsis Jerman.
-    de_DE: '''''' Monster ‒ sie sind real! Und sie wollen mit uns ausgehen! Vor drei Jahren erfuhr die Menschheit von der Existenz von Harpien, Zentauren, Katzenmädchen und allen möglichen anderen Kreaturen, die nun mehr als nur Fabelwesen sind. Sie sind Fleisch und Blut, außerdem noch Schuppen, Federn, Hörner und Reißzähne. Und durch das „Gesetz über kulturellen Austausch zwischen den Spezies“ haben sich diese einst mystischen Wesen in unsere Gesellschaft integriert. Na gut, sie versuchen es zumindest. Als der Pechvogel Kurusu Kimihito als „Freiwilliger“ in das Austauschprogramm der Regierung aufgenommen wird, steht seine Welt plötzlich Kopf. Die schlangenähnliche Lamia Miia lebt nun bei ihm und Kurusus Aufgabe ist es, sich um sie zu kümmern und dafür zu sorgen, dass sie sich in sein tägliches Leben integriert. Zu seinem Pech sieht Miia unglaublich scharf aus, aber das Gesetz gegen zwischenrassische Fortpflanzung ist sehr streng. Es kommt jedoch noch schlimmer, als auch noch ein hinreißendes Zentauren-Mädchen und eine kokette Harpie bei ihm einziehen. Wird der junge Mann sich trotz seiner rasenden Hormone an das Gesetz halten können?
+    de_DE: '''Monster ‒ sie sind real! Und sie wollen mit uns ausgehen! Vor drei Jahren erfuhr die Menschheit von der Existenz von Harpien, Zentauren, Katzenmädchen und allen möglichen anderen Kreaturen, die nun mehr als nur Fabelwesen sind. Sie sind Fleisch und Blut, außerdem noch Schuppen, Federn, Hörner und Reißzähne. Und durch das „Gesetz über kulturellen Austausch zwischen den Spezies“ haben sich diese einst mystischen Wesen in unsere Gesellschaft integriert. Na gut, sie versuchen es zumindest. Als der Pechvogel Kurusu Kimihito als „Freiwilliger“ in das Austauschprogramm der Regierung aufgenommen wird, steht seine Welt plötzlich Kopf. Die schlangenähnliche Lamia Miia lebt nun bei ihm und Kurusus Aufgabe ist es, sich um sie zu kümmern und dafür zu sorgen, dass sie sich in sein tägliches Leben integriert. Zu seinem Pech sieht Miia unglaublich scharf aus, aber das Gesetz gegen zwischenrassische Fortpflanzung ist sehr streng. Es kommt jedoch noch schlimmer, als auch noch ein hinreißendes Zentauren-Mädchen und eine kokette Harpie bei ihm einziehen. Wird der junge Mann sich trotz seiner rasenden Hormone an das Gesetz halten können?''' 
 
     # ko_KR [str] <nab>
     # = Sinopsis dalam bahasa Korea Selatan.
-    ko_KR: ''''''「타종족간 교류법」 시행에 의해, 인간 이외의 종족과의 교류가 인정된 일본. 쿠루스 키미히토는 교류 코디네이터의 실수로 인해 타종족의 여자아이와 집에서 공동생활을 하게 되는데…?! 인기폭발 하렘 상태지만 타종족과의 깊~은 교류(♡)는 법으로 엄격하게 금지되어 있었다. 사랑스럽지만 조금 특별한 몬스터 아가씨들과 지내는 매일이 시작된다
+    ko_KR: '''「타종족간 교류법」 시행에 의해, 인간 이외의 종족과의 교류가 인정된 일본. 쿠루스 키미히토는 교류 코디네이터의 실수로 인해 타종족의 여자아이와 집에서 공동생활을 하게 되는데…?! 인기폭발 하렘 상태지만 타종족과의 깊~은 교류(♡)는 법으로 엄격하게 금지되어 있었다. 사랑스럽지만 조금 특별한 몬스터 아가씨들과 지내는 매일이 시작된다'''
 
     # fr_FR [str] <nab>
     # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
     #   Nautiljon atau TVDB untuk sinopsis Perancis.
-    fr_FR: ''''''Les monstres… ils existent, et elles sont monstrueusement sexy ! Il y a trois ans, le monde appris que les lamias, harpies, centaures et autres créatures fantastiques mi-femmes mi-monstres étaient bien réelles, et fut très vite lancé un vaste programme visant à les intégrer à notre société, en les plaçant dans des familles d’accueil. Désigné volontaire, Kimihito héberge désormais chez lui Miia, une lamia, mi-femme mi-serpent, qui se démène pour gagner les faveurs de son Darling d’amour. Mais si Miia est déjà encombrante, Kimihito n’est pas au bout de ses peines, car d’autres demoiselles viendront bientôt une à une se rajouter dans la joyeuse maisonnée que va devenir son domicile.
+    fr_FR: '''Les monstres… ils existent, et elles sont monstrueusement sexy ! Il y a trois ans, le monde appris que les lamias, harpies, centaures et autres créatures fantastiques mi-femmes mi-monstres étaient bien réelles, et fut très vite lancé un vaste programme visant à les intégrer à notre société, en les plaçant dans des familles d’accueil. Désigné volontaire, Kimihito héberge désormais chez lui Miia, une lamia, mi-femme mi-serpent, qui se démène pour gagner les faveurs de son Darling d’amour. Mais si Miia est déjà encombrante, Kimihito n’est pas au bout de ses peines, car d’autres demoiselles viendront bientôt une à une se rajouter dans la joyeuse maisonnée que va devenir son domicile.'''
 
     # pt_PT [str] <nab>
     # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
-    pt_PT: ''''''Monstros são reais e querem namorar conosco! Há três anos o mundo descobriu que harpias, centauros e todo tipo de criatura fabulosa não são apenas ficção. Elas são de carne e osso, isso para não mencionar escamas, penas, chifres e presas. Graças ao "Ato de Intercâmbio Cultural Entre as Espécies", essas criaturas antes míticas foram assimiladas à sociedade, ou ao menos estão tentando. Quando um humano infeliz chamado Kurusu Kihimitsu é introduzido como voluntário no programa do governo, seu mundo é virado do avesso. Uma lâmia tipo cobra chamada Miia vem viver com ele e o trabalho de Kurusu é cuidar dela e integrá-la à sua vida. Infelizmente para Kurusu, Miia é irresistivelmente sensual e a lei de anti-cruzamento entre espécies é muito severa. Pra piorar, quando uma linda garota centauro e uma harpia sedutora se mudam para a casa dele, o que um jovem com sangue fervente e hormônios enlouquecidos pode fazer?
+    pt_PT: '''Monstros são reais e querem namorar conosco! Há três anos o mundo descobriu que harpias, centauros e todo tipo de criatura fabulosa não são apenas ficção. Elas são de carne e osso, isso para não mencionar escamas, penas, chifres e presas. Graças ao "Ato de Intercâmbio Cultural Entre as Espécies", essas criaturas antes míticas foram assimiladas à sociedade, ou ao menos estão tentando. Quando um humano infeliz chamado Kurusu Kihimitsu é introduzido como voluntário no programa do governo, seu mundo é virado do avesso. Uma lâmia tipo cobra chamada Miia vem viver com ele e o trabalho de Kurusu é cuidar dela e integrá-la à sua vida. Infelizmente para Kurusu, Miia é irresistivelmente sensual e a lei de anti-cruzamento entre espécies é muito severa. Pra piorar, quando uma linda garota centauro e uma harpia sedutora se mudam para a casa dele, o que um jovem com sangue fervente e hormônios enlouquecidos pode fazer?'''
 
     # ru_RU [str] <nab>
     # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
-    ru_RU: ''''''Помимо людей, существуют и различные монстры чье тело наполовину является человеком и наполовину каким либо животным. Раньше правительство скрывало их существование. Однако, три года назад существование монстров было раскрыто и был подписан закон о культурном обмене между видами. Согласно этому закону представители полулюдей будут селиться среди людей и знакомиться с человеческим обществом. За каждым участвующим в культурном обмене получеловеком закрепляется определенный хозяин. Хозяин должен всегда сопровождать своего гостя, в противном случае гостя депортируют из страны. Также людям и полулюдям запрещено нападать друг на друга. Под запретом находятся и межвидовые сексуальные отношения. Кимихито Курусу — один из людей участвующих в культурном обмене. К нему поселили полузмею, Мию, которая постоянно пытается его соблазнить несмотря на законодательные запреты. Позднее дом Кимихито пополняется новыми девушками-монстрами претендующими на его сердце. Кроме того, запрет на межвидовые отношения ослабляется и в порядке эксперимента Кимихито разрешают жениться на живущи
+    ru_RU: '''Помимо людей, существуют и различные монстры чье тело наполовину является человеком и наполовину каким либо животным. Раньше правительство скрывало их существование. Однако, три года назад существование монстров было раскрыто и был подписан закон о культурном обмене между видами. Согласно этому закону представители полулюдей будут селиться среди людей и знакомиться с человеческим обществом. За каждым участвующим в культурном обмене получеловеком закрепляется определенный хозяин. Хозяин должен всегда сопровождать своего гостя, в противном случае гостя депортируют из страны. Также людям и полулюдям запрещено нападать друг на друга. Под запретом находятся и межвидовые сексуальные отношения. Кимихито Курусу — один из людей участвующих в культурном обмене. К нему поселили полузмею, Мию, которая постоянно пытается его соблазнить несмотря на законодательные запреты. Позднее дом Кимихито пополняется новыми девушками-монстрами претендующими на его сердце. Кроме того, запрет на межвидовые отношения ослабляется и в порядке эксперимента Кимихито разрешают жениться на живущи'''
 
     # es_ES [str] <nab>
     # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
-    es_ES: ''''''Durante años, el gobierno japonés ha mantenido en secreto que criaturas míticas como los centauras, las lamias o las arpías, existen de verdad. Tres años antes del inicio de la historia, el gobierno hizo pública la existencia de estas criaturas y aprobó la ley del “Intercambio Cultural Interespecies”. Desde entonces, los “liminals” se han convertido en parte de la sociedad humanas, viviendo con familias humanas, aunque con diferentes deberes y restricciones. Kurusu Kimihito no se ofreció voluntario para acoger a uno de estos “liminals” en su hogar, pero cuando por error le llevan a su casa a una asustada y avergonzada Miia, no se ve capaz de rechazarla y acaba viviendo con ella. Poco a poco la casa de Kimihito se convertirá más y más en un hogar repleto de chicas liminals, quiera él o no. Y lo peor llega cuando por unos cambios en la ley que afecta a la relación entre ambas especies, deberá casarse con una de ellas.
+    es_ES: '''Durante años, el gobierno japonés ha mantenido en secreto que criaturas míticas como los centauras, las lamias o las arpías, existen de verdad. Tres años antes del inicio de la historia, el gobierno hizo pública la existencia de estas criaturas y aprobó la ley del “Intercambio Cultural Interespecies”. Desde entonces, los “liminals” se han convertido en parte de la sociedad humanas, viviendo con familias humanas, aunque con diferentes deberes y restricciones. Kurusu Kimihito no se ofreció voluntario para acoger a uno de estos “liminals” en su hogar, pero cuando por error le llevan a su casa a una asustada y avergonzada Miia, no se ve capaz de rechazarla y acaba viviendo con ella. Poco a poco la casa de Kimihito se convertirá más y más en un hogar repleto de chicas liminals, quiera él o no. Y lo peor llega cuando por unos cambios en la ley que afecta a la relación entre ambas especies, deberá casarse con una de ellas.'''
 
     # zh_Hans [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
     #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
-    zh_Hans: ''''''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
+    zh_Hans: '''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……'''
 
     # zh_Hant [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
     #   menggunakan aksara Kanton dalam database mereka.
-    zh_Hant: ''''''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
+    zh_Hant: '''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……'''
 
     # vi_VN [str] <nab>
     # = Sinopsis dalam bahasa Vietnam.
@@ -204,45 +204,31 @@
       en_Latn: [
         MonMusu
       ]
-      ar_001: [
-        
-      ]
-      id_ID: [
-        MonMusu
-      ]
-      en_US: [
-        MonMusu
-      ]
+      ar_001: null
+      id_ID: null
+      en_US: null
       ja_JP: [
-        
+        モンスター娘のいる日常
       ]
       de_DE: [
-        
+        Die Monster Mädchen
       ]
       ko_KR: [
-        
+        몬스터 아가씨가 있는 일상
       ]
-      fr_FR: [
-        
-      ]
-      pt_PT: [
-        
-      ]
+      fr_FR: null
+      pt_PT: null
       ru_RU: [
-        
+        Повседневная жизнь с девушкой-монстром
       ]
-      es_ES: [
-        
-      ]
+      es_ES: null
       zh_Hans: [
-        
+        魔物娘的同居日常
       ]
       zh_Hant: [
-        
+        魔物娘的同居日常
       ]
-      vi_VN: [
-        
-      ]
+      vi_VN: null
     }
 
     # type [obj] > [str] <nbl>
@@ -281,20 +267,24 @@
       # = Genre serial dalam bahasa Inggris.
       en_US:
       [
-        Harem
         Fantasy
         Romance
         Comedy
+        Mature
+        Sci-Fi
+        Slice of Life
       ]
 
       # id_ID [arr] <nbl>
       # = Genre serial dalam bahasa Indonesia.
       id_ID:
       [
-        Harem
         Fantasi
         Romansa
         Komedi
+        Dewasa
+        Fiksi Ilmiah
+        Potongan Kehidupan
       ]
     }
 
@@ -307,16 +297,42 @@
       # = Tag serial dalam bahasa Inggris
       en_US:
       [
+        Harem
         Seinen
         Ecchi
+        Urban Fantasy
+        Monsters
+        Interspecies Relationship
+        Monster Girls
+        Cohabitation
+        Contemporary Fantasy
+        Nudity
+        Centaur
+        Mermaid
+        Dulahan
+        Chuunibyou
+        Zombie
       ]
 
       # id_ID [arr] <nbl>
       # = Tag serial dalam bahasa Indonesia
       id_ID:
       [
+        Harem
         Seinen
         Ecchi
+        Fantasi Perkotaan
+        Monster
+        Hubungan Interspesies
+        Monster Girls
+        Kohabitasi
+        Fantasi Kontemporer
+        Ketelanjangan
+        Centaur
+        Putri duyung
+        Dulahan
+        Chuunibyou
+        Zombie
       ]
     }
 
@@ -360,12 +376,12 @@
     # releaseDate [str]
     # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    releaseDate: 2015 Jul 08 
+    releaseDate: 2015-07-08 
 
     # endDate [str]
     # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    endDate: 2015 Sep 23
+    endDate: 2015-09-23
 
     # duration [num] <nab>
     # = Durasi per episode serial, menggunakan format menit. Apabila tidak
@@ -393,7 +409,7 @@
     #   false, yakni aman.
     // Argumen yang diperbolehkan ialah
     // true dan false
-    "isNsfw": true
+    isNsfw: true
 
     # adaptation [obj] > [str] <arb> <nab>
     # = Ialah adaptasi asal tayangan.
@@ -460,7 +476,7 @@
       score: 7.16
     }
     ANN:
-    
+    {
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
@@ -601,7 +617,9 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: z30307
+      id: 30307
+      moved: true
+      newId: z30307
       score: 7.17
     }
 
@@ -621,7 +639,7 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: 
+      url: https://www.themoviedb.org/tv/63187
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
@@ -642,7 +660,7 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: null
+      id: 97023
       score: 72
     }
 
@@ -653,9 +671,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 0
-      score: 0
-      # ga ge isi :v ga bisa di buka di pc ge, trims...
+      id: 293119
+      score: 8.34
     }
   }
 
@@ -675,72 +692,72 @@
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // 
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 
+  updatedDate: 2020-06-03T16:45:30+07:00
   fansub:
   {
     idn:
     {
-      Aibou: 
-      Aizukara: 
-      Allsub: 
-      Alter: 
-      AnimeGokil: 
-      AniToki: 
-      AoiTenshi: 
-      Arks: 
-      ASubs: 
-      AWSubs: 
-      Bentoo: 
-      Caramel: 
-      Cijanepoi: 
-      Conan: 
-      DAnimeSubs: 
-      Del: 
-      DNFI: 
-      Durandal: 
-      EmotPekmen: 
-      Excalibur: 
-      Gantz: 
-      Gin: 
-      Haruna: 
-      Haruzora: 
-      HunterNoSekai: 
-      IA: 
-      Inazumaotoshi: 
-      Indis: 
-      Inform0930: 
-      Isekai: 
-      Junk: 
-      Kazefuri: 
-      Kinshiru: 
-      KO: 
-      Kopaja: 
-      LCC: 
-      MangaNekoTranslation: 
-      Melody: 
-      Mite: 
-      Nanairo: 
-      Neo: 
-      OPLovers: 
-      Ougi: 
-      Panagayan: 
-      Pendekar: 
-      Pucuk: 
-      Quinime: 
-      RevieXion: 
-      Samehadaku: 
-      SilverYasha: 
-      Sora: 
-      TTOD: 
-      Vedifi: 
-      Warung: 
-      Wibu: 
-      Yuki: 
-      Zen: 
+      Aibou: null
+      Aizukara: null
+      Allsub: null
+      Alter: null
+      AnimeGokil:null 
+      AniToki: null
+      AoiTenshi: null
+      Arks: null
+      ASubs: null
+      AWSubs: null
+      Bentoo: null
+      Caramel: null
+      Cijanepoi: null
+      Conan: null
+      DAnimeSubs:null 
+      Del: null
+      DNFI: null
+      Durandal: null
+      EmotPekmen: null
+      Excalibur: null
+      Gantz: null
+      Gin: null
+      Haruna: null
+      Haruzora: null
+      HunterNoSekai:null 
+      IA: null
+      Inazumaotoshi: null
+      Indis: null
+      Inform0930: null
+      Isekai: null
+      Junk: null
+      Kazefuri: null
+      Kinshiru: null
+      KO: null
+      Kopaja: null
+      LCC: null
+      MangaNekoTranslation: null
+      Melody: null
+      Mite: null
+      Nanairo: null
+      Neo: null
+      OPLovers: null
+      Ougi: null
+      Panagayan: null
+      Pendekar: null
+      Pucuk: null
+      Quinime: null
+      RevieXion: null
+      Samehadaku: null
+      SilverYasha: null
+      Sora: null
+      TTOD: null
+      Vedifi: null
+      Warung: null
+      Wibu: null
+      Yuki: null
+      Zen: null
     }
     eng:
     {
-      Horrible: 
+      Horrible: https://horriblesubs.info/shows/monster-musume-no-iru-nichijou/
     }
   }
   fanshare:
@@ -762,7 +779,7 @@
     }
     eng:
     {
-      AnimeKayo: null
+      AnimeKayo: https://animekayo.com/?s=Monster+Musume
     }
   }
   fanstream:
@@ -815,7 +832,7 @@
     # discordId [num] <nbl>
     # = Merupakan ID unik pengguna Anda di Discord.
     #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
-    discordId: YamashitaKazuhito#9781
+    discordId: 584207131671134218
 
     # submissionDateTime [str] <nbl>
     # = Tanggal dan waktu sebelum submisi (commit/push).
