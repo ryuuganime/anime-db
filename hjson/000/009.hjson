@@ -828,7 +828,7 @@
 
     # username [str] <nbl>
     # = Nama pengguna Anda di GitHub
-    username:Yamashita Kazuhito
+    username: @YamashitaKazuhito
 
     # discordId [num] <nbl>
     # = Merupakan ID unik pengguna Anda di Discord.
