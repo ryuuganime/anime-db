@@ -1,16 +1,30 @@
 {
     "json.schemas": [
-    {
-        "fileMatch": [
-            "/json/*/*.json"
-        ],
-        "url": "./schema.json"
-    }
+        {
+            "fileMatch": [
+                "/json/*/*.json"
+            ],
+            "url": "./schema.entry.json"
+        },
+        {
+            "fileMatch": [
+                "./list.json"
+            ],
+            "url": "./schema.list.json"
+        }
     ],
     "cSpell.words": [
         "hant",
         "zh",
-        "zh hant"
+        "zh hant",
+        "Ryuuganime",
+        "hjson",
+        "kitsu",
+        "romaji",
+        "ryuuganime",
+        "script",
+        "title",
+        "title in romaji script"
     ],
     "cSpell.enableFiletypes": [
         "bbcode",
@@ -21,5 +35,60 @@
         "mediawiki",
         "xml",
         "yaml"
-    ]
+    ],
+    "cSpell.dictionaryDefinitions": [
+        {
+            "name": "crawls",
+            "path": "${workspaceFolder}/.dictionary/id_ID/crawls.txt"
+        },
+        {
+            "name": "indodict",
+            "path": "${workspaceFolder}/.dictionary/id_ID/indodict2008.txt"
+        },
+        {
+            "name": "ivanlanin",
+            "path": "${workspaceFolder}/.dictionary/id_ID/ivanlanin2011.txt"
+        },
+        {
+            "name": "kbbi3",
+            "path": "${workspaceFolder}/.dictionary/id_ID/kbbi3.txt"
+        },
+        {
+            "name": "myspell",
+            "path": "${workspaceFolder}/.dictionary/id_ID/myspell2006.txt"
+        },
+        {
+            "name": "wordlist",
+            "path": "${workspaceFolder}/.dictionary/id_ID/worldlist.txt"
+        },
+        {
+            "name": "vn11",
+            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet11K.txt"
+        },
+        {
+            "name": "vn22",
+            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet22K.txt"
+        },
+        {
+            "name": "vn39",
+            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet39K.txt"
+        },
+        {
+            "name": "vn74",
+            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet74K.txt"
+        },
+    ],
+    "cSpell.dictionaries": [
+        "crawls",
+        "indodict",
+        "ivanlanin",
+        "kbbi3",
+        "myspell",
+        "wordlist",
+        "vn11",
+        "vn22",
+        "vn39",
+        "vn74"
+    ],
+    "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES"
 }
