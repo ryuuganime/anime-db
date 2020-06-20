@@ -7,6 +7,12 @@
         "natqe.reload",
         "funkyremi.vscode-google-translate",
         "compulim.compulim-vscode-closetag",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        //Basically, those are for Spelling Checker
+        "streetsidesoftware.code-spell-checker-russian",
+        "streetsidesoftware.code-spell-checker-spanish",
+        "streetsidesoftware.code-spell-checker-french",
+        "streetsidesoftware.code-spell-checker-portuguese",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian"
     ]
 }
