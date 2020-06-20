@@ -1,3 +1,161 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ryuuganime JSON Schema for Anime Lists, v.0.1-b",
+    "description": "Anime lists validator based on this schema file.",
+    "type": "array",
+    "contains": {
+        "properties": {
+            "myAnimeList": {
+                "description": "Valid show ID from MyAnimeList",
+                "oneOf": [
+                    {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "kitsu": {
+                "description": "Valid show ID from Kitsu",
+                "oneOf": [
+                    {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "aniList": {
+                "description": "Valid show ID from AniList",
+                "oneOf": [
+                    {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "aniDb": {
+                "description": "Valid show ID from AniDB",
+                "oneOf": [
+                    {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "notifyMoe": {
+                "description": "Valid show ID from Notify.moe, based on Base64 system",
+                "oneOf": [
+                    {
+                        "type": "string",
+                        "pattern": "^[\\w\\d_\\-]+"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
+            },
+            "title": {
+                "description": "Title from various languages, used as machine validation and human readable data.\n\nProperty names based on ICU locales.",
+                "type": "object",
+                "required": [
+                    "en_Latn",
+                    "native"
+                ],
+                "additionalItems": {
+                    "propertyNames": {
+                        "pattern": "^[a-z]{2,3}_[\\w]{2,}$"
+                    }
+                },
+                "properties": {
+                    "en_Latn": {
+                        "description": "Mandatory value: a serial title in Romaji script.",
+                        "type": "string",
+                        "pattern": "^[\\w\\s\\S]+$"
+                    },
+                    "en_US": {
+                        "description": "A serial title in American English.",
+                        "oneOf": [
+                            {
+                                "type": "string",
+                                "pattern": "^[\\w\\s\\S]+$"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "native": {
+                        "description": "A serial title in native language.",
+                        "type": "string"
+                    }
+                },
+                "dependencies": {
+                    "en_US": [
+                        "en_Latn",
+                        "native"
+                    ]
+                }
+            },
+            "ryuuganime": {
+                "description": "Valid show ID from Ryuuganime itself.",
+                "type": "number",
+                "exclusiveMinimum": 0
+            },
+            "path": {
+                "description": "Valid show metadata file path.",
+                "type": "object",
+                "required": [
+                    "json",
+                    "hjson",
+                    "xml",
+                    "yaml"
+                ],
+                "properties": {
+                    "json": {
+                        "description": "Valid show metadata JSON path.",
+                        "type": "string",
+                        "pattern": "^/json/[\\d]{3}/(00[1-9]{1}|[\\d]{3})\\.json$"
+                    },
+                    "hjson": {
+                        "description": "Valid show metadata HJSON path.",
+                        "type": "string",
+                        "pattern": "^/hjson/[\\d]{3}/(00[1-9]{1}|[\\d]{3})\\.hjson$"
+                    },
+                    "xml": {
+                        "description": "Valid show metadata XML path.",
+                        "type": "string",
+                        "pattern": "^/xml/[\\d]{3}/(00[1-9]{1}|[\\d]{3})\\.xml$"
+                    },
+                    "yaml": {
+                        "description": "Valid show metadata JSON path.",
+                        "type": "string",
+                        "pattern": "^/yaml/[\\d]{3}/(00[1-9]{1}|[\\d]{3})\\.(yaml|yml)$"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "myAnimeList",
+            "kitsu",
+            "aniList",
+            "aniDb",
+            "notifyMoe",
+            "title",
+            "ryuuganime",
+            "path"
+        ]
+    }
 }
