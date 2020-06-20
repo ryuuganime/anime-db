@@ -1,0 +1,25 @@
+{
+    "json.schemas": [
+    {
+        "fileMatch": [
+            "/json/*/*.json"
+        ],
+        "url": "./schema.json"
+    }
+    ],
+    "cSpell.words": [
+        "hant",
+        "zh",
+        "zh hant"
+    ],
+    "cSpell.enableFiletypes": [
+        "bbcode",
+        "hjson",
+        "html",
+        "md",
+        "json",
+        "mediawiki",
+        "xml",
+        "yaml"
+    ]
+}
