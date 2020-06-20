@@ -54,6 +54,10 @@
             "path": "${workspaceFolder}/.dictionary/id_ID/kbbi3.txt"
         },
         {
+            "name": "kbbinew",
+            "path": "${workspaceFolder}/.dictionary/id_ID/kbbi-pro.txt"
+        },
+        {
             "name": "myspell",
             "path": "${workspaceFolder}/.dictionary/id_ID/myspell2006.txt"
         },
@@ -85,6 +89,7 @@
         "kbbi3",
         "myspell",
         "wordlist",
+        "kbbinew",
         "vn11",
         "vn22",
         "vn39",
