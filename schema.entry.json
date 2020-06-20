@@ -641,6 +641,7 @@
                     "type": "object",
                     "properties": {
                         "en_US": {
+                            "description": "Explains type of series in American English",
                             "type": "string",
                             "enum": [
                                 "TV",
@@ -654,6 +655,7 @@
                             ]
                         },
                         "id_ID": {
+                            "description": "Explains type of series in Indonesian",
                             "type": "string",
                             "enum": [
                                 "Serial TV",
@@ -678,6 +680,7 @@
                     "type": "object",
                     "properties": {
                         "en_US": {
+                            "description": "Explains airing status of serial in American English",
                             "type": "string",
                             "enum": [
                                 "Aired",
@@ -688,6 +691,7 @@
                             ]
                         },
                         "id_ID": {
+                            "description": "Explains airing status of serial in Indonesian",
                             "type": "string",
                             "enum": [
                                 "Ditayangkan",
