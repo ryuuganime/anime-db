@@ -39,31 +39,38 @@
         //Animanga dictionary defs
         {
             "name": "anime-anidb",
-            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniDb-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniDb-062020.txt",
+            "description": "Custom anime title definitions by AniDB"
         },
         {
             "name": "anime-anisearch",
-            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniSearch-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniSearch-062020.txt",
+            "description": "Custom anime title definitions by AniSearch"
         },
         {
             "name": "charas-anidb",
-            "path": "${workspaceFolder}/.dictionary/animanga/charas/aniDb-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/charas/aniDb-062020.txt",
+            "description": "Custom characters name definitions by AniDB"
         },
         {
             "name": "manga-mal",
-            "path": "${workspaceFolder}/.dictionary/animanga/manga/myAnimeList-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/manga/myAnimeList-062020.txt",
+            "description": "Custom manga title definitions by MyAnimeList"
         },
         {
             "name": "manga-anisearch",
-            "path": "${workspaceFolder}/.dictionary/animanga/manga/aniSearch-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/manga/aniSearch-062020.txt",
+            "description": "Custom manga title definitions by AniSearch"
         },
         {
             "name": "sites-ryuuganime",
-            "path": "${workspaceFolder}/.dictionary/animanga/sites/ryuuganime-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/sites/ryuuganime-062020.txt",
+            "description": "Custom sites definitions by Ryuuganime"
         },
         {
             "name": "studios-ap",
-            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt"
+            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt",
+            "description": "Custom studios definitions by Anime-Planet"
         },
         //Arabic dictionary defs.
         {
