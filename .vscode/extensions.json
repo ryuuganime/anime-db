@@ -3,7 +3,7 @@
         "streetsidesoftware.code-spell-checker",
         "laktak.hjson",
         "pkief.material-icon-theme",
-        "jakeboone02.mediawiki",
+        "jasew.mediawiki",
         "natqe.reload",
         "funkyremi.vscode-google-translate",
         "compulim.compulim-vscode-closetag",
@@ -14,5 +14,8 @@
         "streetsidesoftware.code-spell-checker-french",
         "streetsidesoftware.code-spell-checker-portuguese",
         "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+    ],
+    "unwantedRecommendations": [
+        "jakeboone02.mediawiki"
     ]
 }

@@ -1,0 +1,4 @@
+[submodule ".dictionary/animanga"]
+	path = .dictionary/animanga
+	url = https://github.com/ryuuganime/animanga-wordlist.git
+	branch = master

@@ -24,7 +24,6 @@
         "ryuuganime",
         "script",
         "title",
-        "title in romaji script"
     ],
     "cSpell.enableFiletypes": [
         "bbcode",
@@ -37,6 +36,57 @@
         "yaml"
     ],
     "cSpell.dictionaryDefinitions": [
+        //Animanga dictionary defs
+        {
+            "name": "anime-anidb",
+            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniDb-062020.txt"
+        },
+        {
+            "name": "anime-anisearch",
+            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniSearch-062020.txt"
+        },
+        {
+            "name": "charas-anidb",
+            "path": "${workspaceFolder}/.dictionary/animanga/charas/aniDb-062020.txt"
+        },
+        {
+            "name": "manga-mal",
+            "path": "${workspaceFolder}/.dictionary/animanga/manga/myAnimeList-062020.txt"
+        },
+        {
+            "name": "manga-anisearch",
+            "path": "${workspaceFolder}/.dictionary/animanga/manga/aniSearch-062020.txt"
+        },
+        {
+            "name": "sites-ryuuganime",
+            "path": "${workspaceFolder}/.dictionary/animanga/sites/ryuuganime-062020.txt"
+        },
+        {
+            "name": "studios-ap",
+            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt"
+        },
+        //Arabic dictionary defs.
+        {
+            "name": "arabeyes",
+            "path": "${workspaceFolder}/.dictionary/ar_001/arabeyes.txt"
+        },
+        {
+            "name": "arwiki",
+            "path": "${workspaceFolder}/.dictionary/ar_001/arwiki.txt"
+        },
+        {
+            "name": "arzwiki",
+            "path": "${workspaceFolder}/.dictionary/ar_001/arzwiki.txt"
+        },
+        {
+            "name": "hans-wehr",
+            "path": "${workspaceFolder}/.dictionary/ar_001/hans-wehr.txt"
+        },
+        {
+            "name": "quran",
+            "path": "${workspaceFolder}/.dictionary/ar_001/quran.txt"
+        },
+        //Indonesian dictionary defs.
         {
             "name": "crawls",
             "path": "${workspaceFolder}/.dictionary/id_ID/crawls.txt"
@@ -65,6 +115,16 @@
             "name": "wordlist",
             "path": "${workspaceFolder}/.dictionary/id_ID/worldlist.txt"
         },
+        //Japanese dictionary defs.
+        {
+            "name": "15000",
+            "path": "${workspaceFolder}/.dictionary/ja_JP/15000-japanese-words.txt"
+        },
+        {
+            "name": "44998",
+            "path": "${workspaceFolder}/.dictionary/ja_JP/44998-japanese-words.txt"
+        },
+        //Vietnamese dictionary defs.
         {
             "name": "vn11",
             "path": "${workspaceFolder}/.dictionary/vn_VN/Viet11K.txt"
@@ -83,6 +143,21 @@
         },
     ],
     "cSpell.dictionaries": [
+        //Calls Animanga dictionaries
+        "anime-anidb",
+        "anime-anisearch",
+        "charas-anidb",
+        "manga-anisearch",
+        "manga-mal",
+        "sites-ryuuganime",
+        "studios-ap",
+        //Calls Arabic dictionaries
+        "arabeyes",
+        "arwiki",
+        "arzwiki",
+        "hans-wehr",
+        "quran",
+        //Calls Indonesian dictionaries
         "crawls",
         "indodict",
         "ivanlanin",
@@ -90,10 +165,15 @@
         "myspell",
         "wordlist",
         "kbbinew",
+        //Calls Japanese dictionaries
+        "15000",
+        "44998"
+        //Calls Vietnamese dictionaries
         "vn11",
         "vn22",
         "vn39",
         "vn74"
     ],
+    //Calls dictionaries from various languages
     "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES"
 }
