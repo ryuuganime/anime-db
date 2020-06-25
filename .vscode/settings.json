@@ -2,7 +2,7 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "/json/*/*.json"
+                "./json/*/*.json"
             ],
             "url": "./schema.entry.json"
         },
@@ -38,148 +38,61 @@
     "cSpell.dictionaryDefinitions": [
         //Animanga dictionary defs
         {
-            "name": "anime-anidb",
-            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniDb-062020.txt",
-            "description": "Custom anime title definitions by AniDB"
+            "name": "anime",
+            "path": "${workspaceFolder}/.dictionary/animanga/anime/anime-062020.rydict"
         },
         {
-            "name": "anime-anisearch",
-            "path": "${workspaceFolder}/.dictionary/animanga/anime/aniSearch-062020.txt",
-            "description": "Custom anime title definitions by AniSearch"
+            "name": "charas",
+            "path": "${workspaceFolder}/.dictionary/animanga/charas/aniDb-062020.txt"
         },
         {
-            "name": "charas-anidb",
-            "path": "${workspaceFolder}/.dictionary/animanga/charas/aniDb-062020.txt",
-            "description": "Custom characters name definitions by AniDB"
+            "name": "manga",
+            "path": "${workspaceFolder}/.dictionary/animanga/manga/manga-062020.rydict"
         },
         {
-            "name": "manga-mal",
-            "path": "${workspaceFolder}/.dictionary/animanga/manga/myAnimeList-062020.txt",
-            "description": "Custom manga title definitions by MyAnimeList"
+            "name": "sites",
+            "path": "${workspaceFolder}/.dictionary/animanga/sites/sites.rydict"
         },
         {
-            "name": "manga-anisearch",
-            "path": "${workspaceFolder}/.dictionary/animanga/manga/aniSearch-062020.txt",
-            "description": "Custom manga title definitions by AniSearch"
-        },
-        {
-            "name": "sites-ryuuganime",
-            "path": "${workspaceFolder}/.dictionary/animanga/sites/ryuuganime-062020.txt",
-            "description": "Custom sites definitions by Ryuuganime"
-        },
-        {
-            "name": "studios-ap",
-            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt",
-            "description": "Custom studios definitions by Anime-Planet"
+            "name": "studios",
+            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt"
         },
         //Arabic dictionary defs.
         {
-            "name": "arabeyes",
-            "path": "${workspaceFolder}/.dictionary/ar_001/arabeyes.txt"
-        },
-        {
-            "name": "arwiki",
-            "path": "${workspaceFolder}/.dictionary/ar_001/arwiki.txt"
-        },
-        {
-            "name": "arzwiki",
-            "path": "${workspaceFolder}/.dictionary/ar_001/arzwiki.txt"
-        },
-        {
-            "name": "hans-wehr",
-            "path": "${workspaceFolder}/.dictionary/ar_001/hans-wehr.txt"
-        },
-        {
-            "name": "quran",
-            "path": "${workspaceFolder}/.dictionary/ar_001/quran.txt"
+            "name": "ar_001",
+            "path": "${workspaceFolder}/.dictionary/ar_001/ar_001.rydict"
         },
         //Indonesian dictionary defs.
         {
-            "name": "crawls",
-            "path": "${workspaceFolder}/.dictionary/id_ID/crawls.txt"
-        },
-        {
-            "name": "indodict",
-            "path": "${workspaceFolder}/.dictionary/id_ID/indodict2008.txt"
-        },
-        {
-            "name": "ivanlanin",
-            "path": "${workspaceFolder}/.dictionary/id_ID/ivanlanin2011.txt"
-        },
-        {
-            "name": "kbbi3",
-            "path": "${workspaceFolder}/.dictionary/id_ID/kbbi3.txt"
-        },
-        {
-            "name": "kbbinew",
-            "path": "${workspaceFolder}/.dictionary/id_ID/kbbi-pro.txt"
-        },
-        {
-            "name": "myspell",
-            "path": "${workspaceFolder}/.dictionary/id_ID/myspell2006.txt"
-        },
-        {
-            "name": "wordlist",
-            "path": "${workspaceFolder}/.dictionary/id_ID/worldlist.txt"
+            "name": "id_ID",
+            "path": "${workspaceFolder}/.dictionary/id_ID/id_ID.rydict"
         },
         //Japanese dictionary defs.
         {
-            "name": "15000",
-            "path": "${workspaceFolder}/.dictionary/ja_JP/15000-japanese-words.txt"
-        },
-        {
-            "name": "44998",
-            "path": "${workspaceFolder}/.dictionary/ja_JP/44998-japanese-words.txt"
+            "name": "ja_JP",
+            "path": "${workspaceFolder}/.dictionary/ja_JP/ja_JP.rydict"
         },
         //Vietnamese dictionary defs.
         {
             "name": "vn11",
-            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet11K.txt"
-        },
-        {
-            "name": "vn22",
-            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet22K.txt"
-        },
-        {
-            "name": "vn39",
-            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet39K.txt"
-        },
-        {
-            "name": "vn74",
-            "path": "${workspaceFolder}/.dictionary/vn_VN/Viet74K.txt"
-        },
+            "path": "${workspaceFolder}/.dictionary/vn_VN/vn_VN.rydict"
+        }
     ],
     "cSpell.dictionaries": [
         //Calls Animanga dictionaries
-        "anime-anidb",
-        "anime-anisearch",
-        "charas-anidb",
-        "manga-anisearch",
-        "manga-mal",
-        "sites-ryuuganime",
-        "studios-ap",
+        "anime",
+        "charas",
+        "manga",
+        "sites",
+        "studios",
         //Calls Arabic dictionaries
-        "arabeyes",
-        "arwiki",
-        "arzwiki",
-        "hans-wehr",
-        "quran",
+        "ar_001",
         //Calls Indonesian dictionaries
-        "crawls",
-        "indodict",
-        "ivanlanin",
-        "kbbi3",
-        "myspell",
-        "wordlist",
-        "kbbinew",
+        "id_ID",
         //Calls Japanese dictionaries
-        "15000",
-        "44998",
+        "ja_JP",
         //Calls Vietnamese dictionaries
-        "vn11",
-        "vn22",
-        "vn39",
-        "vn74"
+        "vn_VN",
     ],
     //Calls dictionaries from various languages
     "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES"
