@@ -151,7 +151,7 @@ information:
             - Adventure
             - Sci-Fi
             - Horror
-            - Ecchi
+            - Mature
             - Psychological
             - Supernatural
         id_ID:
@@ -164,7 +164,7 @@ information:
             - Petualangan
             - Sci-Fi
             - Horror
-            - Ecchi
+            - Mature
             - Psikologis
             - Supernatural
     serialTags:
@@ -187,6 +187,7 @@ information:
             - Super Robot
             - Middle School
             - School Life
+            - Ecchi
         id_ID:
             - Gore
             - Sadis
@@ -206,6 +207,7 @@ information:
             - Robot Super
             - SMP
             - Kehidupan Sekolah
+            - Ecchi
     releaseSeason:
         en_US: Spring
         id_ID: Semi

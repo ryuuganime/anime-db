@@ -77,7 +77,7 @@
             <en_US>Adventure</en_US>
             <en_US>Sci-Fi</en_US>
             <en_US>Horror</en_US>
-            <en_US>Ecchi</en_US>
+            <en_US>Mature</en_US>
             <en_US>Psychological</en_US>
             <en_US>Supernatural</en_US>
             <id_ID>Aksi</id_ID>
@@ -89,7 +89,7 @@
             <id_ID>Petualangan</id_ID>
             <id_ID>Sci-Fi</id_ID>
             <id_ID>Horror</id_ID>
-            <id_ID>Ecchi</id_ID>
+            <id_ID>Dewasa</id_ID>
             <id_ID>Psikologis</id_ID>
             <id_ID>Supernatural</id_ID>
         </serialGenre>
@@ -112,6 +112,7 @@
             <en_US>Super Robot</en_US>
             <en_US>Middle School</en_US>
             <en_US>School Life</en_US>
+            <en_US>Ecchi</en_US>
             <id_ID>Gore</id_ID>
             <id_ID>Sadis</id_ID>
             <id_ID>Seinen</id_ID>
@@ -130,6 +131,7 @@
             <id_ID>Robot Super</id_ID>
             <id_ID>SMP</id_ID>
             <id_ID>Kehidupan Sekolah</id_ID>
+            <id_ID>Ecchi</id_ID>
         </serialTags>
         <releaseSeason>
             <en_US>Spring</en_US>
@@ -358,7 +360,6 @@
     <library>
         <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Gleipnir</Nyaa>
         <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Gleipnir&amp;kartel=</PerpusIndo>
-        <Shallty>https://shallty.moe/browse?search=Gleipnir</Shallty>
     </library>
     <signature>
         <name>Natsu Tadama</name>

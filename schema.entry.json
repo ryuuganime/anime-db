@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.3-b",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.1-a",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
@@ -200,6 +200,9 @@
                         "type": "null"
                     }
                 ]
+            },
+            "propertyNames": {
+                "pattern": "^[a-z]{2,3}\\_[\\w]{2,4}$"
             }
         },
         "backdrop": {
@@ -722,12 +725,11 @@
                                     "Crime",
                                     "Documentary",
                                     "Drama",
-                                    "Ecchi",
                                     "Fantasy",
-                                    "Hentai",
                                     "History",
                                     "Horror",
                                     "Mahou Shoujo",
+                                    "Mature",
                                     "Mecha",
                                     "Music",
                                     "Mystery",
@@ -752,12 +754,11 @@
                                     "Kriminalitas",
                                     "Dokumentasi",
                                     "Drama",
-                                    "Ecchi",
                                     "Fantasi",
-                                    "Hentai",
                                     "Sejarah",
                                     "Horror",
                                     "Mahou Shoujo",
+                                    "Dewasa",
                                     "Mecha",
                                     "Musik",
                                     "Misteri",
@@ -3176,8 +3177,7 @@
             },
             "required": [
                 "Nyaa",
-                "PerpusIndo",
-                "Shallty"
+                "PerpusIndo"
             ],
             "properties": {
                 "Nyaa": {
@@ -3198,18 +3198,6 @@
                             "type": "string",
                             "format": "uri",
                             "pattern": "^(https?)\\:\\/\\/www\\.perpusindo\\.info"
-                        },
-                        {
-                            "type": "null"
-                        }
-                    ]
-                },
-                "Shallty": {
-                    "oneOf": [
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "pattern": "^(https?)\\:\\/\\/(next\\.)?shallty\\.moe"
                         },
                         {
                             "type": "null"
