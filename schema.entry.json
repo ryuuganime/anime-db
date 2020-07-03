@@ -2723,7 +2723,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/www\\.animesave\\.com"
+                                    "pattern": "^(https?)\\:\\/\\/www\\.animesave\\.(net|com)"
                                 },
                                 {
                                     "type": "null"
