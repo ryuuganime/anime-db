@@ -40,7 +40,7 @@ Kode Etik ini berlaku di semua ruang lingkup komunitas, dan juga berlaku ketika 
 
 ## Penegakan
 
-Kejadian perilaku kasar, pelecehan, atau tidak dapat diterima yang terjadi dapat dilaporkan kepada pengelola komunitas di [sultan.ridita@gmail.com](mailto:sultan.ridita@gmail.com) untuk penegakan. Semua keluhan akan ditinjau dan diselidiki secara tepat dan adil.
+Kejadian perilaku kasar, pelecehan, atau tidak dapat diterima yang terjadi dapat dilaporkan kepada pengelola komunitas di [contact@ryuuganime.my.id](mailto:contact@ryuuganime.my.id) untuk penegakan. Semua keluhan akan ditinjau dan diselidiki secara tepat dan adil.
 
 Semua pengelola komunitas berkewajiban untuk menjaga kerahasiaan dan keamanan pelapor suatu insiden.
 
