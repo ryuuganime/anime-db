@@ -425,7 +425,7 @@ Bam en sortira t-il indemne ?'''
     # endDate [str]
     # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    endDate: null
+    endDate: 2020-06-25
 
     # duration [num] <nab>
     # = Durasi per episode serial, menggunakan format menit. Apabila tidak
@@ -491,7 +491,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 15391
-      score: 6.16
+      score: 6.15
     }
     
     // https://anilist.co
@@ -502,7 +502,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 115230
-      score: 76
+      score: 77
     }
 
     // https://anime-planet.com
@@ -517,7 +517,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14552
-      score: 4.375
+      score: 4.376
     }
     ANN:
     {
@@ -526,7 +526,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 23068
-      score: null
+      score: 6.786
     }
 
     // https://anisearch.com
@@ -541,7 +541,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14974
-      score: 73
+      score: 78
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -563,7 +563,7 @@ Bam en sortira t-il indemne ?'''
       #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
       #   dan 6751668 merupakan ID serial
       code: tt12057106
-      score: 8.4
+      score: 8.0
     }
 
     // https://kinopoisk.ru
@@ -574,7 +574,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1363114
-      score: null
+      score: 7.6
     }
 
     // https://kitsu.io
@@ -589,7 +589,7 @@ Bam en sortira t-il indemne ?'''
       #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
       #   atau tanyakan kepada pengembang untuk informasi terkait.
       id: 43004
-      score: 82.28
+      score: 80.84
     }
 
     // https://livechart.me
@@ -600,7 +600,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 9793
-      score: 8.50
+      score: 8.41
     }
 
     // https://myanimelist.net
@@ -611,7 +611,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 40221
-      score: 8.06
+      score: 7.87
     }
     
     // https://en.myshows.me/
@@ -622,7 +622,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 66157
-      score: 4.43
+      score: 4.41
     }
 
     // http://nautiljon.com/
@@ -631,7 +631,7 @@ Bam en sortira t-il indemne ?'''
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
       url: https://www.nautiljon.com/animes/kami+no+tou+-+tower+of+god+-.html
-      score: 9.03
+      score: 8.54
     }
 
     // https://notify.moe/
@@ -640,7 +640,7 @@ Bam en sortira t-il indemne ?'''
       # base64 [str]
       # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
       base64: m1ZLrsUWg
-      score: 7.91
+      score: 7.74
     }
 
     // http://otakotaku.com/
@@ -651,7 +651,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1740
-      score: 8.00
+      score: 7.69
     }
 
     // http://shikimori.org/
@@ -662,7 +662,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 40221
-      score: 8.06
+      score: 7.88
     }
 
     // https://simkl.com
@@ -688,7 +688,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 97860
-      score: 92
+      score: 88
     }
 
     // https://trakt.tv/
@@ -703,7 +703,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 158032
-      score: 84
+      score: 81
     }
 
     // https://www.tvtime.com/en
@@ -714,7 +714,7 @@ Bam en sortira t-il indemne ?'''
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 376729
-      score: 9.84
+      score: 9.82
     }
   }
 
@@ -734,7 +734,7 @@ Bam en sortira t-il indemne ?'''
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // 
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-20T17:58:57+07:00
+  updatedDate: 2020-07-28T18:06:30+07:00
   fansub:
   {
     idn:
@@ -811,14 +811,14 @@ Bam en sortira t-il indemne ?'''
       AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
       AnimeSAVE: null
       Bakacan: https://bakacan.id/anime/kami-no-tou/
-      Drivenime: null
-      Hinime: null
-      Koenime: null
-      Kusonime: null
+      Drivenime: https://drivenime.com/kami-no-tou-subtitle-indonesia-batch/
+      Hinime: https://hinime.com/tower-of-god-sub-indo/
+      Koenime: https://www.koenime.com/kamitou-sub-indo/
+      Kusonime: https://kusonime.com/sinui-tap-batch-sub-indo/
       Mikanime: null
       Moenime: https://moenime.web.id/kaminoto-sub-indo/
       Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
-      WibuDesu: null
+      WibuDesu: https://wibudesu.com/kami-no-tou-subtitle-indonesia/
     }
     eng:
     {

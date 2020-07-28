@@ -294,12 +294,12 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       // Argumen yang diperbolehkan ialah
       // Aired, Airing, Planned, TBA, dan Unknown
-      en_US: Airing
+      en_US: Aired
 
       // Argumen yang diperbolehkan ialah
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
       //   Diketahui
-      id_ID: Mengudara
+      id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
@@ -413,7 +413,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     # endDate [str]
     # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    endDate: null
+    endDate: 2020-06-27
 
     # duration [num] <nab>
     # = Durasi per episode serial, menggunakan format menit. Apabila tidak
@@ -479,7 +479,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 15207
-      score: 8.09
+      score: 8.65
     }
     
     // https://anilist.co
@@ -490,7 +490,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 112641
-      score: 85
+      score: 87
     }
 
     // https://anime-planet.com
@@ -505,7 +505,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14130
-      score: 4.601
+      score: 4.612
     }
     ANN:
     {
@@ -514,7 +514,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 22587
-      score: null
+      score: 7.818
     }
 
     // https://anisearch.com
@@ -529,7 +529,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14692
-      score: 84
+      score: 86
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -551,7 +551,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
       #   dan 6751668 merupakan ID serial
       code: tt9522300
-      score: 8.1
+      score: 8.2
     }
 
     // https://kinopoisk.ru
@@ -562,7 +562,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1231054
-      score: 7.722
+      score: 7.797
     }
 
     // https://kitsu.io
@@ -577,7 +577,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
       #   atau tanyakan kepada pengembang untuk informasi terkait.
       id: 42632
-      score: 82.57
+      score: 82.51
     }
 
     // https://livechart.me
@@ -588,7 +588,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 9649
-      score: 8.96
+      score: 9.08
     }
 
     // https://myanimelist.net
@@ -599,7 +599,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 40591
-      score: 8.83
+      score: 8.87
     }
     
     // https://en.myshows.me/
@@ -610,7 +610,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 59725
-      score: 4.34
+      score: 4.36
     }
 
     // http://nautiljon.com/
@@ -619,7 +619,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
       url: https://www.nautiljon.com/animes/kaguya-sama+wa+kokurasetai-+tensai-tachi+no+renai+zunousen.html
-      score: 9.27
+      score: 9.18
     }
 
     // https://notify.moe/
@@ -628,7 +628,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # base64 [str]
       # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
       base64: fehNO08Zg
-      score: 9.00
+      score: 9.04
     }
 
     // http://otakotaku.com/
@@ -639,7 +639,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1669
-      score: 9.36
+      score: 9.18
     }
 
     // http://shikimori.org/
@@ -650,7 +650,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 40591
-      score: 8.83
+      score: 8.87
     }
 
     // https://simkl.com
@@ -676,7 +676,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 83121
-      score: 88
+      score: 90
     }
 
     // https://trakt.tv/
@@ -691,7 +691,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 138254
-      score: 83
+      score: 85
     }
 
     // https://www.tvtime.com/en
@@ -722,7 +722,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // 
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-18T17:07:52+07:00
+  updatedDate: 2020-07-28T17:22:17+07:00
   fansub:
   {
     idn:
@@ -799,14 +799,14 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       AnimeKompi: http://animekompi.web.id/series/kaguya-sama-wa-kokurasetai-season-2/
       AnimeSAVE: null
       Bakacan: https://bakacan.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2/
-      Drivenime: null
-      Hinime: null
-      Koenime: null
-      Kusonime: null
+      Drivenime: https://drivenime.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-subtitle-indonesia-batch/
+      Hinime: https://hinime.com/kaguya-sama-wa-kokurasetai-s2-sub-indo/
+      Koenime: https://www.koenime.com/kagukoku-s2-sub-indo/
+      Kusonime: https://kusonime.com/kaguyasama-s2-batch-sub-indo/
       Mikanime: null
       Moenime: https://moenime.web.id/kaguya-sama-wa-kokurasetai-s2-sub-indo/
       Ryuukoi: https://ryuukoi.web.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-s2/
-      WibuDesu: null
+      WibuDesu: https://wibudesu.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2-subtitle-indonesia/
     }
     eng:
     {
@@ -845,6 +845,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   {
     Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kaguya-sama+wa+Kokurasetai
     PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kaguya-sama%20wa%20Kokurasetai&kartel=
+    Shallty: https://shallty.moe/browse?search=Kaguya-sama%20wa%20Kokurasetai
   }
   
   # signature

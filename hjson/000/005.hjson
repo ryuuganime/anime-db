@@ -255,12 +255,12 @@
     {
       // Argumen yang diperbolehkan ialah
       // Aired, Airing, Planned, TBA, dan Unknown
-      en_US: Airing
+      en_US: Aired
 
       // Argumen yang diperbolehkan ialah
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
       //   Diketahui
-      id_ID: Mengudara
+      id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
@@ -470,7 +470,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14721
-      score: 4.46
+      score: 4.63
     }
     
     // https://anilist.co
@@ -481,7 +481,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 108241
-      score: 65
+      score: 67
     }
 
     // https://anime-planet.com
@@ -496,7 +496,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 13027
-      score: 3.741
+      score: 3.842
     }
     ANN:
     {
@@ -505,7 +505,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 21888
-      score: null
+      score: 6.856
     }
 
     // https://anisearch.com
@@ -520,7 +520,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 14236
-      score: 68
+      score: 71
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -542,7 +542,7 @@
       #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
       #   dan 6751668 merupakan ID serial
       code: tt11988478
-      score: 7.2
+      score: 7.0
     }
 
     // https://kinopoisk.ru
@@ -553,7 +553,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1367761
-      score: null
+      score: 6.8
     }
 
     // https://kitsu.io
@@ -579,7 +579,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 9255
-      score: 7.77
+      score: 7.75
     }
 
     // https://myanimelist.net
@@ -601,7 +601,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 66293
-      score: 3.86
+      score: 3.93
     }
 
     // http://nautiljon.com/
@@ -610,7 +610,7 @@
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
       url: https://www.nautiljon.com/animes/gleipnir.html
-      score: 7.84
+      score: 7.92
     }
 
     // https://notify.moe/
@@ -619,7 +619,7 @@
       # base64 [str]
       # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
       base64: q9yku_3ig
-      score: 7.62
+      score: 7.46
     }
 
     // http://otakotaku.com/
@@ -630,7 +630,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1518
-      score: 8.1
+      score: 7.92
     }
 
     // http://shikimori.org/
@@ -641,7 +641,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 39463
-      score: 6.86
+      score: 7.08
     }
 
     // https://simkl.com
@@ -652,7 +652,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 1054041
-      score: 6.9
+      score: 7.1
     }
 
     // https://www.themoviedb.org/
@@ -682,7 +682,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 156573
-      score: 68
+      score: 69
     }
 
     // https://www.tvtime.com/en
@@ -693,7 +693,7 @@
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
       id: 374198
-      score: 9.68
+      score: 9.74
     }
   }
 
@@ -713,7 +713,7 @@
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // 
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-19T15:04:43+07:00
+  updatedDate: 2020-07-28T17:22:17+07:00
   fansub:
   {
     idn:
@@ -791,14 +791,14 @@
       AnimeKompi: http://animekompi.web.id/series/gleipnir/
       AnimeSAVE: null
       Bakacan: https://bakacan.id/anime/gleipnir/
-      Drivenime: null
-      Hinime: null
-      Koenime: null
-      Kusonime: null
+      Drivenime: https://drivenime.com/gleipnir-subtitle-indonesia-batch/
+      Hinime: https://hinime.com/gleipnir-sub-indo/
+      Koenime: https://www.koenime.com/gleipnir-sub-indo/
+      Kusonime: https://kusonime.com/gleipnir-batch-subtitle-indonesia/
       Mikanime: null
       Moenime: https://moenime.web.id/gleipnir-sub-indo/
       Ryuukoi: https://ryuukoi.web.id/anime/gleipnir/
-      WibuDesu: null
+      WibuDesu: https://wibudesu.com/gleipnir-subtitle-indonesia/
     }
     eng:
     {
@@ -837,6 +837,7 @@
   {
     Nyaa: https://nyaa.si/?f=0&c=0_0&q=Gleipnir
     PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Gleipnir&kartel=
+    Shallty: https://shallty.moe/browse?search=Gleipnir
   }
   
   # signature
