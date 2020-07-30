@@ -1,0 +1,841 @@
+    #hjson
+/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
+|                               | |                              | | [str] merupakan markah teks, |
+|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
+|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
+| ----------------------------- | |                              | |   ral,  yakni angka dan null |
+|                               | \^----------------------------^/ |   saja.                      |
+| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
+|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
+|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
+|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
+|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
+|                               | |                          ''' | | [arr] merupakan markah array |
+\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
+/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
+|                               | | ru pada suatu value          | |   ta yang berbeda.           |
+| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
+|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
+| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
+|   menjadi array apabila objek |                                  |   value di dalamnya.         |
+|   dalam satu  value lebih ba- |                                  |                              |
+|   nyak daripada satu.         |                                  \^----------------------------^/
+| <nab> array dapat dihilangkan |
+|   tanda  kurungnya, dan dija- |
+|   dikan sebagai null.         |
+| <nbl> string, numeral, atau   |
+|   array terkait tidak bisa    |
+|   diubah menjadi null.        |
+|                               |
+\^-----------------------------*/
+
+{ 
+  // Petunjuk awal:
+  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
+  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
+  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
+  //    tanda koma.
+  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
+  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
+  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
+  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
+  //    id_ID: 
+  //        '''
+  //            Ini hanyalah informasi \"percobaan\",
+  //            harap untuk dapat dimaklumi
+  //        '''
+  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
+  //    contoh pengisian.
+
+  # title [obj]
+  # Merupakan judul suatu serial.
+  title: 
+  {
+    # native [str] <nbl>
+    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
+    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
+    #   yang ditayang di Jepang.
+    native:  抱かれたい男1位に脅されています。
+
+    # en_Latn [str] <nbl>
+    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
+    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    en_Latn: Dakaretai Otoko 1-i ni Odosarete Imasu
+
+    # ar_001 [str] <nab>
+    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: null
+
+    # id_ID [str] <nab>
+    # = Judul dalam bahasa Indonesia.
+    id_ID: Dakaretai Otoko 1-i ni Odosarete Imasu
+
+    # en_US [str] <nab>
+    # = Judul dalam bahasa Inggris.
+    en_US: Dakaretai -Im Being Harassed By Th Sexiest Man of The Year-
+
+    # ja_JP [str] <nab>
+    # = Judul dalam bahasa Jepang.
+    ja_JP: 抱かれたい男1位に脅されています。
+
+    # de_DE [str] <nab>
+    # = Judul dalam bahasa Jerman.
+    de_DE: null
+
+    # ko_KR [str] <nab>
+    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    ko_KR: 안기고 싶은 남자 1위에게 협박당하고 있습니다.
+
+    # fr_FR [str] <nab>
+    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    fr_FR: Dakaretai Otoko 1-i ni Odosarete Imasu.
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: null
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia.
+    ru_RU: DAKAICHI. Мой номер 1
+
+    # es_ES [str] <nab>
+    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: null
+
+    # zh_Hans [str] <nab>
+    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    zh_Hans: 我让最想被拥抱的男人给威胁了。
+
+    # zh_Hant [str] <nab>
+    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    zh_Hant: 我让最想被拥抱的男人给威胁了。
+
+    # vi_VN [str] <nab>
+    # = Judul dalam bahasa Vietnam.
+    vi_VN: null
+  }
+
+  # backdrop [str] <url>
+  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
+  #   situs yang diperbolehkan.
+  backdrop: https://image.tmdb.org/t/p/original/dZ2wHYUMcswAPlAbYsoJWiXdrPc.jpg
+
+  # visualKey [str] <url>
+  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
+  #   yang diperbolehkan.
+  visualKey: https://image.tmdb.org/t/p/original/1cWev0aDMQ09Y21h3o3Smp6Xdm9.jpg
+
+  # synopsis [obj]
+  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  synopsis:
+  {
+    # ar_001 [str] <nab>
+    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: '''a'''
+
+    # id_ID [str] <nab>
+    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
+    #   Indonesia.
+    id_ID: '''a'''
+
+    # en_US [str] <nab>
+    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
+    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    en_US: '''Takato Saijou has held the title of "Sexiest Man of the Year" for five years running. He is an accomplished actor, with 20 years of experience under his belt, and is aware his good looks are well above average. Proud of his career, Takato regards the title as an appropriate indicator of his success.
+But when his reign is ended by acting newbie Junta Azumaya, who debuted only three years ago, Takato's initial shock gives way to jealous hostility. Even in the new drama that he has been cast in, Junta seems to have suddenly surpassed him; snatching Takato's usual spot of lead actor, Junta continually manages to get on his nerves. Most infuriating of all are the bright smile and kind words that accompany everything Junta does.
+All this animosity comes to a head, however, when Junta catches Takato in a rather vulnerable drunken state. Endangering his own public image, Takato confronts the junior actor with harsh words and angry comments—an opportunity Junta takes every advantage of. With the famous actor Takato Saijou now on video picking a fight with a co-star, Junta has the perfect means to blackmail him.
+Asking the price of his enemy's silence, Takato is shocked to find that his motivation lies far from advancing his career; instead, Junta's terms are those that can only be realized in the bedroom!'''
+
+    # ja_JP [str] <nab>
+    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    ja_JP: '''2013年7月、連載を開始した、 桜日梯子による『抱かれたい男1位に脅されています。』。 5年連続で”抱かれたい男1位”だったベテラン俳優・西條高人と、 その座を奪った新人俳優・東谷准太。 芸能界を舞台に繰り広げられる”抱かれたい男” ツートップ同士の禁断のスキャンダルを センセーショナルに描く本作は、 遂にシリーズ累計発行部数215万部を突破。 そんないま最も人気を集める ボーイズ・ラブコミックが、ファン待望のTVアニメ化。 2018年、最大のスキャンダルが 幕をあける――！'''
+
+    # de_DE [str] <nab>
+    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
+    #   untuk sinopsis Jerman.
+    de_DE: '''a'''
+
+    # ko_KR [str] <nab>
+    # = Sinopsis dalam bahasa Korea Selatan.
+    ko_KR: '''5년 연속 안기고 싶은 남자 1위였던 베테랑 배우 사이죠 타카토와 그 자리를 빼앗은 신인배우 아즈마야 쥰타. 연예계를 무대로 펼쳐지는 안기고 싶은 남자 1위와 2위의 금단의 스캔들의 막이 지금 열린다!'''
+
+    # fr_FR [str] <nab>
+    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
+    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    fr_FR: '''saijou Takato est acteur depuis sa plus tendre enfance et élu depuis 5 ans "l'homme le plus désiré". Cependant, son règne s'arrête brutalement face à l'arrivée d'Azumaya Junta, un jeune acteur ayant débuté sa carrière 3 ans plus tôt. Takato supporte assez mal de se retrouver relégué au second rang et voit ce jeune prodige comme un ennemi.
+
+      Néanmoins, suite à une soirée trop alcoolisée, Takato se retrouve dans le lit de Junta.'''
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: '''a'''
+
+      # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    ru_RU: '''Такато Сайдзё на протяжении пяти лет сохранял за собой положение лучшего актёра. Но настал тот день, когда его потеснил более молодой актёр с незначительным трёхлетним стажем. Молодой актёр обладал искренней и ослепительной улыбкой. Улыбка Дзюнты Адзумаи произвела свой эффект и на надменного и враждебно настроенного Такато.
+        Однажды позорно напившись во время пьянки, Сайдзё выплеснул все негативные эмоции в сторону Адзумаи. К несчастью для Сайдзё, Адзумая снимал всё это на телефон, и свой «фильм» юноша использовал для того, чтобы шантажировать его! Из-за недопонимания Такато не думая ставит Дзюнте очень смелое условие. Какие последствия это может за собой повлечь — он не знал...'''
+
+    # es_ES [str] <nab>
+    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: '''a'''
+
+    # zh_Hans [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
+    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    zh_Hans: '''连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。 以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断绯闻。'''
+
+    # zh_Hant [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
+    #   menggunakan aksara Kanton dalam database mereka.
+    zh_Hant: '''连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。 以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断绯闻。'''
+
+    # vi_VN [str] <nab>
+    # = Sinopsis dalam bahasa Vietnam.
+    vi_VN: '''a'''
+  }
+
+  # information [obj]
+  # = Merupakan kumpulan informasi mengenai serial.
+  information:
+  {
+    # synonyms [obj] > [arr] <nab>
+    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    synonyms:
+    {
+      en_Latn: [
+      ]
+      ar_001: [
+        
+      ]
+      id_ID: [
+        Dakaretai Otoko 1-i ni Odosarete Imasu. 
+      ]
+      en_US: [
+        Dakaretai Otoko 1-i ni Odosarete Imasu. 
+      ]
+      ja_JP: [
+        Dakaretai Otoko Ichii ni Odosarete Imasu.
+      ]
+      de_DE: [
+        
+      ]
+      ko_KR: [
+        
+      ]
+      fr_FR: [
+        
+      ]
+      pt_PT: [
+        
+      ]
+      ru_RU: [
+        
+      ]
+      es_ES: [
+        
+      ]
+      zh_Hans: [
+        
+      ]
+      zh_Hant: [
+        
+      ]
+      vi_VN: [
+        
+      ]
+    }
+
+    # type [obj] > [str] <nbl>
+    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    type:
+    {
+      // Argumen yang diperbolehkan ialah:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      en_US: TV
+
+      // Argumen yang diperbolehkan ialah:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      id_ID: Serial TV
+    }
+
+    # status [obj] > [str] <nbl>
+    # = Menjelaskan status penanyangan serial.
+    status:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Aired, Airing, Planned, TBA, dan Unknown
+      en_US: Aired
+
+      // Argumen yang diperbolehkan ialah
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
+      //   Diketahui
+      id_ID: Ditayangkan
+    }
+
+    # serialGenre [obj]
+    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    serialGenre:
+    {
+      # en_US [arr] <nbl>
+      # = Genre serial dalam bahasa Inggris.
+      en_US:
+      [
+        Drama
+        Slice of Life
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Genre serial dalam bahasa Indonesia.
+      id_ID:
+      [
+        Drama
+        Potongan Kehidupan
+      ]
+    }
+
+    # serialTags [obj]
+    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
+    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    serialTags:
+    {
+      # en_US [arr] <nbl>
+      # = Tag serial dalam bahasa Inggris
+      en_US:
+      [
+        null
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Tag serial dalam bahasa Indonesia
+      id_ID:
+      [
+        null
+      ]
+    }
+
+    # releaseSeason [obj] > [str] <nbl>
+    # = Musim rilisan serial.
+    releaseSeason:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Winter, Spring, Summer, Fall, dan Unknown
+      en_US: Fall
+
+      // Argumen yang diperbolehkan ialah
+      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      id_ID: Gugur
+
+      // Argumen yang diperbolehkan ialah
+      // 冬, 春, 夏, 秋, dan 不明
+      ja_JP: 秋
+
+      // Argumen yang diperbolehkan ialah
+      // 겨울, 봄, 여름, 가을, dan 알
+      ko_KR: 여름
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hans: 秋天
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hant: 秋天
+    }
+
+    # releaseYear [num] <nbl>
+    # = Tahun rilis serial, menggunakan format numeral.
+    releaseYear: 2018
+
+    # episode [num] <nbl>
+    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    episode: 13
+
+    # releaseDate [str]
+    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    releaseDate: 2018 October 06
+
+    # endDate [str]
+    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    endDate: 2018 December 29
+
+    # duration [num] <nab>
+    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    duration: 23 Minutes 
+
+    # totalDuration [num] <nab>
+    # = Durasi total serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    totalDuration:  299 Minutes
+
+    # studio [str] <arb> <nab>
+    # = Studio yang memproduksi serial.
+    studio: CloverWorks
+
+    # rating [str] <nab>
+    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    // Argumen yang diperbolehkan ialah
+    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    rating: PG13+
+
+    # isNsfw [boo] <nbl>
+    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
+    #   false, yakni aman.
+    // Argumen yang diperbolehkan ialah
+    // true dan false
+    "isNsfw": true
+
+    # adaptation [obj] > [str] <arb> <nab>
+    # = Ialah adaptasi asal tayangan.
+    adaptation:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
+      // Drama, 4-koma, Fairy Tale, dan null
+      en_US: Manga
+
+      // Argumen yang diperbolehkan ialah
+      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
+      // Drama, 4-panel, Dongeng, dan null
+      id_ID: Manga
+    }
+
+    # country [str] <nbl>
+    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    country:
+    {
+      en_US: Japan
+      id_ID: Jepang
+    }
+  }
+
+  // scores [obj] > [str]/[num] <nab>
+  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  scores:
+  {
+    // https://anidb.net
+    aniDB:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+    
+    // https://anilist.co
+    AniList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 101381
+      score: 68%
+    }
+
+    // https://anime-planet.com
+    AnimePlanet:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: null
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+    ANN:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: 0
+    }
+
+    // https://anisearch.com
+    aniSearch:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anisearch.com/anime/13516,dakaretai-otoko-ichii-ni-odosarete-imasu
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 13516
+      score: 3.66
+    }
+
+    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
+    Annict:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: 0
+    }
+
+    // https://imdb.com
+    IMDb:
+    {
+      # code
+      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
+      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
+      #   dan 6751668 merupakan ID serial
+      code: tt9085692
+      score: 6.7
+    }
+
+    // https://kinopoisk.ru
+    KinoPoisk:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: 0
+    }
+
+    // https://kitsu.io
+    Kitsu:
+    {
+      # slug [str]
+      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      slug: dakaretai-otoko-1-i-ni-odosarete-imasu.
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
+      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      id: null
+      score: 78.92%
+    }
+
+    // https://livechart.me
+    LiveChart:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 3189
+      score: 7.82
+    }
+
+    // https://myanimelist.net
+    MyAnimeList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 37597
+      score: 7.41
+    }
+    
+    // https://en.myshows.me/
+    MyShows:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 0
+      score: 0
+    }
+
+    // http://nautiljon.com/
+    Nautiljon:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.nautiljon.com/animes/dakaretai+otoko+1-i+ni+odosarete+imasu..html
+      score: 8.2
+    }
+
+    // https://notify.moe/
+    Notify:
+    {
+      # base64 [str]
+      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      base64: XyjgVximR
+      score: 6.7
+    }
+
+    // http://otakotaku.com/
+    OtakOtaku:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+
+    // http://shikimori.org/
+    Shikimori:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: z37597
+      score: 7.42
+    }
+
+    // https://simkl.com
+    SIMKL:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 792735
+      score: 8.5
+    }
+
+    // https://www.themoviedb.org/
+    TMDB:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.themoviedb.org/tv/82867-dakaretai-otoko-1-i-ni-odosarete-imasu
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 82867
+      score: 93%
+    }
+
+    // https://trakt.tv/
+    Trakt:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://trakt.tv/shows/dakaichi-i-m-being-harassed-by-the-sexiest-man-of-the-year
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: 75%
+    }
+
+    // https://www.tvtime.com/en
+    TVTime:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+  }
+
+  # updatedDate [str] <nbl>
+  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
+  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+  // Tata cara pengisian data
+  // Format: YYYY-MM-DDThh:mm:ssTZD
+  // Yang mana:
+  // YYYY = tahun (2020)
+  // MM   = bulan (12)
+  // DD   = tanggal (21)
+  // hh   = pukul, format 24 jam (22)
+  // mm   = menit (45)
+  // ss   = detik (33)
+  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // 
+  // WIB = +07:00, WITA = +08:00, WIT = +09:00
+  updatedDate: 2020-06-23T12:18:34+07.00
+  fansub:
+  {
+    idn:
+    {
+      Aibou: null
+      Aizukara: null
+      Allsub: null
+      Alter: null
+      AnimeGokil: null 
+      AniToki: null
+      AoiTenshi: null
+      Arks: null
+      ASubs: null
+      AWSubs: null
+      Bentoo: null
+      Caramel: null
+      Cijanepoi: null
+      Conan: null
+      DAnimeSubs: null
+      Del: null
+      DNFI: null
+      Durandal: null
+      EmotPekmen: null
+      Excalibur: null
+      Gantz: null
+      Gin: null
+      Haruna: null
+      Haruzora: null
+      HunterNoSekai: null
+      IA: null
+      Inazumaotoshi: null
+      Indis: null
+      Inform0930: null
+      Isekai: null
+      Junk: null
+      Kazefuri: null
+      Kinshiru: null
+      KO: null
+      Kopaja: null
+      LCC: null
+      MangaNekoTranslation: null
+      Melody: null
+      Mite: null
+      Nanairo: null
+      Neo: null
+      OPLovers:null 
+      Ougi: null
+      Panagayan: null
+      Pendekar: null
+      Pucuk: null
+      Quinime: null
+      RevieXion: null
+      Samehadaku: null
+      SilverYasha: null
+      Sora: null
+      TTOD: null
+      Vedifi: null
+      Warung: null
+      Wibu: null
+      Yuki: null
+      Zen: null
+    }
+    eng:
+    {
+      Horrible: null
+    }
+  }
+  fanshare:
+  {
+    idn:
+    {
+      AniBatch: null
+      AnimeKompi: null
+      AnimeSAVE: null
+      Bakacan: null
+      Drivenime: https://drivenime.com/dakaretai-otoko-1-i-ni-odosarete-imasu-subtitle-indonesia-batch/
+      Hinime: https://hinime.com/dakaretai-otoko-1-ni-odosarete-imasu/
+      Koenime: null
+      Kusonime: null
+      Mikanime: null
+      Moenime: null
+      Ryuukoi: null
+      WibuDesu: null
+    }
+    eng:
+    {
+      AnimeKayo: null
+    }
+  }
+  fanstream:
+  {
+    idn:
+    {
+      AnimeIndoNET: null
+      anoBoy: null
+      Gomunime: https://gomunime.com/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
+      Moeclip: null
+      Neonime: null
+      Onnime: null
+      OtakuIndo: null
+    }
+    eng:
+    {
+      fourAnime: null
+      nineAnime: null
+      AnimeDaisuki: https://animedaisuki.moe/anime/382/dakaretai-otoko-1-i-ni-odosarete-imasu
+      AnimeTwist: null
+      Animeflix: null
+      AnimeHeaven: null
+      Animelon: null
+      Animeultima: https://www1.animeultima.to/a/dakaretai-otoko-1-i-ni-odosarete-imasu_346601
+      AniWatch: null
+      GogoAnime: null
+      KissAnime: null
+      WonderfulSubs: https://www.wonderfulsubs.com/search?q=%E6%8A%B1%E3%81%8B%E3%82%8C%E3%81%9F%E3%81%84%E7%94%B71%E4%BD%8D%E3%81%AB%E8%84%85%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+    }
+  }
+  library:
+  {
+    Nyaa: https://nyaa.si/view/914467
+    PerpusIndo: null
+    Shallty: null
+  }
+
+  # signature
+  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  signature:
+  {
+    # name [str] <nbl>
+    # = Nama Anda, boleh menggunakan nama pena.
+    name: YamashitaKazuhito
+
+    # username [str] <nbl>
+    # = Nama pengguna Anda di GitHub
+    username:@YamashitaKazuhito
+
+    # discordId [num] <nbl>
+    # = Merupakan ID unik pengguna Anda di Discord.
+    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    discordId: 584207131671134218
+
+    # submissionDateTime [str] <nbl>
+    # = Tanggal dan waktu sebelum submisi (commit/push).
+    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+    // Tata cara pengisian data
+    // Format: YYYY-MM-DDThh:mm:ssTZD
+    // Yang mana:
+    // YYYY = tahun (2020)
+    // MM   = bulan (12)
+    // DD   = tanggal (21)
+    // hh   = pukul, format 24 jam (22)
+    // mm   = menit (45)
+    // ss   = detik (33)
+    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // 
+    // WIB = +07:00, WITA = +08:00, WIT = +09:00
+    submissionDateTime: 2020-06-23T12:18:34+07:00
+
+    # sign [str][num] <nbl>
+    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
+    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
+    #   Base64.
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM
+  }
+}

@@ -188,5 +188,24 @@
             "xml": "/xml/000/010.xml",
             "yaml": "/yaml/000/010.yaml"
         }
+    },
+    {
+        "myAnimeList": 37597,
+        "kitsu": null,
+        "aniList": 101381,
+        "aniDb": null,
+        "notifyMoe": "XyjgVximR",
+        "title": {
+            "en_Latn": "Dakaretai Otoko 1-i ni Odosarete Imasu",
+            "en_US": "Dakaretai -Im Being Harassed By The Sexiest Man Of The Year-  ",
+            "native": "抱かれたい男1位に脅されています。"
+        },
+        "ryuuganime": 11,
+        "path": {
+            "json": "/json/000/011.json",
+            "hjson": "/hjson/000/011.hjson",
+            "xml": "/xml/000/011.xml",
+            "yaml": "/yaml/000/011.yaml"
+        }
     }
 ]

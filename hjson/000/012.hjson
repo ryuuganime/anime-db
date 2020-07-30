@@ -1,0 +1,844 @@
+#hjson
+/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
+|                               | |                              | | [str] merupakan markah teks, |
+|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
+|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
+| ----------------------------- | |                              | |   ral,  yakni angka dan null |
+|                               | \^----------------------------^/ |   saja.                      |
+| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
+|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
+|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
+|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
+|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
+|                               | |                          ''' | | [arr] merupakan markah array |
+\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
+/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
+|                               | | ru pada suatu value          | |   ta yang berbeda.           |
+| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
+|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
+| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
+|   menjadi array apabila objek |                                  |   value di dalamnya.         |
+|   dalam satu  value lebih ba- |                                  |                              |
+|   nyak daripada satu.         |                                  \^----------------------------^/
+| <nab> array dapat dihilangkan |
+|   tanda  kurungnya, dan dija- |
+|   dikan sebagai null.         |
+| <nbl> string, numeral, atau   |
+|   array terkait tidak bisa    |
+|   diubah menjadi null.        |
+|                               |
+\^-----------------------------*/
+
+{ 
+  // Petunjuk awal:
+  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
+  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
+  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
+  //    tanda koma.
+  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
+  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
+  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
+  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
+  //    id_ID: 
+  //        '''
+  //            Ini hanyalah informasi \"percobaan\",
+  //            harap untuk dapat dimaklumi
+  //        '''
+  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
+  //    contoh pengisian.
+
+  # title [obj]
+  # Merupakan judul suatu serial.
+  title: 
+  {
+    # native [str] <nbl>
+    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
+    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
+    #   yang ditayang di Jepang.
+    native:  うちタマ?!~うちのタマ知りませんか?~
+
+    # en_Latn [str] <nbl>
+    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
+    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    en_Latn: Uchi Tama?! Uchi no Tama Shirimasen ka?
+
+    # ar_001 [str] <nab>
+    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: null
+
+    # id_ID [str] <nab>
+    # = Judul dalam bahasa Indonesia.
+    id_ID: Di sebuah kota di Jepang, ada selebaran yang sering terlihat di jalanan dengan gambar kucing bertulisan "Apakah kamu melihat Tama?". Seorang anak laki-laki dengan telinga yang lembut di kepalanya melihat selebaran itu.
+
+    # en_US [str] <nab>
+    # = Judul dalam bahasa Inggris.
+    en_US: Uchitama?! Have You Seen My Tama ?
+
+    # ja_JP [str] <nab>
+    # = Judul dalam bahasa Jepang.
+    ja_JP: うちタマ?!~うちのタマ知りませんか?~
+
+    # de_DE [str] <nab>
+    # = Judul dalam bahasa Jerman.
+    de_DE: Uchitama?! Have you seen my Tama? 
+
+    # ko_KR [str] <nab>
+    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    ko_KR: 우치타마?! ~우리집 타마를 모르시나요?~
+
+    # fr_FR [str] <nab>
+    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    fr_FR: Uchi Tama Uchi no Tama Shirimasen ka
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: Uchi Tama?! Uchi no Tama Shirimasen ka?
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia.
+    ru_RU: Тама: Откуда же он взялся?
+
+    # es_ES [str] <nab>
+    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: null
+
+    # zh_Hans [str] <nab>
+    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    zh_Hans: null
+
+    # zh_Hant [str] <nab>
+    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    zh_Hant: null
+
+    # vi_VN [str] <nab>
+    # = Judul dalam bahasa Vietnam.
+    vi_VN: null
+  }
+
+  # backdrop [str] <url>
+  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
+  #   situs yang diperbolehkan.
+  backdrop: https://image.tmdb.org/t/p/original/zKBL6I5PbIbw02lpCwpv6RY97m9.jpg
+
+  # visualKey [str] <url>
+  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
+  #   yang diperbolehkan.
+  visualKey: https://image.tmdb.org/t/p/original/eUV998ItI7j8l81ZjZntY9y7dpD.jpg
+
+  # synopsis [obj]
+  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  synopsis:
+  {
+    # ar_001 [str] <nab>
+    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
+    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
+    #   (Arabic MSA).
+    ar_001: ''''''
+
+    # id_ID [str] <nab>
+    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
+    #   Indonesia.
+    id_ID: '''Di sebuah kota di Jepang, ada selebaran yang sering terlihat di jalanan dengan gambar kucing bertulisan "Apakah kamu melihat Tama?". Seorang anak laki-laki dengan telinga yang lembut di kepalanya melihat selebaran itu.'''
+
+    # en_US [str] <nab>
+    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
+    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    en_US: '''In a city somewhere in Japan, there’s a flyer often seen on Third Street with a picture of a cat with a kinked tail, bearing the words: “Have you seen Tama?” A young boy gazes at the flyer, but he has fluffy ears on his head…!? Watch the dogs and cats from Third Street take on a human form and get up to some mischief.'''
+
+    # ja_JP [str] <nab>
+    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    ja_JP: '''とある町の3丁目にはある貼り紙が頻繁に貼られていた。 そこに書いてあるのはかぎしっぽのねこの絵と 「うちのタマ知りませんか？」の文字。 その貼り紙を眺めている少年にはふわふわの耳とかぎしっぽが…！？ 3丁目のねこやいぬ達が人の姿で駆け回る！？ タマとフレンズのニャンとワンダフルな毎日を覗いてみませんか？ うちのタマ知りませんか？'''
+
+    # de_DE [str] <nab>
+    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
+    #   untuk sinopsis Jerman.
+    de_DE: '''Eine kurze Inhaltsangabe zum Anime „Uchitama?! Have you seen my Tama?“ würde vielen Anime- und Manga-Fans weiterhelfen. Du kennst diesen Anime bereits? Dann unterstütze aniSearch und füge eine kurze Beschreibung zum Inhalt des Animes „Uchitama?! Have you seen my Tama?“ '''
+
+    # ko_KR [str] <nab>
+    # = Sinopsis dalam bahasa Korea Selatan.
+    ko_KR: ''''''
+
+    # fr_FR [str] <nab>
+    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
+    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    fr_FR: '''Projet de Sony Creative Products afin de célébrer les 35 ans de la franchise Sanchome no Tama. Les personnages auront cette fois une forme humaine'''
+
+    # pt_PT [str] <nab>
+    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    pt_PT: '''Spin-off de "Tama & Friends" que reimagina o elenco da franquia como seres humanos.'''
+
+    # ru_RU [str] <nab>
+    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    ru_RU: ''''''
+
+    # es_ES [str] <nab>
+    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    es_ES: ''''''
+
+    # zh_Hans [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
+    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    zh_Hans: ''''''
+
+    # zh_Hant [str] <nab>
+    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
+    #   menggunakan aksara Kanton dalam database mereka.
+    zh_Hant: ''''''
+
+    # vi_VN [str] <nab>
+    # = Sinopsis dalam bahasa Vietnam.
+    vi_VN: ''''''
+  }
+
+  # information [obj]
+  # = Merupakan kumpulan informasi mengenai serial.
+  information:
+  {
+    # synonyms [obj] > [arr] <nab>
+    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    synonyms:
+    {
+      en_Latn: [
+
+      ]
+      ar_001: [
+        
+      ]
+      id_ID: [
+        
+      ]
+      en_US: [
+        
+      ]
+      ja_JP: [
+        
+      ]
+      de_DE: [
+        
+      ]
+      ko_KR: [
+        
+      ]
+      fr_FR: [
+        
+      ]
+      pt_PT: [
+        
+      ]
+      ru_RU: [
+        
+      ]
+      es_ES: [
+        
+      ]
+      zh_Hans: [
+        
+      ]
+      zh_Hant: [
+        
+      ]
+      vi_VN: [
+        
+      ]
+    }
+
+    # type [obj] > [str] <nbl>
+    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    type:
+    {
+      // Argumen yang diperbolehkan ialah:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      en_US: TV
+
+      // Argumen yang diperbolehkan ialah:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      id_ID: Serial TV
+    }
+
+    # status [obj] > [str] <nbl>
+    # = Menjelaskan status penanyangan serial.
+    status:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Aired, Airing, Planned, TBA, dan Unknown
+      en_US: Aired
+
+      // Argumen yang diperbolehkan ialah
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
+      //   Diketahui
+      id_ID: Ditayangkan
+    }
+
+    # serialGenre [obj]
+    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    serialGenre:
+    {
+      # en_US [arr] <nbl>
+      # = Genre serial dalam bahasa Inggris.
+      en_US:
+      [
+        Slice of Life
+        Animals
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Genre serial dalam bahasa Indonesia.
+      id_ID:
+      [
+        Potongan Kehidupan
+        Hewan
+      ]
+    }
+
+    # serialTags [obj]
+    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
+    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    serialTags:
+    {
+      # en_US [arr] <nbl>
+      # = Tag serial dalam bahasa Inggris
+      en_US:
+      [
+        Nekomimi
+        Cat
+        Dog
+        Non-Human Protagonist
+        Antrhopomorphic
+      ]
+
+      # id_ID [arr] <nbl>
+      # = Tag serial dalam bahasa Indonesia
+      id_ID:
+      [
+        Telinga Kucing
+        Kucing
+        Anjing
+        Protagonist bukan Manusia
+        Antrhopomorphic
+      ]
+    }
+
+    # releaseSeason [obj] > [str] <nbl>
+    # = Musim rilisan serial.
+    releaseSeason:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Winter, Spring, Summer, Fall, dan Unknown
+      en_US: Winter
+
+      // Argumen yang diperbolehkan ialah
+      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      id_ID: Dingin
+
+      // Argumen yang diperbolehkan ialah
+      // 冬, 春, 夏, 秋, dan 不明
+      ja_JP: 冬 
+
+      // Argumen yang diperbolehkan ialah
+      // 겨울, 봄, 여름, 가을, dan 알
+      ko_KR: 겨울
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hans:  冬天
+
+      // Argumen yang diperbolehkan ialah
+      // 冬天, 春天, 夏天, 秋天, dan 未知
+      zh_Hant:  冬天
+    }
+
+    # releaseYear [num] <nbl>
+    # = Tahun rilis serial, menggunakan format numeral.
+    releaseYear: 2020
+
+    # episode [num] <nbl>
+    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    episode: 11
+
+    # releaseDate [str]
+    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    releaseDate: 2020-01-10
+
+    # endDate [str]
+    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
+    #   diketahui, isi null.
+    endDate: 2020-03-20
+
+    # duration [num] <nab>
+    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    duration: 23Min
+
+    # totalDuration [num] <nab>
+    # = Durasi total serial, menggunakan format menit. Apabila tidak
+    #   diketahui, isi null.
+    totalDuration: 253Min
+
+    # studio [str] <arb> <nab>
+    # = Studio yang memproduksi serial.
+    studio: Mappa, Lapin Track
+
+    # rating [str] <nab>
+    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
+    #   lebih lanjut.
+    // Argumen yang diperbolehkan ialah
+    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    rating: PG13+
+
+    # isNsfw [boo] <nbl>
+    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
+    #   false, yakni aman.
+    // Argumen yang diperbolehkan ialah
+    // true dan false
+    "isNsfw": false
+
+    # adaptation [obj] > [str] <arb> <nab>
+    # = Ialah adaptasi asal tayangan.
+    adaptation:
+    {
+      // Argumen yang diperbolehkan ialah
+      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
+      // Drama, 4-koma, Fairy Tale, dan null
+      en_US: Original
+
+      // Argumen yang diperbolehkan ialah
+      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
+      // Drama, 4-panel, Dongeng, dan null
+      id_ID: Orisinal
+    }
+
+    # country [str] <nbl>
+    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    country:
+    {
+      en_US: Japan
+      id_ID: Jepang
+    }
+  }
+
+  // scores [obj] > [str]/[num] <nab>
+  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  scores:
+  {
+    // https://anidb.net
+    aniDB:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 14952
+      score: 5.45
+    }
+    
+    // https://anilist.co
+    AniList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 109964
+      score: 62
+    }
+
+    // https://anime-planet.com
+    AnimePlanet:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anime-planet.com/anime/uchitama-have-you-seen-my-tama
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1577396415
+      score: 3.1
+    }
+    ANN:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 22947
+      score: 6.4
+    }
+
+    // https://anisearch.com
+    aniSearch:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.anisearch.com/anime/14441,uchi-tama-uchi-no-tama-shirimasen-ka
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 14441
+      score: 3.26
+    }
+
+    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
+    Annict:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+
+    // https://imdb.com
+    IMDb:
+    {
+      # code
+      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
+      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
+      #   dan 6751668 merupakan ID serial
+      code: null
+      score: null
+    }
+
+    // https://kinopoisk.ru
+    KinoPoisk:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1343688
+      score: 5.50
+    }
+
+    // https://kitsu.io
+    Kitsu:
+    {
+      # slug [str]
+      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      slug: uchi-tama-uchi-no-tama-shirimasenka
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
+      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      id: 42397
+      score: 69.28
+    }
+
+    // https://livechart.me
+    LiveChart:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 9468
+      score: 7.46
+    }
+
+    // https://myanimelist.net
+    MyAnimeList:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 39942
+      score: 6.92
+    }
+    
+    // https://en.myshows.me/
+    MyShows:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 65076
+      score: 3.56
+    }
+
+    // http://nautiljon.com/
+    Nautiljon:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: null
+      score: null
+    }
+
+    // https://notify.moe/
+    Notify:
+    {
+      # base64 [str]
+      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      base64: 0T1aHQVWg
+      score: 5.2
+    }
+
+    // http://otakotaku.com/
+    OtakOtaku:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 1709
+      score: 9.5
+    }
+
+    // http://shikimori.org/
+    Shikimori:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 39942
+      score: 6.92
+    }
+
+    // https://simkl.com
+    SIMKL:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+
+    // https://www.themoviedb.org/
+    TMDB:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://www.themoviedb.org/tv/96660-uchi-tama-uchi-no-tama-shirimasen-ka
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 96660
+      score: 80
+    }
+
+    // https://trakt.tv/
+    Trakt:
+    {
+      # url [str] <url>
+      # = URL/Tautan entri pada website terkait.
+      url: https://trakt.tv/shows/uchitama-have-you-seen-my-tama
+
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: 719
+      score: 69
+    }
+
+    // https://www.tvtime.com/en
+    TVTime:
+    {
+      # id [num]
+      # = Merupakan nomor id serial di website tersebut. Dapat diambil
+      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
+      #   pengembang untuk informasi terkait.
+      id: null
+      score: null
+    }
+  }
+
+  # updatedDate [str] <nbl>
+  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
+  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+  // Tata cara pengisian data
+  // Format: YYYY-MM-DDThh:mm:ssTZD
+  // Yang mana:
+  // YYYY = tahun (2020)
+  // MM   = bulan (12)
+  // DD   = tanggal (21)
+  // hh   = pukul, format 24 jam (22)
+  // mm   = menit (45)
+  // ss   = detik (33)
+  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // 
+  // WIB = +07:00, WITA = +08:00, WIT = +09:00
+  updatedDate: 2020-06-23T18:40:25+07.00
+  fansub:
+  {
+    idn:
+    {
+      Aibou: null
+      Aizukara: null
+      Allsub: null
+      Alter: null
+      AnimeGokil: null
+      AniToki: null
+      AoiTenshi: null
+      Arks: null
+      ASubs: null
+      AWSubs: null
+      Bentoo: null
+      Caramel: null
+      Cijanepoi: null
+      Conan: null
+      DAnimeSubs: null
+      Del: null
+      DNFI: null
+      Durandal: null
+      EmotPekmen: null
+      Excalibur: null
+      Gantz: null
+      Gin: null
+      Haruna: null
+      Haruzora: null
+      HunterNoSekai: null
+      IA: null
+      Inazumaotoshi: null
+      Indis: null
+      Inform0930: null
+      Isekai: null
+      Junk: null
+      Kazefuri: null
+      Kinshiru: null
+      KO: null
+      Kopaja: null
+      LCC: null
+      MangaNekoTranslation: null
+      Melody: null
+      Mite: null
+      Nanairo: null
+      Neo: null
+      OPLovers: null
+      Ougi: null
+      Panagayan: null
+      Pendekar: null
+      Pucuk: null
+      Quinime: null
+      RevieXion: null
+      Samehadaku: null
+      SilverYasha: null
+      Sora: null
+      TTOD: null
+      Vedifi: null
+      Warung: null
+      Wibu: null
+      Yuki: null
+      Zen: null
+    }
+    eng:
+    {
+      Horrible: null
+    }
+  }
+  fanshare:
+  {
+    idn:
+    {
+      AniBatch: null
+      AnimeKompi: null
+      AnimeSAVE: null
+      Bakacan: https://bakacan.id/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia/
+      Drivenime: https://drivenime.com/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia-batch/
+      Hinime: null
+      Koenime: https://www.koenime.com/uchitama-sub-indo/
+      Kusonime: https://kusonime.com/uchitama-batch-sub-indo/
+      Mikanime: null
+      Moenime: https://moenime.web.id/uchi-tama-uchi-no-tama-shirimasen-ka-sub-indo/
+      Ryuukoi: null
+      WibuDesu: null
+    }
+    eng:
+    {
+      AnimeKayo: null
+    }
+  }
+  fanstream:
+  {
+    idn:
+    {
+      AnimeIndoNET: null
+      anoBoy: null
+      Gomunime: null
+      Moeclip: null
+      Neonime: null
+      Onnime: https://onnime.net/anime/uchi-tama-uchi-no-tama-shirimasen-ka.10D2KWZ2/
+      OtakuIndo: null 
+    }
+    eng:
+    {
+      fourAnime: null
+      nineAnime: null
+      AnimeDaisuki: https://animedaisuki.moe/anime/887/uchi-tama-uchi-no-tama-shirimasen-ka
+      AnimeTwist: null
+      Animeflix: null
+      AnimeHeaven: https://animeheaven.ru/detail/uchi-tama-uchi-no-tama-shirimasen-ka.19641
+      Animelon: null
+      Animeultima: null
+      AniWatch: null
+      GogoAnime: null
+      KissAnime: null
+      WonderfulSubs: https://www.wonderfulsubs.com/search?q=Uchitama%3F!%20Have%20you%20seen%20my%20Tama%3F
+    }
+  }
+  library:
+  {
+    Nyaa: https://nyaa.si/?f=0&c=0_0&q=%E3%81%86%E3%81%A1%E3%82%BF%E3%83%9E%3F!~%E3%81%86%E3%81%A1%E3%81%AE%E3%82%BF%E3%83%9E%E7%9F%A5%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%3F~
+    PerpusIndo: null
+    Shallty: null
+  }
+
+  # signature
+  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  signature:
+  {
+    # name [str] <nbl>
+    # = Nama Anda, boleh menggunakan nama pena.
+    name: Yamashita Kazuhito
+
+    # username [str] <nbl>
+    # = Nama pengguna Anda di GitHub
+    username: @YamashitaKazuhito
+
+    # discordId [num] <nbl>
+    # = Merupakan ID unik pengguna Anda di Discord.
+    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    discordId: 584207131671134218
+
+    # submissionDateTime [str] <nbl>
+    # = Tanggal dan waktu sebelum submisi (commit/push).
+    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
+    // Tata cara pengisian data
+    // Format: YYYY-MM-DDThh:mm:ssTZD
+    // Yang mana:
+    // YYYY = tahun (2020)
+    // MM   = bulan (12)
+    // DD   = tanggal (21)
+    // hh   = pukul, format 24 jam (22)
+    // mm   = menit (45)
+    // ss   = detik (33)
+    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
+    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // 
+    // WIB = +07:00, WITA = +08:00, WIT = +09:00
+    submissionDateTime: 2020-06-23T19:00:25+07.00
+
+    # sign [str][num] <nbl>
+    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
+    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
+    #   Base64.
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM
+  }
+}
