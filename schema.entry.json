@@ -199,10 +199,10 @@
                     {
                         "type": "null"
                     }
-                ]
-            },
-            "propertyNames": {
-                "pattern": "^[a-z]{2,3}\\_[\\w]{2,4}$"
+                ],
+                "propertyNames": {
+                    "pattern": "^[a-z]{2,3}_[\\w]{2,4}$"
+                }
             }
         },
         "backdrop": {
@@ -1023,7 +1023,17 @@
                 },
                 "studio": {
                     "description": "Studio of serial",
-                    "type": "string"
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "array"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
                 },
                 "rating": {
                     "description": "Content rating of the serial",
@@ -3270,7 +3280,7 @@
                 "username": {
                     "description": "Contributor GitHub username",
                     "type": "string",
-                    "pattern": "^\\@[\\w\\s\\W\\S\\.\\-\\_]+",
+                    "pattern": "^@[\\w\\s\\W\\S\\.\\-_]+",
                     "examples": [
                         "@nattadasu",
                         "@Yae-chan"
