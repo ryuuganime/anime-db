@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
       "native": "うちタマ?!~うちのタマ知りませんか?~",
       "en_Latn": "Uchi Tama?! Uchi no Tama Shirimasen ka?",

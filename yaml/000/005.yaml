@@ -1,4 +1,5 @@
 ---
+$schema: ../../schemas/entry.json
 title:
     native: グレイプニル
     en_Latn: Gleipnir

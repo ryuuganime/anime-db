@@ -30,8 +30,14 @@
 \^-----------------------------^/ //    .hjson atau selebihnya untuk contoh pengisian.
 /^          RYUUGANIME            // !! Dokumen ini telah diberikan  justifikasi  (justify)  secara
     HJSON ANIME ENTRY TEMPLATE    //    merata dan terdistribusi  (distributed) pada teks agar mem-
-          VERSION: 0.3-b       */ //    permudah dalam membaca dokumentasi yang tertera.
+          VERSION: 0.5-b       */ //    permudah dalam membaca dokumentasi yang tertera.
 { 
+  # $schema [str] <nbl> <url>
+  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
+  #   dang lakukan!
+  $schema: ../../schemas/entry.json
+  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+
   # title [obj]
   # Merupakan judul suatu serial.
   title:

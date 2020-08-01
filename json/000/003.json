@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "僕のヒーローアカデミア",
         "en_Latn": "Boku no Hero Academia",

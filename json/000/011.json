@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
       "native": "抱かれたい男1位に脅されています。",
       "en_Latn": "Dakaretai Otoko 1-i ni Odosarete Imasu",
@@ -316,4 +317,4 @@
       "submissionDateTime": "2020-06-23T12:18:34+07:00",
       "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM"
     }
-  }
+}

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "ソードアート・オンライン アリシゼーション",
         "en_Latn": "Sword Art Online: Alicization",

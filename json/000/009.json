@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "モンスター娘のいる日常",
         "en_Latn": "Monster Musume no Iru Nichijou",

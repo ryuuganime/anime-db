@@ -1,4 +1,5 @@
 ---
+$schema: ../../schemas/entry.json
 title:
     native: '富豪刑事 Balance:UNLIMITED'
     en_Latn: 'Fugou Keiji: Balance:Unlimited'
