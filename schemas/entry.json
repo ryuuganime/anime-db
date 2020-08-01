@@ -1,9 +1,22 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.1-a",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.2-a",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
+        "$schema": {
+            "description": "Path to custom schema",
+            "type": "string",
+            "oneOf": [
+                {
+                    "pattern": "\\.\\./\\.\\./schemas/entry.json"
+                },
+                {
+                    "format": "uri",
+                    "pattern": "https://raw\\.githubusercontent\\.com/ryuuganime/ryuuganime-db/master/schemas/entry.json"
+                }
+            ]
+        },
         "title": {
             "description": "A serial title in multiple languages. Based on ICU locales",
             "type": "object",
