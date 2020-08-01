@@ -1,0 +1,323 @@
+{
+    "title": {
+        "native": "ソードアート・オンライン アリシゼーション",
+        "en_Latn": "Sword Art Online: Alicization",
+        "ar_001": "",
+        "hu_HU": "",
+        "he_IL": "",
+        "id_ID": "Seni Pedang Online Alicization",
+        "en_US": "Sword Art Online: Alicization",
+        "ja_JP": "ソードアート・オンライン アリシゼーション",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "backdrop": "https://www.anime-planet.com/images/anime/screenshots/sword-art-online-alicization-9199-1.jpg?t=1544545041",
+    "visualKey": "https://www.anime-planet.com/images/anime/covers/sword-art-online-alicization-9199.jpg?t=1539055577",
+    "synopsis": {
+        "ar_001": "",
+        "hu_HU": "",
+        "he_IL": "",
+        "id_ID": "Ketika Kirito terbangun, dia berada di kedalaman hutan yang sangat luas dan penuh dengan pepohonan yang menjulang tinggi. Dalam pencariannya untuk menemukan petunjuk di sekitarnya, Kirito bertemu dengan seorang anak laki-laki yang sepertinya mengenal dirinya. Anak itu seharusnya NPC biasa, namun ternyata dia memiliki perasaan layaknya manusia. Saat mereka mencari orang tua dari anak itu, Kirito mulai mengingat kenangan-kenangan yang aneh. Kenangan masa kecilnya, tentang anak laki-laki, anak perempuan berambut emas, dan nama yang seharusnya tidak pernah dia lupakan, Alice.",
+        "en_US": "Kirito awakens in a vast, fantastical forest filled with towering trees. In his search for clues to the truth of his surroundings, he encounters a young boy who seems to know him. He ought to be a simple NPC, but the depth of his emotions seem no different than a human. As they search for the boy's parents, Kirito finds a peculiar memory returning to him. A memory from his own childhood, of this boy and a girl, too, with golden hair, and a name he should have never forgotten... Alice.",
+        "ja_JP": "",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": [
+                "Sword Art Online III",
+                "SAO Alicization"
+            ],
+            "ar_001": "",
+            "hu_HU": "",
+            "he_IL": "",
+            "id_ID": "SAO III",
+            "en_US": "",
+            "ja_JP": "",
+            "de_DE": "",
+            "ko_KR": "",
+            "fr_FR": "",
+            "pt_PT": "",
+            "ru_RU": "",
+            "es_ES": "",
+            "zh_Hans": "",
+            "zh_Hant": "",
+            "vi_VN": ""
+        },
+        "type": {
+            "en_US": "TV",
+            "id_ID": "Serial TV"
+        },
+        "status": {
+            "en_US": "Aired",
+            "id_ID": "Ditayangkan"
+        },
+        "serialGenre": {
+            "en_US": [
+                "Action",
+                "Adventure",
+                "Fantasy"
+            ],
+            "id_ID": [
+                "Aksi",
+                "Petualangan",
+                "Fantasi"
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                "Virtual World",
+                "Isekai",
+                "SwordPlay"
+            ],
+            "id_ID": [
+                "Dunia Virtual",
+                "Dunia Lain",
+                "Permainan Pedang"
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "Fall",
+            "id_ID": "Gugur",
+            "ja_JP": "秋",
+            "ko_JP": "가을",
+            "zh_Hans": "秋天",
+            "zh_Hant": "秋天"
+        },
+        "releaseYear": 2018,
+        "episode": 24,
+        "releaseDate": "2018-10-7",
+        "endDate": "2019-3-31",
+        "duration": 24,
+        "totalDuration": 576,
+        "studio": "A-1 Pictures",
+        "rating": "",
+        "adaptation": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "country": {
+            "en_US": "",
+            "id_ID": ""
+        }
+    },
+    "scores": {
+        "aniDB": {
+            "id": 0,
+            "score": ""
+        },
+        "AniList": {
+            "id": 0,
+            "score": ""
+        },
+        "AnimePlanet": {
+            "url": "",
+            "score": ""
+        },
+        "ANN": {
+            "id": 0,
+            "score": ""
+        },
+        "aniSearch": {
+            "url": "",
+            "score": ""
+        },
+        "Annict": {
+            "id": 0,
+            "score": ""
+        },
+        "IMDb": {
+            "code": "",
+            "score": ""
+        },
+        "KinoPoisk": {
+            "id": 0,
+            "score": ""
+        },
+        "Kitsu": {
+            "slug": "",
+            "score": ""
+        },
+        "LiveChart": {
+            "id": 0,
+            "score": ""
+        },
+        "MyAnimeList": {
+            "id": 0,
+            "score": ""
+        },
+        "MyShows": {
+            "id": 0,
+            "score": ""
+        },
+        "Nautiljon": {
+            "url": "",
+            "score": ""
+        },
+        "Notify": {
+            "base64": "",
+            "score": ""
+        },
+        "OtakOtaku": {
+            "id": 0,
+            "score": ""
+        },
+        "Shikimori": {
+            "id": 0,
+            "score": ""
+        },
+        "SIMKL": {
+            "id": 0,
+            "score": ""
+        },
+        "TMDB": {
+            "url": "",
+            "score": ""
+        },
+        "Trakt": {
+            "url": "",
+            "score": ""
+        },
+        "TVTime": {
+            "id": 0,
+            "score": ""
+        }
+    },
+    "updatedDate": 0,
+    "updatedTime": {
+        "time": 0,
+        "timeZone": "+7"
+    },
+    "fansub": {
+        "idn": {
+            "Aibou": "",
+            "Aizukara": "",
+            "Allsub": "",
+            "Alter": "",
+            "AnimeGokil": "",
+            "AniToki": "",
+            "AoiTenshi": "",
+            "Arks": "",
+            "ASubs": "",
+            "AWSubs": "",
+            "Bentoo": "",
+            "Caramel": "",
+            "Cijanepoi": "",
+            "Conan": "",
+            "DAnimeSubs": "",
+            "Del": "",
+            "DNFI": "",
+            "Durandal": "",
+            "EmotPekmen": "",
+            "Excalibur": "",
+            "Gantz": "",
+            "Gin": "",
+            "Haruna": "",
+            "Haruzora": "",
+            "Hopper": "",
+            "HunterNoSekai": "",
+            "IA": "",
+            "Inazumaotoshi": "",
+            "Indis": "",
+            "Inform0930": "",
+            "Isekai": "",
+            "Ito": "",
+            "Junk": "",
+            "Kazefuri": "",
+            "Kinshiru": "",
+            "KO": "",
+            "Kopaja": "",
+            "LCC": "",
+            "MangaNekoTranslation": "",
+            "Meitanteibayoo": "",
+            "Melody": "",
+            "Mite": "",
+            "NgidolYuk": "",
+            "Neo": "",
+            "OPLovers": "",
+            "Ougi": "",
+            "Panagayan": "",
+            "Pendekar": "",
+            "Pucuk": "",
+            "Quinime": "",
+            "RevieXion": "",
+            "Samehadaku": "",
+            "SilverYasha": "",
+            "Sora": "",
+            "TTOD": "",
+            "Vedify": "",
+            "Warung": "",
+            "Wibu": "",
+            "Yuki": "",
+            "Zen": ""
+        },
+        "eng": {
+            "Horrible": ""
+        }
+    },
+    "fanshare": {
+        "idn": {
+            "AniBatch": "",
+            "Bakacan": "",
+            "Drivenime": "",
+            "Hinime": "",
+            "Koenime": "",
+            "Kusonime": "",
+            "Mikanime": "",
+            "Moenime": "",
+            "WibuDesu": ""
+        },
+        "eng": {
+            "AnimeKayo": ""
+        }
+    },
+    "fanstream": {
+        "idn": {
+            "AnimeCracks": "",
+            "AnimeHADE": "",
+            "AnimeIndoNET": "",
+            "AnimeIndoTO": "",
+            "anoBoy": "",
+            "Gomunime": "",
+            "Moeclip": "",
+            "Neonime": "",
+            "Onnime": "",
+            "RuangOtaku": ""
+        },
+        "eng": {
+            "4anime": "",
+            "9anime": "",
+            "AnimeDaisuki": "",
+            "AnimeTwist": "",
+            "Animeflix": "",
+            "AnimeHeaven": "",
+            "Animelon": "",
+            "Animeultima": "",
+            "AnimeXD": "",
+            "DaiWEEB": "",
+            "GogoAnime": "",
+            "KissAnime": "",
+            "WonderfulSubs": ""
+        }
+    },
+    "library": {
+        "Nyaa": "",
+        "PerpusIndo": "",
+        "Shallty": ""
+    }
+}
