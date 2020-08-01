@@ -790,7 +790,33 @@
                                     "type": "array",
                                     "contains": {
                                         "type": "string",
-                                        "pattern": "^[\\w\\s\\S]+$"
+                                        "pattern": "^[\\w\\s\\S]+$",
+                                        "not": {
+                                            "enum": [
+                                                "Action",
+                                                "Adventure",
+                                                "Comedy",
+                                                "Crime",
+                                                "Documentary",
+                                                "Drama",
+                                                "Fantasy",
+                                                "History",
+                                                "Horror",
+                                                "Mahou Shoujo",
+                                                "Mature",
+                                                "Mecha",
+                                                "Music",
+                                                "Mystery",
+                                                "Psychological",
+                                                "Romance",
+                                                "Sci-Fi",
+                                                "Slice of Life",
+                                                "Sport",
+                                                "Supernatural",
+                                                "Thriller",
+                                                "War"
+                                            ]
+                                        }
                                     }
                                 },
                                 {
@@ -804,7 +830,33 @@
                                     "type": "array",
                                     "contains": {
                                         "type": "string",
-                                        "pattern": "^[\\w\\s\\S]+$"
+                                        "pattern": "^[\\w\\s\\S]+$",
+                                        "not": {
+                                            "enum": [
+                                                "Aksi",
+                                                "Petualangan",
+                                                "Komedi",
+                                                "Kriminalitas",
+                                                "Dokumentasi",
+                                                "Drama",
+                                                "Fantasi",
+                                                "Sejarah",
+                                                "Horror",
+                                                "Mahou Shoujo",
+                                                "Dewasa",
+                                                "Mecha",
+                                                "Musik",
+                                                "Misteri",
+                                                "Psikologis",
+                                                "Romansa",
+                                                "Sci-Fi",
+                                                "Potongan Kehidupan",
+                                                "Olahraga",
+                                                "Supernatural",
+                                                "Thriller",
+                                                "Peperangan"
+                                            ]
+                                        }
                                     }
                                 },
                                 {
