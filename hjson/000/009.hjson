@@ -395,7 +395,11 @@
 
     # studio [str] <arb> <nab>
     # = Studio yang memproduksi serial.
-    studio: Studio Hibari, TOHO animation, Genco
+    studio: [
+      Studio Hibari
+      TOHO animation
+      Genco
+    ]
 
     # rating [str] <nab>
     # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi

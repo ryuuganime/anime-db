@@ -162,7 +162,7 @@
     # zh_Hans [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Lihat Douban, TVDB, atau Wiki-
     #   pedia untuk sinopsis Mandarin.
-    zh_Hans: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，qigou.cc森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？''
+    zh_Hans: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，qigou.cc森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？'''
 
     # zh_Hant [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Kanton (Traditional).  Gunakan converter daring untuk

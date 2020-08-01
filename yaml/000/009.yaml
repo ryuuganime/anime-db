@@ -193,7 +193,10 @@ information:
     endDate: '2015-09-23'
     duration: 23
     totalDuration: 
-    studio: Studio Hibari, TOHO animation, Genco
+    studio: 
+        - Studio Hibari
+        - TOHO animation
+        - Genco
     rating: R18+
     isNsfw: true
     adaptation:
