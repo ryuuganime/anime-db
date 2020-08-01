@@ -2,17 +2,20 @@
     "json.schemas": [
         {
             "fileMatch": [
-                "./json/*/*.json"
+                "../json/000/*.json"
             ],
-            "url": "./schema.entry.json"
+            "url": "./schemas/entry.json"
         },
         {
             "fileMatch": [
                 "./list.json"
             ],
-            "url": "./schema.list.json"
+            "url": "./schemas/list.json"
         }
     ],
+    "yaml.schemas": {
+        "./schemas/entry.json": ["./yaml/*/*.yaml"]
+    },
     "cSpell.words": [
         "hant",
         "zh",

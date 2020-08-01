@@ -1,4 +1,4 @@
-#hjson
+    #hjson
 /*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
 |                               | |                              | | [str] merupakan markah teks, |
 |     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
@@ -61,38 +61,30 @@
     # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
     #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
     #   yang ditayang di Jepang.
-    native:  グレイプニル
+    native:  抱かれたい男1位に脅されています。
 
     # en_Latn [str] <nbl>
     # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
     #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
-    en_Latn: Gleipnir
+    en_Latn: Dakaretai Otoko 1-i ni Odosarete Imasu
 
     # ar_001 [str] <nab>
     # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
     #   bahwa menggunakan logat Arab Modern yang telah distandarkan
     #   (Arabic MSA).
-    ar_001: القيد السحري
-
-    # hu_HU [str] <nab>
-    # = Judul dalam bahasa Hungaria.
-    hu_HU: null
-
-    # he_IL [str] <nab>
-    # = Judul dalam bahasa Ibrani Israel.
-    he_IL: null
+    ar_001: null
 
     # id_ID [str] <nab>
     # = Judul dalam bahasa Indonesia.
-    id_ID: null
+    id_ID: Dakaretai Otoko 1-i ni Odosarete Imasu
 
     # en_US [str] <nab>
     # = Judul dalam bahasa Inggris.
-    en_US: Gleipnir
+    en_US: Dakaretai -Im Being Harassed By Th Sexiest Man of The Year-
 
     # ja_JP [str] <nab>
     # = Judul dalam bahasa Jepang.
-    ja_JP: グレイプニル
+    ja_JP: 抱かれたい男1位に脅されています。
 
     # de_DE [str] <nab>
     # = Judul dalam bahasa Jerman.
@@ -100,11 +92,11 @@
 
     # ko_KR [str] <nab>
     # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
-    ko_KR: 글레이프니르
+    ko_KR: 안기고 싶은 남자 1위에게 협박당하고 있습니다.
 
     # fr_FR [str] <nab>
     # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
-    fr_FR: null
+    fr_FR: Dakaretai Otoko 1-i ni Odosarete Imasu.
 
     # pt_PT [str] <nab>
     # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
@@ -112,7 +104,7 @@
 
     # ru_RU [str] <nab>
     # = Judul dalam bahasa Rusia.
-    ru_RU: Глейпнир
+    ru_RU: DAKAICHI. Мой номер 1
 
     # es_ES [str] <nab>
     # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
@@ -120,26 +112,26 @@
 
     # zh_Hans [str] <nab>
     # = Judul dalam bahasa China beraksara Mandarin (Simplified).
-    zh_Hans: 格莱普尼尔
+    zh_Hans: 我让最想被拥抱的男人给威胁了。
 
     # zh_Hant [str] <nab>
     # = Judul dalam bahasa China beraksara Kanton (Traditional).
-    zh_Hant: 格萊普尼爾
+    zh_Hant: 我让最想被拥抱的男人给威胁了。
 
     # vi_VN [str] <nab>
     # = Judul dalam bahasa Vietnam.
-    vi_VN: Sợi Xích Thần
+    vi_VN: null
   }
 
   # backdrop [str] <url>
   # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
   #   situs yang diperbolehkan.
-  backdrop: https://artworks.thetvdb.com/banners/series/374198/backgrounds/62029678.jpg
+  backdrop: https://image.tmdb.org/t/p/original/dZ2wHYUMcswAPlAbYsoJWiXdrPc.jpg
 
   # visualKey [str] <url>
   # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
   #   yang diperbolehkan.
-  visualKey: https://artworks.thetvdb.com/banners/series/374198/posters/5eabdfe38893d.jpg
+  visualKey: https://image.tmdb.org/t/p/original/1cWev0aDMQ09Y21h3o3Smp6Xdm9.jpg
 
   # synopsis [obj]
   # = Ialah sinopis suatu serial dalam beberapa bahasa.
@@ -149,71 +141,67 @@
     # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
     #   bahwa menggunakan logat Arab Modern yang telah distandarkan
     #   (Arabic MSA).
-    ar_001: '''كاغايا شويشي هو فتى عادي بمدرسة ثانوية في بلدة صغيرة مملة، ولكن عندما يتم محاصرة زميلته الجميلة في حريق بمستودع، يكتشف قدرته الغامضة، والتي تمكنه من التحول إلى كلب فرو مع مسدس كبير وسحاب في ظهره.
-
-ينقذ حياة الفتاة ويشاركها سره، لكنها تبحث عن الأخت التي قتلت عائلتها، ولا تهتم بغير ذالك ولا حتى بما سيتطلب هذا، لتستخدم “شويشي” لإنجاز مهمتها…'''
-
-    # hu_HU [str] <nab>
-    # = Sinopsis dalam bahasa Hungaria.
-    hu_HU: null
-
-    # he_IL [str]
-    # = Sinopsis dalam bahasa Ibrani Israel.
-    he_IL: null
+    ar_001: '''a'''
 
     # id_ID [str] <nab>
     # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
     #   Indonesia.
-    id_ID: '''Shuichi Kagaya, anak SMA biasa di sebuah kota kecil yang membosankan. Namun, ketika teman kelasnya yang cantik terperangkap dalam kebakaran, Shuichi menyadari dirinya memiliki kekuatan misterius. Ia dapat berubah menjadi anjing berbulu lebat dengan pistol besar dan memiliki ritsleting di punggungnya. Ia pun menyelamatkan gadis itu, dan berbagi rahasia dengannya.'''
+    id_ID: '''a'''
 
     # en_US [str] <nab>
     # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
     #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
-    en_US: '''Kagaya Shuuichi is an ordinary high school kid in a boring little town. But when a beautiful classmate is caught in a warehouse fire, he discovers a mysterious power: he can transform into a furry dog with an oversized revolver and a zipper down his back. He saves the girl's life, sharing his secret with her. But she's searching for the sister who killed her family, and she doesn't care how degrading it gets: she will use Shuuichi to accomplish her mission...'''
+    en_US: '''Takato Saijou has held the title of "Sexiest Man of the Year" for five years running. He is an accomplished actor, with 20 years of experience under his belt, and is aware his good looks are well above average. Proud of his career, Takato regards the title as an appropriate indicator of his success.
+But when his reign is ended by acting newbie Junta Azumaya, who debuted only three years ago, Takato's initial shock gives way to jealous hostility. Even in the new drama that he has been cast in, Junta seems to have suddenly surpassed him; snatching Takato's usual spot of lead actor, Junta continually manages to get on his nerves. Most infuriating of all are the bright smile and kind words that accompany everything Junta does.
+All this animosity comes to a head, however, when Junta catches Takato in a rather vulnerable drunken state. Endangering his own public image, Takato confronts the junior actor with harsh words and angry comments—an opportunity Junta takes every advantage of. With the famous actor Takato Saijou now on video picking a fight with a co-star, Junta has the perfect means to blackmail him.
+Asking the price of his enemy's silence, Takato is shocked to find that his motivation lies far from advancing his career; instead, Junta's terms are those that can only be realized in the bedroom!'''
 
     # ja_JP [str] <nab>
     # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
-    ja_JP: '''「どうして僕は、こんな姿に変身してしまうのか――?」 “着ぐるみに変身する”という世にも厄介な特殊能力をもった少年・加賀谷修一。その力に引き寄せられるように現れた謎の少女・クレアとの出会いと、時を同じくして次々と起こる異変に修一の日常は壊されていった。そして修一に襲いかかる、修一と同じ変身能力を持った“バケモノ”。 巨大な災厄を引き起こす「コイン」を巡り、 バケモノ同士の争奪戦に巻き込まれた修一とクレアは、 二人でひとつになって自らの運命を切り開く――!!'''
+    ja_JP: '''2013年7月、連載を開始した、 桜日梯子による『抱かれたい男1位に脅されています。』。 5年連続で”抱かれたい男1位”だったベテラン俳優・西條高人と、 その座を奪った新人俳優・東谷准太。 芸能界を舞台に繰り広げられる”抱かれたい男” ツートップ同士の禁断のスキャンダルを センセーショナルに描く本作は、 遂にシリーズ累計発行部数215万部を突破。 そんないま最も人気を集める ボーイズ・ラブコミックが、ファン待望のTVアニメ化。 2018年、最大のスキャンダルが 幕をあける――！'''
 
     # de_DE [str] <nab>
     # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
     #   untuk sinopsis Jerman.
-    de_DE: '''„Wieso nehme ich bloß diese Gestalt an?“ Kagaya Shuichi besitzt eine gefährliche Fähigkeit, mit der er sich in ein Kuscheltier verwandelt. Er macht Bekanntschaft mit dem geheimnisvollen Mädchen Claire, das bei ihm diese Kraft zum Vorschein bringen kann. Gleichzeitig geschehen nach und nach abnormale Vorfälle, die Shuichis Alltag aus den Fugen bringen. Außerdem wird er von Monstern angegriffen, die die gleichen Fähigkeiten wie er besitzen. Shuichi und Claire werden in einen Kampf der Monster verwickelt, der sich um „Münzen“ dreht, die eine gewaltige Katastrophe heraufbeschwören. Die beiden verbünden sich und bieten ihrem Schicksal die Stirn!'''
+    de_DE: '''a'''
 
     # ko_KR [str] <nab>
     # = Sinopsis dalam bahasa Korea Selatan.
-    ko_KR: '''어째서 나는 이런 모습으로 변신하게 되어버린 걸까? 만약 어느 날 갑자기, 자신이 [괴물]로 변신하게 되어버린다면- 평범한 고등학생 카가야 슈이치가 갖게 된 건 그런 성가신 [특수능력]이었다… 하지만, 그 [힘]에 이끌리듯, 한 소녀가 슈이치 앞에 나타난다. 운명적으로 만난 두 사람을 위해, 준비된 비극과 희극-. 그리고 싸움의 막이 열린다!!'''
+    ko_KR: '''5년 연속 안기고 싶은 남자 1위였던 베테랑 배우 사이죠 타카토와 그 자리를 빼앗은 신인배우 아즈마야 쥰타. 연예계를 무대로 펼쳐지는 안기고 싶은 남자 1위와 2위의 금단의 스캔들의 막이 지금 열린다!'''
 
     # fr_FR [str] <nab>
     # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
     #   Nautiljon atau TVDB untuk sinopsis Perancis.
-    fr_FR: '''Shûichi Kagaya est un jeune garçon qui possède le pénible pouvoir de se transformer en mascotte. Un jour, il fait la rencontre d’une mystérieuse fille, Claire, qui semble être attirée par son pouvoir. Depuis, le quotidien de Shûichi se retrouve rythmé par d’étranges incidents… Jusqu’au jour où il se fait attaquer par un monstre possédant le même pouvoir de transformation ! Impliqués malgré eux dans un affrontement entre monstres, les deux lycéens s’unissent pour ne faire qu’un et prendre leur destin en main !'''
+    fr_FR: '''saijou Takato est acteur depuis sa plus tendre enfance et élu depuis 5 ans "l'homme le plus désiré". Cependant, son règne s'arrête brutalement face à l'arrivée d'Azumaya Junta, un jeune acteur ayant débuté sa carrière 3 ans plus tôt. Takato supporte assez mal de se retrouver relégué au second rang et voit ce jeune prodige comme un ennemi.
+
+      Néanmoins, suite à une soirée trop alcoolisée, Takato se retrouve dans le lit de Junta.'''
 
     # pt_PT [str] <nab>
     # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
-    pt_PT: '''Kagaya Shuuichi é um garoto comum do ensino médio em uma cidade pequena e chata. Mas quando uma bela colega de classe é pega em um incêndio no armazém, ele descobre um poder misterioso: ele pode se transformar em um cachorro peludo com um revólver enorme e um zíper nas costas. Ele salva a vida da garota, compartilhando seu segredo com ela. Mas ela está procurando a irmã que matou sua família, e ela não se importa com o quão degradante seja: ela usará Shuuichi para cumprir sua missão...'''
+    pt_PT: '''a'''
 
-    # ru_RU [str] <nab>
+      # ru_RU [str] <nab>
     # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
-    ru_RU: '''Небольшой скучный городок, вроде бы среднестатистический старшеклассник Сюити Кагая — обычный набор для развития необычной истории. Сюжет завязывается, когда красавица Клэр Аоки оказывается в огненной ловушке на складе и Сюити вынужден использовать свою загадочную способность. Он может превращаться в большую собаку, у которой на спине молния, а на боку — револьвер. Кагая спасает девушку, раскрывая тем самым свой секрет. Однако оказывается, что у Клэр свой скелет в шкафу: её семью убила собственная сестра Клэр. И теперь Аоки жаждет разыскать сестру чего бы это ни стоило, поэтому она решает использовать парня и его силу в своих целях...'''
+    ru_RU: '''Такато Сайдзё на протяжении пяти лет сохранял за собой положение лучшего актёра. Но настал тот день, когда его потеснил более молодой актёр с незначительным трёхлетним стажем. Молодой актёр обладал искренней и ослепительной улыбкой. Улыбка Дзюнты Адзумаи произвела свой эффект и на надменного и враждебно настроенного Такато.
+        Однажды позорно напившись во время пьянки, Сайдзё выплеснул все негативные эмоции в сторону Адзумаи. К несчастью для Сайдзё, Адзумая снимал всё это на телефон, и свой «фильм» юноша использовал для того, чтобы шантажировать его! Из-за недопонимания Такато не думая ставит Дзюнте очень смелое условие. Какие последствия это может за собой повлечь — он не знал...'''
 
     # es_ES [str] <nab>
     # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
-    es_ES: '''Shuichi Kagaya es un chico ordinario de preparatoria en una pequeña y aburrida ciudad. Sin embargo, cuando una compañera suya se ve atrapada en un incendio en un almacén, Shuichi descubre un poder misterioso: puede transformarse en un perro peludo de gran tamaño con un enorme revólver y una cremallera en la espalda. Él salva la vida de la niña, quien decide guardar su secreto. Pero ella se encuentra buscando a su hermana que mató a su familia, y no le importará lo degradante que sea: usará a Shuichi para cumplir su misión.'''
+    es_ES: '''a'''
 
     # zh_Hans [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
     #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
-    zh_Hans: '''普通男子高中生加贺谷修一可以变身为怪物但并不是普通的怪物，而是布偶怪物，而且还是少女进入他的身体控制。这样过着日常生活的他，所热爱的日常，某天开始却突然不复存在……'''
+    zh_Hans: '''连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。 以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断绯闻。'''
 
     # zh_Hant [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
     #   menggunakan aksara Kanton dalam database mereka.
-    zh_Hant: '''普通男子高中生加賀谷修一可以變身為怪物但並不是普通的怪物，而是布偶怪物，而且還是少女進入他的身體控制。這樣過著日常生活的他，所熱愛的日常，某天開始卻突然不復存在……'''
+    zh_Hant: '''连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。 以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断绯闻。'''
 
     # vi_VN [str] <nab>
     # = Sinopsis dalam bahasa Vietnam.
-    vi_VN: '''Đây là câu chuyện về Shuichi Kagaya - một cậu nhóc cao trung bình thường sống ở thị trấn tẻ nhạt. Cứ tưởng mọi chuyện chỉ đơn giản như thế thì bất ngờ đã xảy đến khi Shuichi Kagaya gặp Aoki Kurea - một cô nàng xinh đẹp lớp dưới bị mắc kẹt trong một đám cháy lớn. Bỗng nhiên một sức mạnh bí ẩn nào đó đã biến Kagaya thành một con chó lông xù bằng bông có dây kéo trên lưng vác một khẩu súng lục "khổng lồ". Cậu đã cứu sống Kurea và cô nàng này đang tìm kiếm người chị đã giết chết gia đình cô. Aoki Kurea quyết định sẽ sử dụng Shuichi để hoàn thành sứ mệnh truy lùng chị gái mình. Những bí mật nào đang chờ đợi bộ đôi này ở phía trước?'''
+    vi_VN: '''a'''
   }
 
   # information [obj]
@@ -224,22 +212,47 @@
     # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
     synonyms:
     {
-      en_Latn: null
-      ar_001: null
-      hu_HU: null
-      he_IL: null
-      id_ID: null
-      en_US: null
-      ja_JP: null
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: null
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+      en_Latn: [
+      ]
+      ar_001: [
+        
+      ]
+      id_ID: [
+        Dakaretai Otoko 1-i ni Odosarete Imasu. 
+      ]
+      en_US: [
+        Dakaretai Otoko 1-i ni Odosarete Imasu. 
+      ]
+      ja_JP: [
+        Dakaretai Otoko Ichii ni Odosarete Imasu.
+      ]
+      de_DE: [
+        
+      ]
+      ko_KR: [
+        
+      ]
+      fr_FR: [
+        
+      ]
+      pt_PT: [
+        
+      ]
+      ru_RU: [
+        
+      ]
+      es_ES: [
+        
+      ]
+      zh_Hans: [
+        
+      ]
+      zh_Hant: [
+        
+      ]
+      vi_VN: [
+        
+      ]
     }
 
     # type [obj] > [str] <nbl>
@@ -278,36 +291,16 @@
       # = Genre serial dalam bahasa Inggris.
       en_US:
       [
-        Action
-        Fantasy
-        Mystery
-        Comedy
         Drama
-        Thriller
-        Adventure
-        Sci-Fi
-        Horror
-        Ecchi
-        Psychological
-        Supernatural
+        Slice of Life
       ]
 
       # id_ID [arr] <nbl>
       # = Genre serial dalam bahasa Indonesia.
       id_ID:
       [
-        Aksi
-        Fantasi
-        Misteri
-        Komedi
         Drama
-        Thriller
-        Petualangan
-        Sci-Fi
-        Horror
-        Ecchi
-        Psikologis
-        Supernatural
+        Potongan Kehidupan
       ]
     }
 
@@ -320,48 +313,14 @@
       # = Tag serial dalam bahasa Inggris
       en_US:
       [
-        Gore
-        Sadistic
-        Seinen
-        Survival
-        Yandere
-        Aliens
-        Revenge
-        Nudity
-        Urban Fantasy
-        Love Triangle
-        Battle Royale
-        Guns
-        Death Game
-        Werewolf
-        Yuri
-        Super Robot
-        Middle School
-        School Life
+        null
       ]
 
       # id_ID [arr] <nbl>
       # = Tag serial dalam bahasa Indonesia
       id_ID:
       [
-        Gore
-        Sadis
-        Seinen
-        Bertahan Hidup
-        Yandere
-        Alien
-        Pembalasan Dendam
-        Ketelanjangan
-        Fantasi Urban
-        Cinta Segitiga
-        Battle Royale
-        Senjata Api
-        Permainan Hidup-Mati
-        Manusia Serigala
-        Yuri
-        Robot Super
-        SMP
-        Kehidupan Sekolah
+        null
       ]
     }
 
@@ -371,32 +330,32 @@
     {
       // Argumen yang diperbolehkan ialah
       // Winter, Spring, Summer, Fall, dan Unknown
-      en_US: Spring
+      en_US: Fall
 
       // Argumen yang diperbolehkan ialah
       // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
-      id_ID: Semi
+      id_ID: Gugur
 
       // Argumen yang diperbolehkan ialah
       // 冬, 春, 夏, 秋, dan 不明
-      ja_JP: 春
+      ja_JP: 秋
 
       // Argumen yang diperbolehkan ialah
       // 겨울, 봄, 여름, 가을, dan 알
-      ko_KR: 봄
+      ko_KR: 여름
 
       // Argumen yang diperbolehkan ialah
       // 冬天, 春天, 夏天, 秋天, dan 未知
-      zh_Hans: 春天
+      zh_Hans: 秋天
 
       // Argumen yang diperbolehkan ialah
       // 冬天, 春天, 夏天, 秋天, dan 未知
-      zh_Hant: 春天
+      zh_Hant: 秋天
     }
 
     # releaseYear [num] <nbl>
     # = Tahun rilis serial, menggunakan format numeral.
-    releaseYear: 2020
+    releaseYear: 2018
 
     # episode [num] <nbl>
     # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
@@ -405,40 +364,40 @@
     # releaseDate [str]
     # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    releaseDate: 2020-04-05
+    releaseDate: 2018 October 06
 
     # endDate [str]
     # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
     #   diketahui, isi null.
-    endDate: 2020-06-28
+    endDate: 2018 December 29
 
     # duration [num] <nab>
     # = Durasi per episode serial, menggunakan format menit. Apabila tidak
     #   diketahui, isi null.
-    duration: 24
+    duration: 23 Minutes 
 
     # totalDuration [num] <nab>
     # = Durasi total serial, menggunakan format menit. Apabila tidak
     #   diketahui, isi null.
-    totalDuration: 312
+    totalDuration:  299 Minutes
 
     # studio [str] <arb> <nab>
     # = Studio yang memproduksi serial.
-    studio: Pine Jam
+    studio: CloverWorks
 
     # rating [str] <nab>
     # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
     #   lebih lanjut.
     // Argumen yang diperbolehkan ialah
     // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
-    rating: R18+
+    rating: PG13+
 
     # isNsfw [boo] <nbl>
     # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
     #   false, yakni aman.
     // Argumen yang diperbolehkan ialah
     // true dan false
-    "isNsfw": false
+    "isNsfw": true
 
     # adaptation [obj] > [str] <arb> <nab>
     # = Ialah adaptasi asal tayangan.
@@ -475,8 +434,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 14721
-      score: 4.63
+      id: null
+      score: null
     }
     
     // https://anilist.co
@@ -486,8 +445,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 108241
-      score: 67
+      id: 101381
+      score: 68%
     }
 
     // https://anime-planet.com
@@ -495,14 +454,14 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: https://www.anime-planet.com/anime/gleipnir
+      url: null
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 13027
-      score: 3.842
+      id: null
+      score: null
     }
     ANN:
     {
@@ -510,8 +469,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 21888
-      score: 6.856
+      id: 0
+      score: 0
     }
 
     // https://anisearch.com
@@ -519,14 +478,14 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: https://www.anisearch.com/anime/14236,gleipnir
+      url: https://www.anisearch.com/anime/13516,dakaretai-otoko-ichii-ni-odosarete-imasu
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 14236
-      score: 71
+      id: 13516
+      score: 3.66
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -536,8 +495,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 6527
-      score: 93.05
+      id: 0
+      score: 0
     }
 
     // https://imdb.com
@@ -547,8 +506,8 @@
       # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
       #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
       #   dan 6751668 merupakan ID serial
-      code: tt11988478
-      score: 7.0
+      code: tt9085692
+      score: 6.7
     }
 
     // https://kinopoisk.ru
@@ -558,8 +517,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 1367761
-      score: 6.8
+      id: 0
+      score: 0
     }
 
     // https://kitsu.io
@@ -567,14 +526,14 @@
     {
       # slug [str]
       # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
-      slug: gleipnir
+      slug: dakaretai-otoko-1-i-ni-odosarete-imasu.
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
       #   atau tanyakan kepada pengembang untuk informasi terkait.
-      id: 42173
-      score: 74.05
+      id: null
+      score: 78.92%
     }
 
     // https://livechart.me
@@ -584,8 +543,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 9255
-      score: 7.75
+      id: 3189
+      score: 7.82
     }
 
     // https://myanimelist.net
@@ -595,8 +554,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 39463
-      score: 6.86
+      id: 37597
+      score: 7.41
     }
     
     // https://en.myshows.me/
@@ -606,8 +565,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 66293
-      score: 3.93
+      id: 0
+      score: 0
     }
 
     // http://nautiljon.com/
@@ -615,8 +574,8 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: https://www.nautiljon.com/animes/gleipnir.html
-      score: 7.92
+      url: https://www.nautiljon.com/animes/dakaretai+otoko+1-i+ni+odosarete+imasu..html
+      score: 8.2
     }
 
     // https://notify.moe/
@@ -624,8 +583,8 @@
     {
       # base64 [str]
       # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
-      base64: q9yku_3ig
-      score: 7.46
+      base64: XyjgVximR
+      score: 6.7
     }
 
     // http://otakotaku.com/
@@ -635,8 +594,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 1518
-      score: 7.92
+      id: null
+      score: null
     }
 
     // http://shikimori.org/
@@ -646,8 +605,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 39463
-      score: 7.08
+      id: z37597
+      score: 7.42
     }
 
     // https://simkl.com
@@ -657,8 +616,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 1054041
-      score: 7.1
+      id: 792735
+      score: 8.5
     }
 
     // https://www.themoviedb.org/
@@ -666,14 +625,14 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: https://www.themoviedb.org/tv/96203
+      url: https://www.themoviedb.org/tv/82867-dakaretai-otoko-1-i-ni-odosarete-imasu
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 96203
-      score: 82
+      id: 82867
+      score: 93%
     }
 
     // https://trakt.tv/
@@ -681,14 +640,14 @@
     {
       # url [str] <url>
       # = URL/Tautan entri pada website terkait.
-      url: https://trakt.tv/shows/gleipnir
+      url: https://trakt.tv/shows/dakaichi-i-m-being-harassed-by-the-sexiest-man-of-the-year
 
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 156573
-      score: 69
+      id: null
+      score: 75%
     }
 
     // https://www.tvtime.com/en
@@ -698,8 +657,8 @@
       # = Merupakan nomor id serial di website tersebut. Dapat diambil
       #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
       #   pengembang untuk informasi terkait.
-      id: 374198
-      score: 9.74
+      id: null
+      score: null
     }
   }
 
@@ -719,7 +678,7 @@
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // 
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-07-28T17:22:17+07:00
+  updatedDate: 2020-06-23T12:18:34+07.00
   fansub:
   {
     idn:
@@ -728,12 +687,12 @@
       Aizukara: null
       Allsub: null
       Alter: null
-      AnimeGokil: null
-      AniToki: https://anitoki.web.id/?anime=gleipnir
+      AnimeGokil: null 
+      AniToki: null
       AoiTenshi: null
       Arks: null
       ASubs: null
-      AWSubs: http://awsubs.co/anime/gleipnir/
+      AWSubs: null
       Bentoo: null
       Caramel: null
       Cijanepoi: null
@@ -744,8 +703,6 @@
       Durandal: null
       EmotPekmen: null
       Excalibur: null
-      exTonan: https://extonan.web.id/gleipnir
-      FansubJalanan: https://www.jalsubs.my.id/search/label/Gleipnir
       Gantz: null
       Gin: null
       Haruna: null
@@ -767,14 +724,14 @@
       Mite: null
       Nanairo: null
       Neo: null
-      OPLovers: null
+      OPLovers:null 
       Ougi: null
       Panagayan: null
       Pendekar: null
       Pucuk: null
-      Quinime: https://quinimefansub.com/category/anime/gleipnir/
+      Quinime: null
       RevieXion: null
-      Samehadaku: https://samehadaku.vip/anime/gleipnir/
+      Samehadaku: null
       SilverYasha: null
       Sora: null
       TTOD: null
@@ -782,11 +739,11 @@
       Warung: null
       Wibu: null
       Yuki: null
-      Zen: http://zensubs.xyz/tag/gleipnir/
+      Zen: null
     }
     eng:
     {
-      Horrible: https://horriblesubs.info/shows/gleipnir
+      Horrible: null
     }
   }
   fanshare:
@@ -794,74 +751,74 @@
     idn:
     {
       AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/gleipnir/
+      AnimeKompi: null
       AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/gleipnir/
-      Drivenime: https://drivenime.com/gleipnir-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/gleipnir-sub-indo/
-      Koenime: https://www.koenime.com/gleipnir-sub-indo/
-      Kusonime: https://kusonime.com/gleipnir-batch-subtitle-indonesia/
+      Bakacan: null
+      Drivenime: https://drivenime.com/dakaretai-otoko-1-i-ni-odosarete-imasu-subtitle-indonesia-batch/
+      Hinime: https://hinime.com/dakaretai-otoko-1-ni-odosarete-imasu/
+      Koenime: null
+      Kusonime: null
       Mikanime: null
-      Moenime: https://moenime.web.id/gleipnir-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/gleipnir/
-      WibuDesu: https://wibudesu.com/gleipnir-subtitle-indonesia/
+      Moenime: null
+      Ryuukoi: null
+      WibuDesu: null
     }
     eng:
     {
-      AnimeKayo: https://animekayo.com/?s=Gleipnir
+      AnimeKayo: null
     }
   }
   fanstream:
   {
     idn:
     {
-      AnimeIndoNET: http://animeindo.moe/anime/gleipnir
-      anoBoy: https://anoboy.us/anime/gleipnir/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/gleipnir-sub-indo/
-      Neonime: https://neonime.moe/tvshows/gleipnir-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/gleipnir.10DO5qG2/
-      OtakuIndo: https://otakuindo.org/nonton/gleipnir-sub-indo/
+      AnimeIndoNET: null
+      anoBoy: null
+      Gomunime: https://gomunime.com/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
+      Moeclip: null
+      Neonime: null
+      Onnime: null
+      OtakuIndo: null
     }
     eng:
     {
-      fourAnime: https://4anime.to/anime/gleipnir
-      nineAnime: https://9anime.ru/watch/gleipnir.2n15
-      AnimeDaisuki: https://animedaisuki.moe/anime/923/gleipnir
-      AnimeTwist: https://twist.moe/a/gleipnir/1
-      Animeflix: https://animeflix.io/shows/gleipnir
-      AnimeHeaven: https://animeheaven.ru/detail/gleipnir
+      fourAnime: null
+      nineAnime: null
+      AnimeDaisuki: https://animedaisuki.moe/anime/382/dakaretai-otoko-1-i-ni-odosarete-imasu
+      AnimeTwist: null
+      Animeflix: null
+      AnimeHeaven: null
       Animelon: null
-      Animeultima: https://www1.animeultima.to/a/gleipnir_161989
-      AniWatch: https://aniwatch.me/anime/2172
-      GogoAnime: https://www17.gogoanime.io/category/gleipnir
-      KissAnime: https://kissanime.ru/Anime/Gleipnir
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/gleipnir
+      Animeultima: https://www1.animeultima.to/a/dakaretai-otoko-1-i-ni-odosarete-imasu_346601
+      AniWatch: null
+      GogoAnime: null
+      KissAnime: null
+      WonderfulSubs: https://www.wonderfulsubs.com/search?q=%E6%8A%B1%E3%81%8B%E3%82%8C%E3%81%9F%E3%81%84%E7%94%B71%E4%BD%8D%E3%81%AB%E8%84%85%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
     }
   }
   library:
   {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Gleipnir
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Gleipnir&kartel=
-    Shallty: https://shallty.moe/browse?search=Gleipnir
+    Nyaa: https://nyaa.si/view/914467
+    PerpusIndo: null
+    Shallty: null
   }
-  
+
   # signature
   # = Merupakan object yang memberikan informasi terkait kontributor entri.
   signature:
   {
     # name [str] <nbl>
     # = Nama Anda, boleh menggunakan nama pena.
-    name: Natsu Tadama
+    name: YamashitaKazuhito
 
     # username [str] <nbl>
     # = Nama pengguna Anda di GitHub
-    username: @nattadasu
+    username:@YamashitaKazuhito
 
     # discordId [num] <nbl>
     # = Merupakan ID unik pengguna Anda di Discord.
     #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
-    discordId: 384089845527478272
+    discordId: 584207131671134218
 
     # submissionDateTime [str] <nbl>
     # = Tanggal dan waktu sebelum submisi (commit/push).
@@ -879,12 +836,12 @@
     // maka, 2020-12-21T22:45:33+07:00 adalah valid.
     // 
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-19T15:52:00+07:00
+    submissionDateTime: 2020-06-23T12:18:34+07:00
 
     # sign [str][num] <nbl>
     # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
     #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
     #   Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM
   }
 }

@@ -1,4 +1,5 @@
 ---
+$schema: ../../schemas/entry.json
 title:
     native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
     en_Latn: 'Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen'

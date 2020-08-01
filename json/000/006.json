@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "神之塔",
         "en_Latn": "Kami no Tou",

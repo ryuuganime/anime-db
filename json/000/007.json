@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "イエスタデイをうたって",
         "en_Latn": "Yesterday wo Utatte",

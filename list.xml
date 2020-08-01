@@ -11,7 +11,7 @@
     YAML    :   true
     SQL     :   false
     SGML    :   false
-    Note    :   This XML file is not mandatory, but JSON does. Please to use JSON scheme
+    Note    :   This XML file is not mandatory, but JSON does. Please to use JSON listing
                 instead. Use XML as an alternative.
 -->
 <!--
@@ -206,6 +206,25 @@
             <hjson>/hjson/000/009.json</hjson>
             <xml>/xml/000/009.xml</xml>
             <yaml>/yaml/000/009.yaml</yaml>
+        </path>
+    </entry>
+    <entry>
+        <myAnimeList>37426</myAnimeList>
+        <kitsu>41017</kitsu>
+        <aniList>101261</aniList>
+        <aniDb>13869</aniDb>
+        <notifyMoe>SJed2FiiR</notifyMoe>
+        <title>
+            <en_Latn>Sarazanmai</en_Latn>
+            <en_US>Sarazanmai</en_US>
+            <native>さらざんまい</native>
+        </title>
+        <ryuuganime>0</ryuuganime>
+        <path>
+            <json>/json/000/010.json</json>
+            <hjson>/hjson/000/010.hjson</hjson>
+            <xml>/xml/000/010.xml</xml>
+            <yaml>/yaml/000/010.yaml</yaml>
         </path>
     </entry>
     <entry>

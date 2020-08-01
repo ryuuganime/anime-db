@@ -47,6 +47,12 @@
   // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
   //    contoh pengisian.
 
+  # $schema [str] <nbl> <url>
+  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
+  #   dang lakukan!
+  $schema: ../../schemas/entry.json
+  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+
   # title [obj]
   # Merupakan judul suatu serial.
   title: 
@@ -395,7 +401,11 @@
 
     # studio [str] <arb> <nab>
     # = Studio yang memproduksi serial.
-    studio: Studio Hibari, TOHO animation, Genco
+    studio: [
+      Studio Hibari
+      TOHO animation
+      Genco
+    ]
 
     # rating [str] <nab>
     # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi

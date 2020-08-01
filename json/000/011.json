@@ -1,0 +1,320 @@
+{
+    "$schema": "../../schemas/entry.json",
+    "title": {
+      "native": "抱かれたい男1位に脅されています。",
+      "en_Latn": "Dakaretai Otoko 1-i ni Odosarete Imasu",
+      "ar_001": null,
+      "id_ID": "Dakaretai Otoko 1-i Odosarete Imasu",
+      "en_US": "Dakaretai Otoko 1-i ni Odosarete Imasu",
+      "ja_JP": "抱かれたい男1位に脅されています。",
+      "de_DE": null,
+      "ko_KR": "안기고 싶은 남자 1위에게 협박당하고 있습니다.",
+      "fr_FR": "Dakaretai Otoko 1-i ni Odosarete Imasu.",
+      "pt_PT": null,
+      "ru_RU": "DAKAICHI. Мой номер 1",
+      "es_ES": null,
+      "zh_Hans": "我让最想被拥抱的男人给威胁了。",
+      "zh_Hant": "我让最想被拥抱的男人给威胁了。",
+      "vi_VN": null
+    },
+    "backdrop": "https://image.tmdb.org/t/p/original/dZ2wHYUMcswAPlAbYsoJWiXdrPc.jpg",
+    "visualKey": "https://image.tmdb.org/t/p/original/1cWev0aDMQ09Y21h3o3Smp6Xdm9.jpg",
+    "synopsis": {
+      "ar_001": "a",
+      "id_ID": "a",
+      "en_US": "Takato Saijou has held the title of \"Sexiest Man of the Year\" for five years running. He is an accomplished actor, with 20 years of experience under his belt, and is aware his good looks are well above average. Proud of his career, Takato regards the title as an appropriate indicator of his success.\nBut when his reign is ended by acting newbie Junta Azumaya, who debuted only three years ago, Takato's initial shock gives way to jealous hostility. Even in the new drama that he has been cast in, Junta seems to have suddenly surpassed him; snatching Takato's usual spot of lead actor, Junta continually manages to get on his nerves. Most infuriating of all are the bright smile and kind words that accompany everything Junta does.\nAll this animosity comes to a head, however, when Junta catches Takato in a rather vulnerable drunken state. Endangering his own public image, Takato confronts the junior actor with harsh words and angry comments—an opportunity Junta takes every advantage of. With the famous actor Takato Saijou now on video picking a fight with a co-star, Junta has the perfect means to blackmail him.\nAsking the price of his enemy's silence, Takato is shocked to find that his motivation lies far from advancing his career; instead, Junta's terms are those that can only be realized in the bedroom!",
+      "ja_JP": "2013年7月、連載を開始した、 桜日梯子による『抱かれたい男1位に脅されています。』。 5年連続で”抱かれたい男1位”だったベテラン俳優・西條高人と、 その座を奪った新人俳優・東谷准太。 芸能界を舞台に繰り広げられる”抱かれたい男” ツートップ同士の禁断のスキャンダルを センセーショナルに描く本作は、 遂にシリーズ累計発行部数215万部を突破。 そんないま最も人気を集める ボーイズ・ラブコミックが、ファン待望のTVアニメ化。 2018年、最大のスキャンダルが 幕をあける――！",
+      "de_DE": "a",
+      "ko_KR": "5년 연속 안기고 싶은 남자 1위였던 베테랑 배우 사이죠 타카토와 그 자리를 빼앗은 신인배우 아즈마야 쥰타. 연예계를 무대로 펼쳐지는 안기고 싶은 남자 1위와 2위의 금단의 스캔들의 막이 지금 열린다!",
+      "fr_FR": "saijou Takato est acteur depuis sa plus tendre enfance et élu depuis 5 ans \"l'homme le plus désiré\". Cependant, son règne s'arrête brutalement face à l'arrivée d'Azumaya Junta, un jeune acteur ayant débuté sa carrière 3 ans plus tôt. Takato supporte assez mal de se retrouver relégué au second rang et voit ce jeune prodige comme un ennemi.\n\nNéanmoins, suite à une soirée trop alcoolisée, Takato se retrouve dans le lit de Junta.",
+      "pt_PT": "a",
+      "ru_RU": "Такато Сайдзё на протяжении пяти лет сохранял за собой положение лучшего актёра. Но настал тот день, когда его потеснил более молодой актёр с незначительным трёхлетним стажем. Молодой актёр обладал искренней и ослепительной улыбкой. Улыбка Дзюнты Адзумаи произвела свой эффект и на надменного и враждебно настроенного Такато.\nОднажды позорно напившись во время пьянки, Сайдзё выплеснул все негативные эмоции в сторону Адзумаи. К несчастью для Сайдзё, Адзумая снимал всё это на телефон, и свой «фильм» юноша использовал для того, чтобы шантажировать его! Из-за недопонимания Такато не думая ставит Дзюнте очень смелое условие. Какие последствия это может за собой повлечь — он не знал...",
+      "es_ES": "a",
+      "zh_Hans": "连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。 以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断绯闻。",
+      "zh_Hant": "a",
+      "vi_VN": "a"
+    },
+    "information": {
+      "synonyms": {
+        "en_Latn": [],
+        "ar_001": [],
+        "id_ID": [
+          "Dakaretai Otoko 1-i ni Odosarete Imasu."
+        ],
+        "en_US": [
+          "Dakaretai Otoko 1-i ni Odosarete Imasu."
+        ],
+        "ja_JP": [
+          "Dakaretai Otoko Ichii ni Odosarete Imasu."
+        ],
+        "de_DE": [],
+        "ko_KR": [],
+        "fr_FR": [],
+        "pt_PT": [],
+        "ru_RU": [],
+        "es_ES": [],
+        "zh_Hans": [],
+        "zh_Hant": [],
+        "vi_VN": []
+      },
+      "type": {
+        "en_US": "TV",
+        "id_ID": "Serial TV"
+      },
+      "status": {
+        "en_US": "Aired",
+        "id_ID": "Ditayangkan"
+      },
+      "serialGenre": {
+        "en_US": [
+          "Drama",
+          "Slice of Life"
+        ],
+        "id_ID": [
+          "Drama",
+          "Potongan Kehidupan"
+        ]
+      },
+      "serialTags": {
+        "en_US": [
+          null
+        ],
+        "id_ID": [
+          null
+        ]
+      },
+      "releaseSeason": {
+        "en_US": "Fall",
+        "id_ID": "Gugur",
+        "ja_JP": "夏",
+        "ko_KR": "여름",
+        "zh_Hans": "夏天",
+        "zh_Hant": "夏天"
+      },
+      "releaseYear": 2018,
+      "episode": 13,
+      "releaseDate": "2018 October 06",
+      "endDate": "2018 December 29",
+      "duration": "23 Minutes",
+      "totalDuration": "299 Minutes",
+      "studio": "CloverWorks",
+      "rating": "PG13+",
+      "isNsfw": true,
+      "adaptation": {
+        "en_US": "Manga",
+        "id_ID": "Manga"
+      },
+      "country": {
+        "en_US": "Japan",
+        "id_ID": "Jepang"
+      }
+    },
+    "scores": {
+      "aniDB": {
+        "id": null,
+        "score": null
+      },
+      "AniList": {
+        "id": 101381,
+        "score": "68%"
+      },
+      "AnimePlanet": {
+        "url": null,
+        "id": null,
+        "score": null
+      },
+      "ANN": {
+        "id": 0,
+        "score": 0
+      },
+      "aniSearch": {
+        "url": "https://www.anisearch.com/anime/13516,dakaretai-otoko-ichii-ni-odosarete-imasu",
+        "id": 13516,
+        "score": 3.66
+      },
+      "Annict": {
+        "id": 0,
+        "score": 0
+      },
+      "IMDb": {
+        "code": "tt9085692",
+        "score": 6.7
+      },
+      "KinoPoisk": {
+        "id": 0,
+        "score": 0
+      },
+      "Kitsu": {
+        "slug": "https://kitsu.io/anime/dakaretai-otoko-1-i-ni-odosarete-imasu.",
+        "id": null,
+        "score": "78.92%"
+      },
+      "LiveChart": {
+        "id": 3189,
+        "score": 7.82
+      },
+      "MyAnimeList": {
+        "id": 37597,
+        "score": 7.41
+      },
+      "MyShows": {
+        "id": 0,
+        "score": 0
+      },
+      "Nautiljon": {
+        "url": "https://www.nautiljon.com/animes/dakaretai+otoko+1-i+ni+odosarete+imasu..html",
+        "score": 8.2
+      },
+      "Notify": {
+        "base64": "XyjgVximR",
+        "score": 6.7
+      },
+      "OtakOtaku": {
+        "id": null,
+        "score": null
+      },
+      "Shikimori": {
+        "id": "z37597",
+        "score": 7.42
+      },
+      "SIMKL": {
+        "id": 792735,
+        "score": 8.5
+      },
+      "TMDB": {
+        "url": "https://www.themoviedb.org/tv/82867-dakaretai-otoko-1-i-ni-odosarete-imasu",
+        "id": 82867,
+        "score": "93%"
+      },
+      "Trakt": {
+        "url": "https://trakt.tv/shows/dakaichi-i-m-being-harassed-by-the-sexiest-man-of-the-year",
+        "id": null,
+        "score": "75%"
+      },
+      "TVTime": {
+        "id": null,
+        "score": null
+      }
+    },
+    "updatedDate": "2020-06-23T12:18:34+07.00",
+    "fansub": {
+      "idn": {
+        "Aibou": null,
+        "Aizukara": null,
+        "Allsub": null,
+        "Alter": null,
+        "AnimeGokil": null,
+        "AniToki": null,
+        "AoiTenshi": null,
+        "Arks": null,
+        "ASubs": null,
+        "AWSubs": null,
+        "Bentoo": null,
+        "Caramel": null,
+        "Cijanepoi": null,
+        "Conan": null,
+        "DAnimeSubs": null,
+        "Del": null,
+        "DNFI": null,
+        "Durandal": null,
+        "EmotPekmen": null,
+        "Excalibur": null,
+        "Gantz": null,
+        "Gin": null,
+        "Haruna": null,
+        "Haruzora": null,
+        "HunterNoSekai": null,
+        "IA": null,
+        "Inazumaotoshi": null,
+        "Indis": null,
+        "Inform0930": null,
+        "Isekai": null,
+        "Junk": null,
+        "Kazefuri": null,
+        "Kinshiru": null,
+        "KO": null,
+        "Kopaja": null,
+        "LCC": null,
+        "MangaNekoTranslation": null,
+        "Melody": null,
+        "Mite": null,
+        "Nanairo": null,
+        "Neo": null,
+        "OPLovers": null,
+        "Ougi": null,
+        "Panagayan": null,
+        "Pendekar": null,
+        "Pucuk": null,
+        "Quinime": null,
+        "RevieXion": null,
+        "Samehadaku": null,
+        "SilverYasha": null,
+        "Sora": null,
+        "TTOD": null,
+        "Vedifi": null,
+        "Warung": null,
+        "Wibu": null,
+        "Yuki": null,
+        "Zen": null
+      },
+      "eng": {
+        "Horrible": null
+      }
+    },
+    "fanshare": {
+      "idn": {
+        "AniBatch": null,
+        "AnimeKompi": null,
+        "AnimeSAVE": null,
+        "Bakacan": null,
+        "Drivenime": "https://drivenime.com/dakaretai-otoko-1-i-ni-odosarete-imasu-subtitle-indonesia-batch/",
+        "Hinime": "https://hinime.com/dakaretai-otoko-1-ni-odosarete-imasu/",
+        "Koenime": null,
+        "Kusonime": null,
+        "Mikanime": null,
+        "Moenime": null,
+        "Ryuukoi": null,
+        "WibuDesu": null
+      },
+      "eng": {
+        "AnimeKayo": null
+      }
+    },
+    "fanstream": {
+      "idn": {
+        "AnimeIndoNET": null,
+        "anoBoy": null,
+        "Gomunime": "https://gomunime.com/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/",
+        "Moeclip": null,
+        "Neonime": null,
+        "Onnime": null,
+        "OtakuIndo": null
+      },
+      "eng": {
+        "fourAnime": null,
+        "nineAnime": null,
+        "AnimeDaisuki": "https://animedaisuki.moe/anime/382/dakaretai-otoko-1-i-ni-odosarete-imasu",
+        "AnimeTwist": null,
+        "Animeflix": null,
+        "AnimeHeaven": null,
+        "Animelon": null,
+        "Animeultima": "https://www1.animeultima.to/a/dakaretai-otoko-1-i-ni-odosarete-imasu_346601",
+        "AniWatch": null,
+        "GogoAnime": null,
+        "KissAnime": null,
+        "WonderfulSubs": "https://www.wonderfulsubs.com/search?q=%E6%8A%B1%E3%81%8B%E3%82%8C%E3%81%9F%E3%81%84%E7%94%B71%E4%BD%8D%E3%81%AB%E8%84%85%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82"
+      }
+    },
+    "library": {
+      "Nyaa": "https://nyaa.si/view/914467",
+      "PerpusIndo": null,
+      "Shallty": null
+    },
+    "signature": {
+      "name": "YamashitaKazuhito",
+      "username": "@YamashitaKazuhito",
+      "discordId": 584207131671134200,
+      "submissionDateTime": "2020-06-23T12:18:34+07:00",
+      "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM"
+    }
+}
