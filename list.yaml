@@ -5,174 +5,97 @@
     aniList: 114888
     aniDb: 15364
     notifyMoe: TM1LPA8Wg
-    title:
-        en_Latn: 'Fugou Keiji: Balance:Unlimited'
-        en_US: 'The Millionaire Detective – Balance: UNLIMITED'
-        native: 富豪刑事 Balance:UNLIMITED
+    title: {en_Latn: 'Fugou Keiji: Balance:Unlimited', en_US: 'The Millionaire Detective – Balance: UNLIMITED', native: '富豪刑事 Balance:UNLIMITED'}
     ryuuganime: 1
-    path:
-        json: "/json/000/001.json"
-        hjson: "/hjson/000/001.hjson"
-        xml: "/xml/000/001.xml"
-        yaml: "/yaml/000/001.yaml"
+    path: {json: /json/000/001.json, hjson: /hjson/000/001.hjson, xml: /xml/000/001.xml, yaml: /yaml/000/001.yaml}
 -
     myAnimeList: 36474
     kitsu: 13893
     aniList: 100182
     aniDb: 13493
     notifyMoe: GWyShKmiR
-    title:
-        en_Latn: 'Sword Art Online: Alicization'
-        en_US: 'Sword Art Online: Alicization'
-        native: ソードアート・オンライン アリシゼーション
+    title: {en_Latn: 'Sword Art Online: Alicization', en_US: 'Sword Art Online: Alicization', native: 'ソードアート・オンライン アリシゼーション'}
     ryuuganime: 2
-    path:
-        json: "/json/000/002.json"
-        hjson: "/hjson/000/002.hjson"
-        xml: "/xml/000/002.xml"
-        yaml: "/yaml/000/002.yaml"
+    path: {json: /json/000/002.json, hjson: /hjson/000/002.hjson, xml: /xml/000/002.xml, yaml: /yaml/000/002.yaml}
 -
     myAnimeList: 31964
     kitsu: 11469
     aniList: 21459
     aniDb: 11739
     notifyMoe: 9iIjtFiig
-    title:
-        en_Latn: Boku no Hero Academia
-        en_US: My Hero Academia
-        native: 僕のヒーローアカデミア
+    title: {en_Latn: 'Boku no Hero Academia', en_US: 'My Hero Academia', native: 僕のヒーローアカデミア}
     ryuuganime: 3
-    path:
-        json: "/json/000/003.json"
-        hjson: "/hjson/000/003.hjson"
-        xml: "/xml/000/003.xml"
-        yaml: "/yaml/000/003.yaml"
+    path: {json: /json/000/003.json, hjson: /hjson/000/003.hjson, xml: /xml/000/003.xml, yaml: /yaml/000/003.yaml}
 -
     myAnimeList: 40591
     kitsu: 42632
     aniList: 112641
     aniDb: 15207
     notifyMoe: fehNO08Zg
-    title:
-        en_Latn: 'Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen'
-        en_US: 'Kaguya-sama: Love is War Season 2'
-        native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
+    title: {en_Latn: 'Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen', en_US: 'Kaguya-sama: Love is War Season 2', native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～}
     ryuuganime: 4
-    path:
-        json: "/json/000/004.json"
-        hjson: "/hjson/000/004.hjson"
-        xml: "/xml/000/004.xml"
-        yaml: "/yaml/000/004.yaml"
+    path: {json: /json/000/004.json, hjson: /hjson/000/004.hjson, xml: /xml/000/004.xml, yaml: /yaml/000/004.yaml}
 -
     myAnimeList: 39463
     kitsu: 42173
     aniList: 108241
     aniDb: 14721
     notifyMoe: q9yku_3ig
-    title:
-        en_Latn: Gleipnir
-        en_US: Gleipnir
-        native: グレイプニル
+    title: {en_Latn: Gleipnir, en_US: Gleipnir, native: グレイプニル}
     ryuuganime: 5
-    path:
-        json: "/json/000/005.json"
-        hjson: "/hjson/000/005.hjson"
-        xml: "/xml/000/005.xml"
-        yaml: "/yaml/000/005.yaml"
+    path: {json: /json/000/005.json, hjson: /hjson/000/005.hjson, xml: /xml/000/005.xml, yaml: /yaml/000/005.yaml}
 -
     myAnimeList: 40221
     kitsu: 43004
     aniList: 115230
     aniDb: 15391
     notifyMoe: m1ZLrsUWg
-    title:
-        en_Latn: Kami no Tou
-        en_US: Tower of God
-        native: 神之塔
+    title: {en_Latn: 'Kami no Tou', en_US: 'Tower of God', native: 神之塔}
     ryuuganime: 6
-    path:
-        json: "/json/000/006.json"
-        hjson: "/hjson/000/006.hjson"
-        xml: "/xml/000/006.xml"
-        yaml: "/yaml/000/006.yaml"
+    path: {json: /json/000/006.json, hjson: /hjson/000/006.hjson, xml: /xml/000/006.xml, yaml: /yaml/000/006.yaml}
 -
     myAnimeList: 39710
     kitsu: 43063
     aniList: 109020
     aniDb: 14822
     notifyMoe: 9KfX5A8Wg
-    title:
-        en_Latn: Yesterday wo Utatte
-        en_US: Sing "Yesterday" for Me
-        native: イエスタデイをうたって
+    title: {en_Latn: 'Yesterday wo Utatte', en_US: 'Sing "Yesterday" for Me', native: イエスタデイをうたって}
     ryuuganime: 7
-    path:
-        json: "/json/000/007.json"
-        hjson: "/hjson/000/007.hjson"
-        xml: "/xml/000/007.xml"
-        yaml: "/yaml/000/007.yaml"
+    path: {json: /json/000/007.json, hjson: /hjson/000/007.hjson, xml: /xml/000/007.xml, yaml: /yaml/000/007.yaml}
 -
     myAnimeList: 36098
     kitsu: 13723
     aniList: 99750
     aniDb: 13363
     notifyMoe: 3RRI2FiiR
-    title:
-        en_Latn: Kimi no Suizou wo Tabetai
-        en_US: I want to eat your pancreas
-        native: 君の膵臓をたべたい
+    title: {en_Latn: 'Kimi no Suizou wo Tabetai', en_US: 'I want to eat your pancreas', native: 君の膵臓をたべたい}
     ryuuganime: 8
-    path:
-        json: "/json/000/008.json"
-        hjson: "/hjson/000/008.hjson"
-        xml: "/xml/000/008.xml"
-        yaml: "/yaml/000/008.yaml"
+    path: {json: /json/000/008.json, hjson: /hjson/000/008.hjson, xml: /xml/000/008.xml, yaml: /yaml/000/008.yaml}
 -
     myAnimeList: 30307
     kitsu: 10748
     aniList: 21093
     aniDb: 11130
     notifyMoe: FSrwpKimg
-    title:
-        en_Latn: Monster Musume no Iru Nichijou
-        en_US: Everyday Life With Monster Girls
-        native: モンスター娘のいる日常
+    title: {en_Latn: 'Monster Musume no Iru Nichijou', en_US: 'Everyday Life With Monster Girls', native: モンスター娘のいる日常}
     ryuuganime: 9
-    path:
-        json: "/json/000/009.json"
-        hjson: "/hjson/000/009.json"
-        xml: "/xml/000/009.xml"
-        yaml: "/yaml/000/009.yaml"
+    path: {json: /json/000/009.json, hjson: /hjson/000/009.json, xml: /xml/000/009.xml, yaml: /yaml/000/009.yaml}
 -
     myAnimeList: 37426
     kitsu: 41017
     aniList: 101261
     aniDb: 13869
     notifyMoe: SJed2FiiR
-    title:
-        en_Latn: Sarazanmai
-        en_US: Sarazanmai
-        native: さらざんまい
+    title: {en_Latn: Sarazanmai, en_US: Sarazanmai, native: さらざんまい}
     ryuuganime: 10
-    path:
-        json: "/json/000/010.json"
-        hjson: "/hjson/000/010.json"
-        xml: "/xml/000/010.xml"
-        yaml: "/yaml/000/010.yaml"
+    path: {json: /json/000/010.json, hjson: /hjson/000/010.json, xml: /xml/000/010.xml, yaml: /yaml/000/010.yaml}
 -
-    myAnimeList: 0
-    kitsu: 0
-    aniList: 0
-    aniDb: 0
-    notifyMoe: ''
-    title:
-        en_Latn: ''
-        en_US: ''
-        native: ''
-    ryuuganime: 10
-    path:
-        json: "/json/000/010.json"
-        hjson: "/hjson/000/010.json"
-        xml: "/xml/000/010.xml"
-        yaml: "/yaml/000/010.yaml"
+    myAnimeList: 37597
+    kitsu: 41151
+    aniList: 101381
+    aniDb: 13979
+    notifyMoe: XyjgVximR
+    title: {en_Latn: 'Dakaretai Otoko 1-i ni Odosarete Imasu.', en_US: 'Dakaichi: I''m Being Harassed by the Sexiest Man of the Year', native: 抱かれたい男1位に脅されています。}
+    ryuuganime: 11
+    path: {json: /json/000/011.json, hjson: /hjson/000/011.json, xml: /xml/000/011.xml, yaml: /yaml/000/011.yaml}
 ...
