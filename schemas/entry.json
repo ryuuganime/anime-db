@@ -3188,7 +3188,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?gogoanimes?\\.(io|co|tv|video)"
+                                    "pattern": "^(https?)\\:\\/\\/([w]{2,3}([0-9]+)?\\.)?gogoanimes?\\.(io|co|tv|video|movie)"
                                 },
                                 {
                                     "type": "null"
