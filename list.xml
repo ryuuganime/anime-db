@@ -246,4 +246,23 @@
             <yaml>/yaml/000/011.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList>39942</myAnimeList>
+        <kitsu>42397</kitsu>
+        <aniList>109964</aniList>
+        <aniDb>109964</aniDb>
+        <notifyMoe>0T1aHQVWg</notifyMoe>
+        <title>
+            <en_Latn>Uchi Tama?! Uchi no Tama Shirimasen ka?</en_Latn>
+            <en_US>Uchitama?! Have You Seen My Tama?</en_US>
+            <native>うちタマ?! 〜うちのタマ知りませんか？〜</native>
+        </title>
+        <ryuuganime>12</ryuuganime>
+        <path>
+            <json>/json/000/012.json</json>
+            <hjson>/hjson/000/012.json</hjson>
+            <xml>/xml/000/012.xml</xml>
+            <yaml>/yaml/000/012.yaml</yaml>
+        </path>
+    </entry>
 </database>

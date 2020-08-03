@@ -262,4 +262,25 @@
             yaml: /yaml/000/011.yaml
         }
     }
+    {
+        myAnimeList: 39942
+        kitsu: 42397
+        aniList: 109964
+        aniDb: 109964
+        notifyMoe: "0T1aHQVWg"
+        title:
+        {
+            en_Latn: "Uchi Tama?! Uchi no Tama Shirimasen ka?"
+            en_US: "Uchitama?! Have You Seen My Tama?"
+            native: "うちタマ?! 〜うちのタマ知りませんか？〜"
+        }
+        ryuuganime: 12
+        path:
+        {
+            json: /json/000/012.json
+            hjson: /hjson/000/012.json
+            xml: /xml/000/012.xml
+            yaml: /yaml/000/012.yaml
+        }
+    }
 ]
