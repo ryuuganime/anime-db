@@ -242,24 +242,66 @@
         }
     }
     {
-        myAnimeList: 0
-        kitsu: 0
-        aniList: 0
-        aniDb: 0
-        notifyMoe: ""
+        myAnimeList: 37597
+        kitsu: 41151
+        aniList: 101381
+        aniDb: 13979
+        notifyMoe: "XyjgVximR"
         title:
         {
-            en_Latn: ""
-            en_US: ""
-            native: ""
+            en_Latn: "Dakaretai Otoko 1-i ni Odosarete Imasu."
+            en_US: "Dakaichi: I'm Being Harassed by the Sexiest Man of the Year"
+            native: "抱かれたい男1位に脅されています。"
         }
-        ryuuganime: 10
+        ryuuganime: 11
         path:
         {
-            json: /json/000/010.json
-            hjson: /hjson/000/010.json
-            xml: /xml/000/010.xml
-            yaml: /yaml/000/010.yaml
+            json: /json/000/011.json
+            hjson: /hjson/000/011.json
+            xml: /xml/000/011.xml
+            yaml: /yaml/000/011.yaml
+        }
+    }
+    {
+        myAnimeList: 39942
+        kitsu: 42397
+        aniList: 109964
+        aniDb: 109964
+        notifyMoe: "0T1aHQVWg"
+        title:
+        {
+            en_Latn: "Uchi Tama?! Uchi no Tama Shirimasen ka?"
+            en_US: "Uchitama?! Have You Seen My Tama?"
+            native: "うちタマ?! 〜うちのタマ知りませんか？〜"
+        }
+        ryuuganime: 12
+        path:
+        {
+            json: /json/000/012.json
+            hjson: /hjson/000/012.json
+            xml: /xml/000/012.xml
+            yaml: /yaml/000/012.yaml
+        }
+    }
+    {
+        myAnimeList: 39575
+        kitsu: 42201
+        aniList: 108617
+        aniDb: 14785
+        notifyMoe: "ZkdWg46mR"
+        title:
+        {
+            en_Latn: "Somali to Mori no Kamisama"
+            en_US: "Somali and the Forest Spirit"
+            native: "ソマリと森の神様"
+        }
+        ryuuganime: 13
+        path:
+        {
+            json: /json/000/013.json
+            hjson: /hjson/000/013.json
+            xml: /xml/000/013.xml
+            yaml: /yaml/000/013.yaml
         }
     }
 ]

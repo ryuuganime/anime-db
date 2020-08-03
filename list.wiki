@@ -14,6 +14,10 @@ __TOC__
 # [[json/000/007.json|Yesterday wo Utatte]]
 # [[json/000/008.json|Kimi no Suizou wo Tabetai]]
 # [[json/000/009.json|Monster Musume no Iru Nichijou]]
+# [[json/000/010.json|Sarazanmai]]
+# [[json/000/011.json|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
+# [[json/000/012.json|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
+# [[json/000/013.json|Somali to Mori no Kamisama]]
 
 = XML =
 # [[xml/000/001.xml|Fugou Keiji Balance:UNLIMITED]]
@@ -25,6 +29,10 @@ __TOC__
 # [[xml/000/007.xml|Yesterday wo Utatte]]
 # [[xml/000/008.xml|Kimi no Suizou wo Tabetai]]
 # [[xml/000/009.xml|Monster Musume no Iru Nichijou]]
+# [[xml/000/010.xml|Sarazanmai]]
+# [[xml/000/011.xml|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
+# [[xml/000/012.xml|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
+# [[xml/000/013.xml|Somali to Mori no Kamisama]]
 
 = HJSON =
 # [[hjson/000/001.hjson|Fugou Keiji Balance:UNLIMITED]]
@@ -36,6 +44,10 @@ __TOC__
 # [[hjson/000/007.hjson|Yesterday wo Utatte]]
 # [[hjson/000/008.hjson|Kimi no Suizou wo Tabetai]]
 # [[hjson/000/009.hjson|Monster Musume no Iru Nichijou]]
+# [[hjson/000/010.hjson|Sarazanmai]]
+# [[hjson/000/011.hjson|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
+# [[hjson/000/012.hjson|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
+# [[hjson/000/013.hjson|Somali to Mori no Kamisama]]
 
 = YAML =
 # [[yaml/000/001.yaml|Fugou Keiji Balance:UNLIMITED]]
@@ -47,6 +59,10 @@ __TOC__
 # [[yaml/000/007.yaml|Yesterday wo Utatte]]
 # [[yaml/000/008.yaml|Kimi no Suizou wo Tabetai]]
 # [[yaml/000/009.yaml|Monster Musume no Iru Nichijou]]
+# [[yaml/000/010.yaml|Sarazanmai]]
+# [[yaml/000/011.yaml|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
+# [[yaml/000/012.yaml|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
+# [[yaml/000/013.yaml|Somali to Mori no Kamisama]]
 
 = HTML =
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]

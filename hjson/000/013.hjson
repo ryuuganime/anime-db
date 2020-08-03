@@ -99,7 +99,7 @@
 
     # zh_Hant [str] <nab>
     # = Judul dalam bahasa China beraksara Kanton (Traditional).
-    zh_Hant: 索玛丽与森林之神
+    zh_Hant: 索瑪麗與森林之神
 
     # vi_VN [str] <nab>
     # = Judul dalam bahasa Vietnam.
@@ -122,7 +122,7 @@
     # = Sinopsis dalam bahasa Arab.  001 adalah kode ICU untuk menunjukkan bahwa  menggunakan logat
     #   Arab  Modern yang telah distandarkan (Arabic MSA).  Lihat TVDB,  Arab Sama, atau  Wikipedia
     #   untuk sinopsis berbahasa Arab.
-    ar_001: ''''''
+    ar_001: '''القصة تقع أحداثها بعد حرب بدأ بعدها البشر بالتناقص بشكل كبير، ثم تتم معاقبتهم من قبل السحرة غير البشر، وعندها يصبح مشاهدة البشر من الأمور النادرة، حيث أصبح العالم يعج بالأرواح والوحوش والحيوانات الناطقة'''
 
     # id_ID [str] <nab>
     # = Sinopsis dalam  bahasa Indonesia. Lihat Otak Otaku untuk sinopsis Indonesia.
@@ -133,7 +133,7 @@
     #   tuk sinopsis Inggris.
     en_US: '''The world is ruled by spirits, goblins, and all manner of strange creatures. Human beings are persecuted, to the very point of extinction. One day, a golem and a lone human girl meet.
 
-        This is a record of the pair, one a member of a ruined race, the other a watchman of the forest. It tells of their travels together and of the bond between father and daughter.'''
+This is a record of the pair, one a member of a ruined race, the other a watchman of the forest. It tells of their travels together and of the bond between father and daughter.'''
 
     # ja_JP [str] <nab>
     # = Sinopsis dalam bahasa Jepang. Lihat Annict atau TVDB untuk sinopsis Jepang.
@@ -168,16 +168,18 @@
     # zh_Hans [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Lihat Douban, TVDB, atau Wiki-
     #   pedia untuk sinopsis Mandarin.
-    zh_Hans: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，qigou.cc森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？'''
+    zh_Hans: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？'''
 
     # zh_Hant [str] <nab>
     # = Sinopsis dalam bahasa China beraksara Kanton (Traditional).  Gunakan converter daring untuk
     #   mengubah aksara Mandarin ke Kanton. 
-    zh_Hant: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，qigou.cc森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？'''
+    zh_Hant: '''這是個異形生物所支配的世界。人類處於生物鏈最下端，面臨滅絕的危機。某一天，森林的守護者·格雷姆與一名人類少女相遇，故事也就此展開。森林守護者與人類女孩之間，如同父女之間的羈絆又將描繪出一篇怎樣的故事呢？'''
 
     # vi_VN [str] <nab>
     # = Sinopsis dalam bahasa Vietnam.
-    vi_VN: ''''''
+    vi_VN: '''Câu chuyện lấy bối cảnh trong một thế giới thống trị bởi thần linh và quái vật, nơi con người bị hãm ép và phải lui vào đường tuyệt diệt. Trong một khu rừng của golem, người cai quản khu rừng và một cô gái loài người nhỏ bé đã gặp nhau. Và chuyến phiêu lưu của người cha nuôi cùng cô con gái của mình đã bắt đầu như thế.'''
+
+    it_IT: '''In un mondo governato da spiriti, goblin e molti altri tipi di creature misteriose, la razza umana è perseguitata e spinta sull'orlo dell'estinzione. Un giorno, avviene l'incontro tra un golem e una ragazza umana. Quest'opera racconta le vicende dei due, il primo guardiano della foresta, la seconda appartenente ad una razza ormai distrutta. È la storia di un viaggio, e di un legame tra padre e figlia.'''
   }
 
   # information [obj]
@@ -188,47 +190,30 @@
     # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
     synonyms:
     {
-      en_Latn: [
-        
-      ]
-      ar_001: [
-        
-      ]
+      en_Latn: null
+      ar_001: null
       id_ID: [
-        
+        Somali dan Sang Penjaga Rimba
       ]
       en_US: [
-        
+        Somari and the Guardian of the Forest
+        Somali and the God of the Forest
+        Somali and the Guardian of the Forest
       ]
-      ja_JP: [
-        
-      ]
-      de_DE: [
-        
-      ]
-      ko_KR: [
-        
-      ]
-      fr_FR: [
-        
-      ]
-      pt_PT: [
-        
-      ]
-      ru_RU: [
-        
-      ]
+      ja_JP: null
+      de_DE: null
+      ko_KR: null
+      fr_FR: null
+      pt_PT: null
+      ru_RU: null
       es_ES: [
-        
+        Somali y el espíritu del bosque
       ]
-      zh_Hans: [
-        
-      ]
-      zh_Hant: [
-        
-      ]
-      vi_VN: [
-        
+      zh_Hans: null
+      zh_Hant: null
+      vi_VN: null
+      it_IT: [
+        Somali e lo spirito della foresta
       ]
     }
 
@@ -270,6 +255,9 @@
         Drama
         Fantasy
         Slice of Life
+        Action
+        Horror
+        Sci-Fi
       ]
 
       # id_ID [arr] <nbl>
@@ -280,6 +268,9 @@
         Drama
         Fantasi
         Potongan Kehidupan
+        Aksi
+        Horror
+        Sci-Fi
       ]
     }
 
@@ -293,8 +284,28 @@
       # = Tag serial dalam bahasa Inggris
       en_US:
       [
-          Demons
-          Spirit
+        Demons
+        Spirit
+        Seinen
+        Childcare
+        Forest
+        Orphan
+        Single Parent
+        Demons
+        Family Life
+        Iyashikei
+        Witch
+        Youkai
+        Monster
+        Beastmen
+        Juujin
+        Android
+        Angst
+        Anthropomorphism
+        Golem
+        Human Extinction
+        Magic
+        Survival
       ]
 
       # id_ID [arr] <nbl>
@@ -303,6 +314,26 @@
       [
         Iblis
         Roh
+        Seinen
+        Penitipan Anak
+        Hutan
+        Anak Yatim
+        Orang Tua Tunggal
+        Iblis
+        Kehidupan Keluarga
+        Iyashikei
+        Penyihir
+        Youkai
+        Raksasa
+        Beastmen
+        Juujin
+        Android
+        Kecemasan
+        Antropomorfisme
+        Golem
+        Kemusnahan Manusia
+        Sihir
+        Bertahan Hidup
       ]
     }
 
@@ -361,7 +392,10 @@
 
     # studio [str] <arb> <nab>
     # = Studio yang memproduksi serial.
-    studio: Satelight
+    studio: [
+      Satelight
+      HORNETS
+    ]
 
     # rating [str] <nab>
     # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi lebih lanjut.
@@ -463,8 +497,8 @@
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
       #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
-      id: 0
-      score: 0
+      id: 6605
+      score: 93.71
     }
 
     // https://imdb.com
@@ -614,8 +648,8 @@
       # id [num]
       # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
       #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
-      id: 0
-      score: 0
+      id: 372921
+      score: 9.86
     }
   }
 
@@ -634,7 +668,7 @@
   // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
   // maka, 2020-12-21T22:45:33+07:00 adalah valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-07-23T14:56:26
+  updatedDate: 2020-07-23T14:56:26+07:00
   fansub:
   {
     idn:
@@ -648,10 +682,10 @@
       AoiTenshi: null
       Arks: null
       ASubs: null
-      AWSubs: null
+      AWSubs: https://awsubstv.com/anime/somali-to-mori-no-kamisama/
       Bentoo: null
       Caramel: null
-      Cijanepoi: null
+      Cijanepoi: http://cijanepoi.blogspot.com/search/label/Somali%20to%20Mori%20no%20Kamisama?&max-results=9
       Conan: null
       DAnimeSubs: null
       Del: null
@@ -659,12 +693,12 @@
       Durandal: null
       EmotPekmen: null
       Excalibur: null
-      exTonan: null
+      exTonan: https://extonan.web.id/somali-to-mori-no-kamisama
       Gantz: null
       Gin: null
       Haruna: null
       Haruzora: null
-      HunterNoSekai: null
+      HunterNoSekai: https://www.huntersekai.website/2020/01/somali-to-mori-no-kamisama.html
       IA: null
       Inazumaotoshi: null
       Indis: null
@@ -675,7 +709,7 @@
       Kinshiru: null
       KO: null
       Kopaja: null
-      LCC: null
+      LCC: http://www.loliclubscorp.com/2020/01/somali-to-mori-no-kamisama.html
       MangaNekoTranslation: null
       Melody: null
       Mite: null
@@ -685,10 +719,10 @@
       Ougi: null
       Panagayan: null
       Pendekar: null
-      Pucuk: null
-      Quinime: null
+      Pucuk: https://pucuktranslation.pw/somali-to-mori-no-kamisama/
+      Quinime: https://quinimefansub.com/category/somali-to-mori-no-kamisama/
       RevieXion: null
-      Samehadaku: null
+      Samehadaku: https://www.samehadaku.tv/anime/somali-to-mori-no-kamisama/
       SilverYasha: null
       Sora: null
       TTOD: null
@@ -700,7 +734,7 @@
     }
     eng:
     {
-      Horrible: null
+      Horrible: https://horriblesubs.info/shows/somali-to-mori-no-kamisama
     }
   }
   fanshare:
@@ -708,17 +742,17 @@
     idn:
     {
       AniBatch: null
-      AnimeKompi: null
-      AnimeSAVE: null
-      Bakacan: null
+      AnimeKompi: http://animekompi.web.id/series/somali-to-mori-no-kamisama/
+      AnimeSAVE: http://www.animesave.com/somali-to-mori-no-kamisama-subtitle-indonesia/
+      Bakacan: https://bakacan.id/anime/somali-to-mori-no-kamisama/
       Drivenime: https://drivenime.com/somali-to-mori-no-kamisama-subtitle-indonesia-batch/
       Hinime: https://hinime.com/somali-to-mori-no-kamisama-sub-indo/
-      Koenime: null
+      Koenime: https://www.koenime.com/somamori-sub-indo/
       Kusonime: https://kusonime.com/somali-mori-batch-sub-indo/
-      Mikanime: null
+      Mikanime: https://mikanime.com/somali-to-mori-no-kamisama-sub-indo/
       Moenime: https://moenime.web.id/somali-to-mori-no-kamisama-sub-indo/
-      Ryuukoi: null
-      WibuDesu: null
+      Ryuukoi: https://ryuukoi.web.id/anime/somali-to-mori-no-kamisama/
+      WibuDesu: https://wibudesu.com/somali-to-mori-nao-kamisama-subtitle-indonesia/
     }
     eng:
     {
@@ -729,35 +763,34 @@
   {
     idn:
     {
-      AnimeIndoNET: null
-      anoBoy: null
+      AnimeIndoNET: http://animeindo.moe/anime/somali-to-mori-no-kamisama
+      anoBoy: https://anoboy.us/anime/somali-to-mori-no-kamisama/
       Gomunime: https://gomunime.com/anime/somali-to-mori-no-kamisama/
-      Moeclip: null
+      Moeclip: https://moeclip.com/anime/somali-to-mori-no-kamisama-sub-indo/
       Neonime: https://neonime.moe/batch/somali-to-mori-no-kamisama-batch-subtitle-indonesia/
-      Onnime: null
+      Onnime: https://onnime.net/anime/somali-to-mori-no-kamisama.YG2PRjzl/
       OtakuIndo: null
     }
     eng:
     {
       fourAnime: https://4anime.to/anime/somali-to-mori-no-kamisama
-      nineAnime: null
+      nineAnime: https://9anime.ru/watch/somali-and-the-forest-spirit.8r1y
       AnimeDaisuki: https://animedaisuki.moe/anime/873/somali-to-mori-no-kamisama
-      AnimeTwist: null
+      AnimeTwist: https://twist.moe/a/somali-to-mori-no-kamisama/1
       Animeflix: https://animeflix.io/shows/somali-to-mori-no-kamisama
       AnimeHeaven: https://animeheaven.ru/detail/somali-to-mori-no-kamisama
       Animelon: null
       Animeultima: null
-      AniWatch: null
-      GogoAnime: null
-      KissAnime: null   
-      WonderfulSubs: null
+      AniWatch: https://aniwatch.me/anime/2069
+      GogoAnime: https://gogoanime.movie/category/somali-to-mori-no-kamisama
+      KissAnime: https://kissanime.ru/Anime/Somali-to-Mori-no-Kamisama   
+      WonderfulSubs: https://www.wonderfulsubs.com/watch/somaliandtheforestspirit
     }
   }
   library:
   {
     Nyaa: https://nyaa.si/view/1217620
-    PerpusIndo: null
-    Shallty: null
+    PerpusIndo: https://www.perpusindo.info/anime/39575
   }
 
   # signature
@@ -792,11 +825,11 @@
     // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
     // maka, 2020-12-21T22:45:33+07:00 adalah valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-07-23T14:56:26
+    submissionDateTime: 2020-07-23T14:56:26+07:00
 
     # sign [str][num] <nbl>
     # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data. Boleh meng-
     #   gunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXMKQXNzaXN0ZWQgYnkgTmF0c3UgVGFkYW1hIChAbmF0dGFkYXN1KQ==
   }
 }

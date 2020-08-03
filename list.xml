@@ -228,22 +228,60 @@
         </path>
     </entry>
     <entry>
-        <myAnimeList>0</myAnimeList>
-        <kitsu>0</kitsu>
-        <aniList>0</aniList>
-        <aniDb>0</aniDb>
-        <notifyMoe></notifyMoe>
+        <myAnimeList>37597</myAnimeList>
+        <kitsu>41151</kitsu>
+        <aniList>101381</aniList>
+        <aniDb>13979</aniDb>
+        <notifyMoe>XyjgVximR</notifyMoe>
         <title>
-            <en_Latn></en_Latn>
-            <en_US></en_US>
-            <native></native>
+            <en_Latn>Dakaretai Otoko 1-i ni Odosarete Imasu.</en_Latn>
+            <en_US>Dakaichi: I'm Being Harassed by the Sexiest Man of the Year</en_US>
+            <native>抱かれたい男1位に脅されています。</native>
         </title>
-        <ryuuganime>10</ryuuganime>
+        <ryuuganime>11</ryuuganime>
         <path>
-            <json>/json/000/010.json</json>
-            <hjson>/hjson/000/010.json</hjson>
-            <xml>/xml/000/010.xml</xml>
-            <yaml>/yaml/000/010.yaml</yaml>
+            <json>/json/000/011.json</json>
+            <hjson>/hjson/000/011.json</hjson>
+            <xml>/xml/000/011.xml</xml>
+            <yaml>/yaml/000/011.yaml</yaml>
+        </path>
+    </entry>
+    <entry>
+        <myAnimeList>39942</myAnimeList>
+        <kitsu>42397</kitsu>
+        <aniList>109964</aniList>
+        <aniDb>109964</aniDb>
+        <notifyMoe>0T1aHQVWg</notifyMoe>
+        <title>
+            <en_Latn>Uchi Tama?! Uchi no Tama Shirimasen ka?</en_Latn>
+            <en_US>Uchitama?! Have You Seen My Tama?</en_US>
+            <native>うちタマ?! 〜うちのタマ知りませんか？〜</native>
+        </title>
+        <ryuuganime>12</ryuuganime>
+        <path>
+            <json>/json/000/012.json</json>
+            <hjson>/hjson/000/012.json</hjson>
+            <xml>/xml/000/012.xml</xml>
+            <yaml>/yaml/000/012.yaml</yaml>
+        </path>
+    </entry>
+    <entry>
+        <myAnimeList>39575</myAnimeList>
+        <kitsu>42201</kitsu>
+        <aniList>108617</aniList>
+        <aniDb>14785</aniDb>
+        <notifyMoe>ZkdWg46mR</notifyMoe>
+        <title>
+            <en_Latn>Somali to Mori no Kamisama</en_Latn>
+            <en_US>Somali and the Forest Spirit</en_US>
+            <native>ソマリと森の神様</native>
+        </title>
+        <ryuuganime>13</ryuuganime>
+        <path>
+            <json>/json/000/013.json</json>
+            <hjson>/hjson/000/013.json</hjson>
+            <xml>/xml/000/013.xml</xml>
+            <yaml>/yaml/000/013.yaml</yaml>
         </path>
     </entry>
 </database>
