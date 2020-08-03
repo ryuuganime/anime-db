@@ -265,4 +265,23 @@
             <yaml>/yaml/000/012.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList>39575</myAnimeList>
+        <kitsu>42201</kitsu>
+        <aniList>108617</aniList>
+        <aniDb>14785</aniDb>
+        <notifyMoe>ZkdWg46mR</notifyMoe>
+        <title>
+            <en_Latn>Somali to Mori no Kamisama</en_Latn>
+            <en_US>Somali and the Forest Spirit</en_US>
+            <native>ソマリと森の神様</native>
+        </title>
+        <ryuuganime>13</ryuuganime>
+        <path>
+            <json>/json/000/013.json</json>
+            <hjson>/hjson/000/013.json</hjson>
+            <xml>/xml/000/013.xml</xml>
+            <yaml>/yaml/000/013.yaml</yaml>
+        </path>
+    </entry>
 </database>

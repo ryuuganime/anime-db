@@ -283,4 +283,25 @@
             yaml: /yaml/000/012.yaml
         }
     }
+    {
+        myAnimeList: 39575
+        kitsu: 42201
+        aniList: 108617
+        aniDb: 14785
+        notifyMoe: "ZkdWg46mR"
+        title:
+        {
+            en_Latn: "Somali to Mori no Kamisama"
+            en_US: "Somali and the Forest Spirit"
+            native: "ソマリと森の神様"
+        }
+        ryuuganime: 13
+        path:
+        {
+            json: /json/000/013.json
+            hjson: /hjson/000/013.json
+            xml: /xml/000/013.xml
+            yaml: /yaml/000/013.yaml
+        }
+    }
 ]

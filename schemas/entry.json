@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.2-a",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.2.2-a",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
@@ -2082,7 +2082,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/awsubs\\.co"
+                                    "pattern": "^(https?)\\:\\/\\/awsubs(tv)?\\.(co|com)"
                                 },
                                 {
                                     "type": "null"
@@ -2118,7 +2118,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/cijanepoi\\.blogspot\\.co\\.id"
+                                    "pattern": "^(https?)\\:\\/\\/cijanepoi\\.blogspot\\.(co\\.id|com)"
                                 },
                                 {
                                     "type": "null"
@@ -2562,7 +2562,7 @@
                                 {
                                     "type": "string",
                                     "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/samehadaku\\.vip"
+                                    "pattern": "^(https?)\\:\\/\\/(www\\.)?samehadaku\\.(vip|tv)"
                                 },
                                 {
                                     "type": "null"
