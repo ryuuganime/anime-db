@@ -96,7 +96,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
             <en_US>Gender Bending</en_US>
             <en_US>Football</en_US>
             <en_US>Zombie</en_US>
-            <en_US>Boys' Love</en_US>
+            <en_US>Shounen-Ai</en_US>
             <en_US>LGBTQ Themes</en_US>
             <en_US>Crossdressing</en_US>
             <en_US>Drugs</en_US>
@@ -149,7 +149,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
         <studio>MAPPA</studio>
         <studio>Lapin Track</studio>
         <rating>PG13+</rating>
-        <isNsfw>false</isNsfw>
+        <isNsfw>true</isNsfw>
         <adaptation>
             <en_US>Original</en_US>
             <id_ID>Orisinal</id_ID>

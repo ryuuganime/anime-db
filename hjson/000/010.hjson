@@ -289,7 +289,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
         Gender Bending
         Football
         Zombie
-        Boys' Love
+        Shounen-Ai
         LGBTQ Themes
         Crossdressing
         Drugs
@@ -401,7 +401,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     # isNsfw [boo] <nbl>
     # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah false, yakni aman.
     // Argumen yang diperbolehkan ialah true dan false
-    isNsfw: false
+    isNsfw: true
 
     # adaptation [obj] > [str] <arb> <nab>
     # = Ialah adaptasi asal tayangan.

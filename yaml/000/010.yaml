@@ -130,7 +130,7 @@ information:
         - Gender Bending
         - Football
         - Zombie
-        - Boys' Love
+        - Shounen-Ai
         - LGBTQ Themes
         - Crossdressing
         - Drugs
@@ -183,7 +183,7 @@ information:
     - MAPPA
     - Lapin Track
     rating: PG13+
-    isNsfw: false
+    isNsfw: true
     adaptation:
         en_US: Original
         id_ID: Orisinal
