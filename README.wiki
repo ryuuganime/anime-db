@@ -1,27 +1,41 @@
 = ryuuganime-db =
-Database Utama Situs Ryuuganime Berbasis JSON, HJSON, YAML, XML, XLSX dan HTML.
+Head Database Repository of Ryuuganime based on JSON, HJSON, YAML, XML, XLSX and HTML format.
 
-__NOTOC__
+__TOC__
 
-= Teknologi yang Digunakan =
-Database ini menggunakan teknologi [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>)  untuk markah dokumentasi repositori. Untuk ''database'', Ryuuganime menggunakan format berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#json JSON], HJSON, YAML dan [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#XML XML] untuk versi terbaru.
-Berkas [https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata/definisi-format-berkas#html HTML] dan XLSX yang tersedia dalam repositori ini tidak digunakan lagi.
+== More informations ==
+This database is using [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>) for repository documentation markup format. For indexing, Ryuuganime is using [[/json|JSON]], [[hjson|HJSON]], [[yaml|YAML]], and [[xml|XML]] for current release. [[html|HTML]] and [[xlsx|XLSX]] files are deprecated. 
 
-Sistem hirarki repo ini berbentuk <code>formatBerkas/idRyuuganime.ekstensi</code>.
+File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
 
-Untuk informasi lebih lanjut mengenai sistem hirarki repositori, Anda dapat mempelajarinya lebih lanjut di [https://wiki.ryuuganime.my.id/kontribusi-data/sebelum-melanjutkan sini].
+The JSON files that Ryuuganime uses in the [[/json]] folder comply with standards which can also be machine validated with the [[/schemas/entry.json|JSON Schema]] file.
 
-Berkas JSON yang digunakan Ryuuganime dalam folder [[/json]] sudah mengikuti standar yang juga dapat divalidasi oleh mesin dengan berkas [[schema.json]]. Untuk XSD sedang dalam pengembangan.
 
-= Kontribusi =
-Untuk informasi terkait kontribusi, Anda bisa melihat langkah-langkahnya di [https://wiki.ryuuganime.my.id/kontribusi-data/format-hjson sini].
+== Cloning, contributing, and issuing suggestion/problem ==
+Please head to [[contributing.wiki]] for more detailed information.
 
-= Daftar Entri Database Anime =
-Untuk melihat database anime dalam ''[https://wiki.ryuuganime.my.id/ketentuan-umum/definisi-kata#repositori-kendali-versi repo]'' ini, silakan buka [[scheme.wiki]].
-Untuk berkas yang dapat dibaca oleh mesin, dapat Anda gunakan versi JSON, yaitu [[scheme.json]] (direkomendasikan), dalam format YAML [[scheme.yaml]], dan [[scheme.xml]] (tidak direkomendasikan).
+== Code of conduct ==
+This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. For detailed information, read [[CODE_OF_CONDUCT.wiki]].
 
-= Lisensi =
-Repositori ''database'' ini berada di bawah lisensi [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]].
+= List of Anime Database Entries =
+<!--Google translated, oof-->To see the anime database that has been recorded in this repository, please head to [[list.wiki]].
+For machine-readable files, you can use the JSON version, namely [[list.json]] (recommended); on YAML format, [[list.yaml]]; and [[list.xml]] on XML (not recommended).
 
-= Kode Etik =
-Kode etik yang digunakan Ryuuganime adalah Code of Conduct Contributor Covenant versi 2.0 dalam bahasa Indonesia. Anda dapat melihatnya di [[CODE_OF_CONDUCT.md|disini]].
+== License ==
+
+This repository is under [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]].
+
+You are free:
+* '''to Share'''—to copy, distribute and transmit the work, and
+* '''to Remix'''—to adapt the work for any purpose, even commercially.
+
+Under the following conditions:
+* '''Attribution'''—You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work.)
+* '''Share Alike'''—If you alter, transform, or build upon this work, you may distribute the resulting work only under the same, similar or a compatible license.
+With the understanding that:
+* '''Waiver'''—Any of the above conditions can be waived if you get permission from the copyright holder.
+* '''Other Rights'''—In no way are any of the following rights affected by the license:
+** your fair dealing or fair use rights;
+** the author's moral rights; and
+** rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
+* '''Notice'''—For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do that is with a link to https://creativecommons.org/licenses/by-sa/4.0/
