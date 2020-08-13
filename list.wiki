@@ -106,7 +106,7 @@ __TOC__
 * [[html/Arifureta Shokugyou de Sekai Saikyou.html|Arifureta Shokugyou de Sekai Saikyou]]
 * [[html/Assassins Pride.html|Assassins Pride]]
 * [[html/Azur Lane.html|Azur Lane]]
-* [[html/Babylon.html|Azur Lane]]
+* [[html/Babylon.html|Babylon]]
 * [[html/Bakumatsu_ Ren'ai Bakumatsu Kareshi Gaiden - Crisis.html|Bakumatsu: Ren'ai Bakumatsu Kareshi Gaiden - Crisis]]
 * [[html/Bananya_ Fushigi na Nakamatachi.html|Bananya: Fushigi na Nakamatachi]]
 * [[html/Beastars.html|Beastars]]
