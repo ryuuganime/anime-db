@@ -1,70 +1,24 @@
+= Human Friendly Index Lists =
 '''DISCLAIMER'''
 
 This wiki maybe loads slower than expected.
 
-__TOC__
+== List ==
+# Fugou Keiji Balance:UNLIMITED ([[json/000/001.json|json]] | [[hjson/000/001.hjson|hjson]] | [[yaml/000/001.yaml|yaml]] | [[xml/000/001.xml|xml]])
+# Sword Art Online: Alicization ([[json/000/002.json|json]] | [[hjson/000/002.hjson|hjson]] | [[yaml/000/002.yaml|yaml]] | [[xml/000/002.xml|xml]])
+# Boku no Hero Academia ([[json/000/003.json|json]] | [[hjson/000/003.hjson|hjson]] | [[yaml/000/003.yaml|yaml]] | [[xml/000/003.xml|xml]])
+# Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen ([[json/000/004.json|json]] | [[hjson/000/004.hjson|hjson]] | [[yaml/000/004.yaml|yaml]] | [[xml/000/004.xml|xml]])
+# Gleipnir ([[json/000/005.json|json]] | [[hjson/000/005.hjson|hjson]] | [[yaml/000/005.yaml|yaml]] | [[xml/000/005.xml|xml]])
+# Kami no Tou ([[json/000/006.json|json]] | [[hjson/000/006.hjson|hjson]] | [[yaml/000/006.yaml|yaml]] | [[xml/000/006.xml|xml]])
+# Yesterday wo Utatte ([[json/000/007.json|json]] | [[hjson/000/007.hjson|hjson]] | [[yaml/000/007.yaml|yaml]] | [[xml/000/007.xml|xml]])
+# Kimi no Suizou wo Tabetai ([[json/000/008.json|json]] | [[hjson/000/008.hjson|hjson]] | [[yaml/000/008.yaml|yaml]] | [[xml/000/008.xml|xml]])
+# Monster Musume no Iru Nichijou ([[json/000/009.json|json]] | [[hjson/000/009.hjson|hjson]] | [[yaml/000/009.yaml|yaml]] | [[xml/000/009.xml|xml]])
+# Sarazanmai ([[json/000/010.json|json]] | [[hjson/000/010.hjson|hjson]] | [[yaml/000/010.yaml|yaml]] | [[xml/000/010.xml|xml]])
+# Dakaretai Otoko 1-i ni Odosarete Imasu. ([[json/000/011.json|json]] | [[hjson/000/011.hjson|hjson]] | [[yaml/000/011.yaml|yaml]] | [[xml/000/011.xml|xml]])
+# Uchi Tama?! Uchi no Tama Shirimasen ka? ([[json/000/012.json|json]] | [[hjson/000/012.hjson|hjson]] | [[yaml/000/012.yaml|yaml]] | [[xml/000/012.xml|xml]])
+# Somali to Mori no Kamisama ([[json/000/013.json|json]] | [[hjson/000/013.hjson|hjson]] | [[yaml/000/013.yaml|yaml]] | [[xml/000/013.xml|xml]])
 
-= JSON =
-# [[json/000/001.json|Fugou Keiji Balance:UNLIMITED]]
-# [[json/000/002.json|Sword Art Online: Alicization]]
-# [[json/000/003.json|Boku no Hero Academia]]
-# [[json/000/004.json|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
-# [[json/000/005.json|Gleipnir]]
-# [[json/000/006.json|Kami no Tou]]
-# [[json/000/007.json|Yesterday wo Utatte]]
-# [[json/000/008.json|Kimi no Suizou wo Tabetai]]
-# [[json/000/009.json|Monster Musume no Iru Nichijou]]
-# [[json/000/010.json|Sarazanmai]]
-# [[json/000/011.json|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
-# [[json/000/012.json|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
-# [[json/000/013.json|Somali to Mori no Kamisama]]
-
-= XML =
-# [[xml/000/001.xml|Fugou Keiji Balance:UNLIMITED]]
-# [[xml/000/002.xml|Sword Art Online: Alicization]]
-# [[xml/000/003.xml|Boku no Hero Academia]]
-# [[xml/000/004.xml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
-# [[xml/000/005.xml|Gleipnir]]
-# [[xml/000/006.xml|Kami no Tou]]
-# [[xml/000/007.xml|Yesterday wo Utatte]]
-# [[xml/000/008.xml|Kimi no Suizou wo Tabetai]]
-# [[xml/000/009.xml|Monster Musume no Iru Nichijou]]
-# [[xml/000/010.xml|Sarazanmai]]
-# [[xml/000/011.xml|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
-# [[xml/000/012.xml|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
-# [[xml/000/013.xml|Somali to Mori no Kamisama]]
-
-= HJSON =
-# [[hjson/000/001.hjson|Fugou Keiji Balance:UNLIMITED]]
-# [[hjson/000/002.hjson|Sword Art Online: Alicization]]
-# [[hjson/000/003.hjson|Boku no Hero Academia]]
-# [[hjson/000/004.hjson|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
-# [[hjson/000/005.hjson|Gleipnir]]
-# [[hjson/000/006.hjson|Kami no Tou]]
-# [[hjson/000/007.hjson|Yesterday wo Utatte]]
-# [[hjson/000/008.hjson|Kimi no Suizou wo Tabetai]]
-# [[hjson/000/009.hjson|Monster Musume no Iru Nichijou]]
-# [[hjson/000/010.hjson|Sarazanmai]]
-# [[hjson/000/011.hjson|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
-# [[hjson/000/012.hjson|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
-# [[hjson/000/013.hjson|Somali to Mori no Kamisama]]
-
-= YAML =
-# [[yaml/000/001.yaml|Fugou Keiji Balance:UNLIMITED]]
-# [[yaml/000/002.yaml|Sword Art Online: Alicization]]
-# [[yaml/000/003.yaml|Boku no Hero Academia]]
-# [[yaml/000/004.yaml|Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen]]
-# [[yaml/000/005.yaml|Gleipnir]]
-# [[yaml/000/006.yaml|Kami no Tou]]
-# [[yaml/000/007.yaml|Yesterday wo Utatte]]
-# [[yaml/000/008.yaml|Kimi no Suizou wo Tabetai]]
-# [[yaml/000/009.yaml|Monster Musume no Iru Nichijou]]
-# [[yaml/000/010.yaml|Sarazanmai]]
-# [[yaml/000/011.yaml|Dakaretai Otoko 1-i ni Odosarete Imasu.]]
-# [[yaml/000/012.yaml|Uchi Tama?! Uchi no Tama Shirimasen ka?]]
-# [[yaml/000/013.yaml|Somali to Mori no Kamisama]]
-
-= HTML =
+== Deprecated List (HTML) ==
 # [[html/3D Kanojo_ Real Girl 2nd Season.html]]
 # [[html/7 Seeds.html]]
 # [[html/Actors_ Song Connection.html]]
