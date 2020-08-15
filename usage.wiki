@@ -1,0 +1,15 @@
+= Ryuuganime entries usage =
+''This file will guide user on using Ryuuganime Anime Index File.''
+
+__TOC__
+
+== First guide ==
+Currently, we don't have any API for accessing database. Instead, you can use GitHub Raw links to access our data.
+
+For machine-readable index listing, please to use [[list.json]] (recommended) or [[list.yaml]].
+
+We currently provide data in HJSON, JSON, YAML, and XML file at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]].
+
+<!--
+    UNDER CONSTRUCTION
+-->
