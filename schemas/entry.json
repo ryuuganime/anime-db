@@ -3193,18 +3193,6 @@
                                 }
                             ]
                         },
-                        "KissAnime": {
-                            "oneOf": [
-                                {
-                                    "type": "string",
-                                    "format": "uri",
-                                    "pattern": "^(https?)\\:\\/\\/kissanime\\.ru"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
-                        },
                         "WonderfulSubs": {
                             "oneOf": [
                                 {
@@ -3229,7 +3217,6 @@
                         "Animeultima",
                         "AniWatch",
                         "GogoAnime",
-                        "KissAnime",
                         "WonderfulSubs"
                     ],
                     "additionalProperties": {
