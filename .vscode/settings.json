@@ -99,5 +99,8 @@
     ],
     //Calls dictionaries from various languages
     "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES",
-    "discord.workspaceElapsedTime": true
+    "discord.workspaceElapsedTime": true,
+    "cSpell.ignoreWords": [
+        "minlength"
+    ]
 }
