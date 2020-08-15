@@ -265,7 +265,7 @@ Those are tables which sites are being used by this repository. Please make sure
 
 === Cloning repository ===
 To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
-<pre>git clone https&#58;&#47;&#47;github.com&#47;&lt;YOUR USERNAME&gt;&#47;ryuuganime-db</pre>
+<pre>git clone https://github.com/<YOUR USERNAME>/ryuuganime-db</pre>
 ;Note
 :Remember to change <nowiki><YOUR USERNAME></nowiki> into your GitHub username.
 
