@@ -204,43 +204,68 @@ Those are tables which sites are being used by this repository. Please make sure
 ===== English =====
 {|
 |-
-|HorribleSubs
+|*HorribleSubs
 |}
 
 ==== Fanshare ====
 ===== Indonesian =====
 {|
 |-
-|AniBatch<br />Anime Kompi<br />AnimeSAVE<br />Bakacan<br />Drivenime<br />Hinime
-|Koenime<br />Kusonime<br />Mikanime<br />Moenime<br />Ryuukoi<br />Wibu Desu!<br />
-!}
+|*AniBatch
+*Anime Kompi
+*AnimeSAVE
+*Bakacan
+*Drivenime
+*Hinime
+|*Koenime
+*Kusonime
+*Mikanime
+*Moenime
+*Ryuukoi
+*Wibu Desu!
+|}
 
 ===== English =====
 {|
 |-
-|Anime Kayo
+|*Anime Kayo
 |}
 
 ==== Fanstream ====
 ===== Indonesian =====
 {|
 |-
-|Animeindo.net<br />anoBoy<br />Gomunime<br />Moeclip
-|Neonime<br />Onnime<br />Otaku Indo
+|*Animeindo.net
+*anoBoy
+*Gomunime
+*Moeclip
+|*Neonime
+*Onnime
+*Otaku Indo
 |}
 
 ===== English =====
 {|
 |-
-|4anime<br />9anime<br />Anime Daisuki<br />Anime Twist (Twist.moe)<br />Animeflix<br />Anime Heaven
-|Animelon<br />Animeultima<br />AniWatch<br />GogoAnime<br /><del>KissAnime</del><br />WonderfulSubs<br />
-!}
+|*4anime
+*9anime
+*Anime Daisuki
+*Anime Twist (Twist.moe)
+*Animeflix
+*Anime Heaven
+|*Animelon
+*Animeultima
+*AniWatch
+*GogoAnime
+*<del>KissAnime</del>
+*WonderfulSubs
+|}
 
 == Commit and pull request ==
 
 === Cloning repository ===
 To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
- git <nowiki>clone https://github.com/<YOUR USERNAME>/ryuuganime-db</nowiki>
+ git clone https&#58;&#47;&#47;github.com&#47;&lt;YOUR USERNAME&gt;&#47;ryuuganime-db
 ;Note
 :Remember to change <nowiki><YOUR USERNAME></nowiki> into your GitHub username.
 
