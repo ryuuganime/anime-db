@@ -1,5 +1,4 @@
 = Contributing to ryuuganime-db =
-<!--UNDER CONSTRUCTION-->
 Hello and thanks for taking your time to contribute!
 
 The following is a set of guidelines for contributing to <code>ryuuganime-db</code>. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
@@ -14,63 +13,193 @@ This project and everyone participating in it is governed by the [[CODE_OF_CONDU
 === Extensions, applications, and services used ===
 * [https://code.visualstudio.com/ Microsoft Visual Studio Code] for editing.
 *:If you are using Visual Studio Code, you will likely get a prompt to install several recommended extensions. Please to install and use mentioned extensions.
-* [https:// MALSync] for grabbing English Fanstream links.
+* [https://malsync.lolamtisch.de/ MALSync] for grabbing English Fanstream links.
 * [[/.dictionaty/animanga|animanga-wordlist]] for spellchecking.
 
-=== Sites Accessibility ===
-This is a table which sites are being used by this repository:
+=== Sites accessibility ===
+Those are tables which sites are being used by this repository. Please make sure you have access to those sites.
+
+==== Online databases ====
 {|
 !Favicons
 !Sites
 !Link
+!Additional notes
 |-
+|<img src="https://www.google.com/s2/favicons?domain=anidb.net" />
 |AniDB
 |https://anidb.net
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=anilist.co" />
 |AniList
 |https://anilist.co
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=www.anime-planet.com" />
 |Anime-Planet
 |https://anime-planet.com
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=www.animenewsnetwork.com" />
 |Anime News Network
-|https://animenewsnetwork.net
+|https://animenewsnetwork.com
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=www.anisearch.com" />
 |AniSearch
 |https://anisearch.com ''or'' https://anisearch.de
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=annict.com" />
+|Annict
+|https://annict.com ''or'' https://annict.jp
+|VPN or Proxy need to be enabled for Indonesian contributors
+|-
+|<img src="https://www.google.com/s2/favicons?domain=db.silveryasha.web.id/" />
+|DB Fansub Indonesia by Silver Yasha
+|https://db.silveryasha.web.id/
+|No English support. Only for taking Indonesian fansub links.
+|-
+|<img src="https://www.google.com/s2/favicons?domain=www.imdb.com" />
+|IMDb
+|https://imdb.com
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=www.kinopoisk.ru" />
+|Kinopoisk
+|https://kinopoisk.ru
+|No English support.
+|-
+|<img src="https://www.google.com/s2/favicons?domain=kitsu.io" />
 |Kitsu
 |https://kitsu.io
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=www.livechart.me" />
+|LiveChart
+|https://livechart.me
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=myanimelist.net" />
 |MyAnimeList
 |https://myanimelist.net
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=en.myshows.me" />
+|MyShows
+|https://en.myshows.me ''or'' https://ru.myshows.me ''or'' https://myshows.me
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=www.nautiljon.com" />
+|Nautiljon
+|https://nautiljon.com
+|No English support.
+|-
+|<img src="https://www.google.com/s2/favicons?domain=notify.moe" />
 |Notify.moe
 |https://notify.moe
+|
 |-
+|<img src="https://www.google.com/s2/favicons?domain=otakotaku.com" />
+|Otak Otaku
+|https://otakotaku.com
+|No English support.
+|-
+|<img src="https://www.google.com/s2/favicons?domain=shikimori.one" />
 |Shikimori
 |https://shikimori.one ''or'' https://shikimori.org
+|Contributor need to be signed up to change language into English.
+|-
+|<img src="https://www.google.com/s2/favicons?domain=simkl.com" />
+|Simkl
+|https://simkl.com
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=www.themoviedb.org" />
+|The Movie Database
+|https://themoviedb.org
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=thetvdb.com" />
+|The TVDB
+|https://thetvdb.com
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=trakt.tv" />
+|Trakt
+|https://trakt.tv
+|
+|-
+|<img src="https://www.google.com/s2/favicons?domain=tvtime.com" />
+|TVTime
+|https://tvtime.com
+|Contributors need to be signed up via their phone to gain access the site, or forcing it trough [https://tvtime.com/en this link].
 |}
 
-== Commit and Pull Request ==
+==== Fansubs ====
+===== Indonesian =====
+{|
+|-
+|Aibou<br />Aizukara<br />Allsub<br />Alter<br />AnimeGokil<br />AniToki<br />Aoi Tenshi<br />Arks<br />A-Subs<br />AW Subs<br />Bentoo<br />Caramel<br />Cijanepoi<br />Conan<br />DAnimeSubs<br />Del<br />DoraNobi Fansub Indo<br />Durandal<br />Emot Pekmen<br />Excalibur<br />exTonan<br />Gantz<br />Gin<br />Haruna<br />Haruzora<br />Hunter No Sekai<br />IA<br />Inazumaotoshi<br />Indis
+|Inform0930<br />Isekai<br />Junk<br />Kazefuri<br />Kinshiru<br />KO<br />Kopaja<br />LCC<br />Manga Neko Translation<br />Melody<br />Mite<br />Nanairo<br />Neo<br />OP Lovers<br />Ougi<br />Panagayan<br />Pendekar<br />Pucuk<br />Quinime<br />Revie Xion<br />Samehadaku<br />Silver Yasha<br />Sora<br />TTOD<br />Vedifi<br />Warung<br />Wibu<br />Yuki<br />Zen
+|}
 
-=== Cloning Repository ===
+===== English =====
+{|
+|-
+|HorribleSubs
+|}
+
+==== Fanshare ====
+===== Indonesian =====
+{|
+|-
+|AniBatch<br />Anime Kompi<br />AnimeSAVE<br />Bakacan<br />Drivenime<br />Hinime
+|Koenime<br />Kusonime<br />Mikanime<br />Moenime<br />Ryuukoi<br />Wibu Desu!<br />
+|}
+
+===== English =====
+{|
+|-
+|Anime Kayo
+|}
+
+==== Fanstream ====
+===== Indonesian =====
+{|
+|-
+|Animeindo.net<br />anoBoy<br />Gomunime<br />Moeclip
+|Neonime<br />Onnime<br />Otaku Indo
+|}
+
+===== English =====
+{|
+|-
+|4anime<br />9anime<br />Anime Daisuki<br />Anime Twist (Twist.moe)<br />Animeflix<br />Anime Heaven
+|Animelon<br />Animeultima<br />AniWatch<br />GogoAnime<br /><del>KissAnime</del><br />WonderfulSubs<br />
+|}
+
+== Commit and pull request ==
+
+=== Cloning repository ===
 To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
  git <nowiki>clone https://github.com/<YOUR USERNAME>/ryuuganime-db</nowiki>
 ;Note
 :Remember to change <nowiki><YOUR USERNAME></nowiki> into your GitHub username.
 
-=== Adding Anime Index ===
+=== Adding anime index ===
+Read our documentation on https://wiki.ryuuganime.my.id.
 
-=== Naming a File ===
-There is simple guideline for naming a file:
-<pre>
-category/siteName-date.ext
-</pre>
-'''Note''':
+=== Modifying MediaWiki (.wiki) documents ===
+Read the [https://www.mediawiki.org/wiki/Help:Formatting official MediaWiki file formatting documentation from Wikimedia] and [https://github.com/nricciar/wikicloth Github Extension for MediaWiki Document Markups].
 
+However, MediaWiki on GitHub is more restricted on customizations. So keep in mind that you can not make the text colored, ''&#39;kay?''
 
-=== Commit Changes ===
+=== Naming a file ===
+Read our documentation on https://wiki.ryuuganime.my.id.
+
+=== Commit changes ===
 There is no strict guidelines for adding commit message. However, the best one is make it "uniform."
 
 We commonly use those for prefix:
@@ -84,21 +213,19 @@ We commonly use those for prefix:
 *<code>Update</code>
 *:when some information updated.
 
-=== Pulling a Merge Request ===
+=== Pulling a merge request ===
 
-# Make sure you have required to naming your commit based on <a href="#Commit_Changes">Commit Changes</a> guideline.
+# Make sure you have required to naming your commit based on <a href="#Commit_changes">Commit changes</a> guideline.
 # Name your pull request as<br/><pre>Detail: Comment</pre>'''Note''':
 #; Detail
 #::Defining what the purpose of this pull request.<br/>Available arguments, at the moment:
 #:::<code>Add</code>, <code>Modify</code>, <code>Fix</code>
+# On comment section, fill any information that were required.
 # Click on the green "Send pull request" button to finish creating the pull request.
 # You should now see an open pull request.
 
 == Issuing Suggestion or Problem ==
 
-Got a great idea or found an issue but can not executing as well, or unfamiliar with Git interface? Now, you can relax more because GitHub has a great feature, called [https://github.com/ryuuganime/animanga-wordlist/issues GitHub Issue]. It helps users to "interact" developers with 0 knowledge of coding.
+Got a great idea or found an issue but can not executing as well, or unfamiliar with Git interface? Now, you can relax more because GitHub has a great feature, called [https://github.com/ryuuganime/ryuuganime-db/issues GitHub Issue]. It helps users to "interact" developers with 0 knowledge of coding.
 
 You can send us an issue for we can look for it. 
-
-=== Issuing Suggestion ===
-# Open [https://github.com/ryuuganime/ryuuganime-db/issues ryuuganime/ryuuganime-db/issues],
