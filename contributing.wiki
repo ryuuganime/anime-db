@@ -26,113 +26,113 @@ Those are tables which sites are being used by this repository. Please make sure
 !Link
 !Additional notes
 |-
-|<img src="https://www.google.com/s2/favicons?domain=anidb.net" />
-|AniDB
+!<img src="https://www.google.com/s2/favicons?domain=anidb.net" />
+!AniDB
 |https://anidb.net
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=anilist.co" />
-|AniList
+!<img src="https://www.google.com/s2/favicons?domain=anilist.co" />
+!AniList
 |https://anilist.co
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.anime-planet.com" />
-|Anime-Planet
+!<img src="https://www.google.com/s2/favicons?domain=www.anime-planet.com" />
+!Anime-Planet
 |https://anime-planet.com
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.animenewsnetwork.com" />
-|Anime News Network
+!<img src="https://www.google.com/s2/favicons?domain=www.animenewsnetwork.com" />
+!Anime News Network
 |https://animenewsnetwork.com
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.anisearch.com" />
-|AniSearch
+!<img src="https://www.google.com/s2/favicons?domain=www.anisearch.com" />
+!AniSearch
 |https://anisearch.com ''or'' https://anisearch.de
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=annict.com" />
-|Annict
+!<img src="https://www.google.com/s2/favicons?domain=annict.com" />
+!Annict
 |https://annict.com ''or'' https://annict.jp
 |VPN or Proxy need to be enabled for Indonesian contributors
 |-
-|<img src="https://www.google.com/s2/favicons?domain=db.silveryasha.web.id/" />
-|DB Fansub Indonesia by Silver Yasha
+!<img src="https://www.google.com/s2/favicons?domain=db.silveryasha.web.id/" />
+!DB Fansub Indonesia by Silver Yasha
 |https://db.silveryasha.web.id/
 |No English support. Only for taking Indonesian fansub links.
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.imdb.com" />
-|IMDb
+!<img src="https://www.google.com/s2/favicons?domain=www.imdb.com" />
+!IMDb
 |https://imdb.com
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.kinopoisk.ru" />
-|Kinopoisk
+!<img src="https://www.google.com/s2/favicons?domain=www.kinopoisk.ru" />
+!Kinopoisk
 |https://kinopoisk.ru
 |No English support.
 |-
-|<img src="https://www.google.com/s2/favicons?domain=kitsu.io" />
-|Kitsu
+!<img src="https://www.google.com/s2/favicons?domain=kitsu.io" />
+!Kitsu
 |https://kitsu.io
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.livechart.me" />
-|LiveChart
+!<img src="https://www.google.com/s2/favicons?domain=www.livechart.me" />
+!LiveChart
 |https://livechart.me
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=myanimelist.net" />
-|MyAnimeList
+!<img src="https://www.google.com/s2/favicons?domain=myanimelist.net" />
+!MyAnimeList
 |https://myanimelist.net
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=en.myshows.me" />
-|MyShows
+!<img src="https://www.google.com/s2/favicons?domain=en.myshows.me" />
+!MyShows
 |https://en.myshows.me ''or'' https://ru.myshows.me ''or'' https://myshows.me
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.nautiljon.com" />
-|Nautiljon
+!<img src="https://www.google.com/s2/favicons?domain=www.nautiljon.com" />
+!Nautiljon
 |https://nautiljon.com
 |No English support.
 |-
-|<img src="https://www.google.com/s2/favicons?domain=notify.moe" />
-|Notify.moe
+!<img src="https://www.google.com/s2/favicons?domain=notify.moe" />
+!Notify.moe
 |https://notify.moe
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=otakotaku.com" />
-|Otak Otaku
+!<img src="https://www.google.com/s2/favicons?domain=otakotaku.com" />
+!Otak Otaku
 |https://otakotaku.com
 |No English support.
 |-
-|<img src="https://www.google.com/s2/favicons?domain=shikimori.one" />
-|Shikimori
+!<img src="https://www.google.com/s2/favicons?domain=shikimori.one" />
+!Shikimori
 |https://shikimori.one ''or'' https://shikimori.org
 |Contributor need to be signed up to change language into English.
 |-
-|<img src="https://www.google.com/s2/favicons?domain=simkl.com" />
-|Simkl
+!<img src="https://www.google.com/s2/favicons?domain=simkl.com" />
+!Simkl
 |https://simkl.com
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=www.themoviedb.org" />
-|The Movie Database
+!<img src="https://www.google.com/s2/favicons?domain=www.themoviedb.org" />
+!The Movie Database
 |https://themoviedb.org
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=thetvdb.com" />
-|The TVDB
+!<img src="https://www.google.com/s2/favicons?domain=thetvdb.com" />
+!The TVDB
 |https://thetvdb.com
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=trakt.tv" />
-|Trakt
+!<img src="https://www.google.com/s2/favicons?domain=trakt.tv" />
+!Trakt
 |https://trakt.tv
 |
 |-
-|<img src="https://www.google.com/s2/favicons?domain=tvtime.com" />
-|TVTime
+!<img src="https://www.google.com/s2/favicons?domain=tvtime.com" />
+!TVTime
 |https://tvtime.com
 |Contributors need to be signed up via their phone to gain access the site, or forcing it trough [https://tvtime.com/en this link].
 |}
@@ -141,8 +141,64 @@ Those are tables which sites are being used by this repository. Please make sure
 ===== Indonesian =====
 {|
 |-
-|Aibou<br />Aizukara<br />Allsub<br />Alter<br />AnimeGokil<br />AniToki<br />Aoi Tenshi<br />Arks<br />A-Subs<br />AW Subs<br />Bentoo<br />Caramel<br />Cijanepoi<br />Conan<br />DAnimeSubs<br />Del<br />DoraNobi Fansub Indo<br />Durandal<br />Emot Pekmen<br />Excalibur<br />exTonan<br />Gantz<br />Gin<br />Haruna<br />Haruzora<br />Hunter No Sekai<br />IA<br />Inazumaotoshi<br />Indis
-|Inform0930<br />Isekai<br />Junk<br />Kazefuri<br />Kinshiru<br />KO<br />Kopaja<br />LCC<br />Manga Neko Translation<br />Melody<br />Mite<br />Nanairo<br />Neo<br />OP Lovers<br />Ougi<br />Panagayan<br />Pendekar<br />Pucuk<br />Quinime<br />Revie Xion<br />Samehadaku<br />Silver Yasha<br />Sora<br />TTOD<br />Vedifi<br />Warung<br />Wibu<br />Yuki<br />Zen
+|*Aibou
+*Aizukara
+*Allsub
+*Alter
+*AnimeGokil
+*AniToki
+*Aoi Tenshi
+*Arks
+*A-Subs
+*AW Subs
+*Bentoo
+*Caramel
+*Cijanepoi
+*Conan
+*DAnimeSubs
+|*Del
+*DoraNobi Fansub Indo
+*Durandal
+*Emot Pekmen
+*Excalibur
+*exTonan
+*Gantz
+*Gin
+*Haruna
+*Haruzora
+*Hunter No Sekai
+*IA
+*Inazumaotoshi
+*Indis
+*Inform0930
+|*Isekai
+*Junk
+*Kazefuri
+*Kinshiru
+*KO
+*Kopaja
+*LCC
+*Manga Neko Translation
+*Melody
+*Mite
+*Nanairo
+*Neo
+*OP Lovers
+*Ougi
+*Panagayan
+|*Pendekar
+*Pucuk
+*Quinime
+*Revie Xion
+*Samehadaku
+*Silver Yasha
+*Sora
+*TTOD
+*Vedifi
+*Warung
+*Wibu
+*Yuki
+*Zen
 |}
 
 ===== English =====
@@ -157,7 +213,7 @@ Those are tables which sites are being used by this repository. Please make sure
 |-
 |AniBatch<br />Anime Kompi<br />AnimeSAVE<br />Bakacan<br />Drivenime<br />Hinime
 |Koenime<br />Kusonime<br />Mikanime<br />Moenime<br />Ryuukoi<br />Wibu Desu!<br />
-|}
+!}
 
 ===== English =====
 {|
@@ -178,7 +234,7 @@ Those are tables which sites are being used by this repository. Please make sure
 |-
 |4anime<br />9anime<br />Anime Daisuki<br />Anime Twist (Twist.moe)<br />Animeflix<br />Anime Heaven
 |Animelon<br />Animeultima<br />AniWatch<br />GogoAnime<br /><del>KissAnime</del><br />WonderfulSubs<br />
-|}
+!}
 
 == Commit and pull request ==
 
