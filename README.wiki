@@ -3,7 +3,7 @@ Head Database Repository of Ryuuganime based on JSON, HJSON, YAML, XML, XLSX and
 
 __TOC__
 
-== More informations ==
+== File format ==
 This database is using [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>) for repository documentation markup format. For indexing, Ryuuganime is using [[/json|JSON]], [[hjson|HJSON]], [[yaml|YAML]], and [[xml|XML]] for current release. [[html|HTML]] and [[xlsx|XLSX]] files are deprecated. 
 
 File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
@@ -11,8 +11,12 @@ File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
 The JSON files that Ryuuganime uses in the [[/json]] folder comply with standards which can also be machine validated with the [[/schemas/entry.json|JSON Schema]] file.
 
 
-== Cloning, contributing, and issuing suggestion/problem ==
+== Contributing ==
+=== Cloning, committing, and issuing suggestion/problem ===
 Please head to [[contributing.wiki]] for more detailed information.
+
+=== File usage ===
+Please refer the manual on [[usage.wiki]].
 
 == Code of conduct ==
 This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. For detailed information, read [[CODE_OF_CONDUCT.wiki]].
@@ -23,19 +27,26 @@ For machine-readable files, you can use the JSON version, namely [[list.json]] (
 
 == License ==
 
-This repository is under [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]].
+This repository is under [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]]. Similar to CC-BY-4.0 but requires derivatives be distributed under the same or a similar, compatible license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software.
 
-You are free:
-* '''to Share'''—to copy, distribute and transmit the work, and
-* '''to Remix'''—to adapt the work for any purpose, even commercially.
+=== Creative Commons Attribution-ShareAlike 4.0 International License ===
+'''''This is a human-readable summary of the full license below.'''''
 
-Under the following conditions:
-* '''Attribution'''—You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work.)
-* '''Share Alike'''—If you alter, transform, or build upon this work, you may distribute the resulting work only under the same, similar or a compatible license.
-With the understanding that:
-* '''Waiver'''—Any of the above conditions can be waived if you get permission from the copyright holder.
-* '''Other Rights'''—In no way are any of the following rights affected by the license:
-** your fair dealing or fair use rights;
-** the author's moral rights; and
-** rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.
-* '''Notice'''—For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do that is with a link to https://creativecommons.org/licenses/by-sa/4.0/
+Under this license, you are free to:
+
+*'''Share''' — copy and redistribute the material in any medium or format
+*'''Adapt''' — remix, transform, and build upon the material for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+'''License terms''':
+
+*'''Attribution''' — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+*'''ShareAlike''' — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+*'''No additional restrictions''' — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+'''Notices:''' 
+*You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+*No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
