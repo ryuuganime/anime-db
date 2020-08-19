@@ -1,9 +1,9 @@
-= Ryuuganime entries usage =
+<h1>Ryuuganime entries usage</h1>
 ''This file will guide user on using Ryuuganime Anime Index File, while we trying our best creating this file like API documentation.''
 
 __TOC__
 
-== First guide and initialization ==
+= First guide and initialization =
 Currently, we don't have any API for accessing database. Instead, you can use GitHub Raw links to access our data.
 
 For machine-readable index listing, please to use [[list.json]] (recommended) or [[list.yaml]].
@@ -12,28 +12,34 @@ We currently provide data in HJSON, JSON, YAML, and XML file at the moment. Thus
 
 This document will covers AIO solution on your project in any programming language.
 
-=== Encoding ===
+== Encoding ==
 Ryuuganime using UTF-8 (Unicode) with Windows' End of Line Sequence format (<code>CRLF</code>).
 
-=== Client ===
-Ryuuganime does not need to create any client first to request API. You only need to use GitHub Raw URL to GET, and you are done!
+== Client ==
+Ryuuganime does not need to create any client first to request API. You only need to use GitHub Raw URL to <code>GET</code>, and you are done!
 
-=== "Parameter" ===
+== Data fetching URI ==
+=== File fetching ===
 *'''Fetching anime data from repo'''
-*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/<RYU-ID1>/<RYU-ID2>.json</pre>
+*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/<RYU-ID>/<RYU-ID>.json</pre>
+*:Please keep in mind that you need to change <code><RYU-ID></code> before fetch data.
 *'''Fetching anime index list'''
 *:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/list.json</pre>
 
+=== Data dumps ===
+*'''GitHub Release'''
+*:<pre>https://github.com/ryuuganime/ryuuganime-db/releases/latest/download/dumps.tar.gz</pre>
+*:All content are gzipped in tarball format.
 
-== Using ryuuganime-db JSON file ==
-=== Introduction ===
-For our basic usage introduction, we will using RYU-1 (Ryuuganime ID: 1) on [[json/000/001.json|<code>json/000/001.json</code>]]. 
+= Using ryuuganime-db JSON file =
+== Introduction ==
+For our basic usage introduction, we will using <code>RYU-1</code> (Ryuuganime ID: 1) on [[json/000/001.json|<code>json/000/001.json</code>]]. 
 
 First, you need to get the latest metadata by request <code>GET</code> HTML data from GitHub Raw:
 <pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/000/001.json</pre>
 
 You will get:
-<details><summary>Anime Data</summary><source lang="json">{
+<source lang="json">{
     "$schema": "../../schemas/entry.json",
     "title": {
         "native": "富豪刑事 Balance:UNLIMITED",
@@ -369,4 +375,30 @@ You will get:
         "submissionDateTime": "2020-05-05T17:26:00+07:00",
         "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
     }
-}</source></details>
+}</source>
+
+== Attributes ==
+{|
+!Field name
+!Type
+!Note
+|<code>title</code>
+|object
+|*Requires:
+*:<code>native</code>, <code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+**Pattern: <code>^[a-z]{2,3}_[\w]{2,4}$</code>
+*Value null: <code>true</code>
+|-
+|:<code>native</code>
+|String
+|A serial title in native/origin language.
+|-
+|:<code>en_Latn</code>
+|String
+|Serial title in romanized text. Required for main title on entry list.
+|-
+|:<code>ar_001</code>
+|String
+|Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+|}
