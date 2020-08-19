@@ -377,42 +377,242 @@ You will get:
     }
 }</source>
 
-== Attributes ==
-{|
-!colspan="3"|Field name
-!Type
-!Note
-|-
-|colspan="3"|<code>title</code>
-|Object
-|
+== JSON attributes ==
+*Type: Object
+*Requires:
+*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>, <code>fansub</code>, <code>fanshare</code>, <code>fanstream</code>, <code>library</code>, <code>signature</code>
+*Additional properties: <code>false</code>
+=== $schema ===
+Path to Ryuuganime JSON schema for Entry.
+*Type: String
+**Format: URI
+*Pattern: <code>"\.\./\.\./schemas/entry\.json</code> or <code>https://raw\.githubusercontent\.com/ryuuganime/ryuuganime-db/master/schemas/entry\.json</code>
+=== title ===
+A serial title in multiple languages. Based on ICU locales.
+*Type: Object
 *Requires:
 *:<code>native</code>, <code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
 *Additional properties: <code>true</code>
 **Pattern: <code>^[a-z]{2,3}_[\w]{2,4}$</code>
 *Value null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
 |-
-| ||colspan="2"|<code>native</code>
+|<code>native</code>
 |String
-|A serial title in native/origin language. '''This field can not be empty'''.
+|A serial title in native/origin language (Canonical).
 |-
-| ||colspan="2"|<code>en_Latn</code>
+|<code>en_Latn</code>
 |String
-|Serial title in romanized text. Required for main title on entry list. '''This field can not be empty'''.
+|Serial title in romanized text. Required for main title on entry list.
 |-
-| ||colspan="2"|<code>ar_001</code>
-|String
+|<code>ar_001</code>
+|String/null
 |Serial title in Modern Standard/Written Arabic (العربية الفصحى).
 |-
-| ||colspan="2"|<code>id_ID</code>
-|String
+|<code>id_ID</code>
+|String/null
 |Serial title in Indonesian.
 |-
-| ||colspan="2"|<code>en_US</code>
-|String
+|<code>en_US</code>
+|String/null
 |Serial title in English (United States) or else.
 |-
-| ||colspan="2"|<code>ja_JP</code>
-|String
+|<code>ja_JP</code>
+|String/null
 |Serial title in Japanese.
+|-
+|<code>de_DE</code>
+|String/null
+|Serial title in German.
+|-
+|<code>ko_KR</code>
+|String/null
+|Serial title in Korean.
+|-
+|<code>fr_FR</code>
+|String/null
+|Serial title in French.
+|-
+|<code>pt_PT</code>
+|String/null
+|Serial title in Portuguese.
+|-
+|<code>ru_RU</code>
+|String/null
+|Serial title in Russian.
+|-
+|<code>es_ES</code>
+|String/null
+|Serial title in Spanish.
+|-
+|<code>zh_Hans</code>
+|String/null
+|Serial title in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String/null
+|Serial title in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String/null
+|Serial title in Vietnamese.
+|}
+
+=== backdrop ===
+A backdrop/background/cover image URI of serial.
+*Type: String
+**Format: URI
+*Pattern: <code>^(https?)://</code>
+
+=== visualKey ===
+A visual key/poster image URI of serial.
+*Type: String
+**Format: URI
+*Pattern: <code>^(https?)://</code>
+
+=== synopsis ===
+A synopsis/plot of story of serial in several languages. Based on ICU locales.
+*Requires:
+*:<code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+*Value null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>ar_001</code>
+|String/null
+|Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+|<code>id_ID</code>
+|String/null
+|Serial synopsis in Indonesian.
+|-
+|<code>en_US</code>
+|String/null
+|Serial synopsis in English (United States) or else.
+|-
+|<code>ja_JP</code>
+|String/null
+|Serial synopsis in Japanese.
+|-
+|<code>de_DE</code>
+|String/null
+|Serial synopsis in German.
+|-
+|<code>ko_KR</code>
+|String/null
+|Serial synopsis in Korean.
+|-
+|<code>fr_FR</code>
+|String/null
+|Serial synopsis in French.
+|-
+|<code>pt_PT</code>
+|String/null
+|Serial synopsis in Portuguese.
+|-
+|<code>ru_RU</code>
+|String/null
+|Serial synopsis in Russian.
+|-
+|<code>es_ES</code>
+|String/null
+|Serial synopsis in Spanish.
+|-
+|<code>zh_Hans</code>
+|String/null
+|Serial synopsis in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String/null
+|Serial synopsis in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String/null
+|Serial synopsis in Vietnamese.
+|}
+
+=== information ===
+A collection of information about serial.
+*Type: Object
+*Requires:
+*:<code>synonyms</code>, <code>type</code>, <code>status</code>, <code>serialGenre</code>, <code>serialTags</code>, <code>releaseSeason</code>, <code>releaseYear</code>, <code>episode</code>, <code>releaseDate</code>, <code>endDate</code>, <code>duration</code>, <code>totalDuration</code>, <code>studio</code>, <code>rating</code>, <code>isNsfw</code>, <code>adaptation</code>, <code>country</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+==== synonyms ====
+Serial title synonyms in several languages. Based on ICU locales.
+*Type: Object
+*Requires:
+*:<code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+*Value null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_Latn</code>
+|String
+|Serial title synonyms in romanized text.
+|-
+|<code>ar_001</code>
+|String/null
+|Serial title synonyms in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+|<code>id_ID</code>
+|String/null
+|Serial title synonyms in Indonesian.
+|-
+|<code>en_US</code>
+|String/null
+|Serial title synonyms in English (United States) or else.
+|-
+|<code>ja_JP</code>
+|String/null
+|Serial title synonyms in Japanese.
+|-
+|<code>de_DE</code>
+|String/null
+|Serial title synonyms in German.
+|-
+|<code>ko_KR</code>
+|String/null
+|Serial title synonyms in Korean.
+|-
+|<code>fr_FR</code>
+|String/null
+|Serial title synonyms in French.
+|-
+|<code>pt_PT</code>
+|String/null
+|Serial title synonyms in Portuguese.
+|-
+|<code>ru_RU</code>
+|String/null
+|Serial title synonyms in Russian.
+|-
+|<code>es_ES</code>
+|String/null
+|Serial title synonyms in Spanish.
+|-
+|<code>zh_Hans</code>
+|String/null
+|Serial title synonyms in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String/null
+|Serial title synonyms in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String/null
+|Serial title synonyms in Vietnamese.
 |}
