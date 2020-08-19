@@ -1422,7 +1422,7 @@
                     "properties": {
                         "code": {
                             "type": "string",
-                            "pattern": "^tt?[0-9]{5,}"
+                            "pattern": "^(tt)?[0-9]{5,}"
                         },
                         "score": {
                             "oneOf": [
@@ -1485,7 +1485,7 @@
                             "oneOf": [
                                 {
                                     "type": "string",
-                                    "pattern": "^[\\w\\-]+"
+                                    "pattern": "^[\\w\\-\\.]+"
                                 },
                                 {
                                     "type": "null"
@@ -3300,7 +3300,7 @@
                 "discordId": {
                     "description": "Discord User ID",
                     "type": "number",
-                    "pattern": "^[0-9]+",
+                    "pattern": "^[0-9]{16,}",
                     "examples": [
                         384089845527478272
                     ]

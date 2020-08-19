@@ -31,9 +31,9 @@ Ryuuganime does not need to create any client first to request API. You only nee
 *:<pre>https://github.com/ryuuganime/ryuuganime-db/releases/latest/download/dumps.tar.gz</pre>
 *:All content are gzipped in tarball format.
 
-= Using ryuuganime-db JSON file =
+= Using ryuuganime-db anime entry JSON file =
 == Introduction ==
-For our basic usage introduction, we will using <code>RYU-1</code> (Ryuuganime ID: 1) on [[json/000/001.json|<code>json/000/001.json</code>]]. 
+For our basic usage introduction, we will using <code>RYU-1</code> (Ryuuganime ID: 1) on [[/json/000/001.json|<code>/json/000/001.json</code>]]. 
 
 First, you need to get the latest metadata by request <code>GET</code> HTML data from GitHub Raw:
 <pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/000/001.json</pre>
@@ -380,8 +380,11 @@ You will get:
 == JSON attributes ==
 *Type: Object
 *Requires:
-*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>, <code>fansub</code>, <code>fanshare</code>, <code>fanstream</code>, <code>library</code>, <code>signature</code>
+*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>,  <code>signature</code>
 *Additional properties: <code>false</code>
+
+;Notice
+:No attributes guideline for <code>fansub</code>, <code>fanshare</code>, <code>fanstream</code>, and <code>library</code>.
 
 === $schema ===
 Path to Ryuuganime JSON schema for Entry.
@@ -706,4 +709,724 @@ Represents serial specific tags/content. Similar to the <code>serialGenres</code
 |<code>id_ID</code>
 |Array
 |Not an enum from: <code>Aksi</code>, <code>Petualangan</code>, <code>Komedi</code>, <code>Kriminalitas</code>, <code>Dokumentasi</code>, <code>Drama</code>, <code>Fantasi</code>, <code>Sejarah</code>, <code>Horror</code>, <code>Dewasa</code>, <code>Mecha</code>, <code>Musik</code>, <code>Misteri</code>, <code>Psikologis</code>, <code>Romansa</code>, <code>Fiksi Ilmiah</code>, <code>Potongan Kehidupan</code>, <code>Olahraga</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>Peperangan</code>
+|}
+
+==== releaseSeason ====
+Season of serial releases.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>, <code>ja_JP</code>, <code>ko_KR</code>, <code>zh_Hans</code>, <code>zh_Hant</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|Enum of: <code>Winter</code>, <code>Spring</code>, <code>Summer</code>, <code>Fall</code>, <code>Unknown</code>
+|-
+|<code>id_ID</code>
+|String
+|Enum of: <code>Dingin</code>, <code>Semi</code>, <code>Panas</code>, <code>Gugur</code>, <code>Tidak Diketahui</code>
+|-
+|<code>ja_JP</code>
+|String
+|Enum of: <code>冬</code>, <code>春</code>, <code>夏</code>, <code>秋</code>, <code>不明</code>
+|-
+|<code>ko_KR</code>
+|String
+|Enum of: <code>겨울</code>, <code>봄</code>, <code>여름</code>, <code>가을</code>, <code>알</code>
+|-
+|<code>zh_Hans</code>
+|String
+|Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
+|-
+|<code>zh_Hant</code>
+|String
+|Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
+|}
+
+==== releaseYear ====
+The year of the serial release, using a integrer/numeral format.
+*Type: Number
+*Minumum number: 1000
+*Maximum number: 2999
+*Value null: <code>true</code>
+
+==== episode ====
+Total episodes of serial.
+*Type: Number
+*Minumum number: 0
+*Value null: <code>true</code>
+
+==== releaseDate ====
+Start date of serial release, using YYYY-MM-DD format.
+*Type: String
+**Format: Date
+*Pattern: <code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})</code>
+*Value null: <code>true</code>
+
+==== endDate ====
+End date of serial release, using YYYY-MM-DD format.
+*Type: String
+**Format: Date
+*Pattern: <code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})</code>
+*Value null: <code>true</code>
+
+==== duration ====
+Duration per serial episode, using minute format.
+*Type: Number
+*Minumum number: 0
+*Value null: <code>true</code>
+
+==== totalDuration ====
+Total serial duration in minutes.
+*Type: Number
+*Minumum number: 0
+*Value null: <code>true</code>
+
+==== studio ====
+Studio producing series.
+*Type: String ''or'' Array
+*Value null: <code>true</code>
+
+==== rating ====
+Content rating of the serial
+*Type: String
+*Enum: <code>G0+</code>, <code>PS2+</code>, <code>PG7+</code>, <code>PG13+</code>, <code>R8+</code>, <code>GU21+</code>
+*Value null: <code>true</code>
+
+==== isNsfw ====
+Mark the serial if contains NSFW content.
+*Type: Boolean
+*Value null: <code>false</code>
+
+==== adaptation ====
+Mark the serial if it's adapted from different source or not.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String/null
+|Enum of: <code>Original</code>, <code>Comic</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Game</code>, <code>Music</code>, <code>Drama</code>, <code>4-koma</code>, <code>Fairy Tale</code>
+|-
+|<code>id_ID</code>
+|String/null
+|Enum of: <code>Orisinal</code>, <code>Komik</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Gim</code>, <code>Musik</code>, <code>Drama</code>, <code>4-panel</code>, <code>Dongeng</code>
+|}
+
+==== country ====
+Country of origin of serial. No country restrictions for this field.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|
+|-
+|<code>id_ID</code>
+|String
+|
+|}
+
+=== scores ===
+Scores from several websites
+*Type: Object
+*Requires:
+*:<code>aniDB</code>, <code>AniList</code>, <code>AnimePlanet</code>, <code>ANN</code>, <code>aniSearch</code>, <code>Annict</code>, <code>IMDb</code>, <code>KinoPoisk</code>, <code>Kitsu</code>, <code>LiveChart</code>, <code>MyAnimeList</code>, <code>MyShows</code>, <code>Nautiljon</code>, <code>Notify</code>, <code>OtakOtaku</code>, <code>Shikimori</code>, <code>SIMKL</code>, <code>TMDB</code>, <code>Trakt</code>, <code>TVTime</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+{|
+!colspan="2"|Field name
+!Type
+!Note
+|-
+|colspan="2"|<code>aniDB</code>
+|Object
+|
+*URL: https://anidb.net/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>AniList</code>
+|Object
+|
+*URL: https://anilist.co/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>AnimePlanet</code>
+|Object
+|
+*URL: https://anime-planet.com/
+*Required: <code>url</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://www\.anime-planet\.com/anime/[a-z0-9\-]+</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.000
+*Maximum: 5.000
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>ANN</code>
+|Object
+|
+*URL: https://animenewsnetwork.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.000
+*Maximum: 10.000
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>aniSearch</code>
+|Object
+|
+*URL: https://anisearch.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Annict</code>
+|Object
+|
+*URL: https://annict.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>IMDb</code>
+|Object
+|
+*URL: https://imdb.com/
+*Required: <code>code</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>code</code>
+|String
+|
+*Pattern: <code>^(tt)?[0-9]{5,}</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.0
+*Maximum: 10.0
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>KinoPoisk</code>
+|Object
+|
+*URL: https://kinopoisk.ru/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Kitsu</code>
+|Object
+|
+*URL: https://kitsu.io/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Dependency:
+**<code>id</code>: <code>slug</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>slug</code>
+|String
+|
+*Pattern: <code>^[\w\-\.]+</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>LiveChart</code>
+|Object
+|
+*URL: https://livechart.me/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>MyAnimeList</code>
+|Object
+|
+*URL: https://myanimelist.net/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>MyShows</code>
+|Object
+|
+*URL: https://en.myshows.me/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 5.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Nautiljon</code>
+|Object
+|
+*URL: https://nautiljon.com/
+*Required: <code>url</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://(www\.)?nautiljon\.com/animes/</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Notify</code>
+|Object
+|
+*URL: https://notify.moe/
+*Required: <code>base64</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>base64</code>
+|String
+|
+*Pattern: <code>^[\w_\-]+</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>OtakOtaku</code>
+|Object
+|
+*URL: https://otakotaku.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Shikimori</code>
+|Object
+|
+*URL: https://shikimori.org/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Dependencies:
+**<code>moved</code>: <code>newId</code>
+**<code>newId</code>: <code>moved</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>moved</code>
+|Boolean
+|
+*Default: <code>false</code>
+|-
+|
+|<code>newId</code>
+|String
+|
+*Pattern: <code>^[A-Za-z]+[0-9]+</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>SIMKL</code>
+|Object
+|
+*URL: https://simkl.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.0
+*Maximum: 10.0
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>TMDB</code>
+|Object
+|
+*URL: https://themoviedb.org/
+*Required: <code>id</code>, <code>score</code>
+*Dependency:
+**<code>id</code>: <code>url</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://(www\.themoviedb|themoviedb)\.org/(movie|tv)/[0-9]+</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>Trakt</code>
+|Object
+|
+*URL: https://trakt.tv/
+*Required: <code>id</code>, <code>score</code>
+*Dependency:
+**<code>id</code>: <code>url</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://trakt\.tv/(movies|shows)/([0-9]+|[\w\-]+)</code>
+*Value null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Value null: <code>true</code>
+|-
+|colspan="2"| <code>TVTime</code>
+|Object
+|
+*URL: https://www.tvtime.com/en
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Value null: <code>true</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Value null: <code>true</code>
+|}
+
+=== updatedDate ===
+Date and time of latest changes to JSON. Based on ISO 8601.
+*Type: String
+*Format: Date-Time
+*Pattern: 
+*:<pre>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\-|\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})</pre>
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+=== signature ===
+A virtual signature of entry contributor
+*Type: Object
+*Requires: <code>name</code>, <code>username</code>, <code>discordId</code>, <code>submissionDateTime</code>, <code>sign</code>, 
+*Additional properties: <code>false</code>
+*Value null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>name</code>
+|String
+|
+Contributor's name
+*Pattern: <code>^[\w\s\W\S]+</code>
+*Value null: <code>false</code>
+|-
+|<code>username</code>
+|String
+|
+Contributor GitHub username
+*Pattern: <code>^@[\w\s\W\S\.\-_]+</code>
+*Value null: <code>false</code>
+|-
+|<code>discordId</code>
+|Number
+|
+Discord User ID
+*Pattern: <code>^[0-9]{16,}</code>
+*Value null: <code>false</code>
+|-
+|<code>submissionDateTime</code>
+|String
+|
+Date and time of submission
+*Pattern: 
+*:<pre>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\-|\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})</pre>
+*Value null: <code>false</code>
+|-
+|<code>sign</code>
+|String/Number
+|
+Unique random characters made by contributor
+*Value null: <code>false</code>
 |}
