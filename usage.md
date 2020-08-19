@@ -1,39 +1,58 @@
-= Ryuuganime entries usage =
-''This file will guide user on using Ryuuganime Anime Index File, while we trying our best creating this file like API documentation.''
+# Ryuuganime entries usage
 
-__TOC__
+_This file will guide user on using Ryuuganime Anime Index File, while
+we trying our best creating this file like API documentation._
 
-== First guide and initialization ==
+## Table of Content
+
+
+## First guide and initialization
+
 Currently, we don't have any API for accessing database. Instead, you can use GitHub Raw links to access our data.
 
-For machine-readable index listing, please to use [[list.json]] (recommended) or [[list.yaml]].
+For machine-readable index listing, please to use [list.json](list.json) (recommended) or [list.yaml](list.yaml).
 
-We currently provide data in HJSON, JSON, YAML, and XML file at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
+We currently provide data in HJSON, JSON, YAML, and XML file at the moment. Thus, all data were standardized by our [JSON Schema for entry](schemas/entry.json).
 
 This document will covers AIO solution on your project in any programming language.
 
-=== Encoding ===
-Ryuuganime using UTF-8 (Unicode) with Windows' End of Line Sequence format (<code>CRLF</code>).
+### Encoding
 
-=== Client ===
+Ryuuganime using UTF-8 (Unicode) with Windows' End of Line Sequence format (`CRLF`).
+
+### Client
+
 Ryuuganime does not need to create any client first to request API. You only need to use GitHub Raw URL to GET, and you are done!
 
-=== "Parameter" ===
-*'''Fetching anime data from repo'''
-*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/<RYU-ID1>/<RYU-ID2>.json</pre>
-*'''Fetching anime index list'''
-*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/list.json</pre>
+### "Parameter"
 
+* **Fetching anime data from repo**
+      
+```bash
+https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/<RYU-ID1>/<RYU-ID2>.json
+```
+* **Fetching anime index list**
+```bash
+https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/list.json
+```
 
-== Using ryuuganime-db JSON file ==
-=== Introduction ===
-For our basic usage introduction, we will using RYU-1 (Ryuuganime ID: 1) on [[json/000/001.json|<code>json/000/001.json</code>]]. 
+## Using ryuuganime-db JSON file
 
-First, you need to get the latest metadata by request <code>GET</code> HTML data from GitHub Raw:
-<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/000/001.json</pre>
+### Introduction
+
+For our basic usage introduction, we will using RYU-1 (Ryuuganime ID: 1)
+on [`json/000/001.json`](json/000/001.json).
+
+First, you need to get the latest metadata by request `GET` HTML data
+from GitHub Raw:
+```bash
+https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/000/001.json
+```
 
 You will get:
-<details><summary>Anime Data</summary><source lang="json">{
+<details>
+<summary>Anime Data</summary>
+<source lang="json">{
     "$schema": "../../schemas/entry.json",
     "title": {
         "native": "富豪刑事 Balance:UNLIMITED",
@@ -369,4 +388,5 @@ You will get:
         "submissionDateTime": "2020-05-05T17:26:00+07:00",
         "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
     }
-}</source></details>
+}</source>
+</details>
