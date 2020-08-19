@@ -8,12 +8,12 @@ Currently, we don't have any API for accessing database. Instead, you can use Gi
 
 For machine-readable index listing, please to use [[list.json]] (recommended) or [[list.yaml]].
 
-We currently provide data in HJSON, JSON, YAML, and XML file at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
+We currently provide data in [[/hjson|HJSON]], [[/json|JSON]], [[/yaml|YAML]], and [[/xml|XML]] file format. at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
 
 This document will covers AIO solution on your project in any programming language.
 
 == Encoding ==
-Ryuuganime using UTF-8 (Unicode) with Windows' End of Line Sequence format (<code>CRLF</code>).
+Ryuuganime is using UTF-8 (Unicode) with Windows' End of Line Sequence format (<code>CRLF</code>).
 
 == Client ==
 Ryuuganime does not need to create any client first to request API. You only need to use GitHub Raw URL to <code>GET</code>, and you are done!
@@ -379,27 +379,40 @@ You will get:
 
 == Attributes ==
 {|
-!Field name
+!colspan="3"|Field name
 !Type
 !Note
 |-
-|<code>title</code>
-|object
-|*Requires:
+|colspan="3"|<code>title</code>
+|Object
+|
+*Requires:
 *:<code>native</code>, <code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
 *Additional properties: <code>true</code>
 **Pattern: <code>^[a-z]{2,3}_[\w]{2,4}$</code>
 *Value null: <code>true</code>
 |-
-|:<code>native</code>
+| ||colspan="2"|<code>native</code>
 |String
-|A serial title in native/origin language.
+|A serial title in native/origin language. '''This field can not be empty'''.
 |-
-|:<code>en_Latn</code>
+| ||colspan="2"|<code>en_Latn</code>
 |String
-|Serial title in romanized text. Required for main title on entry list.
+|Serial title in romanized text. Required for main title on entry list. '''This field can not be empty'''.
 |-
-|:<code>ar_001</code>
+| ||colspan="2"|<code>ar_001</code>
 |String
 |Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+| ||colspan="2"|<code>id_ID</code>
+|String
+|Serial title in Indonesian.
+|-
+| ||colspan="2"|<code>en_US</code>
+|String
+|Serial title in English (United States) or else.
+|-
+| ||colspan="2"|<code>ja_JP</code>
+|String
+|Serial title in Japanese.
 |}
