@@ -382,6 +382,7 @@ You will get:
 !Field name
 !Type
 !Note
+|-
 |<code>title</code>
 |object
 |*Requires:
