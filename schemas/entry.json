@@ -9,11 +9,11 @@
             "type": "string",
             "oneOf": [
                 {
-                    "pattern": "\\.\\./\\.\\./schemas/entry.json"
+                    "pattern": "\\.\\./\\.\\./schemas/entry\\.json"
                 },
                 {
                     "format": "uri",
-                    "pattern": "https://raw\\.githubusercontent\\.com/ryuuganime/ryuuganime-db/master/schemas/entry.json"
+                    "pattern": "https://raw\\.githubusercontent\\.com/ryuuganime/ryuuganime-db/master/schemas/entry\\.json"
                 }
             ]
         },
@@ -3340,6 +3340,7 @@
     },
     "additionalProperties": false,
     "required": [
+        "$schema",
         "title",
         "backdrop",
         "visualKey",
