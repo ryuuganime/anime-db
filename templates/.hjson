@@ -3,7 +3,7 @@
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | |   // is an important notes   |
 |                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION:  1.0-r------- | | [boo] is a boolean markup    | |                              |
+| -------VERSION:  1.1-r------- | | [boo] is a boolean markup    | |                              |
 |                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
 | Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
 |   non-developer to contribute | | [arr] is an array value. It  | |                              |
@@ -416,6 +416,22 @@
       en_US: 
       id_ID: 
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: 
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+
+    ]
   }
 
   # scores [obj] > [str]/[num] <nab>

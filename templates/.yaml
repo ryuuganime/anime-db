@@ -82,6 +82,9 @@ information:
     country:
         en_US: ''
         id_ID: ''
+    officialWebsite: 
+    promotionalVideos: []
+    producers: []
 scores:
     aniDB:
         id: 0

@@ -127,7 +127,14 @@
         "country": {
             "en_US": "",
             "id_ID": ""
-        }
+        },
+        "officialWebsite": "",
+        "promotionalVideos": [
+
+        ],
+        "producers": [
+            
+        ]
     },
     "scores": {
         "aniDB": {

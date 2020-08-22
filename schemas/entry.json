@@ -1139,6 +1139,27 @@
                         "id_ID"
                     ],
                     "additionalProperties": false
+                },
+                "officialWebsite": {
+                    "description": "Links to official website of current entry",
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https?://(www\\.)?"
+                },
+                "promotionalVideos": {
+                    "description": "List of promotional videos of current entry",
+                    "type": "array",
+                    "contains": {
+                        "type": "string",
+                        "format": "uri",
+                    }
+                },
+                "producers": {
+                    "description": "Producers that involved to current entry/project",
+                    "type": "array",
+                    "contains": {
+                        "type": "string"
+                    }
                 }
             },
             "required": [
@@ -1158,7 +1179,10 @@
                 "rating",
                 "isNsfw",
                 "adaptation",
-                "country"
+                "country",
+                "officialWebsite",
+                "promotionalVideos",
+                "producers"
             ]
         },
         "scores": {
