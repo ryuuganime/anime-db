@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.2.3-a",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.2.4-a",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
@@ -1151,7 +1151,7 @@
                     "type": "array",
                     "contains": {
                         "type": "string",
-                        "format": "uri",
+                        "format": "uri"
                     }
                 },
                 "producers": {
