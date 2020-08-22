@@ -658,127 +658,87 @@
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: 
-      Aizukara: 
-      Allsub: 
-      Alter: 
-      AnimeGokil: 
-      AniToki: 
-      AoiTenshi: 
-      Arks: 
-      ASubs: 
-      AWSubs: 
-      Bentoo: 
-      Caramel: 
-      Cijanepoi: 
-      Conan: 
-      DAnimeSubs: 
-      Del: 
-      DNFI: 
-      Durandal: 
-      EmotPekmen: 
-      Excalibur: 
-      exTonan: 
-      Gantz: 
-      Gin: 
-      Haruna: 
-      Haruzora: 
-      HunterNoSekai: 
-      IA: 
-      Inazumaotoshi: 
-      Indis: 
-      Inform0930: 
-      Isekai: 
-      Junk: 
-      Kazefuri: 
-      Kinshiru: 
-      KO: 
-      Kopaja: 
-      LCC: 
-      MangaNekoTranslation: 
-      Melody: 
-      Mite: 
-      Nanairo: 
-      Neo: 
-      OPLovers: 
-      Ougi: 
-      Panagayan: 
-      Pendekar: 
-      Pucuk: 
-      Quinime: 
-      RevieXion: 
-      Samehadaku: 
-      SilverYasha: 
-      Sora: 
-      TTOD: 
-      Vedifi: 
-      Warung: 
-      Wibu: 
-      Yuki: 
-      Zen: 
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: 
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: 
-      AnimeKompi: 
-      AnimeSAVE: 
-      Bakacan: 
-      Drivenime: 
-      Hinime: 
-      Koenime: 
-      Kusonime: 
-      Mikanime: 
-      Moenime: 
-      Ryuukoi: 
-      WibuDesu: 
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: 
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: 
-      anoBoy: 
-      Gomunime: 
-      Moeclip: 
-      Neonime: 
-      Onnime: 
-      OtakuIndo: 
-    }
-    eng:
-    {
-      fourAnime: 
-      nineAnime: 
-      AnimeDaisuki: 
-      AnimeTwist: 
-      Animeflix: 
-      AnimeHeaven: 
-      Animelon: 
-      Animeultima: 
-      AniWatch: 
-      GogoAnime: 
-      WonderfulSubs: 
-    }
-  }
-  library:
-  {
-    Nyaa: 
-    PerpusIndo: 
   }
 
   # signature
@@ -791,7 +751,7 @@
 
     # username [str] <nbl>
     # = Your username on GitHub
-    username:
+    username: 
 
     # discordId [num] <nbl>
     # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
