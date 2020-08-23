@@ -1,194 +1,217 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, dan "false" salah.  |
-|   ngan catatan  tata cara pe- | |          ini adalah          | | [arr] merupakan markah array |
-|   ngisian data.               | |    sebuah teks multi baris   | |   yaitu sebuah  koleksi ter- |
-|                               | |                          ''' | |   urut dan memiliki tipe da- |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   ta yang berbeda.           |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | | [obj] merupakan markah obyek |
-|                               | | ru pada suatu value          | |   menandakan bahwa value be- |
-| <url>  String  berisi  tautan | |                              | |   rikut  memiliki   beberapa |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah | // Petunjuk awal:                |   value di dalamnya.         |
-|   menjadi array apabila objek | // Koma (,)  dalam format berkas |                              |
-|   dalam satu  value lebih ba- | //    ini bersifat opsional, te- \^----------------------------^/
-|   nyak daripada satu.         | //    tapi lebih baik diikutsertakan agar mempermudah mesin dalam
-| <nab> array dapat dihilangkan | //    mengubah format HJSON ke JSON.  Hanya pada value yang memi-
-|   tanda  kurungnya, dan dija- | //    liki markah  [arr]  yang tidak memerlukan tanda koma karena
-|   dikan sebagai null.         | //    akan mengakibatkan tanda koma terbaca sebagai string/enum.
-| <nbl> string,  numeral,  atau | // Tanda petik (quotation  mark)  dalam berkas ini  juga bersifat
-|   array  terkait  tidak  bisa | //    opsional.  Gunakan tanda  petik JIKA mengandung spasi dalam
-|   diubah menjadi null.        | //    kata.
-|                               | // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/000/001
-\^-----------------------------^/ //    .hjson atau selebihnya untuk contoh pengisian.
-/^          RYUUGANIME            // !! Dokumen ini telah diberikan  justifikasi  (justify)  secara
-    HJSON ANIME ENTRY TEMPLATE    //    merata dan terdistribusi  (distributed) pada teks agar mem-
-          VERSION: 0.5-b       */ //    permudah dalam membaca dokumentasi yang tertera.
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
+
 { 
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title:
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial,  contoh "アサティール 未来の昔ばなし" dalam  bahasa Jepang un-
-    #   tuk anime Asatir: Mirai no Mukashi Banashi yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native: さらざんまい
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang),  Romaja (Korea), atau Latin. Diperlukan untuk pe-
-    #   namaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Sarazanmai
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan bahwa menggunakan logat Arab
-    #   Modern yang telah distandarkan (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: سارازانماي
 
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: Sarazanmai
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: Sarazanmai
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: さらざんまい
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: Sarazanmai
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 사라잔마이
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: Sarazanmai
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: Sarazanmai
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Сарадзаммай
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: Sarazanmai
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 皿三昧
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 皿三昧
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: Sarazanmai
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://artworks.thetvdb.com/banners/fanart/original/5c83e7ceef84f.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://artworks.thetvdb.com/banners/posters/5c83e72ce92c5.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab.  001 adalah kode ICU untuk menunjukkan bahwa  menggunakan logat
-    #   Arab  Modern yang telah distandarkan (Arabic MSA).  Lihat TVDB,  Arab Sama, atau  Wikipedia
-    #   untuk sinopsis berbahasa Arab.
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''“كازوكي ياساكا”، طالب في الصف الثامن يعيش في “اساكوسا”، يتحول إلى وحش كابا إضافة إلى زملائه في الفصل “توي” و”انتا” بواسطة مخلوق غامض يدعى “كابي” بعد أن كسروا تمثالًا لكابا، إله يحمي المدينة.'''
 
     # id_ID [str] <nab>
-    # = Sinopsis dalam  bahasa Indonesia. Lihat Otak Otaku untuk sinopsis Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Suatu hari, tiga siswa SMA kelas dua; Kazuki Yasaka, Toi Kuji, dan Enta Jinai bertemu dengan kappa bernama Keppi, yang merupakan pewaris takhta Kerajaan Kappa. Keppi terpaksa mengambil paksa shirikodama mereka dan mengubah mereka menjadi kappa...'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB, Kitsu, atau MyAnimeList un-
-    #   tuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''After the noble Kappa Kingdom falls to the Otter Empire, the Kappa prince Keppi loses much of his power and becomes helpless against the unseen Kapa-zombies. These zombies plague the world, and are the creations of the Otters and manifestations of people's deepest desires. With no other choice, Keppi must rely on three young boys: Kazuki Yasaka, who must carry a box with him wherever he goes; Enta Jinnai, Kazuki's childhood friend; and Tooi Kuji, a delinquent and a school truant.
 
 By having the mythical organ called a shirikodama removed from them, the boys are able to become Kappa themselves and fight the Kapa-zombies. However, to defeat them, the boys must connect with each other via their minds, bodies, and—most importantly—secrets. As the Kappa Kingdom relies on these boys, they must reveal themselves as they have never done before, all the while learning that connections are fragile and truly precious things.'''
 
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict atau TVDB untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''舞台は浅草。 中学2年生の矢逆一稀、久慈悠、陣内燕太の３人はある日、謎のカッパ型生命体“ケッピ”に出会い、 無理やり尻子玉を奪われカッパに変身させられてしまう。 『元の姿に戻りたければ“ある方法”でつながり、ゾンビの尻子玉を持ってこい』 ケッピにそう告げられる3人。少年たちはつながりあい、ゾンビの尻子玉を奪うことができるのか？！ 同じ頃、新星玲央と阿久津真武が勤務する交番でも 何かが起ころうとしていたー。'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''Der Original-Anime Sarazanmai entführt uns in den Tokioter Stadtteil Asakusa, wo die drei Freunde Kazuki Yasaka, Tooi Kuji und Enta Jinnai eine Kreatur namens Keppi antreffen, die sich selbst als den Thronfolger des Kappa-Königreichs ausgibt. Keppi fackelt auch nicht lang und stiehlt die Shirikodama – ein mythisches Organ, das von Kappas gestohlen werden muss, bevor sie an die Leber ihrer Opfer gelangen – der drei Mittelschüler und verwandelt sie so kurzerhand selbst in Kappas. Um wieder zu Menschen zu werden, so erklärt Keppi ihnen, müssen sie nun die Shirikodama von Zombies sammeln und zu ihm bringen. Dabei gibt er ihnen noch mit auf den Weg, dass sie sich »auf diese bestimmte Weise« miteinander verbinden müssten …
 
 Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombies zu sammeln und wieder zu Menschen zu werden? <br>Quelle: <a href="https://www.anisearch.de/anime/13435,sarazanmai">aniSearch.de</a>'''
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan. Lihat Watcha, Onnada, Namu, TVDB, atau Wikipedia untuk
-    #   sinopsis.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: '''어느 날 캇파 왕국 제1 왕위계승자라 자칭하는 수수께끼의 캇파 생명체 켓피에게 시리코다마를 빼앗겨 캇파로 변해버린 중학교 2학년 남학생들의 이야기를 그린 애니메이션'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan.  Lihat Nautiljon atau TVDB un-
-    #   tuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''L’histoire se déroule à Asakusa. Kazuki Yasaka, Toi Kuji et Enta Jinnai, tous trois en 5e, font un beau jour la rencontre de Keppi, un être mystérieux à l’apparence de kappa. Ce dernier leur subtilise leur shirikodama, une boule mystique logée dans l’anus, et ils se transforment en kappa eux-mêmes. Keppi leur déclare que pour retrouver leur apparence initiale, ils devront lui rapporter le shirikodama d’un zombie. Y parviendront-ils ? Au même moment, au poste de police où travaillent Reo Niiboshi et Mabu Akutsu, quelque chose est sur le point de se produire...'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''Um dia, em Asakusa, três estudantes do fundamental - Kazuki Yasaka, Toi Kuji e Enta Jinnai - conhecem Keppi, um misterioso kappa que rouba suas jóias místicas e os transforma em kappas. Para voltar para sua forma original, eles precisam enfrentar kappas zumbis e roubar as jóias místicas deles. Ao mesmo tempo, algo estranho está acontecendo na delegacia onde trabalham Reo Niiboshi e Mabu Akutsu. Esta é a história de três garotos que não conseguem se conectar com alguém que lhes é importante, e estão aprendendo o verdadeiro significado dessas conexões.'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.  Lihat Shikimori, Kinopoisk, atau Wikipedia untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Место действия этой истории — Асакуса, один из кварталов Токио.
 Однажды трое учеников второго года средней школы — Кадзуки Ясака, Той Кудзи и Энта Дзиннай — встречают Кэппи, странное существо, очень похожее на каппу, и по совместительству самопровозглашённого наследника трона королевства Каппа. Кэппи забирает у ребят сирикодама (яп. 尻子玉, шарик из плоти, мифический орган, который каппа крадёт у людей через анус), тем самым превращая их в капп. Теперь, чтобы вернуть прежний облик, мальчики должны соединиться «неким способом» и принести Кэппи сирикодама зомби. Смогут ли ребята соединиться и забрать сирикодама у зомби? Тем временем двое полицейских, Рэо Нибоси и Мабу Акуцу, что-то замышляют в своей будке.'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: '''Nos encontramos en Asakusa, donde los estudiantes de segundo año de secundaria Kazuki Yasaka, Toi Kuji y Enta Jinnai conocerán a Keppi, una misteriosa criatura con aspecto de kapa que les roba la shirikodama a todos y los transforma en kappas. "Si quieren recuperar su forma original deberán luchar contra los zombis y tomar sus shirikodamas". ¿Podrán conectar los jóvenes entre sí y enfrentar a los zombis como les piden? Mientras tanto, algo ocurre en la estación de policía donde trabajan Reo Niiboshi y Mabu Akutsu.'''
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Lihat Douban, TVDB, atau Wiki-
-    #   pedia untuk sinopsis Mandarin.
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hans: '''舞台是浅草。初中二年级的矢逆一稀、久慈悠、阵内燕太三人，某天遇到了神秘的河童型生命体“Keppi”，并被强行夺走了尻子玉而变成了河童。“想要变回原状的话，就通过‘某个方法’产生联系，并把僵尸的尻子玉拿来吧”。Keppi如此告知三人。究竟少年们能否相互产生联系，并夺取僵尸的尻子玉呢？！与此同时，新星玲央和阿久津真武执勤的派出所，似乎也发生了什么。'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional).  Gunakan converter daring untuk
-    #   mengubah aksara Mandarin ke Kanton. 
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''舞台是淺草。初中二年級的矢逆一稀、久慈悠、陣內燕太三人，某天遇到了神秘的河童型生命體“Keppi”，並被強行奪走了尻子玉而變成了河童。 “想要變回原狀的話，就通過‘某個方法’產生聯系，並把僵尸的尻子玉拿來吧”。Keppi如此告知三人。究竟少年們能否相互產生聯系，並奪取僵尸的尻子玉呢？！與此同時，新星玲央和阿久津真武執勤的派出所，似乎也發生了什麼。'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: '''Một ngày nọ, ba cậu học sinh sơ trung – Kazuki Yasaka, Toi Kuji, và Enta Jinai – tình cờ gặp một sinh vật lạ có hình dáng giống kappa, tên của nó là Keppi và nó tự xưng mình là người kế thừa ngôi vị tại vương quốc Kappa. Keppi đã dùng sức mạnh của mình mà lấy đi shirikodama của ba cậu bé (theo truyền thuyết shirikodama là một bộ phận kì bí giấu trong hậu môn của mỗi người, thứ mà kappa rất thèm muốn) và cả ba cậu bé đều đã bị biến thành kappa. Keppi nói với chúng rằng: “Nếu các ngươi muốn trở lại thành người, các ngươi cần phải được kết nối bằng “cách đó” và các ngươi phải mang cho ta shirikodama của lũ thây ma.” Liệu những cậu bé ấy có thể hoàn thành nhiệm vụ và trở lại thành người không?'''
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: null
@@ -207,38 +230,42 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
       vi_VN: null
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: TV
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Serial TV
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
+      // Allowed values are
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Action
@@ -248,12 +275,16 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
         Comedy
         Romance
         Slice of Life
-        Sci-Fi
+        Science Fiction
         Music
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Aksi
@@ -262,20 +293,20 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
         Drama
         Komedi
         Romansa
-        Sci-Fi
+        Fiksi Ilmiah
         Potongan Kehidupan
         Musik
       ]
     }
 
     # serialTags [obj]
-    # = Merupakan  tags/jenis konten spesifik serial.   Serupa dengan serialGenre,  tetapi biasanya
-    #   lebih fokus terhadap isi konten, alur cerita, hingga tema. Lihat wiki untuk informasi lebih
-    #   lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Psychology
@@ -304,7 +335,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
       ]
 
       # id_ID [arr] <nbl>
-      # = Tag serial dalam bahasa Indonesia
+      # = Serial tags in Indonesian.
       id_ID:
       [
         Psikologis
@@ -333,78 +364,79 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Spring
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Semi
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 春
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 봄
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 春天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 春天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2019
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 11
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2019-04-12
 
     # endDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2019-06-21
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 23
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: 253
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: [
       MAPPA
       Lapin Track
     ]
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi lebih lanjut.
-    // Argumen yang diperbolehkan ialah: G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: PG13+
 
     # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah false, yakni aman.
-    // Argumen yang diperbolehkan ialah true dan false
+    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
+    #   known as safe.
+    //  Allowed values are "true" and "false"
     isNsfw: true
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
       // Argumen yang diperbolehkan ialah: Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin,
@@ -417,24 +449,45 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: http://sarazanmai.com/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/SmjKRnEyai0
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Aniplex
+      Dentsu
+      Movic
+      Fuji TV
+      Gentosha Comics
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan pada score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13869
       score: 5.65
     }
@@ -443,8 +496,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 101261
       score: 74
     }
@@ -453,12 +506,12 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/sarazanmai
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 9796
       score: 3.918
     }
@@ -467,8 +520,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 21544
       score: 7.247
     }
@@ -477,12 +530,12 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/13435,sarazanmai
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13435
       score: 62
     }
@@ -491,8 +544,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 5780
       score: 92.41
     }
@@ -500,10 +553,9 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi perbedaan terletak pada penambahan huruf identifikasi yang digu-
-      #   nakan oleh IMDb seperti tt6751668. tt merupakan identifikasi dan 6751668 merupakan ID se-
-      #   rial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt8096510
       score: 7.0
     }
@@ -512,8 +564,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1208412
       score: null
     }
@@ -522,12 +574,12 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: sarazanmai
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 41017
       score: 76.04
     }
@@ -536,8 +588,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 3127
       score: 7.66
     }
@@ -546,8 +598,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 37426
       score: 7.59
     }
@@ -556,8 +608,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 61181
       score: 4.12
     }
@@ -566,7 +618,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.nautiljon.com/animes/sarazanmai.html
       score: 7.96
     }
@@ -575,7 +627,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: SJed2FiiR
       score: 7.11
     }
@@ -584,8 +636,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1372
       score: 5
     }
@@ -594,8 +646,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 37426
       score: 7.59
     }
@@ -604,8 +656,8 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 776633
       score: 7.2
     }
@@ -614,12 +666,12 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/tv/86919-sarazanmai
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 86919
       score: 83
     }
@@ -628,12 +680,12 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/shows/sarazanmai
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 144651
       score: 71
     }
@@ -642,27 +694,27 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 357047
       score: 9.62
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul  terakhir pengambilan  data informasi  dan skor entri terkait.  Menggunakan
-  #   format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut.
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-31T01:09:18+07:00
   fansub:
@@ -789,42 +841,42 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
   }
 
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Natsu Tadama
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username: @nattadasu
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord. Secara  default, ID menggunakan  dari ID server
-    #   Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 384089845527478300
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).  Menggunakan format ISO 8601. Lihat pandu-
-    #   an dibawah untuk informasi lebih lanjut.
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
     submissionDateTime: 2020-07-31T01:22:13+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data. Boleh meng-
-    #   gunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
   }
 }

@@ -72,14 +72,14 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
             <en_US>Slice of Life</en_US>
             <en_US>Action</en_US>
             <en_US>Horror</en_US>
-            <en_US>Sci-Fi</en_US>
+            <en_US>Science Fiction</en_US>
             <id_ID>Petualangan</id_ID>
             <id_ID>Drama</id_ID>
             <id_ID>Fantasi</id_ID>
             <id_ID>Potongan Kehidupan</id_ID>
             <id_ID>Aksi</id_ID>
             <id_ID>Horror</id_ID>
-            <id_ID>Sci-Fi</id_ID>
+            <id_ID>Fiksi Ilmiah</id_ID>
         </serialGenre>
         <serialTags>
             <en_US>Demons</en_US>
@@ -153,6 +153,15 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
             <en_US>Japan</en_US>
             <id_ID>Jepang</id_ID>
         </country>
+        <officialWebsite>http://somali-anime.com/</officialWebsite>
+        <promotionalVideos>https://youtu.be/XRIXy8zngZc</promotionalVideos>
+        <producers>Movic</producers>
+        <producers>North Stars Pictures</producers>
+        <producers>JY Animation</producers>
+        <producers>Crunchyroll SC Anime Fund</producers>
+        <producers>CA-Cygames Anime Fund</producers>
+        <producers>HORNETS</producers>
+        <producers>Mixer</producers>
     </information>
     <scores>
         <aniDB>

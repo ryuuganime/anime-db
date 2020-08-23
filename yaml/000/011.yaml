@@ -1,5 +1,5 @@
 ---
-"$schema": "../../schemas/entry.json"
+$schema: ../../schemas/entry.json
 title:
     native: 抱かれたい男1位に脅されています。
     en_Latn: Dakaretai Otoko 1-i ni Odosarete Imasu.
@@ -194,6 +194,15 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: http://dakaretai-1st.com/
+    promotionalVideos:
+    - https://www.youtube.com/watch?v=y5-vN3E7k5c
+    - https://www.youtube.com/watch?v=Uryd9jVRRqQ
+    producers:
+    - Aniplex
+    - Movic
+    - Libre
+    - animate
 scores:
     aniDB:
         id: 13979

@@ -72,7 +72,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
             <en_US>Comedy</en_US>
             <en_US>Romance</en_US>
             <en_US>Slice of Life</en_US>
-            <en_US>Sci-Fi</en_US>
+            <en_US>Science Fiction</en_US>
             <en_US>Music</en_US>
             <id_ID>Aksi</id_ID>
             <id_ID>Fantasi</id_ID>
@@ -80,7 +80,7 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
             <id_ID>Drama</id_ID>
             <id_ID>Komedi</id_ID>
             <id_ID>Romansa</id_ID>
-            <id_ID>Sci-Fi</id_ID>
+            <id_ID>Fiksi Ilmiah</id_ID>
             <id_ID>Potongan Kehidupan</id_ID>
             <id_ID>Musik</id_ID>
         </serialGenre>
@@ -158,6 +158,13 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
             <en_US>Japan</en_US>
             <id_ID>Jepang</id_ID>
         </country>
+        <officialWebsite>http://sarazanmai.com/</officialWebsite>
+        <promotionalVideos>https://youtu.be/SmjKRnEyai0</promotionalVideos>
+        <producers>Aniplex</producers>
+        <producers>Dentsu</producers>
+        <producers>Movic</producers>
+        <producers>Fuji TV</producers>
+        <producers>Gentosha Comics</producers>
     </information>
     <scores>
         <aniDB>

@@ -3,7 +3,7 @@
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | |   // is an important notes   |
 |                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION:  1.1-r------- | | [boo] is a boolean markup    | |                              |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
 |                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
 | Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
 |   non-developer to contribute | | [arr] is an array value. It  | |                              |
@@ -178,7 +178,7 @@
     ru_RU: ''''''
 
     # es_ES [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: ''''''
 
@@ -510,7 +510,7 @@
     // https://imdb.com
     IMDb:
     {
-      # code
+      # code [str] <nab>
       # = Similar to ID, but the only difference is there is an additional identification character
       #   that used by IMDB.
       code: 

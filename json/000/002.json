@@ -81,7 +81,7 @@
                 "Adventure",
                 "Fantasy",
                 "Romance",
-                "Sci-Fi",
+                "Science Fiction",
                 "Drama",
                 "Mature"
             ],
@@ -90,7 +90,7 @@
                 "Petualangan",
                 "Fantasi",
                 "Romansa",
-                "Sci-Fi",
+                "Fiksi Ilmiah",
                 "Drama",
                 "Dewasa"
             ]
@@ -161,7 +161,21 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://www.swordart-online.net/alicization/",
+        "promotionalVideos": [
+            "https://www.youtube.com/watch?v=eqp1vwV8usU",
+            "https://www.youtube.com/watch?v=AgUDAN_6nOE"
+        ],
+        "producers": [
+            "Aniplex",
+            "Genco",
+            "Bandai Namco Entertainment",
+            "Egg Firm",
+            "Straight Edge",
+            "Kadokawa",
+            "Sonilude"
+        ]
     },
     "scores": {
         "aniDB": {

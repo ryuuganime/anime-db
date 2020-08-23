@@ -83,14 +83,14 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
             <en_US>Adventure</en_US>
             <en_US>Fantasy</en_US>
             <en_US>Romance</en_US>
-            <en_US>Sci-Fi</en_US>
+            <en_US>Science Fiction</en_US>
             <en_US>Drama</en_US>
             <en_US>Mature</en_US>
             <id_ID>Aksi</id_ID>
             <id_ID>Petualangan</id_ID>
             <id_ID>Fantasi</id_ID>
             <id_ID>Romansa</id_ID>
-            <id_ID>Sci-Fi</id_ID>
+            <id_ID>Fiksi Ilmiah</id_ID>
             <id_ID>Drama</id_ID>
             <id_ID>Dewasa</id_ID>
         </serialGenre>
@@ -157,6 +157,16 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
             <en_US>Japan</en_US>
             <id_ID>Jepang</id_ID>
         </country>
+        <officialWebsite>http://www.swordart-online.net/alicization/</officialWebsite>
+        <promotionalVideos>https://www.youtube.com/watch?v=eqp1vwV8usU</promotionalVideos>
+        <promotionalVideos>https://www.youtube.com/watch?v=AgUDAN_6nOE</promotionalVideos>
+        <producers>Aniplex</producers>
+        <producers>Genco</producers>
+        <producers>Bandai Namco Entertainment</producers>
+        <producers>Egg Firm</producers>
+        <producers>Straight Edge</producers>
+        <producers>Kadokawa</producers>
+        <producers>Sonilude</producers>
     </information>
     <scores>
         <aniDB>
