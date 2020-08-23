@@ -6,7 +6,7 @@ __TOC__
 = First guide and initialization =
 Currently, we don't have any API for accessing database. Instead, you can use GitHub Raw links to access our data.
 
-For machine-readable index listing, please to use [[list.json]] (recommended) or [[list.yaml]].
+For machine-readable index listing, please to use [[index.json]] (recommended) or [[index.yaml]].
 
 We currently provide data in [[/hjson|HJSON]], [[/json|JSON]], [[/yaml|YAML]], and [[/xml|XML]] file format. at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
 

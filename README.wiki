@@ -22,8 +22,8 @@ Please refer the manual on [[usage.wiki]].
 This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. For detailed information, read [[CODE_OF_CONDUCT.wiki]].
 
 == List of anime database entries ==
-<!--Google translated, oof-->To see the anime database that has been recorded in this repository, please head to [[list.wiki]].
-For machine-readable files, you can use the JSON version, namely [[list.json]] (recommended); on YAML format, [[list.yaml]]; and [[list.xml]] on XML (not recommended).
+<!--Google translated, oof-->To see the anime database that has been recorded in this repository, please head to [[index.wiki]].
+For machine-readable files, you can use the JSON version, namely [[index.json]] (recommended); on YAML format, [[index.yaml]]; and [[index.xml]] on XML (not recommended).
 
 == License ==
 
