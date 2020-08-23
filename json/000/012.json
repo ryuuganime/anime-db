@@ -119,7 +119,17 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "https://uchitama.com/",
+        "promotionalVideos": [
+            "https://youtu.be/m_NohQsb3Gs"
+        ],
+        "producers": [
+            "Aniplex",
+            "Dentsu",
+            "Fuji TV",
+            "Sony Creative Products"
+        ]
     },
     "scores": {
         "aniDB": {

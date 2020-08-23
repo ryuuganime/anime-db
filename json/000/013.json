@@ -79,7 +79,7 @@
                 "Slice of Life",
                 "Action",
                 "Horror",
-                "Sci-Fi"
+                "Science Fiction"
             ],
             "id_ID": [
                 "Petualangan",
@@ -88,7 +88,7 @@
                 "Potongan Kehidupan",
                 "Aksi",
                 "Horror",
-                "Sci-Fi"
+                "Fiksi Ilmiah"
             ]
         },
         "serialTags": {
@@ -168,7 +168,20 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://somali-anime.com/",
+        "promotionalVideos": [
+            "https://youtu.be/XRIXy8zngZc"
+        ],
+        "producers": [
+            "Movic",
+            "North Stars Pictures",
+            "JY Animation",
+            "Crunchyroll SC Anime Fund",
+            "CA-Cygames Anime Fund",
+            "HORNETS",
+            "Mixer"
+        ]
     },
     "scores": {
         "aniDB": {

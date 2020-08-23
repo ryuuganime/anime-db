@@ -128,6 +128,9 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
             <en_US>Japan</en_US>
             <id_ID>Jepang</id_ID>
         </country>
+        <officialWebsite>http://www.kimisui-anime.com/</officialWebsite>
+        <promotionalVideos>https://youtu.be/2NXip6ix5hE</promotionalVideos>
+        <producers>Aniplex</producers>
     </information>
     <scores>
         <aniDB>
@@ -241,6 +244,7 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
             <Durandal />
             <EmotPekmen />
             <Excalibur />
+            <exTonan />
             <Gantz />
             <Gin />
             <Haruna />
@@ -306,9 +310,11 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
         <idn>
             <AnimeIndoNET>http://animeindo.moe/anime/kimi-no-suizou-wo-tabetai-2018</AnimeIndoNET>
             <anoBoy>https://anoboy.us/anime/kimi-no-suizou-wo-tabetai/</anoBoy>
-            <Gomunime>Moeclip: https://moeclip.com/anime/kimi-no-suizou-wo-tabetai-sub-indo/</Gomunime>
+            <Gomunime />
+            <Moeclip>https://moeclip.com/anime/kimi-no-suizou-wo-tabetai-sub-indo/</Moeclip>
             <Neonime>https://neonime.moe/kimi-no-suizou-wo-tabetai-movie-subtitle-indonesia-2/</Neonime>
-            <Onnime>OtakuIndo:</Onnime>
+            <Onnime />
+            <OtakuIndo />
         </idn>
         <eng>
             <fourAnime>https://4anime.to/anime/kimi-no-suizou-wo-tabetai</fourAnime>

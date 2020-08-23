@@ -128,7 +128,14 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://www.kimisui-anime.com/",
+        "promotionalVideos": [
+            "https://youtu.be/2NXip6ix5hE"
+        ],
+        "producers": [
+            "Aniplex"
+        ]
     },
     "scores": {
         "aniDB": {

@@ -1,4 +1,5 @@
 ---
+$schema: ../../schemas/entry.json
 title:
     native: さらざんまい
     en_Latn: Sarazanmai
@@ -105,7 +106,7 @@ information:
         - Comedy
         - Romance
         - Slice of Life
-        - Sci-Fi
+        - Science Fiction
         - Music
         id_ID:
         - Aksi
@@ -114,7 +115,7 @@ information:
         - Drama
         - Komedi
         - Romansa
-        - Sci-Fi
+        - Fiksi Ilmiah
         - Potongan Kehidupan
         - Musik
     serialTags:
@@ -190,6 +191,15 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: http://sarazanmai.com/
+    promotionalVideos:
+    - https://youtu.be/SmjKRnEyai0
+    producers:
+    - Aniplex
+    - Dentsu
+    - Movic
+    - Fuji TV
+    - Gentosha Comics
 scores:
     aniDB:
         id: 13869

@@ -1,193 +1,216 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, dan "false" salah.  |
-|   ngan catatan  tata cara pe- | |          ini adalah          | | [arr] merupakan markah array |
-|   ngisian data.               | |    sebuah teks multi baris   | |   yaitu sebuah  koleksi ter- |
-|                               | |                          ''' | |   urut dan memiliki tipe da- |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   ta yang berbeda.           |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | | [obj] merupakan markah obyek |
-|                               | | ru pada suatu value          | |   menandakan bahwa value be- |
-| <url>  String  berisi  tautan | |                              | |   rikut  memiliki   beberapa |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah | // Petunjuk awal:                |   value di dalamnya.         |
-|   menjadi array apabila objek | // Koma (,)  dalam format berkas |                              |
-|   dalam satu  value lebih ba- | //    ini bersifat opsional, te- \^----------------------------^/
-|   nyak daripada satu.         | //    tapi lebih baik diikutsertakan agar mempermudah mesin dalam
-| <nab> array dapat dihilangkan | //    mengubah format HJSON ke JSON.  Hanya pada value yang memi-
-|   tanda  kurungnya, dan dija- | //    liki markah  [arr]  yang tidak memerlukan tanda koma karena
-|   dikan sebagai null.         | //    akan mengakibatkan tanda koma terbaca sebagai string/enum.
-| <nbl> string,  numeral,  atau | // Tanda petik (quotation  mark)  dalam berkas ini  juga bersifat
-|   array  terkait  tidak  bisa | //    opsional.  Gunakan tanda  petik JIKA mengandung spasi dalam
-|   diubah menjadi null.        | //    kata.
-|                               | // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/000/001
-\^-----------------------------^/ //    .hjson atau selebihnya untuk contoh pengisian.
-/^          RYUUGANIME            // !! Dokumen ini telah diberikan  justifikasi  (justify)  secara
-    HJSON ANIME ENTRY TEMPLATE    //    merata dan terdistribusi  (distributed) pada teks agar mem-
-          VERSION: 0.5-b       */ //    permudah dalam membaca dokumentasi yang tertera.
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
+
 { 
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title:
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial,  contoh "アサティール 未来の昔ばなし" dalam  bahasa Jepang un-
-    #   tuk anime Asatir: Mirai no Mukashi Banashi yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native: ソマリと森の神様
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang),  Romaja (Korea), atau Latin. Diperlukan untuk pe-
-    #   namaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Somali to Mori no Kamisama
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan bahwa menggunakan logat Arab
-    #   Modern yang telah distandarkan (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: سومالي وروح الغابة
 
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: Somali dan Roh Hutan
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: Somali and The Forest Spirit
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: ソマリと森の神様
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: Somali and the Forest Spirit
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 소말리와 숲의 신
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: Somari to Mori no Kami-sama
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: Somali to Mori no Kamisama
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Сомали и лесной дух
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: Somali to Mori no Kamisama
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 索玛丽与森林之神
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 索瑪麗與森林之神
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: null
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://artworks.thetvdb.com/banners/series/372921/backgrounds/62038675.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://artworks.thetvdb.com/banners/series/372921/posters/62036627.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab.  001 adalah kode ICU untuk menunjukkan bahwa  menggunakan logat
-    #   Arab  Modern yang telah distandarkan (Arabic MSA).  Lihat TVDB,  Arab Sama, atau  Wikipedia
-    #   untuk sinopsis berbahasa Arab.
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''القصة تقع أحداثها بعد حرب بدأ بعدها البشر بالتناقص بشكل كبير، ثم تتم معاقبتهم من قبل السحرة غير البشر، وعندها يصبح مشاهدة البشر من الأمور النادرة، حيث أصبح العالم يعج بالأرواح والوحوش والحيوانات الناطقة'''
 
     # id_ID [str] <nab>
-    # = Sinopsis dalam  bahasa Indonesia. Lihat Otak Otaku untuk sinopsis Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Dunia dikuasai oleh roh, goblin, dan segala macam makhluk aneh. Manusia dianiaya, sampai pada titik kepunahan. Suatu hari, seorang golem dan seorang gadis manusia bertemu sendirian. Ini adalah catatan pasangan, satu anggota ras yang hancur, yang lain penjaga hutan. Ini menceritakan tentang perjalanan mereka bersama dan tentang ikatan antara ayah dan anak perempuan.'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB, Kitsu, atau MyAnimeList un-
-    #   tuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''The world is ruled by spirits, goblins, and all manner of strange creatures. Human beings are persecuted, to the very point of extinction. One day, a golem and a lone human girl meet.
 
 This is a record of the pair, one a member of a ruined race, the other a watchman of the forest. It tells of their travels together and of the bond between father and daughter.'''
 
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict atau TVDB untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''地上は異形たちが支配する世界。 人間は迫害され、絶滅の危機に瀕していた。 そんなある日、森の番人である「ゴーレム」とひとりの人間の少女が出会う。 滅びゆく種族「人間」と森の番人ゴーレムの父娘の絆を綴った旅の記録。'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''In einer Welt, die von fantasievollen Wesen regiert wird und in der sich die Menschen am Rande des Aussterbens befinden, findet eines Tages der Wächter des Waldes, ein Golem, ein junges Menschenmädchen. Dies sind die Chroniken ihrer gemeinsamen Reise und ihrer herzerwärmenden Vater-Tochter-Beziehung.'''
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan. Lihat Watcha, Onnada, Namu, TVDB, atau Wikipedia untuk
-    #   sinopsis.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: '''지상은 인외이형이종족(人外異形異種族)들이 지배하는 세계. 박해받는 인간은 전멸 위기에 처해 있다. 그런 어느 날 숲지기 ‘골렘’과 한 인간 소녀가 만난다. 멸종해가는 종족 ‘인간’과 숲지기 ‘골렘’ 부녀의 애정을 기록한 여행기.'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan.  Lihat Nautiljon atau TVDB un-
-    #   tuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''Depuis que le monde est dominé par les créatures non humaines, les hommes en sont réduits à mener une existence clandestine pour échapper à la persécution sans répit des nouveaux maîtres. Un jour, un golem, gardien des forêts, recueille une fillette appartenant à cette race humaine en voie d’extinction et décide d’entreprendre avec elle un périlleux voyage à travers les contrées. Ainsi commencent les aventures de cet étrange duo dépareillé, mais uni par un attachement quasi filial.'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''O mundo é governado por espíritos, duendes e todo tipo de criaturas estranhas. Os seres humanos são perseguidos, até o ponto de extinção. Um dia, um golem e uma garota humana solitária se encontram. Este é um registro do par; um membro de uma raça arruinada, o outro um vigia da floresta. Ele fala de suas viagens juntos e do vínculo entre pai e filha.'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.  Lihat Shikimori, Kinopoisk, atau Wikipedia untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Действие аниме происходит в мире, которым правят не люди, а духи, гоблины и другие сверхъестественные и необычные для людей существа. А вот люди находятся в бедственном положении, ведь их преследуют и даже истребляют. Однажды случается так, что пересекаются пути двух существ — маленькой девочки, сумевшей как-то выжить, и голема, который служит хранителем леса. Пусть они принадлежат двум совершенно непохожим видам, но обретя друг друга в минуту одиночества, они продолжают свой путь вместе. Это история о доверии, дружбе и связи, которая рождается между отцом и дочерью.'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: '''Después de cierta guerra, los humanos comenzaron a disminuir rápidamente en número, y luego fueron cazados por todo tipo de criaturas mágicas. Hoy en día, se les considera al borde de la extinción, y el mundo está poblado por espíritus, duendes, monstruos y todo tipo de animales que hablan. Somali es una niña con un secreto: en realidad es una humana disfrazada de «no humana» con una capucha con cuernos. La chica viaja con un Golem, otra especie rara, a la que llama «Padre», y están en la búsqueda de humanos. El padre es un vigilante, un protector del bosque, con muchas habilidades que les ayudara en su viaje. Esta es la historia de sus viajes a través de las maravillas y los terrores de un mundo mágico.'''
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Lihat Douban, TVDB, atau Wiki-
-    #   pedia untuk sinopsis Mandarin.
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hans: '''这是个异形生物所支配的世界。人类处于生物链最下端，面临灭绝的危机。某一天，森林的守护者·格雷姆与一名人类少女相遇，故事也就此展开。森林守护者与人类女孩之间，如同父女之间的羁绊又将描绘出一篇怎样的故事呢？'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional).  Gunakan converter daring untuk
-    #   mengubah aksara Mandarin ke Kanton. 
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''這是個異形生物所支配的世界。人類處於生物鏈最下端，面臨滅絕的危機。某一天，森林的守護者·格雷姆與一名人類少女相遇，故事也就此展開。森林守護者與人類女孩之間，如同父女之間的羈絆又將描繪出一篇怎樣的故事呢？'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: '''Câu chuyện lấy bối cảnh trong một thế giới thống trị bởi thần linh và quái vật, nơi con người bị hãm ép và phải lui vào đường tuyệt diệt. Trong một khu rừng của golem, người cai quản khu rừng và một cô gái loài người nhỏ bé đã gặp nhau. Và chuyến phiêu lưu của người cha nuôi cùng cô con gái của mình đã bắt đầu như thế.'''
 
     it_IT: '''In un mondo governato da spiriti, goblin e molti altri tipi di creature misteriose, la razza umana è perseguitata e spinta sull'orlo dell'estinzione. Un giorno, avviene l'incontro tra un golem e una ragazza umana. Quest'opera racconta le vicende dei due, il primo guardiano della foresta, la seconda appartenente ad una razza ormai distrutta. È la storia di un viaggio, e di un legame tra padre e figlia.'''
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: null
@@ -217,38 +240,42 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
       ]
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: TV
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Serial TV
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
+      // Allowed values are
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Adventure
@@ -257,11 +284,15 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
         Slice of Life
         Action
         Horror
-        Sci-Fi
+        Science Fiction
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Petualangan
@@ -270,18 +301,18 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
         Potongan Kehidupan
         Aksi
         Horror
-        Sci-Fi
+        Fiksi Ilmiah
       ]
     }
 
     # serialTags [obj]
-    # = Merupakan  tags/jenis konten spesifik serial.   Serupa dengan serialGenre,  tetapi biasanya
-    #   lebih fokus terhadap isi konten, alur cerita, hingga tema. Lihat wiki untuk informasi lebih
-    #   lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Demons
@@ -337,78 +368,79 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Winter
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Dingin
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 冬
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 겨울
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 冬天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 冬天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2020
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 12
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2020-01-10
 
     # endDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2020-03-27
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 23
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: 276
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: [
       Satelight
       HORNETS
     ]
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi lebih lanjut.
-    // Argumen yang diperbolehkan ialah: G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: PG13+
 
     # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah false, yakni aman.
-    // Argumen yang diperbolehkan ialah true dan false
+    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
+    #   known as safe.
+    //  Allowed values are "true" and "false"
     isNsfw: false
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
       // Argumen yang diperbolehkan ialah: Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin,
@@ -421,24 +453,47 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: http://somali-anime.com/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/XRIXy8zngZc
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Movic
+      North Stars Pictures
+      JY Animation
+      Crunchyroll SC Anime Fund
+      CA-Cygames Anime Fund
+      HORNETS
+      Mixer
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan pada score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14785
       score: 7.41
     }
@@ -447,8 +502,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 108617
       score: 76
     }
@@ -457,12 +512,12 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/somali-and-the-forest-spirit
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13118
       score: 4.2
     }
@@ -471,8 +526,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 22014
       score: 7.9
     }
@@ -481,12 +536,12 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/14286,somali-to-mori-no-kamisama
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14286
       score: 3.82
     }
@@ -495,8 +550,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 6605
       score: 93.71
     }
@@ -504,10 +559,9 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi perbedaan terletak pada penambahan huruf identifikasi yang digu-
-      #   nakan oleh IMDb seperti tt6751668. tt merupakan identifikasi dan 6751668 merupakan ID se-
-      #   rial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt11428586
       score: 7.5
     }
@@ -516,8 +570,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1262900
       score: 7.2
     }
@@ -526,12 +580,12 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: somali-to-mori-no-kamisama
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 42201
       score: 80
     }
@@ -540,8 +594,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 9380
       score: 8.21
     }
@@ -550,8 +604,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39575
       score: 7.87
     }
@@ -560,8 +614,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 64888
       score: 4.11
     }
@@ -570,7 +624,7 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.nautiljon.com/animes/somali+to+mori+no+kamisama.html
       score: 8.45
     }
@@ -579,7 +633,7 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: ZkdWg46mR
       score: 7.9
     }
@@ -588,8 +642,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1550
       score: 8.22
     }
@@ -598,8 +652,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39575
       score: 7.87
     }
@@ -608,8 +662,8 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1062567
       score: 7.9
     }
@@ -618,12 +672,12 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/tv/92586-somali-to-mori-no-kamisama
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 92586
       score: 77
     }
@@ -632,12 +686,12 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/shows/somali-and-the-forest-spirit
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 651
       score: 74
     }
@@ -646,27 +700,27 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 372921
       score: 9.86
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul  terakhir pengambilan  data informasi  dan skor entri terkait.  Menggunakan
-  #   format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut.
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-23T14:56:26+07:00
   fansub:
@@ -794,42 +848,42 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
   }
 
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Yamashita Kazuhito
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username:@YamashitaKazuhito
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord. Secara  default, ID menggunakan  dari ID server
-    #   Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 594442535615725579
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).  Menggunakan format ISO 8601. Lihat pandu-
-    #   an dibawah untuk informasi lebih lanjut.
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
     submissionDateTime: 2020-07-23T14:56:26+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data. Boleh meng-
-    #   gunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXMKQXNzaXN0ZWQgYnkgTmF0c3UgVGFkYW1hIChAbmF0dGFkYXN1KQ==
   }
 }

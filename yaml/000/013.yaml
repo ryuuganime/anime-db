@@ -1,4 +1,5 @@
 ---
+$schema: ../../schemas/entry.json
 title:
     native: ソマリと森の神様
     en_Latn: Somali to Mori no Kamisama
@@ -115,7 +116,7 @@ information:
         - Slice of Life
         - Action
         - Horror
-        - Sci-Fi
+        - Science Fiction
         id_ID:
         - Petualangan
         - Drama
@@ -123,7 +124,7 @@ information:
         - Potongan Kehidupan
         - Aksi
         - Horror
-        - Sci-Fi
+        - Fiksi Ilmiah
     serialTags:
         en_US:
         - Demons
@@ -195,6 +196,17 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: http://somali-anime.com/
+    promotionalVideos:
+    - https://youtu.be/XRIXy8zngZc
+    producers:
+    - Movic
+    - North Stars Pictures
+    - JY Animation
+    - Crunchyroll SC Anime Fund
+    - CA-Cygames Anime Fund
+    - HORNETS
+    - Mixer
 scores:
     aniDB:
         id: 14785

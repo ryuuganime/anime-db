@@ -178,7 +178,7 @@
     ru_RU: ''''''
 
     # es_ES [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: ''''''
 
@@ -416,6 +416,22 @@
       en_US: 
       id_ID: 
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: 
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+
+    ]
   }
 
   # scores [obj] > [str]/[num] <nab>
@@ -494,7 +510,7 @@
     // https://imdb.com
     IMDb:
     {
-      # code
+      # code [str] <nab>
       # = Similar to ID, but the only difference is there is an additional identification character
       #   that used by IMDB.
       code: 
