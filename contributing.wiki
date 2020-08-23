@@ -1,25 +1,25 @@
-= Contributing to ryuuganime-db =
+<h1>Contributing to ryuuganime-db</h1>
 Hello and thanks for taking your time to contribute!
 
 The following is a set of guidelines for contributing to <code>ryuuganime-db</code>. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 __TOC__
 
-== Code of conduct ==
+= Code of conduct =
 This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. Please report unacceptable behavior to [mailto:contact@ryuuganime.my.id contact@ryuuganime.my.id].
 
-== Getting started ==
+= Getting started =
 
-=== Extensions, applications, and services used ===
+== Extensions, applications, and services used ==
 * [https://code.visualstudio.com/ Microsoft Visual Studio Code] for editing.
 *:If you are using Visual Studio Code, you will likely get a prompt to install several recommended extensions. Please to install and use mentioned extensions.
 * [https://malsync.lolamtisch.de/ MALSync] for grabbing English Fanstream links.
 * [[/.dictionaty/animanga|animanga-wordlist]] for spellchecking.
 
-=== Sites accessibility ===
+== Sites accessibility ==
 Those are tables which sites are being used by this repository. Please make sure you have access to those sites.
 
-==== Online databases ====
+=== Online databases ===
 {|
 !Favicons
 !Sites
@@ -137,8 +137,8 @@ Those are tables which sites are being used by this repository. Please make sure
 |Contributors need to be signed up via their phone to gain access the site, or forcing it trough [https://tvtime.com/en this link].
 |}
 
-==== Fansubs ====
-===== Indonesian =====
+=== Fansubs ===
+==== Indonesian ====
 {|
 |-
 |*Aibou
@@ -201,14 +201,14 @@ Those are tables which sites are being used by this repository. Please make sure
 *Zen
 |}
 
-===== English =====
+==== English ====
 {|
 |-
 |*HorribleSubs
 |}
 
-==== Fanshare ====
-===== Indonesian =====
+=== Fanshare ===
+==== Indonesian ====
 {|
 |-
 |*AniBatch
@@ -225,14 +225,14 @@ Those are tables which sites are being used by this repository. Please make sure
 *Wibu Desu!
 |}
 
-===== English =====
+==== English ====
 {|
 |-
 |*Anime Kayo
 |}
 
-==== Fanstream ====
-===== Indonesian =====
+=== Fanstream ===
+==== Indonesian ====
 {|
 |-
 |*Animeindo.net
@@ -244,7 +244,7 @@ Those are tables which sites are being used by this repository. Please make sure
 *Otaku Indo
 |}
 
-===== English =====
+==== English ====
 {|
 |-
 |*4anime
@@ -261,26 +261,26 @@ Those are tables which sites are being used by this repository. Please make sure
 *WonderfulSubs
 |}
 
-== Commit and pull request ==
+= Commit and pull request =
 
-=== Cloning repository ===
+== Cloning repository ==
 To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
 <pre>git clone https://github.com/<YOUR USERNAME>/ryuuganime-db</pre>
 ;Note
 :Remember to change <nowiki><YOUR USERNAME></nowiki> into your GitHub username.
 
-=== Adding anime index ===
+== Adding anime index ==
 Read our documentation on https://wiki.ryuuganime.my.id.
 
-=== Modifying MediaWiki (.wiki) documents ===
+== Modifying MediaWiki (.wiki) documents ==
 Read the [https://www.mediawiki.org/wiki/Help:Formatting official MediaWiki file formatting documentation from Wikimedia] and [https://github.com/nricciar/wikicloth Github Extension for MediaWiki Document Markups].
 
 However, MediaWiki on GitHub is more restricted on customizations. So keep in mind that you can not make the text colored, ''&#39;kay?''
 
-=== Naming a file ===
+== Naming a file ==
 Read our documentation on https://wiki.ryuuganime.my.id.
 
-=== Commit changes ===
+== Commit changes ==
 There is no strict guidelines for adding commit message. However, the best one is make it "uniform."
 
 We commonly use those for prefix:
@@ -294,7 +294,7 @@ We commonly use those for prefix:
 *<code>Update</code>
 *:when some information updated.
 
-=== Pulling a merge request ===
+== Pulling a merge request ==
 
 # Make sure you have required to naming your commit based on <a href="#Commit_changes">Commit changes</a> guideline.
 # Name your pull request as<br/><pre>Detail: Comment</pre>'''Note''':
@@ -305,7 +305,7 @@ We commonly use those for prefix:
 # Click on the green "Send pull request" button to finish creating the pull request.
 # You should now see an open pull request.
 
-== Issuing Suggestion or Problem ==
+= Issuing Suggestion or Problem =
 
 Got a great idea or found an issue but can not executing as well, or unfamiliar with Git interface? Now, you can relax more because GitHub has a great feature, called [https://github.com/ryuuganime/ryuuganime-db/issues GitHub Issue]. It helps users to "interact" developers with 0 knowledge of coding.
 

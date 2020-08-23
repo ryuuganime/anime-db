@@ -1,9 +1,9 @@
-= ryuuganime-db =
+<h1>ryuuganime-db</h1>
 Head Database Repository of Ryuuganime based on JSON, HJSON, YAML, XML, XLSX and HTML format.
 
 __TOC__
 
-== File format ==
+= File format =
 This database is using [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>) for repository documentation markup format. For indexing, Ryuuganime is using [[/json|JSON]], [[hjson|HJSON]], [[yaml|YAML]], and [[xml|XML]] for current release. [[html|HTML]] and [[xlsx|XLSX]] files are deprecated. 
 
 File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
@@ -11,25 +11,25 @@ File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
 The JSON files that Ryuuganime uses in the [[/json]] folder comply with standards which can also be machine validated with the [[/schemas/entry.json|JSON Schema]] file.
 
 
-== Contributing ==
-=== Cloning, committing, and issuing suggestion/problem ===
+= Contributing =
+== Cloning, committing, and issuing suggestion/problem ==
 Please head to [[contributing.wiki]] for more detailed information.
 
-=== File usage ===
+== File usage ==
 Please refer the manual on [[usage.wiki]].
 
-== Code of conduct ==
+= Code of conduct =
 This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. For detailed information, read [[CODE_OF_CONDUCT.wiki]].
 
-== List of anime database entries ==
+= List of anime database entries =
 <!--Google translated, oof-->To see the anime database that has been recorded in this repository, please head to [[index.wiki]].
 For machine-readable files, you can use the JSON version, namely [[index.json]] (recommended); on YAML format, [[index.yaml]]; and [[index.xml]] on XML (not recommended).
 
-== License ==
+= License =
 
 This repository is under [[LICENSE|Creative Commons Attribution Share Alike 4.0 International]]. Similar to CC-BY-4.0 but requires derivatives be distributed under the same or a similar, compatible license. Frequently used for media assets and educational materials.
 
-=== Creative Commons Attribution-ShareAlike 4.0 International License ===
+== Creative Commons Attribution-ShareAlike 4.0 International License ==
 '''''This is a human-readable summary of the full license. See [[LICENSE]].'''''
 
 Under this license, you are free to:
