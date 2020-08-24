@@ -728,127 +728,87 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-08-01T19:50:12+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: http://anitoki.com/anime/sword-art-online-alicization/
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: https://awsubs.co/anime/sword-art-online-alicization-bd/
-      Bentoo: null
-      Caramel: http://caramel.id/ubek-ubek?q=Sword+Art+Online+~Alicization
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: https://delsubs.wordpress.com/tag/sword-art-online/
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: null
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: http://neosubs.net/blog/category/sword-art-online-alicization/
-      OPLovers: https://www.oploverz.in/series/sword-art-online-alicization/
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: https://pucuktranslation.pw/sword-art-online-alicization/
-      Quinime: null
-      RevieXion: null
-      Samehadaku: https://www.samehadaku.tv/category/sword-art-online
-      SilverYasha: null
-      Sora: http://www.sorasubs.com/search/label/Sword%20Art%20Online%20%3A%20Alicization
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/sword-art-online-alicization
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/sword-art-online-alicization/
-      AnimeSAVE: http://www.animesave.com/sword-art-online-s1-s3-bd-subtitle-indonesia/
-      Bakacan: https://bakacan.id/anime/sword-art-online-alicization/
-      Drivenime: https://drivenime.com/sword-art-online-alicization-bd-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/sword-art-online-season-3-alicization-subtitle-indonesia/
-      Koenime: https://www.koenime.com/sao-s3-sub-indo/
-      Kusonime: https://kusonime.com/sao-s3-batch-sub-indo/
-      Mikanime: https://mikanime.com/sao-alicization-sub-indo/
-      Moenime: https://moenime.web.id/sword-art-online-season-3-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/sword-art-online-alicization/
-      WibuDesu: https://wibudesu.com/sword-art-online-alicization-bd-subtitle-indonesia/
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Alicization
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/sword-art-online-alicization
-      anoBoy: https://anoboy.us/anime/sword-art-online-alicization/
-      Gomunime: https://gomunime.com/anime/sword-art-online-alicization-sub-indo-hiosu/
-      Moeclip: https://moeclip.com/anime/sword-art-online-season-3-sub-indo/
-      Neonime: https://neonime.moe/tvshows/sword-art-online-alicization-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/sword-art-online-alicization.dzXE1XZV/
-      OtakuIndo: https://otakuindo.org/nonton/sao-alicization-sub-indo/
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/sword-art-online-alicization
-      nineAnime: https://9anime.ru/watch/sword-art-online-iii.l7xm
-      AnimeDaisuki: https://animedaisuki.moe/anime/796/sword-art-online-alicization
-      AnimeTwist: https://twist.moe/a/sword-art-online-alicization/1
-      Animeflix: https://animeflix.io/shows/sword-art-online-alicization/
-      AnimeHeaven: https://animeheaven.ru/detail/sword-art-online-alicization-sub.85445
-      Animelon: null
-      Animeultima: null
-      AniWatch: https://aniwatch.me/anime/822
-      GogoAnime: https://gogoanimes.co/category/sword-art-online-alicization
-      WonderfulSubs: https://www.wonderfulsubs.com/watch/swordartonlineiii
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Sword+Art+Online%3A+Alicization
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Sword%20Art%20Online%3A%20Alicization&kartel=
   }
 
   # signature

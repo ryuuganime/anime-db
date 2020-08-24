@@ -723,128 +723,87 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-23T14:56:26+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: https://awsubstv.com/anime/somali-to-mori-no-kamisama/
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: http://cijanepoi.blogspot.com/search/label/Somali%20to%20Mori%20no%20Kamisama?&max-results=9
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: https://extonan.web.id/somali-to-mori-no-kamisama
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/2020/01/somali-to-mori-no-kamisama.html
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: http://www.loliclubscorp.com/2020/01/somali-to-mori-no-kamisama.html
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: null
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: https://pucuktranslation.pw/somali-to-mori-no-kamisama/
-      Quinime: https://quinimefansub.com/category/somali-to-mori-no-kamisama/
-      RevieXion: null
-      Samehadaku: https://www.samehadaku.tv/anime/somali-to-mori-no-kamisama/
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/somali-to-mori-no-kamisama
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/somali-to-mori-no-kamisama/
-      AnimeSAVE: http://www.animesave.com/somali-to-mori-no-kamisama-subtitle-indonesia/
-      Bakacan: https://bakacan.id/anime/somali-to-mori-no-kamisama/
-      Drivenime: https://drivenime.com/somali-to-mori-no-kamisama-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/somali-to-mori-no-kamisama-sub-indo/
-      Koenime: https://www.koenime.com/somamori-sub-indo/
-      Kusonime: https://kusonime.com/somali-mori-batch-sub-indo/
-      Mikanime: https://mikanime.com/somali-to-mori-no-kamisama-sub-indo/
-      Moenime: https://moenime.web.id/somali-to-mori-no-kamisama-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/somali-to-mori-no-kamisama/
-      WibuDesu: https://wibudesu.com/somali-to-mori-nao-kamisama-subtitle-indonesia/
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: null
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/somali-to-mori-no-kamisama
-      anoBoy: https://anoboy.us/anime/somali-to-mori-no-kamisama/
-      Gomunime: https://gomunime.com/anime/somali-to-mori-no-kamisama/
-      Moeclip: https://moeclip.com/anime/somali-to-mori-no-kamisama-sub-indo/
-      Neonime: https://neonime.moe/batch/somali-to-mori-no-kamisama-batch-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/somali-to-mori-no-kamisama.YG2PRjzl/
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/somali-to-mori-no-kamisama
-      nineAnime: https://9anime.ru/watch/somali-and-the-forest-spirit.8r1y
-      AnimeDaisuki: https://animedaisuki.moe/anime/873/somali-to-mori-no-kamisama
-      AnimeTwist: https://twist.moe/a/somali-to-mori-no-kamisama/1
-      Animeflix: https://animeflix.io/shows/somali-to-mori-no-kamisama
-      AnimeHeaven: https://animeheaven.ru/detail/somali-to-mori-no-kamisama
-      Animelon: null
-      Animeultima: null
-      AniWatch: https://aniwatch.me/anime/2069
-      GogoAnime: https://gogoanime.movie/category/somali-to-mori-no-kamisama
-         
-      WonderfulSubs: https://www.wonderfulsubs.com/watch/somaliandtheforestspirit
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/view/1217620
-    PerpusIndo: https://www.perpusindo.info/anime/39575
   }
 
   # signature

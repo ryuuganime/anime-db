@@ -686,128 +686,87 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-05-05T16:54:42+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html
-      Aizukara: https://www.aizukara.web.id/search/label/Fugou%20Keiji
-      AWSubs: http://awsubs.co/anime/fugou-keiji-balanceunlimited/
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: null
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/search/label/Fugou?&max-results=8
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: https://www.junksubs.com/search/label/Unlimited
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited
-      Neo: null
-      OPLovers: null
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: null
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/fugou-keiji-balanceunlimited/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/fugou-keiji-balanceunlimited/
-      Drivenime: null
-      Hinime: null
-      Koenime: null
-      Kusonime: null
-      Mikanime: null
-      Moenime: https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/
-      Ryuukoi: null
-      WibuDesu: null
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Fugou+Keiji
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/fugou-keiji-balanceunlimited
-      anoBoy: https://anoboy.us/anime/fugou-keiji-balanceunlimited/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/
-      Neonime: https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/fugou-keiji-balanceunlimited
-      nineAnime: https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q
-      AnimeDaisuki: https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited
-      AnimeTwist: https://twist.moe/a/fugou-keiji-balance-unlimited/1
-      Animeflix: https://animeflix.io/shows/fugou-keiji-balanceunlimited
-      AnimeHeaven: https://animeheaven.ru/detail/fugou-keiji-balance-unlimited
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044
-      AniWatch: https://aniwatch.me/anime/2315
-      GogoAnime: https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji
-    PerpusIndo: https://www.perpusindo.info/sharelist/?kat=&user=&cari=fugou%20keiji&kartel=
   }
 
   # signature

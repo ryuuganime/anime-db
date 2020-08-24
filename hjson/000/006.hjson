@@ -727,129 +727,89 @@ Bam en sortira t-il indemne ?'''
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-28T18:06:30+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&m=1
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: http://awsubs.co/anime/tower-of-god/
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: https://www.doranobi-fansub.id/category/tower-of-god/
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: https://extonan.web.id/kami-no-tou
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/search/label/Kami%20no%20Tou?&max-results=8
-      IA: https://www.iasubs.com/search/label/Kami%20no%20Tou
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: https://kazefuri.me/kami-no-tou/
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: https://www.oploverz.in/series/tower-of-god/
-      Ougi: null
-      Panagayan: null
-      Pendekar: https://pendekarsubs.us/anime/kami-no-tou/
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: https://samehadaku.vip/anime/tower-of-god/
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: http://zensubs.xyz/?s=Anaak+Jahad
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/tower-of-god
+      fr: 
+      sc: 
+      de: 
+      ru: 
+    }
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
+    {
+      url: 
+      isChannel: 
     }
   }
-  fanshare:
-  {
-    idn:
-    {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/kami-no-tou/
-      Drivenime: https://drivenime.com/kami-no-tou-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/tower-of-god-sub-indo/
-      Koenime: https://www.koenime.com/kamitou-sub-indo/
-      Kusonime: https://kusonime.com/sinui-tap-batch-sub-indo/
-      Mikanime: null
-      Moenime: https://moenime.web.id/kaminoto-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
-      WibuDesu: https://wibudesu.com/kami-no-tou-subtitle-indonesia/
-    }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Tower+of+God
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/tower-of-god
-      anoBoy: https://anoboy.us/anime/kami-no-tou/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/kami-no-tou-sub-indo/
-      Neonime: https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/kami-no-tou.Xz1olYGa/
-      OtakuIndo: https://otakuindo.org/nonton/tower-of-god-sub-indo/
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/kami-no-tou
-      nineAnime: https://9anime.to/watch/kami-no-tou-tower-of-god-dub.m9qz
-      AnimeDaisuki: https://animedaisuki.moe/anime/911/tower-of-god
-      AnimeTwist: https://twist.moe/a/kami-no-tou-tower-of-god/1
-      Animeflix: https://animeflix.io/shows/kami-no-tou
-      AnimeHeaven: https://animeheaven.ru/detail/kami-no-tou.83556
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/kami-no-tou_365090
-      AniWatch: https://aniwatch.me/anime/2345
-      GogoAnime: https://www16.gogoanime.io/category/kami-no-tou
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/towerofgod
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kami+no+Tou
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kami%20no%20Tou&kartel=
-  }
-  
+
   # signature
   # = Is an object that provides information regarding the contributors to the entry.
   signature:

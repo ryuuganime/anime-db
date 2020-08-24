@@ -717,127 +717,87 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-31T01:09:18+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: null
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: null
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers:null 
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: null
-      SilverYasha: null
-      Sora: null
-      TTOD: https://ttod.xyz/category/sarazanmai/
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/sarazanmai
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/sarazanmai/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/sarazanmai/
-      Drivenime: https://drivenime.com/sarazanmai-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/sarazanmai-batch-sub-indo/
-      Koenime: https://www.koenime.com/sarazanmai-sub-indo/
-      Kusonime: https://kusonime.com/sarazanmai-batch-sub-indo/
-      Mikanime: https://mikanime.com/sarazanmai-sub-indo/
-      Moenime: https://moenime.web.id/sarazanmai-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/sarazanmai/
-      WibuDesu: https://wibudesu.com/sarazanmai-subtitle-indonesia/
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Sarazanmai
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/sarazanmai
-      anoBoy: https://anoboy.us/anime/sarazanmai/
-      Gomunime: https://gomunime.com/anime/sarazanmai/
-      Moeclip: https://moeclip.com/anime/sarazanmai-sub-indo/
-      Neonime: https://neonime.moe/tvshows/sarazanmai-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/sarazanmai.aGLJbkzd/
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/sarazanmai
-      nineAnime: https://9anime.ru/watch/sarazanmai.4o6m
-      AnimeDaisuki: https://animedaisuki.moe/anime/616/sarazanmai
-      AnimeTwist: https://twist.moe/a/sarazanmai/1
-      Animeflix: null
-      AnimeHeaven: https://animeheaven.ru/detail/sarazanmai-sub
-      Animelon: null
-      Animeultima: null
-      AniWatch: https://aniwatch.me/anime/1130
-      GogoAnime: https://www2.gogoanime.io/category/sarazanmai
-      WonderfulSubs: https://www.wonderfulsubs.com/watch/sarazanmai
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Sarazanmai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Sarazanmai&kartel=
   }
 
   # signature

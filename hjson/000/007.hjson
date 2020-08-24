@@ -680,129 +680,87 @@
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-05-21T12:12:36+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: http://awsubs.co/anime/yesterday-wo-utatte/
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: https://extonan.web.id/yesterday-wo-utatte
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/search/label/Yesterday%20wo%20Utatte?&max-results=8
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      Lokal: https://www.lokalsubs.net/search/label/Yesterday%20wo%20Utatte
-      MangaNekoTranslation: null
-      Melody: https://melodysubs.net/anime/yesterday-wo-utatte/
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: null
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      PNTL: https://www.pnzoku.my.id/search/label/Yesterday%20wo%20Utatte
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: https://samehadaku.vip/anime/yesterday-wo-utatte/
-      SilverYasha: null
-      Sora: null
-      TTOD: https://ttod.xyz/?s=yesterday+wo+utatte
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: https://yukisubs.com/category/yesterday-wo-utatte/
-      Zen: http://zensubs.xyz/?s=AMBYAR+KEMARIN
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/yesterday-wo-utatte/#01
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/yesterday-wo-utatte/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/yesterday-wo-utatte/
-      Drivenime: null
-      Hinime: null
-      Koenime: null
-      Kusonime: null
-      Mikanime: null
-      Moenime: https://moenime.web.id/yesterday-wo-utatte-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/yesterday-wo-utatte/
-      WibuDesu: null
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Yesterday+wo+Utatte
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/yesterday-wo-utatte
-      anoBoy: https://anoboy.us/anime/yesterday-wo-utatte/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/yesterday-wo-utatte-sub-indo/
-      Neonime: https://neonime.moe/tvshows/yesterday-wo-utatte-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/yesterday-wo-utatte.lGKQ5Ez6/
-      OtakuIndo: https://otakuindo.org/nonton/yesterday-wo-utatte-sub-indo/
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/yesterday-wo-utatte
-      nineAnime: https://9anime.to/watch/sing-yesterday-for-me.mkv8
-      AnimeDaisuki: https://animedaisuki.moe/anime/918/yesterday-wo-utatte
-      AnimeTwist: https://twist.moe/a/yesterday-wo-utatte/1
-      Animeflix: https://animeflix.io/shows/yesterday-wo-utatte
-      AnimeHeaven: https://animeheaven.ru/detail/yesterday-wo-utatte
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/yesterday-wo-utatte_889172
-      AniWatch: https://aniwatch.me/anime/2169
-      GogoAnime: https://www17.gogoanime.io/category/yesterday-wo-utatte
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/singyesterdayforme
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Yesterday+wo+Utatte
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Yesterday%20wo%20Utatte&kartel=
   }
 
   # signature

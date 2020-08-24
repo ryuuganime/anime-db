@@ -717,130 +717,89 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-28T17:22:17+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null
-      AniToki: https://anitoki.web.id/?anime=kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-s2
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: http://awsubs.co/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: null 
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null 
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: https://melodysubs.net/anime/kaguya-sama-wa-kokurasetai-2-tensai-tachi-no-renai-zunousen/
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: https://www.oploverz.in/series/kaguya-sama-love-is-war-season-2/
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: https://samehadaku.vip/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen/
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/kaguya-sama-wa-kokurasetai-s2
+      fr: 
+      sc: 
+      de: 
+      ru: 
+    }
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
+    {
+      url: 
+      isChannel: 
     }
   }
-  fanshare:
-  {
-    idn:
-    {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/kaguya-sama-wa-kokurasetai-season-2/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2/
-      Drivenime: https://drivenime.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-      Koenime: https://www.koenime.com/kagukoku-s2-sub-indo/
-      Kusonime: https://kusonime.com/kaguyasama-s2-batch-sub-indo/
-      Mikanime: null
-      Moenime: https://moenime.web.id/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-s2/
-      WibuDesu: https://wibudesu.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2-subtitle-indonesia/
-    }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Kaguya-sama
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2
-      anoBoy: https://anoboy.us/anime/kaguya-sama-wa-kokurasetai-season-2/
-      Gomunime: https://gomunime.com/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2/
-      Moeclip: https://moeclip.com/anime/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-      Neonime: null
-      Onnime: https://onnime.net/anime/kaguya-sama-wa-kokurasetai-season-2.10DOknG2/
-      OtakuIndo: https://otakuindo.org/nonton/kaguya-sama-s2-sub-indo/
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2nd-season
-      nineAnime: https://www.9anime.to/watch/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen.omkj
-      AnimeDaisuki: https://animedaisuki.moe/anime/939/kaguya-sama-wa-kokurasetai-s2
-      AnimeTwist: https://twist.moe/a/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2/1
-      Animeflix: https://animeflix.io/shows/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen
-      AnimeHeaven: https://animeheaven.ru/detail/kaguya-sama-love-is-war-2nd-season.95118
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2nd-season_227297
-      AniWatch: https://aniwatch.me/anime/1804
-      GogoAnime: https://www18.gogoanime.io/category/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/kaguyasamaloveiswar
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kaguya-sama+wa+Kokurasetai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kaguya-sama%20wa%20Kokurasetai&kartel=
-    Shallty: https://shallty.moe/browse?search=Kaguya-sama%20wa%20Kokurasetai
-  }
-  
+
   # signature
   # = Is an object that provides information regarding the contributors to the entry.
   signature:

@@ -723,127 +723,87 @@ A cambio del silencio de Azumaya, Azumaya dice: "¡Por favor, déjame abrazarte.
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-08-04T12:28:39+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil: null 
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: null
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/search/label/Dakaretai%20Otoko%201-i%20ni%20Odosarete%20Imasu
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers:null 
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: null
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/dakaretai-otoko-1-i-ni-odosarete-imasu
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: null
-      AnimeKompi: null
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-      Drivenime: https://drivenime.com/dakaretai-otoko-1-i-ni-odosarete-imasu-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/dakaretai-otoko-1-ni-odosarete-imasu/
-      Koenime: https://www.koenime.com/dakaoto-sub-indo/
-      Kusonime: https://kusonime.com/dakaichi-batch-subtitle-indonesia/
-      Mikanime: https://mikanime.com/dakaretai-otoko-sub-indo/
-      Moenime: null
-      Ryuukoi: null
-      WibuDesu: null
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Dakaretai+Otoko+1-i+ni+Odosarete+Imasu
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/dakaretai-otoko-1-i-ni-odosarete-imasu
-      anoBoy: https://anoboy.us/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-      Gomunime: https://gomunime.com/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-      Moeclip: null
-      Neonime: null
-      Onnime: https://onnime.net/anime/dakaretai-otoko-1-i-ni-odosarete-imasu.DG8mMv0Q/
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/dakaretai-otoko-1-i-ni-odosarete-imasu
-      nineAnime: https://9anime.ru/watch/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year.567m
-      AnimeDaisuki: https://animedaisuki.moe/anime/382/dakaretai-otoko-1-i-ni-odosarete-imasu
-      AnimeTwist: https://twist.moe/a/dakaretai-otoko-1-i-ni-odosarete-imasu/1
-      Animeflix: null
-      AnimeHeaven: https://animeheaven.ru/detail/dakaretai-otoko-1-i-ni-odosarete-imasu-sub.54859
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/dakaretai-otoko-1-i-ni-odosarete-imasu_346601
-      AniWatch: https://aniwatch.me/anime/931
-      GogoAnime: https://gogoanimes.co/category/dakaretai-otoko-1-i-ni-odosarete-imasu
-      WonderfulSubs: https://www.wonderfulsubs.com/watch/dakaichiimbeingharassedbythesexiestmanoftheyear
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/view/914467
-    PerpusIndo: null
   }
 
   # signature

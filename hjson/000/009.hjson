@@ -707,128 +707,87 @@
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-06-03T16:45:30+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil:null 
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: null
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs:null 
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai:null 
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: null
-      Ougi: null
-      Panagayan: null
-      Pendekar: null
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: null
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/monster-musume-no-iru-nichijou/
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: https://www.anibatch.me/monster-musume
-      AnimeKompi: http://animekompi.web.id/series/monster-musume-no-iru-nichijou/
-      AnimeSAVE: http://www.animesave.com/monster-musume-no-iru-nichijou-bd-subtitle-indonesia/
-      Bakacan: https://bakacan.id/anime/monster-musume-no-iru-nichijou/
-      Drivenime: null
-      Hinime: null
-      Koenime: https://www.koenime.com/monmusu-sub-indo/
-      Kusonime: https://kusonime.com/monmusu-batch-sub-indo/
-      Mikanime: https://mikanime.com/monster-musume-sub-indo/
-      Moenime: https://moenime.web.id/monster-musume-no-iru-nichijou-sub-indo/
-      Ryuukoi: null
-      WibuDesu: https://wibudesu.com/bd-monster-musume-no-iru-nichijou-subtitle-indonesia/
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Monster+Musume
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: null
-      anoBoy: https://anoboy.us/anime/monster-musume-no-iru-nichijou/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/monster-musume-no-iru-nichijou-sub-indo/
-      Neonime: https://neonime.moe/episode/monster-musume-no-iru-nichijou-bd-1x1/
-      Onnime: https://onnime.net/anime/monster-musume-no-iru-nichijou.6G78b20Q/
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/monster-musume-no-iru-nichijou
-      nineAnime: https://9anime.ru/watch/monster-musume-no-iru-nichijou.ywx
-      AnimeDaisuki: https://animedaisuki.moe/anime/238/monster-musume-no-iru-nichijou
-      AnimeTwist: https://twist.moe/a/monster-musume-no-iru-nichijou/1
-      Animeflix: null
-      AnimeHeaven: https://animeheaven.ru/detail/monster-musume-no-iru-nichijou.31068
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927
-      AniWatch: https://aniwatch.me/anime/336
-      GogoAnime: https://gogoanimes.co/category/monster-musume-no-iru-nichijou
-      WonderfulSubs: null
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?q=Monster+Musume&f=0&c=0_0
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Monster%20Musume&kartel=
   }
 
   # signature

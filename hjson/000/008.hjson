@@ -695,127 +695,87 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-05-25T02:16:16+07:00
-  fansub:
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: null
-      Alter: null
-      AnimeGokil:null 
-      AniToki: http://anitoki.web.id/2018/12/kimi-no-suizou-wo-tabetai-subtitle-indonesia/
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: https://awsubs.co/kimi-no-suizou-wo-tabetai-i-want-to-eat-your-pancreas-subtitle-indonesia/
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: null
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: null
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: null
-      IA: null
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: null
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers:null 
-      Ougi: null
-      Panagayan:null 
-      Pendekar: null
-      Pucuk: https://pucuktranslation.pw/film-layar-lebar-i-want-to-eat-your-pancreas/
-      Quinime: null
-      RevieXion: null
-      Samehadaku: null
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: null
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: null
+      fr: 
+      sc: 
+      de: 
+      ru: 
     }
-  }
-  fanshare:
-  {
-    idn:
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
     {
-      AniBatch: https://www.anibatch.me/kimi-no-suizou-wo-tabetai-bd/
-      AnimeKompi: null
-      AnimeSAVE: http://www.animesave.com/kimi-no-suizou-wo-tabetai-subtitle-indonesia/
-      Bakacan: https://bakacan.id/anime/kimi-no-suizou-wo-tabetai/
-      Drivenime: null
-      Hinime: https://hinime.com/kimi-no-suizou-wo-tabetai-sub-indo/
-      Koenime: https://www.koenime.com/kimisui-sub-indo/
-      Kusonime: https://kusonime.com/movie-kimisui-sub-indo/
-      Mikanime: https://mikanime.com/kimi-no-suizou-bd-sub-indo/
-      Moenime: https://moenime.web.id/kimi-no-suizou-wo-tabetai-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/kimi-no-suizou-wo-tabetai/
-      WibuDesu: https://wibudesu.com/kimi-no-suizou-wo-tabetai-bd-subtitle-indonesia/
+      url: 
+      isChannel: 
     }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Kimi+no+Suizou
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/kimi-no-suizou-wo-tabetai-2018
-      anoBoy: https://anoboy.us/anime/kimi-no-suizou-wo-tabetai/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/kimi-no-suizou-wo-tabetai-sub-indo/
-      Neonime: https://neonime.moe/kimi-no-suizou-wo-tabetai-movie-subtitle-indonesia-2/
-      Onnime: null
-      OtakuIndo: null
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/kimi-no-suizou-wo-tabetai
-      nineAnime: https://9anime.ru/watch/kimi-no-suizou-wo-tabetai.4myj
-      AnimeDaisuki: null
-      AnimeTwist: https://twist.moe/a/kimi-no-suizou-wo-tabetai/1
-      Animeflix: null
-      AnimeHeaven: https://animeheaven.ru/detail/kimi-no-suizou-wo-tabetai.17049
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/kimi-no-suizou-wo-tabetai_194854
-      AniWatch: https://aniwatch.me/anime/1020
-      GogoAnime: https://gogoanimes.co/category/kimi-no-suizou-wo-tabetai
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/iwanttoeatyourpancreas
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kimi+no+Suizou+wo+Tabetai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kimi%20no%20Suizou%20wo%20Tabetai&kartel=
   }
 
   # signature
