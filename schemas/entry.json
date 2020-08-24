@@ -2833,7 +2833,7 @@
                                     "type": "null"
                                 }
                             ]
-                        },
+                        }
                     },
                     "additionalProperties": false
                 },
