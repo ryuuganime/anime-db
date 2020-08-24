@@ -1,210 +1,213 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
-|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
-|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
-|                               | |                          ''' | | [arr] merupakan markah array |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
-|                               | | ru pada suatu value          | |   ta yang berbeda.           |
-| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
-|   menjadi array apabila objek |                                  |   value di dalamnya.         |
-|   dalam satu  value lebih ba- |                                  |                              |
-|   nyak daripada satu.         |                                  \^----------------------------^/
-| <nab> array dapat dihilangkan |
-|   tanda  kurungnya, dan dija- |
-|   dikan sebagai null.         |
-| <nbl> string, numeral, atau   |
-|   array terkait tidak bisa    |
-|   diubah menjadi null.        |
-|                               |
-\^-----------------------------*/
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
 
 { 
-  // Petunjuk awal:
-  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
-  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
-  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
-  //    tanda koma.
-  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
-  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
-  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
-  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
-  //    id_ID: 
-  //        '''
-  //            Ini hanyalah informasi \"percobaan\",
-  //            harap untuk dapat dimaklumi
-  //        '''
-  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
-  //    contoh pengisian.
-
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title: 
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
-    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
-    #   yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native: モンスター娘のいる日常
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
-    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Monster Musume no Iru Nichijou
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: الحياة اليومية للفتيات الوحوش
 
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: Kehidupan Sehari Hari Dengan Gadis Monster 
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: Everyday Life With Monster Girls
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: モンスター娘のいる日常
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: Die Monster Mädchen
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 몬스터 아가씨가 있는 일상
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: Monster Musume no Iru Nichijou
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: Monster Musume no Iru Nichijou
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Повседневная жизнь с девушкой-монстром
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: Monster Musume no Iru Nichijou
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 魔物娘的同居日常
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 魔物娘的同居日常
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: null
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
-  #   situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://image.tmdb.org/t/p/original/igIOe1g8xRYOFgiCgkd29y8UcVH.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
-  #   yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://image.tmdb.org/t/p/original/8leXiwIwPRPQqHXKDhqgf4OIwBU.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''قبل ثلاثة سنوات علِمَ العالم الطماع عن وجود مخلوقات رائعة و جميلة و خلابة من لحمٍ و دم و أيضًا ريشٍ و قرون، وبفضل قانون التبادل الثقافي أيقنت هذهِ المخلوقات الأسطورية عن طمعهم، وكان هنالك بشري تعيس في سن المراهقة اسمه كورسو كيميهيتو التحق في برنامج التبادل الحكومي وقد قُلب عالمه رأسًا على عقب، و أتت فتاة تُدعى ميا كانت وظيفتها العيش مع كورسو لتعتني به و تتأكد أنَّ حياته تسير بتماشٍ مع التبادل، لسوء الحظ بالنسبة لكورسو فإنَّ ميا فتاة جميلة و مثيرة و لا يمكنه إنكار ذلك، و يوجد قانون صارمٌ للغاية يمنع تزاوج الاجناس المختلفة و الأسوء من ذلك بأنها ساحرة ، ماذا سيفعل الإنسان المراهق الهرموني؟ تابعوا الانمي لمزيد من التفاصيل'''
 
     # id_ID [str] <nab>
-    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
-    #   Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Ketika Kurusu Kimihito dilantik sebagai relawan program pertukaran budaya antar spesies, kehidupannya berubah. Gadis "Lamia" manusia setengah hewan yg menyerupai ular bernama Miia datang untuk tinggal bersama, Kurusu ditugaskan untuk merawatnya. Semenjak itu Kurusu sering berurusan dengan gadis monster dari berbagai spesies.'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
-    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''With his parents abroad, Kimihito Kurusu lived a quiet, unremarkable life alone until monster girls came crowding in! This alternate reality presents cutting-edge Japan, the first country to promote the integration of non-human species into society. After the incompetence of interspecies exchange coordinator Agent Smith leaves Kimihito as the homestay caretaker of a Lamia named Miia, the newly-minted "Darling" quickly attracts girls of various breeds, resulting in an ever-growing harem flush with eroticism and attraction.
     Unfortunately for him and the ladies, sexual interactions between species is forbidden by the Interspecies Exchange Act! The only loophole is through an experimental marriage provision. Kimihito's life becomes fraught with an abundance of creature-specific caveats and sensitive interspecies law as the passionate, affectionate, and lusty women hound his every move, seeking his romantic and sexual affections. With new species often appearing and events materializing out of thin air, where Kimihito and his harem go is anyone's guess!
     '''       
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''「他種族間交流法」の施行により、 人間以外の種族との交流が認められた日本。 ある手違いにより、主人公・来留主公人のもとに他種族の 女の子（モンスター娘）たちが続々と 転がり込んできて、共同生活を送ることに…！？ モテモテハーレム状態だけど、 他種族とのふか～い交流（♡）は、 法律で厳しく禁止されていて…？ 可愛いけれど、ちょっとちがうモンスター娘たちと過ごす、 少し変わった毎日がはじまる…♡'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
-    #   untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''Monster ‒ sie sind real! Und sie wollen mit uns ausgehen! Vor drei Jahren erfuhr die Menschheit von der Existenz von Harpien, Zentauren, Katzenmädchen und allen möglichen anderen Kreaturen, die nun mehr als nur Fabelwesen sind. Sie sind Fleisch und Blut, außerdem noch Schuppen, Federn, Hörner und Reißzähne. Und durch das „Gesetz über kulturellen Austausch zwischen den Spezies“ haben sich diese einst mystischen Wesen in unsere Gesellschaft integriert. Na gut, sie versuchen es zumindest. Als der Pechvogel Kurusu Kimihito als „Freiwilliger“ in das Austauschprogramm der Regierung aufgenommen wird, steht seine Welt plötzlich Kopf. Die schlangenähnliche Lamia Miia lebt nun bei ihm und Kurusus Aufgabe ist es, sich um sie zu kümmern und dafür zu sorgen, dass sie sich in sein tägliches Leben integriert. Zu seinem Pech sieht Miia unglaublich scharf aus, aber das Gesetz gegen zwischenrassische Fortpflanzung ist sehr streng. Es kommt jedoch noch schlimmer, als auch noch ein hinreißendes Zentauren-Mädchen und eine kokette Harpie bei ihm einziehen. Wird der junge Mann sich trotz seiner rasenden Hormone an das Gesetz halten können?''' 
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: '''「타종족간 교류법」 시행에 의해, 인간 이외의 종족과의 교류가 인정된 일본. 쿠루스 키미히토는 교류 코디네이터의 실수로 인해 타종족의 여자아이와 집에서 공동생활을 하게 되는데…?! 인기폭발 하렘 상태지만 타종족과의 깊~은 교류(♡)는 법으로 엄격하게 금지되어 있었다. 사랑스럽지만 조금 특별한 몬스터 아가씨들과 지내는 매일이 시작된다'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
-    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''Les monstres… ils existent, et elles sont monstrueusement sexy ! Il y a trois ans, le monde appris que les lamias, harpies, centaures et autres créatures fantastiques mi-femmes mi-monstres étaient bien réelles, et fut très vite lancé un vaste programme visant à les intégrer à notre société, en les plaçant dans des familles d’accueil. Désigné volontaire, Kimihito héberge désormais chez lui Miia, une lamia, mi-femme mi-serpent, qui se démène pour gagner les faveurs de son Darling d’amour. Mais si Miia est déjà encombrante, Kimihito n’est pas au bout de ses peines, car d’autres demoiselles viendront bientôt une à une se rajouter dans la joyeuse maisonnée que va devenir son domicile.'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''Monstros são reais e querem namorar conosco! Há três anos o mundo descobriu que harpias, centauros e todo tipo de criatura fabulosa não são apenas ficção. Elas são de carne e osso, isso para não mencionar escamas, penas, chifres e presas. Graças ao "Ato de Intercâmbio Cultural Entre as Espécies", essas criaturas antes míticas foram assimiladas à sociedade, ou ao menos estão tentando. Quando um humano infeliz chamado Kurusu Kihimitsu é introduzido como voluntário no programa do governo, seu mundo é virado do avesso. Uma lâmia tipo cobra chamada Miia vem viver com ele e o trabalho de Kurusu é cuidar dela e integrá-la à sua vida. Infelizmente para Kurusu, Miia é irresistivelmente sensual e a lei de anti-cruzamento entre espécies é muito severa. Pra piorar, quando uma linda garota centauro e uma harpia sedutora se mudam para a casa dele, o que um jovem com sangue fervente e hormônios enlouquecidos pode fazer?'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Помимо людей, существуют и различные монстры чье тело наполовину является человеком и наполовину каким либо животным. Раньше правительство скрывало их существование. Однако, три года назад существование монстров было раскрыто и был подписан закон о культурном обмене между видами. Согласно этому закону представители полулюдей будут селиться среди людей и знакомиться с человеческим обществом. За каждым участвующим в культурном обмене получеловеком закрепляется определенный хозяин. Хозяин должен всегда сопровождать своего гостя, в противном случае гостя депортируют из страны. Также людям и полулюдям запрещено нападать друг на друга. Под запретом находятся и межвидовые сексуальные отношения. Кимихито Курусу — один из людей участвующих в культурном обмене. К нему поселили полузмею, Мию, которая постоянно пытается его соблазнить несмотря на законодательные запреты. Позднее дом Кимихито пополняется новыми девушками-монстрами претендующими на его сердце. Кроме того, запрет на межвидовые отношения ослабляется и в порядке эксперимента Кимихито разрешают жениться на живущи'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: '''Durante años, el gobierno japonés ha mantenido en secreto que criaturas míticas como los centauras, las lamias o las arpías, existen de verdad. Tres años antes del inicio de la historia, el gobierno hizo pública la existencia de estas criaturas y aprobó la ley del “Intercambio Cultural Interespecies”. Desde entonces, los “liminals” se han convertido en parte de la sociedad humanas, viviendo con familias humanas, aunque con diferentes deberes y restricciones. Kurusu Kimihito no se ofreció voluntario para acoger a uno de estos “liminals” en su hogar, pero cuando por error le llevan a su casa a una asustada y avergonzada Miia, no se ve capaz de rechazarla y acaba viviendo con ella. Poco a poco la casa de Kimihito se convertirá más y más en un hogar repleto de chicas liminals, quiera él o no. Y lo peor llega cuando por unos cambios en la ley que afecta a la relación entre ambas especies, deberá casarse con una de ellas.'''
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
-    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
-    zh_Hans: '''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……'''
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
+    zh_Hans: '''将至今为止被政府匿藏起来的人类以外的魔物种族，为了实现与魔物他们的交流而制定出来的新方案。以此为基础文化交流积极地推动起来。作为全面开放前的准备工作，各种族所挑选的少量代表们开始进入人类社会的寄宿家庭居住，让一般人慢慢接受亚人物种的同时，也观察亚人种族进入人类社会所遭遇的障碍与问题。在这样的背景下，半蛇半人的亚种人蛇族——米亚寄宿在主角住宅处，对在进行文化交流的来留主公人来说，非比寻常的刺激与搞笑开始……'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
-    #   menggunakan aksara Kanton dalam database mereka.
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: null
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: [
@@ -237,52 +240,58 @@
       vi_VN: null
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: TV
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Serial TV
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
-      //   Diketahui
+      // Allowed values are:
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
-    #   lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Fantasy
         Romance
         Comedy
         Mature
-        Sci-Fi
+        Science Fiction
         Slice of Life
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Fantasi
@@ -295,12 +304,13 @@
     }
 
     # serialTags [obj]
-    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
-    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Harem
@@ -321,7 +331,7 @@
       ]
 
       # id_ID [arr] <nbl>
-      # = Tag serial dalam bahasa Indonesia
+      # = Serial tags in Indonesian.
       id_ID:
       [
         Harem
@@ -342,65 +352,61 @@
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Summer
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Panas
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 春
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 봄
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 春天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 春天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2015
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 12
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2015-07-08 
 
     # endDate [str]
-    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2015-09-23
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 23
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: null
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: [
       Studio Hibari
       TOHO animation
@@ -408,10 +414,8 @@
     ]
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
-    #   lebih lanjut.
-    // Argumen yang diperbolehkan ialah
-    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: R18+
 
     # isNsfw [boo] <nbl>
@@ -422,40 +426,58 @@
     isNsfw: true
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
-      // Argumen yang diperbolehkan ialah
-      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
-      // Drama, 4-koma, Fairy Tale, dan null
+      // Allowed values are
+      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
+      //   4-koma, Fairy Tale, and null
       en_US:  Manga
 
-      // Argumen yang diperbolehkan ialah
-      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
-      // Drama, 4-panel, Dongeng, dan null
+      // Allowed values are
+      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
+      //   4-panel, Dongeng, and null
       id_ID: Manga
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: http://monmusu.tv/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/G-IfYF_oesk
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Genco
+      Studio Hibari
+      TOHO animation
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 11130
       score: 6.63
     }
@@ -464,9 +486,8 @@
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 21093
       score: 68
     }
@@ -475,22 +496,20 @@
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/monster-musume-no-iru-nichijou
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 7098
       score: 3.741
     }
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 16856
       score: 7.043
     }
@@ -499,13 +518,12 @@
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/10270,monster-musume-everyday-life-with-monster-girls
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 10270
       score: 3.47
     }
@@ -514,9 +532,8 @@
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 4372
       score: 100
     }
@@ -524,10 +541,9 @@
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
-      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
-      #   dan 6751668 merupakan ID serial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt4831392
       score: 6.7
     }
@@ -536,9 +552,8 @@
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 921030
       score: 6.9
     }
@@ -547,13 +562,12 @@
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: monster-musume-no-iru-nichijou
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
-      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 10748
       score: 71.91
     }
@@ -562,9 +576,8 @@
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1439
       score: 7.22
     }
@@ -573,9 +586,8 @@
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 30307
       score: 7.16
     }
@@ -584,9 +596,8 @@
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 43617
       score: 3.77
     }
@@ -595,7 +606,7 @@
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.nautiljon.com/animes/monster+musume+no+iru+nichijou.html
       score: 7.44
     }
@@ -604,7 +615,7 @@
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: FSrwpKimg
       score: 7.1
     }
@@ -613,9 +624,8 @@
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 33
       score: 6.78
     }
@@ -624,9 +634,8 @@
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 30307
       moved: true
       newId: z30307
@@ -637,9 +646,8 @@
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 479722
       score: 7.3
     }
@@ -648,13 +656,12 @@
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/tv/63187
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 63187
       score: 76
     }
@@ -663,13 +670,12 @@
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/shows/monster-musume-everyday-life-with-monster-girls
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 97023
       score: 72
     }
@@ -678,29 +684,27 @@
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 293119
       score: 8.34
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
-  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-  // 
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-06-03T16:45:30+07:00
   fansub:
@@ -818,7 +822,6 @@
       Animeultima: https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927
       AniWatch: https://aniwatch.me/anime/336
       GogoAnime: https://gogoanimes.co/category/monster-musume-no-iru-nichijou
-      KissAnime: http://kissanime.ru/Anime/Monster-Musume-no-Iru-Nichijou
       WonderfulSubs: null
     }
   }
@@ -829,44 +832,42 @@
   }
 
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Yamashita Kazuhito
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username: @YamashitaKazuhito
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord.
-    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 584207131671134218
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).
-    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-    // 
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
     submissionDateTime:2020-06-03T15:33:10+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
-    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
-    #   Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXM=
   }
 }

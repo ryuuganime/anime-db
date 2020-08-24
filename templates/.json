@@ -1,0 +1,310 @@
+{
+    "$schema": "../schemas/entry.json",
+    "title": {
+        "native": "",
+        "en_Latn": "",
+        "ar_001": "",
+        "id_ID": "",
+        "en_US": "",
+        "ja_JP": "",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "backdrop": "",
+    "visualKey": "",
+    "synopsis": {
+        "ar_001": "",
+        "id_ID": "",
+        "en_US": "",
+        "ja_JP": "",
+        "de_DE": "",
+        "ko_KR": "",
+        "fr_FR": "",
+        "pt_PT": "",
+        "ru_RU": "",
+        "es_ES": "",
+        "zh_Hans": "",
+        "zh_Hant": "",
+        "vi_VN": ""
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": [
+                
+            ],
+            "ar_001": [
+                
+            ],
+            "id_ID": [
+                
+            ],
+            "en_US": [
+                
+            ],
+            "ja_JP": [
+                
+            ],
+            "de_DE": [
+                
+            ],
+            "ko_KR": [
+                
+            ],
+            "fr_FR": [
+                
+            ],
+            "pt_PT": [
+                
+            ],
+            "ru_RU": [
+                
+            ],
+            "es_ES": [
+                
+            ],
+            "zh_Hans": [
+                
+            ],
+            "zh_Hant": [
+                
+            ],
+            "vi_VN": [
+                
+            ]
+        },
+        "type": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "status": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "serialGenre": {
+            "en_US": [
+                
+            ],
+            "id_ID": [
+                
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                
+            ],
+            "id_ID": [
+                
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "",
+            "id_ID": "",
+            "ja_JP": "",
+            "ko_KR": "",
+            "zh_Hans": "",
+            "zh_Hant": ""
+        },
+        "releaseYear": 0,
+        "episode": 0,
+        "releaseDate": "",
+        "endDate": "",
+        "duration": 0,
+        "totalDuration": 0,
+        "studio": "",
+        "rating": "",
+        "isNsfw": false,
+        "adaptation": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "country": {
+            "en_US": "",
+            "id_ID": ""
+        },
+        "officialWebsite": "",
+        "promotionalVideos": [
+
+        ],
+        "producers": [
+            
+        ]
+    },
+    "scores": {
+        "aniDB": {
+            "id": 0,
+            "score": 0
+        },
+        "AniList": {
+            "id": 0,
+            "score": 0
+        },
+        "AnimePlanet": {
+            "url": "",
+            "id": 0,
+            "score": 0
+        },
+        "ANN": {
+            "id": 0,
+            "score": 0
+        },
+        "aniSearch": {
+            "url": "",
+            "id": 0,
+            "score": 0
+        },
+        "Annict": {
+            "id": 0,
+            "score": 0
+        },
+        "IMDb": {
+            "code": "",
+            "score": 0
+        },
+        "KinoPoisk": {
+            "id": 0,
+            "score": 0
+        },
+        "Kitsu": {
+            "slug": "",
+            "id": 0,
+            "score": 0
+        },
+        "LiveChart": {
+            "id": 0,
+            "score": 0
+        },
+        "MyAnimeList": {
+            "id": 0,
+            "score": 0
+        },
+        "MyShows": {
+            "id": 0,
+            "score": 0
+        },
+        "Nautiljon": {
+            "url": "",
+            "score": 0
+        },
+        "Notify": {
+            "base64": "",
+            "score": 0
+        },
+        "OtakOtaku": {
+            "id": 0,
+            "score": 0
+        },
+        "Shikimori": {
+            "id": 0,
+            "score": 0
+        },
+        "SIMKL": {
+            "id": 0,
+            "score": 0
+        },
+        "TMDB": {
+            "url": "",
+            "id": 0,
+            "score": 0
+        },
+        "Trakt": {
+            "url": "",
+            "id": 0,
+            "score": 0
+        },
+        "TVTime": {
+            "id": 0,
+            "score": 0
+        }
+    },
+    "updatedDate": "",
+    "streamLinks": {
+        "Abematv": "",
+        "AdultSwim": "",
+        "AISPlay": "",
+        "All4": "",
+        "AniMe": "",
+        "AnimeDigitalNetwork": "",
+        "AnimeLab": "",
+        "AnimeLog": "",
+        "AnimeOnDemand": "",
+        "AnimePlanet": "",
+        "animeteleto": "",
+        "AniOne": "",
+        "AniPlus": "",
+        "AsianCrush": "",
+        "BahamutAnimeCrazy": "",
+        "BandaiChannel": "",
+        "BandaiSpirits": "",
+        "bilibili": "",
+        "Coalise": "",
+        "ComicFestaAnimeZone": "",
+        "ConTV": "",
+        "Coolmic": "",
+        "Crunchyroll": "",
+        "dAnimeStore": "",
+        "DMM": "",
+        "FOD": "",
+        "Funimation": "",
+        "Genflix": "",
+        "GundamChannel": "",
+        "GundamInfo": "",
+        "Gyao": "",
+        "HIDIVE": "",
+        "HOOQ": "",
+        "Hulu": "",
+        "iflix": "",
+        "iQIYI": "",
+        "JapaneseAnimatedFilmClassic": "",
+        "Mangas": "",
+        "MBSDougaizm": "",
+        "MidnightPulp": "",
+        "MuseAsia": {
+            "en_001": "",
+            "vi_VN": "",
+            "ms_MY": "",
+            "th_TH": "",
+            "zh_Hant_HK": "",
+            "zh_Hant_TW": ""
+        },
+        "Netflix": "",
+        "NicoNico": "",
+        "PrimeVideo": "",
+        "RetroCrush": "",
+        "SelectaVision": "",
+        "Sushiroll": "",
+        "Telasa": "",
+        "TencentVideo": "",
+        "TVNOW": "",
+        "Vimeo": "",
+        "VIZ": "",
+        "VRV": "",
+        "VVVVID": "",
+        "Wakanim": {
+            "fr": "",
+            "sc": "",
+            "de": "",
+            "ru": ""
+        },
+        "Watchbox": "",
+        "WeTV": "",
+        "YamatoAnimation": "",
+        "YouTube": {
+            "url": "",
+            "isChannel": false
+        }
+    },
+    "signature": {
+        "name": "",
+        "username": "",
+        "discordId": 594442535615725579,
+        "submissionDateTime": "",
+        "sign": ""
+    }
+}

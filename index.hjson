@@ -1,8 +1,8 @@
 /*------------------------------------*\
-|            TEMPLAT SKEMA             |
-|   Salin skema sebagai berikut, untuk |
-| mempermudah  pengisian  skema lokasi |
-| entri:                               |
+|         //Scheme Template//          |
+|   Copy  this "schema"  for  accessi- |
+| bility  to   fills  machine-friendly |
+| index list.                          |
 | vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv |
     {
         myAnimeList: 0
@@ -25,10 +25,7 @@
             yaml: /yaml/000/000.yaml
         }
     }
-| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
-| Dengan keterangan:                   |
-| - 0 merupakan nomor berurut.         |
-\*------------------------------------*/
+\*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 [
     {

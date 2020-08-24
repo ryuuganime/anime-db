@@ -4,8 +4,6 @@
         "native": "イエスタデイをうたって",
         "en_Latn": "Yesterday wo Utatte",
         "ar_001": "غني “الأمس” لي",
-        "hu_HU": null,
-        "he_IL": null,
         "id_ID": "Nyanyikan \"Kemarin\" Padaku",
         "en_US": "Sing \"Yesterday\" for Me",
         "ja_JP": "イエスタデイをうたって",
@@ -23,8 +21,6 @@
     "visualKey": "https://artworks.thetvdb.com/banners/series/372534/posters/62002246.jpg",
     "synopsis": {
         "ar_001": "تدور القصة حول شاب جامعي يدعى ريكو الذي يجد عمل في متجر. يعيش حياته بشكل رتيب حتى يقابل حبيبته السابقة وزميلته هارو نوناكا التي تمتلك غراب كحيوان أليف.",
-        "hu_HU": null,
-        "he_IL": null,
         "id_ID": "Setelah lulus kuliah, Rikuo Uozumi yang hidup tanpa ambisi, bekerja di sebuah toko. Hari-harinya berlalu dengan tenang sampai ia bertemu dengan teman kuliahnya, Shinako dan wanita misterius bernama Haru bersama gagak peliharaannya.",
         "en_US": "Rikuo has graduated from college, but has zero ambition or direction and works in a convenience store. A strange high-school dropout, Haru, keeps coming around with her pet crow. Rikuo still has a crush on his senior Shinako, who is beginning a teaching career, and who shows up in the store one day. Rikuo's relationships with the girls, and his feelings about his life, keep changing as the story evolves, bringing in other important characters—Rikuo's co-worker, the coworker's sister, and a childhood friend of Shinako's, etc.",
         "ja_JP": "大学卒業後、コンビニでバイトをする魚住。そんな彼の前に、ある日カラスを連れた少女・ハルが現れた…。 「49％後ろ向きで、51％前向きで…」　へそ曲がりだけれども正直な彼らの心は、舞い落ちる桜のようにゆらゆら揺れて…。",
@@ -129,7 +125,20 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "https://singyesterday.com/",
+        "promotionalVideos": [
+            "https://youtu.be/c7wWmUywDpY"
+        ],
+        "producers": [
+            "TV Asahi",
+            "Sotsu",
+            "Delfi Sound",
+            "Lucent Pictures Entertainment",
+            "CyberAgent",
+            "AbemaTV",
+            "DMM.futureworks"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -326,7 +335,6 @@
             "Animeultima": "https://www1.animeultima.to/a/yesterday-wo-utatte_889172",
             "AniWatch": "https://aniwatch.me/anime/2169",
             "GogoAnime": "https://www17.gogoanime.io/category/yesterday-wo-utatte",
-            "KissAnime": "https://kissanime.ru/Anime/Yesterday-wo-Utatte",
             "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/singyesterdayforme"
         }
     },

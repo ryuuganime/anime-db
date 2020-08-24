@@ -3,7 +3,7 @@
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | |   // is an important notes   |
 |                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+| -------VERSION:  1.2-r------- | | [boo] is a boolean markup    | |                              |
 |                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
 | Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
 |   non-developer to contribute | | [arr] is an array value. It  | |                              |
@@ -30,7 +30,6 @@
 |   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
 |                               | //    for example.
 \⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
-
 { 
   # $schema [str] <nbl> <url>
   # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
@@ -40,91 +39,91 @@
 
   # title [obj] <nbl>
   # title of serial... in several languages. Based on ICU locales.
-  title: 
+  title:
   {
     # native [str] <nbl>
     # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native: 神之塔
+    native: 
 
     # en_Latn [str] <nbl>
     # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Kami no Tou
+    en_Latn: 
 
     # ar_001 [str] <nab>
     # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
     //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: برج السيد
+    ar_001: 
 
     # id_ID [str] <nab>
     # = Serial title in Indonesian (un/official)
     //  REGEX: ^[\w\s\S]+$
-    id_ID: Tower of God
+    id_ID: 
 
     # en_US [str] <nab>
     # = Serial title in English.
     //  REGEX: ^[\w\s\S]+$
-    en_US: Tower of God
+    en_US: 
 
     # ja_JP [str] <nab>
     # = Serial title in Japanese.
     //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: 神之塔
+    ja_JP: 
 
     # de_DE [str] <nab>
     # = Serial title in German (un/official).
     //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: Tower of God
+    de_DE: 
 
     # ko_KR [str] <nab>
     # = Serial title in South/North Korean.
     //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 신의 탑
+    ko_KR: 
 
     # fr_FR [str] <nab>
     # = Serial title in French (or other accent).
     //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: Tower of God
+    fr_FR: 
 
     # pt_PT [str] <nab>
     # = Serial title in Portuguese.
     //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Torre de Deus
+    pt_PT: 
 
     # ru_RU [str] <nab>
     # = Serial title in Russian (un/official). 
     //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Башня Бога
+    ru_RU: 
 
     # es_ES [str] <nab>
     # = Serial title in Spanish (or other accent).
     //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: Torre de Dios
+    es_ES: 
 
     # zh_Hans [str] <nab>
     # = Serial title in Simplified Chinese.
     //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 神之塔
+    zh_Hans: 
 
     # zh_Hant [str] <nab>
     # = Serial title in Traditional Chinese.
     //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 神之塔
+    zh_Hant: 
 
     # vi_VN [str] <nab>
     # = Serial title in Vietnamese.
     //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Tower of God
+    vi_VN: 
   }
 
   # backdrop [str] <url> <nbl>
   # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
   //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/series/376729/backgrounds/5e83e84259d99.jpg
+  backdrop: 
 
   # visualKey [str] <url> <nbl>
   # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
   //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/series/376729/posters/62106354.jpg
+  visualKey: 
 
   # synopsis [obj] <nbl>
   # = A synopsis/plot of story of serial in several languages. 
@@ -134,79 +133,71 @@
     # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
     #   Wikipedia for Arabic synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.'''
+    ar_001: ''''''
 
     # id_ID [str] <nab>
     # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
     #   fanshare for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya, Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk menemukan teman dekatnya.'''
+    id_ID: ''''''
 
     # en_US [str] <nab>
     # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
     #   synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''There is a tower that summons chosen people called "Regulars" with the promise of granting their deepest desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.
-
-Twenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.
-
-Thus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind "Irregulars"—beings that have shaken the very foundation of the Tower each time they set foot inside it.'''
+    en_US: ''''''
 
     # ja_JP [str] <nab>
     # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）'''
+    ja_JP: ''''''
 
     # de_DE [str] <nab>
     # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.
-
-Der Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm lebend zu verlassen. <br>Quelle: <a href="https://www.anisearch.de/anime/14974,kami-no-tou">aniSearch.de</a>'''
+    de_DE: ''''''
 
     # ko_KR [str] <nab>
     # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
     //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''탑에 오르면, 모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서 탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.'''
+    ko_KR: ''''''
 
     # fr_FR [str] <nab>
     # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''Afin de retrouver Rachel, la seule personne chère à ses yeux, Bam décide de prendre tous les risques pour atteindre le sommet d'une mystérieuse tour. Pour passer chaque étage, il devra réussir un test complexe dans lequel il jouera à chaque fois sa vie.
-
-Bam en sortira t-il indemne ?'''
+    fr_FR: ''''''
 
     # pt_PT [str] <nab>
     # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos "regulares", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam "regulares" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um "irregular" - ele entrou sem ser convidado, abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!'''
+    pt_PT: ''''''
 
     # ru_RU [str] <nab>
     # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Башня бога — место, в котором сбываются мечты и разбиваются сердца, только сильный духом сможет добраться до самого верха. Именно этого всю жизнь хотела Рахиль, и Двадцать пятый Баам отправился за ней, потому как эта девушка была для него единственным лучиком света в этом мрачном и недружелюбном мире. При входе в башню больше не будет пути назад — только наверх, к новым испытаниям. Многое здесь ждёт главных героев: радость и волнения, победы и поражения, боль и утрата. Смогут ли они добраться до вершины?'''
+    ru_RU: ''''''
 
     # es_ES [str] <nab>
     # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''La serie se centra en el viaje de un chico mientras se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.'''
+    es_ES: ''''''
 
     # zh_Hans [str] <nab>
     # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
     #   translate from zh_Hant (Traditional Chinese) using extension.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''如果登上塔，一切就都可以得到。 塔顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。'''
+    zh_Hans: ''''''
 
     # zh_Hant [str] <nab>
     # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
     #   translate from zh_Hans (Simplified Chinese) using extension.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。'''
+    zh_Hant: ''''''
 
     # vi_VN [str] <nab>
     # = Synopsis in Vietnamese.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Tower of God xoay quanh một cậu bé tên là Twenty-Fifth Bam, người dành phần lớn cuộc đời mắc kẹt dưới một tòa tháp rộng lớn và bí ẩn cùng người bạn thân Rachel. Khi Rachel vào Tháp, Bam cũng theo sau vào đó và kết cục cậu phải đối mặt với thử thách ở mỗi tầng tòa tháp này với mong muốn tìm lại người bạn đồng hành của mình.'''
+    vi_VN: ''''''
   }
 
   # information [obj] <nbl>
@@ -218,32 +209,47 @@ Bam en sortira t-il indemne ?'''
     synonyms:
     {
       en_Latn: [
-        Kami no Tō
-        ToG
+
       ]
       ar_001: [
-        برج الإله
+        
       ]
-      hu_HU: null
-      he_IL: null
       id_ID: [
-        Menara Dewa
+        
       ]
-      en_US: null
+      en_US: [
+        
+      ]
       ja_JP: [
-        神之塔 -Tower of God-
-        タワーオブ・ゴッド
-        神の塔
+        
       ]
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: null
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+      de_DE: [
+        
+      ]
+      ko_KR: [
+        
+      ]
+      fr_FR: [
+        
+      ]
+      pt_PT: [
+        
+      ]
+      ru_RU: [
+        
+      ]
+      es_ES: [
+        
+      ]
+      zh_Hans: [
+        
+      ]
+      zh_Hant: [
+        
+      ]
+      vi_VN: [
+        
+      ]
     }
 
     # type [obj] <nbl> => [str] <nbl>
@@ -252,11 +258,11 @@ Bam en sortira t-il indemne ?'''
     {
       // Allowed values are:
       // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+      en_US: 
 
       // Allowed values are:
       // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
+      id_ID: 
     }
 
     # status [obj] > [str] <nbl>
@@ -265,11 +271,11 @@ Bam en sortira t-il indemne ?'''
     {
       // Allowed values are:
       // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Airing
+      en_US: 
 
       // Allowed values are:
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Mengudara
+      id_ID: 
     }
 
     # serialGenre [obj]
@@ -284,15 +290,7 @@ Bam en sortira t-il indemne ?'''
       //  Supernatural, Thriller, War
       en_US:
       [
-        Action
-        Adventure
-        Drama
-        Fantasy
-        Mystery
-        Comedy
-        Romance
-        Science Fiction
-        Supernatural
+        
       ]
 
       # id_ID [arr] <nbl>
@@ -303,15 +301,7 @@ Bam en sortira t-il indemne ?'''
       //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
-        Aksi
-        Petualangan
-        Drama
-        Fantasi
-        Misteri
-        Komedi
-        Romansa
-        Fiksi Ilmiah
-        Supernatural
+        
       ]
     }
 
@@ -325,58 +315,14 @@ Bam en sortira t-il indemne ?'''
       # = Serial tags in English.
       en_US:
       [
-        Super Power
-        Shounen
-        Magic
-        Conspiracy
-        Battle Royale
-        Politics
-        Tsundere
-        Swordplay
-        Tragedy
-        Circus
-        PVP
-        PVE
-        Guns
-        Monster
-        Martial Arts
-        Beastmen
-        Psi-Powers
-        Fantasy World
-        Dreams
-        Friendship
-        Survival
-        Violence
-        Dark Fantasy
+
       ]
 
       # id_ID [arr] <nbl>
       # = Serial tags in Indonesian.
       id_ID:
       [
-        Kekuatan Super
-        Shounen
-        Sihir
-        Konspirasi
-        Battle Royale
-        Politik
-        Tsundere
-        Permainan Anggar
-        Tragedi
-        Sirkus
-        PVT
-        PVE
-        Senjata Api
-        Monster
-        Seni bela diri
-        Manusia Buas
-        Kekuatan Psikis
-        Dunia Fantasi
-        Mimpi
-        Persahabatan
-        Bertahan Hidup
-        Kekerasan
-        Fantasi Gelap
+        
       ]
     }
 
@@ -386,106 +332,105 @@ Bam en sortira t-il indemne ?'''
     {
       // Allowed values are
       // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Spring
+      en_US: 
 
       // Allowed values are
       // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Semi
+      id_ID: 
 
       // Allowed values are
       // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 春
+      ja_JP: 
 
       // Allowed values are
       // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 봄
+      ko_KR: 
 
       // Allowed values are
       // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 春天
+      zh_Hans: 
 
       // Allowed values are
       // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 春天
+      zh_Hant: 
     }
 
     # releaseYear [num] <nbl>
     # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2020
+    releaseYear: 0
 
     # episode [num] <nbl>
     # = Total episodes of serial. If unknown, fill null.
-    episode: 13
+    episode: 0
 
     # releaseDate [str]
     # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2020-04-02
+    releaseDate: 
 
     # endDate [str]
     # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: 2020-06-25
+    endDate: 
 
     # duration [num] <nab>
     # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 24
+    duration: 0
 
     # totalDuration [num] <nab>
     # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 312
+    totalDuration: 0
 
     # studio [str] <arb> <nab>
     # = Studio producing series.
-    studio: Telecom Animation Film
+    studio: 
 
     # rating [str] <nab>
     # = Broadcast content rating of serial. See the wiki for more information.
     // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
+    rating: 
 
     # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
-    #   false, yakni aman.
-    // Argumen yang diperbolehkan ialah
-    // true dan false
+    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
+    #   known as safe.
+    //  Allowed values are "true" and "false"
     isNsfw: false
 
     # adaptation [obj] > [str] <arb> <nab>
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are
+      // Allowed values are: 
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
-      en_US: Webtoon
+      en_US: 
 
-      // Allowed values are
+      // Allowed values are:
       //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
       //   4-panel, Dongeng, and null
-      id_ID: Webtoon
+      id_ID: 
     }
 
     # country [str] <nbl>
     # = Country of origin of serial. There are no country restrictions here.
     country:
     {
-      en_US: Japan
-      id_ID: Jepang
+      en_US: 
+      id_ID: 
     }
 
     # officialWebsite [str] <url> <nab>
     # = Links to official website of current entry.
-    officialWebsite: https://tog-anime.com/
+    officialWebsite: 
 
     # promotionalVideos [arr] <nab> > [str] <url>
     # = List of promotional videos of current entry.
     promotionalVideos: [
-      https://youtu.be/RNyClma6awo
+
     ]
 
     # producers [arr] <nab> > [str]
     # = Producers that involved to current entry/project
     producers: [
-      Crunchyroll
+
     ]
   }
 
@@ -500,8 +445,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 15391
-      score: 6.15
+      id: 0
+      score: 0
     }
     
     // https://anilist.co
@@ -510,8 +455,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 115230
-      score: 77
+      id: 0
+      score: 0
     }
 
     // https://anime-planet.com
@@ -519,21 +464,23 @@ Bam en sortira t-il indemne ?'''
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/tower-of-god
+      url: 
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 14552
-      score: 4.376
+      id: 0
+      score: 0
     }
+
+    // https://animenewsnetwork.com
     ANN:
     {
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 23068
-      score: 6.786
+      id: 0
+      score: 0
     }
 
     // https://anisearch.com
@@ -541,13 +488,13 @@ Bam en sortira t-il indemne ?'''
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/14974,kami-no-tou
+      url: 
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 14974
-      score: 78
+      id: 0
+      score: 0
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -556,8 +503,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 7325
-      score: 75.57
+      id: 0
+      score: 0
     }
 
     // https://imdb.com
@@ -566,8 +513,8 @@ Bam en sortira t-il indemne ?'''
       # code [str] <nab>
       # = Similar to ID, but the only difference is there is an additional identification character
       #   that used by IMDB.
-      code: tt12057106
-      score: 8.0
+      code: 
+      score: 0
     }
 
     // https://kinopoisk.ru
@@ -576,8 +523,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1363114
-      score: 7.6
+      id: 0
+      score: 0
     }
 
     // https://kitsu.io
@@ -585,13 +532,13 @@ Bam en sortira t-il indemne ?'''
     {
       # slug [str]
       # = Is a human readable version of the linked index URL.
-      slug: tower-of-god
+      slug: 
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 43004
-      score: 80.84
+      id: 0
+      score: 0
     }
 
     // https://livechart.me
@@ -600,8 +547,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 9793
-      score: 8.41
+      id: 0
+      score: 0
     }
 
     // https://myanimelist.net
@@ -610,8 +557,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 40221
-      score: 7.87
+      id: 0
+      score: 0
     }
     
     // https://en.myshows.me/
@@ -620,8 +567,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 66157
-      score: 4.41
+      id: 0
+      score: 0
     }
 
     // http://nautiljon.com/
@@ -629,8 +576,8 @@ Bam en sortira t-il indemne ?'''
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/kami+no+tou+-+tower+of+god+-.html
-      score: 8.54
+      url: 
+      score: 0
     }
 
     // https://notify.moe/
@@ -638,8 +585,8 @@ Bam en sortira t-il indemne ?'''
     {
       # base64 [str]
       # = This is a unique numbering system that Notify.moe uses on their website
-      base64: m1ZLrsUWg
-      score: 7.74
+      base64: 
+      score: 0
     }
 
     // http://otakotaku.com/
@@ -648,8 +595,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1740
-      score: 7.69
+      id: 0
+      score: 0
     }
 
     // http://shikimori.org/
@@ -658,8 +605,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 40221
-      score: 7.88
+      id: 0
+      score: 0
     }
 
     // https://simkl.com
@@ -668,8 +615,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1255681
-      score: 8.2
+      id: 0
+      score: 0
     }
 
     // https://www.themoviedb.org/
@@ -677,13 +624,13 @@ Bam en sortira t-il indemne ?'''
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/97860
+      url: 
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 97860
-      score: 88
+      id: 0
+      score: 0
     }
 
     // https://trakt.tv/
@@ -691,13 +638,13 @@ Bam en sortira t-il indemne ?'''
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://trakt.tv/shows/tower-of-god
+      url: 
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 158032
-      score: 81
+      id: 0
+      score: 0
     }
 
     // https://www.tvtime.com/en
@@ -706,8 +653,8 @@ Bam en sortira t-il indemne ?'''
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 376729
-      score: 9.82
+      id: 0
+      score: 0
     }
   }
 
@@ -726,146 +673,106 @@ Bam en sortira t-il indemne ?'''
   // TZD  = time zone designator based on UTC (WIB: +07:00)
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-07-28T18:06:30+07:00
-  fansub:
+  updatedDate: 
+
+  # streamLinks [obj] <nbl>
+  # = Lists of official streaming sites.
+  streamLinks:
   {
-    idn:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia: 
     {
-      Aibou: null
-      Aizukara: null
-      Allsub: https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&m=1
-      Alter: null
-      AnimeGokil: null
-      AniToki: null
-      AoiTenshi: null
-      Arks: null
-      ASubs: null
-      AWSubs: http://awsubs.co/anime/tower-of-god/
-      Bentoo: null
-      Caramel: null
-      Cijanepoi: null
-      Conan: null
-      DAnimeSubs: null
-      Del: null
-      DNFI: https://www.doranobi-fansub.id/category/tower-of-god/
-      Durandal: null
-      EmotPekmen: null
-      Excalibur: null
-      exTonan: https://extonan.web.id/kami-no-tou
-      Gantz: null
-      Gin: null
-      Haruna: null
-      Haruzora: null
-      HunterNoSekai: https://www.huntersekai.website/search/label/Kami%20no%20Tou?&max-results=8
-      IA: https://www.iasubs.com/search/label/Kami%20no%20Tou
-      Inazumaotoshi: null
-      Indis: null
-      Inform0930: null
-      Isekai: null
-      Junk: null
-      Kazefuri: https://kazefuri.me/kami-no-tou/
-      Kinshiru: null
-      KO: null
-      Kopaja: null
-      LCC: null
-      MangaNekoTranslation: null
-      Melody: null
-      Mite: null
-      Nanairo: null
-      Neo: null
-      OPLovers: https://www.oploverz.in/series/tower-of-god/
-      Ougi: null
-      Panagayan: null
-      Pendekar: https://pendekarsubs.us/anime/kami-no-tou/
-      Pucuk: null
-      Quinime: null
-      RevieXion: null
-      Samehadaku: https://samehadaku.vip/anime/tower-of-god/
-      SilverYasha: null
-      Sora: null
-      TTOD: null
-      Vedifi: null
-      Warung: null
-      Wibu: null
-      Yuki: null
-      Zen: http://zensubs.xyz/?s=Anaak+Jahad
+      en_001:
+      vi_VN: 
+      ms_MY: 
+      th_TH: 
+      zh_Hant_HK: 
+      zh_Hant_TW: 
     }
-    eng:
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim: 
     {
-      Horrible: https://horriblesubs.info/shows/tower-of-god
+      fr: 
+      sc: 
+      de: 
+      ru: 
+    }
+    WeTV: 
+    YamatoAnimation: 
+    YouTube: 
+    {
+      url: 
+      isChannel: 
     }
   }
-  fanshare:
-  {
-    idn:
-    {
-      AniBatch: null
-      AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
-      AnimeSAVE: null
-      Bakacan: https://bakacan.id/anime/kami-no-tou/
-      Drivenime: https://drivenime.com/kami-no-tou-subtitle-indonesia-batch/
-      Hinime: https://hinime.com/tower-of-god-sub-indo/
-      Koenime: https://www.koenime.com/kamitou-sub-indo/
-      Kusonime: https://kusonime.com/sinui-tap-batch-sub-indo/
-      Mikanime: null
-      Moenime: https://moenime.web.id/kaminoto-sub-indo/
-      Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
-      WibuDesu: https://wibudesu.com/kami-no-tou-subtitle-indonesia/
-    }
-    eng:
-    {
-      AnimeKayo: https://animekayo.com/?s=Tower+of+God
-    }
-  }
-  fanstream:
-  {
-    idn:
-    {
-      AnimeIndoNET: http://animeindo.moe/anime/tower-of-god
-      anoBoy: https://anoboy.us/anime/kami-no-tou/
-      Gomunime: null
-      Moeclip: https://moeclip.com/anime/kami-no-tou-sub-indo/
-      Neonime: https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/
-      Onnime: https://onnime.net/anime/kami-no-tou.Xz1olYGa/
-      OtakuIndo: https://otakuindo.org/nonton/tower-of-god-sub-indo/
-    }
-    eng:
-    {
-      fourAnime: https://4anime.to/anime/kami-no-tou
-      nineAnime: https://9anime.to/watch/kami-no-tou-tower-of-god-dub.m9qz
-      AnimeDaisuki: https://animedaisuki.moe/anime/911/tower-of-god
-      AnimeTwist: https://twist.moe/a/kami-no-tou-tower-of-god/1
-      Animeflix: https://animeflix.io/shows/kami-no-tou
-      AnimeHeaven: https://animeheaven.ru/detail/kami-no-tou.83556
-      Animelon: null
-      Animeultima: https://www1.animeultima.to/a/kami-no-tou_365090
-      AniWatch: https://aniwatch.me/anime/2345
-      GogoAnime: https://www16.gogoanime.io/category/kami-no-tou
-      WonderfulSubs: https://beta.wonderfulsubs.com/watch/towerofgod
-    }
-  }
-  library:
-  {
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kami+no+Tou
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kami%20no%20Tou&kartel=
-  }
-  
+
   # signature
   # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
     # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
+    name: 
 
     # username [str] <nbl>
     # = Your username on GitHub
-    username: @nattadasu
+    username: 
 
     # discordId [num] <nbl>
     # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
     #   ID: 594442535615725579
-    discordId: 384089845527478272
+    discordId: 594442535615725579
 
     # submissionDateTime [str] <nbl>
     # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
@@ -882,11 +789,11 @@ Bam en sortira t-il indemne ?'''
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-20T18:13:25+07:00
+    submissionDateTime: 
 
     # sign [str][num] <nbl>
     # = These are the unique characters that contributors use to "sign" data. Can use characters 
     #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    sign: 
   }
 }

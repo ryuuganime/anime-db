@@ -1,0 +1,131 @@
+<h1>Human Friendly Anime Indexing List</h1>
+'''DISCLAIMER'''
+
+This wiki maybe loads slower than expected.
+<!--
+<nowiki>===Template for==</nowiki>
+<nowiki>===List Section==</nowiki>
+
+<li>'''en_Latn Title'''
+( [[json/000/000.json|json]] 
+| [[hjson/000/000.hjson|hjson]] 
+| [[yaml/000/000.yaml|yaml]]
+| [[xml/000/000.xml|xml]] )</li>
+
+<nowiki>=END OF TEMPLATE=</nowiki>
+
+<nowiki>======NOTES======</nowiki>
+*Change 000/000 based on the index
+*Change "en_Latn title" to romaji
+  title of index
+<nowiki>===END OF NOTES==</nowiki>
+-->
+
+__TOC__
+
+= List =
+== 001-100 ==
+<ol>
+<li>'''Fugou Keiji Balance:UNLIMITED'''
+( [[json/000/001.json|json]]
+| [[hjson/000/001.hjson|hjson]]
+| [[yaml/000/001.yaml|yaml]]
+| [[xml/000/001.xml|xml]] )</li>
+<li>'''Sword Art Online: Alicization'''
+( [[json/000/002.json|json]]
+| [[hjson/000/002.hjson|hjson]]
+| [[yaml/000/002.yaml|yaml]]
+| [[xml/000/002.xml|xml]] )</li>
+<li>'''Boku no Hero Academia'''
+( [[json/000/003.json|json]]
+| [[hjson/000/003.hjson|hjson]]
+| [[yaml/000/003.yaml|yaml]]
+| [[xml/000/003.xml|xml]] )</li>
+<li>'''Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen'''
+( [[json/000/004.json|json]]
+| [[hjson/000/004.hjson|hjson]]
+| [[yaml/000/004.yaml|yaml]]
+| [[xml/000/004.xml|xml]] )</li>
+<li>'''Gleipnir'''
+( [[json/000/005.json|json]]
+| [[hjson/000/005.hjson|hjson]]
+| [[yaml/000/005.yaml|yaml]]
+| [[xml/000/005.xml|xml]] )</li>
+<li>'''Kami no Tou'''
+( [[json/000/006.json|json]]
+| [[hjson/000/006.hjson|hjson]]
+| [[yaml/000/006.yaml|yaml]]
+| [[xml/000/006.xml|xml]] )</li>
+<li>'''Yesterday wo Utatte'''
+( [[json/000/007.json|json]]
+| [[hjson/000/007.hjson|hjson]]
+| [[yaml/000/007.yaml|yaml]]
+| [[xml/000/007.xml|xml]] )</li>
+<li>'''Kimi no Suizou wo Tabetai'''
+( [[json/000/008.json|json]]
+| [[hjson/000/008.hjson|hjson]]
+| [[yaml/000/008.yaml|yaml]]
+| [[xml/000/008.xml|xml]] )</li>
+<li>'''Monster Musume no Iru Nichijou'''
+( [[json/000/009.json|json]]
+| [[hjson/000/009.hjson|hjson]]
+| [[yaml/000/009.yaml|yaml]]
+| [[xml/000/009.xml|xml]] )</li>
+<li>'''Sarazanmai'''
+( [[json/000/010.json|json]]
+| [[hjson/000/010.hjson|hjson]]
+| [[yaml/000/010.yaml|yaml]]
+| [[xml/000/010.xml|xml]] )</li>
+<li>'''Dakaretai Otoko 1-i ni Odosarete Imasu.'''
+( [[json/000/011.json|json]]
+| [[hjson/000/011.hjson|hjson]]
+| [[yaml/000/011.yaml|yaml]]
+| [[xml/000/011.xml|xml]] )</li>
+<li>'''Uchi Tama?! Uchi no Tama Shirimasen ka?'''
+( [[json/000/012.json|json]]
+| [[hjson/000/012.hjson|hjson]]
+| [[yaml/000/012.yaml|yaml]]
+| [[xml/000/012.xml|xml]] )</li>
+<li>'''Somali to Mori no Kamisama'''
+( [[json/000/013.json|json]]
+| [[hjson/000/013.hjson|hjson]]
+| [[yaml/000/013.yaml|yaml]]
+| [[xml/000/013.xml|xml]] )</li>
+<!--Place the recent index above this line--></ol>
+
+= Deprecated List (HTML) =
+* [[html/3D Kanojo_ Real Girl 2nd Season.html|3D Kanojo: Real Girl 2nd Season]]
+* [[html/7 Seeds.html|7 Seeds]]
+* [[html/Actors_ Song Connection.html|Actors: Song Connection]]
+* [[html/Africa no Salaryman (TV).html|Africa no Salaryman (TV)]]
+* [[html/Aggressive Retsuko_ We Wish You a Metal Christmas.html|Aggressive Retsuko: We Wish You a Metal Christmas]]
+* [[html/Ahiru no Sora.html|Ahiru no Sora]]
+* [[html/Aikatsu Friends!_ Kagayaki no Jewel.html|Aikatsu Friends!: Kagayaki no Jewel.html]]
+* [[html/Ani ni Tsukeru Kusuri wa Nai! 3.html|Ani ni Tsukeru Kusuri wa Nai! 3.html]]
+* [[html/Araburu Kisetsu no Otome-domo yo.html|Araburu Kisetsu no Otome-domo yo]]
+* [[html/Arifureta Shokugyou de Sekai Saikyou.html|Arifureta Shokugyou de Sekai Saikyou]]
+* [[html/Assassins Pride.html|Assassins Pride]]
+* [[html/Azur Lane.html|Azur Lane]]
+* [[html/Babylon.html|Babylon]]
+* [[html/Bakumatsu_ Ren'ai Bakumatsu Kareshi Gaiden - Crisis.html|Bakumatsu: Ren'ai Bakumatsu Kareshi Gaiden - Crisis]]
+* [[html/Bananya_ Fushigi na Nakamatachi.html|Bananya: Fushigi na Nakamatachi]]
+* [[html/Beastars.html|Beastars]]
+* [[html/BEM.html|BEM]]
+* [[html/Boku no Hero Academia 4th Season.html|Boku no Hero Academia 4th Season]]
+* [[html/Bokutachi wa Benkyou ga Dekinai.html|Bokutachi wa Benkyou ga Dekinai]]
+* [[html/Bokutachi wa Benkyou ga Dekinai!.html|Bokutachi wa Benkyou ga Dekinai!]]
+* [[html/Bungou Stray Dogs 3rd Season.html|Bungou Stray Dogs 3rd Season]]
+* [[html/Business Fish.html|Business Fish]]
+* [[html/Cardfight!! Vanguard_ Shinemon-hen.html|Cardfight!! Vanguard: Shinemon-hen]]
+* [[html/Carole _ Tuesday.html|Carole &amp; Tuesday]]
+* [[html/Chou Kadou Girl __ Amazing Stranger.html|Chou Kadou Girl ⅙: Amazing Stranger]]
+* [[html/Chuubyou Gekihatsu Boy.html|Chuubyou Gekihatsu Boy]]
+* [[html/Diamond no Ace_ Act II.html|Diamond no Ace: Act II]]
+* [[html/Dororo.html|Dororo]]
+* [[html/Enen no Shouboutai.html|Enen no Shouboutai]]
+* [[html/Fairy Gone.html|Fairy Gone]]
+* [[html/Fate_Grand Order_ Zettai Majuu Sensen Babylonia.html|Fate/Grand Order: Zettai Majuu Sensen Babylonia]]
+* [[html/Honzuki no Gekokujou_ Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen.html|Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen]]
+* [[html/Katsudou Shashin.html|Katsudou Shashin]]
+* [[html/Namakura Gatana.html|Namakura Gatana]]
+* [[html/Shin Chuuka Ichiban!.html|Shin Chuuka Ichiban!]]

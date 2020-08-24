@@ -15,7 +15,7 @@ title:
     es_ES: Monster Musume no Iru Nichijou
     zh_Hans: 魔物娘的同居日常
     zh_Hant: 魔物娘的同居日常
-    vi_VN: null
+    vi_VN: 
 backdrop: https://image.tmdb.org/t/p/original/igIOe1g8xRYOFgiCgkd29y8UcVH.jpg
 visualKey: https://image.tmdb.org/t/p/original/8leXiwIwPRPQqHXKDhqgf4OIwBU.jpg
 synopsis:
@@ -101,32 +101,32 @@ synopsis:
         más y más en un hogar repleto de chicas liminals, quiera él o no. Y lo peor llega
         cuando por unos cambios en la ley que afecta a la relación entre ambas especies,
         deberá casarse con una de ellas.
-    zh_Hans: 將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
+    zh_Hans: 将至今为止被政府匿藏起来的人类以外的魔物种族，为了实现与魔物他们的交流而制定出来的新方案。以此为基础文化交流积极地推动起来。作为全面开放前的准备工作，各种族所挑选的少量代表们开始进入人类社会的寄宿家庭居住，让一般人慢慢接受亚人物种的同时，也观察亚人种族进入人类社会所遭遇的障碍与问题。在这样的背景下，半蛇半人的亚种人蛇族——米亚寄宿在主角住宅处，对在进行文化交流的来留主公人来说，非比寻常的刺激与搞笑开始……
     zh_Hant: 將至今為止被政府匿藏起來的人類以外的魔物種族，為了實現與魔物他們的交流而制定出來的新方案。以此為基礎文化交流積極地推動起來。作為全面開放前的準備工作，各種族所挑選的少量代表們開始進入人類社會的寄宿家庭居住，讓一般人慢慢接受亞人物種的同時，也觀察亞人種族進入人類社會所遭遇的障礙與問題。在這樣的背景下，半蛇半人的亞種人蛇族——米亞寄宿在主角住宅處，對在進行文化交流的來留主公人來說，非比尋常的刺激與搞笑開始……
-    vi_VN: null
+    vi_VN: 
 information:
     synonyms:
         en_Latn:
         - MonMusu
-        ar_001: null
-        id_ID: null
-        en_US: null
+        ar_001: 
+        id_ID: 
+        en_US: 
         ja_JP:
         - モンスター娘のいる日常
         de_DE:
         - Die Monster Mädchen
         ko_KR:
         - 몬스터 아가씨가 있는 일상
-        fr_FR: null
-        pt_PT: null
+        fr_FR: 
+        pt_PT: 
         ru_RU:
         - Повседневная жизнь с девушкой-монстром
-        es_ES: null
+        es_ES: 
         zh_Hans:
         - 魔物娘的同居日常
         zh_Hant:
         - 魔物娘的同居日常
-        vi_VN: null
+        vi_VN: 
     type:
         en_US: TV
         id_ID: Serial TV
@@ -139,7 +139,7 @@ information:
         - Romance
         - Comedy
         - Mature
-        - Sci-Fi
+        - Science Fiction
         - Slice of Life
         id_ID:
         - Fantasi
@@ -194,10 +194,10 @@ information:
     endDate: '2015-09-23'
     duration: 23
     totalDuration: 
-    studio: 
-        - Studio Hibari
-        - TOHO animation
-        - Genco
+    studio:
+    - Studio Hibari
+    - TOHO animation
+    - Genco
     rating: R18+
     isNsfw: true
     adaptation:
@@ -206,6 +206,13 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: http://monmusu.tv/
+    promotionalVideos:
+    - https://youtu.be/G-IfYF_oesk
+    producers:
+    - Genco
+    - Studio Hibari
+    - TOHO animation
 scores:
     aniDB:
         id: 11130
@@ -277,64 +284,64 @@ scores:
 updatedDate: '2020-06-03T16:45:30+07:00'
 fansub:
     idn:
-        Aibou: null
-        Aizukara: null
-        Allsub: null
-        Alter: null
-        AnimeGokil: null
-        AniToki: null
-        AoiTenshi: null
-        Arks: null
-        ASubs: null
-        AWSubs: null
-        Bentoo: null
-        Caramel: null
-        Cijanepoi: null
-        Conan: null
-        DAnimeSubs: null
-        Del: null
-        DNFI: null
-        Durandal: null
-        EmotPekmen: null
-        Excalibur: null
-        exTonan: null
-        Gantz: null
-        Gin: null
-        Haruna: null
-        Haruzora: null
-        HunterNoSekai: null
-        IA: null
-        Inazumaotoshi: null
-        Indis: null
-        Inform0930: null
-        Isekai: null
-        Junk: null
-        Kazefuri: null
-        Kinshiru: null
-        KO: null
-        Kopaja: null
-        LCC: null
-        MangaNekoTranslation: null
-        Melody: null
-        Mite: null
-        Nanairo: null
-        Neo: null
-        OPLovers: null
-        Ougi: null
-        Panagayan: null
-        Pendekar: null
-        Pucuk: null
-        Quinime: null
-        RevieXion: null
-        Samehadaku: null
-        SilverYasha: null
-        Sora: null
-        TTOD: null
-        Vedifi: null
-        Warung: null
-        Wibu: null
-        Yuki: null
-        Zen: null
+        Aibou: 
+        Aizukara: 
+        Allsub: 
+        Alter: 
+        AnimeGokil: 
+        AniToki: 
+        AoiTenshi: 
+        Arks: 
+        ASubs: 
+        AWSubs: 
+        Bentoo: 
+        Caramel: 
+        Cijanepoi: 
+        Conan: 
+        DAnimeSubs: 
+        Del: 
+        DNFI: 
+        Durandal: 
+        EmotPekmen: 
+        Excalibur: 
+        exTonan: 
+        Gantz: 
+        Gin: 
+        Haruna: 
+        Haruzora: 
+        HunterNoSekai: 
+        IA: 
+        Inazumaotoshi: 
+        Indis: 
+        Inform0930: 
+        Isekai: 
+        Junk: 
+        Kazefuri: 
+        Kinshiru: 
+        KO: 
+        Kopaja: 
+        LCC: 
+        MangaNekoTranslation: 
+        Melody: 
+        Mite: 
+        Nanairo: 
+        Neo: 
+        OPLovers: 
+        Ougi: 
+        Panagayan: 
+        Pendekar: 
+        Pucuk: 
+        Quinime: 
+        RevieXion: 
+        Samehadaku: 
+        SilverYasha: 
+        Sora: 
+        TTOD: 
+        Vedifi: 
+        Warung: 
+        Wibu: 
+        Yuki: 
+        Zen: 
     eng:
         Horrible: https://horriblesubs.info/shows/monster-musume-no-iru-nichijou/
 fanshare:
@@ -343,38 +350,37 @@ fanshare:
         AnimeKompi: http://animekompi.web.id/series/monster-musume-no-iru-nichijou/
         AnimeSAVE: http://www.animesave.com/monster-musume-no-iru-nichijou-bd-subtitle-indonesia/
         Bakacan: https://bakacan.id/anime/monster-musume-no-iru-nichijou/
-        Drivenime: null
-        Hinime: null
+        Drivenime: 
+        Hinime: 
         Koenime: https://www.koenime.com/monmusu-sub-indo/
         Kusonime: https://kusonime.com/monmusu-batch-sub-indo/
         Mikanime: https://mikanime.com/monster-musume-sub-indo/
         Moenime: https://moenime.web.id/monster-musume-no-iru-nichijou-sub-indo/
-        Ryuukoi: null
+        Ryuukoi: 
         WibuDesu: https://wibudesu.com/bd-monster-musume-no-iru-nichijou-subtitle-indonesia/
     eng:
         AnimeKayo: https://animekayo.com/?s=Monster+Musume
 fanstream:
     idn:
-        AnimeIndoNET: null
+        AnimeIndoNET: 
         anoBoy: https://anoboy.us/anime/monster-musume-no-iru-nichijou/
-        Gomunime: null
+        Gomunime: 
         Moeclip: https://moeclip.com/anime/monster-musume-no-iru-nichijou-sub-indo/
         Neonime: https://neonime.moe/episode/monster-musume-no-iru-nichijou-bd-1x1/
         Onnime: https://onnime.net/anime/monster-musume-no-iru-nichijou.6G78b20Q/
-        OtakuIndo: null
+        OtakuIndo: 
     eng:
         fourAnime: https://4anime.to/anime/monster-musume-no-iru-nichijou
         nineAnime: https://9anime.ru/watch/monster-musume-no-iru-nichijou.ywx
         AnimeDaisuki: https://animedaisuki.moe/anime/238/monster-musume-no-iru-nichijou
         AnimeTwist: https://twist.moe/a/monster-musume-no-iru-nichijou/1
-        Animeflix: null
+        Animeflix: 
         AnimeHeaven: https://animeheaven.ru/detail/monster-musume-no-iru-nichijou.31068
-        Animelon: null
+        Animelon: 
         Animeultima: https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927
         AniWatch: https://aniwatch.me/anime/336
         GogoAnime: https://gogoanimes.co/category/monster-musume-no-iru-nichijou
-        KissAnime: http://kissanime.ru/Anime/Monster-Musume-no-Iru-Nichijou
-        WonderfulSubs: null
+        WonderfulSubs: 
 library:
     Nyaa: https://nyaa.si/?q=Monster+Musume&f=0&c=0_0
     PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Monster%20Musume&kartel=

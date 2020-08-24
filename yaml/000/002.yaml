@@ -135,7 +135,7 @@ information:
         - Adventure
         - Fantasy
         - Romance
-        - Sci-Fi
+        - Science Fiction
         - Drama
         - Mature
         id_ID:
@@ -143,7 +143,7 @@ information:
         - Petualangan
         - Fantasi
         - Romansa
-        - Sci-Fi
+        - Fiksi Ilmiah
         - Drama
         - Dewasa
     serialTags:
@@ -207,6 +207,18 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: http://www.swordart-online.net/alicization/
+    promotionalVideos:
+    - https://www.youtube.com/watch?v=eqp1vwV8usU
+    - https://www.youtube.com/watch?v=AgUDAN_6nOE
+    producers:
+    - Aniplex
+    - Genco
+    - Bandai Namco Entertainment
+    - Egg Firm
+    - Straight Edge
+    - Kadokawa
+    - Sonilude
 scores:
     aniDB:
         id: 13493
@@ -374,7 +386,6 @@ fanstream:
         Animeultima: 
         AniWatch: https://aniwatch.me/anime/822
         GogoAnime: https://gogoanimes.co/category/sword-art-online-alicization
-        KissAnime: http://kissanime.ru/Anime/Sword-Art-Online-Alicization
         WonderfulSubs: https://www.wonderfulsubs.com/watch/swordartonlineiii
 library:
     Nyaa: https://nyaa.si/?f=0&c=0_0&q=Sword+Art+Online%3A+Alicization

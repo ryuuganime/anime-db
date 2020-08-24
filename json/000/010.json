@@ -1,4 +1,5 @@
 {
+    "$schema": "../../schemas/entry.json",
     "title": {
         "native": "さらざんまい",
         "en_Latn": "Sarazanmai",
@@ -67,7 +68,7 @@
                 "Comedy",
                 "Romance",
                 "Slice of Life",
-                "Sci-Fi",
+                "Science Fiction",
                 "Music"
             ],
             "id_ID": [
@@ -77,7 +78,7 @@
                 "Drama",
                 "Komedi",
                 "Romansa",
-                "Sci-Fi",
+                "Fiksi Ilmiah",
                 "Potongan Kehidupan",
                 "Musik"
             ]
@@ -161,7 +162,18 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://sarazanmai.com/",
+        "promotionalVideos": [
+            "https://youtu.be/SmjKRnEyai0"
+        ],
+        "producers": [
+            "Aniplex",
+            "Dentsu",
+            "Movic",
+            "Fuji TV",
+            "Gentosha Comics"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -356,7 +368,6 @@
             "Animeultima": null,
             "AniWatch": "https://aniwatch.me/anime/1130",
             "GogoAnime": "https://www2.gogoanime.io/category/sarazanmai",
-            "KissAnime": "https://kissanime.ru/Anime/Sarazanmai",
             "WonderfulSubs": "https://www.wonderfulsubs.com/watch/sarazanmai"
         }
     },

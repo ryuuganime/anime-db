@@ -14,7 +14,7 @@
         "fr_FR": "My Hero Academia",
         "pt_PT": "Minha Academia de Heróis",
         "ru_RU": "Моя геройская академия",
-        "es_ES": "My Hero Academia",
+        "es_ES": "Моя геройская академия",
         "zh_Hans": "我的英雄学院",
         "zh_Hant": "我的英雄學院",
         "vi_VN": "Học Viện Siêu Anh Hùng"
@@ -41,6 +41,7 @@
     "information": {
         "synonyms": {
             "en_Latn": [
+                "BNHA",
                 "Boku no hîrô akademia"
             ],
             "ar_001": [
@@ -53,7 +54,7 @@
                 "Bokuaka"
             ],
             "en_US": [
-                "BNHA",
+                "MHA",
                 "heroaca"
             ],
             "ja_JP": [
@@ -163,7 +164,18 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://www.heroaca.com/",
+        "promotionalVideos": [
+            "https://youtu.be/AhqVltWDqFA"
+        ],
+        "producers": [
+            "Dentsu",
+            "Mainichi Broadcasting System",
+            "Movic",
+            "TOHO animation",
+            "Shueisha"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -358,7 +370,6 @@
             "Animeultima": "https://www1.animeultima.to/a/boku-no-hero-academia_791758",
             "AniWatch": "https://aniwatch.me/anime/119",
             "GogoAnime": "https://gogoanimes.co/category/boku-no-hero-academia",
-            "KissAnime": "http://kissanime.ru/Anime/Boku-no-Hero-Academia-My-Hero-Academia",
             "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/myheroacademia"
         }
     },

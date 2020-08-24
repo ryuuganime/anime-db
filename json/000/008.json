@@ -128,7 +128,14 @@
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "http://www.kimisui-anime.com/",
+        "promotionalVideos": [
+            "https://youtu.be/2NXip6ix5hE"
+        ],
+        "producers": [
+            "Aniplex"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -325,7 +332,6 @@
             "Animeultima": "https://www1.animeultima.to/a/kimi-no-suizou-wo-tabetai_194854",
             "AniWatch": "https://aniwatch.me/anime/1020",
             "GogoAnime": "https://gogoanimes.co/category/kimi-no-suizou-wo-tabetai",
-            "KissAnime": "http://kissanime.ru/Anime/Kimi-no-Suizou-wo-Tabetai",
             "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/iwanttoeatyourpancreas"
         }
     },

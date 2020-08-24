@@ -4,8 +4,6 @@
         "native": "神之塔",
         "en_Latn": "Kami no Tou",
         "ar_001": "برج السيد",
-        "hu_HU": null,
-        "he_IL": null,
         "id_ID": "Tower of God",
         "en_US": "Tower of God",
         "ja_JP": "神之塔",
@@ -22,20 +20,18 @@
     "backdrop": "https://artworks.thetvdb.com/banners/series/376729/backgrounds/5e83e84259d99.jpg",
     "visualKey": "https://artworks.thetvdb.com/banners/series/376729/posters/62106354.jpg",
     "synopsis": {
-        "ar_001": "“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البر ج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.",
-        "hu_HU": null,
-        "he_IL": null,
+        "ar_001": "“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.",
         "id_ID": "Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya, Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk menemukan teman dekatnya.",
-        "en_US": "There is a tower that summons chosen people called \"Regulars\" with the promise of granting their deepest  desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.\n\nTwenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.\n\nThus begins the journey of Bam, a young boy who  was not chosen by the Tower but opened its gates by himself. They call his kind \"Irregulars\"—beings that have shaken the very foundation of the Tower each time they set foot inside it.",
-        "ja_JP": "神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部  分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開 けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）",
-        "de_DE": "Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.\n\nDer Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm  lebend zu verlassen. <br>Quelle: <a href=\"https://www.anisearch.de/anime/14974,kami-no-tou\">aniSearch.de</a>",
-        "ko_KR": "탑에 오르면,   모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서  탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.",
+        "en_US": "There is a tower that summons chosen people called \"Regulars\" with the promise of granting their deepest desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.\n\nTwenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.\n\nThus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind \"Irregulars\"—beings that have shaken the very foundation of the Tower each time they set foot inside it.",
+        "ja_JP": "神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）",
+        "de_DE": "Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.\n\nDer Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm lebend zu verlassen. <br>Quelle: <a href=\"https://www.anisearch.de/anime/14974,kami-no-tou\">aniSearch.de</a>",
+        "ko_KR": "탑에 오르면, 모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서 탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.",
         "fr_FR": "Afin de retrouver Rachel, la seule personne chère à ses yeux, Bam décide de prendre tous les risques pour atteindre le sommet d'une mystérieuse tour. Pour passer chaque étage, il devra réussir un test complexe dans lequel il jouera à chaque fois sa vie.\n\nBam en sortira t-il indemne ?",
-        "pt_PT": "A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos \"regulares\", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam \"regulares\" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um \"irregular\" - ele entrou sem ser convidado,  abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!",
+        "pt_PT": "A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos \"regulares\", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam \"regulares\" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um \"irregular\" - ele entrou sem ser convidado, abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!",
         "ru_RU": "Башня бога — место, в котором сбываются мечты и разбиваются сердца, только сильный духом сможет добраться до самого верха. Именно этого всю жизнь хотела Рахиль, и Двадцать пятый Баам отправился за ней, потому как эта девушка была для него единственным лучиком света в этом мрачном и недружелюбном мире. При входе в башню больше не будет пути назад — только наверх, к новым испытаниям. Многое здесь ждёт главных героев: радость и волнения, победы и поражения, боль и утрата. Смогут ли они добраться до вершины?",
-        "es_ES": "La serie se centra en el viaje de un chico mientras  se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.",
-        "zh_Hans": "如果登上塔，一切就都可以得到。 塔  顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。",
-        "zh_Hant": "如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣 賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。",
+        "es_ES": "La serie se centra en el viaje de un chico mientras se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.",
+        "zh_Hans": "如果登上塔，一切就都可以得到。 塔顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。",
+        "zh_Hant": "如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。",
         "vi_VN": "Tower of God xoay quanh một cậu bé tên là Twenty-Fifth Bam, người dành phần lớn cuộc đời mắc kẹt dưới một tòa tháp rộng lớn và bí ẩn cùng người bạn thân Rachel. Khi Rachel vào Tháp, Bam cũng theo sau vào đó và kết cục cậu phải đối mặt với thử thách ở mỗi tầng tòa tháp này với mong muốn tìm lại người bạn đồng hành của mình."
     },
     "information": {
@@ -85,7 +81,7 @@
                 "Mystery",
                 "Comedy",
                 "Romance",
-                "Sci-Fi",
+                "Science Fiction",
                 "Supernatural"
             ],
             "id_ID": [
@@ -175,8 +171,15 @@
         },
         "country": {
             "en_US": "Japan",
-            "id_ID": "Japan"
-        }
+            "id_ID": "Jepang"
+        },
+        "officialWebsite": "https://tog-anime.com/",
+        "promotionalVideos": [
+            "https://youtu.be/RNyClma6awo"
+        ],
+        "producers": [
+            "Crunchyroll"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -371,7 +374,6 @@
             "Animeultima": "https://www1.animeultima.to/a/kami-no-tou_365090",
             "AniWatch": "https://aniwatch.me/anime/2345",
             "GogoAnime": "https://www16.gogoanime.io/category/kami-no-tou",
-            "KissAnime": "https://kissanime.ru/Anime/Kami-no-Tou",
             "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/towerofgod"
         }
     },

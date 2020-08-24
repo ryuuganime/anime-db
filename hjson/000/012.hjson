@@ -1,189 +1,212 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, dan "false" salah.  |
-|   ngan catatan  tata cara pe- | |          ini adalah          | | [arr] merupakan markah array |
-|   ngisian data.               | |    sebuah teks multi baris   | |   yaitu sebuah  koleksi ter- |
-|                               | |                          ''' | |   urut dan memiliki tipe da- |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   ta yang berbeda.           |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | | [obj] merupakan markah obyek |
-|                               | | ru pada suatu value          | |   menandakan bahwa value be- |
-| <url>  String  berisi  tautan | |                              | |   rikut  memiliki   beberapa |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah | // Petunjuk awal:                |   value di dalamnya.         |
-|   menjadi array apabila objek | // Koma (,)  dalam format berkas |                              |
-|   dalam satu  value lebih ba- | //    ini bersifat opsional, te- \^----------------------------^/
-|   nyak daripada satu.         | //    tapi lebih baik diikutsertakan agar mempermudah mesin dalam
-| <nab> array dapat dihilangkan | //    mengubah format HJSON ke JSON.  Hanya pada value yang memi-
-|   tanda  kurungnya, dan dija- | //    liki markah  [arr]  yang tidak memerlukan tanda koma karena
-|   dikan sebagai null.         | //    akan mengakibatkan tanda koma terbaca sebagai string/enum.
-| <nbl> string,  numeral,  atau | // Tanda petik (quotation  mark)  dalam berkas ini  juga bersifat
-|   array  terkait  tidak  bisa | //    opsional.  Gunakan tanda  petik JIKA mengandung spasi dalam
-|   diubah menjadi null.        | //    kata.
-|                               | // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/000/001
-\^-----------------------------^/ //    .hjson atau selebihnya untuk contoh pengisian.
-/^          RYUUGANIME            // !! Dokumen ini telah diberikan  justifikasi  (justify)  secara
-    HJSON ANIME ENTRY TEMPLATE    //    merata dan terdistribusi  (distributed) pada teks agar mem-
-          VERSION: 0.5-b       */ //    permudah dalam membaca dokumentasi yang tertera.
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
+
 { 
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title:
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial,  contoh "アサティール 未来の昔ばなし" dalam  bahasa Jepang un-
-    #   tuk anime Asatir: Mirai no Mukashi Banashi yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native: うちタマ?! 〜うちのタマ知りませんか？〜
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang),  Romaja (Korea), atau Latin. Diperlukan untuk pe-
-    #   namaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Uchi Tama?! Uchi no Tama Shirimasen ka?
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan bahwa menggunakan logat Arab
-    #   Modern yang telah distandarkan (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: أوتشي تاما؟! هل رأيت تاما بلدي؟
 
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: Uchitama?! Apakah Kamu Melihat Tama-ku?
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: Uchitama?! Have You Seen My Tama?
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: うちタマ?! 〜うちのタマ知りませんか？〜
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: Uchitama?! Have you seen my Tama?
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 우치타마?! ~우리집 타마를 모르시나요?~
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: Uchi Tama Uchi no Tama Shirimasen ka
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: Uchi Tama?! Uchi no Tama Shirimasen ka?
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Тама: Откуда же он взялся?
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: null
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 家有圆圆？！我家的圆圆你知道吗？
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 家有圓圓？！我家的圓圓你知道嗎？
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: Uchi Tama?! Uchi no Tama Shirimasen ka?
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://image.tmdb.org/t/p/original/zKBL6I5PbIbw02lpCwpv6RY97m9.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://image.tmdb.org/t/p/original/eUV998ItI7j8l81ZjZntY9y7dpD.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab.  001 adalah kode ICU untuk menunjukkan bahwa  menggunakan logat
-    #   Arab  Modern yang telah distandarkan (Arabic MSA).  Lihat TVDB,  Arab Sama, atau  Wikipedia
-    #   untuk sinopsis berbahasa Arab.
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''قصة الأنمي ستدور حول تاما وأصدقاءه و قد تجسدوا بأشكال بشرية كأولاد و بنات يملكون آذان حيوانات'''
 
     # id_ID [str] <nab>
-    # = Sinopsis dalam  bahasa Indonesia. Lihat Otak Otaku untuk sinopsis Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Di sebuah kota di Jepang, ada selebaran yang sering terlihat di jalanan dengan gambar kucing bertulisan "Apakah kamu melihat Tama?" Seorang anak laki-laki dengan telinga yang lembut di kepalanya melihat selebaran itu.'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB, Kitsu, atau MyAnimeList un-
-    #   tuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''In a city somewhere in Japan, there’s a flyer often seen on Third Street with a picture of a cat with a kinked tail, bearing the words: “Have you seen Tama?” A young boy gazes at the flyer, but he has fluffy ears on his head…!? Watch the dogs and cats from Third Street take on a human form and get up to some mischief.'''
 
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict atau TVDB untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''とある町の3丁目にはある貼り紙が頻繁に貼られていた。 そこに書いてあるのはかぎしっぽのねこの絵と 「うちのタマ知りませんか？」の文字。 その貼り紙を眺めている少年にはふわふわの耳とかぎしっぽが…！？ 3丁目のねこやいぬ達が人の姿で駆け回る！？ タマとフレンズのニャンとワンダフルな毎日を覗いてみませんか？ うちのタマ知りませんか？'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''ne kurze Inhaltsangabe zum Anime „Uchitama?! Have you seen my Tama?“ würde vielen Anime- und Manga-Fans weiterhelfen. Du kennst diesen Anime bereits? Dann unterstütze aniSearch und füge eine kurze Beschreibung zum Inhalt des Animes „Uchitama?! Have you seen my Tama?“'''
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan. Lihat Watcha, Onnada, Namu, TVDB, atau Wikipedia untuk
-    #   sinopsis.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: ''''떴다! 방울이'의 동물들이 의인화된 이야기로, 이웃집 고양이 '타마'와 개성 넘치는 친구들의 일상을 그린 애니메이션'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan.  Lihat Nautiljon atau TVDB un-
-    #   tuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''Projet de Sony Creative Products afin de célébrer les 35 ans de la franchise Sanchome no Tama. Les personnages auront cette fois une forme humaine'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''Spin-off de "Tama & Friends" que reimagina o elenco da franquia como seres humanos.'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.  Lihat Shikimori, Kinopoisk, atau Wikipedia untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Истории обитателей Третьей улицы – кошек и собак, которые приняли человеческий облик.'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: null
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Lihat Douban, TVDB, atau Wiki-
-    #   pedia untuk sinopsis Mandarin.
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hans: '''某城镇3丁目频繁贴着的寻宠海报。 海报上写着“我家的圆圆你知道吗？”，配图是一只有着弯弯尾巴的猫。 看着那张海报的少年，刚好有着毛绒绒的耳朵和弯弯的尾巴…！？ 3丁目的猫猫和狗狗们以人的身姿来回奔跑！？ 不来看一看圆圆和朋友们软萌多彩的生活吗？'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional).  Gunakan converter daring untuk
-    #   mengubah aksara Mandarin ke Kanton. 
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''某城鎮3丁目頻繁貼著的尋寵海報。 海報上寫著「我家的圓圓你知道嗎？」，配圖是一只有著彎彎尾巴的貓。 看著那張海報的少年，剛好有著毛絨絨的耳朵和彎彎的尾巴…！？ 3丁目的貓貓和狗狗們以人的身姿來回奔跑！？ 不來看一看圓圓和朋友們軟萌多彩的生活嗎？'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: null
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: null
@@ -204,38 +227,42 @@
       vi_VN: null
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: TV
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Serial TV
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
+      // Allowed values are
       // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Comedy
@@ -243,7 +270,11 @@
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Komedi
@@ -252,13 +283,13 @@
     }
 
     # serialTags [obj]
-    # = Merupakan  tags/jenis konten spesifik serial.   Serupa dengan serialGenre,  tetapi biasanya
-    #   lebih fokus terhadap isi konten, alur cerita, hingga tema. Lihat wiki untuk informasi lebih
-    #   lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Nekomimi
@@ -272,7 +303,7 @@
       ]
 
       # id_ID [arr] <nbl>
-      # = Tag serial dalam bahasa Indonesia
+      # = Serial tags in Indonesian.
       id_ID:
       [
         Telinga Kucing
@@ -285,78 +316,79 @@
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Winter
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Dingin
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 冬
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 겨울
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 冬天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 冬天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2020
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 11
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2020-01-10
 
     # endDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2020-03-20
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 25
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: 300
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: [
       Mappa
       Lapin Track
     ]
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi lebih lanjut.
-    // Argumen yang diperbolehkan ialah: G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: PG13+
 
     # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah false, yakni aman.
-    // Argumen yang diperbolehkan ialah true dan false
+    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
+    #   known as safe.
+    //  Allowed values are "true" and "false"
     isNsfw: false
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
       // Argumen yang diperbolehkan ialah: Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin,
@@ -365,28 +397,48 @@
 
       // Argumen yang diperbolehkan ialah: Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin,
       // Novel, Gim, Musik, Drama, 4-panel, Dongeng, dan null
-      id_ID: Original
+      id_ID: Orisinal
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: https://uchitama.com/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/m_NohQsb3Gs
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Aniplex
+      Dentsu
+      Fuji TV
+      Sony Creative Products
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan pada score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14952
       score: 3.71
     }
@@ -395,8 +447,8 @@
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 109964
       score: 63
     }
@@ -405,12 +457,12 @@
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/uchitama-have-you-seen-my-tama
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13718
       score: 3.139
     }
@@ -419,8 +471,8 @@
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 22947
       score: 6.467
     }
@@ -429,12 +481,12 @@
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/14441,uchi-tama-uchi-no-tama-shirimasen-ka
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14441
       score: 66
     }
@@ -443,8 +495,8 @@
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 6748
       score: 76.66
     }
@@ -452,10 +504,9 @@
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi perbedaan terletak pada penambahan huruf identifikasi yang digu-
-      #   nakan oleh IMDb seperti tt6751668. tt merupakan identifikasi dan 6751668 merupakan ID se-
-      #   rial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt10675070
       score: 5.8
     }
@@ -464,8 +515,8 @@
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1343688
       score: null
     }
@@ -474,12 +525,12 @@
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: uchi-tama-uchi-no-tama-shirimasenka
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 42397
       score: 69.25
     }
@@ -488,8 +539,8 @@
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 9468
       score: 7.45
     }
@@ -498,8 +549,8 @@
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39942
       score: 6.92
     }
@@ -508,8 +559,8 @@
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 65076
       score: 3.67
     }
@@ -518,7 +569,7 @@
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: null
       score: null
     }
@@ -527,7 +578,7 @@
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: 0T1aHQVWg
       score: 5.50
     }
@@ -536,8 +587,8 @@
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1709
       score: 9.5
     }
@@ -546,8 +597,8 @@
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39942
       score: 6.92
     }
@@ -556,8 +607,8 @@
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1109883
       score: 7.2
     }
@@ -566,12 +617,12 @@
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/tv/96660-uchi-tama-uchi-no-tama-shirimasen-ka
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 96660
       score: 80
     }
@@ -580,12 +631,12 @@
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/shows/uchitama-have-you-seen-my-tama
 
       # id [num]
-      # = Merupakan nomor ID serial di website tersebut.   ID dapat diambil dengan cara melihat URL
-      #   poster tayangan. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 156719
       score: 69
     }
@@ -594,27 +645,27 @@
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil langsung di URL halaman ter-
-      #   kait. Lihat wiki atau tanyakan kepada pengembang untuk informasi lebih lanjut.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 374491
       score: 9.78
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul  terakhir pengambilan  data informasi  dan skor entri terkait.  Menggunakan
-  #   format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut.
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-08-04T01:49:10+07:00
   fansub:
@@ -731,7 +782,6 @@
       Animeultima: null
       AniWatch: https://aniwatch.me/anime/2068
       GogoAnime: https://gogoanime.movie/category/uchi-tama-uchi-no-tama-shirimasen-ka
-      KissAnime: https://kissanime.ru/Anime/Uchi-Tama-Uchi-no-Tama-Shirimasen-ka
       WonderfulSubs: https://www.wonderfulsubs.com/watch/uchitamahaveyouseenmytama
     }
   }
@@ -742,42 +792,42 @@
   }
 
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Yamashita Kazuhito
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username: @YamashitaKazuhito
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord. Secara  default, ID menggunakan  dari ID server
-    #   Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 594442535615725579
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).  Menggunakan format ISO 8601. Lihat pandu-
-    #   an dibawah untuk informasi lebih lanjut.
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-06-23T19:00:25+07.00
+    submissionDateTime: 2020-06-23T19:00:25+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data. Boleh meng-
-    #   gunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBZYW1hc2hpdGEgS2F6dWhpdG8gQCBNYXVyaXRpdXMKQXNzaXN0ZWQgYnkgTmF0c3UgVGFkYW1hIChAbmF0dGFkYXN1KQ==
   }
 }

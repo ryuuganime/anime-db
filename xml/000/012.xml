@@ -108,6 +108,12 @@
             <en_US>Japan</en_US>
             <id_ID>Jepang</id_ID>
         </country>
+        <officialWebsite>https://uchitama.com/</officialWebsite>
+        <promotionalVideos>https://youtu.be/m_NohQsb3Gs</promotionalVideos>
+        <producers>Aniplex</producers>
+        <producers>Dentsu</producers>
+        <producers>Fuji TV</producers>
+        <producers>Sony Creative Products</producers>
     </information>
     <scores>
         <aniDB>
@@ -302,7 +308,6 @@
             <Animeultima />
             <AniWatch>https://aniwatch.me/anime/2068</AniWatch>
             <GogoAnime>https://gogoanime.movie/category/uchi-tama-uchi-no-tama-shirimasen-ka</GogoAnime>
-            <KissAnime>https://kissanime.ru/Anime/Uchi-Tama-Uchi-no-Tama-Shirimasen-ka</KissAnime>
             <WonderfulSubs>https://www.wonderfulsubs.com/watch/uchitamahaveyouseenmytama</WonderfulSubs>
         </eng>
     </fanstream>

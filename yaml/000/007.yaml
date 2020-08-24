@@ -4,27 +4,23 @@ title:
     native: イエスタデイをうたって
     en_Latn: Yesterday wo Utatte
     ar_001: غني “الأمس” لي
-    hu_HU: null
-    he_IL: null
     id_ID: Nyanyikan "Kemarin" Padaku
     en_US: Sing "Yesterday" for Me
     ja_JP: イエスタデイをうたって
-    de_DE: null
+    de_DE: 
     ko_KR: 예스터데이를 노래하며
-    fr_FR: null
+    fr_FR: 
     pt_PT: Cante "Yesterday" Pra Mim
     ru_RU: Спой для меня «Вчера»
-    es_ES: null
+    es_ES: 
     zh_Hans: 昨日之歌
     zh_Hant: 昨日之歌
-    vi_VN: null
+    vi_VN: 
 backdrop: https://artworks.thetvdb.com/banners/series/372534/backgrounds/5e85c27183d55.jpg
 visualKey: https://artworks.thetvdb.com/banners/series/372534/posters/62002246.jpg
 synopsis:
     ar_001: تدور القصة حول شاب جامعي يدعى ريكو الذي يجد عمل في متجر. يعيش حياته بشكل
         رتيب حتى يقابل حبيبته السابقة وزميلته هارو نوناكا التي تمتلك غراب كحيوان أليف.
-    hu_HU: null
-    he_IL: null
     id_ID: Setelah lulus kuliah, Rikuo Uozumi yang hidup tanpa ambisi, bekerja di sebuah
         toko. Hari-harinya berlalu dengan tenang sampai ia bertemu dengan teman kuliahnya,
         Shinako dan wanita misterius bernama Haru bersama gagak peliharaannya.
@@ -76,23 +72,23 @@ information:
     synonyms:
         en_Latn:
         - Yesterday o Utatte
-        ar_001: null
-        hu_HU: null
-        he_IL: null
-        id_ID: null
+        ar_001: 
+        hu_HU: 
+        he_IL: 
+        id_ID: 
         en_US:
         - Sing Yesterday (2020)
-        ja_JP: null
-        de_DE: null
-        ko_KR: null
-        fr_FR: null
-        pt_PT: null
+        ja_JP: 
+        de_DE: 
+        ko_KR: 
+        fr_FR: 
+        pt_PT: 
         ru_RU:
         - Спой мне «Yesterday»
-        es_ES: null
-        zh_Hans: null
-        zh_Hant: null
-        vi_VN: null
+        es_ES: 
+        zh_Hans: 
+        zh_Hant: 
+        vi_VN: 
     type:
         en_US: TV
         id_ID: Serial TV
@@ -137,7 +133,7 @@ information:
     releaseYear: 2020
     episode: 18
     releaseDate: '2020-04-05'
-    endDate: null
+    endDate: 
     duration: 23
     totalDuration: 414
     studio: Doga Kobo
@@ -149,6 +145,17 @@ information:
     country:
         en_US: Japan
         id_ID: Jepang
+    officialWebsite: https://singyesterday.com/
+    promotionalVideos:
+    - https://youtu.be/c7wWmUywDpY
+    producers:
+    - TV Asahi
+    - Sotsu
+    - Delfi Sound
+    - Lucent Pictures Entertainment
+    - CyberAgent
+    - AbemaTV
+    - DMM.futureworks
 scores:
     aniDB:
         id: 14822
@@ -162,7 +169,7 @@ scores:
         score: 4.193
     ANN:
         id: 22975
-        score: null
+        score: 
     aniSearch:
         url: https://www.anisearch.com/anime/14347,yesterday-o-utatte
         id: 14347
@@ -175,7 +182,7 @@ scores:
         score: 7.9
     KinoPoisk:
         id: 1355620
-        score: null
+        score: 
     Kitsu:
         slug: yesterday-wo-utatte
         id: 43063
@@ -218,89 +225,89 @@ scores:
 updatedDate: '2020-05-21T12:12:36+07:00'
 fansub:
     idn:
-        Aibou: null
-        Aizukara: null
-        Allsub: null
-        Alter: null
-        AnimeGokil: null
-        AniToki: null
-        AoiTenshi: null
-        Arks: null
-        ASubs: null
+        Aibou: 
+        Aizukara: 
+        Allsub: 
+        Alter: 
+        AnimeGokil: 
+        AniToki: 
+        AoiTenshi: 
+        Arks: 
+        ASubs: 
         AWSubs: http://awsubs.co/anime/yesterday-wo-utatte/
-        Bentoo: null
-        Caramel: null
-        Cijanepoi: null
-        Conan: null
-        DAnimeSubs: null
-        Del: null
-        DNFI: null
-        Durandal: null
-        EmotPekmen: null
-        Excalibur: null
+        Bentoo: 
+        Caramel: 
+        Cijanepoi: 
+        Conan: 
+        DAnimeSubs: 
+        Del: 
+        DNFI: 
+        Durandal: 
+        EmotPekmen: 
+        Excalibur: 
         exTonan: https://extonan.web.id/yesterday-wo-utatte
-        Gantz: null
-        Gin: null
-        Haruna: null
-        Haruzora: null
+        Gantz: 
+        Gin: 
+        Haruna: 
+        Haruzora: 
         HunterNoSekai: https://www.huntersekai.website/search/label/Yesterday%20wo%20Utatte?&max-results=8
-        IA: null
-        Inazumaotoshi: null
-        Indis: null
-        Inform0930: null
-        Isekai: null
-        Junk: null
-        Kazefuri: null
-        Kinshiru: null
-        KO: null
-        Kopaja: null
-        LCC: null
+        IA: 
+        Inazumaotoshi: 
+        Indis: 
+        Inform0930: 
+        Isekai: 
+        Junk: 
+        Kazefuri: 
+        Kinshiru: 
+        KO: 
+        Kopaja: 
+        LCC: 
         Lokal: https://www.lokalsubs.net/search/label/Yesterday%20wo%20Utatte
-        MangaNekoTranslation: null
+        MangaNekoTranslation: 
         Melody: https://melodysubs.net/anime/yesterday-wo-utatte/
-        Mite: null
-        Nanairo: null
-        Neo: null
-        OPLovers: null
-        Ougi: null
-        Panagayan: null
-        Pendekar: null
+        Mite: 
+        Nanairo: 
+        Neo: 
+        OPLovers: 
+        Ougi: 
+        Panagayan: 
+        Pendekar: 
         PNTL: https://www.pnzoku.my.id/search/label/Yesterday%20wo%20Utatte
-        Pucuk: null
-        Quinime: null
-        RevieXion: null
+        Pucuk: 
+        Quinime: 
+        RevieXion: 
         Samehadaku: https://samehadaku.vip/anime/yesterday-wo-utatte/
-        SilverYasha: null
-        Sora: null
+        SilverYasha: 
+        Sora: 
         TTOD: https://ttod.xyz/?s=yesterday+wo+utatte
-        Vedifi: null
-        Warung: null
-        Wibu: null
+        Vedifi: 
+        Warung: 
+        Wibu: 
         Yuki: https://yukisubs.com/category/yesterday-wo-utatte/
         Zen: http://zensubs.xyz/?s=AMBYAR+KEMARIN
     eng:
         Horrible: https://horriblesubs.info/shows/yesterday-wo-utatte/#01
 fanshare:
     idn:
-        AniBatch: null
+        AniBatch: 
         AnimeKompi: http://animekompi.web.id/series/yesterday-wo-utatte/
-        AnimeSAVE: null
+        AnimeSAVE: 
         Bakacan: https://bakacan.id/anime/yesterday-wo-utatte/
-        Drivenime: null
-        Hinime: null
-        Koenime: null
-        Kusonime: null
-        Mikanime: null
+        Drivenime: 
+        Hinime: 
+        Koenime: 
+        Kusonime: 
+        Mikanime: 
         Moenime: https://moenime.web.id/yesterday-wo-utatte-sub-indo/
         Ryuukoi: https://ryuukoi.web.id/anime/yesterday-wo-utatte/
-        WibuDesu: null
+        WibuDesu: 
     eng:
         AnimeKayo: https://animekayo.com/?s=Yesterday+wo+Utatte
 fanstream:
     idn:
         AnimeIndoNET: http://animeindo.moe/anime/yesterday-wo-utatte
         anoBoy: https://anoboy.us/anime/yesterday-wo-utatte/
-        Gomunime: null
+        Gomunime: 
         Moeclip: https://moeclip.com/anime/yesterday-wo-utatte-sub-indo/
         Neonime: https://neonime.moe/tvshows/yesterday-wo-utatte-subtitle-indonesia/
         Onnime: https://onnime.net/anime/yesterday-wo-utatte.lGKQ5Ez6/
@@ -312,11 +319,10 @@ fanstream:
         AnimeTwist: https://twist.moe/a/yesterday-wo-utatte/1
         Animeflix: https://animeflix.io/shows/yesterday-wo-utatte
         AnimeHeaven: https://animeheaven.ru/detail/yesterday-wo-utatte
-        Animelon: null
+        Animelon: 
         Animeultima: https://www1.animeultima.to/a/yesterday-wo-utatte_889172
         AniWatch: https://aniwatch.me/anime/2169
         GogoAnime: https://www17.gogoanime.io/category/yesterday-wo-utatte
-        KissAnime: https://kissanime.ru/Anime/Yesterday-wo-Utatte
         WonderfulSubs: https://beta.wonderfulsubs.com/watch/singyesterdayforme
 library:
     Nyaa: https://nyaa.si/?f=0&c=0_0&q=Yesterday+wo+Utatte

@@ -1,227 +1,214 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
-|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
-|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
-|                               | |                          ''' | | [arr] merupakan markah array |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
-|                               | | ru pada suatu value          | |   ta yang berbeda.           |
-| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
-|   menjadi array apabila objek |                                  |   value di dalamnya.         |
-|   dalam satu  value lebih ba- |                                  |                              |
-|   nyak daripada satu.         |                                  \^----------------------------^/
-| <nab> array dapat dihilangkan |
-|   tanda  kurungnya, dan dija- |
-|   dikan sebagai null.         |
-| <nbl> string, numeral, atau   |
-|   array terkait tidak bisa    |
-|   diubah menjadi null.        |
-|                               |
-\^-----------------------------*/
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
 
 { 
-  // Petunjuk awal:
-  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
-  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
-  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
-  //    tanda koma.
-  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
-  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
-  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
-  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
-  //    id_ID: 
-  //        '''
-  //            Ini hanyalah informasi \"percobaan\",
-  //            harap untuk dapat dimaklumi
-  //        '''
-  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
-  //    contoh pengisian.
-
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title: 
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
-    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
-    #   yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native:  グレイプニル
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
-    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Gleipnir
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: القيد السحري
 
-    # hu_HU [str] <nab>
-    # = Judul dalam bahasa Hungaria.
-    hu_HU: null
-
-    # he_IL [str] <nab>
-    # = Judul dalam bahasa Ibrani Israel.
-    he_IL: null
-
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: null
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: Gleipnir
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: グレイプニル
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: null
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 글레이프니르
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: null
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: null
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Глейпнир
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: null
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 格莱普尼尔
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 格萊普尼爾
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: Sợi Xích Thần
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
-  #   situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://artworks.thetvdb.com/banners/series/374198/backgrounds/62029678.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
-  #   yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://artworks.thetvdb.com/banners/series/374198/posters/5eabdfe38893d.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''كاغايا شويشي هو فتى عادي بمدرسة ثانوية في بلدة صغيرة مملة، ولكن عندما يتم محاصرة زميلته الجميلة في حريق بمستودع، يكتشف قدرته الغامضة، والتي تمكنه من التحول إلى كلب فرو مع مسدس كبير وسحاب في ظهره.
 
 ينقذ حياة الفتاة ويشاركها سره، لكنها تبحث عن الأخت التي قتلت عائلتها، ولا تهتم بغير ذالك ولا حتى بما سيتطلب هذا، لتستخدم “شويشي” لإنجاز مهمتها…'''
 
-    # hu_HU [str] <nab>
-    # = Sinopsis dalam bahasa Hungaria.
-    hu_HU: null
-
-    # he_IL [str]
-    # = Sinopsis dalam bahasa Ibrani Israel.
-    he_IL: null
-
     # id_ID [str] <nab>
-    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
-    #   Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Shuichi Kagaya, anak SMA biasa di sebuah kota kecil yang membosankan. Namun, ketika teman kelasnya yang cantik terperangkap dalam kebakaran, Shuichi menyadari dirinya memiliki kekuatan misterius. Ia dapat berubah menjadi anjing berbulu lebat dengan pistol besar dan memiliki ritsleting di punggungnya. Ia pun menyelamatkan gadis itu, dan berbagi rahasia dengannya.'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
-    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''Kagaya Shuuichi is an ordinary high school kid in a boring little town. But when a beautiful classmate is caught in a warehouse fire, he discovers a mysterious power: he can transform into a furry dog with an oversized revolver and a zipper down his back. He saves the girl's life, sharing his secret with her. But she's searching for the sister who killed her family, and she doesn't care how degrading it gets: she will use Shuuichi to accomplish her mission...'''
 
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''「どうして僕は、こんな姿に変身してしまうのか――?」 “着ぐるみに変身する”という世にも厄介な特殊能力をもった少年・加賀谷修一。その力に引き寄せられるように現れた謎の少女・クレアとの出会いと、時を同じくして次々と起こる異変に修一の日常は壊されていった。そして修一に襲いかかる、修一と同じ変身能力を持った“バケモノ”。 巨大な災厄を引き起こす「コイン」を巡り、 バケモノ同士の争奪戦に巻き込まれた修一とクレアは、 二人でひとつになって自らの運命を切り開く――!!'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
-    #   untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''„Wieso nehme ich bloß diese Gestalt an?“ Kagaya Shuichi besitzt eine gefährliche Fähigkeit, mit der er sich in ein Kuscheltier verwandelt. Er macht Bekanntschaft mit dem geheimnisvollen Mädchen Claire, das bei ihm diese Kraft zum Vorschein bringen kann. Gleichzeitig geschehen nach und nach abnormale Vorfälle, die Shuichis Alltag aus den Fugen bringen. Außerdem wird er von Monstern angegriffen, die die gleichen Fähigkeiten wie er besitzen. Shuichi und Claire werden in einen Kampf der Monster verwickelt, der sich um „Münzen“ dreht, die eine gewaltige Katastrophe heraufbeschwören. Die beiden verbünden sich und bieten ihrem Schicksal die Stirn!'''
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: '''어째서 나는 이런 모습으로 변신하게 되어버린 걸까? 만약 어느 날 갑자기, 자신이 [괴물]로 변신하게 되어버린다면- 평범한 고등학생 카가야 슈이치가 갖게 된 건 그런 성가신 [특수능력]이었다… 하지만, 그 [힘]에 이끌리듯, 한 소녀가 슈이치 앞에 나타난다. 운명적으로 만난 두 사람을 위해, 준비된 비극과 희극-. 그리고 싸움의 막이 열린다!!'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
-    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''Shûichi Kagaya est un jeune garçon qui possède le pénible pouvoir de se transformer en mascotte. Un jour, il fait la rencontre d’une mystérieuse fille, Claire, qui semble être attirée par son pouvoir. Depuis, le quotidien de Shûichi se retrouve rythmé par d’étranges incidents… Jusqu’au jour où il se fait attaquer par un monstre possédant le même pouvoir de transformation ! Impliqués malgré eux dans un affrontement entre monstres, les deux lycéens s’unissent pour ne faire qu’un et prendre leur destin en main !'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''Kagaya Shuuichi é um garoto comum do ensino médio em uma cidade pequena e chata. Mas quando uma bela colega de classe é pega em um incêndio no armazém, ele descobre um poder misterioso: ele pode se transformar em um cachorro peludo com um revólver enorme e um zíper nas costas. Ele salva a vida da garota, compartilhando seu segredo com ela. Mas ela está procurando a irmã que matou sua família, e ela não se importa com o quão degradante seja: ela usará Shuuichi para cumprir sua missão...'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Небольшой скучный городок, вроде бы среднестатистический старшеклассник Сюити Кагая — обычный набор для развития необычной истории. Сюжет завязывается, когда красавица Клэр Аоки оказывается в огненной ловушке на складе и Сюити вынужден использовать свою загадочную способность. Он может превращаться в большую собаку, у которой на спине молния, а на боку — револьвер. Кагая спасает девушку, раскрывая тем самым свой секрет. Однако оказывается, что у Клэр свой скелет в шкафу: её семью убила собственная сестра Клэр. И теперь Аоки жаждет разыскать сестру чего бы это ни стоило, поэтому она решает использовать парня и его силу в своих целях...'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: '''Shuichi Kagaya es un chico ordinario de preparatoria en una pequeña y aburrida ciudad. Sin embargo, cuando una compañera suya se ve atrapada en un incendio en un almacén, Shuichi descubre un poder misterioso: puede transformarse en un perro peludo de gran tamaño con un enorme revólver y una cremallera en la espalda. Él salva la vida de la niña, quien decide guardar su secreto. Pero ella se encuentra buscando a su hermana que mató a su familia, y no le importará lo degradante que sea: usará a Shuichi para cumplir su misión.'''
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
-    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hans: '''普通男子高中生加贺谷修一可以变身为怪物但并不是普通的怪物，而是布偶怪物，而且还是少女进入他的身体控制。这样过着日常生活的他，所热爱的日常，某天开始却突然不复存在……'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
-    #   menggunakan aksara Kanton dalam database mereka.
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''普通男子高中生加賀谷修一可以變身為怪物但並不是普通的怪物，而是布偶怪物，而且還是少女進入他的身體控制。這樣過著日常生活的他，所熱愛的日常，某天開始卻突然不復存在……'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: '''Đây là câu chuyện về Shuichi Kagaya - một cậu nhóc cao trung bình thường sống ở thị trấn tẻ nhạt. Cứ tưởng mọi chuyện chỉ đơn giản như thế thì bất ngờ đã xảy đến khi Shuichi Kagaya gặp Aoki Kurea - một cô nàng xinh đẹp lớp dưới bị mắc kẹt trong một đám cháy lớn. Bỗng nhiên một sức mạnh bí ẩn nào đó đã biến Kagaya thành một con chó lông xù bằng bông có dây kéo trên lưng vác một khẩu súng lục "khổng lồ". Cậu đã cứu sống Kurea và cô nàng này đang tìm kiếm người chị đã giết chết gia đình cô. Aoki Kurea quyết định sẽ sử dụng Shuichi để hoàn thành sứ mệnh truy lùng chị gái mình. Những bí mật nào đang chờ đợi bộ đôi này ở phía trước?'''
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: null
@@ -242,40 +229,42 @@
       vi_VN: null
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: TV
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Serial TV
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
-      //   Diketahui
+      // Allowed values are:
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
-    #   lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Action
@@ -285,7 +274,7 @@
         Drama
         Thriller
         Adventure
-        Sci-Fi
+        Science Fiction
         Horror
         Ecchi
         Psychological
@@ -293,7 +282,11 @@
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Aksi
@@ -303,7 +296,7 @@
         Drama
         Thriller
         Petualangan
-        Sci-Fi
+        Fiksi Ilmiah
         Horror
         Ecchi
         Psikologis
@@ -312,12 +305,13 @@
     }
 
     # serialTags [obj]
-    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
-    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Gore
@@ -341,7 +335,7 @@
       ]
 
       # id_ID [arr] <nbl>
-      # = Tag serial dalam bahasa Indonesia
+      # = Serial tags in Indonesian.
       id_ID:
       [
         Gore
@@ -365,72 +359,66 @@
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Spring
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Semi
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 春
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 봄
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 春天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 春天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2020
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 13
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2020-04-05
 
     # endDate [str]
-    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2020-06-28
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 24
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: 312
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: Pine Jam
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
-    #   lebih lanjut.
-    // Argumen yang diperbolehkan ialah
-    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: R18+
 
     # isNsfw [boo] <nbl>
@@ -438,43 +426,61 @@
     #   false, yakni aman.
     // Argumen yang diperbolehkan ialah
     // true dan false
-    "isNsfw": false
+    isNsfw: false
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
-      // Argumen yang diperbolehkan ialah
-      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
-      // Drama, 4-koma, Fairy Tale, dan null
+      // Allowed values are
+      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
+      //   4-koma, Fairy Tale, and null
       en_US: Manga
 
-      // Argumen yang diperbolehkan ialah
-      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
-      // Drama, 4-panel, Dongeng, dan null
+      // Allowed values are
+      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
+      //   4-panel, Dongeng, and null
       id_ID: Manga
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: http://gleipnir-anime.com/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/I_TDPwt7iEU
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Kodansha
+      bilibili
+      Good Smile Film
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14721
       score: 4.63
     }
@@ -483,9 +489,8 @@
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 108241
       score: 67
     }
@@ -494,22 +499,20 @@
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/gleipnir
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13027
       score: 3.842
     }
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 21888
       score: 6.856
     }
@@ -518,13 +521,12 @@
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/14236,gleipnir
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 14236
       score: 71
     }
@@ -533,9 +535,8 @@
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 6527
       score: 93.05
     }
@@ -543,10 +544,9 @@
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
-      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
-      #   dan 6751668 merupakan ID serial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt11988478
       score: 7.0
     }
@@ -555,9 +555,8 @@
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1367761
       score: 6.8
     }
@@ -566,13 +565,12 @@
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: gleipnir
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
-      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 42173
       score: 74.05
     }
@@ -581,9 +579,8 @@
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 9255
       score: 7.75
     }
@@ -592,9 +589,8 @@
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39463
       score: 6.86
     }
@@ -603,9 +599,8 @@
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 66293
       score: 3.93
     }
@@ -614,7 +609,7 @@
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.nautiljon.com/animes/gleipnir.html
       score: 7.92
     }
@@ -623,7 +618,7 @@
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: q9yku_3ig
       score: 7.46
     }
@@ -632,9 +627,8 @@
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1518
       score: 7.92
     }
@@ -643,9 +637,8 @@
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 39463
       score: 7.08
     }
@@ -654,9 +647,8 @@
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1054041
       score: 7.1
     }
@@ -665,13 +657,12 @@
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/tv/96203
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 96203
       score: 82
     }
@@ -680,13 +671,12 @@
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/shows/gleipnir
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 156573
       score: 69
     }
@@ -695,29 +685,27 @@
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 374198
       score: 9.74
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
-  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-  // 
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-07-28T17:22:17+07:00
   fansub:
@@ -835,7 +823,6 @@
       Animeultima: https://www1.animeultima.to/a/gleipnir_161989
       AniWatch: https://aniwatch.me/anime/2172
       GogoAnime: https://www17.gogoanime.io/category/gleipnir
-      KissAnime: https://kissanime.ru/Anime/Gleipnir
       WonderfulSubs: https://beta.wonderfulsubs.com/watch/gleipnir
     }
   }
@@ -847,44 +834,42 @@
   }
   
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Natsu Tadama
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username: @nattadasu
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord.
-    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 384089845527478272
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).
-    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-    // 
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
     submissionDateTime: 2020-05-19T15:52:00+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
-    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
-    #   Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
   }
 }

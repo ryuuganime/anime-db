@@ -1,0 +1,1436 @@
+<h1>Ryuuganime entries usage</h1>
+''This file will guide user on using Ryuuganime Anime Index File, while we trying our best creating this file like API documentation.''
+
+__TOC__
+
+= First guide and initialization =
+Currently, we don't have any API for accessing database. Instead, you can use GitHub Raw links to access our data.
+
+For machine-readable index listing, please to use [[index.json]] (recommended) or [[index.yaml]].
+
+We currently provide data in [[/hjson|HJSON]], [[/json|JSON]], [[/yaml|YAML]], and [[/xml|XML]] file format. at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
+
+This document will covers AIO solution on your project in any programming language.
+
+== Encoding ==
+Ryuuganime is using UTF-8 (Unicode) with Windows' End of Line Sequence format (<code>CRLF</code>).
+
+== Client ==
+Ryuuganime does not need to create any client first to request API. You only need to use GitHub Raw URL to <code>GET</code>, and you are done!
+
+== Data fetching URI ==
+=== File fetching ===
+*'''Fetching anime data from repo'''
+*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/<RYU-ID>/<RYU-ID>.json</pre>
+*:Please keep in mind that you need to change <code><RYU-ID></code> before fetch data.
+*'''Fetching anime index list'''
+*:<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/list.json</pre>
+
+=== Data dumps ===
+*'''GitHub Release'''
+*:<pre>https://github.com/ryuuganime/ryuuganime-db/releases/latest/download/dumps.tar.gz</pre>
+*:All content are gzipped in tarball format.
+
+= Using ryuuganime-db anime entry JSON file =
+== Introduction ==
+For our basic usage introduction, we will using <code>RYU-1</code> (Ryuuganime ID: 1) on [[/json/000/001.json|<code>/json/000/001.json</code>]]. 
+
+First, you need to get the latest metadata by request <code>GET</code> HTML data from GitHub Raw:
+<pre>https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/json/000/001.json</pre>
+
+You will get:
+<source lang="json">{
+    "$schema": "../../schemas/entry.json",
+    "title": {
+        "native": "富豪刑事 Balance:UNLIMITED",
+        "en_Latn": "Fugou Keiji: Balance:Unlimited",
+        "ar_001": "المحقق المليونير - الرصيد: غير محدود",
+        "hu_HU": null,
+        "he_IL": "בלש מיליונר - איזון: ללא הגבלה",
+        "id_ID": "Detektif Milyuner - Balance:UNLIMITED",
+        "en_US": "The Millionaire Detective – Balance: UNLIMITED",
+        "ja_JP": "富豪刑事 Balance:UNLIMITED",
+        "de_DE": null,
+        "ko_KR": "부호형사 Balance:UNLIMITED",
+        "fr_FR": null,
+        "pt_PT": null,
+        "ru_RU": "Богатый детектив. Баланс: Неограничен",
+        "es_ES": "El Detective Millonario - Equilibrio:Ilimitado",
+        "zh_Hans": "富豪刑事 Balance:UNLIMITED",
+        "zh_Hant": "富豪刑事 Balance:UNLIMITED",
+        "vi_VN": "Thám Tử Triệu Phú"
+    },
+    "backdrop": "https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg",
+    "visualKey": "https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg",
+    "synopsis": {
+        "ar_001": "قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.",
+        "hu_HU": null,
+        "he_IL": null,
+        "id_ID": "Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.",
+        "en_US": "The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the \"Modern Crimes Task Unit\" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.",
+        "ja_JP": "ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。 そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。 常識を超えた捜査が今、始まる――！",
+        "de_DE": "Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.\nDort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können.",
+        "ko_KR": "부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.\n그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.\n대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.\n상식을 뛰어넘는 수사가 지금, 시작된다-",
+        "fr_FR": "Lorsque qu’une personne du Département de la Police métropolitaine de Tokyo pose problème, elle est transférée dans le « Nouveau Quartier Général Anti-Criminalité ». C’est là qu’est envoyé Daisuke, le fils riche et exceptionnel de l’illustre famille Kambe. Contre toute attente, il fera équipe avec le bienveillant Haru Kato. Daisuke, lui, considère que la vie a un prix, alors que Kato pense au contraire qu’elle est inestimable. Deux personnes que tout oppose, unies face aux nombreux mystères et incidents qui se dressent devant eux... C’est le début d’enquêtes défiant toute logique !",
+        "pt_PT": "A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas, testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente insolúveis!",
+        "ru_RU": "«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить, что финансы он тратит в том числе и на ведение расследований. Вот только не всех в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно сплавляют в Главное управление по борьбе с современными преступлениями, где рано или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно расследуя запутанные криминальные загадки.",
+        "es_ES": "La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos de los demás. Allí, Kanbe se hace compañero de Katou.",
+        "zh_Hans": "本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。\n擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。\n大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！",
+        "zh_Hant": "本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。\n擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。\n大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！",
+        "vi_VN": "Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou, người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng hợp tác giải quyết các vụ án."
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": [
+                "Fugō Keiji Balance: Unlimited",
+                "FugouKeijiBUL"
+            ],
+            "ar_001": null,
+            "hu_HU": null,
+            "he_IL": null,
+            "id_ID": null,
+            "en_US": [
+                "Wealthy Detective"
+            ],
+            "ja_JP": null,
+            "de_DE": null,
+            "ko_KR": null,
+            "fr_FR": null,
+            "pt_PT": null,
+            "ru_RU": null,
+            "es_ES": null,
+            "zh_Hans": null,
+            "zh_Hant": null,
+            "vi_VN": null
+        },
+        "type": {
+            "en_US": "TV",
+            "id_ID": "Serial TV"
+        },
+        "status": {
+            "en_US": "Airing",
+            "id_ID": "Mengudara"
+        },
+        "serialGenre": {
+            "en_US": [
+                "Drama",
+                "Mystery",
+                "Comedy",
+                "Crime"
+            ],
+            "id_ID": [
+                "Drama",
+                "Misteri",
+                "Komedi",
+                "Kriminalitas"
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                "Detectives",
+                "Police",
+                "Billionaire",
+                "Investigation",
+                "Male Protagonist"
+            ],
+            "id_ID": [
+                "Detektif",
+                "Polisi",
+                "Milyuner",
+                "Investigasi",
+                "Tokoh Utama Laki-Laki"
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "Spring",
+            "id_ID": "Semi",
+            "ja_JP": "春",
+            "ko_KR": "봄",
+            "zh_Hans": "春天",
+            "zh_Hant": "春天"
+        },
+        "releaseYear": 2020,
+        "episode": 11,
+        "releaseDate": "2020-04-10",
+        "endDate": null,
+        "duration": 23,
+        "totalDuration": null,
+        "studio": "CloverWorks",
+        "rating": "PG13+",
+        "isNsfw": false,
+        "adaptation": {
+            "en_US": "Novel",
+            "id_ID": "Novel"
+        },
+        "country": {
+            "en_US": "Japan",
+            "id_ID": "Jepang"
+        }
+    },
+    "scores": {
+        "aniDB": {
+            "id": 15364,
+            "score": 6.07
+        },
+        "AniList": {
+            "id": 114888,
+            "score": 73
+        },
+        "AnimePlanet": {
+            "url": "https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited",
+            "id": 14492,
+            "score": 4.207
+        },
+        "ANN": {
+            "id": 22980,
+            "score": null
+        },
+        "aniSearch": {
+            "url": "https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited",
+            "id": 14906,
+            "score": 71
+        },
+        "Annict": {
+            "id": 7271,
+            "score": 86.67
+        },
+        "IMDb": {
+            "code": "tt12117218",
+            "score": 8.1
+        },
+        "KinoPoisk": {
+            "id": null,
+            "score": null
+        },
+        "Kitsu": {
+            "slug": "fugou-keiji-balance-unlimited",
+            "id": 43056,
+            "score": 80.56
+        },
+        "LiveChart": {
+            "id": 9777,
+            "score": 8.27
+        },
+        "MyAnimeList": {
+            "id": 41120,
+            "score": 7.51
+        },
+        "MyShows": {
+            "id": 66109,
+            "score": 4.44
+        },
+        "Nautiljon": {
+            "url": "https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html",
+            "score": 8.97
+        },
+        "Notify": {
+            "base64": "TM1LPA8Wg",
+            "score": 8.32
+        },
+        "OtakOtaku": {
+            "id": 1724,
+            "score": 9
+        },
+        "Shikimori": {
+            "id": 41120,
+            "score": 7.51
+        },
+        "SIMKL": {
+            "id": 1247789,
+            "score": 8.6
+        },
+        "TMDB": {
+            "url": "https://www.themoviedb.org/tv/98491-balance-unlimited",
+            "id": 98491,
+            "score": 80
+        },
+        "Trakt": {
+            "url": "https://trakt.tv/shows/157673",
+            "id": 157673,
+            "score": 73
+        },
+        "TVTime": {
+            "id": 376211,
+            "score": 9.76
+        }
+    },
+    "updatedDate": "2020-05-05T16:54:42+07:00",
+    "fansub": {
+        "idn": {
+            "Aibou": "https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html",
+            "Aizukara": "https://www.aizukara.web.id/search/label/Fugou%20Keiji",
+            "AWSubs": null,
+            "Allsub": null,
+            "Alter": null,
+            "AnimeGokil": null,
+            "AniToki": null,
+            "AoiTenshi": null,
+            "Arks": null,
+            "ASubs": null,
+            "Bentoo": null,
+            "Caramel": null,
+            "Cijanepoi": null,
+            "Conan": null,
+            "DAnimeSubs": null,
+            "Del": null,
+            "DNFI": null,
+            "Durandal": null,
+            "EmotPekmen": null,
+            "Excalibur": null,
+            "exTonan": null,
+            "Gantz": null,
+            "Gin": null,
+            "Haruna": null,
+            "Haruzora": null,
+            "HunterNoSekai": "https://www.huntersekai.website/search/label/Fugou?&max-results=8",
+            "IA": null,
+            "Inazumaotoshi": null,
+            "Indis": null,
+            "Inform0930": null,
+            "Isekai": null,
+            "Junk": "https://www.junksubs.com/search/label/Unlimited",
+            "Kazefuri": null,
+            "Kinshiru": null,
+            "KO": null,
+            "Kopaja": null,
+            "LCC": null,
+            "MangaNekoTranslation": null,
+            "Melody": null,
+            "Mite": null,
+            "Nanairo": "https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited",
+            "Neo": null,
+            "OPLovers": null,
+            "Ougi": null,
+            "Panagayan": null,
+            "Pendekar": null,
+            "Pucuk": null,
+            "Quinime": null,
+            "RevieXion": null,
+            "Samehadaku": null,
+            "SilverYasha": null,
+            "Sora": null,
+            "TTOD": null,
+            "Vedifi": null,
+            "Warung": null,
+            "Wibu": null,
+            "Yuki": null,
+            "Zen": null
+        },
+        "eng": {
+            "Horrible": "https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01"
+        }
+    },
+    "fanshare": {
+        "idn": {
+            "AniBatch": null,
+            "AnimeKompi": "http://animekompi.web.id/series/fugou-keiji-balanceunlimited/",
+            "AnimeSAVE": null,
+            "Bakacan": "https://bakacan.id/anime/fugou-keiji-balanceunlimited/",
+            "Drivenime": null,
+            "Hinime": null,
+            "Koenime": null,
+            "Kusonime": null,
+            "Mikanime": null,
+            "Moenime": "https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/",
+            "Ryuukoi": null,
+            "WibuDesu": null
+        },
+        "eng": {
+            "AnimeKayo": "https://animekayo.com/?s=Fugou+Keiji"
+        }
+    },
+    "fanstream": {
+        "idn": {
+            "AnimeIndoNET": "http://animeindo.moe/anime/fugou-keiji-balanceunlimited",
+            "anoBoy": "https://anoboy.us/anime/fugou-keiji-balanceunlimited/",
+            "Gomunime": null,
+            "Moeclip": "https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/",
+            "Neonime": "https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/",
+            "Onnime": "https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/",
+            "OtakuIndo": null
+        },
+        "eng": {
+            "fourAnime": "https://4anime.to/anime/fugou-keiji-balanceunlimited",
+            "nineAnime": "https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q",
+            "AnimeDaisuki": "https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited",
+            "AnimeTwist": "https://twist.moe/a/fugou-keiji-balance-unlimited/1",
+            "Animeflix": "https://animeflix.io/shows/fugou-keiji-balanceunlimited",
+            "AnimeHeaven": "https://animeheaven.ru/detail/fugou-keiji-balance-unlimited",
+            "Animelon": null,
+            "Animeultima": "https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044",
+            "AniWatch": "https://aniwatch.me/anime/2315",
+            "GogoAnime": "https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited",
+            "KissAnime": "https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited",
+            "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited"
+        }
+    },
+    "library": {
+        "Nyaa": "https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji",
+        "PerpusIndo": "https://www.perpusindo.info/sharelist/?kat=&user=&cari=fugou%20keiji&kartel="
+    },
+    "signature": {
+        "name": "Natsu Tadama",
+        "username": "@nattadasu",
+        "discordId": 384089845527478300,
+        "submissionDateTime": "2020-05-05T17:26:00+07:00",
+        "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
+    }
+}</source>
+
+== JSON attributes ==
+*Type: Object
+*Requires:
+*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>,  <code>signature</code>
+*Additional properties: <code>false</code>
+
+;Notice
+:No attributes guideline for <code>fansub</code>, <code>fanshare</code>, <code>fanstream</code>, and <code>library</code>.
+
+=== $schema ===
+Path to Ryuuganime JSON schema for Entry.
+*Type: String
+**Format: URI
+*Pattern: <code>"\.\./\.\./schemas/entry\.json</code> or <code>https://raw\.githubusercontent\.com/ryuuganime/ryuuganime-db/master/schemas/entry\.json</code>
+
+=== title ===
+A serial title in multiple languages. Based on ICU locales.
+*Type: Object
+*Requires:
+*:<code>native</code>, <code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+**Pattern: <code>^[a-z]{2,3}_[\w]{2,4}$</code>
+*Not null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>native</code>
+|String
+|A serial title in native/origin language (Canonical). Value can not be empty.
+|-
+|<code>en_Latn</code>
+|String
+|Serial title in romanized text. Required for main title on entry list. Value can not be empty.
+|-
+|<code>ar_001</code>
+|String
+|Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+|<code>id_ID</code>
+|String
+|Serial title in Indonesian.
+|-
+|<code>en_US</code>
+|String
+|Serial title in English (United States) or else.
+|-
+|<code>ja_JP</code>
+|String
+|Serial title in Japanese.
+|-
+|<code>de_DE</code>
+|String
+|Serial title in German.
+|-
+|<code>ko_KR</code>
+|String
+|Serial title in Korean.
+|-
+|<code>fr_FR</code>
+|String
+|Serial title in French.
+|-
+|<code>pt_PT</code>
+|String
+|Serial title in Portuguese.
+|-
+|<code>ru_RU</code>
+|String
+|Serial title in Russian.
+|-
+|<code>es_ES</code>
+|String
+|Serial title in Spanish.
+|-
+|<code>zh_Hans</code>
+|String
+|Serial title in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String
+|Serial title in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String
+|Serial title in Vietnamese.
+|}
+
+=== backdrop ===
+A backdrop/background/cover image URI of serial.
+*Type: String
+**Format: URI
+*Pattern: <code>^(https?)://</code>
+
+=== visualKey ===
+A visual key/poster image URI of serial.
+*Type: String
+**Format: URI
+*Pattern: <code>^(https?)://</code>
+
+=== synopsis ===
+A synopsis/plot of story of serial in several languages. Based on ICU locales.
+*Requires:
+*:<code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+*Not null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>ar_001</code>
+|String
+|Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+|<code>id_ID</code>
+|String
+|Serial synopsis in Indonesian.
+|-
+|<code>en_US</code>
+|String
+|Serial synopsis in English (United States) or else.
+|-
+|<code>ja_JP</code>
+|String
+|Serial synopsis in Japanese.
+|-
+|<code>de_DE</code>
+|String
+|Serial synopsis in German.
+|-
+|<code>ko_KR</code>
+|String
+|Serial synopsis in Korean.
+|-
+|<code>fr_FR</code>
+|String
+|Serial synopsis in French.
+|-
+|<code>pt_PT</code>
+|String
+|Serial synopsis in Portuguese.
+|-
+|<code>ru_RU</code>
+|String
+|Serial synopsis in Russian.
+|-
+|<code>es_ES</code>
+|String
+|Serial synopsis in Spanish.
+|-
+|<code>zh_Hans</code>
+|String
+|Serial synopsis in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String
+|Serial synopsis in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String
+|Serial synopsis in Vietnamese.
+|}
+
+=== information ===
+A collection of information about serial.
+*Type: Object
+*Requires:
+*:<code>synonyms</code>, <code>type</code>, <code>status</code>, <code>serialGenre</code>, <code>serialTags</code>, <code>releaseSeason</code>, <code>releaseYear</code>, <code>episode</code>, <code>releaseDate</code>, <code>endDate</code>, <code>duration</code>, <code>totalDuration</code>, <code>studio</code>, <code>rating</code>, <code>isNsfw</code>, <code>adaptation</code>, <code>country</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+==== synonyms ====
+Serial title synonyms in several languages. Based on ICU locales.
+*Type: Object
+*Requires:
+*:<code>en_Latn</code>, <code>ar_001</code>, <code>id_ID</code>, <code>en_US</code>, <code>ja_JP</code>, <code>de_DE</code>, <code>ko_KR</code>, <code>fr_FR</code>, <code>pt_PT</code>, <code>ru_RU</code>, <code>es_ES</code>, <code>zh_Hans</code>, <code>zh_Hant</code>, <code>vi_VN</code>
+*Additional properties: <code>true</code>
+*Not null: <code>false</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_Latn</code>
+|String
+|Serial title synonyms in romanized text.
+|-
+|<code>ar_001</code>
+|String
+|Serial title synonyms in Modern Standard/Written Arabic (العربية الفصحى).
+|-
+|<code>id_ID</code>
+|String
+|Serial title synonyms in Indonesian.
+|-
+|<code>en_US</code>
+|String
+|Serial title synonyms in English (United States) or else.
+|-
+|<code>ja_JP</code>
+|String
+|Serial title synonyms in Japanese.
+|-
+|<code>de_DE</code>
+|String
+|Serial title synonyms in German.
+|-
+|<code>ko_KR</code>
+|String
+|Serial title synonyms in Korean.
+|-
+|<code>fr_FR</code>
+|String
+|Serial title synonyms in French.
+|-
+|<code>pt_PT</code>
+|String
+|Serial title synonyms in Portuguese.
+|-
+|<code>ru_RU</code>
+|String
+|Serial title synonyms in Russian.
+|-
+|<code>es_ES</code>
+|String
+|Serial title synonyms in Spanish.
+|-
+|<code>zh_Hans</code>
+|String
+|Serial title synonyms in Simplified Chinese.
+|-
+|<code>zh_Hant</code>
+|String
+|Serial title synonyms in Traditional Chinese.
+|-
+|<code>vi_VN</code>
+|String
+|Serial title synonyms in Vietnamese.
+|}
+
+==== type ====
+Serial type.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|Enum of: <code>TV</code>, <code>ONA</code>, <code>OVA</code>, <code>OAD</code>, <code>Special</code>, <code>Movie</code>, <code>Music</code>, <code>Unknown</code>
+|-
+|<code>id_ID</code>
+|String
+|Enum of: <code>TV</code>, <code>ONA</code>, <code>OVA</code>, <code>OAD</code>, <code>Spesial</code>, <code>Film</code>, <code>Musik</code>, <code>Tidak Diketahui</code>
+|}
+
+==== status ====
+Describes the serial broadcast status.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|Enum of: <code>Aired</code>, <code>Airing</code>, <code>Planned</code>, <code>TBA</code>, <code>and Unknown</code>
+|-
+|<code>id_ID</code>
+|String
+|Enum of: <code>Ditayangkan</code>, <code>Mengudara</code>, <code>Direncanakan</code>, <code>Akan Diumumkan</code>, <code>and Tidak Diketahui</code>
+|}
+
+==== serialGenre ====
+Genre(s) of the serial
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|Array
+|Enum of: <code>Action</code>, <code>Adventure</code>, <code>Comedy</code>, <code>Crime</code>, <code>Documentary</code>, <code>Drama</code>, <code>Fantasy</code>, <code>History</code>, <code>Horror</code>, <code>Mature</code>, <code>Mecha</code>, <code>Music</code>, <code>Mystery</code>, <code>Psychological</code>, <code>Romance</code>, <code>Science Fiction</code>, <code>Slice of Life</code>, <code>Sport</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>War</code>
+|-
+|<code>id_ID</code>
+|Array
+|Enum of: <code>Aksi</code>, <code>Petualangan</code>, <code>Komedi</code>, <code>Kriminalitas</code>, <code>Dokumentasi</code>, <code>Drama</code>, <code>Fantasi</code>, <code>Sejarah</code>, <code>Horror</code>, <code>Dewasa</code>, <code>Mecha</code>, <code>Musik</code>, <code>Misteri</code>, <code>Psikologis</code>, <code>Romansa</code>, <code>Fiksi Ilmiah</code>, <code>Potongan Kehidupan</code>, <code>Olahraga</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>Peperangan</code>
+|}
+
+==== serialTags ====
+
+Represents serial specific tags/content. Similar to the <code>serialGenres</code>, but usually more focused on content, storyline, or themes. But, all of <code>serialGenres</code> value will be ignored if present on serialTags. See the wiki for more information.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|Array
+|Not an enum from: <code>Action</code>, <code>Adventure</code>, <code>Comedy</code>, <code>Crime</code>, <code>Documentary</code>, <code>Drama</code>, <code>Fantasy</code>, <code>History</code>, <code>Horror</code>, <code>Mature</code>, <code>Mecha</code>, <code>Music</code>, <code>Mystery</code>, <code>Psychological</code>, <code>Romance</code>, <code>Science Fiction</code>, <code>Slice of Life</code>, <code>Sport</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>War</code>
+|-
+|<code>id_ID</code>
+|Array
+|Not an enum from: <code>Aksi</code>, <code>Petualangan</code>, <code>Komedi</code>, <code>Kriminalitas</code>, <code>Dokumentasi</code>, <code>Drama</code>, <code>Fantasi</code>, <code>Sejarah</code>, <code>Horror</code>, <code>Dewasa</code>, <code>Mecha</code>, <code>Musik</code>, <code>Misteri</code>, <code>Psikologis</code>, <code>Romansa</code>, <code>Fiksi Ilmiah</code>, <code>Potongan Kehidupan</code>, <code>Olahraga</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>Peperangan</code>
+|}
+
+==== releaseSeason ====
+Season of serial releases.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>, <code>ja_JP</code>, <code>ko_KR</code>, <code>zh_Hans</code>, <code>zh_Hant</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|Enum of: <code>Winter</code>, <code>Spring</code>, <code>Summer</code>, <code>Fall</code>, <code>Unknown</code>
+|-
+|<code>id_ID</code>
+|String
+|Enum of: <code>Dingin</code>, <code>Semi</code>, <code>Panas</code>, <code>Gugur</code>, <code>Tidak Diketahui</code>
+|-
+|<code>ja_JP</code>
+|String
+|Enum of: <code>冬</code>, <code>春</code>, <code>夏</code>, <code>秋</code>, <code>不明</code>
+|-
+|<code>ko_KR</code>
+|String
+|Enum of: <code>겨울</code>, <code>봄</code>, <code>여름</code>, <code>가을</code>, <code>알</code>
+|-
+|<code>zh_Hans</code>
+|String
+|Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
+|-
+|<code>zh_Hant</code>
+|String
+|Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
+|}
+
+==== releaseYear ====
+The year of the serial release, using a integrer/numeral format.
+*Type: Number
+*Minumum number: 1000
+*Maximum number: 2999
+*Not null: <code>false</code>
+
+==== episode ====
+Total episodes of serial.
+*Type: Number
+*Minumum number: 0
+*Not null: <code>false</code>
+
+==== releaseDate ====
+Start date of serial release, using YYYY-MM-DD format.
+*Type: String
+**Format: Date
+*Pattern: <code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})</code>
+*Not null: <code>false</code>
+
+==== endDate ====
+End date of serial release, using YYYY-MM-DD format.
+*Type: String
+**Format: Date
+*Pattern: <code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})\-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})</code>
+*Not null: <code>false</code>
+
+==== duration ====
+Duration per serial episode, using minute format.
+*Type: Number
+*Minumum number: 0
+*Not null: <code>false</code>
+
+==== totalDuration ====
+Total serial duration in minutes.
+*Type: Number
+*Minumum number: 0
+*Not null: <code>false</code>
+
+==== studio ====
+Studio producing series.
+*Type: String ''or'' Array
+*Not null: <code>false</code>
+
+==== rating ====
+Content rating of the serial
+*Type: String
+*Enum: <code>G0+</code>, <code>PS2+</code>, <code>PG7+</code>, <code>PG13+</code>, <code>R8+</code>, <code>GU21+</code>
+*Not null: <code>false</code>
+
+==== isNsfw ====
+Mark the serial if contains NSFW content.
+*Type: Boolean
+*Not null: <code>true</code>
+
+==== adaptation ====
+Mark the serial if it's adapted from different source or not.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String/null
+|Enum of: <code>Original</code>, <code>Comic</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Game</code>, <code>Music</code>, <code>Drama</code>, <code>4-koma</code>, <code>Fairy Tale</code>
+|-
+|<code>id_ID</code>
+|String/null
+|Enum of: <code>Orisinal</code>, <code>Komik</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Gim</code>, <code>Musik</code>, <code>Drama</code>, <code>4-panel</code>, <code>Dongeng</code>
+|}
+
+==== country ====
+Country of origin of serial. No country restrictions for this field.
+*Type: Object
+*Requires:
+*:<code>en_US</code>, <code>id_ID</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>en_US</code>
+|String
+|
+|-
+|<code>id_ID</code>
+|String
+|
+|}
+
+=== scores ===
+Scores from several websites
+*Type: Object
+*Requires:
+*:<code>aniDB</code>, <code>AniList</code>, <code>AnimePlanet</code>, <code>ANN</code>, <code>aniSearch</code>, <code>Annict</code>, <code>IMDb</code>, <code>KinoPoisk</code>, <code>Kitsu</code>, <code>LiveChart</code>, <code>MyAnimeList</code>, <code>MyShows</code>, <code>Nautiljon</code>, <code>Notify</code>, <code>OtakOtaku</code>, <code>Shikimori</code>, <code>SIMKL</code>, <code>TMDB</code>, <code>Trakt</code>, <code>TVTime</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!colspan="2"|Field name
+!Type
+!Note
+|-
+|colspan="2"|<code>aniDB</code>
+|Object
+|
+*URL: https://anidb.net/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>AniList</code>
+|Object
+|
+*URL: https://anilist.co/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>AnimePlanet</code>
+|Object
+|
+*URL: https://anime-planet.com/
+*Required: <code>url</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://www\.anime-planet\.com/anime/[a-z0-9\-]+</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.000
+*Maximum: 5.000
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>ANN</code>
+|Object
+|
+*URL: https://animenewsnetwork.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.000
+*Maximum: 10.000
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>aniSearch</code>
+|Object
+|
+*URL: https://anisearch.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Annict</code>
+|Object
+|
+*URL: https://annict.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>IMDb</code>
+|Object
+|
+*URL: https://imdb.com/
+*Required: <code>code</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>code</code>
+|String
+|
+*Pattern: <code>^(tt)?[0-9]{5,}</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.0
+*Maximum: 10.0
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>KinoPoisk</code>
+|Object
+|
+*URL: https://kinopoisk.ru/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Kitsu</code>
+|Object
+|
+*URL: https://kitsu.io/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Dependency:
+**<code>id</code>: <code>slug</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>slug</code>
+|String
+|
+*Pattern: <code>^[\w\-\.]+</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 100.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>LiveChart</code>
+|Object
+|
+*URL: https://livechart.me/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>MyAnimeList</code>
+|Object
+|
+*URL: https://myanimelist.net/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>MyShows</code>
+|Object
+|
+*URL: https://en.myshows.me/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 5.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Nautiljon</code>
+|Object
+|
+*URL: https://nautiljon.com/
+*Required: <code>url</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://(www\.)?nautiljon\.com/animes/</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Notify</code>
+|Object
+|
+*URL: https://notify.moe/
+*Required: <code>base64</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>base64</code>
+|String
+|
+*Pattern: <code>^[\w_\-]+</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>OtakOtaku</code>
+|Object
+|
+*URL: https://otakotaku.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Shikimori</code>
+|Object
+|
+*URL: https://shikimori.org/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Dependencies:
+**<code>moved</code>: <code>newId</code>
+**<code>newId</code>: <code>moved</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>moved</code>
+|Boolean
+|
+*Default: <code>false</code>
+|-
+|
+|<code>newId</code>
+|String
+|
+*Pattern: <code>^[A-Za-z]+[0-9]+</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>SIMKL</code>
+|Object
+|
+*URL: https://simkl.com/
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.0
+*Maximum: 10.0
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>TMDB</code>
+|Object
+|
+*URL: https://themoviedb.org/
+*Required: <code>id</code>, <code>score</code>
+*Dependency:
+**<code>id</code>: <code>url</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://(www\.themoviedb|themoviedb)\.org/(movie|tv)/[0-9]+</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>Trakt</code>
+|Object
+|
+*URL: https://trakt.tv/
+*Required: <code>id</code>, <code>score</code>
+*Dependency:
+**<code>id</code>: <code>url</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>url</code>
+|String
+|
+*Format: URI
+*Pattern: <code>^(https?)://trakt\.tv/(movies|shows)/([0-9]+|[\w\-]+)</code>
+*Not null: <code>false</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0
+*Maximum: 100
+*Not null: <code>false</code>
+|-
+|colspan="2"| <code>TVTime</code>
+|Object
+|
+*URL: https://www.tvtime.com/en
+*Required: <code>id</code>, <code>score</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+|-
+|
+|<code>id</code>
+|Number
+|
+*Exclusive Minimum: 0
+*Not null: <code>false</code>
+|-
+|
+|<code>score</code>
+|Number
+|
+*Minimum: 0.00
+*Maximum: 10.00
+*Not null: <code>false</code>
+|}
+
+=== updatedDate ===
+Date and time of latest changes to JSON. Based on ISO 8601.
+*Type: String
+*Format: Date-Time
+*Pattern: 
+*:<code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\-|\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})</code>
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+=== signature ===
+A virtual signature of entry contributor
+*Type: Object
+*Requires: <code>name</code>, <code>username</code>, <code>discordId</code>, <code>submissionDateTime</code>, <code>sign</code>, 
+*Additional properties: <code>false</code>
+*Not null: <code>true</code>
+
+{|
+!Field name
+!Type
+!Note
+|-
+|<code>name</code>
+|String
+|
+Contributor's name
+*Pattern: <code>^[\w\s\W\S]+</code>
+*Not null: <code>true</code>
+|-
+|<code>username</code>
+|String
+|
+Contributor GitHub username
+*Pattern: <code>^@[\w\s\W\S\.\-_]+</code>
+*Not null: <code>true</code>
+|-
+|<code>discordId</code>
+|Number
+|
+Discord User ID
+*Pattern: <code>^[0-9]{16,}</code>
+*Not null: <code>true</code>
+|-
+|<code>submissionDateTime</code>
+|String
+|
+Date and time of submission
+*Pattern: 
+*:<code>^[12]{1}[0-9]{3}\-([0]{1}[1-9]{1}|[1]{1}[0-2]{1})-([0-2]{1}[0-9]{1}|[3]{1}[01]{1})T([01]{1}[0-9]{1}|[2]{1}[0-4]{1}):([0-5]{1}[0-9]{1}):([0-5]{1}[0-9]{1})(\-|\+)([0]{1}[0-9]{1}|[1]{1}[0-3]{1}):([0-5]{1}[0-9]{1})</code>
+*Not null: <code>true</code>
+|-
+|<code>sign</code>
+|String/Number
+|
+Unique random characters made by contributor
+*Not null: <code>true</code>
+|}
+
+== Guideline ==
+*;Not null: <code>boolean</code>
+*::Value can be changed to null if <code>true</code>. Otherwise, value can not be changed to null if <code>false</code>.

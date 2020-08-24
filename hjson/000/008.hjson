@@ -1,167 +1,163 @@
 #hjson
-/*--Ryuuganime HJSON Template--^\ /^---LEGENDA MARKAH CATATAN---^\ /^----LEGENDA MARKAH VALUE----^\
-|                               | |                              | | [str] merupakan markah teks, |
-|     Dibuat oleh @nattadasu    | |   // adalah catatan penting  | |   angka, dan null.           |
-|                               | |  # adalah catatan definitif  | | [num] merupakan markah nume- |
-| ----------------------------- | |                              | |   ral,  yakni angka dan null |
-|                               | \^----------------------------^/ |   saja.                      |
-| Guna  mempermudah kontributor | /^------CATATAN TAMBAHAN------^\ | [boo] merupakan markah  boo- |
-|   non-pengembang  dalam meng- | |                              | |   lean, yakni "true" sebagai |
-|   isi  data anime terkait de- | | '''                          | |   benar, "false"  salah, dan |
-|   ngan catatan  tata cara pe- | |          ini adalah          | |   "null" untuk tidak diketa- |
-|   ngisian data.               | |    sebuah teks multi baris   | |   hui                        |
-|                               | |                          ''' | | [arr] merupakan markah array |
-\^-----------------------------^/ | merupakan  markah yang meng- | |   yaitu sebuah  koleksi ter- |
-/^----LEGENDA MARKAH STRING----^\ | izinkan penggunaan baris ba- | |   urut dan memiliki tipe da- |
-|                               | | ru pada suatu value          | |   ta yang berbeda.           |
-| <url>  String  berisi  tautan | |                              | | [obj] merupakan markah obyek |
-|   url.                        | \^----------------------------^/ |   menandakan bahwa value be- |
-| <arb>  string  dapat  berubah |                                  |   rikut  memiliki   beberapa |
-|   menjadi array apabila objek |                                  |   value di dalamnya.         |
-|   dalam satu  value lebih ba- |                                  |                              |
-|   nyak daripada satu.         |                                  \^----------------------------^/
-| <nab> array dapat dihilangkan |
-|   tanda  kurungnya, dan dija- |
-|   dikan sebagai null.         |
-| <nbl> string, numeral, atau   |
-|   array terkait tidak bisa    |
-|   diubah menjadi null.        |
-|                               |
-\^-----------------------------*/
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
+|                               | | [num] is a only-number value | |    # is a definition notes   |
+| -------VERSION: 1.1-rv------- | | [boo] is a boolean markup    | |                              |
+|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
+| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
+|   non-developer to contribute | | [arr] is an array value. It  | |                              |
+|   on filling related anime    | |   is a combination of        | | '''                          |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
+|   on each of values in as a   | |   in one value               | |       lines text value       |
+|   comment                     | | [obj] is an object value.    | |                          ''' |
+|                               | |   Signifies that this value  | | is a syntax that allows user |
+\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
+|                               | |                              | |   pointer                    |
+| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
+|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
+| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
+|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
+|   on a value is more than one | //    mistakes without even realizing it.
+| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
+|   null, if possible           | //    itself. It's intended to be used like a user interface for
+| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
+|   "deleted" or changed to     | //    the machine.
+|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
+|   essential for the file      | //    on HJSON. 
+|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
+|                               | //    for example.
+\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
 
 { 
-  // Petunjuk awal:
-  // Koma (,) dalam format berkas ini bersifat opsional, tetapi lebih baik
-  //    diikutsertakan agar mempermudah mesin dalam mengubah format HJSON
-  //    ke JSON. Hanya pada value yang memiliki markah [arr] yang memerlukan
-  //    tanda koma.
-  // Tanda petik (quotation mark) dalam berkas ini juga bersifat opsional. 
-  //    Gunakan tanda petik JIKA mengandung spasi dalam kata. Apabila dalam
-  //    kata tersebut memiliki tanda petik, tambahkan garis miring kiri (\)
-  //    di sebelah kiri tanda petik tersebut. Contoh dalam penerapan value:
-  //    id_ID: 
-  //        '''
-  //            Ini hanyalah informasi \"percobaan\",
-  //            harap untuk dapat dimaklumi
-  //        '''
-  // Untuk mempermudah pengisian, lihat ryuuganime-db/hjson/1.hjson untuk
-  //    contoh pengisian.
-
   # $schema [str] <nbl> <url>
-  # = Sangat tidak  direkomendasikan  untuk mengubah  konfigurasi ini kecuali kamu tahu apa yang se-
-  #   dang lakukan!
+  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
   $schema: ../../schemas/entry.json
-  // Optional path: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+  // Optional value, tick a comment syntax of above value, and untick value below.
+  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
 
-  # title [obj]
-  # Merupakan judul suatu serial.
+  # title [obj] <nbl>
+  # title of serial... in several languages. Based on ICU locales.
   title: 
   {
     # native [str] <nbl>
-    # = Judul dalam bahasa asli serial, contoh "アサティール 未来の昔ばなし"
-    #   dalam bahasa Jepang untuk anime Asatir: Mirai no Mukashi Banashi
-    #   yang ditayang di Jepang.
+    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
     native:  君の膵臓をたべたい
 
     # en_Latn [str] <nbl>
-    # = Judul dalam bentuk Romaji (untuk Jepang), Romaja (Korea), atau
-    #   Latin. Diperlukan untuk penamaan judul serial dalam entri.
+    # = Serial title in romanized text. Required for main title on entry list.
     en_Latn: Kimi no Suizou wo Tabetai
 
     # ar_001 [str] <nab>
-    # = Judul dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
+    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
     ar_001: اريد اكل بنكرياسك
 
     # id_ID [str] <nab>
-    # = Judul dalam bahasa Indonesia.
+    # = Serial title in Indonesian (un/official)
+    //  REGEX: ^[\w\s\S]+$
     id_ID: Aku Ingin Makan Pankreasmu
 
     it_IT: Voglio mangiare il tuo pancreas
 
     # en_US [str] <nab>
-    # = Judul dalam bahasa Inggris.
+    # = Serial title in English.
+    //  REGEX: ^[\w\s\S]+$
     en_US: I want to eat your pancreas
 
     # ja_JP [str] <nab>
-    # = Judul dalam bahasa Jepang.
+    # = Serial title in Japanese.
+    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
     ja_JP: 君の膵臓をたべたい
 
     # de_DE [str] <nab>
-    # = Judul dalam bahasa Jerman.
+    # = Serial title in German (un/official).
+    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
     de_DE: I want to eat your pancreas
 
     # ko_KR [str] <nab>
-    # = Judul dalam bahasa Korea Selatan. Aksen Korea Utara diperbolehkan.
+    # = Serial title in South/North Korean.
+    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
     ko_KR: 너의 췌장을 먹고싶어
 
     # fr_FR [str] <nab>
-    # = Judul dalam bahasa Perancis. Aksen lainnya diperbolehkan.
+    # = Serial title in French (or other accent).
+    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
     fr_FR: Je veux manger ton pancréas
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Serial title in Portuguese.
+    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
     pt_PT: Eu Quero Comer o Teu Pâncreas
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia.
+    # = Serial title in Russian (un/official). 
+    //  REGEX: ^[\w\s\SЀ-ӿ]+$
     ru_RU: Я хочу съесть твою поджелудочную
 
     # es_ES [str] <nab>
-    # = Judul dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Serial title in Spanish (or other accent).
+    //  REGEX: ^[\w\s\SÀ-ÿ]+$
     es_ES: Quiero comerme tu páncreas
 
     # zh_Hans [str] <nab>
-    # = Judul dalam bahasa China beraksara Mandarin (Simplified).
+    # = Serial title in Simplified Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hans: 我想吃掉你的胰脏
 
     # zh_Hant [str] <nab>
-    # = Judul dalam bahasa China beraksara Kanton (Traditional).
+    # = Serial title in Traditional Chinese.
+    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
     zh_Hant: 我想吃掉你的胰臟
 
     # vi_VN [str] <nab>
-    # = Judul dalam bahasa Vietnam.
+    # = Serial title in Vietnamese.
+    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
     vi_VN: Tớ Muốn Ăn Tụy Của Cậu
 
   }
 
-  # backdrop [str] <url>
-  # = Yakni cover art. Gunakan URL gambar. Lihat Wiki untuk informasi
-  #   situs yang diperbolehkan.
+  # backdrop [str] <url> <nbl>
+  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   backdrop: https://artworks.thetvdb.com/banners/movies/16877/backgrounds/16877.jpg
 
-  # visualKey [str] <url>
-  # = Ialah Poster. Gunakan URL gambar. Lihat Wiki untuk informasi situs
-  #   yang diperbolehkan.
+  # visualKey [str] <url> <nbl>
+  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
+  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
   visualKey: https://image.tmdb.org/t/p/original/aUxbkULgC3fpdwbdiuqKJLyfr4R.jpg
 
-  # synopsis [obj]
-  # = Ialah sinopis suatu serial dalam beberapa bahasa.
+  # synopsis [obj] <nbl>
+  # = A synopsis/plot of story of serial in several languages. 
   synopsis:
   {
     # ar_001 [str] <nab>
-    # = Sinopsis dalam bahasa Arab, 001 adalah kode ICU untuk menunjukkan
-    #   bahwa menggunakan logat Arab Modern yang telah distandarkan
-    #   (Arabic MSA).
+    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
+    #   Wikipedia for Arabic synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
     ar_001: '''تدور احداث هذا الفيلم حول فتى منعزل يحب قراءة الكتب , ذات يوم وبينما بطلنا يوجد في المستشفى وجد مذكرة على الارض تحمل عنوان التعايش مع الموت وتعود هذه المذكرة لساكورا ياماوتشي ذات الشعبية الكبيرة حيث كانت هذه الاخيرة تخفي اصابتها بمرض اوقف عمل البنكرياس وجعلها تنتظر الموت . .........تابعوا الفيلم لمعرفة المزيد'''
 
     # id_ID [str] <nab>
-    # = Sinopsis dalam bahasa Indonesia. Lihat Otak Otaku untuk sinopsis
-    #   Indonesia.
+    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
+    #   fanshare for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     id_ID: '''Suatu hari, seorang murid SMA menemukan sebuah buku di rumah sakit berjudul "Jurnal Penyakit Koeksistensi". Itu adalah buku harian milik teman kelasnya, Sakura Yamauchi yang ditulis secara diam-diam. Ini adalah kisah seorang gadis yang menderita penyakit dan harus menghadapi kenyataan hidup yang kejam...'''
 
     it_IT: '''Uno studente delle superiori trova per caso il diario di una compagna di classe, Sakura Yamauchi. Ma quel diario custodisce un segreto perché Sakura soffre di una gravissima malattia pancreatica. Nonostante i due abbiano personalità agli antipodi, quel tremendo segreto li avvicinerà sempre più.'''
 
     # en_US [str] <nab>
-    # = Sinopsis dalam bahasa Inggris. Lihat Anime News Network, AniDB,
-    #   Kitsu, atau MyAnimeList untuk sinopsis Inggris.
+    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
+    #   synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S]+
     en_US: '''The aloof protagonist: a bookworm who is deeply detached from the world he resides in. He has no interest in others and is firmly convinced that nobody has any interest in him either. His story begins when he stumbles across a handwritten book, titled "Living with Dying." He soon identifies it as a secret diary belonging to his popular, bubbly classmate Sakura Yamauchi. She then confides in him about the pancreatic disease she is suffering from and that her time left is finite. Only her family knows about her terminal illness; not even her best friends are aware. Despite this revelation, he shows zero sympathy for her plight, but caught in the waves of Sakura's persistent buoyancy, he eventually concedes to accompanying her for her remaining days.
 
 As the pair of polar opposites interact, their connection strengthens, interweaving through their choices made with each passing day. Her apparent nonchalance and unpredictability disrupts the protagonist's impassive flow of life, gradually opening his heart as he discovers and embraces the true meaning of living.'''
 
     # ja_JP [str] <nab>
-    # = Sinopsis dalam bahasa Jepang. Lihat Annict untuk sinopsis Jepang.
+    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
     ja_JP: '''「君の膵臓をたべたい」……主人公である「僕」が病院で偶然拾った1冊の「共病文庫」というタイトルの文庫本。それは「僕」のクラスメイトである山内桜良（やまうち さくら）が綴っていた秘密の日記帳であり、彼女の余命が膵臓の病気により、もう長くはないことが記されていた。「僕」はその本の中身を興味本位で覗いたことにより、身内以外で唯一桜良の病気を知る人物となる。
 
 「山内桜良の死ぬ前にやりたいこと」に付き合うことにより、「僕」、桜良という正反対の性格の2人が、互いに自分には欠けている部分にそれぞれ憧れを持ち、次第に心を通わせていきながら成長していく。そして「僕」は「人を認める人間に、人を愛する人間になること」を決意。桜良は、恋人や友人を必要としない「僕」が、初めて関わり合いを持ちたい人に自分を選んでくれたことにより「初めて私自身として必要とされている、初めて私が、たった一人の私であると思えた」と感じていく。
@@ -169,61 +165,68 @@ As the pair of polar opposites interact, their connection strengthens, interweav
 しかし、余命を全うすることなく、4週間の入院治療から解放されたその日に桜良は通り魔に刺されて亡くなってしまう。'''
 
     # de_DE [str] <nab>
-    # = Sinopsis dalam bahasa Jerman. Lihat aniSearch.de atau TVDB
-    #   untuk sinopsis Jerman.
+    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
     de_DE: '''Haruki Shiga ist ein unsozialer Einzelgänger, der seine Zeit lieber mit Büchern verbringt und in seiner Klasse kein besonders hohes Ansehen genießt. Sakura Yamauchi ist lebensfroh und charakterstark und mit ihrer offenen und sonnigen Persönlichkeit allseits beliebt. Die beiden könnten unterschiedlicher kaum sein und doch werden sie eines Tages unzertrennlich miteinander verbunden. Als Haruki im Krankenhaus darauf wartet, dass er aufgerufen wird, findet er ein kleines Buch – »Leben mit dem Tod« –, ein Tagebuch, dass das tägliche Leben eines sterbenden Menschen beschreibt. Es dauert nicht lang, bis die Besitzerin des Buches auftaucht: seine Klassenkameradin Sakura. Sakura leidet an einer Bauchspeicheldrüsenerkrankung und obwohl medizinische Fortschritte ihr ein fast normales Leben ermöglichen, wird sie bald sterben. Das ist allerdings etwas, das sie all ihren Freunden bisher verheimlicht hat, denn was sie in dieser letzten Zeit auf Erden braucht, ist kein Mitleid, sondern echte Normalität – Normalität, die sie in Haruki findet, der nun von einem »einfachen Klassenkameraden« zu einem »Klassenkameraden, der mein Geheimnis kennt« wird.
 
 So wird Haruki von Sakura mitgerissen und umso mehr Zeit die beiden miteinander verbringen, umso mehr finden sie sich gefangen in einem Sturm aus Gefühlen, die sie sich selbst nicht erklären können. »Freundschaft«? »Liebe«? Derart triviale Worte reichen nicht, um die Beziehung der beiden zu beschreiben. »Lass uns die Welt genießen, bis ich sterbe, okay?« – das sind ihre Worte und so bricht der Freigeist Sakura Stück für Stück Harukis harte Schale und er beginnt die Welt mit anderen Augen zu sehen …'''
 
     # ko_KR [str] <nab>
-    # = Sinopsis dalam bahasa Korea Selatan.
+    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
     ko_KR: '''먼지 뿌연 도서실, 낡은 책장에 꽂힌 서적들의 순번, 조용히 책을 읽으며 생각에 잠기는 걸 좋아하는 ‘나’는 익숙한 것에서만 위안을 찾는 평범한 고등학생이다. 무료한 일상을 보내던 나는 병원에서 낡은 소파 구석에 놓인 공책 한 권을 발견한다. ‘췌장⋯⋯ 죽는다⋯⋯ 공병(共病)문고?’ 호기심을 불러일으키는 단어에 마음을 빼앗긴 내 앞에 예쁘고 명랑한 사쿠라가 나타나 공책이 자신의 것이라고 말한다. 당황한 나, 그리고 환한 미소를 짓는 사쿠라. 그녀와 나는 점점 비밀을 공유하는 친구 그 이상의 관계로 맺어지기 시작하는데⋯⋯'''
 
     # fr_FR [str] <nab>
-    # = Sinopsis dalam bahasa Perancis. Aksen lainnya diperbolehkan. Lihat
-    #   Nautiljon atau TVDB untuk sinopsis Perancis.
+    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
     fr_FR: '''Shiga est un lycéen introverti qui ne semble trouver du réconfort que dans la littérature. Sa vie monotone bascule le jour où, en se rendant à l'hôpital, il découvre dans la salle d'attente le journal intime de Yamauchi Sakura, sa camarade de classe. Cette dernière lui révèle alors qu'elle est atteinte d'une rare déficience du pancréas et que ses jours sont comptés.
 
 Etant la seule personne du lycée au courant pour la maladie de la jeune fille, Shiga décide de garder le secret et d'en rester là avec elle. Mais sans qu'il ne s'en rende compte, Sakura et lui multiplient le temps passé ensemble ; et bien que leurs personnalités soient comme le jour et la nuit, chacun trouve en l'autre un précieux soutien. Ainsi Shiga décide de s'ouvrir à elle pour l'accompagner dans ses derniers jours.'''
 
     # pt_PT [str] <nab>
-    # = Judul dalam bahasa Portugis Portugal. Aksen lainnya diperbolehkan.
+    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
     pt_PT: '''O diário pertence à sua colega de classe, uma menina chamada Sakura Yamauchi, que revela estar a sofrer de uma doença terminal no seu pâncreas e que só tem alguns meses para viver. Sakura explica que o protagonista é a única pessoa além da sua família que conhece a sua condição. O protagonista promete manter o segredo de Sakura. Apesar das suas personalidades completamente opostas, o protagonista decide estar junto de Sakura durante os seus últimos meses.'''
 
     # ru_RU [str] <nab>
-    # = Judul dalam bahasa Rusia. Lihat Shikimori untuk sinopsis Rusia.
+    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
     ru_RU: '''Одним прекрасным днём ученик старшей школы находит чей-то личный дневник, подписанный как «Дневник болезни». Вскоре выясняется, что дневник этот принадлежит Сакуре Ямаути, однокласснице главного героя. Прочтя его, Харуки Сига узнаёт, что девушка страдает смертельной болезнью — её поджелудочная железа перестала работать. Чтобы поддержать её в этой нелёгкой ситуации, юноша решает подружиться с Сакурой, несмотря на их совершенно разные характеры.'''
 
     # es_ES [str] <nab>
-    # = Sinopsis dalam bahasa Spanyol. Aksen lainnya diperbolehkan.
+    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
     es_ES: '''El compañero de clases simplón es un chico que no destaca en nada, no se relaciona con nadie. Sólo esta interesado en el mundo que le muestran los libros que lee, hasta que va al hospital debido a que fue sometido a una operación de apéndice, por lo que ahora va a un chequeo de rutina.
 
 Mientras espera, encuentra un libro titulado “Libro de convivencia con una enfermedad”. Lo comienza a leer y parece que es el diario de alguna persona que sufre de cáncer de páncreas y probablemente le quede muy poco tiempo de vida. Después de leer, una chica aparece diciendo "eso es mío" y no es nada más y nada menos que Sakura Yamauchi, la chica más popular de su clase. Así, se convierte en el compañero de clases que sabe su secreto y la acompañará hasta el día de su muerte.'''
 
     # zh_Hans [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Mandarin (Simplified). Gunakan
-    #   converter daring untuk mengubah aksara Kanton ke Mandarin. 
+    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hant (Traditional Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hans: '''“没有名字的我，没有未来的她”
 对他人毫无兴趣，总是独自一人读书的高中生“我”。这样的“我”有一天，偶然捡到一册写着《共病文库》的文库本。那是，天真烂漫的班上人气王·山内樱良私下记录的日记本。里面记载着她身患胰脏的疾病，已经时日无多……。
 隐藏自己的疾病度过日常的樱良，与知晓其秘密的“我”。
 ——两人的距离，还没有名字。'''
 
     # zh_Hant [str] <nab>
-    # = Sinopsis dalam bahasa China beraksara Kanton (Traditional). TVDB
-    #   menggunakan aksara Kanton dalam database mereka.
+    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+    #   translate from zh_Hans (Simplified Chinese) using extension.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
     zh_Hant: '''沒有名字的少年主角和沒有未來的患者女主角，他在撿到她的日記《共病文庫》後，在班上原沒有交集的兩人，生命自此有了改變。對少年來說，他想要患有胰臟疾病的少女恢復健康，對少女來說，她想要正常的人生與他一起活著。個性相反的兩人相遇後，情感得到互補。'''
 
     # vi_VN [str] <nab>
-    # = Sinopsis dalam bahasa Vietnam.
+    # = Synopsis in Vietnamese.
+    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
     vi_VN: '''Câu chuyện trong tiểu thuyết kể dưới góc nhìn của một nhân vật chính giấu tên. Ngày nọ, cậu tìm được một cuốn nhật ký trong bệnh viện. Quyến nhật ký này là của cô bạn cùng lớp Sakura Yamauchi của cậu, và qua đó cậu biết được rằng cô bạn của mình đang trải qua căn bệnh tuyến tụy giai đoạn cuối và chỉ còn sống được vài tháng mà thôi. Sakura đã nói rằng cậu là người duy nhất ngoài gia đình cô biết về sự thật này. Cậu đã hứa giữ bí mật cho Sakura. Dù tính cách của họ hoàn toàn trái ngược nhau, nhân vật chính quyết định sẽ ở bên cạnh Sakura trong những ngày tháng cuối đời của cô.'''
   }
 
-  # information [obj]
-  # = Merupakan kumpulan informasi mengenai serial.
+  # information [obj] <nbl>
+  # = Is a collection of information about serial.
   information:
   {
-    # synonyms [obj] > [arr] <nab>
-    # = Sinonim, Judul lainnya yang diketahui oleh khalayak.
+    # synonyms [obj] <nbl> => [arr] <nab>
+    # = Synonym, other titles that well-known on the public.
     synonyms:
     {
       en_Latn: [
@@ -253,40 +256,42 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
       vi_VN: null
     }
 
-    # type [obj] > [str] <nbl>
-    # = Tipe serial, apakah itu TV, ONA, OVA/OAD, Special, ataupun Movie
+    # type [obj] <nbl> => [str] <nbl>
+    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
     type:
     {
-      // Argumen yang diperbolehkan ialah:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, dan Unknown
+      // Allowed values are:
+      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
       en_US: Movie
 
-      // Argumen yang diperbolehkan ialah:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, dan Tidak Diketahui
+      // Allowed values are:
+      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
       id_ID: Film
     }
 
     # status [obj] > [str] <nbl>
-    # = Menjelaskan status penanyangan serial.
+    # = Describes the serial broadcast status.
     status:
     {
-      // Argumen yang diperbolehkan ialah
-      // Aired, Airing, Planned, TBA, dan Unknown
+      // Allowed values are:
+      // Aired, Airing, Planned, TBA, and Unknown
       en_US: Aired
 
-      // Argumen yang diperbolehkan ialah
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, dan Tidak
-      //   Diketahui
+      // Allowed values are:
+      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
       id_ID: Ditayangkan
     }
 
     # serialGenre [obj]
-    # = Merupakan genre/jenis konten umum serial. Lihat wiki untuk informasi
-    #   lebih lanjut.
+    # = Is genre(s) of serial. See the wiki for more information.
     serialGenre:
     {
       # en_US [arr] <nbl>
-      # = Genre serial dalam bahasa Inggris.
+      # = Serial genre in English.
+      //  Allowed values are:
+      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Supernatural, Thriller, War
       en_US:
       [
         Drama
@@ -295,7 +300,11 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
       ]
 
       # id_ID [arr] <nbl>
-      # = Genre serial dalam bahasa Indonesia.
+      # = Serial genre in Indonesian.
+      //  Allowed values are:
+      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
+      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
         Drama
@@ -305,12 +314,13 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     }
 
     # serialTags [obj]
-    # = Merupakan tags/jenis konten spesifik serial. Serupa dengan serialGenre,
-    #   tetapi tidak sama. Lihat wiki untuk informasi lebih lanjut
+    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
+    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
+    #   present on serialTags. See the wiki for more information.
     serialTags:
     {
       # en_US [arr] <nbl>
-      # = Tag serial dalam bahasa Inggris
+      # = Serial tags in English.
       en_US:
       [
         Seinen
@@ -323,7 +333,7 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
       ]
 
       # id_ID [arr] <nbl>
-      # = Tag serial dalam bahasa Indonesia
+      # = Serial tags in Indonesian.
       id_ID:
       [
         Seinen
@@ -336,72 +346,66 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
       ]
     }
 
-    # releaseSeason [obj] > [str] <nbl>
-    # = Musim rilisan serial.
+    # releaseSeason [obj] <nbl> => [str] <nbl>
+    # = Season of serial releases.
     releaseSeason:
     {
-      // Argumen yang diperbolehkan ialah
-      // Winter, Spring, Summer, Fall, dan Unknown
+      // Allowed values are
+      // Winter, Spring, Summer, Fall, and Unknown
       en_US: Summer
 
-      // Argumen yang diperbolehkan ialah
-      // Dingin, Semi, Panas, Gugur, dan Tidak Diketahui
+      // Allowed values are
+      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
       id_ID: Panas
 
-      // Argumen yang diperbolehkan ialah
-      // 冬, 春, 夏, 秋, dan 不明
+      // Allowed values are
+      // 冬, 春, 夏, 秋, and 不明
       ja_JP: 夏
 
-      // Argumen yang diperbolehkan ialah
-      // 겨울, 봄, 여름, 가을, dan 알
+      // Allowed values are
+      // 겨울, 봄, 여름, 가을, and 알
       ko_KR: 여름
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hans: 夏天
 
-      // Argumen yang diperbolehkan ialah
-      // 冬天, 春天, 夏天, 秋天, dan 未知
+      // Allowed values are
+      // 冬天, 春天, 夏天, 秋天, and 未知
       zh_Hant: 夏天
     }
 
     # releaseYear [num] <nbl>
-    # = Tahun rilis serial, menggunakan format numeral.
+    # = The year of the serial release, using a integrer/numeral format.
     releaseYear: 2018
 
     # episode [num] <nbl>
-    # = Total episode serial, apabila tidak diketahui, isi 0 atau null.
+    # = Total episodes of serial. If unknown, fill null.
     episode: 1
 
     # releaseDate [str]
-    # = Tanggal rilis serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     releaseDate: 2018-09-01
 
     # endDate [str]
-    # = Tanggal tamat serial, menggunakan format YYYY-MM-DD. Apabila tidak
-    #   diketahui, isi null.
+    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
     endDate: 2018-09-01
 
     # duration [num] <nab>
-    # = Durasi per episode serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = Duration per serial episode, using minute format. If unknown, fill null.
     duration: 108
 
     # totalDuration [num] <nab>
-    # = Durasi total serial, menggunakan format menit. Apabila tidak
-    #   diketahui, isi null.
+    # = The total duration of the series, using the minute format. If unknown, fill null.
     totalDuration: 108
 
     # studio [str] <arb> <nab>
-    # = Studio yang memproduksi serial.
+    # = Studio producing series.
     studio: Studio VOLN
 
     # rating [str] <nab>
-    # = Rating konten penyiaran tayangan. Lihat wiki untuk informasi
-    #   lebih lanjut.
-    // Argumen yang diperbolehkan ialah
-    // G0+, PS2+, PG7+, PG13+, R18+, GU21+, dan null.
+    # = Broadcast content rating of serial. See the wiki for more information.
+    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
     rating: PG13+
 
     # isNsfw [boo] <nbl>
@@ -409,43 +413,59 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     #   false, yakni aman.
     // Argumen yang diperbolehkan ialah
     // true dan false
-    "isNsfw": false
+    isNsfw: false
 
     # adaptation [obj] > [str] <arb> <nab>
-    # = Ialah adaptasi asal tayangan.
+    # = Is the original adaptation of the show.
     adaptation:
     {
-      // Argumen yang diperbolehkan ialah
-      // Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music,
-      // Drama, 4-koma, Fairy Tale, dan null
+      // Allowed values are
+      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
+      //   4-koma, Fairy Tale, and null
       en_US: Novel
 
-      // Argumen yang diperbolehkan ialah
-      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik,
-      // Drama, 4-panel, Dongeng, dan null
+      // Allowed values are
+      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
+      //   4-panel, Dongeng, and null
       id_ID: Novel
     }
 
     # country [str] <nbl>
-    # = Negara asal tayangan. Tidak ada batasan negara di sini.
+    # = Country of origin of serial. There are no country restrictions here.
     country:
     {
       en_US: Japan
       id_ID: Jepang
     }
+
+    # officialWebsite [str] <url> <nab>
+    # = Links to official website of current entry.
+    officialWebsite: http://www.kimisui-anime.com/
+
+    # promotionalVideos [arr] <nab> > [str] <url>
+    # = List of promotional videos of current entry.
+    promotionalVideos: [
+      https://youtu.be/2NXip6ix5hE
+    ]
+
+    # producers [arr] <nab> > [str]
+    # = Producers that involved to current entry/project
+    producers: [
+      Aniplex
+    ]
   }
 
-  // scores [obj] > [str]/[num] <nab>
-  // Apabila entri kosong, isi null pada id/slug/code/base64/url dan di score.
+  # scores [obj] > [str]/[num] <nab>
+  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
+  //  and on the score.
   scores:
   {
     // https://anidb.net
     aniDB:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13363
       score: 8.12
     }
@@ -454,9 +474,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     AniList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 99750
       score: 83
     }
@@ -465,22 +484,20 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     AnimePlanet:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anime-planet.com/anime/i-want-to-eat-your-pancreas
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 9068
       score: 4.534
     }
     ANN:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 20388
       score: 8.065
     }
@@ -489,13 +506,12 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     aniSearch:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.anisearch.com/anime/12730,kimi-no-suizou-o-tabetai
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 12730
       score: 88
     }
@@ -504,9 +520,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Annict:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 5401
       score: null
     }
@@ -514,10 +529,9 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     // https://imdb.com
     IMDb:
     {
-      # code
-      # = Serupa dengan ID, tetapi berbeda pada penambahan huruf identifikasi
-      #   yang digunakan oleh IMDb seperti tt6751668: tt merupakan identifikasi
-      #   dan 6751668 merupakan ID serial
+      # code [str] <nab>
+      # = Similar to ID, but the only difference is there is an additional identification character
+      #   that used by IMDB.
       code: tt7236034
       score: 7.9
     }
@@ -526,9 +540,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     KinoPoisk:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1048908
       score: 7.751
     }
@@ -537,13 +550,12 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Kitsu:
     {
       # slug [str]
-      # = Merupakan versi 'readable' bagi manusia pada URL indeks terkait.
+      # = Is a human readable version of the linked index URL.
       slug: kimi-no-suizou-wo-tabetai
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   melalui Notify.moe untuk memudahkan pengambilan ID. Lihat wiki
-      #   atau tanyakan kepada pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 13723
       score: 82.56
     }
@@ -552,9 +564,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     LiveChart:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 2829
       score: 8.94
     }
@@ -563,9 +574,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     MyAnimeList:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 36098
       score: 8.60
     }
@@ -574,9 +584,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     MyShows:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: null
       score: null
     }
@@ -585,7 +594,7 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Nautiljon:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.nautiljon.com/animes/kimi+no+suizo+wo+tabetai.html
       score: 9.24
     }
@@ -594,7 +603,7 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Notify:
     {
       # base64 [str]
-      # = Merupakan sistem penomoran unik yang digunakan Notify.moe dalam websitenya
+      # = This is a unique numbering system that Notify.moe uses on their website
       base64: 3RRI2FiiR
       score: 8.67
     }
@@ -603,9 +612,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     OtakOtaku:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 1047
       score: 9.71
     }
@@ -614,9 +622,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Shikimori:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 36098
       moved: true
       newId: z36098
@@ -627,9 +634,8 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     SIMKL:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 708497
       score: 8.6
     }
@@ -638,13 +644,12 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     TMDB:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://www.themoviedb.org/movie/504253
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 504253
       score: 82
     }
@@ -653,13 +658,12 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     Trakt:
     {
       # url [str] <url>
-      # = URL/Tautan entri pada website terkait.
+      # = URL of entry on the related website.
       url: https://trakt.tv/movies/i-want-to-eat-your-pancreas-2018
 
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 351528
       score: 82
     }
@@ -668,29 +672,27 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
     TVTime:
     {
       # id [num]
-      # = Merupakan nomor id serial di website tersebut. Dapat diambil
-      #   langsung di URL halaman terkait. Lihat wiki atau tanyakan kepada
-      #   pengembang untuk informasi terkait.
+      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
+      #   image URI. See Wiki or ask to developer for more information.
       id: 16877
       score: null
     }
   }
 
   # updatedDate [str] <nbl>
-  # = Tanggal dan Pukul terakhir pengambilan data informasi dan skor entri terkait.
-  #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-  // Tata cara pengisian data
+  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
+  #   format. See the guide below for more information.
+  // Procedure for filling data
   // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Yang mana:
-  // YYYY = tahun (2020)
-  // MM   = bulan (12)
-  // DD   = tanggal (21)
-  // hh   = pukul, format 24 jam (22)
-  // mm   = menit (45)
-  // ss   = detik (33)
-  // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-  // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-  // 
+  // Which:
+  // YYYY = year (2020)
+  // MM   = month (12)
+  // DD   = date (21)
+  // hh   = hour, format 24 hour (22)
+  // mm   = minute (45)
+  // ss   = second (33)
+  // TZD  = time zone designator based on UTC (WIB: +07:00)
+  // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
   updatedDate: 2020-05-25T02:16:16+07:00
   fansub:
@@ -807,7 +809,6 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
       Animeultima: https://www1.animeultima.to/a/kimi-no-suizou-wo-tabetai_194854
       AniWatch: https://aniwatch.me/anime/1020
       GogoAnime: https://gogoanimes.co/category/kimi-no-suizou-wo-tabetai
-      KissAnime: http://kissanime.ru/Anime/Kimi-no-Suizou-wo-Tabetai
       WonderfulSubs: https://beta.wonderfulsubs.com/watch/iwanttoeatyourpancreas
     }
   }
@@ -818,44 +819,42 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
   }
 
   # signature
-  # = Merupakan object yang memberikan informasi terkait kontributor entri.
+  # = Is an object that provides information regarding the contributors to the entry.
   signature:
   {
     # name [str] <nbl>
-    # = Nama Anda, boleh menggunakan nama pena.
+    # = Your name, can use pseudonym (pen name).
     name: Natsu Tadama
 
     # username [str] <nbl>
-    # = Nama pengguna Anda di GitHub
+    # = Your username on GitHub
     username: @nattadasu
 
     # discordId [num] <nbl>
-    # = Merupakan ID unik pengguna Anda di Discord.
-    #   Secara default, ID menggunakan dari ID server Ryuuganime: 594442535615725579
+    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
+    #   ID: 594442535615725579
     discordId: 384089845527478300
 
     # submissionDateTime [str] <nbl>
-    # = Tanggal dan waktu sebelum submisi (commit/push).
-    #   Menggunakan format ISO 8601. Lihat panduan dibawah untuk informasi lebih lanjut
-    // Tata cara pengisian data
+    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
+    #   for more information.
+    // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
-    // Yang mana:
-    // YYYY = tahun (2020)
-    // MM   = bulan (12)
-    // DD   = tanggal (21)
-    // hh   = pukul, format 24 jam (22)
-    // mm   = menit (45)
-    // ss   = detik (33)
-    // TZD  = desinator wilayah waktu berdasarkan UTC (WIB: +07:00)
-    // maka, 2020-12-21T22:45:33+07:00 adalah valid.
-    // 
+    // Which:
+    // YYYY = year (2020)
+    // MM   = month (12)
+    // DD   = date (21)
+    // hh   = hour, format 24 hour (22)
+    // mm   = minute (45)
+    // ss   = second (33)
+    // TZD  = time zone designator based on UTC (WIB: +07:00)
+    // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
     submissionDateTime: 2020-05-25T02:31:11+07:00
 
     # sign [str][num] <nbl>
-    # = Merupakan karakter unik yang digunakan kontributor dalam "menandatangani" data.
-    #   Boleh menggunakan karakter selain abjad dan angka, maupun menggunakan enkripsi seperti
-    #   Base64.
+    # = These are the unique characters that contributors use to "sign" data. Can use characters 
+    #   other than alphabets and numbers, or use encryption such as Base64.
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
   }
 }
