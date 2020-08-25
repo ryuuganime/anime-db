@@ -1,4 +1,4 @@
-= Human Friendly Anime Indexing List =
+<h1>Human Friendly Anime Indexing List</h1>
 '''DISCLAIMER'''
 
 This wiki maybe loads slower than expected.
@@ -23,8 +23,8 @@ This wiki maybe loads slower than expected.
 
 __TOC__
 
-== List ==
-=== 001-100 ===
+= List =
+== 001-100 ==
 <ol>
 <li>'''Fugou Keiji Balance:UNLIMITED'''
 ( [[json/000/001.json|json]]
@@ -93,7 +93,7 @@ __TOC__
 | [[xml/000/013.xml|xml]] )</li>
 <!--Place the recent index above this line--></ol>
 
-== Deprecated List (HTML) ==
+= Deprecated List (HTML) =
 * [[html/3D Kanojo_ Real Girl 2nd Season.html|3D Kanojo: Real Girl 2nd Season]]
 * [[html/7 Seeds.html|7 Seeds]]
 * [[html/Actors_ Song Connection.html|Actors: Song Connection]]
