@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000012" version="1.1-rv">
     <title>
         <native>うちタマ?! 〜うちのタマ知りませんか？〜</native>
         <en_Latn>Uchi Tama?! Uchi no Tama Shirimasen ka?</en_Latn>
@@ -203,118 +203,80 @@
         </TVTime>
     </scores>
     <updatedDate>2020-08-04T01:49:10+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou>https://www.aibouanime.site/2020/01/uchi-tama-uchi-no-tama-shirimasen-ka.html</Aibou>
-            <Aizukara />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki />
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs />
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan />
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai>https://www.huntersekai.website/2020/01/uchi-tama-uchi-no-tama-shirimasen-ka_10.html</HunterNoSekai>
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo />
-            <OPLovers />
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk />
-            <Quinime />
-            <RevieXion />
-            <Samehadaku />
-            <SilverYasha />
-            <Sora />
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/uchi-tama-uchi-no-tama-shirimasen-ka</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/uchi-tama-uchi-no-tama-shirimasen-ka/</AnimeKompi>
-            <AnimeSAVE>http://www.animesave.com/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia/</AnimeSAVE>
-            <Bakacan>https://bakacan.id/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia/</Bakacan>
-            <Drivenime>https://drivenime.com/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia-batch/</Drivenime>
-            <Hinime>https://hinime.com/uchi-tama-sub-indo/</Hinime>
-            <Koenime>https://www.koenime.com/uchitama-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/uchitama-batch-sub-indo/</Kusonime>
-            <Mikanime>https://mikanime.com/uchi-no-tama-sub-indo/</Mikanime>
-            <Moenime>https://moenime.web.id/uchi-tama-uchi-no-tama-shirimasen-ka-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/uchi-tama-uchi-no-tama-shirimasen-ka/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Uchi+Tama%3F%21+Uchi+no+Tama+Shirimasen+ka%3F</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/uchi-tama-uchi-no-tama-shirimasen-ka</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/uchi-tama-uchi-no-tama-shirimasen-ka/</anoBoy>
-            <Gomunime>https://gomunime.com/anime/uchi-tama-uchi-no-tama-shirimasen-ka/</Gomunime>
-            <Moeclip>https://moeclip.com/anime/uchi-tama-uchi-no-tama-shirimasen-ka-sub-indo/</Moeclip>
-            <Neonime>https://neonime.moe/tvshows/uchi-tama-uchi-no-tama-shirimasen-ka-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/uchi-tama-uchi-no-tama-shirimasen-ka.10D2KWZ2/</Onnime>
-            <OtakuIndo />
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/uchi-tama-uchi-no-tama-shirimasen-ka</fourAnime>
-            <nineAnime>https://9anime.to/watch/uchitama-have-you-seen-my-tama.2l75</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/887/uchi-tama-uchi-no-tama-shirimasen-ka</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/uchi-tama-uchi-no-tama-shirimasenka/1</AnimeTwist>
-            <Animeflix />
-            <AnimeHeaven>https://animeheaven.ru/detail/uchi-tama-uchi-no-tama-shirimasen-ka.74797</AnimeHeaven>
-            <Animelon />
-            <Animeultima />
-            <AniWatch>https://aniwatch.me/anime/2068</AniWatch>
-            <GogoAnime>https://gogoanime.movie/category/uchi-tama-uchi-no-tama-shirimasen-ka</GogoAnime>
-            <WonderfulSubs>https://www.wonderfulsubs.com/watch/uchitamahaveyouseenmytama</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Uchi+Tama%3F!+Uchi+no+Tama+Shirimasen+ka%3F</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/anime/39942</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab>https://www.animelab.com/shows/uchitama-have-you-seen-my-tama</AnimeLab>
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS>http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2255</ANIPLUS>
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili />
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll>https://www.crunchyroll.com/uchitama-have-you-seen-my-tama</Crunchyroll>
+        <dAnimeStore />
+        <DMM />
+        <FOD />
+        <Funimation>https://www.funimation.com/shows/uchitama-have-you-seen-my-tama/</Funimation>
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix />
+        <NicoNico />
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV>https://vrv.co/series/GRXJP0PNY</VRV>
+        <VVVVID />
+        <Wakanim>
+            <fr>https://www.wakanim.tv/fr/v2/catalogue/show/611</fr>
+            <sc>https://www.wakanim.tv/sc/v2/catalogue/show/601</sc>
+            <de>https://www.wakanim.tv/de/v2/catalogue/show/619</de>
+            <ru>https://www.wakanim.tv/ru/v2/catalogue/show/620</ru>
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Yamashita Kazuhito</name>
         <username>@YamashitaKazuhito</username>

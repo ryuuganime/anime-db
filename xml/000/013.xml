@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000013" version="1.1-rv">
     <title>
         <native>ソマリと森の神様</native>
         <en_Latn>Somali to Mori no Kamisama</en_Latn>
@@ -251,118 +251,80 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
         </TVTime>
     </scores>
     <updatedDate>2020-07-23T14:56:26+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou />
-            <Aizukara />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki />
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs>https://awsubstv.com/anime/somali-to-mori-no-kamisama/</AWSubs>
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi>http://cijanepoi.blogspot.com/search/label/Somali%20to%20Mori%20no%20Kamisama?&amp;max-results=9</Cijanepoi>
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan>https://extonan.web.id/somali-to-mori-no-kamisama</exTonan>
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai>https://www.huntersekai.website/2020/01/somali-to-mori-no-kamisama.html</HunterNoSekai>
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC>http://www.loliclubscorp.com/2020/01/somali-to-mori-no-kamisama.html</LCC>
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo />
-            <OPLovers />
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk>https://pucuktranslation.pw/somali-to-mori-no-kamisama/</Pucuk>
-            <Quinime>https://quinimefansub.com/category/somali-to-mori-no-kamisama/</Quinime>
-            <RevieXion />
-            <Samehadaku>https://www.samehadaku.tv/anime/somali-to-mori-no-kamisama/</Samehadaku>
-            <SilverYasha />
-            <Sora />
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/somali-to-mori-no-kamisama</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/somali-to-mori-no-kamisama/</AnimeKompi>
-            <AnimeSAVE>http://www.animesave.com/somali-to-mori-no-kamisama-subtitle-indonesia/</AnimeSAVE>
-            <Bakacan>https://bakacan.id/anime/somali-to-mori-no-kamisama/</Bakacan>
-            <Drivenime>https://drivenime.com/somali-to-mori-no-kamisama-subtitle-indonesia-batch/</Drivenime>
-            <Hinime>https://hinime.com/somali-to-mori-no-kamisama-sub-indo/</Hinime>
-            <Koenime>https://www.koenime.com/somamori-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/somali-mori-batch-sub-indo/</Kusonime>
-            <Mikanime>https://mikanime.com/somali-to-mori-no-kamisama-sub-indo/</Mikanime>
-            <Moenime>https://moenime.web.id/somali-to-mori-no-kamisama-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/somali-to-mori-no-kamisama/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/somali-to-mori-nao-kamisama-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo />
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/somali-to-mori-no-kamisama</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/somali-to-mori-no-kamisama/</anoBoy>
-            <Gomunime>https://gomunime.com/anime/somali-to-mori-no-kamisama/</Gomunime>
-            <Moeclip>https://moeclip.com/anime/somali-to-mori-no-kamisama-sub-indo/</Moeclip>
-            <Neonime>https://neonime.moe/batch/somali-to-mori-no-kamisama-batch-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/somali-to-mori-no-kamisama.YG2PRjzl/</Onnime>
-            <OtakuIndo />
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/somali-to-mori-no-kamisama</fourAnime>
-            <nineAnime>https://9anime.ru/watch/somali-and-the-forest-spirit.8r1y</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/873/somali-to-mori-no-kamisama</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/somali-to-mori-no-kamisama/1</AnimeTwist>
-            <Animeflix>https://animeflix.io/shows/somali-to-mori-no-kamisama</Animeflix>
-            <AnimeHeaven>https://animeheaven.ru/detail/somali-to-mori-no-kamisama</AnimeHeaven>
-            <Animelon />
-            <Animeultima />
-            <AniWatch>https://aniwatch.me/anime/2069</AniWatch>
-            <GogoAnime>https://gogoanime.movie/category/somali-to-mori-no-kamisama</GogoAnime>
-            <WonderfulSubs>https://www.wonderfulsubs.com/watch/somaliandtheforestspirit</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/view/1217620</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/anime/39575</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab />
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS />
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili />
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll>https://www.crunchyroll.com/somali-and-the-forest-spirit</Crunchyroll>
+        <dAnimeStore />
+        <DMM />
+        <FOD />
+        <Funimation />
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix>https://www.netflix.com/title/81233754</Netflix>
+        <NicoNico />
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV>https://vrv.co/series/G60X5KMPR</VRV>
+        <VVVVID />
+        <Wakanim>
+            <fr />
+            <sc />
+            <de />
+            <ru />
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Yamashita Kazuhito</name>
         <username>@YamashitaKazuhito</username>

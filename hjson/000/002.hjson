@@ -443,7 +443,7 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are: 
+      // Allowed values are:
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
       en_US: Novel
@@ -733,81 +733,80 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: https://abema.tv/search?q=%E3%82%BD%E3%83%BC%E3%83%89%E3%82%A2%E3%83%BC%E3%83%88%E3%83%BB%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%20%E3%82%A2%E3%83%AA%E3%82%B7%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: https://www.animelab.com/shows/sword-art-online
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2086
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: https://ani.gamer.com.tw/animeVideo.php?sn=10849
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: https://www.bilibili.com/bangumi/media/md130412
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/sword-art-online
+    dAnimeStore: null
+    DMM: null
+    FOD: http://fod.fujitv.co.jp/s/genre/anime/ser5773
+    Funimation: https://www.funimation.com/shows/sword-art-online/
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: https://www.hidive.com/tv/sword-art-online-alicization
+    Hulu: https://www.hulu.com/series/sword-art-online-alicization-c22224e3-93c0-40ab-895d-1475d94a6688
+    iflix: null
+    iQIYI: http://www.iqiyi.com/a_19rrh1temd.html
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: https://www.netflix.com/title/81029064
+    NicoNico: http://ch.nicovideo.jp/sao-alicization
+    PrimeVideo: https://www.amazon.co.jp/dp/B07J5RJ3ZW
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/GR49G9VP6
+    VVVVID: https://www.vvvvid.it/show/845/sword-art-online-alicization
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: https://www.wakanim.tv/fr/v2/catalogue/show/376
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/377
+      de: https://www.wakanim.tv/de/v2/catalogue/show/379
+      ru: https://www.wakanim.tv/ru/v2/catalogue/show/378
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

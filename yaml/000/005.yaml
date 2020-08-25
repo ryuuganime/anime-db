@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: グレイプニル
     en_Latn: Gleipnir
@@ -272,110 +272,77 @@ scores:
         id: 374198
         score: 9.74
 updatedDate: '2020-07-28T17:22:17+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: https://anitoki.web.id/?anime=gleipnir
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: http://awsubs.co/anime/gleipnir/
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: https://extonan.web.id/gleipnir
-        FansubJalanan: https://www.jalsubs.my.id/search/label/Gleipnir
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: 
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: https://quinimefansub.com/category/anime/gleipnir/
-        RevieXion: 
-        Samehadaku: https://samehadaku.vip/anime/gleipnir/
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: http://zensubs.xyz/tag/gleipnir/
-    eng:
-        Horrible: https://horriblesubs.info/shows/gleipnir
-fanshare:
-    idn:
-        AniBatch: 
-        AnimeKompi: http://animekompi.web.id/series/gleipnir/
-        AnimeSAVE: 
-        Bakacan: https://bakacan.id/anime/gleipnir/
-        Drivenime: https://drivenime.com/gleipnir-subtitle-indonesia-batch/
-        Hinime: https://hinime.com/gleipnir-sub-indo/
-        Koenime: https://www.koenime.com/gleipnir-sub-indo/
-        Kusonime: https://kusonime.com/gleipnir-batch-subtitle-indonesia/
-        Mikanime: 
-        Moenime: https://moenime.web.id/gleipnir-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/gleipnir/
-        WibuDesu: https://wibudesu.com/gleipnir-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Gleipnir
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/gleipnir
-        anoBoy: https://anoboy.us/anime/gleipnir/
-        Gomunime: 
-        Moeclip: https://moeclip.com/anime/gleipnir-sub-indo/
-        Neonime: https://neonime.moe/tvshows/gleipnir-subtitle-indonesia/
-        Onnime: https://onnime.net/anime/gleipnir.10DO5qG2/
-        OtakuIndo: https://otakuindo.org/nonton/gleipnir-sub-indo/
-    eng:
-        fourAnime: https://4anime.to/anime/gleipnir
-        nineAnime: https://9anime.ru/watch/gleipnir.2n15
-        AnimeDaisuki: https://animedaisuki.moe/anime/923/gleipnir
-        AnimeTwist: https://twist.moe/a/gleipnir/1
-        Animeflix: https://animeflix.io/shows/gleipnir
-        AnimeHeaven: https://animeheaven.ru/detail/gleipnir
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/gleipnir_161989
-        AniWatch: https://aniwatch.me/anime/2172
-        GogoAnime: https://www17.gogoanime.io/category/gleipnir
-        WonderfulSubs: https://beta.wonderfulsubs.com/watch/gleipnir
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Gleipnir
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Gleipnir&kartel=
-    Shallty: https://shallty.moe/browse?search=Gleipnir
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: https://www.animelab.com/shows/gleipnir
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JhHQTmes2_rNlNCK7hMT_Nt
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: https://www.funimation.com/shows/gleipnir/
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: https://www.vvvvid.it/show/1231/gleipnir
+    Wakanim:
+        fr: https://www.wakanim.tv/fr/v2/catalogue/show/854
+        sc: https://www.wakanim.tv/sc/v2/catalogue/show/855
+        de: https://www.wakanim.tv/de/v2/catalogue/show/856
+        ru: https://www.wakanim.tv/ru/v2/catalogue/show/857
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

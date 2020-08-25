@@ -673,81 +673,80 @@
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: https://www.animelab.com/shows/uchitama-have-you-seen-my-tama
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2255
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/uchitama-have-you-seen-my-tama
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: https://www.funimation.com/shows/uchitama-have-you-seen-my-tama/
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: null
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/GRXJP0PNY
+    VVVVID: null
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: https://www.wakanim.tv/fr/v2/catalogue/show/611
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/601
+      de: https://www.wakanim.tv/de/v2/catalogue/show/619
+      ru: https://www.wakanim.tv/ru/v2/catalogue/show/620
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

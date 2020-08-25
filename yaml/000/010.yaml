@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: さらざんまい
     en_Latn: Sarazanmai
@@ -267,108 +267,78 @@ scores:
         id: 357047
         score: 9.62
 updatedDate: '2020-07-31T01:09:18+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: 
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: 
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: 
-        SilverYasha: 
-        Sora: 
-        TTOD: https://ttod.xyz/category/sarazanmai/
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: https://horriblesubs.info/shows/sarazanmai
-fanshare:
-    idn:
-        AniBatch: 
-        AnimeKompi: http://animekompi.web.id/series/sarazanmai/
-        AnimeSAVE: 
-        Bakacan: https://bakacan.id/anime/sarazanmai/
-        Drivenime: https://drivenime.com/sarazanmai-subtitle-indonesia-batch/
-        Hinime: https://hinime.com/sarazanmai-batch-sub-indo/
-        Koenime: https://www.koenime.com/sarazanmai-sub-indo/
-        Kusonime: https://kusonime.com/sarazanmai-batch-sub-indo/
-        Mikanime: https://mikanime.com/sarazanmai-sub-indo/
-        Moenime: https://moenime.web.id/sarazanmai-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/sarazanmai/
-        WibuDesu: https://wibudesu.com/sarazanmai-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Sarazanmai
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/sarazanmai
-        anoBoy: https://anoboy.us/anime/sarazanmai/
-        Gomunime: https://gomunime.com/anime/sarazanmai/
-        Moeclip: https://moeclip.com/anime/sarazanmai-sub-indo/
-        Neonime: https://neonime.moe/tvshows/sarazanmai-subtitle-indonesia/
-        Onnime: https://onnime.net/anime/sarazanmai.aGLJbkzd/
-        OtakuIndo: 
-    eng:
-        fourAnime: https://4anime.to/anime/sarazanmai
-        nineAnime: https://9anime.ru/watch/sarazanmai.4o6m
-        AnimeDaisuki: https://animedaisuki.moe/anime/616/sarazanmai
-        AnimeTwist: https://twist.moe/a/sarazanmai/1
-        Animeflix: 
-        AnimeHeaven: https://animeheaven.ru/detail/sarazanmai-sub
-        Animelon: 
-        Animeultima: 
-        AniWatch: https://aniwatch.me/anime/1130
-        GogoAnime: https://www2.gogoanime.io/category/sarazanmai
-        WonderfulSubs: https://www.wonderfulsubs.com/watch/sarazanmai
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Sarazanmai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Sarazanmai&kartel=
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: https://www.animelab.com/shows/sarazanmai
+    AnimeLog: 
+    AnimeOnDemand: https://www.anime-on-demand.de/anime/335
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2153
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: https://www.bilibili.com/bangumi/media/md22718857
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: https://www.crunchyroll.com/sarazanmai
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: https://www.funimation.com/shows/sarazanmai/
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: http://ch.nicovideo.jp/sarazanmai-anime
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    U-NEXT: http://video.unext.jp/title/SID0041072
+    VideoPass: https://www.videopass.jp/series/9533
+    Vimeo: 
+    VIZ: 
+    VRV: https://vrv.co/series/G6G5JZ1D6
+    VVVVID: 
+    Wakanim:
+        fr: https://www.wakanim.tv/fr/v2/catalogue/show/490
+        sc: 
+        de: 
+        ru: https://www.wakanim.tv/ru/v2/catalogue/show/491
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

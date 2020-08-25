@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000010" version="1.1-rv">
     <title>
         <native>さらざんまい</native>
         <en_Latn>Sarazanmai</en_Latn>
@@ -254,118 +254,82 @@ Können die drei verwandelten Jungs es schaffen, genügend Shirikodama von Zombi
         </TVTime>
     </scores>
     <updatedDate>2020-07-31T01:09:18+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou />
-            <Aizukara />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki />
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs />
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan />
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai />
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo />
-            <OPLovers />
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk />
-            <Quinime />
-            <RevieXion />
-            <Samehadaku />
-            <SilverYasha />
-            <Sora />
-            <TTOD>https://ttod.xyz/category/sarazanmai/</TTOD>
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/sarazanmai</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/sarazanmai/</AnimeKompi>
-            <AnimeSAVE />
-            <Bakacan>https://bakacan.id/anime/sarazanmai/</Bakacan>
-            <Drivenime>https://drivenime.com/sarazanmai-subtitle-indonesia-batch/</Drivenime>
-            <Hinime>https://hinime.com/sarazanmai-batch-sub-indo/</Hinime>
-            <Koenime>https://www.koenime.com/sarazanmai-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/sarazanmai-batch-sub-indo/</Kusonime>
-            <Mikanime>https://mikanime.com/sarazanmai-sub-indo/</Mikanime>
-            <Moenime>https://moenime.web.id/sarazanmai-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/sarazanmai/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/sarazanmai-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Sarazanmai</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/sarazanmai</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/sarazanmai/</anoBoy>
-            <Gomunime>https://gomunime.com/anime/sarazanmai/</Gomunime>
-            <Moeclip>https://moeclip.com/anime/sarazanmai-sub-indo/</Moeclip>
-            <Neonime>https://neonime.moe/tvshows/sarazanmai-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/sarazanmai.aGLJbkzd/</Onnime>
-            <OtakuIndo />
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/sarazanmai</fourAnime>
-            <nineAnime>https://9anime.ru/watch/sarazanmai.4o6m</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/616/sarazanmai</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/sarazanmai/1</AnimeTwist>
-            <Animeflix />
-            <AnimeHeaven>https://animeheaven.ru/detail/sarazanmai-sub</AnimeHeaven>
-            <Animelon />
-            <Animeultima />
-            <AniWatch>https://aniwatch.me/anime/1130</AniWatch>
-            <GogoAnime>https://www2.gogoanime.io/category/sarazanmai</GogoAnime>
-            <WonderfulSubs>https://www.wonderfulsubs.com/watch/sarazanmai</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Sarazanmai</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Sarazanmai&amp;kartel=</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab>https://www.animelab.com/shows/sarazanmai</AnimeLab>
+        <AnimeLog />
+        <AnimeOnDemand>https://www.anime-on-demand.de/anime/335</AnimeOnDemand>
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS>http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2153</ANIPLUS>
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili>https://www.bilibili.com/bangumi/media/md22718857</bilibili>
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll>https://www.crunchyroll.com/sarazanmai</Crunchyroll>
+        <dAnimeStore />
+        <DMM />
+        <FOD />
+        <Funimation>https://www.funimation.com/shows/sarazanmai/</Funimation>
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix />
+        <NicoNico>http://ch.nicovideo.jp/sarazanmai-anime</NicoNico>
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <U-NEXT>http://video.unext.jp/title/SID0041072</U-NEXT>
+        <VideoPass>https://www.videopass.jp/series/9533</VideoPass>
+        <Vimeo />
+        <VIZ />
+        <VRV>https://vrv.co/series/G6G5JZ1D6</VRV>
+        <VVVVID />
+        <Wakanim>
+            <fr>https://www.wakanim.tv/fr/v2/catalogue/show/490</fr>
+            <sc />
+            <de />
+            <ru>https://www.wakanim.tv/ru/v2/catalogue/show/491</ru>
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Natsu Tadama</name>
         <username>@nattadasu</username>

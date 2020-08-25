@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: 神之塔
     en_Latn: Kami no Tou
@@ -265,108 +265,77 @@ scores:
         id: 376729
         score: 9.82
 updatedDate: '2020-07-28T18:06:30+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&m=1
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: http://awsubs.co/anime/tower-of-god/
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: https://www.doranobi-fansub.id/category/tower-of-god/
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: https://extonan.web.id/kami-no-tou
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: https://www.huntersekai.website/search/label/Kami%20no%20Tou?&max-results=8
-        IA: https://www.iasubs.com/search/label/Kami%20no%20Tou
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: https://kazefuri.me/kami-no-tou/
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: https://www.oploverz.in/series/tower-of-god/
-        Ougi: 
-        Panagayan: 
-        Pendekar: https://pendekarsubs.us/anime/kami-no-tou/
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: https://samehadaku.vip/anime/tower-of-god/
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: http://zensubs.xyz/?s=Anaak+Jahad
-    eng:
-        Horrible: https://horriblesubs.info/shows/tower-of-god
-fanshare:
-    idn:
-        AniBatch: 
-        AnimeKompi: http://animekompi.web.id/series/kami-no-tou-tower-of-god/
-        AnimeSAVE: 
-        Bakacan: https://bakacan.id/anime/kami-no-tou/
-        Drivenime: https://drivenime.com/kami-no-tou-subtitle-indonesia-batch/
-        Hinime: https://hinime.com/tower-of-god-sub-indo/
-        Koenime: https://www.koenime.com/kamitou-sub-indo/
-        Kusonime: https://kusonime.com/sinui-tap-batch-sub-indo/
-        Mikanime: 
-        Moenime: https://moenime.web.id/kaminoto-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/kami-no-tou/
-        WibuDesu: https://wibudesu.com/kami-no-tou-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Tower+of+God
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/tower-of-god
-        anoBoy: https://anoboy.us/anime/kami-no-tou/
-        Gomunime: 
-        Moeclip: https://moeclip.com/anime/kami-no-tou-sub-indo/
-        Neonime: https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/
-        Onnime: https://onnime.net/anime/kami-no-tou.Xz1olYGa/
-        OtakuIndo: https://otakuindo.org/nonton/tower-of-god-sub-indo/
-    eng:
-        fourAnime: https://4anime.to/anime/kami-no-tou
-        nineAnime: https://9anime.to/watch/kami-no-tou-tower-of-god-dub.m9qz
-        AnimeDaisuki: https://animedaisuki.moe/anime/911/tower-of-god
-        AnimeTwist: https://twist.moe/a/kami-no-tou-tower-of-god/1
-        Animeflix: https://animeflix.io/shows/kami-no-tou
-        AnimeHeaven: https://animeheaven.ru/detail/kami-no-tou.83556
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/kami-no-tou_365090
-        AniWatch: https://aniwatch.me/anime/2345
-        GogoAnime: https://www16.gogoanime.io/category/kami-no-tou
-        WonderfulSubs: https://beta.wonderfulsubs.com/watch/towerofgod
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kami+no+Tou
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kami%20no%20Tou&kartel=
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: https://aisplay.ais.co.th/portal/get_section/5e84bc94aae7311bcddcb726/
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/Tower-of-god
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2287
+    AniPlusAsia: https://www.aniplus-asia.com/show/tower-of-god/
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: https://www.crunchyroll.com/tower-of-god
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HBOMax: https://play.hbomax.com/series/urn:hbo:series:GXujuJQlLN6UJwwEAAAXi
+    HIDIVE: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: https://vrv.co/series/G6J0G49DR
+    VVVVID: 
+    Wakanim:
+        fr: 
+        sc: 
+        de: 
+        ru: 
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

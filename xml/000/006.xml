@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000006" version="1.1-rv">
     <title>
         <native>神之塔</native>
         <en_Latn>Kami no Tou</en_Latn>
@@ -257,118 +257,81 @@ Bam en sortira t-il indemne ?</fr_FR>
         </TVTime>
     </scores>
     <updatedDate>2020-07-28T18:06:30+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou />
-            <Aizukara />
-            <Allsub>https://www.allsubindo.com/search/label/TOWER%20OF%20GOD?max-results=4&amp;m=1</Allsub>
-            <Alter />
-            <AnimeGokil />
-            <AniToki />
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs>http://awsubs.co/anime/tower-of-god/</AWSubs>
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI>https://www.doranobi-fansub.id/category/tower-of-god/</DNFI>
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan>https://extonan.web.id/kami-no-tou</exTonan>
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai>https://www.huntersekai.website/search/label/Kami%20no%20Tou?&amp;max-results=8</HunterNoSekai>
-            <IA>https://www.iasubs.com/search/label/Kami%20no%20Tou</IA>
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri>https://kazefuri.me/kami-no-tou/</Kazefuri>
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo />
-            <OPLovers>https://www.oploverz.in/series/tower-of-god/</OPLovers>
-            <Ougi />
-            <Panagayan />
-            <Pendekar>https://pendekarsubs.us/anime/kami-no-tou/</Pendekar>
-            <Pucuk />
-            <Quinime />
-            <RevieXion />
-            <Samehadaku>https://samehadaku.vip/anime/tower-of-god/</Samehadaku>
-            <SilverYasha />
-            <Sora />
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen>http://zensubs.xyz/?s=Anaak+Jahad</Zen>
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/tower-of-god</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/kami-no-tou-tower-of-god/</AnimeKompi>
-            <AnimeSAVE />
-            <Bakacan>https://bakacan.id/anime/kami-no-tou/</Bakacan>
-            <Drivenime>https://drivenime.com/kami-no-tou-subtitle-indonesia-batch/</Drivenime>
-            <Hinime>https://hinime.com/tower-of-god-sub-indo/</Hinime>
-            <Koenime>https://www.koenime.com/kamitou-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/sinui-tap-batch-sub-indo/</Kusonime>
-            <Mikanime />
-            <Moenime>https://moenime.web.id/kaminoto-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/kami-no-tou/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/kami-no-tou-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Tower+of+God</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/tower-of-god</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/kami-no-tou/</anoBoy>
-            <Gomunime />
-            <Moeclip>https://moeclip.com/anime/kami-no-tou-sub-indo/</Moeclip>
-            <Neonime>https://neonime.org/tvshows/tower-of-god-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/kami-no-tou.Xz1olYGa/</Onnime>
-            <OtakuIndo>https://otakuindo.org/nonton/tower-of-god-sub-indo/</OtakuIndo>
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/kami-no-tou</fourAnime>
-            <nineAnime>https://9anime.to/watch/kami-no-tou-tower-of-god-dub.m9qz</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/911/tower-of-god</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/kami-no-tou-tower-of-god/1</AnimeTwist>
-            <Animeflix>https://animeflix.io/shows/kami-no-tou</Animeflix>
-            <AnimeHeaven>https://animeheaven.ru/detail/kami-no-tou.83556</AnimeHeaven>
-            <Animelon />
-            <Animeultima>https://www1.animeultima.to/a/kami-no-tou_365090</Animeultima>
-            <AniWatch>https://aniwatch.me/anime/2345</AniWatch>
-            <GogoAnime>https://www16.gogoanime.io/category/kami-no-tou</GogoAnime>
-            <WonderfulSubs>https://beta.wonderfulsubs.com/watch/towerofgod</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Kami+no+Tou</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Kami%20no%20Tou&amp;kartel=</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay>https://aisplay.ais.co.th/portal/get_section/5e84bc94aae7311bcddcb726/</AISPlay>
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork>https://animedigitalnetwork.fr/video/Tower-of-god</AnimeDigitalNetwork>
+        <AnimeLab />
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS>http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2287</ANIPLUS>
+        <AniPlusAsia>https://www.aniplus-asia.com/show/tower-of-god/</AniPlusAsia>
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili />
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll>https://www.crunchyroll.com/tower-of-god</Crunchyroll>
+        <dAnimeStore />
+        <DMM />
+        <FOD />
+        <Funimation />
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HBOMax>https://play.hbomax.com/series/urn:hbo:series:GXujuJQlLN6UJwwEAAAXi</HBOMax>
+        <HIDIVE />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix />
+        <NicoNico />
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV>https://vrv.co/series/G6J0G49DR</VRV>
+        <VVVVID />
+        <Wakanim>
+            <fr />
+            <sc />
+            <de />
+            <ru />
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Natsu Tadama</name>
         <username>@nattadasu</username>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000008" version="1.1-rv">
     <title>
         <native>君の膵臓をたべたい</native>
         <en_Latn>Kimi no Suizou wo Tabetai</en_Latn>
@@ -222,118 +222,81 @@ Mientras espera, encuentra un libro titulado “Libro de convivencia con una enf
         </TVTime>
     </scores>
     <updatedDate>2020-05-25T02:16:16+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou />
-            <Aizukara />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki>http://anitoki.web.id/2018/12/kimi-no-suizou-wo-tabetai-subtitle-indonesia/</AniToki>
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs>https://awsubs.co/kimi-no-suizou-wo-tabetai-i-want-to-eat-your-pancreas-subtitle-indonesia/</AWSubs>
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan />
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai />
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo />
-            <OPLovers />
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk>https://pucuktranslation.pw/film-layar-lebar-i-want-to-eat-your-pancreas/</Pucuk>
-            <Quinime />
-            <RevieXion />
-            <Samehadaku />
-            <SilverYasha />
-            <Sora />
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible />
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch>https://www.anibatch.me/kimi-no-suizou-wo-tabetai-bd/</AniBatch>
-            <AnimeKompi />
-            <AnimeSAVE>http://www.animesave.com/kimi-no-suizou-wo-tabetai-subtitle-indonesia/</AnimeSAVE>
-            <Bakacan>https://bakacan.id/anime/kimi-no-suizou-wo-tabetai/</Bakacan>
-            <Drivenime />
-            <Hinime>https://hinime.com/kimi-no-suizou-wo-tabetai-sub-indo/</Hinime>
-            <Koenime>https://www.koenime.com/kimisui-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/movie-kimisui-sub-indo/</Kusonime>
-            <Mikanime>https://mikanime.com/kimi-no-suizou-bd-sub-indo/</Mikanime>
-            <Moenime>https://moenime.web.id/kimi-no-suizou-wo-tabetai-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/kimi-no-suizou-wo-tabetai/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/kimi-no-suizou-wo-tabetai-bd-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Kimi+no+Suizou</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/kimi-no-suizou-wo-tabetai-2018</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/kimi-no-suizou-wo-tabetai/</anoBoy>
-            <Gomunime />
-            <Moeclip>https://moeclip.com/anime/kimi-no-suizou-wo-tabetai-sub-indo/</Moeclip>
-            <Neonime>https://neonime.moe/kimi-no-suizou-wo-tabetai-movie-subtitle-indonesia-2/</Neonime>
-            <Onnime />
-            <OtakuIndo />
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/kimi-no-suizou-wo-tabetai</fourAnime>
-            <nineAnime>https://9anime.ru/watch/kimi-no-suizou-wo-tabetai.4myj</nineAnime>
-            <AnimeDaisuki />
-            <AnimeTwist>https://twist.moe/a/kimi-no-suizou-wo-tabetai/1</AnimeTwist>
-            <Animeflix />
-            <AnimeHeaven>https://animeheaven.ru/detail/kimi-no-suizou-wo-tabetai.17049</AnimeHeaven>
-            <Animelon />
-            <Animeultima>https://www1.animeultima.to/a/kimi-no-suizou-wo-tabetai_194854</Animeultima>
-            <AniWatch>https://aniwatch.me/anime/1020</AniWatch>
-            <GogoAnime>https://gogoanimes.co/category/kimi-no-suizou-wo-tabetai</GogoAnime>
-            <WonderfulSubs>https://beta.wonderfulsubs.com/watch/iwanttoeatyourpancreas</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Kimi+no+Suizou+wo+Tabetai</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Kimi%20no%20Suizou%20wo%20Tabetai&amp;kartel=</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab />
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS />
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili />
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll />
+        <dAnimeStore />
+        <DMM />
+        <FOD>http://fod.fujitv.co.jp/s/genre/movie/serc016/</FOD>
+        <Funimation />
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE />
+        <HOOQ />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix />
+        <NicoNico />
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV />
+        <VVVVID />
+        <Wakanim>
+            <fr />
+            <sc />
+            <de />
+            <ru />
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Natsu Tadama</name>
         <username>@nattadasu</username>

@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: 僕のヒーローアカデミア
     en_Latn: Boku no Hero Academia
@@ -147,14 +147,14 @@ information:
         - Adventure
         - Comedy
         - Fantasy
-        - Sci-Fi
+        - Science Fiction
         - Drama
         id_ID:
         - Aksi
         - Petualangan
         - Komedi
         - Fantasi
-        - Sci-Fi
+        - Fiksi Ilmiah
         - Drama
     serialTags:
         en_US:
@@ -293,108 +293,79 @@ scores:
         id: 305074
         score: 9.68
 updatedDate: '2020-05-09T19:20:07+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: https://awsubs.co/anime/boku-no-hero-academia/
-        Bentoo: https://bentoosubs.blogspot.com/2017/04/boku-no-hero-academia-bluray-batch.html
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: http://www.ginsub.net/p/boku-no-hero-academia-subtitle-indonesia.html
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: https://www.oploverz.in/series/boku-no-hero-academia/
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: 
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: https://horriblesubs.info/shows/boku-no-hero-academia/
-fanshare:
-    idn:
-        AniBatch: https://www.anibatch.me/?s=Boku%20no%20Hero%20Academia
-        AnimeKompi: 
-        AnimeSAVE: http://www.animesave.com/boku-no-hero-academia-subtitle-indonesia/
-        Bakacan: https://bakacan.id/anime/boku-no-hero-academia/
-        Drivenime: https://drivenime.com/boku-no-hero-academia-subtitle-indo/
-        Hinime: https://hinime.com/boku-no-hero-academia-seaso1-sub-indo/
-        Koenime: https://www.koenime.com/bokuhero-sub-indo/
-        Kusonime: https://kusonime.com/bokuaka-sub-indo/
-        Mikanime: https://mikanime.com/boku-no-hero-academia-s1-sub-indo/
-        Moenime: https://moenime.web.id/bokuhiro-s1-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/boku-no-hero-academia/
-        WibuDesu: https://wibudesu.com/bnhabdsubid/
-    eng:
-        AnimeKayo: https://animekayo.com/anime-series/boku-no-hero-academia-720p-10bit-bd-dual-audio-hevc/
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/boku-no-hero-academia
-        anoBoy: https://anoboy.us/anime/boku-no-hero-academia/
-        Gomunime: 
-        Moeclip: https://moeclip.com/anime/bokuhiro-s1-sub-indo/
-        Neonime: https://neonime.org/tvshows/boku-no-hero-academia-subtitle-indonesia/
-        Onnime: https://onnime.net/anime/boku-no-hero-academia.dzqRERZ1/
-        OtakuIndo: https://otakuindo.org/nonton/boku-hero-s1-sub-indo/
-    eng:
-        fourAnime: https://4anime.to/anime/boku-no-hero-academia
-        nineAnime: https://9anime.ru/watch/boku-no-hero-academia.jvl2
-        AnimeDaisuki: https://animedaisuki.moe/anime/4/boku-no-hero-academia
-        AnimeTwist: https://twist.moe/a/boku-no-hero-academia/1
-        Animeflix: https://animeflix.io/shows/boku-no-hero-academia
-        AnimeHeaven: https://animeheaven.ru/detail/boku-no-hero-academia-sub.98579
-        Animelon: https://animelon.com/series/Boku%20no%20Hero%20Academia%20(My%20Hero%20Academia)
-        Animeultima: https://www1.animeultima.to/a/boku-no-hero-academia_791758
-        AniWatch: https://aniwatch.me/anime/119
-        GogoAnime: https://gogoanimes.co/category/boku-no-hero-academia
-        WonderfulSubs: https://beta.wonderfulsubs.com/watch/myheroacademia
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Boku+no+Hero+Academia
-    PerpusIndo: https://www.perpusindo.info/anime/31964
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/mha_tv
+    AnimeLab: https://www.animelab.com/shows/my-hero-academia
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: https://www.crunchyroll.com/my-hero-academia
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: https://www.funimation.com/shows/my-hero-academia/
+    Genflix: https://genflix.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    Hulu: https://www.hulu.com/series/my-hero-academia-36e318dc-3daf-47fb-8219-9e3cb5cd28f2
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    JBOX: http://www.jbox.co.kr/v2/Content/Detail/5861
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: https://www.netflix.com/title/80135674
+    NicoNico: http://ch.nicovideo.jp/heroaca
+    PrimeVideo: 
+    ProSiebenMAXX: https://www.prosiebenmaxx.de/anime/my-hero-academia
+    RetroCrush: 
+    SelectaVision: 
+    STARZPLAY: https://arabia.starzplay.com/series/my-hero-academia/90098216105/season-1
+    Sushiroll: https://sushiroll.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: https://vrv.co/series/G6NQ5DWZ6
+    VVVVID: https://www.vvvvid.it/show/505/my-hero-academia
+    Wakanim:
+        fr: 
+        sc: https://www.wakanim.tv/sc/v2/catalogue/show/778
+        de: 
+        ru: 
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000001" version="1.1-rv">
     <title>
         <native>富豪刑事 Balance:UNLIMITED</native>
         <en_Latn>Fugou Keiji: Balance:Unlimited</en_Latn>
@@ -216,118 +216,80 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
         </TVTime>
     </scores>
     <updatedDate>2020-05-05T16:54:42+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou>https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html</Aibou>
-            <Aizukara>https://www.aizukara.web.id/search/label/Fugou%20Keiji</Aizukara>
-            <AWSubs />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki />
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <Bentoo />
-            <Caramel />
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del />
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan />
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai>https://www.huntersekai.website/search/label/Fugou?&amp;max-results=8</HunterNoSekai>
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk>https://www.junksubs.com/search/label/Unlimited</Junk>
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo>https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited</Nanairo>
-            <Neo />
-            <OPLovers />
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk />
-            <Quinime />
-            <RevieXion />
-            <Samehadaku />
-            <SilverYasha />
-            <Sora />
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/fugou-keiji-balanceunlimited/</AnimeKompi>
-            <AnimeSAVE />
-            <Bakacan>https://bakacan.id/anime/fugou-keiji-balanceunlimited/</Bakacan>
-            <Drivenime />
-            <Hinime />
-            <Koenime />
-            <Kusonime />
-            <Mikanime />
-            <Moenime>https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/</Moenime>
-            <Ryuukoi />
-            <WibuDesu />
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Fugou+Keiji</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/fugou-keiji-balanceunlimited</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/fugou-keiji-balanceunlimited/</anoBoy>
-            <Gomunime />
-            <Moeclip>https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/</Moeclip>
-            <Neonime>https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/</Onnime>
-            <OtakuIndo />
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/fugou-keiji-balanceunlimited</fourAnime>
-            <nineAnime>https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/fugou-keiji-balance-unlimited/1</AnimeTwist>
-            <Animeflix>https://animeflix.io/shows/fugou-keiji-balanceunlimited</Animeflix>
-            <AnimeHeaven>https://animeheaven.ru/detail/fugou-keiji-balance-unlimited</AnimeHeaven>
-            <Animelon />
-            <Animeultima>https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044</Animeultima>
-            <AniWatch>https://aniwatch.me/anime/2315</AniWatch>
-            <GogoAnime>https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited</GogoAnime>
-            <WonderfulSubs>https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Fugou+Keiji</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/sharelist/?kat=&amp;user=&amp;cari=fugou%20keiji&amp;kartel=</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv />
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab>https://www.animelab.com/shows/balance-unlimited</AnimeLab>
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne>https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz</AniOne>
+        <ANIPLUS />
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy />
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili>https://www.bilibili.com/bangumi/media/md28228473</bilibili>
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll />
+        <dAnimeStore />
+        <DMM />
+        <FOD />
+        <Funimation>https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/</Funimation>
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE />
+        <Hulu />
+        <iflix />
+        <iQIYI />
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix>https://www.netflix.com/jp-en/title/81039113</Netflix>
+        <NicoNico />
+        <PrimeVideo />
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV />
+        <VVVVID />
+        <Wakanim>
+            <fr>https://www.wakanim.tv/fr/v2/catalogue/show/842</fr>
+            <sc>https://www.wakanim.tv/sc/v2/catalogue/show/844</sc>
+            <de>https://www.wakanim.tv/de/v2/catalogue/show/843</de>
+            <ru>https://www.wakanim.tv/ru/v2/catalogue/show/845</ru>
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Natsu Tadama</name>
         <username>@nattadasu</username>

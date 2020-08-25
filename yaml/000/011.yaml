@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: 抱かれたい男1位に脅されています。
     en_Latn: Dakaretai Otoko 1-i ni Odosarete Imasu.
@@ -272,108 +272,76 @@ scores:
         id: 353837
         score: 8.54
 updatedDate: '2020-08-04T12:28:39+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: 
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: https://www.huntersekai.website/search/label/Dakaretai%20Otoko%201-i%20ni%20Odosarete%20Imasu
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: 
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: 
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: https://horriblesubs.info/shows/dakaretai-otoko-1-i-ni-odosarete-imasu
-fanshare:
-    idn:
-        AniBatch: 
-        AnimeKompi: 
-        AnimeSAVE: 
-        Bakacan: https://bakacan.id/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-        Drivenime: https://drivenime.com/dakaretai-otoko-1-i-ni-odosarete-imasu-subtitle-indonesia-batch/
-        Hinime: https://hinime.com/dakaretai-otoko-1-ni-odosarete-imasu/
-        Koenime: https://www.koenime.com/dakaoto-sub-indo/
-        Kusonime: https://kusonime.com/dakaichi-batch-subtitle-indonesia/
-        Mikanime: https://mikanime.com/dakaretai-otoko-sub-indo/
-        Moenime: 
-        Ryuukoi: 
-        WibuDesu: 
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Dakaretai+Otoko+1-i+ni+Odosarete+Imasu
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/dakaretai-otoko-1-i-ni-odosarete-imasu
-        anoBoy: https://anoboy.us/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-        Gomunime: https://gomunime.com/anime/dakaretai-otoko-1-i-ni-odosarete-imasu/
-        Moeclip: 
-        Neonime: 
-        Onnime: https://onnime.net/anime/dakaretai-otoko-1-i-ni-odosarete-imasu.DG8mMv0Q/
-        OtakuIndo: 
-    eng:
-        fourAnime: https://4anime.to/anime/dakaretai-otoko-1-i-ni-odosarete-imasu
-        nineAnime: https://9anime.ru/watch/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year.567m
-        AnimeDaisuki: https://animedaisuki.moe/anime/382/dakaretai-otoko-1-i-ni-odosarete-imasu
-        AnimeTwist: https://twist.moe/a/dakaretai-otoko-1-i-ni-odosarete-imasu/1
-        Animeflix: 
-        AnimeHeaven: https://animeheaven.ru/detail/dakaretai-otoko-1-i-ni-odosarete-imasu-sub.54859
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/dakaretai-otoko-1-i-ni-odosarete-imasu_346601
-        AniWatch: https://aniwatch.me/anime/931
-        GogoAnime: https://gogoanimes.co/category/dakaretai-otoko-1-i-ni-odosarete-imasu
-        WonderfulSubs: https://www.wonderfulsubs.com/watch/dakaichiimbeingharassedbythesexiestmanoftheyear
-library:
-    Nyaa: https://nyaa.si/view/914467
-    PerpusIndo: 
+streamLinks:
+    Abematv: https://abema.tv/search?q=%E6%8A%B1%E3%81%8B%E3%82%8C%E3%81%9F%E3%81%84%E7%94%B71%E4%BD%8D%E3%81%AB%E8%84%85%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: https://www.animelab.com/shows/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: https://ani.gamer.com.tw/animeVideo.php?sn=11376
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: https://www.crunchyroll.com/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-
+    dAnimeStore: 
+    DMM: 
+    FOD: http://fod.fujitv.co.jp/s/genre/anime/ser5738
+    Funimation: https://www.funimation.com/shows/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-/
+    Genflix: 
+    GundamInfo: 
+    Gyao: https://gyao.yahoo.co.jp/p/00548/v12304/
+    HIDIVE: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: http://ch.nicovideo.jp/dakaretai-1st
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: https://vrv.co/series/G6QW9J2Z6
+    VVVVID: 
+    Wakanim:
+        fr: https://www.wakanim.tv/fr/v2/catalogue/show/415
+        sc: https://www.wakanim.tv/sc/v2/catalogue/show/417
+        de: https://www.wakanim.tv/de/v2/catalogue/show/416
+        ru: https://www.wakanim.tv/ru/v2/catalogue/show/419
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Yamashita Kazuhito
     username: "@YamashitaKazuhito"

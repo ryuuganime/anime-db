@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
     en_Latn: 'Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen'
@@ -258,109 +258,77 @@ scores:
         id: 354198
         score: 9.78
 updatedDate: '2020-07-28T17:22:17+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: https://anitoki.web.id/?anime=kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-s2
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: http://awsubs.co/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: https://melodysubs.net/anime/kaguya-sama-wa-kokurasetai-2-tensai-tachi-no-renai-zunousen/
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: https://www.oploverz.in/series/kaguya-sama-love-is-war-season-2/
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: https://samehadaku.vip/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen/
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: https://horriblesubs.info/shows/kaguya-sama-wa-kokurasetai-s2
-fanshare:
-    idn:
-        AniBatch: 
-        AnimeKompi: http://animekompi.web.id/series/kaguya-sama-wa-kokurasetai-season-2/
-        AnimeSAVE: 
-        Bakacan: https://bakacan.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2/
-        Drivenime: https://drivenime.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-subtitle-indonesia-batch/
-        Hinime: https://hinime.com/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-        Koenime: https://www.koenime.com/kagukoku-s2-sub-indo/
-        Kusonime: https://kusonime.com/kaguyasama-s2-batch-sub-indo/
-        Mikanime: 
-        Moenime: https://moenime.web.id/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-s2/
-        WibuDesu: https://wibudesu.com/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Kaguya-sama
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2
-        anoBoy: https://anoboy.us/anime/kaguya-sama-wa-kokurasetai-season-2/
-        Gomunime: https://gomunime.com/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-season-2/
-        Moeclip: https://moeclip.com/anime/kaguya-sama-wa-kokurasetai-s2-sub-indo/
-        Neonime: 
-        Onnime: https://onnime.net/anime/kaguya-sama-wa-kokurasetai-season-2.10DOknG2/
-        OtakuIndo: https://otakuindo.org/nonton/kaguya-sama-s2-sub-indo/
-    eng:
-        fourAnime: https://4anime.to/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2nd-season
-        nineAnime: https://www.9anime.to/watch/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen.omkj
-        AnimeDaisuki: https://animedaisuki.moe/anime/939/kaguya-sama-wa-kokurasetai-s2
-        AnimeTwist: https://twist.moe/a/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2/1
-        Animeflix: https://animeflix.io/shows/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen
-        AnimeHeaven: https://animeheaven.ru/detail/kaguya-sama-love-is-war-2nd-season.95118
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2nd-season_227297
-        AniWatch: https://aniwatch.me/anime/1804
-        GogoAnime: https://www18.gogoanime.io/category/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2
-        WonderfulSubs: https://beta.wonderfulsubs.com/watch/kaguyasamaloveiswar
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kaguya-sama+wa+Kokurasetai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kaguya-sama%20wa%20Kokurasetai&kartel=
-    Shallty: https://shallty.moe/browse?search=Kaguya-sama%20wa%20Kokurasetai
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: https://www.animelab.com/shows/kaguya-sama-love-is-war
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: https://www.funimation.com/shows/kaguya-sama-love-is-war/
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim:
+        fr: https://www.wakanim.tv/fr/v2/catalogue/show/897
+        sc: https://www.wakanim.tv/sc/v2/catalogue/show/444
+        de: https://www.wakanim.tv/de/v2/catalogue/show/442
+        ru: https://www.wakanim.tv/ru/v2/catalogue/show/898
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

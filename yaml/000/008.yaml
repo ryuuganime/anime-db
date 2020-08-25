@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: 君の膵臓をたべたい
     en_Latn: Kimi no Suizou wo Tabetai
@@ -235,108 +235,77 @@ scores:
         id: 16877
         score: 
 updatedDate: '2020-05-25T02:16:16+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: http://anitoki.web.id/2018/12/kimi-no-suizou-wo-tabetai-subtitle-indonesia/
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: https://awsubs.co/kimi-no-suizou-wo-tabetai-i-want-to-eat-your-pancreas-subtitle-indonesia/
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: 
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: https://pucuktranslation.pw/film-layar-lebar-i-want-to-eat-your-pancreas/
-        Quinime: 
-        RevieXion: 
-        Samehadaku: 
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: 
-fanshare:
-    idn:
-        AniBatch: https://www.anibatch.me/kimi-no-suizou-wo-tabetai-bd/
-        AnimeKompi: 
-        AnimeSAVE: http://www.animesave.com/kimi-no-suizou-wo-tabetai-subtitle-indonesia/
-        Bakacan: https://bakacan.id/anime/kimi-no-suizou-wo-tabetai/
-        Drivenime: 
-        Hinime: https://hinime.com/kimi-no-suizou-wo-tabetai-sub-indo/
-        Koenime: https://www.koenime.com/kimisui-sub-indo/
-        Kusonime: https://kusonime.com/movie-kimisui-sub-indo/
-        Mikanime: https://mikanime.com/kimi-no-suizou-bd-sub-indo/
-        Moenime: https://moenime.web.id/kimi-no-suizou-wo-tabetai-sub-indo/
-        Ryuukoi: https://ryuukoi.web.id/anime/kimi-no-suizou-wo-tabetai/
-        WibuDesu: https://wibudesu.com/kimi-no-suizou-wo-tabetai-bd-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Kimi+no+Suizou
-fanstream:
-    idn:
-        AnimeIndoNET: http://animeindo.moe/anime/kimi-no-suizou-wo-tabetai-2018
-        anoBoy: https://anoboy.us/anime/kimi-no-suizou-wo-tabetai/
-        Gomunime: 
-        Moeclip: https://moeclip.com/anime/kimi-no-suizou-wo-tabetai-sub-indo/
-        Neonime: https://neonime.moe/kimi-no-suizou-wo-tabetai-movie-subtitle-indonesia-2/
-        Onnime: 
-        OtakuIndo: 
-    eng:
-        fourAnime: https://4anime.to/anime/kimi-no-suizou-wo-tabetai
-        nineAnime: https://9anime.ru/watch/kimi-no-suizou-wo-tabetai.4myj
-        AnimeDaisuki: 
-        AnimeTwist: https://twist.moe/a/kimi-no-suizou-wo-tabetai/1
-        Animeflix: 
-        AnimeHeaven: https://animeheaven.ru/detail/kimi-no-suizou-wo-tabetai.17049
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/kimi-no-suizou-wo-tabetai_194854
-        AniWatch: https://aniwatch.me/anime/1020
-        GogoAnime: https://gogoanimes.co/category/kimi-no-suizou-wo-tabetai
-        WonderfulSubs: https://beta.wonderfulsubs.com/watch/iwanttoeatyourpancreas
-library:
-    Nyaa: https://nyaa.si/?f=0&c=0_0&q=Kimi+no+Suizou+wo+Tabetai
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Kimi%20no%20Suizou%20wo%20Tabetai&kartel=
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: 
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: 
+    dAnimeStore: 
+    DMM: 
+    FOD: http://fod.fujitv.co.jp/s/genre/movie/serc016/
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: 
+    HOOQ: 
+    Hulu: 
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: 
+    VVVVID: 
+    Wakanim:
+        fr: 
+        sc: 
+        de: 
+        ru: 
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Natsu Tadama
     username: "@nattadasu"

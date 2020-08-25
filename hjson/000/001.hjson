@@ -405,7 +405,7 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are: 
+      // Allowed values are:
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
       en_US: Novel
@@ -691,81 +691,80 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: https://www.animelab.com/shows/balance-unlimited
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: https://www.bilibili.com/bangumi/media/md28228473
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: null
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001:null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: https://www.netflix.com/jp-en/title/81039113
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: null
+    VVVVID: null
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: https://www.wakanim.tv/fr/v2/catalogue/show/842
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/844
+      de: https://www.wakanim.tv/de/v2/catalogue/show/843
+      ru: https://www.wakanim.tv/ru/v2/catalogue/show/845
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

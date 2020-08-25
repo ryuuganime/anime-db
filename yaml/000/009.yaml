@@ -1,5 +1,5 @@
 ---
-$schema: ../../schemas/entry.json
+"$schema": "../../schemas/entry.json"
 title:
     native: モンスター娘のいる日常
     en_Latn: Monster Musume no Iru Nichijou
@@ -282,108 +282,76 @@ scores:
         id: 293119
         score: 8.34
 updatedDate: '2020-06-03T16:45:30+07:00'
-fansub:
-    idn:
-        Aibou: 
-        Aizukara: 
-        Allsub: 
-        Alter: 
-        AnimeGokil: 
-        AniToki: 
-        AoiTenshi: 
-        Arks: 
-        ASubs: 
-        AWSubs: 
-        Bentoo: 
-        Caramel: 
-        Cijanepoi: 
-        Conan: 
-        DAnimeSubs: 
-        Del: 
-        DNFI: 
-        Durandal: 
-        EmotPekmen: 
-        Excalibur: 
-        exTonan: 
-        Gantz: 
-        Gin: 
-        Haruna: 
-        Haruzora: 
-        HunterNoSekai: 
-        IA: 
-        Inazumaotoshi: 
-        Indis: 
-        Inform0930: 
-        Isekai: 
-        Junk: 
-        Kazefuri: 
-        Kinshiru: 
-        KO: 
-        Kopaja: 
-        LCC: 
-        MangaNekoTranslation: 
-        Melody: 
-        Mite: 
-        Nanairo: 
-        Neo: 
-        OPLovers: 
-        Ougi: 
-        Panagayan: 
-        Pendekar: 
-        Pucuk: 
-        Quinime: 
-        RevieXion: 
-        Samehadaku: 
-        SilverYasha: 
-        Sora: 
-        TTOD: 
-        Vedifi: 
-        Warung: 
-        Wibu: 
-        Yuki: 
-        Zen: 
-    eng:
-        Horrible: https://horriblesubs.info/shows/monster-musume-no-iru-nichijou/
-fanshare:
-    idn:
-        AniBatch: https://www.anibatch.me/monster-musume
-        AnimeKompi: http://animekompi.web.id/series/monster-musume-no-iru-nichijou/
-        AnimeSAVE: http://www.animesave.com/monster-musume-no-iru-nichijou-bd-subtitle-indonesia/
-        Bakacan: https://bakacan.id/anime/monster-musume-no-iru-nichijou/
-        Drivenime: 
-        Hinime: 
-        Koenime: https://www.koenime.com/monmusu-sub-indo/
-        Kusonime: https://kusonime.com/monmusu-batch-sub-indo/
-        Mikanime: https://mikanime.com/monster-musume-sub-indo/
-        Moenime: https://moenime.web.id/monster-musume-no-iru-nichijou-sub-indo/
-        Ryuukoi: 
-        WibuDesu: https://wibudesu.com/bd-monster-musume-no-iru-nichijou-subtitle-indonesia/
-    eng:
-        AnimeKayo: https://animekayo.com/?s=Monster+Musume
-fanstream:
-    idn:
-        AnimeIndoNET: 
-        anoBoy: https://anoboy.us/anime/monster-musume-no-iru-nichijou/
-        Gomunime: 
-        Moeclip: https://moeclip.com/anime/monster-musume-no-iru-nichijou-sub-indo/
-        Neonime: https://neonime.moe/episode/monster-musume-no-iru-nichijou-bd-1x1/
-        Onnime: https://onnime.net/anime/monster-musume-no-iru-nichijou.6G78b20Q/
-        OtakuIndo: 
-    eng:
-        fourAnime: https://4anime.to/anime/monster-musume-no-iru-nichijou
-        nineAnime: https://9anime.ru/watch/monster-musume-no-iru-nichijou.ywx
-        AnimeDaisuki: https://animedaisuki.moe/anime/238/monster-musume-no-iru-nichijou
-        AnimeTwist: https://twist.moe/a/monster-musume-no-iru-nichijou/1
-        Animeflix: 
-        AnimeHeaven: https://animeheaven.ru/detail/monster-musume-no-iru-nichijou.31068
-        Animelon: 
-        Animeultima: https://www1.animeultima.to/a/monster-musume-no-iru-nichijou_760927
-        AniWatch: https://aniwatch.me/anime/336
-        GogoAnime: https://gogoanimes.co/category/monster-musume-no-iru-nichijou
-        WonderfulSubs: 
-library:
-    Nyaa: https://nyaa.si/?q=Monster+Musume&f=0&c=0_0
-    PerpusIndo: https://www.perpusindo.info/sharelist?kat=&user=&cari=Monster%20Musume&kartel=
+streamLinks:
+    Abematv: 
+    AdultSwim: 
+    AISPlay: 
+    All4: 
+    AniMe: 
+    AnimeDigitalNetwork: 
+    AnimeLab: 
+    AnimeLog: 
+    AnimeOnDemand: https://www.anime-on-demand.de/anime/138
+    AnimePlanet: 
+    animeteleto: 
+    AniOne: 
+    ANIPLUS: 
+    AniPlusAsia: 
+    AsianCrush: 
+    BahamutAnimeCrazy: 
+    BandaiChannel: 
+    BandaiSpirits: 
+    bilibili: 
+    Coalise: 
+    ComicFestaAnimeZone: 
+    ConTV: 
+    Coolmic: 
+    Crunchyroll: https://www.crunchyroll.com/monster-musume-everyday-life-with-monster-girls
+    dAnimeStore: 
+    DMM: 
+    FOD: 
+    Funimation: 
+    Genflix: 
+    GundamInfo: 
+    Gyao: 
+    HIDIVE: https://www.hidive.com/tv/monster-musume-everyday-life-with-monster-girls
+    Hulu: https://www.hulu.com/series/monster-musume-everyday-life-with-monster-girls-50de926a-9749-4736-a6a8-b8df49bcba71
+    iflix: 
+    iQIYI: 
+    JapaneseAnimatedFilmClassic: 
+    Mangas: 
+    MBSDougaizm: 
+    MidnightPulp: 
+    MuseAsia:
+        en_001: 
+        vi_VN: 
+        ms_MY: 
+        th_TH: 
+        zh_Hant_HK: 
+        zh_Hant_TW: 
+    Netflix: 
+    NicoNico: 
+    PrimeVideo: 
+    RetroCrush: 
+    SelectaVision: 
+    Sushiroll: 
+    Telasa: 
+    TencentVideo: 
+    TVNOW: 
+    Vimeo: 
+    VIZ: 
+    VRV: https://vrv.co/series/GRJQ19X3Y
+    VVVVID: 
+    Wakanim:
+        fr: 
+        sc: 
+        de: 
+        ru: 
+    WeTV: 
+    YamatoAnimation: 
+    YouTube:
+        link: 
+        isChannel: false
 signature:
     name: Yamashita Kazuhito
     username: "@YamashitaKazuhito"

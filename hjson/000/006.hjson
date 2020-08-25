@@ -732,81 +732,81 @@ Bam en sortira t-il indemne ?'''
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: null
+    AdultSwim: null
+    AISPlay: https://aisplay.ais.co.th/portal/get_section/5e84bc94aae7311bcddcb726/
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/Tower-of-god
+    AnimeLab: null
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2287
+    AniPlusAsia: https://www.aniplus-asia.com/show/tower-of-god/
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/tower-of-god
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: null
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HBOMax: https://play.hbomax.com/series/urn:hbo:series:GXujuJQlLN6UJwwEAAAXi
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: null
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/G6J0G49DR
+    VVVVID: null
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: null
+      sc: null
+      de: null
+      ru: null
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

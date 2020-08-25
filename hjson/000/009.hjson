@@ -712,81 +712,80 @@
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: null
+    AnimeLog: null
+    AnimeOnDemand: https://www.anime-on-demand.de/anime/138
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/monster-musume-everyday-life-with-monster-girls
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: null
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: https://www.hidive.com/tv/monster-musume-everyday-life-with-monster-girls
+    Hulu: https://www.hulu.com/series/monster-musume-everyday-life-with-monster-girls-50de926a-9749-4736-a6a8-b8df49bcba71
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: null
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/GRJQ19X3Y
+    VVVVID: null
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: null
+      sc: null
+      de: null
+      ru: null
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

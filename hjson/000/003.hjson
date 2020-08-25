@@ -440,7 +440,7 @@
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are: 
+      // Allowed values are:
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
       en_US: Manga
@@ -723,81 +723,83 @@
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/mha_tv
+    AnimeLab: https://www.animelab.com/shows/my-hero-academia
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/my-hero-academia
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: https://www.funimation.com/shows/my-hero-academia/
+    Genflix: https://genflix.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: null
+    Hulu: https://www.hulu.com/series/my-hero-academia-36e318dc-3daf-47fb-8219-9e3cb5cd28f2
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    JBOX: http://www.jbox.co.kr/v2/Content/Detail/5861
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: https://www.netflix.com/title/80135674
+    NicoNico: http://ch.nicovideo.jp/heroaca
+    PrimeVideo: null
+    ProSiebenMAXX: https://www.prosiebenmaxx.de/anime/my-hero-academia
+    RetroCrush: null
+    SelectaVision: null
+    STARZPLAY: https://arabia.starzplay.com/series/my-hero-academia/90098216105/season-1 
+    Sushiroll: https://sushiroll.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/G6NQ5DWZ6
+    VVVVID: https://www.vvvvid.it/show/505/my-hero-academia
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: null
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/778
+      de: null
+      ru: null
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 

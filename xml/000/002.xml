@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime>
+<ryuuganime id="000002" version="1.1-rv">
     <title>
         <native>ソードアート・オンライン アリシゼーション</native>
         <en_Latn>Sword Art Online: Alicization</en_Latn>
@@ -258,118 +258,80 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
         </TVTime>
     </scores>
     <updatedDate>2020-08-01T19:50:12+07:00</updatedDate>
-    <fansub>
-        <idn>
-            <Aibou />
-            <Aizukara />
-            <Allsub />
-            <Alter />
-            <AnimeGokil />
-            <AniToki>http://anitoki.com/anime/sword-art-online-alicization/</AniToki>
-            <AoiTenshi />
-            <Arks />
-            <ASubs />
-            <AWSubs>https://awsubs.co/anime/sword-art-online-alicization-bd/</AWSubs>
-            <Bentoo />
-            <Caramel>http://caramel.id/ubek-ubek?q=Sword+Art+Online+~Alicization</Caramel>
-            <Cijanepoi />
-            <Conan />
-            <DAnimeSubs />
-            <Del>https://delsubs.wordpress.com/tag/sword-art-online/</Del>
-            <DNFI />
-            <Durandal />
-            <EmotPekmen />
-            <Excalibur />
-            <exTonan />
-            <Gantz />
-            <Gin />
-            <Haruna />
-            <Haruzora />
-            <HunterNoSekai />
-            <IA />
-            <Inazumaotoshi />
-            <Indis />
-            <Inform0930 />
-            <Isekai />
-            <Junk />
-            <Kazefuri />
-            <Kinshiru />
-            <KO />
-            <Kopaja />
-            <LCC />
-            <MangaNekoTranslation />
-            <Melody />
-            <Mite />
-            <Nanairo />
-            <Neo>http://neosubs.net/blog/category/sword-art-online-alicization/</Neo>
-            <OPLovers>https://www.oploverz.in/series/sword-art-online-alicization/</OPLovers>
-            <Ougi />
-            <Panagayan />
-            <Pendekar />
-            <Pucuk>https://pucuktranslation.pw/sword-art-online-alicization/</Pucuk>
-            <Quinime />
-            <RevieXion />
-            <Samehadaku>https://www.samehadaku.tv/category/sword-art-online</Samehadaku>
-            <SilverYasha />
-            <Sora>http://www.sorasubs.com/search/label/Sword%20Art%20Online%20%3A%20Alicization</Sora>
-            <TTOD />
-            <Vedifi />
-            <Warung />
-            <Wibu />
-            <Yuki />
-            <Zen />
-        </idn>
-        <eng>
-            <Horrible>https://horriblesubs.info/shows/sword-art-online-alicization</Horrible>
-        </eng>
-    </fansub>
-    <fanshare>
-        <idn>
-            <AniBatch />
-            <AnimeKompi>http://animekompi.web.id/series/sword-art-online-alicization/</AnimeKompi>
-            <AnimeSAVE>http://www.animesave.com/sword-art-online-s1-s3-bd-subtitle-indonesia/</AnimeSAVE>
-            <Bakacan>https://bakacan.id/anime/sword-art-online-alicization/</Bakacan>
-            <Drivenime>https://drivenime.com/sword-art-online-alicization-bd-subtitle-indonesia-batch/</Drivenime>
-            <Hinime>https://hinime.com/sword-art-online-season-3-alicization-subtitle-indonesia/</Hinime>
-            <Koenime>https://www.koenime.com/sao-s3-sub-indo/</Koenime>
-            <Kusonime>https://kusonime.com/sao-s3-batch-sub-indo/</Kusonime>
-            <Mikanime>https://mikanime.com/sao-alicization-sub-indo/</Mikanime>
-            <Moenime>https://moenime.web.id/sword-art-online-season-3-sub-indo/</Moenime>
-            <Ryuukoi>https://ryuukoi.web.id/anime/sword-art-online-alicization/</Ryuukoi>
-            <WibuDesu>https://wibudesu.com/sword-art-online-alicization-bd-subtitle-indonesia/</WibuDesu>
-        </idn>
-        <eng>
-            <AnimeKayo>https://animekayo.com/?s=Alicization</AnimeKayo>
-        </eng>
-    </fanshare>
-    <fanstream>
-        <idn>
-            <AnimeIndoNET>http://animeindo.moe/anime/sword-art-online-alicization</AnimeIndoNET>
-            <anoBoy>https://anoboy.us/anime/sword-art-online-alicization/</anoBoy>
-            <Gomunime>https://gomunime.com/anime/sword-art-online-alicization-sub-indo-hiosu/</Gomunime>
-            <Moeclip>https://moeclip.com/anime/sword-art-online-season-3-sub-indo/</Moeclip>
-            <Neonime>https://neonime.moe/tvshows/sword-art-online-alicization-subtitle-indonesia/</Neonime>
-            <Onnime>https://onnime.net/anime/sword-art-online-alicization.dzXE1XZV/</Onnime>
-            <OtakuIndo>https://otakuindo.org/nonton/sao-alicization-sub-indo/</OtakuIndo>
-        </idn>
-        <eng>
-            <fourAnime>https://4anime.to/anime/sword-art-online-alicization</fourAnime>
-            <nineAnime>https://9anime.ru/watch/sword-art-online-iii.l7xm</nineAnime>
-            <AnimeDaisuki>https://animedaisuki.moe/anime/796/sword-art-online-alicization</AnimeDaisuki>
-            <AnimeTwist>https://twist.moe/a/sword-art-online-alicization/1</AnimeTwist>
-            <Animeflix>https://animeflix.io/shows/sword-art-online-alicization/</Animeflix>
-            <AnimeHeaven>https://animeheaven.ru/detail/sword-art-online-alicization-sub.85445</AnimeHeaven>
-            <Animelon />
-            <Animeultima />
-            <AniWatch>https://aniwatch.me/anime/822</AniWatch>
-            <GogoAnime>https://gogoanimes.co/category/sword-art-online-alicization</GogoAnime>
-            <WonderfulSubs>https://www.wonderfulsubs.com/watch/swordartonlineiii</WonderfulSubs>
-        </eng>
-    </fanstream>
-    <library>
-        <Nyaa>https://nyaa.si/?f=0&amp;c=0_0&amp;q=Sword+Art+Online%3A+Alicization</Nyaa>
-        <PerpusIndo>https://www.perpusindo.info/sharelist?kat=&amp;user=&amp;cari=Sword%20Art%20Online%3A%20Alicization&amp;kartel=</PerpusIndo>
-    </library>
+    <streamLinks>
+        <Abematv>https://abema.tv/search?q=%E3%82%BD%E3%83%BC%E3%83%89%E3%82%A2%E3%83%BC%E3%83%88%E3%83%BB%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%20%E3%82%A2%E3%83%AA%E3%82%B7%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3</Abematv>
+        <AdultSwim />
+        <AISPlay />
+        <All4 />
+        <AniMe />
+        <AnimeDigitalNetwork />
+        <AnimeLab>https://www.animelab.com/shows/sword-art-online</AnimeLab>
+        <AnimeLog />
+        <AnimeOnDemand />
+        <AnimePlanet />
+        <animeteleto />
+        <AniOne />
+        <ANIPLUS>http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2086</ANIPLUS>
+        <AniPlusAsia />
+        <AsianCrush />
+        <BahamutAnimeCrazy>https://ani.gamer.com.tw/animeVideo.php?sn=10849</BahamutAnimeCrazy>
+        <BandaiChannel />
+        <BandaiSpirits />
+        <bilibili>https://www.bilibili.com/bangumi/media/md130412</bilibili>
+        <Coalise />
+        <ComicFestaAnimeZone />
+        <ConTV />
+        <Coolmic />
+        <Crunchyroll>https://www.crunchyroll.com/sword-art-online</Crunchyroll>
+        <dAnimeStore />
+        <DMM />
+        <FOD>http://fod.fujitv.co.jp/s/genre/anime/ser5773</FOD>
+        <Funimation>https://www.funimation.com/shows/sword-art-online/</Funimation>
+        <Genflix />
+        <GundamInfo />
+        <Gyao />
+        <HIDIVE>https://www.hidive.com/tv/sword-art-online-alicization</HIDIVE>
+        <Hulu>https://www.hulu.com/series/sword-art-online-alicization-c22224e3-93c0-40ab-895d-1475d94a6688</Hulu>
+        <iflix />
+        <iQIYI>http://www.iqiyi.com/a_19rrh1temd.html</iQIYI>
+        <JapaneseAnimatedFilmClassic />
+        <Mangas />
+        <MBSDougaizm />
+        <MidnightPulp />
+        <MuseAsia>
+            <en_001 />
+            <vi_VN />
+            <ms_MY />
+            <th_TH />
+            <zh_Hant_HK />
+            <zh_Hant_TW />
+        </MuseAsia>
+        <Netflix>https://www.netflix.com/title/81029064</Netflix>
+        <NicoNico>http://ch.nicovideo.jp/sao-alicization</NicoNico>
+        <PrimeVideo>https://www.amazon.co.jp/dp/B07J5RJ3ZW</PrimeVideo>
+        <RetroCrush />
+        <SelectaVision />
+        <Sushiroll />
+        <Telasa />
+        <TencentVideo />
+        <TVNOW />
+        <Vimeo />
+        <VIZ />
+        <VRV>https://vrv.co/series/GR49G9VP6</VRV>
+        <VVVVID>https://www.vvvvid.it/show/845/sword-art-online-alicization</VVVVID>
+        <Wakanim>
+            <fr>https://www.wakanim.tv/fr/v2/catalogue/show/376</fr>
+            <sc>https://www.wakanim.tv/sc/v2/catalogue/show/377</sc>
+            <de>https://www.wakanim.tv/de/v2/catalogue/show/379</de>
+            <ru>https://www.wakanim.tv/ru/v2/catalogue/show/378</ru>
+        </Wakanim>
+        <WeTV />
+        <YamatoAnimation />
+        <YouTube>
+            <link />
+            <isChannel>false</isChannel>
+        </YouTube>
+    </streamLinks>
     <signature>
         <name>Yae</name>
         <username>@Yae-chan</username>

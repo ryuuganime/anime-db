@@ -728,81 +728,80 @@ A cambio del silencio de Azumaya, Azumaya dice: "¡Por favor, déjame abrazarte.
   # = Lists of official streaming sites.
   streamLinks:
   {
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: 
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: 
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: 
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: 
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    HOOQ: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia: 
+    Abematv: https://abema.tv/search?q=%E6%8A%B1%E3%81%8B%E3%82%8C%E3%81%9F%E3%81%84%E7%94%B71%E4%BD%8D%E3%81%AB%E8%84%85%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: https://www.animelab.com/shows/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: https://ani.gamer.com.tw/animeVideo.php?sn=11376
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: https://www.crunchyroll.com/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-
+    dAnimeStore: null
+    DMM: null
+    FOD: http://fod.fujitv.co.jp/s/genre/anime/ser5738
+    Funimation: https://www.funimation.com/shows/dakaichi-im-being-harassed-by-the-sexiest-man-of-the-year-/
+    Genflix: null
+    GundamInfo: null
+    Gyao: https://gyao.yahoo.co.jp/p/00548/v12304/
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia:
     {
-      en_001:
-      vi_VN: 
-      ms_MY: 
-      th_TH: 
-      zh_Hant_HK: 
-      zh_Hant_TW: 
+      en_001: null
+      vi_VN: null
+      ms_MY: null
+      th_TH: null
+      zh_Hant_HK: null
+      zh_Hant_TW: null
     }
-    Netflix: 
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim: 
+    Netflix: null
+    NicoNico: http://ch.nicovideo.jp/dakaretai-1st
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: https://vrv.co/series/G6QW9J2Z6
+    VVVVID: null
+    Wakanim:
     {
-      fr: 
-      sc: 
-      de: 
-      ru: 
+      fr: https://www.wakanim.tv/fr/v2/catalogue/show/415
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/417
+      de: https://www.wakanim.tv/de/v2/catalogue/show/416
+      ru: https://www.wakanim.tv/ru/v2/catalogue/show/419
     }
-    WeTV: 
-    YamatoAnimation: 
-    YouTube: 
+    WeTV: null
+    YamatoAnimation: null
+    YouTube:
     {
-      url: 
-      isChannel: 
+      link: null
+      isChannel: false
     }
   }
 
