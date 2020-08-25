@@ -45,7 +45,6 @@ You will get:
         "native": "富豪刑事 Balance:UNLIMITED",
         "en_Latn": "Fugou Keiji: Balance:Unlimited",
         "ar_001": "المحقق المليونير - الرصيد: غير محدود",
-        "hu_HU": null,
         "he_IL": "בלש מיליונר - איזון: ללא הגבלה",
         "id_ID": "Detektif Milyuner - Balance:UNLIMITED",
         "en_US": "The Millionaire Detective – Balance: UNLIMITED",
@@ -64,7 +63,6 @@ You will get:
     "visualKey": "https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg",
     "synopsis": {
         "ar_001": "قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.",
-        "hu_HU": null,
         "he_IL": null,
         "id_ID": "Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.",
         "en_US": "The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the \"Modern Crimes Task Unit\" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.",
@@ -75,7 +73,7 @@ You will get:
         "pt_PT": "A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas, testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente insolúveis!",
         "ru_RU": "«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить, что финансы он тратит в том числе и на ведение расследований. Вот только не всех в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно сплавляют в Главное управление по борьбе с современными преступлениями, где рано или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно расследуя запутанные криминальные загадки.",
         "es_ES": "La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos de los demás. Allí, Kanbe se hace compañero de Katou.",
-        "zh_Hans": "本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。\n擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。\n大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！",
+        "zh_Hans": "本作故事主要讲述刑警神户大助，利用大富豪父亲的巨大资产解决各种案件。\n拥有不可计数资产的神户家大少爷大助即将赴任的地方，是仅会接收警视厅中的问题份子的「现代犯罪对策本部准备室」，通称「现对本部」。\n大助在那里与重感情的男人加藤春组成了搭档。面对用钱衡量一切的大助，加藤以「世上并非只有金钱」加以反驳。各种各样的事件和谜团，阻挡在这对立的2人面前。超越常识的搜查现在开始！",
         "zh_Hant": "本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。\n擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。\n大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！",
         "vi_VN": "Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou, người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng hợp tác giải quyết các vụ án."
     },
@@ -165,7 +163,19 @@ You will get:
         "country": {
             "en_US": "Japan",
             "id_ID": "Jepang"
-        }
+        },
+        "officialWebsite": "https://www.fugoukeiji-bul.com/",
+        "promotionalVideos": [
+            "https://www.youtube.com/watch?v=Z2GGJHXtOJ8"
+        ],
+        "producers": [
+            "Aniplex",
+            "Dentsu",
+            "Animax",
+            "Movic",
+            "Fuji TV",
+            "Sonilude"
+        ]
     },
     "scores": {
         "aniDB": {
@@ -199,7 +209,7 @@ You will get:
             "score": 8.1
         },
         "KinoPoisk": {
-            "id": null,
+            "id": 1368169,
             "score": null
         },
         "Kitsu": {
@@ -255,118 +265,79 @@ You will get:
         }
     },
     "updatedDate": "2020-05-05T16:54:42+07:00",
-    "fansub": {
-        "idn": {
-            "Aibou": "https://www.aibouanime.site/2020/04/fugou-keiji-balanceunlimited.html",
-            "Aizukara": "https://www.aizukara.web.id/search/label/Fugou%20Keiji",
-            "AWSubs": null,
-            "Allsub": null,
-            "Alter": null,
-            "AnimeGokil": null,
-            "AniToki": null,
-            "AoiTenshi": null,
-            "Arks": null,
-            "ASubs": null,
-            "Bentoo": null,
-            "Caramel": null,
-            "Cijanepoi": null,
-            "Conan": null,
-            "DAnimeSubs": null,
-            "Del": null,
-            "DNFI": null,
-            "Durandal": null,
-            "EmotPekmen": null,
-            "Excalibur": null,
-            "exTonan": null,
-            "Gantz": null,
-            "Gin": null,
-            "Haruna": null,
-            "Haruzora": null,
-            "HunterNoSekai": "https://www.huntersekai.website/search/label/Fugou?&max-results=8",
-            "IA": null,
-            "Inazumaotoshi": null,
-            "Indis": null,
-            "Inform0930": null,
-            "Isekai": null,
-            "Junk": "https://www.junksubs.com/search/label/Unlimited",
-            "Kazefuri": null,
-            "Kinshiru": null,
-            "KO": null,
-            "Kopaja": null,
-            "LCC": null,
-            "MangaNekoTranslation": null,
-            "Melody": null,
-            "Mite": null,
-            "Nanairo": "https://nanairo-sub.livejournal.com/tag/fugou%20keiji%20balance%20unlimited",
-            "Neo": null,
-            "OPLovers": null,
-            "Ougi": null,
-            "Panagayan": null,
-            "Pendekar": null,
-            "Pucuk": null,
-            "Quinime": null,
-            "RevieXion": null,
-            "Samehadaku": null,
-            "SilverYasha": null,
-            "Sora": null,
-            "TTOD": null,
-            "Vedifi": null,
-            "Warung": null,
-            "Wibu": null,
-            "Yuki": null,
-            "Zen": null
+    "streamLinks": {
+        "Abematv": null,
+        "AdultSwim": null,
+        "AISPlay": null,
+        "All4": null,
+        "AniMe": null,
+        "AnimeDigitalNetwork": null,
+        "AnimeLab": "https://www.animelab.com/shows/balance-unlimited",
+        "AnimeLog": null,
+        "AnimeOnDemand": null,
+        "AnimePlanet": null,
+        "animeteleto": null,
+        "AniOne": "https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz",
+        "ANIPLUS": null,
+        "AniPlusAsia": null,
+        "AsianCrush": null,
+        "BahamutAnimeCrazy": null,
+        "BandaiChannel": null,
+        "BandaiSpirits": null,
+        "bilibili": "https://www.bilibili.com/bangumi/media/md28228473",
+        "Coalise": null,
+        "ComicFestaAnimeZone": null,
+        "ConTV": null,
+        "Coolmic": null,
+        "Crunchyroll": null,
+        "dAnimeStore": null,
+        "DMM": null,
+        "FOD": null,
+        "Funimation": "https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/",
+        "Genflix": null,
+        "GundamInfo": null,
+        "Gyao": null,
+        "HIDIVE": null,
+        "Hulu": null,
+        "iflix": null,
+        "iQIYI": null,
+        "JapaneseAnimatedFilmClassic": null,
+        "Mangas": null,
+        "MBSDougaizm": null,
+        "MidnightPulp": null,
+        "MuseAsia": {
+            "en_001": null,
+            "vi_VN": null,
+            "ms_MY": null,
+            "th_TH": null,
+            "zh_Hant_HK": null,
+            "zh_Hant_TW": null
         },
-        "eng": {
-            "Horrible": "https://horriblesubs.info/shows/fugou-keiji-balance-unlimited#01"
-        }
-    },
-    "fanshare": {
-        "idn": {
-            "AniBatch": null,
-            "AnimeKompi": "http://animekompi.web.id/series/fugou-keiji-balanceunlimited/",
-            "AnimeSAVE": null,
-            "Bakacan": "https://bakacan.id/anime/fugou-keiji-balanceunlimited/",
-            "Drivenime": null,
-            "Hinime": null,
-            "Koenime": null,
-            "Kusonime": null,
-            "Mikanime": null,
-            "Moenime": "https://moenime.web.id/fugou-keiji-balanceunlimited-sub-indo/",
-            "Ryuukoi": null,
-            "WibuDesu": null
+        "Netflix": "https://www.netflix.com/jp-en/title/81039113",
+        "NicoNico": null,
+        "PrimeVideo": null,
+        "RetroCrush": null,
+        "SelectaVision": null,
+        "Sushiroll": null,
+        "Telasa": null,
+        "TencentVideo": null,
+        "TVNOW": null,
+        "Vimeo": null,
+        "VIZ": null,
+        "VRV": null,
+        "VVVVID": null,
+        "Wakanim": {
+            "fr": "https://www.wakanim.tv/fr/v2/catalogue/show/842",
+            "sc": "https://www.wakanim.tv/sc/v2/catalogue/show/844",
+            "de": "https://www.wakanim.tv/de/v2/catalogue/show/843",
+            "ru": "https://www.wakanim.tv/ru/v2/catalogue/show/845"
         },
-        "eng": {
-            "AnimeKayo": "https://animekayo.com/?s=Fugou+Keiji"
+        "WeTV": null,
+        "YamatoAnimation": null,
+        "YouTube": {
+            "link": null,
+            "isChannel": false
         }
-    },
-    "fanstream": {
-        "idn": {
-            "AnimeIndoNET": "http://animeindo.moe/anime/fugou-keiji-balanceunlimited",
-            "anoBoy": "https://anoboy.us/anime/fugou-keiji-balanceunlimited/",
-            "Gomunime": null,
-            "Moeclip": "https://moeclip.com/anime/fugou-keiji-balanceunlimited-sub-indo/",
-            "Neonime": "https://neonime.org/tvshows/fugou-keiji-balanceunlimited-subtitle-indonesia/",
-            "Onnime": "https://onnime.net/anime/fugou-keiji-balanceunlimited.VZQMnkZ3/",
-            "OtakuIndo": null
-        },
-        "eng": {
-            "fourAnime": "https://4anime.to/anime/fugou-keiji-balanceunlimited",
-            "nineAnime": "https://9anime.to/watch/the-millionaire-detective-balance-unlimited.p08q",
-            "AnimeDaisuki": "https://animedaisuki.moe/anime/933/fugou-keiji-balance-unlimited",
-            "AnimeTwist": "https://twist.moe/a/fugou-keiji-balance-unlimited/1",
-            "Animeflix": "https://animeflix.io/shows/fugou-keiji-balanceunlimited",
-            "AnimeHeaven": "https://animeheaven.ru/detail/fugou-keiji-balance-unlimited",
-            "Animelon": null,
-            "Animeultima": "https://www1.animeultima.to/a/fugou-keiji-balanceunlimited_211044",
-            "AniWatch": "https://aniwatch.me/anime/2315",
-            "GogoAnime": "https://www17.gogoanime.io/category/fugou-keiji-balanceunlimited",
-            "KissAnime": "https://kissanime.ru/Anime/Fugou-Keiji-Balance-Unlimited",
-            "WonderfulSubs": "https://beta.wonderfulsubs.com/watch/themillionairedetectivebalanceunlimited"
-        }
-    },
-    "library": {
-        "Nyaa": "https://nyaa.si/?f=0&c=0_0&q=Fugou+Keiji",
-        "PerpusIndo": "https://www.perpusindo.info/sharelist/?kat=&user=&cari=fugou%20keiji&kartel="
     },
     "signature": {
         "name": "Natsu Tadama",
@@ -380,11 +351,8 @@ You will get:
 == JSON attributes ==
 *Type: Object
 *Requires:
-*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>,  <code>signature</code>
+*:<code>$schema</code>, <code>title</code>, <code>backdrop</code>, <code>visualKey</code>, <code>synopsis</code>, <code>information</code>, <code>scores</code>, <code>updatedDate</code>, <code>streamLinks</code>, <code>signature</code>
 *Additional properties: <code>false</code>
-
-;Notice
-:No attributes guideline for <code>fansub</code>, <code>fanshare</code>, <code>fanstream</code>, and <code>library</code>.
 
 === $schema ===
 Path to Ryuuganime JSON schema for Entry.
@@ -407,63 +375,49 @@ A serial title in multiple languages. Based on ICU locales.
 !Note
 |-
 |<code>native</code>
-|String
+|rowspan="15"|String
 |A serial title in native/origin language (Canonical). Value can not be empty.
 |-
 |<code>en_Latn</code>
-|String
 |Serial title in romanized text. Required for main title on entry list. Value can not be empty.
 |-
 |<code>ar_001</code>
-|String
 |Serial title in Modern Standard/Written Arabic (العربية الفصحى).
 |-
 |<code>id_ID</code>
-|String
 |Serial title in Indonesian.
 |-
 |<code>en_US</code>
-|String
 |Serial title in English (United States) or else.
 |-
 |<code>ja_JP</code>
-|String
 |Serial title in Japanese.
 |-
 |<code>de_DE</code>
-|String
 |Serial title in German.
 |-
 |<code>ko_KR</code>
-|String
 |Serial title in Korean.
 |-
 |<code>fr_FR</code>
-|String
 |Serial title in French.
 |-
 |<code>pt_PT</code>
-|String
 |Serial title in Portuguese.
 |-
 |<code>ru_RU</code>
-|String
 |Serial title in Russian.
 |-
 |<code>es_ES</code>
-|String
 |Serial title in Spanish.
 |-
 |<code>zh_Hans</code>
-|String
 |Serial title in Simplified Chinese.
 |-
 |<code>zh_Hant</code>
-|String
 |Serial title in Traditional Chinese.
 |-
 |<code>vi_VN</code>
-|String
 |Serial title in Vietnamese.
 |}
 
@@ -492,55 +446,43 @@ A synopsis/plot of story of serial in several languages. Based on ICU locales.
 !Note
 |-
 |<code>ar_001</code>
-|String
+|rowspan="13"|String
 |Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى).
 |-
 |<code>id_ID</code>
-|String
 |Serial synopsis in Indonesian.
 |-
 |<code>en_US</code>
-|String
 |Serial synopsis in English (United States) or else.
 |-
 |<code>ja_JP</code>
-|String
 |Serial synopsis in Japanese.
 |-
 |<code>de_DE</code>
-|String
 |Serial synopsis in German.
 |-
 |<code>ko_KR</code>
-|String
 |Serial synopsis in Korean.
 |-
 |<code>fr_FR</code>
-|String
 |Serial synopsis in French.
 |-
 |<code>pt_PT</code>
-|String
 |Serial synopsis in Portuguese.
 |-
 |<code>ru_RU</code>
-|String
 |Serial synopsis in Russian.
 |-
 |<code>es_ES</code>
-|String
 |Serial synopsis in Spanish.
 |-
 |<code>zh_Hans</code>
-|String
 |Serial synopsis in Simplified Chinese.
 |-
 |<code>zh_Hant</code>
-|String
 |Serial synopsis in Traditional Chinese.
 |-
 |<code>vi_VN</code>
-|String
 |Serial synopsis in Vietnamese.
 |}
 
@@ -566,59 +508,46 @@ Serial title synonyms in several languages. Based on ICU locales.
 !Note
 |-
 |<code>en_Latn</code>
-|String
+|rowspan="14"|String
 |Serial title synonyms in romanized text.
 |-
 |<code>ar_001</code>
-|String
 |Serial title synonyms in Modern Standard/Written Arabic (العربية الفصحى).
 |-
 |<code>id_ID</code>
-|String
 |Serial title synonyms in Indonesian.
 |-
 |<code>en_US</code>
-|String
 |Serial title synonyms in English (United States) or else.
 |-
 |<code>ja_JP</code>
-|String
 |Serial title synonyms in Japanese.
 |-
 |<code>de_DE</code>
-|String
 |Serial title synonyms in German.
 |-
 |<code>ko_KR</code>
-|String
 |Serial title synonyms in Korean.
 |-
 |<code>fr_FR</code>
-|String
 |Serial title synonyms in French.
 |-
 |<code>pt_PT</code>
-|String
 |Serial title synonyms in Portuguese.
 |-
 |<code>ru_RU</code>
-|String
 |Serial title synonyms in Russian.
 |-
 |<code>es_ES</code>
-|String
 |Serial title synonyms in Spanish.
 |-
 |<code>zh_Hans</code>
-|String
 |Serial title synonyms in Simplified Chinese.
 |-
 |<code>zh_Hant</code>
-|String
 |Serial title synonyms in Traditional Chinese.
 |-
 |<code>vi_VN</code>
-|String
 |Serial title synonyms in Vietnamese.
 |}
 
@@ -636,11 +565,10 @@ Serial type.
 !Note
 |-
 |<code>en_US</code>
-|String
+|rowspan="2"|String
 |Enum of: <code>TV</code>, <code>ONA</code>, <code>OVA</code>, <code>OAD</code>, <code>Special</code>, <code>Movie</code>, <code>Music</code>, <code>Unknown</code>
 |-
 |<code>id_ID</code>
-|String
 |Enum of: <code>TV</code>, <code>ONA</code>, <code>OVA</code>, <code>OAD</code>, <code>Spesial</code>, <code>Film</code>, <code>Musik</code>, <code>Tidak Diketahui</code>
 |}
 
@@ -658,11 +586,10 @@ Describes the serial broadcast status.
 !Note
 |-
 |<code>en_US</code>
-|String
+|rowspan="2"|String
 |Enum of: <code>Aired</code>, <code>Airing</code>, <code>Planned</code>, <code>TBA</code>, <code>and Unknown</code>
 |-
 |<code>id_ID</code>
-|String
 |Enum of: <code>Ditayangkan</code>, <code>Mengudara</code>, <code>Direncanakan</code>, <code>Akan Diumumkan</code>, <code>and Tidak Diketahui</code>
 |}
 
@@ -680,11 +607,10 @@ Genre(s) of the serial
 !Note
 |-
 |<code>en_US</code>
-|Array
+|rowspan="2"|Array
 |Enum of: <code>Action</code>, <code>Adventure</code>, <code>Comedy</code>, <code>Crime</code>, <code>Documentary</code>, <code>Drama</code>, <code>Fantasy</code>, <code>History</code>, <code>Horror</code>, <code>Mature</code>, <code>Mecha</code>, <code>Music</code>, <code>Mystery</code>, <code>Psychological</code>, <code>Romance</code>, <code>Science Fiction</code>, <code>Slice of Life</code>, <code>Sport</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>War</code>
 |-
 |<code>id_ID</code>
-|Array
 |Enum of: <code>Aksi</code>, <code>Petualangan</code>, <code>Komedi</code>, <code>Kriminalitas</code>, <code>Dokumentasi</code>, <code>Drama</code>, <code>Fantasi</code>, <code>Sejarah</code>, <code>Horror</code>, <code>Dewasa</code>, <code>Mecha</code>, <code>Musik</code>, <code>Misteri</code>, <code>Psikologis</code>, <code>Romansa</code>, <code>Fiksi Ilmiah</code>, <code>Potongan Kehidupan</code>, <code>Olahraga</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>Peperangan</code>
 |}
 
@@ -703,11 +629,10 @@ Represents serial specific tags/content. Similar to the <code>serialGenres</code
 !Note
 |-
 |<code>en_US</code>
-|Array
+|rowspan="2"|Array
 |Not an enum from: <code>Action</code>, <code>Adventure</code>, <code>Comedy</code>, <code>Crime</code>, <code>Documentary</code>, <code>Drama</code>, <code>Fantasy</code>, <code>History</code>, <code>Horror</code>, <code>Mature</code>, <code>Mecha</code>, <code>Music</code>, <code>Mystery</code>, <code>Psychological</code>, <code>Romance</code>, <code>Science Fiction</code>, <code>Slice of Life</code>, <code>Sport</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>War</code>
 |-
 |<code>id_ID</code>
-|Array
 |Not an enum from: <code>Aksi</code>, <code>Petualangan</code>, <code>Komedi</code>, <code>Kriminalitas</code>, <code>Dokumentasi</code>, <code>Drama</code>, <code>Fantasi</code>, <code>Sejarah</code>, <code>Horror</code>, <code>Dewasa</code>, <code>Mecha</code>, <code>Musik</code>, <code>Misteri</code>, <code>Psikologis</code>, <code>Romansa</code>, <code>Fiksi Ilmiah</code>, <code>Potongan Kehidupan</code>, <code>Olahraga</code>, <code>Supernatural</code>, <code>Thriller</code>, <code>Peperangan</code>
 |}
 
@@ -725,27 +650,22 @@ Season of serial releases.
 !Note
 |-
 |<code>en_US</code>
-|String
+|rowspan="6"|String
 |Enum of: <code>Winter</code>, <code>Spring</code>, <code>Summer</code>, <code>Fall</code>, <code>Unknown</code>
 |-
 |<code>id_ID</code>
-|String
 |Enum of: <code>Dingin</code>, <code>Semi</code>, <code>Panas</code>, <code>Gugur</code>, <code>Tidak Diketahui</code>
 |-
 |<code>ja_JP</code>
-|String
 |Enum of: <code>冬</code>, <code>春</code>, <code>夏</code>, <code>秋</code>, <code>不明</code>
 |-
 |<code>ko_KR</code>
-|String
 |Enum of: <code>겨울</code>, <code>봄</code>, <code>여름</code>, <code>가을</code>, <code>알</code>
 |-
 |<code>zh_Hans</code>
-|String
 |Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
 |-
 |<code>zh_Hant</code>
-|String
 |Enum of: <code>冬天</code>, <code>春天</code>, <code>夏天</code>, <code>秋天</code>, <code>未知</code>
 |}
 
@@ -818,11 +738,10 @@ Mark the serial if it's adapted from different source or not.
 !Note
 |-
 |<code>en_US</code>
-|String/null
+|rowspan="2"|String/null
 |Enum of: <code>Original</code>, <code>Comic</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Game</code>, <code>Music</code>, <code>Drama</code>, <code>4-koma</code>, <code>Fairy Tale</code>
 |-
 |<code>id_ID</code>
-|String/null
 |Enum of: <code>Orisinal</code>, <code>Komik</code>, <code>Manga</code>, <code>Manhwa</code>, <code>Manhua</code>, <code>Webtoon</code>, <code>Doujin</code>, <code>Novel</code>, <code>Gim</code>, <code>Musik</code>, <code>Drama</code>, <code>4-panel</code>, <code>Dongeng</code>
 |}
 
@@ -840,11 +759,10 @@ Country of origin of serial. No country restrictions for this field.
 !Note
 |-
 |<code>en_US</code>
-|String
+|rowspan="2"|String
 |
 |-
 |<code>id_ID</code>
-|String
 |
 |}
 
@@ -869,16 +787,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 10.00
@@ -892,16 +808,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0
 *Maximum: 100
@@ -915,7 +829,7 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="3"| 
 |<code>url</code>
 |String
 |
@@ -923,16 +837,13 @@ Scores from several websites
 *Pattern: <code>^(https?)://www\.anime-planet\.com/anime/[a-z0-9\-]+</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.000
 *Maximum: 5.000
@@ -946,16 +857,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.000
 *Maximum: 10.000
@@ -969,16 +878,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0
 *Maximum: 100
@@ -992,16 +899,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 100.00
@@ -1015,13 +920,12 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>code</code>
 |String
 |
 *Pattern: <code>^(tt)?[0-9]{5,}</code>
 |-
-|
 |<code>score</code>
 |Number
 |
@@ -1037,16 +941,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 100.00
@@ -1062,23 +964,20 @@ Scores from several websites
 **<code>id</code>: <code>slug</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="3"| 
 |<code>slug</code>
 |String
 |
 *Pattern: <code>^[\w\-\.]+</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 100.00
@@ -1092,16 +991,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 10.00
@@ -1115,16 +1012,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 10.00
@@ -1138,16 +1033,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 5.00
@@ -1161,7 +1054,7 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>url</code>
 |String
 |
@@ -1169,7 +1062,6 @@ Scores from several websites
 *Pattern: <code>^(https?)://(www\.)?nautiljon\.com/animes/</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
 |Number
 |
@@ -1185,14 +1077,13 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>base64</code>
 |String
 |
 *Pattern: <code>^[\w_\-]+</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
 |Number
 |
@@ -1208,16 +1099,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 10.00
@@ -1234,26 +1123,23 @@ Scores from several websites
 **<code>newId</code>: <code>moved</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="4"| 
 |<code>id</code>
 |Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>moved</code>
 |Boolean
 |
 *Default: <code>false</code>
 |-
-|
 |<code>newId</code>
 |String
 |
 *Pattern: <code>^[A-Za-z]+[0-9]+</code>
 |-
-|
 |<code>score</code>
 |Number
 |
@@ -1269,16 +1155,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.0
 *Maximum: 10.0
@@ -1294,7 +1178,7 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="3"| 
 |<code>url</code>
 |String
 |
@@ -1302,16 +1186,13 @@ Scores from several websites
 *Pattern: <code>^(https?)://(www\.themoviedb|themoviedb)\.org/(movie|tv)/[0-9]+</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>id</code>
-|Number
+||rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0
 *Maximum: 100
@@ -1327,7 +1208,7 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="3"| 
 |<code>url</code>
 |String
 |
@@ -1335,16 +1216,13 @@ Scores from several websites
 *Pattern: <code>^(https?)://trakt\.tv/(movies|shows)/([0-9]+|[\w\-]+)</code>
 *Value null: <code>true</code>
 |-
-|
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0
 *Maximum: 100
@@ -1358,16 +1236,14 @@ Scores from several websites
 *Additional properties: <code>false</code>
 *Value null: <code>false</code>
 |-
-|
+|rowspan="2"| 
 |<code>id</code>
-|Number
+|rowspan="2"|Number
 |
 *Exclusive Minimum: 0
 *Value null: <code>true</code>
 |-
-|
 |<code>score</code>
-|Number
 |
 *Minimum: 0.00
 *Maximum: 10.00
@@ -1396,14 +1272,13 @@ A virtual signature of entry contributor
 !Note
 |-
 |<code>name</code>
-|String
+|rowspan="2"|String
 |
 Contributor's name
 *Pattern: <code>^[\w\s\W\S]+</code>
 *Value null: <code>false</code>
 |-
 |<code>username</code>
-|String
 |
 Contributor GitHub username
 *Pattern: <code>^@[\w\s\W\S\.\-_]+</code>
