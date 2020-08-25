@@ -257,7 +257,6 @@
         "GundamInfo": "",
         "Gyao": "",
         "HIDIVE": "",
-        "HOOQ": "",
         "Hulu": "",
         "iflix": "",
         "iQIYI": "",
@@ -296,7 +295,7 @@
         "WeTV": "",
         "YamatoAnimation": "",
         "YouTube": {
-            "url": "",
+            "link": "",
             "isChannel": false
         }
     },

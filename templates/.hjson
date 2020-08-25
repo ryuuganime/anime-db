@@ -398,7 +398,7 @@
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are: 
+      // Allowed values are:
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
       en_US: 
@@ -711,7 +711,6 @@
     GundamInfo: 
     Gyao: 
     HIDIVE: 
-    HOOQ: 
     Hulu: 
     iflix: 
     iQIYI: 
