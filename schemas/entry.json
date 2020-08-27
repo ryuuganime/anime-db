@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.3.0-r",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.3.1-r",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
@@ -659,6 +659,7 @@
                         "en_US": {
                             "description": "Explains type of series in American English",
                             "type": "string",
+                            "default": "TV",
                             "enum": [
                                 "TV",
                                 "ONA",
@@ -673,6 +674,7 @@
                         "id_ID": {
                             "description": "Explains type of series in Indonesian",
                             "type": "string",
+                            "default": "Serial TV",
                             "enum": [
                                 "Serial TV",
                                 "ONA",
@@ -698,6 +700,7 @@
                         "en_US": {
                             "description": "Explains airing status of serial in American English",
                             "type": "string",
+                            "default": "Aired",
                             "enum": [
                                 "Aired",
                                 "Airing",
@@ -709,6 +712,7 @@
                         "id_ID": {
                             "description": "Explains airing status of serial in Indonesian",
                             "type": "string",
+                            "default": "Ditayangkan",
                             "enum": [
                                 "Ditayangkan",
                                 "Mengudara",
@@ -959,6 +963,7 @@
                 },
                 "releaseYear": {
                     "description": "Released Year of serial",
+                    "default": 2010,
                     "oneOf": [
                         {
                             "type": "number",
@@ -972,6 +977,7 @@
                 },
                 "episode": {
                     "description": "Total episodes of serial",
+                    "default": 12,
                     "oneOf": [
                         {
                             "type": "number",
@@ -1010,6 +1016,7 @@
                 },
                 "duration": {
                     "description": "Episode duration in minutes",
+                    "default": 24,
                     "oneOf": [
                         {
                             "type": "number",
@@ -1048,6 +1055,7 @@
                 },
                 "rating": {
                     "description": "Content rating of the serial",
+                    "default": "PG7+",
                     "enum": [
                         "G0+",
                         "PS2+",
@@ -1060,7 +1068,8 @@
                 },
                 "isNsfw": {
                     "description": "Mark the serial if not safe for work",
-                    "type": "boolean"
+                    "type": "boolean",
+                    "default": false
                 },
                 "adaptation": {
                     "description": "Mark the serial if it's adapted from different source or not",
@@ -1128,10 +1137,12 @@
                     "type": "object",
                     "properties": {
                         "en_US": {
-                            "type": "string"
+                            "type": "string",
+                            "default": "Japan"
                         },
                         "id_ID": {
-                            "type": "string"
+                            "type": "string",
+                            "default": "Jepang"
                         }
                     },
                     "required": [
@@ -1813,6 +1824,10 @@
                                 }
                             ]
                         },
+                        "isAnime": {
+                            "type": "boolean",
+                            "default": "true"
+                        },
                         "score": {
                             "oneOf": [
                                 {
@@ -1828,6 +1843,7 @@
                     },
                     "required": [
                         "id",
+                        "isAnime",
                         "score"
                     ],
                     "additionalProperties": false
@@ -2901,7 +2917,7 @@
                 "username": {
                     "description": "Contributor GitHub username",
                     "type": "string",
-                    "pattern": "^@[\\w\\s\\W\\S\\.\\-_]+",
+                    "pattern": "^@?[\\w\\s\\W\\S\\.\\-_]+",
                     "examples": [
                         "@nattadasu",
                         "@Yae-chan"
@@ -2911,6 +2927,7 @@
                     "description": "Discord User ID",
                     "type": "number",
                     "pattern": "^[0-9]{16,}",
+                    "default": 594442535615725579,
                     "examples": [
                         384089845527478272
                     ]
