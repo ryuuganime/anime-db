@@ -206,6 +206,7 @@
         },
         "SIMKL": {
             "id": 0,
+            "isAnime": true,
             "score": 0
         },
         "TMDB": {

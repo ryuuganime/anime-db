@@ -1704,8 +1704,15 @@
                     "type": "object",
                     "properties": {
                         "base64": {
-                            "type": "string",
-                            "pattern": "^[A-Za-z0-9_\\-]+"
+                            "oneOf": [
+                                {
+                                    "type": "string",
+                                    "pattern": "^[A-Za-z0-9_\\-]+"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ]
                         },
                         "score": {
                             "oneOf": [
@@ -2893,7 +2900,14 @@
                         },
                         "isChannel": {
                             "description": "Explain that the value on streamLinks.YouTube.url is directing to channel url, not playlist",
-                            "type": "boolean",
+                            "oneOf": [
+                                {
+                                    "type": "boolean"
+                                },
+                                {
+                                    "type":"null"
+                                }
+                            ],
                             "default": false
                         }
                     },
