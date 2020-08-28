@@ -285,7 +285,7 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
       # = Serial genre in English.
       //  Allowed values are:
       //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Mecha, Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
       //  Supernatural, Thriller, War
       en_US:
       [
@@ -302,7 +302,7 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
       # = Serial genre in Indonesian.
       //  Allowed values are:
       //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Mecha, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
+      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
       //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
