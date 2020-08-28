@@ -115,3 +115,12 @@
     title: {en_Latn: 'Somali to Mori no Kamisama', en_US: 'Somali and the Forest Spirit', native: ソマリと森の神様}
     ryuuganime: 13
     path: {json: /json/000/013.json, hjson: /hjson/000/013.json, xml: /xml/000/013.xml, yaml: /yaml/000/013.yaml}
+-
+    myAnimeList: null
+    kitsu: 13760
+    aniList: null
+    aniDb: null
+    notifyMoe: null
+    title: {en_Latn: 'Adventure Time', en_US: 'Adventure Time', native: 'Adventure Time'}
+    ryuuganime: 14
+    path: {json: /json/000/014.json, hjson: /hjson/000/014.json, xml: /xml/000/014.xml, yaml: /yaml/000/014.yaml}

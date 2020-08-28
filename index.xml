@@ -284,6 +284,25 @@
             <yaml>/yaml/000/013.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList />
+        <kitsu>13760</kitsu>
+        <aniList />
+        <aniDb />
+        <notifyMoe />
+        <title>
+            <en_Latn>Adventure Time</en_Latn>
+            <en_US>Adventure Time</en_US>
+            <native>Adventure Time</native>
+        </title>
+        <ryuuganime>14</ryuuganime>
+        <path>
+            <json>/json/000/014.json</json>
+            <hjson>/hjson/000/014.hjson</hjson>
+            <xml>/xml/000/014.xml</xml>
+            <yaml>/yaml/000/014.yaml</yaml>
+        </path>
+    </entry>
     <!--
         Copy the template above this comment.
         Salin templat di atas komentar ini.

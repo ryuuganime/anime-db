@@ -1,0 +1,327 @@
+{
+    "$schema": "../../schemas/entry.json",
+    "title": {
+        "native": "Adventure Time",
+        "en_Latn": "Adventure Time",
+        "ar_001": "وقت المغامرة",
+        "id_ID": "Adventure Time: Waktu Berpetualang",
+        "en_US": "Adventure Time",
+        "ja_JP": "アドベンチャー・タイム",
+        "de_DE": "Adventure Time - Abenteuerzeit mit Finn und Jake",
+        "ko_KR": "핀과 제이크의 어드벤처 타임",
+        "fr_FR": "Adventure Time",
+        "pt_PT": "Hora de Aventura",
+        "ru_RU": "Время Приключений",
+        "es_ES": "Hora de aventuras",
+        "zh_Hans": "探险活宝",
+        "zh_Hant": "探險活寶",
+        "vi_VN": "Giờ phiêu lưu",
+        "he_IL": "הרפתקאות פין וג'ייק",
+        "it_IT": "Adventure Time",
+        "nl_NL": "Tijd voor avontuur",
+        "pl_PL": "Pora na przygodę!",
+        "th_TH": "แอดแวนเจอร์ ไทม์"
+    },
+    "backdrop": "https://artworks.thetvdb.com/banners/fanart/original/152831-13.jpg",
+    "visualKey": "https://artworks.thetvdb.com/banners/posters/152831-2.jpg",
+    "synopsis": {
+        "ar_001": "المسلسل يتتبع مغامرات فين وهو صبي بشري، في عالم ما بعد الحرب النووية، وأفضل أصدقائه وأخوه بالتبني جايك، وهو كلب يملك قوى سحرية لتغيير الشكل والحجم عندما يريد، يعيش فين وجايك في «أرض أوو»",
+        "id_ID": "Adventure Time menceritakan dua sahabat: Finn (anak laki-laki berusia 12 tahun) dan Jake (anjing berusia 28 tahun dengan kekuatan magis), dan petualangan surealis yang dilakukan oleh duo ini saat mereka melintasi Tanah Ooo (Land of Ooo) yang mistis. Sebuah dunia yang dibangun untuk petualangan, Ooo dipenuhi dengan berbagai lanskap untuk dijelajahi oleh dua sobat dan karakter aneh untuk membantu.",
+        "en_US": "Adventure Time follows two best friends: Finn (a 12-year old boy) and Jake (a wise 28-year-old dog with magical powers), and the surreal adventures undertaken by the duo as they traverse the mystical Land of Ooo. A world built for adventure, Ooo is filled to the brim with various landscapes for the two buddies to explore and bizarre characters to assist.",
+        "ja_JP": "爆弾で崩壊した後に魔法が復活した世界を舞台に、勇者に憧れる人間の少年フィンと魔法の犬ジェイクの親友コンビが、地球唯一の大陸「ウー大陸」で冒険を繰り広げる剣と魔法のシニカルファンタジーコメディ。",
+        "de_DE": "Der 14-jährige Finn, ein Junge mit einem merkwürdigen Hut, erlebt zusammen mit seinem besten Freund, dem magischen Hund Jake, schräge, teils surreale, aber stets spannende Abenteuer im Lande „Ooo“.",
+        "ko_KR": "이 작품은 종말 이후의 세상인 우 랜드에서 살고 있는 인간 소년 핀과, 마법의 힘으로 몸의 크기와 모양을 자유자재로 변화할 수 있는 강아지 제이크의 모험을 다루고 있다. 워드는 핀을 '높은 도덕성을 가진 용맹한 어린 아이'라고 표현했고, 제이크는 영화 《미트볼》에서 빌 머리가 맡은 역할인 트리퍼 해리슨(Tripper Harrison)에서 영감을 받았다고 했다.[2] 그 외 주요 등장인물로는 버블검 공주, 얼음 대왕, 뱀파이어 여왕 마르셀린 등이 있다.",
+        "fr_FR": "La série suit les aventures de Finn, un jeune humain, et de son meilleur ami et frère adoptif Jake, un chien possédant des pouvoirs magiques et la capacité de changer de taille. Finn et Jake vivent sur l'île post-apocalyptique de Ooo. Dans chaque épisode, les deux protagonistes interagissent avec d'autres personnages dont la Princesse Chewing-Gum, le Roi des glaces, et Marceline la reine vampire.",
+        "pt_PT": "Prepare-se para conhecer a Terra do Ooo, onde o Rei Gelado governa e a Princesa Jujuba vive. Você vai acompanhar a amizade entre o garoto Finn, 12, e seu fiel cão Jake. O garoto tem um passado misterioso e não sabe nada sobre seus pais verdadeiros. De vez em quando, eles atravessam a fronteira e vão parar na Terra do Ooo, onde tudo pode acontecer. Lá Finn se transforma em herói e passa por várias aventuras.",
+        "ru_RU": "Сериал повествует о необыкновенных и весёлых приключениях двух лучших друзей: мальчика Финна и его собаки Джейка. Действие сериала происходит в волшебной стране Ууу. Финн - 13-летний мальчик, который обожает путешествовать и спасать принцесс из лап ужасных монстров и злодеев, населяющих Землю Ууу. Джейк - лучший друг Финна. Это волшебная собака со способностью растягивать своё тело до практически любых размеров и форм. Джейку 28 лет и он исполняет роль эдакого приятеля-наставника Финна, а его волшебные способности помогают мальчику в его борьбе со злом.",
+        "es_ES": "Finn, un chico de 12 años, lucha contra el mal en la Tierra de Ooo. Ayudado por su canino mágico, Jake, Finn recorre la Tierra de Ooo reparando lo incorrecto y luchando contra el mal, provocado por el Rey del Hielo.",
+        "zh_Hans": "故事发生在一片神奇的魔法大陆上，身为最后一名人类的12岁少年Finn，和他最好的朋友——一条老狗Jake，在这片大陆上展开了探险之旅。 本动画每集均有独立的故事，出场的人物分别有泡泡糖公主、冰霸王、吸血鬼女王玛瑟琳以及肿泡泡公主等等。每一集里，Finn和Jake这一对活宝都会踏上光怪陆离的奇幻世界，遇上形形色色的人物，这一路上有危险，也有欢乐。 《探险活宝》原是实验动画短片，于网络上播出后引起热烈反响，后被美国卡通频道选中并发展为完整长度的系列动画。",
+        "zh_Hant": "故事發生在一片神奇的魔法大陸上，身為最後一名人類的12歲少年Finn，和他最好的朋友——一條老狗Jake，在這片大陸上展開了探險之旅。 本動畫每集均有獨立的故事，出場的人物分別有泡泡糖公主、冰霸王、吸血鬼女王瑪瑟琳以及腫泡泡公主等等。每一集裡，Finn和Jake這一對活寶都會踏上光怪陸離的奇幻世界，遇上形形色色的人物，這一路上有危險，也有歡樂。 《探險活寶》原是實驗動畫短片，於網絡上播出後引起熱烈反響，後被美國卡通頻道選中並發展為完整長度的系列動畫。",
+        "vi_VN": null,
+        "he_IL": "פין וג'ייק הם צמד חברים טובים הגרים יחד בבית עץ, בסמוך לממלכת הסוכריות. מידי פרק הם יוצאים להרפתקה, בהתאם לקריאות העזרה או הצרות אליהן הם נקלעים בדרכם. פעמים רבות נסיכת מסטיק מבקשת מהם לעזור לממלכת הסוכריות במשימה כלשהי, והם מיד נענים לבקשה. בסדרה נחשפים פרטים המעידים על כך שבעבר התקיימה ציוויליזציה אנושית בארץ אוו, אך זו נכחדה, למעט פין שנותר אחרון. קיימים רמזים לכך שהאנושות הושמדה במלחמה גרעינית, במה שנקרא - מלחמת הפטרייה הגדולה.",
+        "it_IT": "Il giovane Finn e il suo amico Jake, un cane mutaforma, vivono mille avventure surreali viaggiando nella postapocalittica Terra di Ooo.",
+        "nl_NL": "Amerikaanse animatieserie van Pendleton Ward over de avonturen van de jongen Finn en zijn magische hond Jake.",
+        "pl_PL": "Pora na przygodę! – amerykański serial animowany stworzony przez Pendletona Warda. Serial opowiada o przygodach chłopca Finna oraz jego przyjaciela i przyrodniego brata Jake'a, magicznego psa potrafiącego dowolnie zmieniać swój kształt i rozmiar. Mieszkają oni w kolorowej i pełnej magii Krainie Ooo, leżącej na postapokaliptycznej Ziemi. Podczas swoich przygód przyjaciele często spotykają innych bohaterów, na przykład Królewnę Balonową, Lodowego Króla lub wampirzycę Marcelinę oraz najróżniejsze potwory i fantastyczne istoty.",
+        "th_TH": "การผจญภัยของเด็กผู้ชายที่ชื่อว่า ฟินน์ (ให้เสียงโดย Jeremy Shada) กับเพื่อนสนิทและพี่ชายบุญธรรม เจค (ให้เสียงโดย John DiMaggio) หมาที่มีพลังพิเศษในการเปลี่ยนรูปรูปทรงและขนาดตามที่ใจนึกคิด ฟินน์และเจคอาศัยอยู่ที่เมืองแห่งการพยากรอู ในที่นั่นพวกเขามีปฏิสัมพันธ์กับตัวละครส่วนใหญ่มากมาย"
+    },
+    "information": {
+        "synonyms": {
+            "en_Latn": null,
+            "ar_001": null,
+            "id_ID": null,
+            "en_US": [
+                "Adventure Time with Finn and Jake",
+                "Adventure Time: Distant Lands"
+            ],
+            "ja_JP": null,
+            "de_DE": null,
+            "ko_KR": null,
+            "fr_FR": null,
+            "pt_PT": null,
+            "ru_RU": null,
+            "es_ES": [
+                "Hora de Aventuras latinoamerica",
+                "Hora de Aventuras con Finn y Jake"
+            ],
+            "zh_Hans": null,
+            "zh_Hant": null,
+            "vi_VN": null
+        },
+        "type": {
+            "en_US": "TV",
+            "id_ID": "Serial TV"
+        },
+        "status": {
+            "en_US": "Aired",
+            "id_ID": "Ditayangkan"
+        },
+        "serialGenre": {
+            "en_US": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Fantasy",
+                "Science fiction"
+            ],
+            "id_ID": [
+                "Aksi",
+                "Petualangan",
+                "Komedi",
+                "Fantasi",
+                "Fiksi ilmiah"
+            ]
+        },
+        "serialTags": {
+            "en_US": [
+                "Childern",
+                "Family",
+                "Surreal comedy",
+                "Coming of age",
+                "Friendship",
+                "Vampire",
+                "Post-Apocalypse",
+                "Anthromorphoism",
+                "Anime Influenced"
+            ],
+            "id_ID": [
+                "Anak-anak",
+                "Keluarga",
+                "Komedi surealis",
+                "Masa yang akan datang",
+                "Persahabatan",
+                "Vampir",
+                "Pasca Apokalips",
+                "Antromorfoisme",
+                "Dipengaruhi oleh Anime"
+            ]
+        },
+        "releaseSeason": {
+            "en_US": "Spring",
+            "id_ID": "Semi",
+            "ja_JP": "春",
+            "ko_KR": "봄",
+            "zh_Hans": "春天",
+            "zh_Hant": "春天"
+        },
+        "releaseYear": 2010,
+        "episode": 26,
+        "releaseDate": "2010-04-05",
+        "endDate": "2010-09-27",
+        "duration": 11,
+        "totalDuration": 286,
+        "studio": [
+            "Frederator Studios",
+            "Cartoon Network Studios"
+        ],
+        "rating": "PG7+",
+        "isNsfw": false,
+        "adaptation": {
+            "en_US": "Original",
+            "id_ID": "Orisinal"
+        },
+        "country": {
+            "en_US": "United States",
+            "id_ID": "Amerika Serikat"
+        },
+        "officialWebsite": "http://www.cartoonnetwork.com/video/adventuretime/",
+        "promotionalVideos": [
+            "https://www.youtube.com/watch?v=pp6CK6f80rs"
+        ],
+        "producers": [
+            "Cartoon Network"
+        ]
+    },
+    "scores": {
+        "aniDB": {
+            "id": null,
+            "score": null
+        },
+        "AniList": {
+            "id": null,
+            "score": null
+        },
+        "AnimePlanet": {
+            "url": null,
+            "id": null,
+            "score": null
+        },
+        "ANN": {
+            "id": null,
+            "score": null
+        },
+        "aniSearch": {
+            "url": null,
+            "id": null,
+            "score": null
+        },
+        "Annict": {
+            "id": null,
+            "score": null
+        },
+        "IMDb": {
+            "code": "tt1305826",
+            "score": 8.6
+        },
+        "KinoPoisk": {
+            "id": 602284,
+            "score": 8.265
+        },
+        "Kitsu": {
+            "slug": "adventure-time-1",
+            "id": 13760,
+            "score": 82.41
+        },
+        "LiveChart": {
+            "id": null,
+            "score": null
+        },
+        "MyAnimeList": {
+            "id": null,
+            "score": null
+        },
+        "MyShows": {
+            "id": 5713,
+            "score": 4.44
+        },
+        "Nautiljon": {
+            "url": null,
+            "score": null
+        },
+        "Notify": {
+            "base64": null,
+            "score": null
+        },
+        "OtakOtaku": {
+            "id": null,
+            "score": null
+        },
+        "Shikimori": {
+            "id": null,
+            "score": null
+        },
+        "SIMKL": {
+            "id": 19625,
+            "isAnime": false,
+            "score": 8.6
+        },
+        "TMDB": {
+            "url": "https://www.themoviedb.org/tv/15260-adventure-time",
+            "id": 15260,
+            "score": 79
+        },
+        "Trakt": {
+            "url": "https://trakt.tv/shows/adventure-time",
+            "id": 15195,
+            "score": 87
+        },
+        "TVTime": {
+            "id": 152831,
+            "score": 8.6
+        }
+    },
+    "updatedDate": "2020-08-27T21:52:24+07:00",
+    "streamLinks": {
+        "Abematv": null,
+        "AdultSwim": null,
+        "AISPlay": null,
+        "All4": null,
+        "AniMe": null,
+        "AnimeDigitalNetwork": null,
+        "AnimeLab": null,
+        "AnimeLog": null,
+        "AnimeOnDemand": null,
+        "AnimePlanet": null,
+        "animeteleto": null,
+        "AniOne": null,
+        "ANIPLUS": null,
+        "AniPlusAsia": null,
+        "AsianCrush": null,
+        "BahamutAnimeCrazy": null,
+        "BandaiChannel": null,
+        "BandaiSpirits": null,
+        "bilibili": null,
+        "Coalise": null,
+        "ComicFestaAnimeZone": null,
+        "ConTV": null,
+        "Coolmic": null,
+        "Crunchyroll": null,
+        "dAnimeStore": null,
+        "DMM": null,
+        "FOD": null,
+        "Funimation": null,
+        "Genflix": null,
+        "GundamInfo": null,
+        "Gyao": null,
+        "HBOGo": "https://hbogoasia.id/#series/024199X0",
+        "HIDIVE": null,
+        "Hulu": null,
+        "iflix": null,
+        "iQIYI": null,
+        "JapaneseAnimatedFilmClassic": null,
+        "KinoPoisk": "https://hd.kinopoisk.ru/film/4681d3d1253d25b3b10110ea9ccc4532",
+        "Mangas": null,
+        "MBSDougaizm": null,
+        "MidnightPulp": null,
+        "MuseAsia": {
+            "en_001": null,
+            "vi_VN": null,
+            "ms_MY": null,
+            "th_TH": null,
+            "zh_Hant_HK": null,
+            "zh_Hant_TW": null
+        },
+        "Netflix": "https://www.netflix.com/title/81188463",
+        "NicoNico": null,
+        "PrimeVideo": "https://www.amazon.co.jp/gp/video/detail/B082YKLR4G",
+        "RetroCrush": null,
+        "SelectaVision": null,
+        "Sushiroll": null,
+        "Telasa": null,
+        "TencentVideo": null,
+        "TVNOW": null,
+        "Vimeo": null,
+        "VIZ": null,
+        "VRV": null,
+        "VVVVID": null,
+        "Wakanim": {
+            "fr": null,
+            "sc": null,
+            "de": null,
+            "ru": null
+        },
+        "Watcha": "https://play.watcha.net/watch/tRwx9QP",
+        "WeTV": null,
+        "YamatoAnimation": null,
+        "YouTube": {
+            "link": null,
+            "isChannel": null
+        }
+    },
+    "signature": {
+        "name": "Natsu Tadama",
+        "username": "@nattadasu",
+        "discordId": 384089845527478300,
+        "submissionDateTime": "2020-08-27T22:04:24+07:00",
+        "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
+    }
+}
