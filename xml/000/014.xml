@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
+<ryuuganime id="000013" version="1.3-r">
     <title>
         <native>Adventure Time</native>
         <en_Latn>Adventure Time</en_Latn>
@@ -306,4 +306,4 @@
         <submissionDateTime>2020-08-27T22:04:24+07:00</submissionDateTime>
         <sign>RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=</sign>
     </signature>
-</root>
+</ryuuganime>

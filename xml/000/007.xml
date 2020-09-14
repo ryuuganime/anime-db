@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000007" version="1.2-r">
+<ryuuganime id="000007" version="1.3-r">
     <title>
         <native>イエスタデイをうたって</native>
         <en_Latn>Yesterday wo Utatte</en_Latn>
@@ -194,6 +194,7 @@
         </Shikimori>
         <SIMKL>
             <id>1073749</id>
+            <isAnime>true</isAnime>
             <score>7.4</score>
         </SIMKL>
         <TMDB>

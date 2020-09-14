@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000009" version="1.2-r">
+<ryuuganime id="000009" version="1.3-r">
     <title>
         <native>モンスター娘のいる日常</native>
         <en_Latn>Monster Musume no Iru Nichijou</en_Latn>
@@ -211,6 +211,7 @@ Unfortunately for him and the ladies, sexual interactions between species is for
         </Shikimori>
         <SIMKL>
             <id>479722</id>
+            <isAnime>true</isAnime>
             <score>7.3</score>
         </SIMKL>
         <TMDB>

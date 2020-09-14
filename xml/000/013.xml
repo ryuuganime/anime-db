@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000013" version="1.2-r">
+<ryuuganime id="000013" version="1.3-r">
     <title>
         <native>ソマリと森の神様</native>
         <en_Latn>Somali to Mori no Kamisama</en_Latn>
@@ -233,6 +233,7 @@ This is a record of the pair, one a member of a ruined race, the other a watchma
         </Shikimori>
         <SIMKL>
             <id>1062567</id>
+            <isAnime>true</isAnime>
             <score>7.9</score>
         </SIMKL>
         <TMDB>

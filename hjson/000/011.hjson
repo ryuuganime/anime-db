@@ -3,7 +3,7 @@
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | |   // is an important notes   |
 |                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.2-r-------- | | [boo] is a boolean markup    | |                              |
+| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
 |                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
 | Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
 |   non-developer to contribute | | [arr] is an array value. It  | |                              |
@@ -665,6 +665,7 @@ A cambio del silencio de Azumaya, Azumaya dice: "¡Por favor, déjame abrazarte.
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
       id: 792735
+      isAnime: true
       score: 8.4
     }
 

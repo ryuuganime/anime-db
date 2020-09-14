@@ -1,317 +1,142 @@
----
-"$schema": "../../schemas/entry.json"
+$schema: ../../schemas/entry.json
 title:
-    native: 富豪刑事 Balance:UNLIMITED
+    native: '富豪刑事 Balance:UNLIMITED'
     en_Latn: 'Fugou Keiji: Balance:Unlimited'
     ar_001: 'المحقق المليونير - الرصيد: غير محدود'
     he_IL: 'בלש מיליונר - איזון: ללא הגבלה'
-    id_ID: Detektif Milyuner - Balance:UNLIMITED
+    id_ID: 'Detektif Milyuner - Balance:UNLIMITED'
     en_US: 'The Millionaire Detective – Balance: UNLIMITED'
-    ja_JP: 富豪刑事 Balance:UNLIMITED
-    de_DE: 
-    ko_KR: 부호형사 Balance:UNLIMITED
-    fr_FR: 
-    pt_PT: 
+    ja_JP: '富豪刑事 Balance:UNLIMITED'
+    de_DE: null
+    ko_KR: '부호형사 Balance:UNLIMITED'
+    fr_FR: null
+    pt_PT: null
     ru_RU: 'Богатый детектив. Баланс: Неограничен'
-    es_ES: El Detective Millonario - Equilibrio:Ilimitado
-    zh_Hans: 富豪刑事 Balance:UNLIMITED
-    zh_Hant: 富豪刑事 Balance:UNLIMITED
-    vi_VN: Thám Tử Triệu Phú
-backdrop: https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg
-visualKey: https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg
+    es_ES: 'El Detective Millonario - Equilibrio:Ilimitado'
+    zh_Hans: '富豪刑事 Balance:UNLIMITED'
+    zh_Hant: '富豪刑事 Balance:UNLIMITED'
+    vi_VN: 'Thám Tử Triệu Phú'
+backdrop: 'https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg'
+visualKey: 'https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg'
 synopsis:
-    ar_001: 'قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير
-        فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.'
-    he_IL: 
-    id_ID: Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan
-        ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan
-        masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke
-        bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai
-        kasus misteri.
-    en_US: The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional
-        ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep
-        problematic officers away from others. There, Kanbe becomes partners with Katou.
-    ja_JP: ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。
-        そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。
-        常識を超えた捜査が今、始まる――！
-    de_DE: |-
-        Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.
-        Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können.
-    ko_KR: |-
-        부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.
-        그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.
-        대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.
-        상식을 뛰어넘는 수사가 지금, 시작된다-
-    fr_FR: Lorsque qu’une personne du Département de la Police métropolitaine de Tokyo
-        pose problème, elle est transférée dans le « Nouveau Quartier Général Anti-Criminalité
-        ». C’est là qu’est envoyé Daisuke, le fils riche et exceptionnel de l’illustre
-        famille Kambe. Contre toute attente, il fera équipe avec le bienveillant Haru
-        Kato. Daisuke, lui, considère que la vie a un prix, alors que Kato pense au contraire
-        qu’elle est inestimable. Deux personnes que tout oppose, unies face aux nombreux
-        mystères et incidents qui se dressent devant eux... C’est le début d’enquêtes
-        défiant toute logique !
-    pt_PT: A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das
-        famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção
-        ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana
-        de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar
-        crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais
-        em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo
-        que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas
-        é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas,
-        testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente
-        insolúveis!
-    ru_RU: "«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ
-        Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить,
-        что финансы он тратит в том числе и на ведение расследований. Вот только не всех
-        в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно
-        сплавляют в Главное управление по борьбе с современными преступлениями, где рано
-        или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ
-        назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые
-        вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно
-        расследуя запутанные криминальные загадки."
-    es_ES: La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un
-        detective que se encarga de resolver casos de la manera más poco convencional.
-        Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará
-        en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”,
-        una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos
-        de los demás. Allí, Kanbe se hace compañero de Katou.
-    zh_Hans: |-
-        本作故事主要讲述刑警神户大助，利用大富豪父亲的巨大资产解决各种案件。
-        拥有不可计数资产的神户家大少爷大助即将赴任的地方，是仅会接收警视厅中的问题份子的「现代犯罪对策本部准备室」，通称「现对本部」。
-        大助在那里与重感情的男人加藤春组成了搭档。面对用钱衡量一切的大助，加藤以「世上并非只有金钱」加以反驳。各种各样的事件和谜团，阻挡在这对立的2人面前。超越常识的搜查现在开始！
-    zh_Hant: |-
-        本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。
-        擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。
-        大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！
-    vi_VN: Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài
-        sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm
-        hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou,
-        người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài
-        tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng
-        hợp tác giải quyết các vụ án.
+    ar_001: 'قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.'
+    he_IL: null
+    id_ID: 'Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.'
+    en_US: 'The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.'
+    ja_JP: 'ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。 そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。 常識を超えた捜査が今、始まる――！'
+    de_DE: "Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.\nDort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können."
+    ko_KR: "부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.\n그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.\n대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.\n상식을 뛰어넘는 수사가 지금, 시작된다-"
+    fr_FR: 'Lorsque qu’une personne du Département de la Police métropolitaine de Tokyo pose problème, elle est transférée dans le « Nouveau Quartier Général Anti-Criminalité ». C’est là qu’est envoyé Daisuke, le fils riche et exceptionnel de l’illustre famille Kambe. Contre toute attente, il fera équipe avec le bienveillant Haru Kato. Daisuke, lui, considère que la vie a un prix, alors que Kato pense au contraire qu’elle est inestimable. Deux personnes que tout oppose, unies face aux nombreux mystères et incidents qui se dressent devant eux... C’est le début d’enquêtes défiant toute logique !'
+    pt_PT: 'A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas, testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente insolúveis!'
+    ru_RU: '«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить, что финансы он тратит в том числе и на ведение расследований. Вот только не всех в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно сплавляют в Главное управление по борьбе с современными преступлениями, где рано или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно расследуя запутанные криминальные загадки.'
+    es_ES: 'La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos de los demás. Allí, Kanbe se hace compañero de Katou.'
+    zh_Hans: "本作故事主要讲述刑警神户大助，利用大富豪父亲的巨大资产解决各种案件。\n拥有不可计数资产的神户家大少爷大助即将赴任的地方，是仅会接收警视厅中的问题份子的「现代犯罪对策本部准备室」，通称「现对本部」。\n大助在那里与重感情的男人加藤春组成了搭档。面对用钱衡量一切的大助，加藤以「世上并非只有金钱」加以反驳。各种各样的事件和谜团，阻挡在这对立的2人面前。超越常识的搜查现在开始！"
+    zh_Hant: "本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。\n擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。\n大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！"
+    vi_VN: 'Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou, người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng hợp tác giải quyết các vụ án.'
 information:
-    synonyms:
-        en_Latn:
-        - 'Fugō Keiji Balance: Unlimited'
-        - FugouKeijiBUL
-        ar_001: 
-        hu_HU: 
-        he_IL: 
-        id_ID: 
-        en_US:
-        - Wealthy Detective
-        ja_JP: 
-        de_DE: 
-        ko_KR: 
-        fr_FR: 
-        pt_PT: 
-        ru_RU: 
-        es_ES: 
-        zh_Hans: 
-        zh_Hant: 
-        vi_VN: 
-    type:
-        en_US: TV
-        id_ID: Serial TV
-    status:
-        en_US: Airing
-        id_ID: Mengudara
-    serialGenre:
-        en_US:
-        - Drama
-        - Mystery
-        - Comedy
-        - Crime
-        id_ID:
-        - Drama
-        - Misteri
-        - Komedi
-        - Kriminalitas
-    serialTags:
-        en_US:
-        - Detectives
-        - Police
-        - Billionaire
-        - Investigation
-        - Male Protagonist
-        id_ID:
-        - Detektif
-        - Polisi
-        - Milyuner
-        - Investigasi
-        - Tokoh Utama Laki-Laki
-    releaseSeason:
-        en_US: Spring
-        id_ID: Semi
-        ja_JP: 春
-        ko_KR: 봄
-        zh_Hans: 春天
-        zh_Hant: 春天
+    synonyms: {en_Latn: ['Fugō Keiji Balance: Unlimited', FugouKeijiBUL], ar_001: null, hu_HU: null, he_IL: null, id_ID: null, en_US: ['Wealthy Detective'], ja_JP: null, de_DE: null, ko_KR: null, fr_FR: null, pt_PT: null, ru_RU: null, es_ES: null, zh_Hans: null, zh_Hant: null, vi_VN: null}
+    type: {en_US: TV, id_ID: 'Serial TV'}
+    status: {en_US: Airing, id_ID: Mengudara}
+    serialGenre: {en_US: [Drama, Mystery, Comedy, Crime], id_ID: [Drama, Misteri, Komedi, Kriminalitas]}
+    serialTags: {en_US: [Detectives, Police, Billionaire, Investigation, 'Male Protagonist'], id_ID: [Detektif, Polisi, Milyuner, Investigasi, 'Tokoh Utama Laki-Laki']}
+    releaseSeason: {en_US: Spring, id_ID: Semi, ja_JP: 春, ko_KR: 봄, zh_Hans: 春天, zh_Hant: 春天}
     releaseYear: 2020
     episode: 11
     releaseDate: '2020-04-10'
-    endDate: 
+    endDate: null
     duration: 23
-    totalDuration: 
+    totalDuration: null
     studio: CloverWorks
     rating: PG13+
     isNsfw: false
-    adaptation:
-        en_US: Novel
-        id_ID: Novel
-    country:
-        en_US: Japan
-        id_ID: Jepang
-    officialWebsite: https://www.fugoukeiji-bul.com/
-    promotionalVideos:
-    - https://www.youtube.com/watch?v=Z2GGJHXtOJ8
-    producers:
-    - Aniplex
-    - Dentsu
-    - Animax
-    - Movic
-    - Fuji TV
-    - Sonilude
+    adaptation: {en_US: Novel, id_ID: Novel}
+    country: {en_US: Japan, id_ID: Jepang}
+    officialWebsite: 'https://www.fugoukeiji-bul.com/'
+    promotionalVideos: ['https://www.youtube.com/watch?v=Z2GGJHXtOJ8']
+    producers: [Aniplex, Dentsu, Animax, Movic, 'Fuji TV', Sonilude]
 scores:
-    aniDB:
-        id: 15364
-        score: 6.07
-    AniList:
-        id: 114888
-        score: 73
-    AnimePlanet:
-        url: https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited
-        id: 14492
-        score: 4.207
-    ANN:
-        id: 22980
-        score: 
-    aniSearch:
-        url: https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited
-        id: 14906
-        score: 71
-    Annict:
-        id: 7271
-        score: 86.67
-    IMDb:
-        code: tt12117218
-        score: 8.1
-    KinoPoisk:
-        id: 1368169
-        score: 
-    Kitsu:
-        slug: fugou-keiji-balance-unlimited
-        id: 43056
-        score: 80.56
-    LiveChart:
-        id: 9777
-        score: 8.27
-    MyAnimeList:
-        id: 41120
-        score: 7.51
-    MyShows:
-        id: 66109
-        score: 4.44
-    Nautiljon:
-        url: https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html
-        score: 8.97
-    Notify:
-        base64: TM1LPA8Wg
-        score: 8.32
-    OtakOtaku:
-        id: 1724
-        score: 9
-    Shikimori:
-        id: 41120
-        score: 7.51
-    SIMKL:
-        id: 1247789
-        score: 8.6
-    TMDB:
-        url: https://www.themoviedb.org/tv/98491-balance-unlimited
-        id: 98491
-        score: 80
-    Trakt:
-        url: https://trakt.tv/shows/157673
-        id: 157673
-        score: 73
-    TVTime:
-        id: 376211
-        score: 9.76
+    aniDB: {id: 15364, score: 6.07}
+    AniList: {id: 114888, score: 73}
+    AnimePlanet: {url: 'https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited', id: 14492, score: 4.207}
+    ANN: {id: 22980, score: null}
+    aniSearch: {url: 'https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited', id: 14906, score: 71}
+    Annict: {id: 7271, score: 86.67}
+    IMDb: {code: tt12117218, score: 8.1}
+    KinoPoisk: {id: 1368169, score: null}
+    Kitsu: {slug: fugou-keiji-balance-unlimited, id: 43056, score: 80.56}
+    LiveChart: {id: 9777, score: 8.27}
+    MyAnimeList: {id: 41120, score: 7.51}
+    MyShows: {id: 66109, score: 4.44}
+    Nautiljon: {url: 'https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html', score: 8.97}
+    Notify: {base64: TM1LPA8Wg, score: 8.32}
+    OtakOtaku: {id: 1724, score: 9}
+    Shikimori: {id: 41120, score: 7.51}
+    SIMKL: {id: 1247789, isAnime: true, score: 8.6}
+    TMDB: {url: 'https://www.themoviedb.org/tv/98491-balance-unlimited', id: 98491, score: 80}
+    Trakt: {url: 'https://trakt.tv/shows/157673', id: 157673, score: 73}
+    TVTime: {id: 376211, score: 9.76}
 updatedDate: '2020-05-05T16:54:42+07:00'
 streamLinks:
-    Abematv: 
-    AdultSwim: 
-    AISPlay: 
-    All4: 
-    AniMe: 
-    AnimeDigitalNetwork: 
-    AnimeLab: https://www.animelab.com/shows/balance-unlimited
-    AnimeLog: 
-    AnimeOnDemand: 
-    AnimePlanet: 
-    animeteleto: 
-    AniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz
-    ANIPLUS: 
-    AniPlusAsia: 
-    AsianCrush: 
-    BahamutAnimeCrazy: 
-    BandaiChannel: 
-    BandaiSpirits: 
-    bilibili: https://www.bilibili.com/bangumi/media/md28228473
-    Coalise: 
-    ComicFestaAnimeZone: 
-    ConTV: 
-    Coolmic: 
-    Crunchyroll: 
-    dAnimeStore: 
-    DMM: 
-    FOD: 
-    Funimation: https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/
-    Genflix: 
-    GundamInfo: 
-    Gyao: 
-    HIDIVE: 
-    Hulu: 
-    iflix: 
-    iQIYI: 
-    JapaneseAnimatedFilmClassic: 
-    Mangas: 
-    MBSDougaizm: 
-    MidnightPulp: 
-    MuseAsia:
-        en_001: 
-        vi_VN: 
-        ms_MY: 
-        th_TH: 
-        zh_Hant_HK: 
-        zh_Hant_TW: 
-    Netflix: https://www.netflix.com/jp-en/title/81039113
-    NicoNico: 
-    PrimeVideo: 
-    RetroCrush: 
-    SelectaVision: 
-    Sushiroll: 
-    Telasa: 
-    TencentVideo: 
-    TVNOW: 
-    Vimeo: 
-    VIZ: 
-    VRV: 
-    VVVVID: 
-    Wakanim:
-        fr: https://www.wakanim.tv/fr/v2/catalogue/show/842
-        sc: https://www.wakanim.tv/sc/v2/catalogue/show/844
-        de: https://www.wakanim.tv/de/v2/catalogue/show/843
-        ru: https://www.wakanim.tv/ru/v2/catalogue/show/845
-    WeTV: 
-    YamatoAnimation: 
-    YouTube:
-        link: 
-        isChannel: false
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: 'https://www.animelab.com/shows/balance-unlimited'
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: 'https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz'
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: 'https://www.bilibili.com/bangumi/media/md28228473'
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: null
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: 'https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/'
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia: {en_001: null, vi_VN: null, ms_MY: null, th_TH: null, zh_Hant_HK: null, zh_Hant_TW: null}
+    Netflix: 'https://www.netflix.com/jp-en/title/81039113'
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: null
+    VVVVID: null
+    Wakanim: {fr: 'https://www.wakanim.tv/fr/v2/catalogue/show/842', sc: 'https://www.wakanim.tv/sc/v2/catalogue/show/844', de: 'https://www.wakanim.tv/de/v2/catalogue/show/843', ru: 'https://www.wakanim.tv/ru/v2/catalogue/show/845'}
+    WeTV: null
+    YamatoAnimation: null
+    YouTube: {link: null, isChannel: false}
 signature:
-    name: Natsu Tadama
-    username: "@nattadasu"
+    name: 'Natsu Tadama'
+    username: '@nattadasu'
     discordId: 384089845527478300
     submissionDateTime: '2020-05-05T17:26:00+07:00'
     sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=

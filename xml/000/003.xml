@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000003" version="1.2-r">
+<ryuuganime id="000003" version="1.3-r">
     <title>
         <native>僕のヒーローアカデミア</native>
         <en_Latn>Boku no Hero Academia</en_Latn>
@@ -224,6 +224,7 @@ Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seor
         </Shikimori>
         <SIMKL>
             <id>532942</id>
+            <isAnime>true</isAnime>
             <score>8.5</score>
         </SIMKL>
         <TMDB>

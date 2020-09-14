@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000004" version="1.2-r">
+<ryuuganime id="000004" version="1.3-r">
     <title>
         <native>かぐや様は告らせたい？～天才たちの恋愛頭脳戦～</native>
         <en_Latn>Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen</en_Latn>
@@ -222,6 +222,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
         </Shikimori>
         <SIMKL>
             <id>1191669</id>
+            <isAnime>true</isAnime>
             <score>8.8</score>
         </SIMKL>
         <TMDB>

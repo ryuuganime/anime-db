@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ryuuganime id="000011" version="1.2-r">
+<ryuuganime id="000011" version="1.3-r">
     <title>
         <native>抱かれたい男1位に脅されています。</native>
         <en_Latn>Dakaretai Otoko 1-i ni Odosarete Imasu.</en_Latn>
@@ -236,6 +236,7 @@ A cambio del silencio de Azumaya, Azumaya dice: "¡Por favor, déjame abrazarte.
         </Shikimori>
         <SIMKL>
             <id>792735</id>
+            <isAnime>true</isAnime>
             <score>8.4</score>
         </SIMKL>
         <TMDB>
