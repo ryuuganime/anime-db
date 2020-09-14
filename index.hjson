@@ -322,6 +322,27 @@
             yaml: /yaml/000/014.yaml
         }
     }
+    {
+        myAnimeList: null
+        kitsu: null
+        aniList: null
+        aniDb: null
+        notifyMoe: null
+        title:
+        {
+            en_Latn: "The Amazing World of Gumball"
+            en_US: "The Amazing World of Gumball"
+            native: "The Amazing World of Gumball"
+        }
+        ryuuganime: 15
+        path:
+        {
+            json: /json/000/015.json
+            hjson: /hjson/000/015.json
+            xml: /xml/000/015.xml
+            yaml: /yaml/000/015.yaml
+        }
+    }
     //Copy the template above this comment line.
     //Salin templat di atas komentar ini.
 ]
