@@ -1,0 +1,143 @@
+$schema: 'https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json'
+title:
+    native: 'The Amazing World of Gumball'
+    en_Latn: 'The Amazing World of Gumball'
+    ar_001: 'عالم غامبول المدهش'
+    id_ID: 'Dunia Gumball yang Menakjubkan'
+    en_US: 'The Amazing World of Gumball'
+    ja_JP: おかしなガムボール
+    de_DE: 'Die fantastische Welt von Gumball'
+    ko_KR: '검볼 시즌'
+    fr_FR: 'Le Monde incroyable de Gumball'
+    pt_PT: 'O Incrível Mundo de Gumball'
+    ru_RU: 'Удивительный мир Гамбола'
+    es_ES: 'El Asombroso Mundo de Gumball'
+    zh_Hans: 阿甘妙世界
+    zh_Hant: 阿甘妙世界
+    vi_VN: 'Thế giới kỳ diệu của Gumball'
+    it_IT: 'Lo straordinario mondo di Gumball'
+backdrop: 'https://artworks.thetvdb.com/banners/fanart/original/248482-1.jpg'
+visualKey: 'https://artworks.thetvdb.com/banners/posters/248482-2.jpg'
+synopsis:
+    ar_001: 'تدور أحداث المسلسل حول حياة قطة غامبول    واترسون البالغة من العمر 12 عامًا والتي التحقت بالمدرسة الإعدادية في إلمور. برفقة حيوانه الأليف ، وشقيقه بالتبني ، وأفضل صديق له داروين واترسون ، كثيرًا ما يجد نفسه متورطًا في العديد من الخدع في جميع أنحاء المدينة ، والتي يتفاعل خلالها مع العديد من أفراد الأسرة: أنيس ، وريتشارد ، ونيكول واترسون ، وغيرهم من المواطنين المختلفين.'
+    id_ID: 'Serial ini berkisah tentang kehidupan Gumball Watterson, seekor manusia-kucing berusia 12 tahun yang sekolah di Sekolah Menengah Elmore. Ditemani oleh hewan peliharaan, saudara angkat, dan sahabatnya Darwin Watterson, ia sering terlibat dalam berbagai aktivitas merusak sekitaran kota, di mana ia berinteraksi dengan berbagai anggota keluarga: Anais, Richard, dan Nicole Watterson, dan berbagai warga lainnya.'
+    en_US: 'The series revolves around the life of Gumball Watterson, a 12-year old cat who attends middle school in Elmore. Accompanied by his pet, adoptive brother, and best friend Darwin Watterson, he frequently finds himself involved in various shenanigans around the city, during which he interacts with various family members: Anais, Richard, and Nicole Watterson, and other various citizens.'
+    ja_JP: 架空の町「エルモア・シティ」に住む12歳の青い猫ガムボールと親友で義理の弟、手足が生えた金魚のダーウィンを中心として、家族や学校、町中で起こる様々な騒動に巻き込まれるドタバタギャグ。
+    de_DE: 'Der zwölfjährige Gumball ist ein blauer Kater, der mit seiner Familie und Freunden in der Kleinstadt Elmore lebt. Sein Vater Richard ist ein großer, pinker Hase und verheiratet mit Nicole, einer blauen Katze. Während Richard das Haus und die Kinder hütet, sorgt Familienoberhaupt Nicole mit ihrer Arbeit in der Regenbogenfabrik für den Unterhalt. Wenn Gumball wieder mal nur Streiche und Chaos im Kopf hat, ist es seine clevere vierjährige Schwester Anais, ein pinkes Häschen, die meistens eine Katastrophe abwenden kann. Gumballs bester Freund ist Darwin, ein zehnjähriger Goldfisch, der ursprünglich als Haustier zur Familie kam. Seit ihm Beine gewachsen sind, geht er mit Gumball in die Schule und wird wie das dritte Kind der Familie behandelt.'
+    ko_KR: '이 시리즈는 엘모어의 중학교에 다니는 12 살 고양이 검볼 워터슨의 삶을 중심으로 전개됩니다. 그의 애완 동물, 입양 형제, 가장 친한 친구 인 다윈 워터슨과 함께 그는 자주 도시 주변의 다양한 헛소리에 연루되어 다양한 가족 구성원 인 아나이스, 리차드, 니콜 워터슨 및 기타 다양한 시민들과 교류합니다.'
+    fr_FR: 'La série suit le quotidien de Gumball Watterson, un chaton bleu de 12 ans et de nature optimiste, ainsi que son compagnon Darwin, un poisson rouge domestique qui est devenu son frère adoptif après que des bras et des jambes lui aient poussé. Gumball et sa famille vivent à Elmore, ville imaginaire qui semble appartenir au monde réel mais qui est habitée par toutes sortes de créatures animées.'
+    pt_PT: 'Conheça os Wattersons: Mãe, pai, Anais, Darwin e, claro, Gumball! Ele é um gato de doze anos de idade, com um talento para a desventura. É O incrível mundo de Gumball.'
+    ru_RU: 'Гамбол — двенадцатилетний котенок, постоянно попадающий в переделки. Но только он не учится на своих ошибках, снова и снова влипая в смешные и веселые неприятности.'
+    es_ES: 'Narra las divertidas aventuras de Gumball y su peculiar familia en el idílico pueblecito de Elmore. Un papá conejo rosa de 1,95 metros, una madre que se gana la vida vendiendo arcoiris, un gato azul muy torpe y una conejita con un cerebro superdotado componen la familia protagonista. No hay que olvidar a Darwin, un pez rojo que se convirtió en miembro del clan el día en que le crecieron piernas y pulmones. Así es el asombroso mundo de Gumball.'
+    zh_Hans: 阿甘是一位魅力十足、生性乐天的12岁男孩。他做事往往因过分热衷而变成捣蛋，不过他还是会继续保持乐观的想法。阿甘拥有搞怪的冒险精神，甚麽奇怪的东西都要试试看。无论阿甘的计划最终结果如何，他都能迅速恢复心情，只可惜他从错误中学懂的，就只有如何製造更多的麻烦！
+    zh_Hant: 阿甘是一位魅力十足、生性樂天的12歲男孩。他做事往往因過分熱衷而變成搗蛋，不過他還是會繼續保持樂觀的想法。阿甘擁有搞怪的冒險精神，甚麼奇怪的東西都要試試看。無論阿甘的計劃最終結果如何，他都能迅速恢復心情，只可惜他從錯誤中學懂的，就只有如何製造更多的麻煩！
+    vi_VN: 'Câu chuyện kể về cuộc sống xung quanh của một cậu bé mèo 12 tuổi tên là Gumball Watterson ở thị trấn Elmore. Bạn thân của cậu là chú cá vàng tên là Darwin Watterson, đồng thời là em trai nuôi của cậu. Xuyên suốt tập phim, chúng ta có thể gặp gỡ các nhân vật khác như: em gái Anais, cha Richard và mẹ Nicole cùng các nhân vật khác...'
+    it_IT: 'Gumball il gatto e il suo amico pesce rosso che cammina, Darwin, si trovano coinvolti in situazioni sempre più pazzesche, in questa avvincente serie animata di Cartoon Network.'
+information:
+    synonyms: {en_Latn: [Gumball], ar_001: null, id_ID: null, en_US: [Gumball], ja_JP: [ガムボール], de_DE: null, ko_KR: null, fr_FR: null, pt_PT: null, ru_RU: null, es_ES: ['El increíble mundo de Gumball'], zh_Hans: null, zh_Hant: null, vi_VN: null}
+    type: {en_US: TV, id_ID: 'Serial TV'}
+    status: {en_US: Aired, id_ID: Ditayangkan}
+    serialGenre: {en_US: [Adventure, Comedy, Fantasy, 'Slice of Life'], id_ID: [Petualangan, Komedi, Fantasi, 'Potongan Kehidupan']}
+    serialTags: {en_US: ['Absurd Humor', '2D Animation', '3D Animation', 'Animal Protagonist', 'Annoyed Neighbor', Anthropomorphism, Cats, Cheerleader, 'Child Protagonist', Children, 'Crude Humor', Dinosaur, Donut, 'Dysfunctional Family', Family, 'Family Relationships', 'Fantasy World', Friend, Friendship, Ghost, Goldfish, 'Grumpy Neighbor', 'Gumball Character', Laziness, 'Middle School', 'Mixed Media', Neighbor, Obesity, Puppet, Rabbit, Robot, Sarcasm, School, 'School Bully', 'School Principal', Slapstick, 'Store Clerk', Surrealism, Teacher, Troublemaker, 'Unrequited Love', 'Video Game Reference', 'Walking Fish', 'Working Mother'], id_ID: ['Humor Absurd', 'Animasi 2D', 'Animasi 3D', 'Protagonis Hewan', 'Tetangga yang Kesal', Antropomorphisme, Kucing, 'Pemandu sorak', 'Protagonis Anak', Anak-anak, 'Humor Vulgar', Dinosaurus, Donat, 'Keluarga Disfungsional', Keluarga, 'Hubungan keluarga', 'Dunia Fantasi', Teman, Persahabatan, Hantu, 'Ikan Mas', 'Tetangga Pemarah', 'Karakter Tolol', Kemalasan, 'Sekolah Menengah', 'Media Campuran', Tetangga, Obesitas, Wayang, Kelinci, Robot, Sarkasme, Sekolah, 'Bully Sekolah', 'Kepala sekolah', Dagelan, 'Petugas Toko', Surrealisme, Guru, Pengacau, 'Cinta Tak Terbalas', 'Referensi Video Game', 'Ibu Pekerja']}
+    releaseSeason: {en_US: Spring, id_ID: Semi, ja_JP: 春, ko_KR: 봄, zh_Hans: 春天, zh_Hant: 春天}
+    releaseYear: 2011
+    episode: 36
+    releaseDate: '2011-05-11'
+    endDate: '2012-03-13'
+    duration: 11
+    totalDuration: 396
+    studio: ['Cartoon Network', 'Boulder Media', 'Dandelion Studios', 'Studio Soi']
+    rating: PG7+
+    isNsfw: false
+    adaptation: {en_US: Original, id_ID: Orisinal}
+    country: {en_US: 'United States', id_ID: 'Amerika Serikat'}
+    officialWebsite: 'http://www.cartoonnetwork.com/tv_shows/gumball/index.html'
+    promotionalVideos: ['https://youtu.be/v27QcfOoonI']
+    producers: ['Cartoon Network', 'Turner Content Solutions', 'Warner Bros. Television', 'Warner Home Video', 'Art Beats', 'Barnet Council', 'Brighton & Hove Albion', CRCR, 'Chislehurst Caves, Kent', 'Creature Company', 'Fitzrovia Post', 'Getty Images', 'Haringey Council', 'Image Production House', 'Intimate Brands Inc.', 'Istock Photo', 'Mill Hill Nurseries', 'Mill Hill Film', Millbrook-Studio, 'Mont Blanc Pictures', 'National Aeronautics and Space Administration', Onsight, 'Passion Paris', Phoenix, 'Poor School', Portland, 'Proving Ground Studios', Salisbury, 'Studio 4°C', 'Studio Aka', Surface, 'Terracotta Media', 'The City of London', TurboSquid, 'Victoria House Press']
+scores:
+    aniDB: {id: null, score: null}
+    AniList: {id: null, score: null}
+    AnimePlanet: {url: null, id: null, score: null}
+    ANN: {id: null, score: null}
+    aniSearch: {url: null, id: null, score: null}
+    Annict: {id: null, score: null}
+    IMDb: {code: tt1942683, score: 8.2}
+    KinoPoisk: {id: 591964, score: 8.078}
+    Kitsu: {slug: null, id: null, score: null}
+    LiveChart: {id: null, score: null}
+    MyAnimeList: {id: null, score: null}
+    MyShows: {id: 20102, score: 4.48}
+    Nautiljon: {url: null, score: null}
+    Notify: {base64: null, score: null}
+    OtakOtaku: {id: null, score: null}
+    Shikimori: {id: null, score: null}
+    SIMKL: {id: 25801, isAnime: false, score: 8.2}
+    TMDB: {url: 'https://www.themoviedb.org/tv/37606-the-amazing-world-of-gumball', id: 37606, score: 82}
+    Trakt: {url: 'https://trakt.tv/shows/the-amazing-world-of-gumball', id: 37448, score: 85}
+    TVTime: {id: 248482, score: 8.32}
+updatedDate: '2020-09-14T19:13:51+07:00'
+streamLinks:
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: null
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: null
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: null
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: null
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia: {en_001: null, vi_VN: null, ms_MY: null, th_TH: null, zh_Hant_HK: null, zh_Hant_TW: null}
+    Netflix: null
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: null
+    VVVVID: null
+    Wakanim: {fr: null, sc: null, de: null, ru: null}
+    WeTV: null
+    YamatoAnimation: null
+    YouTube: {link: null, isChannel: false}
+signature:
+    name: 'Natsu Tadama'
+    username: nattadasu
+    discordId: 384089845527478300
+    submissionDateTime: '2020-09-14T19:20:15+07:00'
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+...

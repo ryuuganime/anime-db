@@ -303,6 +303,25 @@
             <yaml>/yaml/000/014.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList />
+        <kitsu />
+        <aniList />
+        <aniDb />
+        <notifyMoe />
+        <title>
+            <en_Latn>The Amazing World of Gumball</en_Latn>
+            <en_US>The Amazing World of Gumball</en_US>
+            <native>The Amazing World of Gumball</native>
+        </title>
+        <ryuuganime>15</ryuuganime>
+        <path>
+            <json>/json/000/015.json</json>
+            <hjson>/hjson/000/015.hjson</hjson>
+            <xml>/xml/000/015.xml</xml>
+            <yaml>/yaml/000/015.yaml</yaml>
+        </path>
+    </entry>
     <!--
         Copy the template above this comment.
         Salin templat di atas komentar ini.
