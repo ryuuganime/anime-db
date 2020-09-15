@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Database, v.3.1-r",
+    "title": "Ryuuganime JSON Schema for Anime Database, v.3.2-r",
     "description": "Anime JSON Entry Validator in JSON Schema of Ryuuganime.\nPerformance issues or else may occurs on this Schema while it's on Beta version.",
     "type": "object",
     "properties": {
@@ -1133,11 +1133,25 @@
                     "type": "object",
                     "properties": {
                         "en_US": {
-                            "type": "string",
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ],
                             "default": "Japan"
                         },
                         "id_ID": {
-                            "type": "string",
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "array"
+                                }
+                            ],
                             "default": "Jepang"
                         }
                     },
