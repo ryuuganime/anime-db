@@ -322,6 +322,25 @@
             <yaml>/yaml/000/015.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList>41558</myAnimeList>
+        <kitsu>43103</kitsu>
+        <aniList>117096</aniList>
+        <aniDb>15489</aniDb>
+        <notifyMoe>e-ciWnCZg</notifyMoe>
+        <title>
+            <en_Latn>Asatir fi Qadim Az-Zaman</en_Latn>
+            <en_US>Future Folktales</en_US>
+            <native>أساطير في قادم الزمان</native>
+        </title>
+        <ryuuganime>17</ryuuganime>
+        <path>
+            <json>/json/000/017.json</json>
+            <hjson>/hjson/000/017.hjson</hjson>
+            <xml>/xml/000/017.xml</xml>
+            <yaml>/yaml/000/017.yaml</yaml>
+        </path>
+    </entry>
     <!--
         Copy the template above this comment.
         Salin templat di atas komentar ini.

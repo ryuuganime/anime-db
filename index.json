@@ -283,5 +283,24 @@
             "xml": "/xml/000/015.xml",
             "yaml": "/yaml/000/015.yaml"
         }
+    },
+    {
+        "myAnimeList": 41558,
+        "kitsu": 43103,
+        "aniList": 117096,
+        "aniDb": 15489,
+        "notifyMoe": "e-ciWnCZg",
+        "title": {
+            "en_Latn": "Asatir fi Qadim Az-Zaman",
+            "en_US": "Future Folktales",
+            "native": "أساطير في قادم الزمان"
+        },
+        "ryuuganime": 17,
+        "path": {
+            "json": "/json/000/017.json",
+            "hjson": "/hjson/000/017.json",
+            "xml": "/xml/000/017.xml",
+            "yaml": "/yaml/000/017.yaml"
+        }
     }
 ]
