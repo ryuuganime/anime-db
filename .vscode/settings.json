@@ -102,5 +102,6 @@
     "discord.workspaceElapsedTime": true,
     "cSpell.ignoreWords": [
         "minlength"
-    ]
+    ],
+    "editor.tabCompletion": "on"
 }

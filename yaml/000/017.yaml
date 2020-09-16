@@ -1,0 +1,141 @@
+$schema: ../../schemas/entry.json
+title:
+    native: 'أساطير في قادم الزمان'
+    en_Latn: 'Asatir fi Qadim Az-Zaman'
+    ar_001: 'أساطير في قادم الزمان'
+    id_ID: 'Asatir: Dongeng Masa Depan'
+    en_US: 'Future Folktales'
+    ja_JP: 'アサティール 未来の昔ばなし'
+    de_DE: 'Future Folktales'
+    ko_KR: '아사티루 미래의 옛날 이야기'
+    fr_FR: null
+    pt_PT: 'Asatir: Mirai no Mukashi Banashi'
+    ru_RU: 'Народные сказки из будущего'
+    es_ES: 'Cuentos del futuro'
+    zh_Hans: 'Asateer 未来的民间故事'
+    zh_Hant: 'Asateer 未來的民間故事'
+    vi_VN: null
+backdrop: 'https://artworks.thetvdb.com/banners/series/376126/backgrounds/62060508.jpg'
+visualKey: 'https://image.tmdb.org/t/p/original/vz384nJTCv2hRsOI4quAs6ueIv1.jpg'
+synopsis:
+    ar_001: 'تدور أحداث المسلسل في المستقبل في المملكة العربية السعودية، حيث يقدم الحكايات التراثية السعودية ومن الجزيرة العربية التي تناقلها الناس منذ القدم والتي ترويها الجدة لأحفادها وقطعهم الآلي. مُقدّمة لهم النصائح وحِكَم الماضي في شكل أحداث ومحطات زمنية متنوعة.'
+    id_ID: 'Pada tahun 2050 Riyadh, seorang nenek bernama Asma membawa cucu kesayangannya dalam perjalanan fantasi ke masa lalu, memamerkan warisan dan sejarah Jazirah Arab melalui penceritaan kembali cerita rakyat yang paling dicintai di kawasan itu. Dengan bantuan kucing robot mereka, Anis, anak-anak belajar bahwa dilema modern mereka tidak sebanding dengan kata-kata bijak yang diturunkan dari generasi ke generasi melalui kisah-kisah nenek mereka yang menakjubkan.'
+    en_US: 'In 2050 Riyadh, a grandmother named Asma takes her cherished grandchildren on a whirlwind journey to the past, showcasing the heritage and history of the Arabian Peninsula through retellings of the region’s most beloved folktales. With the help of their robotic cat, Anis, the children learn that their modern-day dilemmas are no match for the words of wisdom passed from generation to generation through their grandmother’s fascinating stories.'
+    ja_JP: そう遠くない未来の話です。未来のリヤドに住んでいるマハと、弟のライアンとスルタンは姉弟仲良く楽しい日々を送っています。しかし革新的な未来とはいえ、姉弟は様々な困難に直面します。そんな彼女たちが頼りにしているのは、彼女たちのお婆さん。お婆さんはアラビア半島の昔話を語りながらいつも彼女たちを導いてくれるのでした。
+    de_DE: 'Die Geschichte spielt im Jahre 2050. Asmas Enkelkinder erleben Tag für Tag kleine Alltagsprobleme, die für sie groß erscheinen. Deshalb erzählt Asma ihnen dazu passende arabische Volksgeschichten, um ihnen geistig auf die Sprünge zu helfen. So bringt sie ihren Enkelkindern zum Beispiel bei, dass man seinen geliebten Menschen vertrauen sollte. Außerdem sollte man trotz der modernen Technik auf seine eigenen Fähigkeiten bauen, auch wenn diese beschränkt sein mögen.'
+    ko_KR: "아라비아반도에 전해지는 옛 이야기를 주인공 아스마 할머니가 세 손자에게 다정하게 이끌며 전해줍니다.\n가까운 미래의 리야드에 사는 소녀 마하와 동생 라이언과 술탄은 3남매로 사이 좋게 즐거운 나날을 보내고 있습니다.\n하지만 혁신적인 미래라고는 하지만 남매는 여러 가지 어려움을 겪게 됩니다.\n그런 그들이 의지하고 있는 것은 아스마 할머니.\n할머니는 아라비아반도의 옛이야기를 전해주면서 항상 그들을 이끌어 주었습니다."
+    fr_FR: "L'histoire se déroule à Riyad, en l'an 2050.\nOn y suit le quotidien d'Asmaa, une grand-mère qui, chaque jour, raconte une nouvelle histoire issue du folkore du Moyen-Orient, à ses trois petits-enfants."
+    pt_PT: 'A história da série se passa em Riyadh, no ano de 2050, e centra-se em uma avó chamada Asmaa, que conta histórias populares da Península Arábica a seus três netos.'
+    ru_RU: 'Действие аниме происходит в будущем, 2050 год, арабский город Рияд. Маха, Раян и Султан знают, что их бабушка Асма — самая умная и добрая на свете. Что бы ни произошло, она всегда поможет разрешить любую ситуацию. И у неё всегда найдётся интересная и захватывающая история о далёком прошлом, которую она с удовольствием им расскажет.'
+    es_ES: 'En 2050, en Riyadh, una abuela llamada Asma lleva a sus queridos nietos en un viaje relámpago al pasado, mostrando el patrimonio y la historia de la Península Arábiga a través de relatos de los cuentos populares más queridos de la región. Con la ayuda de su gato robótico, Anis, los niños aprenden que sus dilemas de hoy en día no se pueden comparar con las palabras de sabiduría que se transmiten de generación en generación a través de las fascinantes historias de su abuela.'
+    zh_Hans: 以2050年的沙特阿拉伯的首都利雅得为主要舞台，讲述了野沢雅子实验的老婆婆和三个孙子在阿拉伯半岛四处传播民间故事的故事。
+    zh_Hant: 以2050年的沙特阿拉伯的首都利雅得為主要舞台，講述了野沢雅子實驗的老婆婆和三個孫子在阿拉伯半島四處傳播民間故事的故事。
+    vi_VN: 'Vào năm 2050 tại Riyadh, Với những câu chuyện của Asma đã đưa những đứa cháu yêu quý của bà đến những thời kỳ huyền thoại nơi họ biết rằng những tình huống thời hiện đại không thể sánh được với những thử thách, khổ nạn và những lời nói khôn ngoan được truyền từ thế hệ này sang thế hệ khác qua những câu chuyện dân gian hấp dẫn của họ.'
+information:
+    synonyms: {en_Latn: ['Asatir: Mirai no Mukashi Banashi', 'Asatir: Mirai no Mukashibanashi', 'Asateer fe Qadem Alzaman'], ar_001: null, id_ID: null, en_US: ['Legends in the Old time', 'Legendary stories: From the old days', 'Future''s Folktales', 'Folktales of the Future'], ja_JP: ['あさてぃーる みらいのむかしばなし', 未来の昔ばなし], de_DE: null, ko_KR: null, fr_FR: null, pt_PT: null, ru_RU: null, es_ES: ['Asatir - Mirai no Mukashibanashi'], zh_Hans: null, zh_Hant: null, vi_VN: null}
+    type: {en_US: TV, id_ID: 'Serial TV'}
+    status: {en_US: Aired, id_ID: Ditayangkan}
+    serialGenre: {en_US: [Action, Comedy, Adventure, 'Science Fiction', Fantasy, History, 'Slice of Life', Mystery], id_ID: [Aksi, Komedi, Petualangan, 'Fiksi Ilmiah', Fantasi, Sejarah, 'Potongan Kehidupan', Misteri]}
+    serialTags: {en_US: [Family, Folktales, Folklore, Future, Kids, 'Ensemble Cast', Arab, Episodic, Desert, Cyberpunk, 'Classic Literature', Foreign, Robot, Android], id_ID: [Keluarga, Dongeng, 'Cerita Rakyat', 'Masa Depan', Anak-Anak, 'Peran Ansambel', Arab, Berepisode, 'Padang Pasir', Cyberpunk, 'Sastra Klasik', Asing, Robot, Android]}
+    releaseSeason: {en_US: Spring, id_ID: Semi, ja_JP: 春, ko_KR: 봄, zh_Hans: 春天, zh_Hant: 春天}
+    releaseYear: 2020
+    episode: 13
+    releaseDate: '2020-04-04'
+    endDate: '2020-06-27'
+    duration: 25
+    totalDuration: 325
+    studio: ['Toei Animation', 'Manga Productions']
+    rating: PG7+
+    isNsfw: false
+    adaptation: {en_US: Original, id_ID: Orisinal}
+    country: {en_US: ['Saudi Arabia', 'United Arab Emirates', Japan], id_ID: ['Saudi Arabia', 'United Arab Emirates', Japan]}
+    officialWebsite: 'https://c.myjcom.jp/jtele/p/J00000005030/index.html'
+    promotionalVideos: ['https://www.youtube.com/watch?v=wcQklA1wXRA']
+    producers: ['Sentai Filmworks', 'Middle East Broadcasting Company']
+scores:
+    aniDB: {id: 15489, score: 4.93}
+    AniList: {id: 117096, score: 46}
+    AnimePlanet: {url: 'https://www.anime-planet.com/anime/asatir-mirai-no-mukashibanashi', id: 14792, score: 2.16}
+    ANN: {id: 23156, score: null}
+    aniSearch: {url: 'https://www.anisearch.com/anime/15145,asatir-mirai-no-mukashibanashi', id: 15145, score: 54}
+    Annict: {id: 7418, score: 65.63}
+    IMDb: {code: tt11616778, score: 7.1}
+    KinoPoisk: {id: 1366043, score: null}
+    Kitsu: {slug: asatir-mirai-no-mukashibanashi, id: 43103, score: null}
+    LiveChart: {id: 9869, score: null}
+    MyAnimeList: {id: 41558, score: 5.9}
+    MyShows: {id: 66638, score: 4}
+    Nautiljon: {url: 'https://www.nautiljon.com/animes/asatir+-+mirai+no+mukashibanashi.html', score: 7.45}
+    Notify: {base64: e-ciWnCZg, score: 5.5}
+    OtakOtaku: {id: null, score: null}
+    Shikimori: {id: 41558, score: 5.9}
+    SIMKL: {id: 1324961, isAnime: true, score: 6}
+    TMDB: {url: 'https://www.themoviedb.org/tv/101261', id: 101261, score: 85}
+    Trakt: {url: 'https://trakt.tv/shows/future-folktales', id: 160066, score: 57}
+    TVTime: {id: 376126, score: 9.08}
+updatedDate: '2020-09-15T17:54:13+07:00'
+streamLinks:
+    Abematv: null
+    AdultSwim: null
+    AISPlay: null
+    All4: null
+    AniMe: null
+    AnimeDigitalNetwork: null
+    AnimeLab: null
+    AnimeLog: null
+    AnimeOnDemand: null
+    AnimePlanet: null
+    animeteleto: null
+    AniOne: null
+    ANIPLUS: null
+    AniPlusAsia: null
+    AsianCrush: null
+    BahamutAnimeCrazy: null
+    BandaiChannel: null
+    BandaiSpirits: null
+    bilibili: null
+    Coalise: null
+    ComicFestaAnimeZone: null
+    ConTV: null
+    Coolmic: null
+    Crunchyroll: null
+    dAnimeStore: null
+    DMM: null
+    FOD: null
+    Funimation: null
+    Genflix: null
+    GundamInfo: null
+    Gyao: null
+    HIDIVE: 'https://www.hidive.com/tv/future-folktales'
+    Hulu: null
+    iflix: null
+    iQIYI: null
+    JapaneseAnimatedFilmClassic: null
+    Mangas: null
+    MBSDougaizm: null
+    MidnightPulp: null
+    MuseAsia: {en_001: null, vi_VN: null, ms_MY: null, th_TH: null, zh_Hant_HK: null, zh_Hant_TW: null}
+    Netflix: null
+    NicoNico: null
+    PrimeVideo: null
+    RetroCrush: null
+    SelectaVision: null
+    Sushiroll: null
+    Telasa: null
+    TencentVideo: null
+    TVNOW: null
+    Vimeo: null
+    VIZ: null
+    VRV: 'https://vrv.co/series/G65PW42D6'
+    VVVVID: null
+    Wakanim: {fr: null, sc: null, de: null, ru: null}
+    WeTV: null
+    YamatoAnimation: null
+    YouTube: {link: null, isChannel: null}
+signature:
+    name: 'Natsu Tadama'
+    username: '@nattadasu'
+    discordId: 384089845527478300
+    submissionDateTime: '2020-09-15T17:54:58+07:00'
+    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+...
