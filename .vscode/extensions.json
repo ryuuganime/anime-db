@@ -3,13 +3,14 @@
         "streetsidesoftware.code-spell-checker",
         "laktak.hjson",
         "pkief.material-icon-theme",
-        "jasew.mediawiki",
+        "rowewilsonfrederiskholme.wikitext",
         "natqe.reload",
         "funkyremi.vscode-google-translate",
         "compulim.compulim-vscode-closetag",
         "formulahendry.auto-rename-tag",
         "redhat.vscode-yaml",
         "mollykannn.vscode-chinese-translator",
+        "EditorConfig.EditorConfig",
         //Basically, those are for Spelling Checker
         "streetsidesoftware.code-spell-checker-russian",
         "streetsidesoftware.code-spell-checker-spanish",
@@ -18,6 +19,7 @@
         "streetsidesoftware.code-spell-checker-portuguese-brazilian"
     ],
     "unwantedRecommendations": [
-        "jakeboone02.mediawiki"
+        "jakeboone02.mediawiki",
+        "jasew.mediawiki"
     ]
 }
