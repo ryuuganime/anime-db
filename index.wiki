@@ -2,24 +2,33 @@
 '''DISCLAIMER'''
 
 This wiki maybe loads slower than expected.
-<!--
-<nowiki>===Template for==</nowiki>
-<nowiki>===List Section==</nowiki>
-
+<!--------------------------------
+   <——LIST SECTION TEMPLATE——>   |
+                                 |
+---------------------------------|
+COPY THIS TEMPLATE BELOW, SCROLL |
+INTO LAST NUMBER OF CURRENT      |
+ENTRY ON LIST HEADER, AND PASTE  |
+IT ABOVE THE COMMENT.            |
+---------------------------------|
 <li>'''en_Latn Title'''
 ( [[json/000/000.json|json]] 
 | [[hjson/000/000.hjson|hjson]] 
 | [[yaml/000/000.yaml|yaml]]
 | [[xml/000/000.xml|xml]] )</li>
-
-<nowiki>=END OF TEMPLATE=</nowiki>
-
-<nowiki>======NOTES======</nowiki>
-*Change 000/000 based on the index
-*Change "en_Latn title" to romaji
-  title of index
-<nowiki>===END OF NOTES==</nowiki>
--->
+---------------------------------|
+                                 |
+      <——END OF TEMPLATE——>      |
+               ...               |
+           <——NOTES——>           |
+                                 |
+* Change 000/000 based on the    |
+  index                          |
+* Change "en_Latn title" to      |
+  romaji title of index          |
+                                 |
+        <——END OF NOTES——>       |
+--------------------------------->
 
 __TOC__
 
@@ -105,9 +114,7 @@ __TOC__
 <!--Place the recent index above this line-->
 <!--
 '''REMOVE THIS COMMENT AND NOWIKI TAG IF ID REACHED 100'''
-<nowiki>
-=== Group 101 - 200 ===
-</nowiki>--></ol>
+<nowiki>=== Group 101 - 200 ===</nowiki>--></ol>
 
 = Deprecated List (HTML) =
 * [[html/3D Kanojo_ Real Girl 2nd Season.html|3D Kanojo: Real Girl 2nd Season]]
