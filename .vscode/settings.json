@@ -1,4 +1,5 @@
 {
+    //SCHEMAS
     "json.schemas": [
         {
             "fileMatch": [
@@ -11,11 +12,36 @@
                 "./list.json"
             ],
             "url": "./schemas/list.json"
+        },
+        {
+            "fileMatch": [
+                "index.json"
+            ],
+            "url": "./schemas/list.json"
         }
     ],
     "yaml.schemas": {
-        "./schemas/entry.json": ["./yaml/*/*.yaml"]
+        "./schemas/entry.json": [
+            "./yaml/*/*.yaml"
+        ],
+        "./schemas/list.json": [
+            "index.hjson"
+        ]
     },
+    "json-yaml-schema-selector.additionalSchemas":[
+        {
+            "name": "Ryuuganime List Validator",
+            "description": "Ryuuganime List Validator",
+            "fileMatch": [
+                "index.yaml",
+                "index.json",
+                "index.hjson"
+            ],
+            "url": "./schemas/list.json"
+        }
+    ],
+
+    //DICTIONARY
     "cSpell.words": [
         "hant",
         "zh",
