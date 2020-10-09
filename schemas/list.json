@@ -3,7 +3,8 @@
     "title": "Ryuuganime JSON Schema for Anime Lists, v.0.1-b",
     "description": "Anime lists validator based on this schema file.",
     "type": "array",
-    "contains": {
+    "items": {
+        "type": "object",
         "properties": {
             "myAnimeList": {
                 "description": "Valid show ID from MyAnimeList",
