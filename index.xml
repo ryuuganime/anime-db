@@ -203,7 +203,7 @@
         <ryuuganime>9</ryuuganime>
         <path>
             <json>/json/000/009.json</json>
-            <hjson>/hjson/000/009.json</hjson>
+            <hjson>/hjson/000/009.hjson</hjson>
             <xml>/xml/000/009.xml</xml>
             <yaml>/yaml/000/009.yaml</yaml>
         </path>
@@ -241,7 +241,7 @@
         <ryuuganime>11</ryuuganime>
         <path>
             <json>/json/000/011.json</json>
-            <hjson>/hjson/000/011.json</hjson>
+            <hjson>/hjson/000/011.hjson</hjson>
             <xml>/xml/000/011.xml</xml>
             <yaml>/yaml/000/011.yaml</yaml>
         </path>
@@ -260,7 +260,7 @@
         <ryuuganime>12</ryuuganime>
         <path>
             <json>/json/000/012.json</json>
-            <hjson>/hjson/000/012.json</hjson>
+            <hjson>/hjson/000/012.hjson</hjson>
             <xml>/xml/000/012.xml</xml>
             <yaml>/yaml/000/012.yaml</yaml>
         </path>
@@ -279,7 +279,7 @@
         <ryuuganime>13</ryuuganime>
         <path>
             <json>/json/000/013.json</json>
-            <hjson>/hjson/000/013.json</hjson>
+            <hjson>/hjson/000/013.hjson</hjson>
             <xml>/xml/000/013.xml</xml>
             <yaml>/yaml/000/013.yaml</yaml>
         </path>
