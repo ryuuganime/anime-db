@@ -111,6 +111,11 @@ __TOC__
 | [[hjson/000/015.hjson|hjson]] 
 | [[yaml/000/015.yaml|yaml]]
 | [[xml/000/015.xml|xml]] )</li>
+<li>'''Kakushigoto'''
+( [[json/000/018.json|json]] 
+| [[hjson/000/018.hjson|hjson]] 
+| [[yaml/000/018.yaml|yaml]]
+| [[xml/000/018.xml|xml]] )</li>
 <!--Place the recent index above this line-->
 <!--
 '''REMOVE THIS COMMENT AND NOWIKI TAG IF ID REACHED 100'''

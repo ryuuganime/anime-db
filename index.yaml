@@ -1,3 +1,4 @@
+---
 -
     myAnimeList: 41120
     kitsu: 43056
@@ -142,4 +143,13 @@
     title: {en_Latn: 'Asatir fi Qadim Az-Zaman', en_US: 'Future Folktales', native: 'أساطير في قادم الزمان'}
     ryuuganime: 17
     path: {json: /json/000/017.json, hjson: /hjson/000/017.hjson, xml: /xml/000/017.xml, yaml: /yaml/000/017.yaml}
+-
+    myAnimeList: 40716
+    kitsu: 42722
+    aniList: 113311
+    aniDb: 15267
+    notifyMoe: ubyWhFmiR
+    title: {en_Latn: Kakushigoto, en_US: 'Hidden Things', native: かくしごと}
+    ryuuganime: 18
+    path: {json: /json/000/018.json, hjson: /hjson/000/018.hjson, xml: /xml/000/018.xml, yaml: /yaml/000/018.yaml}
 ...

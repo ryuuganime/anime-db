@@ -341,6 +341,25 @@
             <yaml>/yaml/000/017.yaml</yaml>
         </path>
     </entry>
+    <entry>
+        <myAnimeList>40716</myAnimeList>
+        <kitsu>426722</kitsu>
+        <aniList>113311</aniList>
+        <aniDb>15267</aniDb>
+        <notifyMoe>ubyWhFmiR</notifyMoe>
+        <title>
+            <en_Latn>Kakushigoto</en_Latn>
+            <en_US>Hidden Things</en_US>
+            <native>かくしごと</native>
+        </title>
+        <ryuuganime>18</ryuuganime>
+        <path>
+            <json>/json/000/018.json</json>
+            <hjson>/hjson/000/018.hjson</hjson>
+            <xml>/xml/000/018.xml</xml>
+            <yaml>/yaml/000/018.yaml</yaml>
+        </path>
+    </entry>
     <!--
         Copy the template above this comment.
         Salin templat di atas komentar ini.
