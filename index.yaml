@@ -1,3 +1,4 @@
+---
 -
     myAnimeList: 41120
     kitsu: 43056
@@ -78,7 +79,7 @@
     notifyMoe: FSrwpKimg
     title: {en_Latn: 'Monster Musume no Iru Nichijou', en_US: 'Everyday Life With Monster Girls', native: モンスター娘のいる日常}
     ryuuganime: 9
-    path: {json: /json/000/009.json, hjson: /hjson/000/009.json, xml: /xml/000/009.xml, yaml: /yaml/000/009.yaml}
+    path: {json: /json/000/009.json, hjson: /hjson/000/009.hjson, xml: /xml/000/009.xml, yaml: /yaml/000/009.yaml}
 -
     myAnimeList: 37426
     kitsu: 41017
@@ -87,7 +88,7 @@
     notifyMoe: SJed2FiiR
     title: {en_Latn: Sarazanmai, en_US: Sarazanmai, native: さらざんまい}
     ryuuganime: 10
-    path: {json: /json/000/010.json, hjson: /hjson/000/010.json, xml: /xml/000/010.xml, yaml: /yaml/000/010.yaml}
+    path: {json: /json/000/010.json, hjson: /hjson/000/010.hjson, xml: /xml/000/010.xml, yaml: /yaml/000/010.yaml}
 -
     myAnimeList: 37597
     kitsu: 41151
@@ -96,7 +97,7 @@
     notifyMoe: XyjgVximR
     title: {en_Latn: 'Dakaretai Otoko 1-i ni Odosarete Imasu.', en_US: 'Dakaichi: I''m Being Harassed by the Sexiest Man of the Year', native: 抱かれたい男1位に脅されています。}
     ryuuganime: 11
-    path: {json: /json/000/011.json, hjson: /hjson/000/011.json, xml: /xml/000/011.xml, yaml: /yaml/000/011.yaml}
+    path: {json: /json/000/011.json, hjson: /hjson/000/011.hjson, xml: /xml/000/011.xml, yaml: /yaml/000/011.yaml}
 -
     myAnimeList: 39942
     kitsu: 42397
@@ -105,7 +106,7 @@
     notifyMoe: 0T1aHQVWg
     title: {en_Latn: 'Uchi Tama?! Uchi no Tama Shirimasen ka?', en_US: 'Uchitama?! Have You Seen My Tama?', native: 'うちタマ?! 〜うちのタマ知りませんか？〜'}
     ryuuganime: 12
-    path: {json: /json/000/012.json, hjson: /hjson/000/012.json, xml: /xml/000/012.xml, yaml: /yaml/000/012.yaml}
+    path: {json: /json/000/012.json, hjson: /hjson/000/012.hjson, xml: /xml/000/012.xml, yaml: /yaml/000/012.yaml}
 -
     myAnimeList: 39575
     kitsu: 42201
@@ -114,7 +115,7 @@
     notifyMoe: ZkdWg46mR
     title: {en_Latn: 'Somali to Mori no Kamisama', en_US: 'Somali and the Forest Spirit', native: ソマリと森の神様}
     ryuuganime: 13
-    path: {json: /json/000/013.json, hjson: /hjson/000/013.json, xml: /xml/000/013.xml, yaml: /yaml/000/013.yaml}
+    path: {json: /json/000/013.json, hjson: /hjson/000/013.hjson, xml: /xml/000/013.xml, yaml: /yaml/000/013.yaml}
 -
     myAnimeList: null
     kitsu: 13760
@@ -123,7 +124,7 @@
     notifyMoe: null
     title: {en_Latn: 'Adventure Time', en_US: 'Adventure Time', native: 'Adventure Time'}
     ryuuganime: 14
-    path: {json: /json/000/014.json, hjson: /hjson/000/014.json, xml: /xml/000/014.xml, yaml: /yaml/000/014.yaml}
+    path: {json: /json/000/014.json, hjson: /hjson/000/014.hjson, xml: /xml/000/014.xml, yaml: /yaml/000/014.yaml}
 -
     myAnimeList: null
     kitsu: null
@@ -132,7 +133,7 @@
     notifyMoe: null
     title: {en_Latn: 'The Amazing World of Gumball', en_US: 'The Amazing World of Gumball', native: 'The Amazing World of Gumball'}
     ryuuganime: 15
-    path: {json: /json/000/015.json, hjson: /hjson/000/015.json, xml: /xml/000/015.xml, yaml: /yaml/000/015.yaml}
+    path: {json: /json/000/015.json, hjson: /hjson/000/015.hjson, xml: /xml/000/015.xml, yaml: /yaml/000/015.yaml}
 -
     myAnimeList: 41558
     kitsu: 43103
@@ -141,5 +142,14 @@
     notifyMoe: e-ciWnCZg
     title: {en_Latn: 'Asatir fi Qadim Az-Zaman', en_US: 'Future Folktales', native: 'أساطير في قادم الزمان'}
     ryuuganime: 17
-    path: {json: /json/000/017.json, hjson: /hjson/000/017.json, xml: /xml/000/017.xml, yaml: /yaml/000/017.yaml}
+    path: {json: /json/000/017.json, hjson: /hjson/000/017.hjson, xml: /xml/000/017.xml, yaml: /yaml/000/017.yaml}
+-
+    myAnimeList: 40716
+    kitsu: 42722
+    aniList: 113311
+    aniDb: 15267
+    notifyMoe: ubyWhFmiR
+    title: {en_Latn: Kakushigoto, en_US: 'Hidden Things', native: かくしごと}
+    ryuuganime: 18
+    path: {json: /json/000/018.json, hjson: /hjson/000/018.hjson, xml: /xml/000/018.xml, yaml: /yaml/000/018.yaml}
 ...

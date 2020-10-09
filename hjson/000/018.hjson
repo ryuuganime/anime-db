@@ -3,7 +3,7 @@
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | |   // is an important notes   |
 |                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
+| -------VERSION:  1.3-s------- | | [boo] is a boolean markup    | |                              |
 |                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
 | Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
 |   non-developer to contribute | | [arr] is an array value. It  | |                              |
@@ -30,7 +30,6 @@
 |   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
 |                               | //    for example.
 \⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
-
 { 
   # $schema [str] <nbl> <url>
   # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
@@ -40,91 +39,91 @@
 
   # title [obj] <nbl>
   # title of serial... in several languages. Based on ICU locales.
-  title: 
+  title:
   {
     # native [str] <nbl>
     # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native:  かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
+    native: かくしごと
 
     # en_Latn [str] <nbl>
     # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen
+    en_Latn: Kakushigoto
 
     # ar_001 [str] <nab>
     # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
     //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: كاغويا تريد أن يعترف لها؟ ~حرب عباقرة القلوب والعقول~
+    ar_001: كاكوشي جوتو
 
     # id_ID [str] <nab>
     # = Serial title in Indonesian (un/official)
     //  REGEX: ^[\w\s\S]+$
-    id_ID: Kaguya-sama: Cinta Adalah Perang S2
+    id_ID: Sesuatu yang Tersembunyi
 
     # en_US [str] <nab>
     # = Serial title in English.
     //  REGEX: ^[\w\s\S]+$
-    en_US: Kaguya-sama: Love is War Season 2
+    en_US: Hidden Things
 
     # ja_JP [str] <nab>
     # = Serial title in Japanese.
     //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
+    ja_JP: かくしごと
 
     # de_DE [str] <nab>
     # = Serial title in German (un/official).
     //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: Kaguya-sama: Love is War?
+    de_DE: Kakushigoto
 
     # ko_KR [str] <nab>
     # = Serial title in South/North Korean.
     //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 카구야 님은 고백받고 싶어? ~천재들의 연애 두뇌전~
+    ko_KR: 카쿠시고토
 
     # fr_FR [str] <nab>
     # = Serial title in French (or other accent).
     //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: Madame Kaguya veut qu'il se déclare?: La Guerre psychologique romantique de génies
+    fr_FR: Kakushigoto
 
     # pt_PT [str] <nab>
     # = Serial title in Portuguese.
     //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Kaguya quer ser confessada?: A guerra dos gênios de amor e cérebros
+    pt_PT: Kakushigoto
 
     # ru_RU [str] <nab>
     # = Serial title in Russian (un/official). 
     //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Госпожа Кагуя: в любви как на войне 2
+    ru_RU: Тайная работа Какуси Гото
 
     # es_ES [str] <nab>
     # = Serial title in Spanish (or other accent).
     //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: Kaguya-sama quiere confesarse?: La guerra del amor y el intelecto entre dos genios
+    es_ES: Kakushigoto
 
     # zh_Hans [str] <nab>
     # = Serial title in Simplified Chinese.
     //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 辉夜大小姐想让我告白？～天才们的恋爱头脑战～
+    zh_Hans: 隐瞒之事
 
     # zh_Hant [str] <nab>
     # = Serial title in Traditional Chinese.
     //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 輝夜大小姐想讓我告白？～天才們的戀愛頭腦戰～
+    zh_Hant: 隱瞞之事
 
     # vi_VN [str] <nab>
     # = Serial title in Vietnamese.
     //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Nàng Kaguya muốn được tỏ tình? ~Trận chiến tình yêu căng não giữa các thiên tài~
+    vi_VN: Kakushigoto
   }
 
   # backdrop [str] <url> <nbl>
   # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
   //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/fanart/original/5c3a8e6161458.jpg
+  backdrop: https://artworks.thetvdb.com/banners/series/372833/backgrounds/5ed9efad888a7.jpg
 
   # visualKey [str] <url> <nbl>
   # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
   //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://image.tmdb.org/t/p/original/51m3NdfyL7wLVqvyuQijb2QRHcS.jpg
+  visualKey: https://artworks.thetvdb.com/banners/series/372833/posters/5e901daed4457.jpg
 
   # synopsis [obj] <nbl>
   # = A synopsis/plot of story of serial in several languages. 
@@ -134,86 +133,80 @@
     # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
     #   Wikipedia for Arabic synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''تتحدث عن كاغويا شينوميا و ميوكي شيروغاني و هما عضوان في مجلس طلبة أكادمية شوتشين للنخبة، يحتلان موقعهما كعباقرة بين العباقرة. الوقت الذي يقضيانه معا دفعهما إلى تكوين مشاعر نحو الطرف الآخر، لكن كبرياء كل واحد منهما لا يسمح له بأن يكون أول من يعترف و يصبح الطرف الخاضع في العلاقة! الحب عبارة عن حرب، و معركتها في جعل الآخر يعترف قد بدأت الآن'''
+    ar_001: '''قصة أنمي Kakushigoto (TV) تدور حول الحياة اليومية لـ كاكوشي جوتو مؤلف المانجا الذي يجد نفسه متورطًا في صناعة أحد سلاسل المانجا المُبتذلة لصالح مجلة أسبوعيّة، بينما الشيء الأكثر أهمية بالنسبة له ألاّ تعرف ابنته هيمي عن ذلك أبدًا خوفًا من أن تكرهه، لذا بمساعدة من مساعدته ومحرّره، يحاول أن يُمضي أيامه دون أن يُكتشف سرّه، مما يولّد الكثير من المواقف الكوميديّة والدراميّة....'''
 
     # id_ID [str] <nab>
     # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
     #   fanshare for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Musim kedua dari seri anime Kaguya-sama wa Kokurasetai.
-    
-Pertempuran antara cinta dan kesombongan berlanjut! Baik Kaguya maupun Shirogane tidak bergerak, tetapi teman dan saingan baru mungkin akan mendorong mereka lebih dekat.'''
+    id_ID: '''Kakushi Gotou, seorang komikus yang menyembunyikan pekerjaannya dari putrinya, Hime. Kata "Kakushi Goto" dalam bahasa jepang bisa berarti "Sesuatu yang disembunyikan" dan bisa juga berarti "Pekerjaan Menggambar".'''
 
     # en_US [str] <nab>
     # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
     #   synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''The battle between love and pride continues! Neither Kaguya nor Shirogane has made a move, but new friends and rivals just might push them closer.'''
+    en_US: '''Single father Kakushi Gotou has a secret. He’s a top-selling artist of popular erotic manga, but his impressionable young daughter, Hime, can never find out! Now he’s having to bend over backwards just to keep her inquisitive little mind from discovering what he does for a living. A father-daughter tale of love and laughter.'''
 
     # ja_JP [str] <nab>
     # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''家柄も人柄も良し!! 将来を期待された秀才が集う秀知院学園!! その生徒会で出会った、副会長・四宮かぐやと 会長・白銀御行は互いに惹かれているはずだが… 何もないまま半年が経過!! プライドが高く素直になれない2人は、面倒臭いことに、 “如何に相手に告白させるか” ばかりを考えるようになってしまった!? 恋愛は成就するまでが楽しい!! 新感覚“頭脳戦”ラブコメ、開戦!!'''
+    ja_JP: '''隠し事は、何ですか？・・・ちょっと下品なまんがを描いてる漫画家の後藤可久士。一人娘の小学４年生の姫。可久士は何においても愛娘・姫が最優先。親バカ・可久士が娘・姫に知られたくないこと。それは・・・自分の仕事が『漫画家』であること。自分の”かくしごと”が知られたら。娘に嫌われるのでは⁉”愛と笑い、ちょっと感動のファミリー劇場がはじまる——”'''
 
     # de_DE [str] <nab>
     # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''In »Kaguya-Sama: Love is War?« geht der intellektuelle Kampf der beiden Eliteschüler Kaguya Shinomiya und Miyuki Shirogane darum, wer dem anderen zuerst seine Liebe gesteht, in die zweite Runde! Nachdem in der ersten Staffel beide bis zum Schluss zu stolz dazu waren, jeweils den ersten Schritt zu gehen, knüpft Staffel zwei nahtlos an die Handlung an.
-
-Nach den Sommerferien geht der Unterricht an der Eliteschule Shuchiin Academy weiter. Chika hat ihr erstes eigenes Kartenspiel entwickelt und möchte es unbedingt mit ihren Freunden ausprobieren, Tsubasa und Nagisa suchen weiterhin nach Beziehungstipps und auch Kaguya hat natürlich bereits neue Pläne geschmiedet. Außerdem steht ein ganz besonderer Tag an, denn immerhin sind es nur noch wenige Tage bis zu Miyukis Geburtstag! Doch wie soll Kaguya eine Überraschung für ihn vorbereiten, ohne dass es einem Liebesgeständnis gleichkommt? Und so gehen die Bemühungen der beiden weiter, den anderen dazu zu bringen, endlich die drei magischen Worte zu sagen!'''
+    de_DE: '''»Kakushigoto« erzählt die Geschichte einer Beziehung und Liebe zwischen Vater und Tochter. Im Zentrum steht das Alltagsleben des einsamen Vaters und Mangakas Kakushi Goto, dessen meistverkaufte Manga-Reihe einen eher schlüpfrigen Inhalt hat. Das Problem? Der an Erwachsene gerichtete Inhalt seiner Manga eignet sich ganz und gar nicht als Lesestoff für seine kleine Tochter Hime. Daher ist es Kakushis oberste Maxime, Hime von seiner Arbeit fernzuhalten, koste es was es wolle. Dies führt ihn in die ein oder andere Notlage und absurde Situation.'''
 
     # ko_KR [str] <nab>
     # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
     //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''집안도 인품도 좋다!! 장래를 기대 받고 있는 수재가 모인 슈치인 학원!!
-그 학생회에서 만난 부회장 시노미야 카구야와 회장 시로가네 미유키는 서로 끌리고 있었지만...
-아무것도 없이 반년이 지났다!!
-프라이드가 높아 솔직해지지 못하는 두 사람은, 아주 귀찮게도 ‘어떻게 상대방을 고백 시키느냐’만 생각하게 되어 버렸다!?
-연애는 성취하기까지가 즐겁다!!
-신감각 두뇌전 러브 코미디 개전!!'''
+    ko_KR: '''살짝 저속한 만화를 그리는 만화가 고토 카쿠시 선생은 외동딸 히메가 무엇보다도 최우선이다. 그런 딸바보인 고토 선생이 이 세상에서 가장 두려워하는 건 딸에게 일을 들키는 것이다. 만화가라는 걸 들켰다가는 혹시라도 딸에게 미움받게 될 지도!? 어시스턴트와 편집자를 말려들게 하면서 오늘도 걱정 한가득인 고토 선생님의 하루가 시작됩니다!'''
 
     # fr_FR [str] <nab>
     # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''Il s'agit de la seconde saison de la série animée Kaguya-sama wa Kokurasetai - Tensai-tachi no Renai Zunousen.
+    fr_FR: '''Goto Kakushi est auteur de manga et père célibataire d'une petite jeune fille, Hime. Dès le début de l'aventure, la jeune Hime découvre fortuitement le métier de son père, auteur de manga populaires bas de gamme. Problème, Goto n'assume pas du tout son métier, peu considéré par ailleurs au Japon.
 
-Suite aux événements concernant le festival, le deuxième trimestre débute sans qu'il y ait eu de réels changements. Ainsi, le combat opposant Kaguya et Miyuki reprend...'''
+Et ce dernier cherche par tous les moyens à le cacher à sa fille, alors qu'il travaille chez lui. S'ensuit un jeu de cache cache permanent où le père qui se fait passer pour un salaryman basique, mène quasiment une double vie. Problèmes : ses amis, ses fans, l'administration, son éditeur... tous savent qu'il est auteur de manga. Tout cela sous l'œil circonspect de la jeune Hime, qui ne comprend pas les gesticulations de son père, mais décide de respecter son besoin de secret.'''
 
     # pt_PT [str] <nab>
     # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''Shinomiya Kaguya e Miyuki Shirogane são membros prestigiados do Conselho Estudantil da Academia Shuchi'in, afirmando suas posições de gênio entre os gênios. Todo o tempo que eles passam juntos ocasionou que desenvolvessem sentimentos mútuos, mas o orgulho deles não vai permitir eles se confessarem e se tornarem submissos no relacionamento! Amor é guerra, e a batalha deles para fazer o outro se confessar começa agora!!'''
+    pt_PT: '''"Vamos abrir a cortina no tempo, para a história de um criador de mangás solitário". Esta história é sobre Gotou Kakushi, um artista que desenha um mangá um tanto vulgar, e tenta escondê-lo pelo bem de sua filha, Hime. Um conto de pai e filha sobre amor e risos.'''
+
+    pt_BR: '''O pai solteiro Goto Kakushi tem um segredo: ele é o escritor de um mangá erótico popular, mas sua filha, Hime, não sabe disso. Agora ele se esforça para esconder o que faz da vida pelo bem da inocente Hime. Uma divertida história de amor entre pai e filha.'''
 
     # ru_RU [str] <nab>
     # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Трудолюбивый Миюки Сироганэ и первая красавица Кагуя Синомия — два общепризнанных гения престижной академии Сютин, возглавляющие её студсовет. Они по-прежнему ведут свою любовную войну, отрицая чувства к друг другу, ведь признание в их романтическом поединке означает поражение!
-
-Однако для текущего студсовета год подходит к концу. Пути товарищей разойдутся по разным классам, почти не оставив точек для пересечения. К тому же на горизонте возникает новый соперник на должность президента студсовета. Что будут делать ребята? И кто же наконец выйдет победителем в этой любовной войне?'''
+    ru_RU: '''Речь пойдёт не о самих скрытых вещах, как можно подумать, а о том, каким образом эти самые вещи пытаются скрыть, сколько усилий прилагают и сколько проблем преодолевают на этом непростом пути.
+Кто не слышал выражение «ложь во благо»? Мангака Какуси Гото буквально построил на нём свою жизнь. Дело в том, что он создаёт мангу для взрослых и сделал целью жизни скрыть свою зазорную профессию от десятилетней дочери Химэ.
+Впрочем, манга Какуси уже не так популярна, однако от этого его жизнь легче всё ещё не становится...
+'''
 
     # es_ES [str] <nab>
     # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
     //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''¡Todo vale en el amor y en la guerra! Dos genios. Dos cerebros. Dos corazones. Una batalla. ¡¿Quién declarará primero su amor?! Kaguya Shinomiya y Miyuki Shirogane son dos prodigios de gran inteligencia y quienes controlan el consejo de estudiantes de su prestigiosa academia, lo que las convierte en la crème de la crème de la élite. Pero claro, estar en la cima es algo que incluye una buena dosis de soledad como extra, y ambos acaban enamorándose el uno del otro. ¿El problema? Que ambos son demasiado orgullosos como para admitir que están enamorados, así que el primero que lo admita, ¡será el perdedor! Comienza su batalla diaria para intentar forzar al otro a declararse primero.'''
+    es_ES: '''Adaptado del manga homónimo de Koji Kumeta. Goto Kakushi es un autor de manga y padre soltero de una pequeña niña, Hime. Desde el principio de la aventura, la joven Hime descubre fortuitamente la profesión de su padre, autor del popular manga. Goto no asume su profesión en absoluto, lo cual es poco considerado en otras partes de Japón. Y trata por todos los medios de ocultarlo a su hija, mientras trabaja en casa. El resultado es un permanente juego de escondidas en el que el padre, que pretende ser un asalariado básico, lleva una doble vida. Sus amigos, sus fans, la administración, su editor... todos saben que es un autor de manga. Todo esto bajo la mirada circunspecta del joven Hime, que no entiende los gestos de su padre, pero decide respetar su necesidad de secreto.'''
 
     # zh_Hans [str] <nab>
     # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
     #   translate from zh_Hant (Traditional Chinese) using extension.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''人才云集的精英校·秀知院学园，在该校的学生会相遇的副会长·四宫辉夜与学生会长·白银御行。无论任何人都认为十分般配的这两位天才，本以为很快就会喜结良缘，但碍于过高的自尊心而仍然未能告白!!
-“如何让对方告白”在这样的恋爱头脑战中穷尽智略的两人…其罕有的知性热失控!!已经完全无法控制!!恋爱让天才变成傻瓜!!新感觉“头脑战”？恋爱喜剧，再次开战!!'''
+    zh_Hans: '''《隱瞞之事》講述改編自久米田康治著作的同名漫畫，漫畫家後藤可久士老師正在周刊少年漫畫雜志上連載有點下流的漫畫！但是一想到這件事可能會被就讀小學4年級的獨生女．姬發現，他就害怕得每天晚上都睡不好。愛與歡笑的漫畫家爸爸☓女兒故事、就此開幕！'''
 
     # zh_Hant [str] <nab>
     # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
     #   translate from zh_Hans (Simplified Chinese) using extension.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''人才雲集的精英校·秀知院學園，在該校的學生會相遇的副會長·四宮輝夜與學生會長·白銀御行。無論任何人都認為十分般配的這兩位天才，本以為很快就會喜結良緣，但礙於過高的自尊心而仍然未能告白!!
-“如何讓對方告白”在這樣的戀愛頭腦戰中窮盡智略的兩人…其罕有的知性熱失控!!已經完全無法控制!!戀愛讓天才變成傻瓜!!新感覺“頭腦戰”？戀愛喜劇，再次開戰!!'''
+    zh_Hant: '''《隐瞒之事》讲述改编自久米田康治著作的同名漫画，漫画家后藤可久士老师正在周刊少年漫画杂志上连载有点下流的漫画！但是一想到这件事可能会被就读小学4年级的独生女．姬发现，他就害怕得每天晚上都睡不好。爱与欢笑的漫画家爸爸☓女儿故事、就此开幕！'''
 
     # vi_VN [str] <nab>
     # = Synopsis in Vietnamese.
     //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Tại Học viện Shūchiin, Hội trưởng hội học sinh Shirogane Miyuki và phó hội trưởng Shinomiya Kaguya vẻ ngoài như một cặp đôi hoàn hảo. Kaguya là con gái của gia đình một tập đoàn giàu có, và Miyuki là học sinh luôn đứng đầu trường và nổi tiếng trên toàn tỉnh. Mặc dù họ thích nhau, nhưng họ quá tự cao khi thổ lộ tình cảm của mình vì họ đều nghĩ rằng ai tỏ tình trước sẽ thua. Câu chuyện kể về các kế hoạch của họ để khiến người khác thú nhận mình thích người kia.'''
+    vi_VN: '''Kakushigoto tập trung vào hai cha con, Kakushi và Hime Goto. Kakushi yêu con gái của mình hơn bất kỳ thứ gì khác nhưng anh lại không muốn cô con gái Hime học lớp 4 biết rằng cha của cô là tác giả manga thô tục vì sợ Hime sẽ tức giận khi phát hiện. Với sự giúp đỡ từ các BTV và trợ lý của mình, Kakushi đã cố gắng giữ bí mật nghề nghiệp của bản thân với đứa con gái.'''
+
+    it_IT: '''Kakushi Gotou è un mangaka affermatosi grazie alle proprie opere irriverenti e alquanto spinte. Per evitare di mettere in imbarazzo la figlia Hime, tuttavia, l’uomo ha da tempo deciso di fare di tutto per nasconderle la propria professione…'''
   }
 
   # information [obj] <nbl>
@@ -225,47 +218,30 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     synonyms:
     {
       en_Latn: [
-        Kaguya-sama wa kokurasetai? ~ Tensai tachi no ren'ai zunô sen ~
-        Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season
-        Kaguya-sama wa Kokurasetai 2
+        Kakushi Goto
       ]
-      ar_001: [
-        كاغويا ساما: الحب هو الحرب؟
-      ]
-      hu_HU: null
-      he_IL: null
+      ar_001: null
       id_ID: [
-        Kaguya-sama: Cinta adalah Perang?
-        Kaguya Ingin Ditembak?: Perang Cinta dan Nalar Antara Cerdikiawan
+        Ambisi Rahasia Ayahku
       ]
       en_US: [
-        Kaguya-Sama: Love is War 2
-        Kaguya-Sama: L̵o̵v̵e̵ ̵i̵s̵ ̵W̵a̵r̵
-        Kaguya Wants to be Confessed To: The Geniuses' War of Love and Brains 2nd Season
-        Kaguya-sama: Love is War 2nd Season
-        Kaguya-Sama: Love is War
+        Hidden Work
+        My Dad's Secret Ambition
+        Kakushigoto: My Dad's Secret Ambition
       ]
-      ja_JP: [
-        かぐや様?
-      ]
+      ja_JP: null
       de_DE: null
       ko_KR: null
-      fr_FR: [
-        Kaguya-sama : L'Amour est la guerre?
-        Kaguya-sama - Love is War Saison 2
-      ]
+      fr_FR: null
       pt_PT: null
       ru_RU: [
-        Госпожа Кагуя: в любви как на войне?
-        Кагуя хочет
-        чтобы ей признались: Гении — Война любви и разума 2
+        Скрытые вещи
+        Какусигото
       ]
       es_ES: null
       zh_Hans: null
       zh_Hant: null
-      vi_VN: [
-        Cuộc Chiến Tỏ Tình?
-      ]
+      vi_VN: null
     }
 
     # type [obj] <nbl> => [str] <nbl>
@@ -306,9 +282,9 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       //  Supernatural, Thriller, War
       en_US:
       [
-        Romance
         Comedy
         Drama
+        Slice of Life
       ]
 
       # id_ID [arr] <nbl>
@@ -319,9 +295,9 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       //  Olahraga, Supernatural, Thriller, Peperangan
       id_ID:
       [
-        Romansa
         Komedi
         Drama
+        Potongan Kehidupan
       ]
     }
 
@@ -335,36 +311,48 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # = Serial tags in English.
       en_US:
       [
-        Seinen
-        Psychological
-        School
-        School Life
-        High School
-        Students' Council
-        Parody
-        Ensemble Cast
-        Tsundere
-        School Club
-        Love Confession
-        Slapstick
+        Shounen
+        Family
+        Single Parent
+        Family Life
+        Work
+        Drawing
+        Time Skip
+        Meta
+        Amnesia
+        Episodic
+        Tragedy
+        Iyashikei
+        Educational
+        Childcare
+        Manga Industry
+        Satire
+        Verbal Comedy
+        Secret
       ]
 
       # id_ID [arr] <nbl>
       # = Serial tags in Indonesian.
       id_ID:
       [
-        Seinen
-        Psikologis
-        Sekolah
-        Kehidupan Sekolah
-        SMA
-        OSIS
-        Parodi
-        Tokoh Ansambel
-        Tsundere
-        Klub Sekolah
-        Pengakuan Cinta
-        Dagelan
+        Shounen
+        Keluarga
+        Orang Tua Tunggal
+        Kehidupan Berkeluarga
+        Kerja
+        Gambar
+        Time Skip
+        Meta
+        Amnesia
+        Episodik
+        Tragedi
+        Iyashikei
+        Pendidikan
+        Penitipan anak
+        Industri Manga
+        Satire
+        Komedi Verbal
+        Rahasia
       ]
     }
 
@@ -407,23 +395,25 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
 
     # releaseDate [str]
     # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2020-04-11
+    releaseDate: 2020-04-02
 
     # endDate [str]
     # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: 2020-06-27
+    endDate: 2020-06-18
 
     # duration [num] <nab>
     # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 25
+    duration: 24
 
     # totalDuration [num] <nab>
     # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 300
+    totalDuration: 288
 
     # studio [str] <arb> <nab>
     # = Studio producing series.
-    studio: A-1 Pictures
+    studio: [
+        Ajia-Do
+    ]
 
     # rating [str] <nab>
     # = Broadcast content rating of serial. See the wiki for more information.
@@ -440,12 +430,12 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     # = Is the original adaptation of the show.
     adaptation:
     {
-      // Allowed values are
+      // Allowed values are:
       //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
       //   4-koma, Fairy Tale, and null
       en_US: Manga
 
-      // Allowed values are
+      // Allowed values are:
       //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
       //   4-panel, Dongeng, and null
       id_ID: Manga
@@ -461,21 +451,29 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
 
     # officialWebsite [str] <url> <nab>
     # = Links to official website of current entry.
-    officialWebsite: https://kaguya.love/
+    officialWebsite: https://kakushigoto-anime.com/
 
     # promotionalVideos [arr] <nab> > [str] <url>
     # = List of promotional videos of current entry.
     promotionalVideos: [
-      https://youtu.be/_NkxM_uLUpw
+      https://www.youtube.com/watch?v=f8p9_r2w98g
+      https://www.youtube.com/watch?v=fPYXLeu525w
+      https://www.youtube.com/watch?v=qQxX-wzByIE
+      https://www.youtube.com/watch?v=e7MX-AM_zaQ
     ]
 
     # producers [arr] <nab> > [str]
     # = Producers that involved to current entry/project
     producers: [
-      Aniplex
-      Mainichi Broadcasting System
-      Shueisha
-      East Japan Marketing & Communications
+      Dentsu
+      Marvelous
+      Kodansha
+      AT-X
+      Studio Mausu
+      Tokyo MX
+      Avex Pictures
+      A-Sketch
+      GREE
     ]
   }
 
@@ -490,8 +488,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 15207
-      score: 8.65
+      id: 15267
+      score: 6.92
     }
     
     // https://anilist.co
@@ -500,8 +498,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 112641
-      score: 87
+      id: 113311
+      score: 78
     }
 
     // https://anime-planet.com
@@ -509,21 +507,23 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/kaguya-sama-love-is-war-2
+      url: https://www.anime-planet.com/anime/kakushigoto
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 14130
-      score: 4.612
+      id: 14213
+      score: 4.248
     }
+
+    // https://animenewsnetwork.com
     ANN:
     {
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 22587
-      score: 7.818
+      id: 22900
+      score: 7.737
     }
 
     // https://anisearch.com
@@ -531,13 +531,13 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/14692,kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen
+      url: https://www.anisearch.com/anime/14770,kakushigoto
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 14692
-      score: 86
+      id: 14770
+      score: 75
     }
 
     // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
@@ -546,8 +546,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 7051
-      score: 98.87
+      id: 7122
+      score: 98.46
     }
 
     // https://imdb.com
@@ -556,8 +556,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # code [str] <nab>
       # = Similar to ID, but the only difference is there is an additional identification character
       #   that used by IMDB.
-      code: tt9522300
-      score: 8.2
+      code: tt11299538
+      score: 7.4
     }
 
     // https://kinopoisk.ru
@@ -566,8 +566,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1231054
-      score: 7.797
+      id: 1330567
+      score: 7.425
     }
 
     // https://kitsu.io
@@ -575,13 +575,13 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # slug [str]
       # = Is a human readable version of the linked index URL.
-      slug: kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen-2
+      slug: kakushigoto-tv
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 42632
-      score: 82.51
+      id: 42722
+      score: 80.46
     }
 
     // https://livechart.me
@@ -590,8 +590,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 9649
-      score: 9.08
+      id: 9673
+      score: 8.20
     }
 
     // https://myanimelist.net
@@ -600,8 +600,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 40591
-      score: 8.87
+      id: 40716
+      score: 8.04
     }
     
     // https://en.myshows.me/
@@ -610,8 +610,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 59725
-      score: 4.36
+      id: 66111
+      score: 4.34
     }
 
     // http://nautiljon.com/
@@ -619,8 +619,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/kaguya-sama+wa+kokurasetai-+tensai-tachi+no+renai+zunousen.html
-      score: 9.18
+      url: https://www.nautiljon.com/animes/kakushigoto.html
+      score: 8.4
     }
 
     // https://notify.moe/
@@ -628,8 +628,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # base64 [str]
       # = This is a unique numbering system that Notify.moe uses on their website
-      base64: fehNO08Zg
-      score: 9.04
+      base64: ubyWhFmiR
+      score: 7.25
     }
 
     // http://otakotaku.com/
@@ -638,8 +638,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1669
-      score: 9.18
+      id: 1683
+      score: 8.5
     }
 
     // http://shikimori.org/
@@ -648,8 +648,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 40591
-      score: 8.87
+      id: 40716
+      score: 8.04
     }
 
     // https://simkl.com
@@ -658,9 +658,12 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 1191669
+      id: 1207531
+      
+      # isAnime [boo] <nbl>
+      # = Explain that url is using /anime path or not. Default: true.
       isAnime: true
-      score: 8.8
+      score: 7.9
     }
 
     // https://www.themoviedb.org/
@@ -668,13 +671,13 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/83121
+      url: https://www.themoviedb.org/tv/95433
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 83121
-      score: 90
+      id: 95433
+      score: 81
     }
 
     // https://trakt.tv/
@@ -682,13 +685,13 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     {
       # url [str] <url>
       # = URL of entry on the related website.
-      url: https://trakt.tv/shows/kaguya-sama-love-is-war
+      url: https://trakt.tv/shows/kakushigoto
 
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 138254
-      score: 85
+      id: 156530
+      score: 75
     }
 
     // https://www.tvtime.com/en
@@ -697,8 +700,8 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
       # id [num]
       # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
       #   image URI. See Wiki or ask to developer for more information.
-      id: 354198
-      score: 9.78
+      id: 372833
+      score: 9.84
     }
   }
 
@@ -717,7 +720,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   // TZD  = time zone designator based on UTC (WIB: +07:00)
   // so, 2020-12-21T22:45:33+07:00 is valid.
   // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-07-28T17:22:17+07:00
+  updatedDate: 2020-10-09T20:45:04+07:00
 
   # streamLinks [obj] <nbl>
   # = Lists of official streaming sites.
@@ -725,18 +728,18 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   {
     Abematv: null
     AdultSwim: null
-    AISPlay: null
+    AISPlay: https://aisplay.ais.co.th/portal/get_section/5f05e602680066f67ccf0643/
     All4: null
     AniMe: null
     AnimeDigitalNetwork: null
-    AnimeLab: https://www.animelab.com/shows/kaguya-sama-love-is-war
+    AnimeLab: https://www.animelab.com/shows/kakushigoto
     AnimeLog: null
     AnimeOnDemand: null
     AnimePlanet: null
     animeteleto: null
     AniOne: null
     ANIPLUS: null
-    AniPlusAsia: null
+    AniPlusAsia: https://www.aniplus-asia.com/show/kakushigoto/
     AsianCrush: null
     BahamutAnimeCrazy: null
     BandaiChannel: null
@@ -750,22 +753,21 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     dAnimeStore: null
     DMM: null
     FOD: null
-    Funimation: https://www.funimation.com/shows/kaguya-sama-love-is-war/
+    Funimation: https://www.funimation.com/shows/kakushigoto/
     Genflix: null
     GundamInfo: null
     Gyao: null
     HIDIVE: null
-    HOOQ: null
     Hulu: null
     iflix: null
     iQIYI: null
     JapaneseAnimatedFilmClassic: null
     Mangas: null
-    MBSDougaizm: null
+    MBSDougaizm: null 
     MidnightPulp: null
-    MuseAsia:
+    MuseAsia: 
     {
-      en_001: null
+      en_001:null
       vi_VN: null
       ms_MY: null
       th_TH: null
@@ -785,16 +787,16 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     VIZ: null
     VRV: null
     VVVVID: null
-    Wakanim:
+    Wakanim: 
     {
-      fr: https://www.wakanim.tv/fr/v2/catalogue/show/897
-      sc: https://www.wakanim.tv/sc/v2/catalogue/show/444
-      de: https://www.wakanim.tv/de/v2/catalogue/show/442
-      ru: https://www.wakanim.tv/ru/v2/catalogue/show/898
+      fr: https://www.wakanim.tv/fr/v2/catalogue/show/846
+      sc: https://www.wakanim.tv/sc/v2/catalogue/show/848
+      de: https://www.wakanim.tv/de/v2/catalogue/show/847
+      ru: https://www.wakanim.tv/ru/v2/catalogue/show/849
     }
     WeTV: null
     YamatoAnimation: null
-    YouTube:
+    YouTube: 
     {
       link: null
       isChannel: false
@@ -807,11 +809,11 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
   {
     # name [str] <nbl>
     # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
+    name: nattadasu
 
     # username [str] <nbl>
     # = Your username on GitHub
-    username: @nattadasu
+    username: nattadasu
 
     # discordId [num] <nbl>
     # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
@@ -833,7 +835,7 @@ Suite aux événements concernant le festival, le deuxième trimestre débute sa
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-18T17:32:00+07:00
+    submissionDateTime: 2020-10-09T20:48:44+07:00
 
     # sign [str][num] <nbl>
     # = These are the unique characters that contributors use to "sign" data. Can use characters 

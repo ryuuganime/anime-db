@@ -1,0 +1,345 @@
+{
+  "$schema": "../../schemas/entry.json",
+  "title": {
+    "native": "かくしごと",
+    "en_Latn": "Kakushigoto",
+    "ar_001": "كاكوشي جوتو",
+    "id_ID": "Sesuatu yang Tersembunyi",
+    "en_US": "Hidden Things",
+    "ja_JP": "かくしごと",
+    "de_DE": "Kakushigoto",
+    "ko_KR": "카쿠시고토",
+    "fr_FR": "Kakushigoto",
+    "pt_PT": "Kakushigoto",
+    "ru_RU": "Тайная работа Какуси Гото",
+    "es_ES": "Kakushigoto",
+    "zh_Hans": "隐瞒之事",
+    "zh_Hant": "隱瞞之事",
+    "vi_VN": "Kakushigoto"
+  },
+  "backdrop": "https://artworks.thetvdb.com/banners/series/372833/backgrounds/5ed9efad888a7.jpg",
+  "visualKey": "https://artworks.thetvdb.com/banners/series/372833/posters/5e901daed4457.jpg",
+  "synopsis": {
+    "ar_001": "قصة أنمي Kakushigoto (TV) تدور حول الحياة اليومية لـ كاكوشي جوتو مؤلف المانجا الذي يجد نفسه متورطًا في صناعة أحد سلاسل المانجا المُبتذلة لصالح مجلة أسبوعيّة، بينما الشيء الأكثر أهمية بالنسبة له ألاّ تعرف ابنته هيمي عن ذلك أبدًا خوفًا من أن تكرهه، لذا بمساعدة من مساعدته ومحرّره، يحاول أن يُمضي أيامه دون أن يُكتشف سرّه، مما يولّد الكثير من المواقف الكوميديّة والدراميّة....",
+    "id_ID": "Kakushi Gotou, seorang komikus yang menyembunyikan pekerjaannya dari putrinya, Hime. Kata \"Kakushi Goto\" dalam bahasa jepang bisa berarti \"Sesuatu yang disembunyikan\" dan bisa juga berarti \"Pekerjaan Menggambar\".",
+    "en_US": "Single father Kakushi Gotou has a secret. He’s a top-selling artist of popular erotic manga, but his impressionable young daughter, Hime, can never find out! Now he’s having to bend over backwards just to keep her inquisitive little mind from discovering what he does for a living. A father-daughter tale of love and laughter.",
+    "ja_JP": "隠し事は、何ですか？・・・ちょっと下品なまんがを描いてる漫画家の後藤可久士。一人娘の小学４年生の姫。可久士は何においても愛娘・姫が最優先。親バカ・可久士が娘・姫に知られたくないこと。それは・・・自分の仕事が『漫画家』であること。自分の”かくしごと”が知られたら。娘に嫌われるのでは⁉”愛と笑い、ちょっと感動のファミリー劇場がはじまる——”",
+    "de_DE": "»Kakushigoto« erzählt die Geschichte einer Beziehung und Liebe zwischen Vater und Tochter. Im Zentrum steht das Alltagsleben des einsamen Vaters und Mangakas Kakushi Goto, dessen meistverkaufte Manga-Reihe einen eher schlüpfrigen Inhalt hat. Das Problem? Der an Erwachsene gerichtete Inhalt seiner Manga eignet sich ganz und gar nicht als Lesestoff für seine kleine Tochter Hime. Daher ist es Kakushis oberste Maxime, Hime von seiner Arbeit fernzuhalten, koste es was es wolle. Dies führt ihn in die ein oder andere Notlage und absurde Situation.",
+    "ko_KR": "살짝 저속한 만화를 그리는 만화가 고토 카쿠시 선생은 외동딸 히메가 무엇보다도 최우선이다. 그런 딸바보인 고토 선생이 이 세상에서 가장 두려워하는 건 딸에게 일을 들키는 것이다. 만화가라는 걸 들켰다가는 혹시라도 딸에게 미움받게 될 지도!? 어시스턴트와 편집자를 말려들게 하면서 오늘도 걱정 한가득인 고토 선생님의 하루가 시작됩니다!",
+    "fr_FR": "Goto Kakushi est auteur de manga et père célibataire d'une petite jeune fille, Hime. Dès le début de l'aventure, la jeune Hime découvre fortuitement le métier de son père, auteur de manga populaires bas de gamme. Problème, Goto n'assume pas du tout son métier, peu considéré par ailleurs au Japon.\n\nEt ce dernier cherche par tous les moyens à le cacher à sa fille, alors qu'il travaille chez lui. S'ensuit un jeu de cache cache permanent où le père qui se fait passer pour un salaryman basique, mène quasiment une double vie. Problèmes : ses amis, ses fans, l'administration, son éditeur... tous savent qu'il est auteur de manga. Tout cela sous l'œil circonspect de la jeune Hime, qui ne comprend pas les gesticulations de son père, mais décide de respecter son besoin de secret.",
+    "pt_PT": "\"Vamos abrir a cortina no tempo, para a história de um criador de mangás solitário\". Esta história é sobre Gotou Kakushi, um artista que desenha um mangá um tanto vulgar, e tenta escondê-lo pelo bem de sua filha, Hime. Um conto de pai e filha sobre amor e risos.",
+    "pt_BR": "O pai solteiro Goto Kakushi tem um segredo: ele é o escritor de um mangá erótico popular, mas sua filha, Hime, não sabe disso. Agora ele se esforça para esconder o que faz da vida pelo bem da inocente Hime. Uma divertida história de amor entre pai e filha.",
+    "ru_RU": "Речь пойдёт не о самих скрытых вещах, как можно подумать, а о том, каким образом эти самые вещи пытаются скрыть, сколько усилий прилагают и сколько проблем преодолевают на этом непростом пути.\nКто не слышал выражение «ложь во благо»? Мангака Какуси Гото буквально построил на нём свою жизнь. Дело в том, что он создаёт мангу для взрослых и сделал целью жизни скрыть свою зазорную профессию от десятилетней дочери Химэ.\nВпрочем, манга Какуси уже не так популярна, однако от этого его жизнь легче всё ещё не становится...",
+    "es_ES": "Adaptado del manga homónimo de Koji Kumeta. Goto Kakushi es un autor de manga y padre soltero de una pequeña niña, Hime. Desde el principio de la aventura, la joven Hime descubre fortuitamente la profesión de su padre, autor del popular manga. Goto no asume su profesión en absoluto, lo cual es poco considerado en otras partes de Japón. Y trata por todos los medios de ocultarlo a su hija, mientras trabaja en casa. El resultado es un permanente juego de escondidas en el que el padre, que pretende ser un asalariado básico, lleva una doble vida. Sus amigos, sus fans, la administración, su editor... todos saben que es un autor de manga. Todo esto bajo la mirada circunspecta del joven Hime, que no entiende los gestos de su padre, pero decide respetar su necesidad de secreto.",
+    "zh_Hans": "《隱瞞之事》講述改編自久米田康治著作的同名漫畫，漫畫家後藤可久士老師正在周刊少年漫畫雜志上連載有點下流的漫畫！但是一想到這件事可能會被就讀小學4年級的獨生女．姬發現，他就害怕得每天晚上都睡不好。愛與歡笑的漫畫家爸爸☓女兒故事、就此開幕！",
+    "zh_Hant": "《隐瞒之事》讲述改编自久米田康治著作的同名漫画，漫画家后藤可久士老师正在周刊少年漫画杂志上连载有点下流的漫画！但是一想到这件事可能会被就读小学4年级的独生女．姬发现，他就害怕得每天晚上都睡不好。爱与欢笑的漫画家爸爸☓女儿故事、就此开幕！",
+    "vi_VN": "Kakushigoto tập trung vào hai cha con, Kakushi và Hime Goto. Kakushi yêu con gái của mình hơn bất kỳ thứ gì khác nhưng anh lại không muốn cô con gái Hime học lớp 4 biết rằng cha của cô là tác giả manga thô tục vì sợ Hime sẽ tức giận khi phát hiện. Với sự giúp đỡ từ các BTV và trợ lý của mình, Kakushi đã cố gắng giữ bí mật nghề nghiệp của bản thân với đứa con gái.",
+    "it_IT": "Kakushi Gotou è un mangaka affermatosi grazie alle proprie opere irriverenti e alquanto spinte. Per evitare di mettere in imbarazzo la figlia Hime, tuttavia, l’uomo ha da tempo deciso di fare di tutto per nasconderle la propria professione…"
+  },
+  "information": {
+    "synonyms": {
+      "en_Latn": [
+        "Kakushi Goto"
+      ],
+      "ar_001": null,
+      "id_ID": [
+        "Ambisi Rahasia Ayahku"
+      ],
+      "en_US": [
+        "Hidden Work",
+        "My Dad's Secret Ambition",
+        "Kakushigoto: My Dad's Secret Ambition"
+      ],
+      "ja_JP": null,
+      "de_DE": null,
+      "ko_KR": null,
+      "fr_FR": null,
+      "pt_PT": null,
+      "ru_RU": [
+        "Скрытые вещи",
+        "Какусигото"
+      ],
+      "es_ES": null,
+      "zh_Hans": null,
+      "zh_Hant": null,
+      "vi_VN": null
+    },
+    "type": {
+      "en_US": "TV",
+      "id_ID": "Serial TV"
+    },
+    "status": {
+      "en_US": "Aired",
+      "id_ID": "Ditayangkan"
+    },
+    "serialGenre": {
+      "en_US": [
+        "Comedy",
+        "Drama",
+        "Slice of Life"
+      ],
+      "id_ID": [
+        "Komedi",
+        "Drama",
+        "Potongan Kehidupan"
+      ]
+    },
+    "serialTags": {
+      "en_US": [
+        "Shounen",
+        "Family",
+        "Single Parent",
+        "Family Life",
+        "Work",
+        "Drawing",
+        "Time Skip",
+        "Meta",
+        "Amnesia",
+        "Episodic",
+        "Tragedy",
+        "Iyashikei",
+        "Educational",
+        "Childcare",
+        "Manga Industry",
+        "Satire",
+        "Verbal Comedy",
+        "Secret"
+      ],
+      "id_ID": [
+        "Shounen",
+        "Keluarga",
+        "Orang Tua Tunggal",
+        "Kehidupan Berkeluarga",
+        "Kerja",
+        "Gambar",
+        "Time Skip",
+        "Meta",
+        "Amnesia",
+        "Episodik",
+        "Tragedi",
+        "Iyashikei",
+        "Pendidikan",
+        "Penitipan anak",
+        "Industri Manga",
+        "Satire",
+        "Komedi Verbal",
+        "Rahasia"
+      ]
+    },
+    "releaseSeason": {
+      "en_US": "Spring",
+      "id_ID": "Semi",
+      "ja_JP": "春",
+      "ko_KR": "봄",
+      "zh_Hans": "春天",
+      "zh_Hant": "春天"
+    },
+    "releaseYear": 2020,
+    "episode": 12,
+    "releaseDate": "2020-04-02",
+    "endDate": "2020-06-18",
+    "duration": 24,
+    "totalDuration": 288,
+    "studio": [
+      "Ajia-Do"
+    ],
+    "rating": "PG13+",
+    "isNsfw": false,
+    "adaptation": {
+      "en_US": "Manga",
+      "id_ID": "Manga"
+    },
+    "country": {
+      "en_US": "Japan",
+      "id_ID": "Jepang"
+    },
+    "officialWebsite": "https://kakushigoto-anime.com/",
+    "promotionalVideos": [
+      "https://www.youtube.com/watch?v=f8p9_r2w98g",
+      "https://www.youtube.com/watch?v=fPYXLeu525w",
+      "https://www.youtube.com/watch?v=qQxX-wzByIE",
+      "https://www.youtube.com/watch?v=e7MX-AM_zaQ"
+    ],
+    "producers": [
+      "Dentsu",
+      "Marvelous",
+      "Kodansha",
+      "AT-X",
+      "Studio Mausu",
+      "Tokyo MX",
+      "Avex Pictures",
+      "A-Sketch",
+      "GREE"
+    ]
+  },
+  "scores": {
+    "aniDB": {
+      "id": 15267,
+      "score": 6.92
+    },
+    "AniList": {
+      "id": 113311,
+      "score": 78
+    },
+    "AnimePlanet": {
+      "url": "https://www.anime-planet.com/anime/kakushigoto",
+      "id": 14213,
+      "score": 4.248
+    },
+    "ANN": {
+      "id": 22900,
+      "score": 7.737
+    },
+    "aniSearch": {
+      "url": "https://www.anisearch.com/anime/14770,kakushigoto",
+      "id": 14770,
+      "score": 75
+    },
+    "Annict": {
+      "id": 7122,
+      "score": 98.46
+    },
+    "IMDb": {
+      "code": "tt11299538",
+      "score": 7.4
+    },
+    "KinoPoisk": {
+      "id": 1330567,
+      "score": 7.425
+    },
+    "Kitsu": {
+      "slug": "kakushigoto-tv",
+      "id": 42722,
+      "score": 80.46
+    },
+    "LiveChart": {
+      "id": 9673,
+      "score": 8.2
+    },
+    "MyAnimeList": {
+      "id": 40716,
+      "score": 8.04
+    },
+    "MyShows": {
+      "id": 66111,
+      "score": 4.34
+    },
+    "Nautiljon": {
+      "url": "https://www.nautiljon.com/animes/kakushigoto.html",
+      "score": 8.4
+    },
+    "Notify": {
+      "base64": "ubyWhFmiR",
+      "score": 7.25
+    },
+    "OtakOtaku": {
+      "id": 1683,
+      "score": 8.5
+    },
+    "Shikimori": {
+      "id": 40716,
+      "score": 8.04
+    },
+    "SIMKL": {
+      "id": 1207531,
+      "isAnime": true,
+      "score": 7.9
+    },
+    "TMDB": {
+      "url": "https://www.themoviedb.org/tv/95433",
+      "id": 95433,
+      "score": 81
+    },
+    "Trakt": {
+      "url": "https://trakt.tv/shows/kakushigoto",
+      "id": 156530,
+      "score": 75
+    },
+    "TVTime": {
+      "id": 372833,
+      "score": 9.84
+    }
+  },
+  "updatedDate": "2020-10-09T20:45:04+07:00",
+  "streamLinks": {
+    "Abematv": null,
+    "AdultSwim": null,
+    "AISPlay": "https://aisplay.ais.co.th/portal/get_section/5f05e602680066f67ccf0643/",
+    "All4": null,
+    "AniMe": null,
+    "AnimeDigitalNetwork": null,
+    "AnimeLab": "https://www.animelab.com/shows/kakushigoto",
+    "AnimeLog": null,
+    "AnimeOnDemand": null,
+    "AnimePlanet": null,
+    "animeteleto": null,
+    "AniOne": null,
+    "ANIPLUS": null,
+    "AniPlusAsia": "https://www.aniplus-asia.com/show/kakushigoto/",
+    "AsianCrush": null,
+    "BahamutAnimeCrazy": null,
+    "BandaiChannel": null,
+    "BandaiSpirits": null,
+    "bilibili": null,
+    "Coalise": null,
+    "ComicFestaAnimeZone": null,
+    "ConTV": null,
+    "Coolmic": null,
+    "Crunchyroll": null,
+    "dAnimeStore": null,
+    "DMM": null,
+    "FOD": null,
+    "Funimation": "https://www.funimation.com/shows/kakushigoto/",
+    "Genflix": null,
+    "GundamInfo": null,
+    "Gyao": null,
+    "HIDIVE": null,
+    "Hulu": null,
+    "iflix": null,
+    "iQIYI": null,
+    "JapaneseAnimatedFilmClassic": null,
+    "Mangas": null,
+    "MBSDougaizm": null,
+    "MidnightPulp": null,
+    "MuseAsia": {
+      "en_001": null,
+      "vi_VN": null,
+      "ms_MY": null,
+      "th_TH": null,
+      "zh_Hant_HK": null,
+      "zh_Hant_TW": null
+    },
+    "Netflix": null,
+    "NicoNico": null,
+    "PrimeVideo": null,
+    "RetroCrush": null,
+    "SelectaVision": null,
+    "Sushiroll": null,
+    "Telasa": null,
+    "TencentVideo": null,
+    "TVNOW": null,
+    "Vimeo": null,
+    "VIZ": null,
+    "VRV": null,
+    "VVVVID": null,
+    "Wakanim": {
+      "fr": "https://www.wakanim.tv/fr/v2/catalogue/show/846",
+      "sc": "https://www.wakanim.tv/sc/v2/catalogue/show/848",
+      "de": "https://www.wakanim.tv/de/v2/catalogue/show/847",
+      "ru": "https://www.wakanim.tv/ru/v2/catalogue/show/849"
+    },
+    "WeTV": null,
+    "YamatoAnimation": null,
+    "YouTube": {
+      "link": null,
+      "isChannel": false
+    }
+  },
+  "signature": {
+    "name": "nattadasu",
+    "username": "nattadasu",
+    "discordId": 384089845527478300,
+    "submissionDateTime": "2020-10-09T20:48:44+07:00",
+    "sign": "RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE="
+  }
+}
