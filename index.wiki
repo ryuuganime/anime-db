@@ -111,6 +111,16 @@ __TOC__
 | [[hjson/000/015.hjson|hjson]] 
 | [[yaml/000/015.yaml|yaml]]
 | [[xml/000/015.xml|xml]] )</li>
+<li>'''Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen'''
+( [[json/000/016.json|json]] 
+| [[hjson/000/016.hjson|hjson]] 
+| [[yaml/000/016.yaml|yaml]]
+| [[xml/000/016.xml|xml]] )</li>
+<li>’’’Asatir fi Qadim Az-Zaman’’’
+( [[json/000/017.json|json]] 
+| [[hjson/000/017.hjson|hjson]] 
+| [[yaml/000/017.yaml|yaml]]
+| [[xml/000/017.xml|xml]] )</li>
 <li>'''Kakushigoto'''
 ( [[json/000/018.json|json]] 
 | [[hjson/000/018.hjson|hjson]] 
