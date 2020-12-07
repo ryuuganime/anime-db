@@ -1,0 +1,91 @@
+#hjson {"version":"2.0-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
+|                               | | [str] is a text value and    | |                              |
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.0-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | //  read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <url>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON. 
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/014.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docs.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <url>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in 
+    #;   JSON!
+    $schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry.json
+
+    #: title [obj] <nbl> > [str]
+    #; Serial title in several main languages based on ICU locales identifier.
+    title: {
+        #: native [str] <nbl>
+        #; = Serial title in native (canonical) language based on origin of studio and/or airing 
+        #    first.
+        native: 
+
+        #: en_Latn [str] <nbl>
+        #; = Serial title in romanized text. Required for main title on entry list.
+        en_Latn: 
+
+        # en_US [str] <nab>
+        # = Serial title in English.
+        //  REGEX: ^[\w\s\S]+$
+        en_US: 
+
+        # id_ID [str] <nab>
+        # = Serial title in Indonesian (un/official)
+        //  REGEX: ^[\w\s\S]+$
+        id_ID: 
+
+        # ja_JP [str] <nab>
+        # = Serial title in Japanese.
+        //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
+        ja_JP: 
+
+        # ru_RU [str] <nab>
+        # = Serial title in Russian (un/official). 
+        //  REGEX: ^[\w\s\SЀ-ӿ]+$
+        ru_RU: 
+
+        # zh_Hans [str] <nab>
+        # = Serial title in Simplified Chinese.
+        //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
+        zh_Hans: 
+
+        # zh_Hant [str] <nab>
+        # = Serial title in Traditional Chinese.
+        //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
+        zh_Hant: 
+    }
+
+    #: title [obj] <nbl> > [str]
+    #; = Serial title in several additional languages based on ICU locales identifier that does
+    #;   not categorized as main languages.
+    additionalTitle:
+    {
+        
+    }
+}
