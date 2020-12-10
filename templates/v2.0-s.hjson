@@ -13,7 +13,7 @@
 |   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
 |                               | |   Signifies that this value  | // First guide:
 \⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // REad and write... in theory.
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
 |                               | |                              | //  In practice, JSON gives us
 | <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
 |   or URI link                 | // make mistakes without even realizing it.
@@ -23,7 +23,7 @@
 | <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
 |   "deleted" and changed to    | //    the machine.
 |   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
-| <nbl>: this value can not be  | //    on HJSON. 
+| <nbl>: this value can not be  | //    on HJSON.
 |   "deleted" or changed to     | // For easier on filling, see on hjson/000/014.hjson or latest
 |   null value because it is    | //    for example.
 |   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
@@ -32,7 +32,7 @@
 \⋆-----------------------------*/
 {
     #: $schema [str] <nbl> <uri>
-    #; = Very not recommended to modify this configuration value if not having any knowledge in 
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
     #;   JSON!
     $schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
     // Optional value, tick a comment syntax of above value, and untick value below.
@@ -40,7 +40,7 @@
 
     #: id [num] <nbl>
     #; = Serial ID number on Ryuuganime Database.
-    id: 
+    id: 0
 
     #: createdAt [str] <nbl>
     #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
@@ -57,7 +57,7 @@
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    createdAt: 
+    createdAt: ""
 
     #: modifiedAt [str] <nbl>
     #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
@@ -74,9 +74,9 @@
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    modifiedAt: 
+    modifiedAt: ""
 
-    attributes:
+    series:
     {
         #: titles [obj] <nbl>
         #; = Serial title in several languages based on ICU locales identifier.
@@ -87,79 +87,82 @@
             main:
             {
                 #: native [str] <nbl>
-                #; = Serial title in native (canonical) language based on origin of studio and/or airing 
+                #; = Serial title in native (canonical) language based on origin of studio and/or airing
                 #    first.
-                native: 
+                native: ""
 
                 #: en_Latn [str] <nbl>
                 #; = Serial title in romanized text. Required for main title on entry list.
-                en_Latn: 
+                en_Latn: ""
 
                 #: en_US [str] <nab>
                 #; = Serial title in English.
                 // REGEX: ^[\w\s\S]+$
-                en_US: 
+                en_US: ""
 
                 #: id_ID [str] <nab>
                 #; = Serial title in Indonesian (un/official)
                 // REGEX: ^[\w\s\S]+$
-                id_ID: 
+                id_ID: ""
 
                 #: ja_JP [str] <nab>
                 #; = Serial title in Japanese.
                 // REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-                ja_JP: 
+                ja_JP: ""
 
                 #: ru_RU [str] <nab>
-                #; = Serial title in Russian (un/official). 
+                #; = Serial title in Russian (un/official).
                 // REGEX: ^[\w\s\SЀ-ӿ]+$
-                ru_RU: 
+                ru_RU: ""
 
                 #: zh_Hans [str] <nab>
                 #; = Serial title in Simplified Chinese.
                 // REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-                zh_Hans: 
+                zh_Hans: ""
 
                 #: zh_Hant [str] <nab>
                 #; = Serial title in Traditional Chinese.
                 // REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-                zh_Hant: 
+                zh_Hant: ""
             }
 
             #: additional [obj] <nab>
             #; = Serial title in several additional languages based on ICU locales identifier that does
             #;   not categorized as main languages.
-            additional: 
+            additional:
             {
                 #: ar_001 [str]
                 #; = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
                 // REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-                ar_001: 
+                ar_001: ""
 
                 #: de_DE [str] <nab>
                 #; = Serial title in German (un/official).
                 // REGEX: ^[\w\s\SöäüÖÄÜß]+$
-                de_DE: 
+                de_DE: ""
 
                 #: es_ES [str] <nab>
                 #; = Serial title in Spanish (or other accent).
                 // REGEX: ^[\w\s\SÀ-ÿ]+$
-                es_ES: 
+                es_ES: ""
 
                 #: fr_FR [str] <nab>
                 #; = Serial title in French (or other accent).
                 // REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-                fr_FR: 
+                fr_FR: ""
+
+                #: ja_Kana_JP [str] <nab>
+                ja_Kana_JP: ""
 
                 #: ko_KR [str] <nab>
                 #; = Serial title in South/North Korean.
                 // REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-                ko_KR: 
+                ko_KR: ""
 
                 #: vi_VN [str] <nab>
                 #; = Serial title in Vietnamese.
                 // REGEX: ^[\w\s\S\p{L}{VN}]+$
-                vi_VN: 
+                vi_VN: ""
 
                 /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
 
@@ -170,52 +173,52 @@
             synonyms:
             {
                 en_Latn: [
-
+                    ""
                 ]
                 ar_001: [
-                    
+                    ""
                 ]
                 id_ID: [
-                    
+                    ""
                 ]
                 en_US: [
-                    
+                    ""
                 ]
                 ja_JP: [
-                    
+                    ""
                 ]
                 de_DE: [
-                    
+                    ""
                 ]
                 ko_KR: [
-                    
+                    ""
                 ]
                 fr_FR: [
-                    
+                    ""
                 ]
                 pt_PT: [
-                    
+                    ""
                 ]
                 ru_RU: [
-                    
+                    ""
                 ]
                 es_ES: [
-                    
+                    ""
                 ]
                 zh_Hans: [
-                    
+                    ""
                 ]
                 zh_Hant: [
-                    
+                    ""
                 ]
                 vi_VN: [
-                    
+                    ""
                 ]
             }
         }
 
         #: synopsis [obj] <nbl>
-        #; = A synopsis/plot of story of serial in several languages. 
+        #; = A synopsis/plot of story of serial in several languages.
         synopsis:
         {
             #: ar_001 [str] <nab>
@@ -257,59 +260,59 @@
             fr_FR: ''''''
 
             #: ru_RU [str] <nab>
-            #; = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for 
+            #; = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for
             #;   synopsis.
             // MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
             ru_RU: ''''''
 
-            # es_ES [str] <nab>
-            # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
+            #: es_ES [str] <nab>
+            #; = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
             // MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
             es_ES: ''''''
 
-            # zh_Hans [str] <nab>
-            # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-            #   translate from zh_Hant (Traditional Chinese) using extension.
+            #: zh_Hans [str] <nab>
+            #; = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+            #;   translate from zh_Hant (Traditional Chinese) using extension.
             // MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
             zh_Hans: ''''''
 
-            # zh_Hant [str] <nab>
-            # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-            #   translate from zh_Hans (Simplified Chinese) using extension.
+            #: zh_Hant [str] <nab>
+            #; = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
+            #;   translate from zh_Hans (Simplified Chinese) using extension.
             // MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
             zh_Hant: ''''''
 
-            # vi_VN [str] <nab>
-            # = Synopsis in Vietnamese.
+            #: vi_VN [str] <nab>
+            #; = Synopsis in Vietnamese.
             // MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
             vi_VN: ''''''
 
             /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
-            
+
         }
 
         #: type [str] <nab>
         #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
         // Allowed values are:
         // TV, ONA, OVA, Special, Movie, Music, and Unknown.
-        type: 
+        type: ""
 
         #: status [str] <nbl>
         #; = Describes serial broadcast status.
         // Allowed values are:
         // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
-        status: 
+        status: ""
 
         #: source [str] <nbl>
         #; = Source type the media was adapted from.
         // Allowed values are:
         // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
-        source: 
+        source: ""
 
         #: ageRating [str] <nab>
         #; = Broadcast content rating of serial. See Docuwiki for more information.
         // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-        ageRating: 
+        ageRating: ""
 
         #: isNsfw [boo] <nbl>
         #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
@@ -319,49 +322,273 @@
 
         isLicensed: true
 
+        isAnime: true
+
         media:
         {
             #: posterImage [str] <uri> <nab>
             #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
             // FORMAT: URI, REGEX: ^(https?)\:\/\/
-            posterImage: 
+            posterImage:
+            {
+                url: ""
+
+                // IN HEXADECIMAL FORMAT
+                averageColor: ""
+            }
 
             #: coverImage [str] <uri> <nab>
             #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
             // FORMAT: URI, REGEX: ^(https?)\:\/\/
-            coverImage: 
+            coverImage: ""
 
-            promotionalVideo: 
+            promotionalVideo:
             [
                 {
-                    id: 
+                    id: 0
 
-                    site: 
+                    provider: ""
                 }
             ]
         }
 
         release:
         {
-            year: 
+            year: 0
 
-            season: 
+            season: ""
 
-            startDate: 
+            startDate: ""
 
-            dayOfTheWeek: 
+            dayOfTheWeek: ""
 
-            broadcastTime: 
+            broadcastTime: ""
 
-            localTimezone: 
+            localTimezone: ""
 
-            endDate: 
-        },
+            endDate: ""
+        }
 
-        episodeCount: 
+        episode:
+        {
+            count: 0
 
-        episodeDuration: 
+            duration: 0
 
-        totalDuration: 
+            totalDuration: 0
+        }
+
+        countryOfOrigin: ""
+
+        genres: [
+            {
+                id: 0
+
+                name: ""
+            }
+        ]
+
+        tags: [
+            {
+                id: 0
+
+                isSpoiler: false
+
+                isAdult: false
+
+                name: ""
+            }
+        ]
+
+        companies:
+        {
+            studios: ""
+
+            licensors: ""
+
+            producers: ""
+        }
+
+        hashtag: ""
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: ""
+
+                url: ""
+            }
+        ]
+
+        databases:
+        {
+            aniDb: 0
+
+            aniList: 0
+
+            animePlanet:
+            {
+                url: ""
+
+                id: 0
+            }
+
+            animeNewsNetwork: 0
+
+            aniSearch: 0
+
+            annict: 0
+
+            imdb: ""
+
+            kinoPoisk: 0
+
+            kitsu:
+            {
+                slug: ""
+
+                id: 0
+            }
+            liveChart: 0
+
+            myAnimeList: 0
+
+            myShows: 0
+
+            nautiljon: 0
+
+            notifyMoe: ""
+
+            otakOtaku: 0
+
+            reelgood: 0
+
+            shikimori: 0
+
+            shoboi: 0
+
+            silverYasha: 0
+
+            simkl: 0
+
+            tmdb: 0
+
+            tvdb: 0
+
+            trakt:
+            {
+                url: ""
+
+                id: 0
+            }
+        }
+
+        news:
+        [
+            ""
+        ]
+
+        streamLinks:
+        {
+            amazonPrime: ""
+
+            animeDigitalNetwork: ""
+
+            animeLab: ""
+
+            animeOnDemand: ""
+
+            aniOne:
+            {
+                en_US: ""
+
+                zh_Hans: ""
+            }
+
+            aniPlus: ""
+
+            aniPlusAsia: ""
+
+            bahamutAnimeCrazy: ""
+
+            biliBili: ""
+
+            crunchyroll: ""
+
+            fod: ""
+
+            funimation: ""
+
+            genFlix: ""
+
+            hboGo: ""
+
+            hidive: ""
+
+            hulu: ""
+
+            iQiyi: ""
+
+            iflix: ""
+
+            museAsia:
+            {
+                en_001: ""
+
+                id_ID: ""
+
+                ms_MY: ""
+
+                th_TH: ""
+
+                vi_VN: ""
+
+                zh_Hant_HK: ""
+
+                zh_Hant_TW: ""
+            }
+
+            netflix:
+            {
+                US: ""
+
+                ID: ""
+            }
+
+            nicoNico: ""
+
+            sushiroll: ""
+
+            vvvvid: ""
+
+            vrv: ""
+
+            wakanim:
+            {
+                DE: ""
+
+                FR: ""
+
+                RU: ""
+
+                SC: ""
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: ""
+
+        mail: ""
+
+        github: ""
+
+        discordId: 0
+
+        sign: 0
     }
 }
