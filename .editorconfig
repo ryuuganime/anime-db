@@ -3,14 +3,13 @@ charset = utf-8
 end_of_line = lf
 insert_final_newline = false
 
-[{xml,yaml,json}/**.{xml,yaml,json}]
+[{xml,yaml,json,hjson}/**.{xml,yaml,json,hjson}]
 indent_style = space
 indent_size = 4
-
-[hjson/**.hjson]
-indent_size = 2
-indent_style = space
 
 [index.{xml,yaml,hjson,json}]
 indent_style = space
 indent_size = 4
+
+[schemas/entry.json]
+insert_final_newline = false
