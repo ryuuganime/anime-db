@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ryuuganime JSON Schema for Anime Lists, v.0.1-b",
+    "title": "Ryuuganime JSON Schema for Anime Lists, v.2.0-s",
     "description": "Anime lists validator based on this schema file.",
     "type": "array",
     "items": {
@@ -157,6 +157,7 @@
             "title",
             "ryuuganime",
             "path"
-        ]
+        ],
+        "uniqueItems": true
     }
 }

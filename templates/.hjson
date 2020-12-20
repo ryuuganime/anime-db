@@ -230,24 +230,24 @@
         #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
         // Allowed values are:
         // TV, ONA, OVA, Special, Movie, Music, and Unknown.
-        type: 
+        type: TV
 
         #: status [str] <nbl>
         #; = Describes serial broadcast status.
         // Allowed values are:
         // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
-        status: 
+        status: Finished
 
         #: source [str] <nbl>
         #; = Source type the media was adapted from.
         // Allowed values are:
         // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
-        source: 
+        source: Manga
 
         #: ageRating [str] <nab>
         #; = Broadcast content rating of serial. See Docuwiki for more information.
         // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-        ageRating: 
+        ageRating: PG13+
 
         #: isNsfw [boo] <nbl>
         #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
@@ -275,7 +275,7 @@
             [
                 {
                     id: 0
-                    provider: 
+                    provider: youtube
                 }
             ]
 
@@ -283,27 +283,27 @@
             [
                 {
                     title: 
-                    id: 0
+                    mbid: 
                     artists: [
                         {
-                            id: 
+                            mbid: 
                             name: 
                         }
                     ]
-                    type: 
+                    type: theme
                     position: 
                     episodes:
                     {
                         from: 0
                         to: 0
                         // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                        #only: 0
+                        only: [
+                            0
+                        ]
                         // Use this property if there's any episode exception
-                        /*
                         not: [
                             0
                         ]
-                        */
                     }
                     links: {
                         spotify: 
@@ -317,13 +317,13 @@
         {
             #: year [num] <nbl>
             #; = The year of the serial release, using a integrer/numeral format. If unknown, use 0.
-            year: 0
+            year: 2020
 
             #: season [str] <nab>
             #; = Season of serial releases.
             // Allowed values are
             // Winter, Spring, Summer, Fall, and Unknown
-            season: 
+            season: Unknown
 
             #: startDate [str] <nab>
             #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
@@ -349,21 +349,21 @@
         {
             #: count [num] <nab>
             #; = Total episodes of serial. If unknown, fill null.
-            count: 0
+            count: 12
 
             #: duration [num] <nab>
             #; = Duration per serial episode, using minute format. If unknown, fill null.
-            duration: 0
+            duration: 24
 
             #: totalDuration [num] <nab>
             #; = The total duration of the series, using the minute format. If unknown, fill null.
-            totalDuration: 0
+            totalDuration: 288
         }
 
         #: countryOfOrigin [str] <nbl>
         #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
         #    format.
-        countryOfOrigin: 
+        countryOfOrigin: JP
 
         #: genres [obj] <nbl> > [str]
         #; = Is genre(s) of serial. See docuwiki for more information.
@@ -393,19 +393,19 @@
             #; = Studios of producing series.
             studios:
             [
-
+                
             ]
 
             licensors:
             [
-
+                
             ]
 
             #: producers [arr] <nab> > [str]
             #; = Producers that involved to current entry/project.
             producers:
             [
-
+                
             ]
         }
 
@@ -438,7 +438,7 @@
             {
                 title: 
                 url: 
-                language: 
+                language: ja_JP
             }
         ]
 
@@ -468,11 +468,37 @@
             imdb: {
                 seasonNumber: 0
                 showId: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
 
             kinoPoisk: {
                 seasonNumber: 0
                 showId: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
 
             kitsu: {
@@ -487,6 +513,19 @@
             myShows: {
                 seasonNumber: 0
                 showId: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
 
             nautiljon: 
@@ -499,9 +538,26 @@
                 showSlug: 
                 showUuid: 
                 seasonNumber: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
 
-            shikimori: 0
+            shikimori: {
+                showId: 0
+                isMoved: false
+                newShowId: null
+            }
 
             shoboi: 0
 
@@ -510,21 +566,60 @@
             simkl: {
                 showId: 0
 
-                /* USE THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
                 seasonNumber: 0
-                seasonId: 0
-                */
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
             
 
             tmdb: {
                 showId: 0
                 seasonNumber: 0
+                seasonId: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
 
             tvdb: {
                 showId: 0
                 seasonNumber: 0
+                seasonId: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
             trakt:
             {
@@ -532,6 +627,19 @@
                 showId: 0
                 seasonId: 0
                 seasonNumber: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
             }
         }
 

@@ -184,8 +184,15 @@
                             },
                             "patternProperties": {
                                 "^[a-z]{2,3}(_[A-Z]{1}[a-z]{2,3})?(_[A-Z0-9]{2,3})?$": {
-                                    "type": "string",
-                                    "description": "Serial title in custom (non default) languages."
+                                    "description": "Serial title in custom (non default) languages.",
+                                    "oneOf": [
+                                        {
+                                            "type": "string"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
                                 }
                             }
                         },
@@ -460,7 +467,6 @@
                         "de_DE",
                         "ko_KR",
                         "fr_FR",
-                        "pt_PT",
                         "ru_RU",
                         "es_ES",
                         "zh_Hans",
@@ -520,7 +526,7 @@
                 },
                 "ageRating": {
                     "description": "Content rating of the serial",
-                    "default": "PG7+",
+                    "default": "PG13+",
                     "enum": [
                         "G0+",
                         "PS2+",
@@ -603,7 +609,7 @@
                                 "type": "object",
                                 "required": [
                                     "title",
-                                    "id",
+                                    "mbid",
                                     "artists",
                                     "type",
                                     "episodes",
@@ -615,7 +621,7 @@
                                         "type": "string",
                                         "description": "Title of soundtrack"
                                     },
-                                    "id": {
+                                    "mbid": {
                                         "description": "Musicbrainz UUID of track (recording)",
                                         "$ref": "#/definitions/uuid"
                                     },
@@ -625,7 +631,7 @@
                                         "items": {
                                             "type": "object",
                                             "properties": {
-                                                "id": {
+                                                "mbid": {
                                                     "description": "Musicbrainz UUID of artists/performers",
                                                     "$ref": "#/definitions/uuid"
                                                 },
@@ -1034,7 +1040,8 @@
                             "language": {
                                 "description": "Site language. Using ICU format",
                                 "type": "string",
-                                "pattern": "^[a-z]{2,3}(_[A-Z]{1}[a-z]{2,3})?(_[A-Z0-9]{2,3})?"
+                                "pattern": "^[a-z]{2,3}(_[A-Z]{1}[a-z]{2,3})?(_[A-Z0-9]{2,3})?",
+                                "default": "ja_JP"
                             }
                         },
                         "required": [
@@ -1135,14 +1142,16 @@
                             },
                             "required": [
                                 "showId",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "kinoPoisk": {
                             "$ref": "#/definitions/showDb",
                             "required": [
                                 "showId",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "kitsu": {
@@ -1162,7 +1171,8 @@
                             "$ref": "#/definitions/showDb",
                             "required": [
                                 "showId",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "nautiljon": {
@@ -1191,11 +1201,48 @@
                             "required": [
                                 "showSlug",
                                 "showUuid",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "shikimori": {
-                            "$ref": "#/definitions/nabShowId"
+                            "$ref": "#/definitions/showDb",
+                            "required": [
+                                "showId",
+                                "isMoved",
+                                "newShowId"
+                            ],
+                            "properties": {
+                                "showId": {
+                                    "$ref": "#/definitions/nabShowId"
+                                },
+                                "isMoved": {
+                                    "type": "boolean",
+                                    "default": false
+                                },
+                                "newShowId": {
+                                    "oneOf": [
+                                        {
+                                            "type": "string",
+                                            "pattern": "^[a-z]{1}[\\d]+$"
+                                        },
+                                        {
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            },
+                            "dependencies": {
+                                "newShowId": [
+                                    "isMoved"
+                                ],
+                                "isMoved": [
+                                    "newShowId"
+                                ]
+                            },
+                            "require": [
+                                "showId"
+                            ]
                         },
                         "shoboi": {
                             "$ref": "#/definitions/nabShowId"
@@ -1206,21 +1253,25 @@
                         "simkl": {
                             "$ref": "#/definitions/showDb",
                             "required": [
-                                "showId"
+                                "showId",
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "tmdb": {
                             "$ref": "#/definitions/showDb",
                             "required": [
                                 "showId",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "tvdb": {
                             "$ref": "#/definitions/showDb",
                             "required": [
                                 "showId",
-                                "seasonNumber"
+                                "seasonNumber",
+                                "specifiedEpisode"
                             ]
                         },
                         "trakt": {
@@ -1229,7 +1280,8 @@
                                 "showId",
                                 "seasonNumber",
                                 "seasonId",
-                                "showSlug"
+                                "showSlug",
+                                "specifiedEpisode"
                             ]
                         }
                     }
