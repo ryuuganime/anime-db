@@ -1196,6 +1196,9 @@
                         "otakOtaku": {
                             "$ref": "#/definitions/nabShowId"
                         },
+                        "perpusIndo": {
+                            "$ref": "#/definitions/nabShowId"
+                        },
                         "reelgood": {
                             "$ref": "#/definitions/showDb",
                             "required": [
