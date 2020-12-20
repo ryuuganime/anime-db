@@ -13,7 +13,6 @@
     "path": {
         "json": "/json/000/000.json",
         "hjson": "/hjson/000/000.hjson",
-        "xml": "/xml/000/000.xml",
         "yaml": "/yaml/000/000.yaml"
     }
 }

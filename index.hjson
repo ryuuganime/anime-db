@@ -1,4 +1,9 @@
+#hjson
 /*------------------------------------*\
+|      RYUUGANIME ENTRY INDEX LIST     |
+|             Version 1.3-r            |
+|       Latest Update: 2020-10-09      |
+|- - - - - - - - — - - - - - - - - - - |
 |         //Scheme Template//          |
 |   Copy  this "schema"  for  accessi- |
 | bility  to   fills  machine-friendly |
@@ -21,7 +26,6 @@
         {
             json: /json/000/000.json
             hjson: /hjson/000/000.hjson
-            xml: /xml/000/000.xml
             yaml: /yaml/000/000.yaml
         }
     }

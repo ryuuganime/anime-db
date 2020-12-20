@@ -1,4 +1,6 @@
 ---
+# version: 1.3
+# staging: release
 -
     myAnimeList: 41120
     kitsu: 43056
