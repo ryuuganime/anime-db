@@ -67,6 +67,8 @@ series:
     soundtracks:
       - title: ''
         mbid: ''
+        isrc: ''
+        bpm: 0
         artists:
           - mbid: ''
             name: ''

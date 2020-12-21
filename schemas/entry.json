@@ -12,6 +12,10 @@
                 {
                     "format": "uri",
                     "pattern": "https://raw\\.githubusercontent\\.com/ryuuganime/ryuuganime-db/master/schemas/entry\\.json"
+                },
+                {
+                    "format": "uri",
+                    "pattern": "https://schema\\.ryuuganime\\.my\\.id/entry/v[\\d.]+-[srban]{1}\\.json"
                 }
             ],
             "default": "https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json"
@@ -610,6 +614,8 @@
                                 "required": [
                                     "title",
                                     "mbid",
+                                    "isrc",
+                                    "bpm",
                                     "artists",
                                     "type",
                                     "episodes",
@@ -624,6 +630,30 @@
                                     "mbid": {
                                         "description": "Musicbrainz UUID of track (recording)",
                                         "$ref": "#/definitions/uuid"
+                                    },
+                                    "isrc": {
+                                        "description": "International Standard Recording Code (ISRC) ID of recording/track",
+                                        "oneOf": [
+                                            {
+                                                "type": "string",
+                                                "pattern": "^[A-Z]{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}"
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
+                                    },
+                                    "bpm": {
+                                        "description": "Beats per minute of track",
+                                        "oneOf": [
+                                            {
+                                                "type": "integer",
+                                                "minimum": 40
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
                                     },
                                     "artists": {
                                         "type": "array",
@@ -1075,6 +1105,7 @@
                         "nautiljon",
                         "notifyMoe",
                         "otakOtaku",
+                        "perpusIndo",
                         "reelgood",
                         "shikimori",
                         "shoboi",

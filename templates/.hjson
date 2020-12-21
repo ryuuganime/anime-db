@@ -284,6 +284,8 @@
                 {
                     title: 
                     mbid: 
+                    isrc: 
+                    bpm: 0
                     artists: [
                         {
                             mbid: 
