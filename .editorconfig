@@ -3,6 +3,11 @@ charset = utf-8
 end_of_line = lf
 insert_final_newline = false
 
+[plaintext]
+indent_size = 4
+indent_style = space
+end_of_line = lf
+
 [{xml,json,hjson}/**.{xml,json,hjson}]
 indent_style = space
 indent_size = 4
