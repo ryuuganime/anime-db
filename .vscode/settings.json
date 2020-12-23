@@ -67,22 +67,22 @@
         //Arabic dictionary defs.
         {
             "name": "ar_001",
-            "path": "${workspaceFolder}/.dictionary/ar_001/ar_001.rydict"
+            "path": "${workspaceFolder}/.dictionary/.rcdl/ar_001.rydict"
         },
         //Indonesian dictionary defs.
         {
             "name": "id_ID",
-            "path": "${workspaceFolder}/.dictionary/id_ID/id_ID.rydict"
+            "path": "${workspaceFolder}/.dictionary/.rcdl/id_ID.rydict"
         },
         //Japanese dictionary defs.
         {
             "name": "ja_JP",
-            "path": "${workspaceFolder}/.dictionary/ja_JP/ja_JP.rydict"
+            "path": "${workspaceFolder}/.dictionary/.rcdl/ja_JP.rydict"
         },
         //Vietnamese dictionary defs.
         {
             "name": "vn11",
-            "path": "${workspaceFolder}/.dictionary/vn_VN/vn_VN.rydict"
+            "path": "${workspaceFolder}/.dictionary/.rcdl/vn_VN.rydict"
         }
     ],
     "cSpell.dictionaries": [
