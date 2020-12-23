@@ -1,31 +1,10 @@
 {
-    //SCHEMAS
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "../json/000/*.json"
-            ],
-            "url": "./schemas/entry.json"
-        },
-        {
-            "fileMatch": [
-                "./list.json"
-            ],
-            "url": "./schemas/list.json"
-        },
-        {
-            "fileMatch": [
-                "index.json"
-            ],
-            "url": "./schemas/list.json"
-        }
-    ],
     "yaml.schemas": {
-        "./schemas/entry.json": [
+        "https://schema.ryuuganime.my.id/entry/v2.0-s.json": [
             "./yaml/*/*.yaml"
         ],
-        "./schemas/list.json": [
-            "index.hjson"
+        "https://schema.ryuuganime.my.id/index/v2.0-s.json": [
+            "index.yaml"
         ]
     },
     "json-yaml-schema-selector.additionalSchemas":[
@@ -33,11 +12,10 @@
             "name": "Ryuuganime List Validator",
             "description": "Ryuuganime List Validator",
             "fileMatch": [
-                "index.yaml",
                 "index.json",
                 "index.hjson"
             ],
-            "url": "./schemas/list.json"
+            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
         }
     ],
 
@@ -129,5 +107,19 @@
     "cSpell.ignoreWords": [
         "minlength"
     ],
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "index.json"
+            ],
+            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
+        },
+        {
+            "fileMatch": [
+                "index.hjson"
+            ],
+            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
+        }
+    ]
 }

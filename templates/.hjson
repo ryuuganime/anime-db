@@ -34,9 +34,9 @@
     #: $schema [str] <nbl> <uri>
     #; = Very not recommended to modify this configuration value if not having any knowledge in
     #;   JSON!
-    $schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+    $schema: https://schema.ryuuganime.my.id/entry/v2.0-s
     // Optional value, tick a comment syntax of above value, and untick value below.
-    #$schema: ../../schemas/entry.json
+    #$schema: ../../schemas/entry/v2.0-s.json
 
     // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
     version: {

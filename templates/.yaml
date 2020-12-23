@@ -1,4 +1,4 @@
-"$schema": https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+"$schema": https://schema.ryuuganime.my.id/entry/v2.0-s.json
 version:
   stage: stable
   version: 2
