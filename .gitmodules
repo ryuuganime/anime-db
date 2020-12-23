@@ -1,3 +1,6 @@
 [submodule "schemas"]
 	path = schemas
 	url = https://github.com/ryuuganime/jsonschema.git
+[submodule ".dictionary"]
+	path = .dictionary
+	url = https://github.com/ryuuganime/dictionaries.git
