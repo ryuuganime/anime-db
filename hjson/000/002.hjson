@@ -1,836 +1,57 @@
-#hjson
-/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+#hjson {"version":"2.0-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
-|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
-|                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
-|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
-| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
-|   non-developer to contribute | | [arr] is an array value. It  | |                              |
-|   on filling related anime    | |   is a combination of        | | '''                          |
-|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
-|   on each of values in as a   | |   in one value               | |       lines text value       |
-|   comment                     | | [obj] is an object value.    | |                          ''' |
-|                               | |   Signifies that this value  | | is a syntax that allows user |
-\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
-|                               | |                              | |   pointer                    |
-| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
-|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
-| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
-|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
-|   on a value is more than one | //    mistakes without even realizing it.
-| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
-|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
-|   null, if possible           | //    itself. It's intended to be used like a user interface for
-| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
-|   "deleted" or changed to     | //    the machine.
-|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
-|   essential for the file      | //    on HJSON. 
-|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
-|                               | //    for example.
-\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
-{ 
-  # $schema [str] <nbl> <url>
-  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
-  $schema: ../../schemas/entry.json
-  // Optional value, tick a comment syntax of above value, and untick value below.
-  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.0-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON.
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/014.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <uri>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
+    #;   JSON!
+    $schema: https://schema.ryuuganime.my.id/entry/v2.0-s
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry/v2.0-s.json
 
-  # title [obj] <nbl>
-  # title of serial... in several languages. Based on ICU locales.
-  title:
-  {
-    # native [str] <nbl>
-    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native: ソードアート・オンライン アリシゼーション
-
-    # en_Latn [str] <nbl>
-    # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Sword Art Online: Alicization
-
-    # ar_001 [str] <nab>
-    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
-    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: سوارد ارت اونلاين اليزيشن
-
-    # id_ID [str] <nab>
-    # = Serial title in Indonesian (un/official)
-    //  REGEX: ^[\w\s\S]+$
-    id_ID: Sword Art Online: Alisizasi
-
-    # en_US [str] <nab>
-    # = Serial title in English.
-    //  REGEX: ^[\w\s\S]+$
-    en_US: Sword Art Online: Alicization
-
-    # ja_JP [str] <nab>
-    # = Serial title in Japanese.
-    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: ソードアート・オンライン アリシゼーション
-
-    # de_DE [str] <nab>
-    # = Serial title in German (un/official).
-    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: Sword Art Online: Alicization
-
-    # ko_KR [str] <nab>
-    # = Serial title in South/North Korean.
-    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 소드 아트 온라인 앨리시제이션
-
-    # fr_FR [str] <nab>
-    # = Serial title in French (or other accent).
-    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: Sword Art Online: Alicization
-
-    # pt_PT [str] <nab>
-    # = Serial title in Portuguese.
-    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Sword Art Online: Alicization
-
-    # ru_RU [str] <nab>
-    # = Serial title in Russian (un/official). 
-    //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Мастера Меча Онлайн: Алисизация
-
-    # es_ES [str] <nab>
-    # = Serial title in Spanish (or other accent).
-    //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: Sword Art Online: Alicization
-
-    # zh_Hans [str] <nab>
-    # = Serial title in Simplified Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 刀剑神域 爱丽丝篇
-
-    # zh_Hant [str] <nab>
-    # = Serial title in Traditional Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 刀劍神域 愛麗絲篇
-
-    # vi_VN [str] <nab>
-    # = Serial title in Vietnamese.
-    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Sword Art Online: Alicization
-  }
-
-  # backdrop [str] <url> <nbl>
-  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://www.anime-planet.com/images/anime/screenshots/sword-art-online-alicization-9199-1.jpg?t=1544545041
-
-  # visualKey [str] <url> <nbl>
-  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/posters/259640-19.jpg
-
-  # synopsis [obj] <nbl>
-  # = A synopsis/plot of story of serial in several languages. 
-  synopsis:
-  {
-    # ar_001 [str] <nab>
-    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
-    #   Wikipedia for Arabic synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''قصة أنمي Sword Art Online: Alicization تبدأ عندما يستيقظ كيريتو في غابة واسعة خيالية مليئة بالأشجار الشاهقة، خلال بحثه عن أدلة على حقيقة محيطه يصادف صبيًّا صغيرًا يبدو أنه يعرفه، وهم في خضم بحثهم عن والدي الصبيّ، يجد كيريتو ذكريات غريبة تعود إليه كذكرى من طفولته، وفي هذه الذكرى، يرى شخصًا آخر غير الصبيّ، وهي فتاة شابة صغيرة، اسمها أليس، وهو اسم يجب ألا يُنسى أبدًا'''
-
-    # id_ID [str] <nab>
-    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
-    #   fanshare for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Ketika Kirito terbangun, dia berada di kedalaman hutan yang sangat luas dan penuh dengan pepohonan yang menjulang tinggi. Dalam pencariannya untuk menemukan petunjuk di sekitarnya, Kirito bertemu dengan seorang anak laki-laki yang sepertinya mengenal dirinya. Anak itu seharusnya NPC biasa, namun ternyata dia memiliki perasaan layaknya manusia. Saat mereka mencari orang tua dari anak itu, Kirito mulai mengingat kenangan-kenangan yang aneh. Kenangan masa kecilnya, tentang anak laki-laki, anak perempuan berambut emas, dan nama yang seharusnya tidak pernah dia lupakan, Alice.'''
-
-    # en_US [str] <nab>
-    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
-    #   synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''Kirito awakens in a vast, fantastical forest filled with towering trees. In his search for clues to the truth of his surroundings, he encounters a young boy who seems to know him. He ought to be a simple NPC, but the depth of his emotions seem no different than a human. As they search for the boy's parents, Kirito finds a peculiar memory returning to him. A memory from his own childhood, of this boy and a girl, too, with golden hair, and a name he should have never forgotten... Alice.'''
-
-    # ja_JP [str] <nab>
-    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''「ここは……どこだ……？」 気づけばキリトは、なぜか壮大なファンタジーテイストの仮想世界にフルダイブしていた。ログイン直後の記憶があやふやなまま、手がかりを求めて辺りを彷徨う。 そして、漆黒の巨木《ギガスシダー》のもとにたどり着いた彼は、一人の少年と出会う。 「僕の名前はユージオ。よろしくキリト君」 少年は仮想世界の住人――《NPC》にもかかわらず、人間と同じ《感情の豊かさ》を持ち合わせていた。 ユージオと親交を深めながら、この世界からのログアウトを模索するキリト。 そんな彼の脳裏に、ある記憶がよみがえる。 それは、幼少期のキリトとユージオが野山を駆け回る想い出――本来、あるはずのない記憶。更にその想い出には、ユージオともう一人、金髪の髪を持つ少女の姿があった。 名前は、アリス。 絶対に忘れてはいけないはずの、大切な名前――。'''
-
-    # de_DE [str] <nab>
-    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Als Kirito in einem riesigen Wald erwacht, umgeben von einer atemberaubenden Kulisse aus gewaltigen Bäumen, bemerkt er, dass er nur noch eine verschwommene Erinnerung daran hat, was vor seinem Einloggen in die virtuelle Welt geschehen ist. Auf der Suche nach Hinweisen beginnt er den Wald zu erkunden und trifft vor der großen Zeder auf einen Jungen namens Eugeo, der Kirito bereits zu kennen scheint. Obwohl es sich bei dem Jungen um einen Non Player Character handeln muss, besitzt er dieselbe Tiefe und Komplexität an Emotionen wie ein menschliches Wesen. Die beiden machen sich auf die Suche nach seinen Eltern, bis Kirito plötzlich eine Erinnerung, die tief in ihm verborgen lag, wiedererlangt – eine Erinnerung aus seiner eigenen Kindheit! Darin läuft er gemeinsam mit Eugeo durch den Wald und an seiner Seite ist ein Mädchen mit goldenen Haaren, das den Namen Alice trägt. Doch wer ist diese mysteriöse Alice, deren Name nie hätte vergessen werden sollen?'''
-
-    # ko_KR [str] <nab>
-    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''키리토는 의문의 가상세계에 로그인 된 뒤 잃어버린 기억의 실마리를 찾기 위해 떠돌기 시작한다. 그곳에서 가상세계의 주민이지만 인간처럼 풍부한 감정을 지닌 유지오를 만나게 된다.'''
-
-    # fr_FR [str] <nab>
-    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''A la demande de Seijirô Kikuoka, Kazuto est choisi pour tester un tout nouveau projet de Rath inspiré en parti du projet Medicuboid. Ce dernier, baptisé Soul Translator, lui permet d'accéder à un tout nouveau monde virtuel : l'Underworld.
-Lors de sa toute première immersion, Kirito prend une apparence enfantine et fait la connaissance d'Alice et Eugeo, qui semblent avoir le même "âge" que lui. Les trois enfants sympathisent mais les choses se gâtent quand Alice est enlevée pour avoir violé l'une des règles de ce monde tandis que Kirito doit se déconnecter.
-
-Plus tard, alors qu'il raccompagne Asuna chez elle, Kazuto est attaqué par un ancien membre des Laughing Coffin, qui parvient à lui injecter une dose de succinylcholine. Entre la vie et la mort, il n'a plus qu'une seule chance de survie : le Soul Translator ! Mais lors de sa nouvelle immersion, les choses ont bien changé dans le monde d'Alice.'''
-
-    # pt_PT [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: null
-
-    # ru_RU [str] <nab>
-    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Кирито просыпается в гуще огромного, фантастического леса. В попытках разузнать, как он там очутился, он встречает мальчика, который, кажется, знает его. Он должен быть обычным NPC, но его эмоции ничуть не отличаются от человеческих. Со временем к Кирито возвращаются некие воспоминания. Воспоминания из его детства, об этом мальчике и девочке с золотыми, как солнце, волосами, и именем, которое он никогда не должен забыть, — Алиса.'''
-
-    # es_ES [str] <nab>
-    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''El Soul Translator es una interfaz que interactúa directamente con el fluctlight del usuario, algo así como el alma humana, y difiere fundamentalmente del método anterior de envío de señales al cerebro. El instituto RATH apunta a perfeccionarlo con la ayuda de Kazuto Kirigaya, que trabaja allí como empleado a tiempo parcial para probar las capacidades del sistema. Según el contrato de confidencialidad, cualquier recuerdo creado por la máquina en el mundo virtual se borra al regresar al mundo real y Kazuto sólo puede recordar vagamente un solo nombre, Alice, que le produce inquietud. Cuando Kazuto acompaña a Asuna Yuuki a su casa una noche, se encuentran con un enemigo conocido de la época de SAO y Kazuto cae fatalmente herido en la lucha y pierde el conocimiento. Cuando despierta, descubre que se ha sumergido por completo en el Inframundo, aparentemente sin forma de escapar. Se embarca entonces en la búsqueda de un camino de regreso al mundo físico una vez más.'''
-
-    # zh_Hans [str] <nab>
-    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hant (Traditional Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''“这里……是哪儿……”
-察觉到的时候，桐人不知为什么陷入了庞大的幻想风格虚拟世界。登录前的记忆模糊不清，只得在周围徘徊寻找线索。
-之后，来到漆黑的巨树“基家斯西达”旁边的他，同一名少年相遇了。“我的名字是尤吉欧。请多关照，桐人君。”少年是在虚拟世界的居民――即“NPC”，但是却如同人类一样拥有“丰富感情”。
-在和尤吉欧加深交往的同时，桐人也在摸索着登出这个世界的方法。在桐人的脑海中，某一个记忆苏醒了。那是幼年时的桐人和尤吉欧在山野奔跑的记忆――原本，不可能存在的记忆。而在那个回忆中，除了尤吉欧还有一个金发少女的身影。她的名字，是爱丽丝。绝对不应该忘记的、重要的名字。'''
-
-    # zh_Hant [str] <nab>
-    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hans (Simplified Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''「這裡……是哪兒……」
-察覺到的時候，桐人不知為什麼陷入了龐大的幻想風格虛擬世界。登錄前的記憶模糊不清，只得在周圍徘徊尋找線索。
-之後，來到漆黑的巨樹「基家斯西達」旁邊的他，同一名少年相遇了。「我的名字是尤吉歐。請多關照，桐人君。」少年是在虛擬世界的居民──即「NPC」，但是卻如同人類一樣擁有「豐富感情」。
-在和尤吉歐加深交往的同時，桐人也在摸索著登出這個世界的方法。在桐人的腦海中，某一個記憶蘇醒了。那是幼年時的桐人和尤吉歐在山野奔跑的記憶──原本，不可能存在的記憶。而在那個回憶中，除了尤吉歐還有一個金發少女的身影。她的名字，是愛麗絲。絕對不應該忘記的、重要的名字。'''
-
-    # vi_VN [str] <nab>
-    # = Synopsis in Vietnamese.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Kirito tỉnh dậy trong một khu rừng rộng lớn, hoang sơ đầy những cây cổ thụ cao lớn.
-Trong cuộc tìm kiếm manh mối về sự thật xung quanh, anh gặp một cậu bé và hình như cậu ấy quen biết anh.
-Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở lại trong tâm trí của Kirito. Đó là câu chuyện về thời thơ ấu của Kirito, cậu bé ấy và một cô gái với cái tên đáng ra không được bao giờ quên - Alice.'''
-  }
-
-  # information [obj] <nbl>
-  # = Is a collection of information about serial.
-  information:
-  {
-    # synonyms [obj] <nbl> => [arr] <nab>
-    # = Synonym, other titles that well-known on the public.
-    synonyms:
-    {
-      en_Latn: [
-          Sword Art Online III
-          SAO Alicization
-          SAO III
-          SAO3
-          Alicization
-          Sōdo Āto Onrain
-      ]
-      ar_001: null
-      id_ID: null
-      en_US: null
-      ja_JP: null
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: [
-        Sword Art Online — Алисизация
-        Искусство Меча Онлайн: Алисизация
-      ]
-      es_ES: null
-      zh_Hans: [
-        刀剑神域 Alicization篇
-        刀剑神域3
-      ]
-      zh_Hant: [
-        刀劍神域 Alicization
-        刀劍神域3
-      ]
-      vi_VN: null
+    // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
+    version: {
+        stage: stable
+        version: 2.0
     }
+    // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
-    # type [obj] <nbl> => [str] <nbl>
-    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
-    type:
-    {
-      // Allowed values are:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+    #: id [num] <nbl>
+    #; = Serial ID number on Ryuuganime Database.
+    id: 2
 
-      // Allowed values are:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
-    }
-
-    # status [obj] > [str] <nbl>
-    # = Describes the serial broadcast status.
-    status:
-    {
-      // Allowed values are:
-      // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Aired
-
-      // Allowed values are:
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Ditayangkan
-    }
-
-    # serialGenre [obj]
-    # = Is genre(s) of serial. See the wiki for more information.
-    serialGenre:
-    {
-      # en_US [arr] <nbl>
-      # = Serial genre in English.
-      //  Allowed values are:
-      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
-      //  Supernatural, Thriller, War
-      en_US:
-      [
-        Action
-        Adventure
-        Fantasy
-        Romance
-        Science Fiction
-        Drama
-        Mature
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial genre in Indonesian.
-      //  Allowed values are:
-      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
-      //  Olahraga, Supernatural, Thriller, Peperangan
-      id_ID:
-      [
-        Aksi
-        Petualangan
-        Fantasi
-        Romansa
-        Fiksi Ilmiah
-        Drama
-        Dewasa
-      ]
-    }
-
-    # serialTags [obj]
-    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
-    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
-    #   present on serialTags. See the wiki for more information.
-    serialTags:
-    {
-      # en_US [arr] <nbl>
-      # = Serial tags in English.
-      en_US:
-      [
-        Game
-        Virtual World
-        Swordplay
-        Artificial Intelligence
-        Time Manipulation
-        Video Games
-        Isekai
-        Dragons
-        Tragedy
-        Memory Manipulation
-        Medieval
-        RPG
-        Virtual Reality
-        School Life
-        Angst
-        Sexual Abuse
-        Ecchi
-        Love Polygon
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial tags in Indonesian.
-      id_ID:
-      [
-        Permainan
-        Dunia virtual
-        Permainan anggar
-        Kecerdasan Buatan
-        Manipulasi Waktu
-        Video Game
-        Isekai
-        Naga
-        Tragedi
-        Manipulasi Memori
-        Pertengahan
-        RPG
-        Realitas Maya
-        Kehidupan Sekolah
-        Kecemasan
-        Pelecehan Seksual
-        Ecchi
-        Cinta Segitiga
-      ]
-    }
-
-    # releaseSeason [obj] <nbl> => [str] <nbl>
-    # = Season of serial releases.
-    releaseSeason:
-    {
-      // Allowed values are
-      // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Fall
-
-      // Allowed values are
-      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Gugur
-
-      // Allowed values are
-      // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 秋
-
-      // Allowed values are
-      // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 가을
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 秋天
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 秋天
-    }
-
-    # releaseYear [num] <nbl>
-    # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2018
-
-    # episode [num] <nbl>
-    # = Total episodes of serial. If unknown, fill null.
-    episode: 24
-
-    # releaseDate [str]
-    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2018-10-07
-
-    # endDate [str]
-    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: 2019-03-31
-
-    # duration [num] <nab>
-    # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 25
-
-    # totalDuration [num] <nab>
-    # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 625
-
-    # studio [str] <arb> <nab>
-    # = Studio producing series.
-    studio: A-1 Pictures
-
-    # rating [str] <nab>
-    # = Broadcast content rating of serial. See the wiki for more information.
-    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
-
-    # isNsfw [boo] <nbl>
-    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
-    #   known as safe.
-    //  Allowed values are "true" and "false"
-    isNsfw: false
-
-    # adaptation [obj] > [str] <arb> <nab>
-    # = Is the original adaptation of the show.
-    adaptation:
-    {
-      // Allowed values are:
-      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
-      //   4-koma, Fairy Tale, and null
-      en_US: Novel
-
-      // Allowed values are:
-      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
-      //   4-panel, Dongeng, and null
-      id_ID: Novel
-    }
-
-    # country [str] <nbl>
-    # = Country of origin of serial. There are no country restrictions here.
-    country:
-    {
-      en_US: Japan
-      id_ID: Jepang
-    }
-
-    # officialWebsite [str] <url> <nab>
-    # = Links to official website of current entry.
-    officialWebsite: http://www.swordart-online.net/alicization/
-
-    # promotionalVideos [arr] <nab> > [str] <url>
-    # = List of promotional videos of current entry.
-    promotionalVideos: [
-        https://www.youtube.com/watch?v=eqp1vwV8usU
-        https://www.youtube.com/watch?v=AgUDAN_6nOE
-    ]
-
-    # producers [arr] <nab> > [str]
-    # = Producers that involved to current entry/project
-    producers: [
-        Aniplex
-        Genco
-        Bandai Namco Entertainment
-        Egg Firm
-        Straight Edge
-        Kadokawa
-        Sonilude
-    ]
-  }
-
-  # scores [obj] > [str]/[num] <nab>
-  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
-  //  and on the score.
-  scores:
-  {
-    // https://anidb.net
-    aniDB:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 13493
-      score: 5.93
-    }
-    
-    // https://anilist.co
-    AniList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 100182
-      score: 75
-    }
-
-    // https://anime-planet.com
-    AnimePlanet:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/sword-art-online-alicization
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 9199
-      score: 4.142
-    }
-
-    // https://animenewsnetwork.com
-    ANN:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 20665
-      score: 7.533
-    }
-
-    // https://anisearch.com
-    aniSearch:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/12852,sword-art-online-alicization
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 12852
-      score: 79
-    }
-
-    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
-    Annict:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 5550
-      score: 92.18
-    }
-
-    // https://imdb.com
-    IMDb:
-    {
-      # code [str] <nab>
-      # = Similar to ID, but the only difference is there is an additional identification character
-      #   that used by IMDB.
-      code: tt2250192
-      score: 7.6
-    }
-
-    // https://kinopoisk.ru
-    KinoPoisk:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 691223
-      score: 8.015
-    }
-
-    // https://kitsu.io
-    Kitsu:
-    {
-      # slug [str]
-      # = Is a human readable version of the linked index URL.
-      slug: sword-art-online-alicization
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 13893
-      score: 79.01
-    }
-
-    // https://livechart.me
-    LiveChart:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 2908
-      score: 8.35
-    }
-
-    // https://myanimelist.net
-    MyAnimeList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 36474
-      score: 7.61
-    }
-    
-    // https://en.myshows.me/
-    MyShows:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 25619
-      score: 4.2
-    }
-
-    // http://nautiljon.com/
-    Nautiljon:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/sword+art+online+-+alicization.html
-      score: 8.52
-    }
-
-    // https://notify.moe/
-    Notify:
-    {
-      # base64 [str]
-      # = This is a unique numbering system that Notify.moe uses on their website
-      base64: GWyShKmiR
-      score: 7.67
-    }
-
-    // http://otakotaku.com/
-    OtakOtaku:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 941
-      score: 8.82
-    }
-
-    // http://shikimori.org/
-    Shikimori:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 36474
-      moved: true
-      newId: z36474
-      score: 7.61
-    }
-
-    // https://simkl.com
-    SIMKL:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 724317
-      isAnime: true
-      score: 7.8
-    }
-
-    // https://www.themoviedb.org/
-    TMDB:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/45782
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 45782
-      score: 80
-    }
-
-    // https://trakt.tv/
-    Trakt:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://trakt.tv/shows/sword-art-online
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 45529
-      score: 80
-    }
-
-    // https://www.tvtime.com/en
-    TVTime:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 259640
-      score: 9.58
-    }
-  }
-
-  # updatedDate [str] <nbl>
-  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
-  #   format. See the guide below for more information.
-  // Procedure for filling data
-  // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Which:
-  // YYYY = year (2020)
-  // MM   = month (12)
-  // DD   = date (21)
-  // hh   = hour, format 24 hour (22)
-  // mm   = minute (45)
-  // ss   = second (33)
-  // TZD  = time zone designator based on UTC (WIB: +07:00)
-  // so, 2020-12-21T22:45:33+07:00 is valid.
-  // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-08-01T19:50:12+07:00
-
-  # streamLinks [obj] <nbl>
-  # = Lists of official streaming sites.
-  streamLinks:
-  {
-    Abematv: https://abema.tv/search?q=%E3%82%BD%E3%83%BC%E3%83%89%E3%82%A2%E3%83%BC%E3%83%88%E3%83%BB%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%20%E3%82%A2%E3%83%AA%E3%82%B7%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
-    AdultSwim: null
-    AISPlay: null
-    All4: null
-    AniMe: null
-    AnimeDigitalNetwork: null
-    AnimeLab: https://www.animelab.com/shows/sword-art-online
-    AnimeLog: null
-    AnimeOnDemand: null
-    AnimePlanet: null
-    animeteleto: null
-    AniOne: null
-    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2086
-    AniPlusAsia: null
-    AsianCrush: null
-    BahamutAnimeCrazy: https://ani.gamer.com.tw/animeVideo.php?sn=10849
-    BandaiChannel: null
-    BandaiSpirits: null
-    bilibili: https://www.bilibili.com/bangumi/media/md130412
-    Coalise: null
-    ComicFestaAnimeZone: null
-    ConTV: null
-    Coolmic: null
-    Crunchyroll: https://www.crunchyroll.com/sword-art-online
-    dAnimeStore: null
-    DMM: null
-    FOD: http://fod.fujitv.co.jp/s/genre/anime/ser5773
-    Funimation: https://www.funimation.com/shows/sword-art-online/
-    Genflix: null
-    GundamInfo: null
-    Gyao: null
-    HIDIVE: https://www.hidive.com/tv/sword-art-online-alicization
-    Hulu: https://www.hulu.com/series/sword-art-online-alicization-c22224e3-93c0-40ab-895d-1475d94a6688
-    iflix: null
-    iQIYI: http://www.iqiyi.com/a_19rrh1temd.html
-    JapaneseAnimatedFilmClassic: null
-    Mangas: null
-    MBSDougaizm: null
-    MidnightPulp: null
-    MuseAsia:
-    {
-      en_001: null
-      vi_VN: null
-      ms_MY: null
-      th_TH: null
-      zh_Hant_HK: null
-      zh_Hant_TW: null
-    }
-    Netflix: https://www.netflix.com/title/81029064
-    NicoNico: http://ch.nicovideo.jp/sao-alicization
-    PrimeVideo: https://www.amazon.co.jp/dp/B07J5RJ3ZW
-    RetroCrush: null
-    SelectaVision: null
-    Sushiroll: null
-    Telasa: null
-    TencentVideo: null
-    TVNOW: null
-    Vimeo: null
-    VIZ: null
-    VRV: https://vrv.co/series/GR49G9VP6
-    VVVVID: https://www.vvvvid.it/show/845/sword-art-online-alicization
-    Wakanim:
-    {
-      fr: https://www.wakanim.tv/fr/v2/catalogue/show/376
-      sc: https://www.wakanim.tv/sc/v2/catalogue/show/377
-      de: https://www.wakanim.tv/de/v2/catalogue/show/379
-      ru: https://www.wakanim.tv/ru/v2/catalogue/show/378
-    }
-    WeTV: null
-    YamatoAnimation: null
-    YouTube:
-    {
-      link: null
-      isChannel: false
-    }
-  }
-
-  # signature
-  # = Is an object that provides information regarding the contributors to the entry.
-  signature:
-  {
-    # name [str] <nbl>
-    # = Your name, can use pseudonym (pen name).
-    name: Yae
-
-    # username [str] <nbl>
-    # = Your username on GitHub
-    username: @Yae-chan
-
-    # discordId [num] <nbl>
-    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
-    #   ID: 594442535615725579
-    discordId: 481037097055027211
-
-    # submissionDateTime [str] <nbl>
-    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
-    #   for more information.
+    #: createdAt [str] <nbl>
+    #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
+    #;   See the guide below for more information.
     // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
     // Which:
@@ -843,11 +64,868 @@ Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-08-01T20:12:21+07:00
+    createdAt: 2020-08-01T20:12:21+07:00
 
-    # sign [str][num] <nbl>
-    # = These are the unique characters that contributors use to "sign" data. Can use characters 
-    #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: Dibantu oleh Natsu Tadama (384089845527478272)
-  }
+    #: modifiedAt [str] <nbl>
+    #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
+    #;   information.
+    // See instruction on createdAt property to see procedure for filling data
+    modifiedAt: 2020-12-19T14:30:42+07:00
+
+    series:
+    {
+        #: titles [obj] <nbl>
+        #; = Serial title in several languages based on ICU locales identifier.
+        titles:
+        {
+            #: main [obj] <nbl>
+            #; = Serial title in main languages
+            main:
+            {
+                #: native [str] <nbl>
+                #; = Serial title in native (canonical) language based on origin of studio and/or
+                #    airing first.
+                native: ソードアート・オンライン アリシゼーション
+
+                #: en_Latn [str] <nbl>
+                #; = Serial title in romanized text. Required for main title on entry list.
+                en_Latn: Sword Art Online: Alicization
+
+                en_US: Sword Art Online: Alicization
+
+                id_ID: Sword Art Online: Alisizasi
+
+                ja_JP: ソードアート・オンライン アリシゼーション
+
+                ru_RU: Мастера Меча Онлайн: Алисизация
+
+                zh_Hans: 刀剑神域 爱丽丝篇
+
+                zh_Hant: 刀劍神域 愛麗絲篇
+            }
+
+            #: additional [obj] <nab>
+            #; = Serial title in several additional languages based on ICU locales identifier that
+            #;   does not categorized as main languages.
+            additional:
+            {
+                ar_001: سوارد ارت اونلاين اليزيشن
+
+                de_DE: Sword Art Online: Alicization
+
+                es_ES: Sword Art Online: Alicization
+
+                fr_FR: Sword Art Online: Alicization
+
+                #: ja_Kana_JP [str] <nab>
+                #; = Serial title in Japanese Katakana-Hiragana writing system, "removing" kanji
+                #    from text.
+                ja_Kana_JP: ソードアート・オンライン アリシゼーション
+
+                ko_KR: 소드 아트 온라인 앨리시제이션
+
+                vi_VN: Sword Art Online: Alicization
+
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+            }
+
+            #: synonyms [obj] <nbl> => [arr] <nab>
+            #; = Synonym, other titles that well-known on the public.
+            synonyms:
+            {
+                en_Latn:
+                [
+                    Sword Art Online III
+                    SAO Alicization
+                    SAO III
+                    SAO3
+                    Alicization
+                    Sōdo Āto Onrain
+                ]
+                ar_001: null
+                id_ID: null
+                en_US: null
+                ja_JP: null
+                de_DE: null
+                ko_KR: null
+                fr_FR: null
+                ru_RU:
+                [
+                    Sword Art Online — Алисизация
+                    Искусство Меча Онлайн: Алисизация
+                ]
+                es_ES: null
+                zh_Hans: 
+                [
+                    刀剑神域 Alicization篇
+                    刀剑神域3
+                ]
+                zh_Hant: 
+                [
+                    刀劍神域 Alicization
+                    刀劍神域3
+                ]
+                vi_VN: null
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+            }
+        }
+
+        #: synopsis [obj] <nbl>
+        #; = A synopsis/plot of story of serial in several languages.
+        synopsis:
+        {
+            ar_001: '''قصة أنمي Sword Art Online: Alicization تبدأ عندما يستيقظ كيريتو في غابة واسعة خيالية مليئة بالأشجار الشاهقة، خلال بحثه عن أدلة على حقيقة محيطه يصادف صبيًّا صغيرًا يبدو أنه يعرفه، وهم في خضم بحثهم عن والدي الصبيّ، يجد كيريتو ذكريات غريبة تعود إليه كذكرى من طفولته، وفي هذه الذكرى، يرى شخصًا آخر غير الصبيّ، وهي فتاة شابة صغيرة، اسمها أليس، وهو اسم يجب ألا يُنسى أبدًا'''
+
+            id_ID: '''Ketika Kirito terbangun, dia berada di kedalaman hutan yang sangat luas dan penuh dengan pepohonan yang menjulang tinggi. Dalam pencariannya untuk menemukan petunjuk di sekitarnya, Kirito bertemu dengan seorang anak laki-laki yang sepertinya mengenal dirinya. Anak itu seharusnya NPC biasa, namun ternyata dia memiliki perasaan layaknya manusia. Saat mereka mencari orang tua dari anak itu, Kirito mulai mengingat kenangan-kenangan yang aneh. Kenangan masa kecilnya, tentang anak laki-laki, anak perempuan berambut emas, dan nama yang seharusnya tidak pernah dia lupakan, Alice.'''
+
+            en_US: '''Kirito awakens in a vast, fantastical forest filled with towering trees. In his search for clues to the truth of his surroundings, he encounters a young boy who seems to know him. He ought to be a simple NPC, but the depth of his emotions seem no different than a human. As they search for the boy's parents, Kirito finds a peculiar memory returning to him. A memory from his own childhood, of this boy and a girl, too, with golden hair, and a name he should have never forgotten... Alice.'''
+
+            ja_JP: '''「ここは……どこだ……？」 気づけばキリトは、なぜか壮大なファンタジーテイストの仮想世界にフルダイブしていた。ログイン直後の記憶があやふやなまま、手がかりを求めて辺りを彷徨う。 そして、漆黒の巨木《ギガスシダー》のもとにたどり着いた彼は、一人の少年と出会う。 「僕の名前はユージオ。よろしくキリト君」 少年は仮想世界の住人――《NPC》にもかかわらず、人間と同じ《感情の豊かさ》を持ち合わせていた。 ユージオと親交を深めながら、この世界からのログアウトを模索するキリト。 そんな彼の脳裏に、ある記憶がよみがえる。 それは、幼少期のキリトとユージオが野山を駆け回る想い出――本来、あるはずのない記憶。更にその想い出には、ユージオともう一人、金髪の髪を持つ少女の姿があった。 名前は、アリス。 絶対に忘れてはいけないはずの、大切な名前――。'''
+
+            de_DE: '''Als Kirito in einem riesigen Wald erwacht, umgeben von einer atemberaubenden Kulisse aus gewaltigen Bäumen, bemerkt er, dass er nur noch eine verschwommene Erinnerung daran hat, was vor seinem Einloggen in die virtuelle Welt geschehen ist. Auf der Suche nach Hinweisen beginnt er den Wald zu erkunden und trifft vor der großen Zeder auf einen Jungen namens Eugeo, der Kirito bereits zu kennen scheint. Obwohl es sich bei dem Jungen um einen Non Player Character handeln muss, besitzt er dieselbe Tiefe und Komplexität an Emotionen wie ein menschliches Wesen. Die beiden machen sich auf die Suche nach seinen Eltern, bis Kirito plötzlich eine Erinnerung, die tief in ihm verborgen lag, wiedererlangt – eine Erinnerung aus seiner eigenen Kindheit! Darin läuft er gemeinsam mit Eugeo durch den Wald und an seiner Seite ist ein Mädchen mit goldenen Haaren, das den Namen Alice trägt. Doch wer ist diese mysteriöse Alice, deren Name nie hätte vergessen werden sollen?'''
+
+            ko_KR: '''키리토는 의문의 가상세계에 로그인 된 뒤 잃어버린 기억의 실마리를 찾기 위해 떠돌기 시작한다. 그곳에서 가상세계의 주민이지만 인간처럼 풍부한 감정을 지닌 유지오를 만나게 된다.'''
+
+            fr_FR: '''A la demande de Seijirô Kikuoka, Kazuto est choisi pour tester un tout nouveau projet de Rath inspiré en parti du projet Medicuboid. Ce dernier, baptisé Soul Translator, lui permet d'accéder à un tout nouveau monde virtuel : l'Underworld.
+            Lors de sa toute première immersion, Kirito prend une apparence enfantine et fait la connaissance d'Alice et Eugeo, qui semblent avoir le même "âge" que lui. Les trois enfants sympathisent mais les choses se gâtent quand Alice est enlevée pour avoir violé l'une des règles de ce monde tandis que Kirito doit se déconnecter.
+
+            Plus tard, alors qu'il raccompagne Asuna chez elle, Kazuto est attaqué par un ancien membre des Laughing Coffin, qui parvient à lui injecter une dose de succinylcholine. Entre la vie et la mort, il n'a plus qu'une seule chance de survie : le Soul Translator ! Mais lors de sa nouvelle immersion, les choses ont bien changé dans le monde d'Alice.'''
+
+            ru_RU: '''Кирито просыпается в гуще огромного, фантастического леса. В попытках разузнать, как он там очутился, он встречает мальчика, который, кажется, знает его. Он должен быть обычным NPC, но его эмоции ничуть не отличаются от человеческих. Со временем к Кирито возвращаются некие воспоминания. Воспоминания из его детства, об этом мальчике и девочке с золотыми, как солнце, волосами, и именем, которое он никогда не должен забыть, — Алиса.'''
+
+            es_ES: '''El Soul Translator es una interfaz que interactúa directamente con el fluctlight del usuario, algo así como el alma humana, y difiere fundamentalmente del método anterior de envío de señales al cerebro. El instituto RATH apunta a perfeccionarlo con la ayuda de Kazuto Kirigaya, que trabaja allí como empleado a tiempo parcial para probar las capacidades del sistema. Según el contrato de confidencialidad, cualquier recuerdo creado por la máquina en el mundo virtual se borra al regresar al mundo real y Kazuto sólo puede recordar vagamente un solo nombre, Alice, que le produce inquietud. Cuando Kazuto acompaña a Asuna Yuuki a su casa una noche, se encuentran con un enemigo conocido de la época de SAO y Kazuto cae fatalmente herido en la lucha y pierde el conocimiento. Cuando despierta, descubre que se ha sumergido por completo en el Inframundo, aparentemente sin forma de escapar. Se embarca entonces en la búsqueda de un camino de regreso al mundo físico una vez más.'''
+
+            zh_Hans: '''“这里……是哪儿……”
+            察觉到的时候，桐人不知为什么陷入了庞大的幻想风格虚拟世界。登录前的记忆模糊不清，只得在周围徘徊寻找线索。
+            之后，来到漆黑的巨树“基家斯西达”旁边的他，同一名少年相遇了。“我的名字是尤吉欧。请多关照，桐人君。”少年是在虚拟世界的居民――即“NPC”，但是却如同人类一样拥有“丰富感情”。
+            在和尤吉欧加深交往的同时，桐人也在摸索着登出这个世界的方法。在桐人的脑海中，某一个记忆苏醒了。那是幼年时的桐人和尤吉欧在山野奔跑的记忆――原本，不可能存在的记忆。而在那个回忆中，除了尤吉欧还有一个金发少女的身影。她的名字，是爱丽丝。绝对不应该忘记的、重要的名字。'''
+
+            zh_Hant: '''「這裡……是哪兒……」
+            察覺到的時候，桐人不知為什麼陷入了龐大的幻想風格虛擬世界。登錄前的記憶模糊不清，只得在周圍徘徊尋找線索。
+            之後，來到漆黑的巨樹「基家斯西達」旁邊的他，同一名少年相遇了。「我的名字是尤吉歐。請多關照，桐人君。」少年是在虛擬世界的居民──即「NPC」，但是卻如同人類一樣擁有「豐富感情」。
+            在和尤吉歐加深交往的同時，桐人也在摸索著登出這個世界的方法。在桐人的腦海中，某一個記憶蘇醒了。那是幼年時的桐人和尤吉歐在山野奔跑的記憶──原本，不可能存在的記憶。而在那個回憶中，除了尤吉歐還有一個金發少女的身影。她的名字，是愛麗絲。絕對不應該忘記的、重要的名字。'''
+
+            vi_VN: '''Kirito tỉnh dậy trong một khu rừng rộng lớn, hoang sơ đầy những cây cổ thụ cao lớn.
+            Trong cuộc tìm kiếm manh mối về sự thật xung quanh, anh gặp một cậu bé và hình như cậu ấy quen biết anh.
+            Khi họ tìm kiếm cha mẹ của cậu bé, một ký ức bất chợt trở lại trong tâm trí của Kirito. Đó là câu chuyện về thời thơ ấu của Kirito, cậu bé ấy và một cô gái với cái tên đáng ra không được bao giờ quên - Alice.'''
+
+            /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+        }
+
+        #: isAnime [boo] <nbl>
+        #; = Explain that url is using /anime path or not. Used for SIMKL URL path. Default: true.
+        isAnime: true
+
+        #: type [str] <nab>
+        #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
+        // Allowed values are:
+        // TV, ONA, OVA, Special, Movie, Music, and Unknown.
+        type: TV
+
+        #: status [str] <nbl>
+        #; = Describes serial broadcast status.
+        // Allowed values are:
+        // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
+        status: Finished
+
+        #: source [str] <nbl>
+        #; = Source type the media was adapted from.
+        // Allowed values are:
+        // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
+        source: LightNovel
+
+        #: ageRating [str] <nab>
+        #; = Broadcast content rating of serial. See Docuwiki for more information.
+        // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
+        ageRating: PG13+
+
+        #: isNsfw [boo] <nbl>
+        #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
+        #;   known as safe.
+        isNsfw: false
+
+        #: isLicensed [boo] <nbl>
+        #; = Explains if the work/serial is legally licensed, if not (case: fanwork) then value
+        #;   turns false. Default: true.
+        isLicensed: true
+
+        media:
+        {
+            #: posterImage [str] <uri> <nab>
+            #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
+            posterImage: https://artworks.thetvdb.com/banners/posters/259640-19.jpg
+
+            #: coverImage [str] <uri> <nab>
+            #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
+            coverImage: https://www.anime-planet.com/images/anime/screenshots/sword-art-online-alicization-9199-1.jpg
+
+            #: promotionalVideos [arr] <nab> > [obj] > [str]
+            #; = List of promotional videos of current entry.
+            promotionalVideo:
+            [
+                {
+                    id: eqp1vwV8usU
+                    provider: youtube
+                }
+                {
+                    id: AgUDAN_6nOE
+                    provider: youtube
+                }
+            ]
+
+            soundtracks:
+            [
+                {
+                    title: ADAMAS
+                    mbid: a3fb10a4-fa8a-4905-865c-33a011d971bb
+                    isrc: JPU901803061
+                    bpm: 96
+                    artists: [
+                        {
+                            mbid: 85d76093-9865-4605-97fa-8c910929d366
+                            name: LiSA
+                        }
+                    ]
+                    type: theme
+                    position: opening
+                    episodes:
+                    {
+                        from: 2
+                        to: 13
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        #only: 0
+                        // Use this property if there's any episode exception
+                        /*
+                        not: [
+                            0
+                        ]
+                        */
+                    }
+                    links: {
+                        spotify: 7xsTPnzpEcqCQguRxnBxOR
+                        youtubeMusic: UeEIl4JlE-g
+                    }
+                }
+                {
+                    title: RESISTER
+                    mbid: 5a241ca9-01ea-455d-bfa4-08d246f9b4bd
+                    isrc: JPU901804314
+                    bpm: 91
+                    artists: [
+                        {
+                            mbid: e24c4566-fb70-45a1-bac0-22bbd4ccc9f2
+                            name: ASCA
+                        }
+                    ]
+                    type: theme
+                    position: opening
+                    episodes:
+                    {
+                        from: 14
+                        to: 24
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        #only: 0
+                        // Use this property if there's any episode exception
+                        not: [
+                            23
+                        ]
+                    }
+                    links: {
+                        spotify: 2lO9sYbtyixyMIlj3TDcuU
+                        youtubeMusic: fGXCKG6o2Ow
+                    }
+                }
+                {
+                    title: Iris (アイリス)
+                    mbid: 2068c406-fd7d-4fd6-8c44-922cfd981c68
+                    isrc: JPU901802940
+                    bpm: 129
+                    artists: [
+                        {
+                            mbid: 9e190e5d-3612-43c6-9381-d4972efca5c3
+                            name: Aoi Eir (藍井エイル)
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 2
+                        to: 13
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        #only: 0
+                        // Use this property if there's any episode exception
+                        /*
+                        not: [
+                            0
+                        ]
+                        */
+                    }
+                    links: {
+                        spotify: 2SsLcXEBuTZYv6mW1a3C53
+                        youtubeMusic: 7UYsuka3gLU
+                    }
+                }
+                {
+                    title: forget-me-not
+                    mbid: 80012dc5-eeb5-4acf-9639-ef0d2ec80f52
+                    isrc: JPU901804296
+                    bpm: 148
+                    artists: [
+                        {
+                            mbid: 4da158cc-4d03-48d6-aefc-6726e4f9a149
+                            name: ReoNa
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 14
+                        to: 24
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        #only: 0
+                        // Use this property if there's any episode exception
+                        not: [
+                            19
+                        ]
+                    }
+                    links: {
+                        spotify: 3A4Najtnflk9RIdkM34Njs
+                        youtubeMusic: KpzX87czSY4
+                    }
+                }
+                {
+                    title: Niji no Kanata ni (虹の彼方に)
+                    mbid: ffbd0191-5881-4bc2-89d3-ad08f15def40
+                    isrc: JPU901804355
+                    bpm: 97
+                    artists: [
+                        {
+                            mbid: 4da158cc-4d03-48d6-aefc-6726e4f9a149
+                            name: ReoNa
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: 19
+                        // Use this property if there's any episode exception
+                        /*
+                        not: [
+                            0
+                        ]
+                        */
+                    }
+                    links: {
+                        spotify: 64WsT14hhzXwbTEY1PntsU
+                        youtubeMusic: null
+                    }
+                }
+            ]
+        }
+
+        release:
+        {
+            #: year [num] <nbl>
+            #; = The year of the serial release, using a integrer/numeral format. If unknown, use 0.
+            year: 2018
+
+            #: season [str] <nab>
+            #; = Season of serial releases.
+            // Allowed values are
+            // Winter, Spring, Summer, Fall, and Unknown
+            season: Fall
+
+            #: startDate [str] <nab>
+            #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            startDate: 2018-10-07
+
+            #: dayOfTheWeek [str] <nab> <arb>
+            // Allowed values are
+            // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, and null.
+            dayOfTheWeek: Sunday
+
+            #: broadcastTime [str] <nab>
+            #; Local time of show broadcasted.
+            // FORMAT: hh:mm:ssTZD
+            // See instruction on createdAt property to see procedure for filling data
+            broadcastTime: 00:00:00+09:00
+
+            #: endDate [str] <nab>
+            #; = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            endDate: 2019-03-31
+        }
+
+        episode:
+        {
+            #: count [num] <nab>
+            #; = Total episodes of serial. If unknown, fill null.
+            count: 24
+
+            #: duration [num] <nab>
+            #; = Duration per serial episode, using minute format. If unknown, fill null.
+            duration: 24
+
+            #: totalDuration [num] <nab>
+            #; = The total duration of the series, using the minute format. If unknown, fill null.
+            totalDuration: 576
+        }
+
+        #: countryOfOrigin [str] <nbl>
+        #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
+        #    format.
+        countryOfOrigin: JP
+
+        #: genres [obj] <nbl> > [str]
+        #; = Is genre(s) of serial. See docuwiki for more information.
+        // Allowed values are:
+        // Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+        // Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+        // Supernatural, Thriller, War
+        genres: [
+            Action
+            Adventure
+            Fantasy
+            Romance
+            Science Fiction
+            Drama
+            Mature
+        ]
+
+        #: serialTags [arr] <nbl> > [obj] <nbl>
+        #; = Represents serial specific tags/content. Similar to the `.genres`, but usually more
+        #;   focused on content, storyline, or themes. But, all of `.genres` value will be ignored
+        #;   ignored if present on `.tags`. See docuwiki for more information.
+        tags: [
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Tragedy
+            }
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Time Skip
+            }
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Memory Manipulation
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Game
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Virtual World
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Swordplay
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Artificial Intelligence
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Video Games
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Isekai
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Dragons
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Medieval
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: RPG
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Virtual Reality
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: School Life
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Angst
+            }
+            {
+                isSpoiler: false
+                isNsfw: true
+                name: Sexual Abuse
+            }
+            {
+                isSpoiler: false
+                isNsfw: true
+                name: Ecchi
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Love Polygon
+            }
+        ]
+
+        companies:
+        {
+            #: studios [arr] <nbl>
+            #; = Studios of producing series.
+            studios:
+            [
+                A-1 Pictures
+            ]
+
+            licensors:
+            [
+                Aniplex of America
+            ]
+
+            #: producers [arr] <nab> > [str]
+            #; = Producers that involved to current entry/project.
+            producers:
+            [
+                Aniplex
+                Genco
+                Bandai Namco Entertainment
+                Egg Firm
+                Straight Edge
+                Kadokawa
+                Sonilude
+            ]
+        }
+
+        social:
+        {
+            #: twitter [str] <nab>
+            // Please to ignore @ sign while input username
+            twitter: sao_anime
+
+            facebook: null
+
+            #: instagram [str] <nab>
+            // Please to ignore @ sign while input username
+            instagram: null
+
+            #: hashtag [arr] <nab>
+            #; = Social media hashtag of shows. Sometimes used for campaign. Applicable for each SNS.
+            // Please to ignore # sign while input hashtag(s)
+            hashtag:
+            [
+                sao_anime
+            ]
+        }
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: TVアニメ「ソードアート・オンライン アリシゼーション」オフィシャルサイト
+                url: https://sao-alicization.net/1st/
+                language: ja_JP
+            }
+            {
+                title: SWORD ART ONLINE Alicization Official USA Website
+                url: https://sao-alicization.com/1st/
+                language: en_US
+            }
+            {
+                title: TVアニメ「ソードアート・オンライン」オフィシャルサイト
+                url: https://www.swordart-online.net/
+                language: ja_JP
+            }
+        ]
+
+        databases:
+        {
+            allCinema: 362007
+
+            aniDb: 13493
+
+            aniList: 100182
+
+            animePlanet: {
+                showUrl: https://www.anime-planet.com/anime/sword-art-online-alicization
+                showId: 9199
+            }
+
+            animeNewsNetwork: 20665
+
+            aniSearch: 12852
+
+            anison: 21490
+
+            annict: 5550
+
+            fanartTv: 259640
+
+            imdb: {
+                seasonNumber: 3
+                showId: tt2250192
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+
+            kinoPoisk: {
+                seasonNumber: 3
+                showId: 691223
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+
+            kitsu: {
+                showSlug: sword-art-online-alicization
+                showId: 13893
+            }
+
+            liveChart: 2908
+
+            myAnimeList: 36474
+
+            myShows: {
+                seasonNumber: 3
+                showId: 25619
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+
+            nautiljon: https://www.nautiljon.com/animes/sword+art+online+-+alicization.html
+
+            notifyMoe: GWyShKmiR
+
+            otakOtaku: 941
+
+            perpusIndo: 36474
+
+            reelgood: {
+                showSlug: sword-art-online-2012
+                showUuid: b99dea2c-05db-4b58-8b5b-9709634eff67
+                seasonNumber: 3
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+
+            shikimori: {
+                showId: 36474
+                isMoved: false
+                newShowId: null
+            }
+
+            shoboi: 5049
+
+            silverYasha: 1959
+            
+            simkl: {
+                showId: 724317
+
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                seasonNumber: 0
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+            
+
+            tmdb: {
+                showId: 45782
+                seasonNumber: 3
+                seasonId: 93494
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+
+            tvdb: {
+                showId: 3
+                seasonNumber: 3
+                seasonId: 761407
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+            trakt:
+            {
+                showSlug: sword-art-online
+                showId: 45529
+                seasonId: 145655
+                seasonNumber: 3
+                specifiedEpisode:
+                {
+                    from: 0
+                    to: 0
+                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                    only: [
+                        0
+                    ]
+                    // Use this property if there's any episode exception
+                    not: [
+                        0
+                    ]
+                }
+            }
+        }
+
+        streamLinks:
+        {
+            amazonPrime: https://www.amazon.co.jp/dp/B07J5RJ3ZW
+            animeDigitalNetwork: null
+            animeLab: https://www.animelab.com/shows/sword-art-online
+            animeOnDemand: null
+            aniOne: null
+            aniPlus: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2086
+            aniPlusAsia: null
+            bahamutAnimeCrazy: https://ani.gamer.com.tw/animeVideo.php?sn=10849
+            biliBili: https://www.bilibili.com/bangumi/media/md130412
+            crunchyroll: https://www.crunchyroll.com/sword-art-online
+            fod: http://fod.fujitv.co.jp/s/genre/anime/ser5773
+            funimation: https://www.funimation.com/shows/sword-art-online/
+            genFlix: null
+            hidive: https://www.hidive.com/tv/sword-art-online-alicization
+            hulu: https://www.hulu.com/series/sword-art-online-alicization-c22224e3-93c0-40ab-895d-1475d94a6688
+            iQiyi: http://www.iqiyi.com/a_19rrh1temd.html
+            iflix: null
+            museAsia: {
+                en_001: null
+                id_ID: null
+                ms_MY: null
+                th_TH: null
+                vi_VN: null
+                zh_Hant_HK: null
+                zh_Hant_TW: null
+            }
+            netflix: {
+                US: https://www.netflix.com/title/81029064
+                ID: https://www.netflix.com/title/81029064
+            }
+            nicoNico: http://ch.nicovideo.jp/sao-alicization
+            sushiroll: null
+            vvvvid: https://www.vvvvid.it/show/845/sword-art-online-alicization
+            vrv: https://vrv.co/series/GR49G9VP6
+            wakanim: {
+                DE: https://www.wakanim.tv/de/v2/catalogue/show/379
+                FR: https://www.wakanim.tv/fr/v2/catalogue/show/376
+                RU: https://www.wakanim.tv/ru/v2/catalogue/show/378
+                SC: https://www.wakanim.tv/sc/v2/catalogue/show/377
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
+
+    commiter:
+    {
+        name: Yae
+        github: Yae-chan
+        discordId: 481037097055027211
+        sign: ASSISTED
+    }
 }
