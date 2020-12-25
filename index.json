@@ -14,7 +14,6 @@
         "path": {
             "json": "/json/000/001.json",
             "hjson": "/hjson/000/001.hjson",
-            "xml": "/xml/000/001.xml",
             "yaml": "/yaml/000/001.yaml"
         }
     },
@@ -33,7 +32,6 @@
         "path": {
             "json": "/json/000/002.json",
             "hjson": "/hjson/000/002.hjson",
-            "xml": "/xml/000/002.xml",
             "yaml": "/yaml/000/002.yaml"
         }
     },
@@ -52,7 +50,6 @@
         "path": {
             "json": "/json/000/003.json",
             "hjson": "/hjson/000/003.hjson",
-            "xml": "/xml/000/003.xml",
             "yaml": "/yaml/000/003.yaml"
         }
     },
@@ -71,7 +68,6 @@
         "path": {
             "json": "/json/000/004.json",
             "hjson": "/hjson/000/004.hjson",
-            "xml": "/xml/000/004.xml",
             "yaml": "/yaml/000/004.yaml"
         }
     },
@@ -90,7 +86,6 @@
         "path": {
             "json": "/json/000/005.json",
             "hjson": "/hjson/000/005.hjson",
-            "xml": "/xml/000/005.xml",
             "yaml": "/yaml/000/005.yaml"
         }
     },
@@ -109,7 +104,6 @@
         "path": {
             "json": "/json/000/006.json",
             "hjson": "/hjson/000/006.hjson",
-            "xml": "/xml/000/006.xml",
             "yaml": "/yaml/000/006.yaml"
         }
     },
@@ -128,7 +122,6 @@
         "path": {
             "json": "/json/000/007.json",
             "hjson": "/hjson/000/007.hjson",
-            "xml": "/xml/000/007.xml",
             "yaml": "/yaml/000/007.yaml"
         }
     },
@@ -147,7 +140,6 @@
         "path": {
             "json": "/json/000/008.json",
             "hjson": "/hjson/000/008.hjson",
-            "xml": "/xml/000/008.xml",
             "yaml": "/yaml/000/008.yaml"
         }
     },
@@ -166,7 +158,6 @@
         "path": {
             "json": "/json/000/009.json",
             "hjson": "/hjson/000/009.hjson",
-            "xml": "/xml/000/009.xml",
             "yaml": "/yaml/000/009.yaml"
         }
     },
@@ -185,7 +176,6 @@
         "path": {
             "json": "/json/000/010.json",
             "hjson": "/hjson/000/010.hjson",
-            "xml": "/xml/000/010.xml",
             "yaml": "/yaml/000/010.yaml"
         }
     },
@@ -204,7 +194,6 @@
         "path": {
             "json": "/json/000/011.json",
             "hjson": "/hjson/000/011.hjson",
-            "xml": "/xml/000/011.xml",
             "yaml": "/yaml/000/011.yaml"
         }
     },
@@ -223,7 +212,6 @@
         "path": {
             "json": "/json/000/012.json",
             "hjson": "/hjson/000/012.hjson",
-            "xml": "/xml/000/012.xml",
             "yaml": "/yaml/000/012.yaml"
         }
     },
@@ -242,7 +230,6 @@
         "path": {
             "json": "/json/000/013.json",
             "hjson": "/hjson/000/013.hjson",
-            "xml": "/xml/000/013.xml",
             "yaml": "/yaml/000/013.yaml"
         }
     },
@@ -261,7 +248,6 @@
         "path": {
             "json": "/json/000/014.json",
             "hjson": "/hjson/000/014.hjson",
-            "xml": "/xml/000/014.xml",
             "yaml": "/yaml/000/014.yaml"
         }
     },
@@ -280,7 +266,6 @@
         "path": {
             "json": "/json/000/015.json",
             "hjson": "/hjson/000/015.hjson",
-            "xml": "/xml/000/015.xml",
             "yaml": "/yaml/000/015.yaml"
         }
     },
@@ -291,7 +276,7 @@
         "aniDb": 15489,
         "notifyMoe": "e-ciWnCZg",
         "title": {
-            "en_Latn": "Asatir fi Qadim Az-Zaman",
+            "en_Latn": "Asatir: Mirai no Mukashibanashi",
             "en_US": "Future Folktales",
             "native": "أساطير في قادم الزمان"
         },
@@ -299,7 +284,6 @@
         "path": {
             "json": "/json/000/017.json",
             "hjson": "/hjson/000/017.hjson",
-            "xml": "/xml/000/017.xml",
             "yaml": "/yaml/000/017.yaml"
         }
     },
@@ -318,7 +302,6 @@
         "path": {
             "json": "/json/000/018.json",
             "hjson": "/hjson/000/018.hjson",
-            "xml": "/xml/000/018.xml",
             "yaml": "/yaml/000/018.yaml"
         }
     }
