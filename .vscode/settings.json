@@ -7,6 +7,7 @@
             "index.yaml"
         ]
     },
+
     "json-yaml-schema-selector.additionalSchemas":[
         {
             "name": "Ryuuganime List Validator",
@@ -30,7 +31,7 @@
         "romaji",
         "ryuuganime",
         "script",
-        "title",
+        "title"
     ],
     "cSpell.enableFiletypes": [
         "bbcode",
@@ -81,7 +82,7 @@
         },
         //Vietnamese dictionary defs.
         {
-            "name": "vn11",
+            "name": "vn_VN",
             "path": "${workspaceFolder}/.dictionary/.rcdl/vn_VN.rydict"
         }
     ],
@@ -99,25 +100,19 @@
         //Calls Japanese dictionaries
         "ja_JP",
         //Calls Vietnamese dictionaries
-        "vn_VN",
+        "vn_VN"
     ],
     //Calls dictionaries from various languages
     "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES",
+
     "discord.workspaceElapsedTime": true,
-    "cSpell.ignoreWords": [
-        "minlength"
-    ],
+
     "editor.tabCompletion": "on",
+
     "json.schemas": [
         {
             "fileMatch": [
                 "index.json"
-            ],
-            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
-        },
-        {
-            "fileMatch": [
-                "index.hjson"
             ],
             "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
         }
