@@ -34,7 +34,7 @@
     #: $schema [str] <nbl> <uri>
     #; = Very not recommended to modify this configuration value if not having any knowledge in
     #;   JSON!
-    $schema: https://schema.ryuuganime.my.id/entry/v2.0-s
+    $schema: https://schema.ryuuganime.my.id/entry/v2.0-s.json
     // Optional value, tick a comment syntax of above value, and untick value below.
     #$schema: ../../schemas/entry/v2.0-s.json
 
@@ -318,7 +318,8 @@
         release:
         {
             #: year [num] <nbl>
-            #; = The year of the serial release, using a integrer/numeral format. If unknown, use 0.
+            #; = The year of the serial release, using a integrer/numeral format. If unknown, 
+            #;   use 0.
             year: 2020
 
             #: season [str] <nab>
