@@ -1,9 +1,9 @@
-#hjson {"version":"2.0-s","config":{"maxColumn":100}}
+#hjson {"version":"2.1-s","config":{"maxColumn":100}}
 /*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
 |      Created by @nattadasu    | |   number                     | | '''                          |
 |                               | | [num] is a only-number value | |       This is a multi        |
-| -------VERSION:  2.0-s------- | | [boo] is a boolean markup    | |       lines text value       |
+| -------VERSION:  2.1-s------- | | [boo] is a boolean markup    | |       lines text value       |
 |                               | |   Consisted by "true" and    | |                          ''' |
 | Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
 |   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
@@ -34,14 +34,14 @@
     #: $schema [str] <nbl> <uri>
     #; = Very not recommended to modify this configuration value if not having any knowledge in
     #;   JSON!
-    $schema: https://schema.ryuuganime.my.id/entry/v2.0-s.json
+    $schema: https://schema.ryuuganime.my.id/entry/v2.1-s.json
     // Optional value, tick a comment syntax of above value, and untick value below.
-    #$schema: ../../schemas/entry/v2.0-s.json
+    #$schema: ../../schemas/entry/v2.1-s.json
 
     // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
     version: {
         stage: stable
-        version: 2.0
+        version: 2.1
     }
     // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
@@ -652,37 +652,13 @@
             imdb: {
                 seasonNumber: 2
                 showId: tt9522300
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
 
             kinoPoisk: {
                 seasonNumber: 2
                 showId: 1231054
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
 
             kitsu: {
@@ -697,19 +673,7 @@
             myShows: {
                 seasonNumber: 2
                 showId: 59725
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
 
             nautiljon: https://www.nautiljon.com/animes/kaguya-sama+wa+kokurasetai-+tensai-tachi+no+renai+zunousen.html
@@ -724,19 +688,7 @@
                 showSlug: kaguyasama-love-is-war-2019
                 showUuid: 6ac45958-b77c-47d8-b863-7e1c72e38aac
                 seasonNumber: 2
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
 
             shikimori: {
@@ -754,19 +706,7 @@
 
                 // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
                 seasonNumber: 0
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
             
 
@@ -774,38 +714,14 @@
                 showId: 83121
                 seasonNumber: 2
                 seasonId: 134483
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
 
             tvdb: {
                 showId: 354198
                 seasonNumber: 2
                 seasonId: 830911
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
             trakt:
             {
@@ -813,19 +729,7 @@
                 showId: 138254
                 seasonId: 202295
                 seasonNumber: 2
-                specifiedEpisode:
-                {
-                    from: 0
-                    to: 0
-                    // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
-                    only: [
-                        0
-                    ]
-                    // Use this property if there's any episode exception
-                    not: [
-                        0
-                    ]
-                }
+                offset: 0
             }
         }
 
