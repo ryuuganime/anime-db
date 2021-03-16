@@ -99,7 +99,7 @@ __TOC__
 ( [[json/000/016.json|json]] 
 | [[hjson/000/016.hjson|hjson]] 
 | [[yaml/000/016.yaml|yaml]] )</li>
-<li>’’’Asatir: Mirai no Mukashibanashi’’’
+<li>'''Asatir: Mirai no Mukashibanashi'''
 ( [[json/000/017.json|json]] 
 | [[hjson/000/017.hjson|hjson]] 
 | [[yaml/000/017.yaml|yaml]] )</li>
