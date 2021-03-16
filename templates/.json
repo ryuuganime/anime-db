@@ -1,8 +1,8 @@
 {
-    "$schema": "https://schema.ryuuganime.my.id/entry/v2.0-s.json",
+    "$schema": "https://schema.ryuuganime.my.id/entry/v2.1-s.json",
     "version": {
         "stage": "stable",
-        "version": 2
+        "version": 2.1
     },
     "id": 0,
     "createdAt": "",
@@ -163,30 +163,12 @@
             "imdb": {
                 "seasonNumber": 0,
                 "showId": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "kinoPoisk": {
                 "seasonNumber": 0,
                 "showId": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "kitsu": {
                 "showSlug": "",
@@ -197,16 +179,7 @@
             "myShows": {
                 "seasonNumber": 0,
                 "showId": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "nautiljon": "",
             "notifyMoe": "",
@@ -216,16 +189,7 @@
                 "showSlug": "",
                 "showUuid": "",
                 "seasonNumber": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "shikimori": {
                 "showId": 0,
@@ -237,62 +201,26 @@
             "simkl": {
                 "showId": 0,
                 "seasonNumber": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "tmdb": {
                 "showId": 0,
                 "seasonNumber": 0,
                 "seasonId": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "tvdb": {
                 "showId": 0,
                 "seasonNumber": 0,
                 "seasonId": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             },
             "trakt": {
                 "showSlug": "",
                 "showId": 0,
                 "seasonId": 0,
                 "seasonNumber": 0,
-                "specifiedEpisode": {
-                    "from": 0,
-                    "to": 0,
-                    "only": [
-                        0
-                    ],
-                    "not": [
-                        0
-                    ]
-                }
+                "offset": 0
             }
         },
         "streamLinks": {
