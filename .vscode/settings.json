@@ -1,9 +1,9 @@
 {
     "yaml.schemas": {
-        "https://schema.ryuuganime.my.id/entry/v2.0-s.json": [
+        "https://schema.ryuuganime.my.id/entry/v2.1-s.json": [
             "./yaml/*/*.yaml"
         ],
-        "https://schema.ryuuganime.my.id/index/v2.0-s.json": [
+        "https://schema.ryuuganime.my.id/index/v2.1-s.json": [
             "index.yaml"
         ]
     },
@@ -16,7 +16,7 @@
                 "index.json",
                 "index.hjson"
             ],
-            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
+            "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
         }
     ],
 
@@ -114,7 +114,7 @@
             "fileMatch": [
                 "index.json"
             ],
-            "url": "https://schema.ryuuganime.my.id/index/v2.0-s.json"
+            "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
         }
     ]
 }

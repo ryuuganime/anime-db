@@ -21,7 +21,7 @@
             en_US: ""
             native: ""
         }
-        ryuuganime: 0
+        ryid: 0
         path:
         {
             json: /json/000/000.json
@@ -44,7 +44,7 @@
             en_US: The Millionaire Detective – Balance: UNLIMITED
             native: 富豪刑事 Balance:UNLIMITED
         }
-        ryuuganime: 1
+        ryid: 1
         path:
         {
             json: /json/000/001.json
@@ -64,7 +64,7 @@
             en_US: Sword Art Online: Alicization
             native: ソードアート・オンライン アリシゼーション
         }
-        ryuuganime: 2
+        ryid: 2
         path:
         {
             json: /json/000/002.json
@@ -84,7 +84,7 @@
             en_US: My Hero Academia
             native: 僕のヒーローアカデミア
         }
-        ryuuganime: 3
+        ryid: 3
         path:
         {
             json: /json/000/003.json
@@ -104,7 +104,7 @@
             en_US: Kaguya-sama: Love is War Season 2
             native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
         }
-        ryuuganime: 4
+        ryid: 4
         path:
         {
             json: /json/000/004.json
@@ -124,7 +124,7 @@
             en_US: Gleipnir
             native: グレイプニル
         }
-        ryuuganime: 5
+        ryid: 5
         path:
         {
             json: /json/000/005.json
@@ -144,7 +144,7 @@
             en_US: "Tower of God"
             native: "神之塔"
         }
-        ryuuganime: 6
+        ryid: 6
         path:
         {
             json: /json/000/006.json
@@ -164,7 +164,7 @@
             en_US: Sing "Yesterday" for Me
             native: "イエスタデイをうたって"
         }
-        ryuuganime: 7
+        ryid: 7
         path:
         {
             json: /json/000/007.json
@@ -184,7 +184,7 @@
             en_US: "I want to eat your pancreas"
             native: "君の膵臓をたべたい"
         }
-        ryuuganime: 8
+        ryid: 8
         path:
         {
             json: /json/000/008.json
@@ -204,7 +204,7 @@
             en_US: "Everyday Life With Monster Girls"
             native: "モンスター娘のいる日常"
         }
-        ryuuganime: 9
+        ryid: 9
         path:
         {
             json: /json/000/009.json
@@ -224,7 +224,7 @@
             en_US: "Sarazanmai"
             native: "さらざんまい"
         }
-        ryuuganime: 10
+        ryid: 10
         path:
         {
             json: /json/000/010.json
@@ -244,7 +244,7 @@
             en_US: "Dakaichi: I'm Being Harassed by the Sexiest Man of the Year"
             native: "抱かれたい男1位に脅されています。"
         }
-        ryuuganime: 11
+        ryid: 11
         path:
         {
             json: /json/000/011.json
@@ -264,7 +264,7 @@
             en_US: "Uchitama?! Have You Seen My Tama?"
             native: "うちタマ?! 〜うちのタマ知りませんか？〜"
         }
-        ryuuganime: 12
+        ryid: 12
         path:
         {
             json: /json/000/012.json
@@ -284,7 +284,7 @@
             en_US: "Somali and the Forest Spirit"
             native: "ソマリと森の神様"
         }
-        ryuuganime: 13
+        ryid: 13
         path:
         {
             json: /json/000/013.json
@@ -304,7 +304,7 @@
             en_US: "Adventure Time"
             native: "Adventure Time"
         }
-        ryuuganime: 14
+        ryid: 14
         path:
         {
             json: /json/000/014.json
@@ -324,7 +324,7 @@
             en_US: "The Amazing World of Gumball"
             native: "The Amazing World of Gumball"
         }
-        ryuuganime: 15
+        ryid: 15
         path:
         {
             json: /json/000/015.json
@@ -344,7 +344,7 @@
             en_US: "Future Folktales"
             native: "أساطير في قادم الزمان"
         }
-        ryuuganime: 17
+        ryid: 17
         path:
         {
             json: /json/000/017.json
@@ -364,7 +364,7 @@
             en_US: "Hidden Things"
             native: "かくしごと"
         }
-        ryuuganime: 18
+        ryid: 18
         path:
         {
             json: /json/000/018.json

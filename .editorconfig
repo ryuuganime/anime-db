@@ -2,24 +2,13 @@
 charset = utf-8
 end_of_line = lf
 insert_final_newline = false
-
-[plaintext]
-indent_size = 4
-indent_style = space
-end_of_line = lf
-
-[{xml,json,hjson}/**.{xml,json,hjson}]
 indent_style = space
 indent_size = 4
+root = false
 
-[**.yaml]
+[**.{json,yaml}]
 indent_size = 2
-indent_style = space
-insert_final_newline = true
 
-[index.{xml,hjson,json}]
-indent_style = space
+[**.hjson]
 indent_size = 4
-
-[schemas/**.json]
-insert_final_newline = false
+insert_final_newline = true
