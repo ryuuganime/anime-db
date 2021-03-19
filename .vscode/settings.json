@@ -1,120 +1,120 @@
 {
-    "yaml.schemas": {
-        "https://schema.ryuuganime.my.id/entry/v2.1-s.json": [
-            "./yaml/*/*.yaml"
-        ],
-        "https://schema.ryuuganime.my.id/index/v2.1-s.json": [
-            "index.yaml"
-        ]
-    },
-
-    "json-yaml-schema-selector.additionalSchemas":[
-        {
-            "name": "Ryuuganime List Validator",
-            "description": "Ryuuganime List Validator",
-            "fileMatch": [
-                "index.json",
-                "index.hjson"
-            ],
-            "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
-        }
+  "yaml.schemas": {
+    "https://schema.ryuuganime.my.id/entry/v2.1-s.json": [
+      "./yaml/*/*.yaml"
     ],
-
-    //DICTIONARY
-    "cSpell.words": [
-        "hant",
-        "zh",
-        "zh hant",
-        "Ryuuganime",
-        "hjson",
-        "kitsu",
-        "romaji",
-        "ryuuganime",
-        "script",
-        "title"
-    ],
-    "cSpell.enableFiletypes": [
-        "bbcode",
-        "hjson",
-        "html",
-        "md",
-        "json",
-        "mediawiki",
-        "xml",
-        "yaml"
-    ],
-    "cSpell.dictionaryDefinitions": [
-        //Animanga dictionary defs
-        {
-            "name": "anime",
-            "path": "${workspaceFolder}/.dictionary/animanga/anime/anime-062020.rydict"
-        },
-        {
-            "name": "charas",
-            "path": "${workspaceFolder}/.dictionary/animanga/charas/charas-062020.rydict"
-        },
-        {
-            "name": "manga",
-            "path": "${workspaceFolder}/.dictionary/animanga/manga/manga-062020.rydict"
-        },
-        {
-            "name": "sites",
-            "path": "${workspaceFolder}/.dictionary/animanga/sites/sites.rydict"
-        },
-        {
-            "name": "studios",
-            "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt"
-        },
-        //Arabic dictionary defs.
-        {
-            "name": "ar_001",
-            "path": "${workspaceFolder}/.dictionary/.rcdl/ar_001.rydict"
-        },
-        //Indonesian dictionary defs.
-        {
-            "name": "id_ID",
-            "path": "${workspaceFolder}/.dictionary/.rcdl/id_ID.rydict"
-        },
-        //Japanese dictionary defs.
-        {
-            "name": "ja_JP",
-            "path": "${workspaceFolder}/.dictionary/.rcdl/ja_JP.rydict"
-        },
-        //Vietnamese dictionary defs.
-        {
-            "name": "vn_VN",
-            "path": "${workspaceFolder}/.dictionary/.rcdl/vn_VN.rydict"
-        }
-    ],
-    "cSpell.dictionaries": [
-        //Calls Animanga dictionaries
-        "anime",
-        "charas",
-        "manga",
-        "sites",
-        "studios",
-        //Calls Arabic dictionaries
-        "ar_001",
-        //Calls Indonesian dictionaries
-        "id_ID",
-        //Calls Japanese dictionaries
-        "ja_JP",
-        //Calls Vietnamese dictionaries
-        "vn_VN"
-    ],
-    //Calls dictionaries from various languages
-    "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES",
-
-    "discord.workspaceElapsedTime": true,
-
-    "editor.tabCompletion": "on",
-
-    "json.schemas": [
-        {
-            "fileMatch": [
-                "index.json"
-            ],
-            "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
-        }
+    "https://schema.ryuuganime.my.id/index/v2.1-s.json": [
+      "index.yaml"
     ]
+  },
+
+  "json-yaml-schema-selector.additionalSchemas":[
+    {
+      "name": "Ryuuganime List Validator",
+      "description": "Ryuuganime List Validator",
+      "fileMatch": [
+        "index.json",
+        "index.hjson"
+      ],
+      "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
+    }
+  ],
+
+  //DICTIONARY
+  "cSpell.words": [
+    "hant",
+    "zh",
+    "zh hant",
+    "Ryuuganime",
+    "hjson",
+    "kitsu",
+    "romaji",
+    "ryuuganime",
+    "script",
+    "title"
+  ],
+  "cSpell.enableFiletypes": [
+    "bbcode",
+    "hjson",
+    "html",
+    "md",
+    "json",
+    "mediawiki",
+    "xml",
+    "yaml"
+  ],
+  "cSpell.dictionaryDefinitions": [
+    //Animanga dictionary defs
+    {
+      "name": "anime",
+      "path": "${workspaceFolder}/.dictionary/animanga/anime/anime-062020.rydict"
+    },
+    {
+      "name": "charas",
+      "path": "${workspaceFolder}/.dictionary/animanga/charas/charas-062020.rydict"
+    },
+    {
+      "name": "manga",
+      "path": "${workspaceFolder}/.dictionary/animanga/manga/manga-062020.rydict"
+    },
+    {
+      "name": "sites",
+      "path": "${workspaceFolder}/.dictionary/animanga/sites/sites.rydict"
+    },
+    {
+      "name": "studios",
+      "path": "${workspaceFolder}/.dictionary/animanga/studios/animePlanet-062020.txt"
+    },
+    //Arabic dictionary defs.
+    {
+      "name": "ar_001",
+      "path": "${workspaceFolder}/.dictionary/.rcdl/ar_001.rydict"
+    },
+    //Indonesian dictionary defs.
+    {
+      "name": "id_ID",
+      "path": "${workspaceFolder}/.dictionary/.rcdl/id_ID.rydict"
+    },
+    //Japanese dictionary defs.
+    {
+      "name": "ja_JP",
+      "path": "${workspaceFolder}/.dictionary/.rcdl/ja_JP.rydict"
+    },
+    //Vietnamese dictionary defs.
+    {
+      "name": "vn_VN",
+      "path": "${workspaceFolder}/.dictionary/.rcdl/vn_VN.rydict"
+    }
+  ],
+  "cSpell.dictionaries": [
+    //Calls Animanga dictionaries
+    "anime",
+    "charas",
+    "manga",
+    "sites",
+    "studios",
+    //Calls Arabic dictionaries
+    "ar_001",
+    //Calls Indonesian dictionaries
+    "id_ID",
+    //Calls Japanese dictionaries
+    "ja_JP",
+    //Calls Vietnamese dictionaries
+    "vn_VN"
+  ],
+  //Calls dictionaries from various languages
+  "cSpell.language": "en,en-US,fr,fr-FR,de,de-DE,en-GB,pt,pt-PT,pt-BR,ru,es,es-ES",
+
+  "discord.workspaceElapsedTime": true,
+
+  "editor.tabCompletion": "on",
+
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "index.json"
+      ],
+      "url": "https://schema.ryuuganime.my.id/index/v2.1-s.json"
+    }
+  ]
 }
