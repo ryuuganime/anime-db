@@ -237,7 +237,7 @@
             promotionalVideo:
             [
                 {
-                    id: 0
+                    id: Lt8zDDCXHlo
                     provider: youtube
                 }
             ]
@@ -245,22 +245,22 @@
             soundtracks:
             [
                 {
-                    title: 
-                    mbid: 
-                    isrc: 
-                    bpm: 
+                    title: Altern-ate-
+                    mbid: 056d754e-d39e-41f7-9155-d3c6e7dfbf36
+                    isrc: JPPI02000430
+                    bpm: 80
                     artists: [
                         {
-                            mbid: 
-                            name: 
+                            mbid: 5e31c301-b649-4fd8-a1ab-76fef0bc0ad9
+                            name: H-el-ical//
                         }
                     ]
                     type: theme
-                    position: 
+                    position: opening
                     episodes:
                     {
-                        from: 0
-                        to: 0
+                        from: 1
+                        to: 13
                         // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
                         only: [
                             0
@@ -271,8 +271,39 @@
                         ]
                     }
                     links: {
-                        spotify: 
-                        youtubeMusic: 
+                        spotify: 6IJJ8gIHQduNLbCIfvdSbF
+                        youtubeMusic: y_atBC4rxWU
+                    }
+                }
+                {
+                    title: Ame no Taieki to Nioi (雨と体液と匂い)
+                    mbid: 357b2cfc-9f96-4e09-8f40-17a31f6bc95b
+                    isrc: JPVI02000858
+                    bpm: 128
+                    artists: [
+                        {
+                            mbid: d2a92ee2-27ce-4e71-bfc5-12e34fe8ef56
+                            name: Mili
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 1
+                        to: 13
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 1ouz5gvh7XQm0Ryj7OwKZ1
+                        youtubeMusic: HrkFQAQyFGc
                     }
                 }
             ]
