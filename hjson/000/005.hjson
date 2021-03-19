@@ -644,6 +644,7 @@
                 seasonId: 1807385
                 offset: 0
             }
+
             trakt:
             {
                 showSlug: gleipnir

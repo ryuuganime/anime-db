@@ -646,6 +646,7 @@
                 seasonId: 651039
                 offset: 0
             }
+
             trakt:
             {
                 showSlug: my-hero-academia

@@ -762,6 +762,7 @@
                 seasonId: 761407
                 offset: 0
             }
+        
             trakt:
             {
                 showSlug: sword-art-online

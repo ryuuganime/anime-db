@@ -723,6 +723,7 @@
                 seasonId: 830911
                 offset: 0
             }
+
             trakt:
             {
                 showSlug: kaguya-sama-love-is-war
