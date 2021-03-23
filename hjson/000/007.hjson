@@ -1,789 +1,57 @@
-#hjson
-/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+#hjson {"version":"2.1-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
-|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
-|                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
-|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
-| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
-|   non-developer to contribute | | [arr] is an array value. It  | |                              |
-|   on filling related anime    | |   is a combination of        | | '''                          |
-|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
-|   on each of values in as a   | |   in one value               | |       lines text value       |
-|   comment                     | | [obj] is an object value.    | |                          ''' |
-|                               | |   Signifies that this value  | | is a syntax that allows user |
-\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
-|                               | |                              | |   pointer                    |
-| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
-|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
-| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
-|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
-|   on a value is more than one | //    mistakes without even realizing it.
-| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
-|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
-|   null, if possible           | //    itself. It's intended to be used like a user interface for
-| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
-|   "deleted" or changed to     | //    the machine.
-|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
-|   essential for the file      | //    on HJSON. 
-|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
-|                               | //    for example.
-\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.1-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON.
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/014.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <uri>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
+    #;   JSON!
+    $schema: https://schema.ryuuganime.my.id/entry/v2.1-s
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry/v2.1-s.json
 
-{ 
-  # $schema [str] <nbl> <url>
-  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
-  $schema: ../../schemas/entry.json
-  // Optional value, tick a comment syntax of above value, and untick value below.
-  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
-
-  # title [obj] <nbl>
-  # title of serial... in several languages. Based on ICU locales.
-  title: 
-  {
-    # native [str] <nbl>
-    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native: イエスタデイをうたって
-
-    # en_Latn [str] <nbl>
-    # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Yesterday wo Utatte
-
-    # ar_001 [str] <nab>
-    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
-    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: غني “الأمس” لي
-
-    # id_ID [str] <nab>
-    # = Serial title in Indonesian (un/official)
-    //  REGEX: ^[\w\s\S]+$
-    id_ID: Nyanyikan "Kemarin" Padaku
-
-    # en_US [str] <nab>
-    # = Serial title in English.
-    //  REGEX: ^[\w\s\S]+$
-    en_US: Sing "Yesterday" for Me
-
-    # ja_JP [str] <nab>
-    # = Serial title in Japanese.
-    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: イエスタデイをうたって
-
-    # de_DE [str] <nab>
-    # = Serial title in German (un/official).
-    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: null
-
-    # ko_KR [str] <nab>
-    # = Serial title in South/North Korean.
-    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 예스터데이를 노래하며
-
-    # fr_FR [str] <nab>
-    # = Serial title in French (or other accent).
-    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: null
-
-    # pt_PT [str] <nab>
-    # = Serial title in Portuguese.
-    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Cante "Yesterday" Pra Mim
-
-    # ru_RU [str] <nab>
-    # = Serial title in Russian (un/official). 
-    //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Спой для меня «Вчера»
-
-    # es_ES [str] <nab>
-    # = Serial title in Spanish (or other accent).
-    //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: null
-
-    # zh_Hans [str] <nab>
-    # = Serial title in Simplified Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 昨日之歌
-
-    # zh_Hant [str] <nab>
-    # = Serial title in Traditional Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 昨日之歌
-
-    # vi_VN [str] <nab>
-    # = Serial title in Vietnamese.
-    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: null
-  }
-
-  # backdrop [str] <url> <nbl>
-  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/series/372534/backgrounds/5e85c27183d55.jpg
-
-  # visualKey [str] <url> <nbl>
-  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/series/372534/posters/62002246.jpg
-
-  # synopsis [obj] <nbl>
-  # = A synopsis/plot of story of serial in several languages. 
-  synopsis:
-  {
-    # ar_001 [str] <nab>
-    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
-    #   Wikipedia for Arabic synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''تدور القصة حول شاب جامعي يدعى ريكو الذي يجد عمل في متجر. يعيش حياته بشكل رتيب حتى يقابل حبيبته السابقة وزميلته هارو نوناكا التي تمتلك غراب كحيوان أليف.'''
-
-    # id_ID [str] <nab>
-    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
-    #   fanshare for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Setelah lulus kuliah, Rikuo Uozumi yang hidup tanpa ambisi, bekerja di sebuah toko. Hari-harinya berlalu dengan tenang sampai ia bertemu dengan teman kuliahnya, Shinako dan wanita misterius bernama Haru bersama gagak peliharaannya.'''
-
-    # en_US [str] <nab>
-    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
-    #   synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''Rikuo has graduated from college, but has zero ambition or direction and works in a convenience store. A strange high-school dropout, Haru, keeps coming around with her pet crow. Rikuo still has a crush on his senior Shinako, who is beginning a teaching career, and who shows up in the store one day. Rikuo's relationships with the girls, and his feelings about his life, keep changing as the story evolves, bringing in other important characters—Rikuo's co-worker, the coworker's sister, and a childhood friend of Shinako's, etc.'''
-
-    # ja_JP [str] <nab>
-    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''大学卒業後、コンビニでバイトをする魚住。そんな彼の前に、ある日カラスを連れた少女・ハルが現れた…。 「49％後ろ向きで、51％前向きで…」　へそ曲がりだけれども正直な彼らの心は、舞い落ちる桜のようにゆらゆら揺れて…。'''
-
-    # de_DE [str] <nab>
-    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Rikuo Uozumi hat die Hochschule abgeschlossen, aber in seinem Leben weder Ambitionen noch Zielrichtung. Er beginnt daher einen Job in einem Mischwarenladen und führt so ein eher unspektakuläres Leben – abgesehen von den gelegentlichen Besuchen der Schülerin Haru Nonaka, die eines Tages im Geschäft auftaucht und die sich stets in Begleitung ihres Haustiers, eines Raben, befindet. Auch Rikuos Ex-Freundin und ehemalige Klassenkameradin Shinako erscheint eines Tages im Laden. Shinako, für die Rikuo insgeheim immer noch Gefühle hegt, strebt eine Karriere als Lehrerin an. Mit den beiden Frauen und weiteren Menschen, die im Rahmen seiner Arbeit in Rikuos Leben treten, wird für ihn ein neuer Lebensabschnitt angestoßen und er beginnt damit, sich und seine aktuelle Situation mehr zu hinterfragen.'''
-
-    # ko_KR [str] <nab>
-    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''고민하고 방황하면서도 열심히 사는 네 남녀의 인생과 사랑 이야기를 그린 애니메이션'''
-
-    # fr_FR [str] <nab>
-    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''À la fin de ses études universitaires, Rikuo Uozumi, un garçon sans réelle ambition dans la vie, a trouvé un petit job dans un konbini, une petite supérette ouverte 24h/24, très populaire au Japon. Les jours se suivent et se ressemblent pour Rikuo jusqu'à sa rencontre avec son ancienne camarade de classe mais surtout avec la troublante Haru Nonaka, toujours accompagnée de son fidèle corbeau...'''
-
-    # pt_PT [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''Depois da faculdade, Rikuo Uozumi, um rapaz sem muita ambição na vida, assume um emprego em uma loja de conveniência. Os dias passam sem grandes mudanças para Rikuo até que ele re-encontra sua ex-namorada, mas também especialmente graças a incomum Haru Nonaka e seu corvo de estimação...'''
-
-    # ru_RU [str] <nab>
-    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Всего полгода прошло с тех пор, как Рикуо Уодзуми окончил университет и наконец вступил во взрослую жизнь. Однако та оказалась куда более неприглядной, чем он мог представить себе, когда ещё был студентом. С того времени желания приуменьшились, мечты — поубавились. И даже занятие фотографией, которое всегда нравилось, словно потеряло для него всякий смысл. «Чего я на самом деле хочу?» — важный вопрос для кого-то, но не особо волнующий Рикуо. Бесперспективной работёнки в небольшом минимаркете, кажется, ему вполне хватает, а большего и не надо...
-Но что, если апатичный и немногословный парень встретит девушку, чей характер прямо противоположен его собственному? Весёлую и энергичную, но вместе с тем весьма странную Хару Нонаку, одевающуюся в чёрное и таскающую за собой хромого ручного ворона. Сможет ли она помочь сбившемуся с пути, указав верное направление в жизни, дать толчок, пинок и затрещину?
-Или с этой задачей лучше справится Синако Мориномэ, бывшая одногруппница Рикуо, в которую он всё ещё влюблен? Как знать. Ведь не для этого ли она решила возобновить с ним их прежние дружеские отношения?'''
-
-    # es_ES [str] <nab>
-    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''Después de la universidad, Rikuo Uozumi, un chico sin muchas ambiciones en la vida, toma un trabajo en una tienda de conveniencia. Los días pasan sin problemas para Rikuo hasta que se encuentra con la especialmente inusual Haru Nonaka, y su cuervo mascota…'''
-
-    # zh_Hans [str] <nab>
-    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hant (Traditional Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''鱼住陆生，在大学毕业後没有继续升学或找正式的工作，就开始了便利商店打工的生活。鱼住的单恋对象是大学好友─森之目榀子，个性积极努力又聪明，在一所高中担任代课老师。但榀子因为记挂家乡一段无解的过去，始终不曾正面接受过任何人的感情。另一方面，半年前自高中辍学，很早就独立而住在外面的野中晴，她在五年前一次际会之後喜欢上了鱼住，直到现在又再度相遇。她知道了榀子与鱼住之间的事情，决定正大光明地向榀子宣战。'''
-
-    # zh_Hant [str] <nab>
-    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hans (Simplified Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''魚住陸生，在大學畢業後沒有繼續升學或找正式的工作，就開始了便利商店打工的生活。魚住的單戀對象是大學好友─森之目榀子，個性積極努力又聰明，在一所高中擔任代課老師。但榀子因為記挂家鄉一段無解的過去，始終不曾正面接受過任何人的感情。另一方面，半年前自高中輟學，很早就獨立而住在外面的野中晴，她在五年前一次際會之後喜歡上了魚住，直到現在又再度相遇。她知道了榀子與魚住之間的事情，決定正大光明地向榀子宣戰。'''
-
-    # vi_VN [str] <nab>
-    # = Synopsis in Vietnamese.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Sau khi học xong đại học, Uozumi Rikuo, một chàng trai thiếu tham vọng nhận việc làm ở một cửa hàng tiện dụng (Thực chất là thất nghiệp sau khi tốt nghiệp đại học rồi mới xin vào đây). Nhiều ngày tẻ nhạt trôi qua cho đến khi cậu gặp lại một người bạn học và cũng là bạn gái cũ, nhưng điều thực sự đáng lưu ý là sự xuất hiện của Nonaka Haru, một cô gái khác thường, cùng với con quạ cưng của cô...'''
-  }
-
-  # information [obj] <nbl>
-  # = Is a collection of information about serial.
-  information:
-  {
-    # synonyms [obj] <nbl> => [arr] <nab>
-    # = Synonym, other titles that well-known on the public.
-    synonyms:
-    {
-      en_Latn: [
-        Yesterday o Utatte
-      ]
-      ar_001: null
-      hu_HU: null
-      he_IL: null
-      id_ID: null
-      en_US: [
-        Sing Yesterday (2020)
-      ]
-      ja_JP: null
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: [
-        Спой мне «Yesterday»
-      ]
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+    // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
+    version: {
+        stage: stable
+        version: 2.1
     }
+    // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
-    # type [obj] <nbl> => [str] <nbl>
-    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
-    type:
-    {
-      // Allowed values are:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+    #: id [num] <nbl>
+    #; = Serial ID number on Ryuuganime Database.
+    id: 7
 
-      // Allowed values are:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
-    }
-
-    # status [obj] > [str] <nbl>
-    # = Describes the serial broadcast status.
-    status:
-    {
-      // Allowed values are:
-      // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Airing
-
-      // Allowed values are:
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Mengudara
-    }
-
-    # serialGenre [obj]
-    # = Is genre(s) of serial. See the wiki for more information.
-    serialGenre:
-    {
-      # en_US [arr] <nbl>
-      # = Serial genre in English.
-      //  Allowed values are:
-      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
-      //  Supernatural, Thriller, War
-      en_US:
-      [
-        Drama
-        Romance
-        Slice of Life
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial genre in Indonesian.
-      //  Allowed values are:
-      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
-      //  Olahraga, Supernatural, Thriller, Peperangan
-      id_ID:
-      [
-        Drama
-        Romansa
-        Potongan Kehidupan
-      ]
-    }
-
-    # serialTags [obj]
-    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
-    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
-    #   present on serialTags. See the wiki for more information.
-    serialTags:
-    {
-      # en_US [arr] <nbl>
-      # = Serial tags in English.
-      en_US:
-      [
-        Seinen
-        Work
-        Photography
-        Love Triangle
-        Convenience Store
-        Mature Romance
-        University
-        Reunion
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial tags in Indonesian.
-      id_ID:
-      [
-        Seinen
-        Pekerjaan
-        Fotografi
-        Cinta Segitiga
-        Toserba
-        Romansa Dewasa
-        Universitas
-        Reuni
-      ]
-    }
-
-    # releaseSeason [obj] <nbl> => [str] <nbl>
-    # = Season of serial releases.
-    releaseSeason:
-    {
-      // Allowed values are
-      // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Spring
-
-      // Allowed values are
-      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Semi
-
-      // Allowed values are
-      // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 春
-
-      // Allowed values are
-      // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 봄
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 春天
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 春天
-    }
-
-    # releaseYear [num] <nbl>
-    # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2020
-
-    # episode [num] <nbl>
-    # = Total episodes of serial. If unknown, fill null.
-    episode: 18
-
-    # releaseDate [str]
-    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2020-04-05
-
-    # endDate [str]
-    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: null
-
-    # duration [num] <nab>
-    # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 23
-
-    # totalDuration [num] <nab>
-    # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 414
-
-    # studio [str] <arb> <nab>
-    # = Studio producing series.
-    studio: Doga Kobo
-
-    # rating [str] <nab>
-    # = Broadcast content rating of serial. See the wiki for more information.
-    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
-
-    # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
-    #   false, yakni aman.
-    // Argumen yang diperbolehkan ialah
-    // true dan false
-    isNsfw: false
-
-    # adaptation [obj] > [str] <arb> <nab>
-    # = Is the original adaptation of the show.
-    adaptation:
-    {
-      // Allowed values are
-      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
-      //   4-koma, Fairy Tale, and null
-      en_US: Manga
-
-      // Allowed values are
-      // Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin,Novel, Gim, Musik,
-      // Drama, 4-panel, Dongeng, dan null
-      id_ID: Manga
-    }
-
-    # country [str] <nbl>
-    # = Country of origin of serial. There are no country restrictions here.
-    country:
-    {
-      en_US: Japan
-      id_ID: Jepang
-    }
-
-    # officialWebsite [str] <url> <nab>
-    # = Links to official website of current entry.
-    officialWebsite: https://singyesterday.com/
-
-    # promotionalVideos [arr] <nab> > [str] <url>
-    # = List of promotional videos of current entry.
-    promotionalVideos: [
-      https://youtu.be/c7wWmUywDpY
-    ]
-
-    # producers [arr] <nab> > [str]
-    # = Producers that involved to current entry/project
-    producers: [
-      TV Asahi
-      Sotsu
-      Delfi Sound
-      Lucent Pictures Entertainment
-      CyberAgent
-      AbemaTV
-      DMM.futureworks
-    ]
-  }
-
-  # scores [obj] > [str]/[num] <nab>
-  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
-  //  and on the score.
-  scores:
-  {
-    // https://anidb.net
-    aniDB:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14822
-      score: 6.95
-    }
-    
-    // https://anilist.co
-    AniList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 109020
-      score: 75
-    }
-
-    // https://anime-planet.com
-    AnimePlanet:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/sing-yesterday-for-me
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 13245
-      score: 4.193
-    }
-    ANN:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 22975
-      score: null
-    }
-
-    // https://anisearch.com
-    aniSearch:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/14347,yesterday-o-utatte
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14347
-      score: 74
-    }
-
-    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
-    Annict:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 7158
-      score: 96.84
-    }
-
-    // https://imdb.com
-    IMDb:
-    {
-      # code [str] <nab>
-      # = Similar to ID, but the only difference is there is an additional identification character
-      #   that used by IMDB.
-      code: tt10204658
-      score: 7.9
-    }
-
-    // https://kinopoisk.ru
-    KinoPoisk:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1355620
-      score: null
-    }
-
-    // https://kitsu.io
-    Kitsu:
-    {
-      # slug [str]
-      # = Is a human readable version of the linked index URL.
-      slug: yesterday-wo-utatte
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 43063
-      score: 79.80
-    }
-
-    // https://livechart.me
-    LiveChart:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 9412
-      score: 8.28
-    }
-
-    // https://myanimelist.net
-    MyAnimeList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 39710
-      score: 7.84
-    }
-    
-    // https://en.myshows.me/
-    MyShows:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 66116
-      score: 4.16
-    }
-
-    // http://nautiljon.com/
-    Nautiljon:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/yesterday+wo+utatte.html
-      score: 8.55
-    }
-
-    // https://notify.moe/
-    Notify:
-    {
-      # base64 [str]
-      # = This is a unique numbering system that Notify.moe uses on their website
-      base64: 9KfX5A8Wg
-      score: 8.14
-    }
-
-    // http://otakotaku.com/
-    OtakOtaku:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1686
-      score: 8.33
-    }
-
-    // http://shikimori.org/
-    Shikimori:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 39710
-      score: 7.84
-    }
-
-    // https://simkl.com
-    SIMKL:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1073749
-      isAnime: true
-      score: 7.4
-    }
-
-    // https://www.themoviedb.org/
-    TMDB:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/95550
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 95550
-      score: 84
-    }
-
-    // https://trakt.tv/
-    Trakt:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://trakt.tv/shows/sing-yesterday-for-me
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 155397
-      score: 70
-    }
-
-    // https://www.tvtime.com/en
-    TVTime:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 372534
-      score: 9.74
-    }
-  }
-
-  # updatedDate [str] <nbl>
-  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
-  #   format. See the guide below for more information.
-  // Procedure for filling data
-  // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Which:
-  // YYYY = year (2020)
-  // MM   = month (12)
-  // DD   = date (21)
-  // hh   = hour, format 24 hour (22)
-  // mm   = minute (45)
-  // ss   = second (33)
-  // TZD  = time zone designator based on UTC (WIB: +07:00)
-  // so, 2020-12-21T22:45:33+07:00 is valid.
-  // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-21T12:12:36+07:00
-
-  # streamLinks [obj] <nbl>
-  # = Lists of official streaming sites.
-  streamLinks:
-  {
-    Abematv: null
-    AdultSwim: null
-    AISPlay: null
-    All4: null
-    AniMe: null
-    AnimeDigitalNetwork: null
-    AnimeLab: null
-    AnimeLog: null
-    AnimeOnDemand: null
-    AnimePlanet: null
-    animeteleto: null
-    AniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JgVsiJZt6yCMnQKOB-lJIz7
-    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2283
-    AniPlusAsia: null
-    AsianCrush: null
-    BahamutAnimeCrazy: null
-    BandaiChannel: null
-    BandaiSpirits: null
-    bilibili: null
-    Coalise: null
-    ComicFestaAnimeZone: null
-    ConTV: null
-    Coolmic: null
-    Crunchyroll: https://www.crunchyroll.com/sing-yesterday-for-me
-    dAnimeStore: null
-    DMM: null
-    FOD: null
-    Funimation: null
-    Genflix: null
-    GundamInfo: null
-    Gyao: null
-    HIDIVE: null
-    HOOQ: null
-    Hulu: null
-    iflix: null
-    iQIYI: null
-    JapaneseAnimatedFilmClassic: null
-    Mangas: null
-    MBSDougaizm: null
-    MidnightPulp: null
-    MuseAsia:
-    {
-      en_001: null
-      vi_VN: null
-      ms_MY: null
-      th_TH: null
-      zh_Hant_HK: null
-      zh_Hant_TW: null
-    }
-    Netflix: null
-    NicoNico: null
-    PrimeVideo: null
-    RetroCrush: null
-    SelectaVision: null
-    Sushiroll: null
-    Telasa: null
-    TencentVideo: null
-    TVNOW: null
-    Vimeo: null
-    VIZ: null
-    VRV: https://vrv.co/series/GYVDV1N0Y
-    VVVVID: null
-    Wakanim:
-    {
-      fr: null
-      sc: null
-      de: null
-      ru: null
-    }
-    WeTV: null
-    YamatoAnimation: null
-    YouTube:
-    {
-      link: null
-      isChannel: false
-    }
-  }
-
-  # signature
-  # = Is an object that provides information regarding the contributors to the entry.
-  signature:
-  {
-    # name [str] <nbl>
-    # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
-
-    # username [str] <nbl>
-    # = Your username on GitHub
-    username: @nattadasu
-
-    # discordId [num] <nbl>
-    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
-    #   ID: 594442535615725579
-    discordId: 384089845527478300
-
-    # submissionDateTime [str] <nbl>
-    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
-    #   for more information.
+    #: createdAt [str] <nbl>
+    #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
+    #;   See the guide below for more information.
     // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
     // Which:
@@ -796,11 +64,660 @@
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-21T12:28:52+07:00
+    createdAt: 2020-05-21T12:28:52+07:00
 
-    # sign [str][num] <nbl>
-    # = These are the unique characters that contributors use to "sign" data. Can use characters 
-    #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
-  }
+    #: modifiedAt [str] <nbl>
+    #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
+    #;   information.
+    // See instruction on createdAt property to see procedure for filling data
+    modifiedAt: 2021-03-23T18:23:34+07:00
+
+    series:
+    {
+        #: titles [obj] <nbl>
+        #; = Serial title in several languages based on ICU locales identifier.
+        titles:
+        {
+            #: main [obj] <nbl>
+            #; = Serial title in main languages
+            main:
+            {
+                #: native [str] <nbl>
+                #; = Serial title in native (canonical) language based on origin of studio and/or
+                #    airing first.
+                native: イエスタデイをうたって
+
+                #: en_Latn [str] <nbl>
+                #; = Serial title in romanized text. Required for main title on entry list.
+                en_Latn: Yesterday wo Utatte
+
+                en_US: Sing "Yesterday" for Me
+
+                id_ID: Nyanyikan "Kemarin" Padaku
+
+                ja_JP: イエスタデイをうたって
+
+                ru_RU: Спой для меня «Вчера»
+
+                zh_Hans: 昨日之歌
+
+                zh_Hant: 昨日之歌
+            }
+
+            #: additional [obj] <nab>
+            #; = Serial title in several additional languages based on ICU locales identifier that
+            #;   does not categorized as main languages.
+            additional:
+            {
+                ar_001: غني “الأمس” لي
+
+                de_DE: null
+
+                es_ES: null
+
+                fr_FR: null
+
+                #: ja_Kana_JP [str] <nab>
+                #; = Serial title in Japanese Katakana-Hiragana writing system, "removing" kanji
+                #    from text.
+                ja_Kana_JP: イエスタデイをうたって
+
+                ko_KR: 예스터데이를 노래하며
+
+                vi_VN: null
+
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+                pt_PT: null
+            }
+
+            #: synonyms [obj] <nbl> => [arr] <nab>
+            #; = Synonym, other titles that well-known on the public.
+            synonyms:
+            {
+                en_Latn: [
+                    Yesterday o Utatte
+                ]
+                ar_001: null
+                id_ID: null
+                en_US: [
+                    Sing Yesterday (2020)
+                    Sing Yesterday for Me
+                ]
+                ja_JP: null
+                de_DE: null
+                ko_KR: null
+                fr_FR: null
+                
+                ru_RU: [
+                    Спой мне «Yesterday»
+                ]
+                es_ES: null
+                zh_Hans: null
+                zh_Hant: null
+                vi_VN: null
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+                pt_PT: null
+            }
+        }
+
+        #: synopsis [obj] <nbl>
+        #; = A synopsis/plot of story of serial in several languages.
+        synopsis:
+        {
+            ar_001: '''تدور القصة حول شاب جامعي يدعى ريكو الذي يجد عمل في متجر. يعيش حياته بشكل رتيب حتى يقابل حبيبته السابقة وزميلته هارو نوناكا التي تمتلك غراب كحيوان أليف.'''
+
+            id_ID: '''Setelah lulus kuliah, Rikuo Uozumi yang hidup tanpa ambisi, bekerja di sebuah toko. Hari-harinya berlalu dengan tenang sampai ia bertemu dengan teman kuliahnya, Shinako dan wanita misterius bernama Haru bersama gagak peliharaannya.'''
+
+            en_US: '''Rikuo has graduated from college, but has zero ambition or direction and works in a convenience store. A strange high-school dropout, Haru, keeps coming around with her pet crow. Rikuo still has a crush on his senior Shinako, who is beginning a teaching career, and who shows up in the store one day. Rikuo's relationships with the girls, and his feelings about his life, keep changing as the story evolves, bringing in other important characters—Rikuo's co-worker, the coworker's sister, and a childhood friend of Shinako's, etc.'''
+
+            ja_JP: '''大学卒業後、コンビニでバイトをする魚住。そんな彼の前に、ある日カラスを連れた少女・ハルが現れた…。 「49％後ろ向きで、51％前向きで…」　へそ曲がりだけれども正直な彼らの心は、舞い落ちる桜のようにゆらゆら揺れて…。'''
+
+            de_DE: '''Rikuo Uozumi hat die Hochschule abgeschlossen, aber in seinem Leben weder Ambitionen noch Zielrichtung. Er beginnt daher einen Job in einem Mischwarenladen und führt so ein eher unspektakuläres Leben – abgesehen von den gelegentlichen Besuchen der Schülerin Haru Nonaka, die eines Tages im Geschäft auftaucht und die sich stets in Begleitung ihres Haustiers, eines Raben, befindet. Auch Rikuos Ex-Freundin und ehemalige Klassenkameradin Shinako erscheint eines Tages im Laden. Shinako, für die Rikuo insgeheim immer noch Gefühle hegt, strebt eine Karriere als Lehrerin an. Mit den beiden Frauen und weiteren Menschen, die im Rahmen seiner Arbeit in Rikuos Leben treten, wird für ihn ein neuer Lebensabschnitt angestoßen und er beginnt damit, sich und seine aktuelle Situation mehr zu hinterfragen.'''
+
+            ko_KR: '''고민하고 방황하면서도 열심히 사는 네 남녀의 인생과 사랑 이야기를 그린 애니메이션'''
+
+            fr_FR: '''À la fin de ses études universitaires, Rikuo Uozumi, un garçon sans réelle ambition dans la vie, a trouvé un petit job dans un konbini, une petite supérette ouverte 24h/24, très populaire au Japon. Les jours se suivent et se ressemblent pour Rikuo jusqu'à sa rencontre avec son ancienne camarade de classe mais surtout avec la troublante Haru Nonaka, toujours accompagnée de son fidèle corbeau...'''
+
+            ru_RU: '''Всего полгода прошло с тех пор, как Рикуо Уодзуми окончил университет и наконец вступил во взрослую жизнь. Однако та оказалась куда более неприглядной, чем он мог представить себе, когда ещё был студентом. С того времени желания приуменьшились, мечты — поубавились. И даже занятие фотографией, которое всегда нравилось, словно потеряло для него всякий смысл. «Чего я на самом деле хочу?» — важный вопрос для кого-то, но не особо волнующий Рикуо. Бесперспективной работёнки в небольшом минимаркете, кажется, ему вполне хватает, а большего и не надо...
+
+            Но что, если апатичный и немногословный парень встретит девушку, чей характер прямо противоположен его собственному? Весёлую и энергичную, но вместе с тем весьма странную Хару Нонаку, одевающуюся в чёрное и таскающую за собой хромого ручного ворона. Сможет ли она помочь сбившемуся с пути, указав верное направление в жизни, дать толчок, пинок и затрещину?
+
+            Или с этой задачей лучше справится Синако Мориномэ, бывшая одногруппница Рикуо, в которую он всё ещё влюблен? Как знать. Ведь не для этого ли она решила возобновить с ним их прежние дружеские отношения?'''
+
+            es_ES: '''Después de la universidad, Rikuo Uozumi, un chico sin muchas ambiciones en la vida, toma un trabajo en una tienda de conveniencia. Los días pasan sin problemas para Rikuo hasta que se encuentra con la especialmente inusual Haru Nonaka, y su cuervo mascota…'''
+
+            zh_Hans: '''鱼住陆生，在大学毕业後没有继续升学或找正式的工作，就开始了便利商店打工的生活。鱼住的单恋对象是大学好友─森之目榀子，个性积极努力又聪明，在一所高中担任代课老师。但榀子因为记挂家乡一段无解的过去，始终不曾正面接受过任何人的感情。另一方面，半年前自高中辍学，很早就独立而住在外面的野中晴，她在五年前一次际会之後喜欢上了鱼住，直到现在又再度相遇。她知道了榀子与鱼住之间的事情，决定正大光明地向榀子宣战。'''
+
+            zh_Hant: '''魚住陸生，在大學畢業後沒有繼續升學或找正式的工作，就開始了便利商店打工的生活。魚住的單戀對象是大學好友─森之目榀子，個性積極努力又聰明，在一所高中擔任代課老師。但榀子因為記挂家鄉一段無解的過去，始終不曾正面接受過任何人的感情。另一方面，半年前自高中輟學，很早就獨立而住在外面的野中晴，她在五年前一次際會之後喜歡上了魚住，直到現在又再度相遇。她知道了榀子與魚住之間的事情，決定正大光明地向榀子宣戰。'''
+
+            vi_VN: '''Sau khi học xong đại học, Uozumi Rikuo, một chàng trai thiếu tham vọng nhận việc làm ở một cửa hàng tiện dụng (Thực chất là thất nghiệp sau khi tốt nghiệp đại học rồi mới xin vào đây). Nhiều ngày tẻ nhạt trôi qua cho đến khi cậu gặp lại một người bạn học và cũng là bạn gái cũ, nhưng điều thực sự đáng lưu ý là sự xuất hiện của Nonaka Haru, một cô gái khác thường, cùng với con quạ cưng của cô...'''
+
+            /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+            pt_PT: '''Depois da faculdade, Rikuo Uozumi, um rapaz sem muita ambição na vida, assume um emprego em uma loja de conveniência. Os dias passam sem grandes mudanças para Rikuo até que ele re-encontra sua ex-namorada, mas também especialmente graças a incomum Haru Nonaka e seu corvo de estimação...'''
+        }
+
+        #: isAnime [boo] <nbl>
+        #; = Explain that url is using /anime path or not. Used for SIMKL URL path. Default: true.
+        isAnime: true
+
+        #: type [str] <nab>
+        #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
+        // Allowed values are:
+        // TV, ONA, OVA, Special, Movie, Music, and Unknown.
+        type: TV
+
+        #: status [str] <nbl>
+        #; = Describes serial broadcast status.
+        // Allowed values are:
+        // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
+        status: Finished
+
+        #: source [str] <nbl>
+        #; = Source type the media was adapted from.
+        // Allowed values are:
+        // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
+        source: Manga
+
+        #: ageRating [str] <nab>
+        #; = Broadcast content rating of serial. See Docuwiki for more information.
+        // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
+        ageRating: PG13+
+
+        #: isNsfw [boo] <nbl>
+        #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
+        #;   known as safe.
+        isNsfw: false
+
+        #: isLicensed [boo] <nbl>
+        #; = Explains if the work/serial is legally licensed, if not (case: fanwork) then value
+        #;   turns false. Default: true.
+        isLicensed: true
+
+        media:
+        {
+            #: posterImage [str] <uri> <nab>
+            #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
+            posterImage: https://artworks.thetvdb.com/banners/series/372534/posters/62002246.jpg
+
+            #: coverImage [str] <uri> <nab>
+            #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
+            coverImage: https://artworks.thetvdb.com/banners/series/372534/backgrounds/5e85c27183d55.jpg
+
+            #: promotionalVideos [arr] <nab> > [obj] > [str]
+            #; = List of promotional videos of current entry.
+            promotionalVideo:
+            [
+                {
+                    id: c7wWmUywDpY
+                    provider: youtube
+                }
+            ]
+
+            soundtracks:
+            [
+                {
+                    title: Kago no Naka ni Tori (籠の中に鳥)
+                    mbid: f88e3806-ec42-48a6-94f3-7b66781bae90
+                    isrc: JPG102000230
+                    bpm: 162
+                    artists: [
+                        {
+                            mbid: yourness (ユアネス)
+                            name: 0d6dba4c-503b-4f40-b82e-49c12a3ac355
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 1
+                        to: 6
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 12w8fa09F3TDzKi9x6TLrl
+                        youtubeMusic: qos0DriiFKk
+                    }
+                }
+                {
+                    title: Aoibashi (葵橋)
+                    mbid: 08320bc4-d4c1-4113-a4f7-c05eb912308b
+                    isrc: JPU902001174
+                    bpm: 120
+                    artists: [
+                        {
+                            mbid: efc787f0-046f-4a60-beff-77b398c8cdf4
+                            name: Sayuri (さユり)
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 7
+                        to: 9
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 4CYJSNWWTNnlbGRmSPSo9G
+                        youtubeMusic: 9niR67JT3gY
+                    }
+                }
+                {
+                    title: Yesterday wo Utatte (イエスタディをうたって)
+                    mbid: null
+                    isrc: null
+                    bpm: 138
+                    artists: [
+                        {
+                            mbid: null
+                            name: agehasprings
+                        }
+                        {
+                            mbid: null
+                            name: TaNaBaTa
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 10
+                        to: 11
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: null
+                        youtubeMusic: MsjnJowGNJ0
+                    }
+                }
+            ]
+        }
+
+        release:
+        {
+            #: year [num] <nbl>
+            #; = The year of the serial release, using a integrer/numeral format. If unknown,
+            #;   use 0.
+            year: 2020
+
+            #: season [str] <nab>
+            #; = Season of serial releases.
+            // Allowed values are
+            // Winter, Spring, Summer, Fall, and Unknown
+            season: Spring
+
+            #: startDate [str] <nab>
+            #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            startDate: 2020-04-05
+
+            #: dayOfTheWeek [str] <nab> <arb>
+            // Allowed values are
+            // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, and null.
+            dayOfTheWeek: Sunday
+
+            #: broadcastTime [str] <nab>
+            #; Local time of show broadcasted.
+            // FORMAT: hh:mm:ssTZD
+            // See instruction on createdAt property to see procedure for filling data
+            broadcastTime: 01:00:00+09:00
+
+            #: endDate [str] <nab>
+            #; = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            endDate: 2020-06-21
+        }
+
+        episode:
+        {
+            #: count [num] <nab>
+            #; = Total episodes of serial. If unknown, fill null.
+            count: 12
+
+            #: duration [num] <nab>
+            #; = Duration per serial episode, using minute format. If unknown, fill null.
+            duration: 23
+
+            #: totalDuration [num] <nab>
+            #; = The total duration of the series, using the minute format. If unknown, fill null.
+            totalDuration: 276
+        }
+
+        #: countryOfOrigin [str] <nbl>
+        #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
+        #    format.
+        countryOfOrigin: JP
+
+        #: genres [obj] <nbl> > [str]
+        #; = Is genre(s) of serial. See docuwiki for more information.
+        // Allowed values are:
+        // Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+        // Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+        // Supernatural, Thriller, War
+        genres: [
+            Drama
+            Romance
+            Slice of Life
+        ]
+
+        #: serialTags [arr] <nbl> > [obj] <nbl>
+        #; = Represents serial specific tags/content. Similar to the `.genres`, but usually more
+        #;   focused on content, storyline, or themes. But, all of `.genres` value will be ignored
+        #;   ignored if present on `.tags`. See docuwiki for more information.
+        tags: [
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Coming of Age
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Seinen
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Work
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Rehabilitation
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Photography
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Urban
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Tsundere
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Drawing
+            }
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Love Triangle
+            }
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Age Gap
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: University
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Convenience Store
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Reunion
+            }
+        ]
+
+        companies:
+        {
+            #: studios [arr] <nbl>
+            #; = Studios of producing series.
+            studios:
+            [
+                Doga Kobo
+            ]
+
+            licensors: null
+
+            #: producers [arr] <nab> > [str]
+            #; = Producers that involved to current entry/project.
+            producers:
+            [
+                TV Asahi
+                Sotsu
+                Delfi Sound
+                Lucent Pictures Entertainment
+                CyberAgent
+                AbemaTV
+                DMM.futureworks
+            ]
+        }
+
+        social:
+        {
+            #: twitter [str] <nab>
+            // Please to ignore @ sign while input username
+            twitter: anime_yesterday
+
+            facebook: null
+
+            #: instagram [str] <nab>
+            // Please to ignore @ sign while input username
+            instagram: null
+
+            #: hashtag [arr] <nab>
+            #; = Social media hashtag of shows. Sometimes used for campaign. Applicable for each SNS.
+            // Please to ignore # sign while input hashtag(s)
+            hashtag:
+            [
+                イエスタデイをうたって
+            ]
+        }
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: TVアニメ『イエスタデイをうたって』公式サイト
+                url: https://singyesterday.com/
+                language: ja_JP
+            }
+        ]
+
+        databases:
+        {
+            allCinema: 367978
+
+            aniDb: 14822
+
+            aniList: 109020
+
+            animePlanet: {
+                showUrl: https://www.anime-planet.com/anime/sing-yesterday-for-me
+                showId: 13245
+            }
+
+            animeNewsNetwork: 22975
+
+            aniSearch: 14347
+
+            anison: 22649
+
+            annict: 7158
+
+            fanartTv: 372534
+
+            imdb: {
+                seasonNumber: 1
+                showId: tt10204658
+                offset: 0
+            }
+
+            kinoPoisk: {
+                seasonNumber: 1
+                showId: 1355620
+                offset: 0
+            }
+
+            kitsu: {
+                showSlug: yesterday-wo-utatte
+                showId: 43063
+            }
+
+            liveChart: 43063
+
+            myAnimeList: 39710
+
+            myShows: {
+                seasonNumber: 1
+                showId: 66116
+                offset: 0
+            }
+
+            nautiljon: https://www.nautiljon.com/animes/yesterday+wo+utatte.html
+
+            notifyMoe: 9KfX5A8Wg
+
+            otakOtaku: 1686
+
+            perpusIndo: 39710
+
+            reelgood: {
+                showSlug: null
+                showUuid: null
+                seasonNumber: 1
+                offset: 0
+            }
+
+            shikimori: {
+                showId: 39710
+                isMoved: false
+                newShowId: null
+            }
+
+            shoboi: 5631
+
+            silverYasha: 278
+            
+            simkl: {
+                showId: 1073749
+
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                seasonNumber: 0
+                offset: 0
+            }
+            
+
+            tmdb: {
+                showId: 95550
+                seasonNumber: 1
+                seasonId: 136011
+                offset: 0
+            }
+
+            tvdb: {
+                showId: 372534
+                seasonNumber: 1
+                seasonId: 1802473
+                offset: 0
+            }
+
+            trakt:
+            {
+                showSlug: sing-yesterday-for-me
+                showId: 155397
+                seasonId: 209283
+                seasonNumber: 1
+                offset: 0
+            }
+        }
+
+        streamLinks:
+        {
+            amazonPrime: null
+            animeDigitalNetwork: null
+            animeLab: null
+            animeOnDemand: null
+            aniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JgVsiJZt6yCMnQKOB-lJIz7
+            aniPlus: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2283
+            aniPlusAsia: null
+            bahamutAnimeCrazy: null
+            biliBili: null
+            crunchyroll: https://www.crunchyroll.com/sing-yesterday-for-me
+            fod: null
+            funimation: null
+            genFlix: null
+            hidive: null
+            hulu: null
+            iQiyi: null
+            iflix: null
+            museAsia: {
+                en_001: null
+                id_ID: null
+                ms_MY: null
+                th_TH: null
+                vi_VN: null
+                zh_Hant_HK: null
+                zh_Hant_TW: null
+            }
+            netflix: {
+                US: https://www.netflix.com/title/81266992
+                ID: https://www.netflix.com/title/81266992
+            }
+            nicoNico: http://ch.nicovideo.jp/singyesterday
+            sushiroll: null
+            vvvvid: null
+            vrv: https://vrv.co/series/GYVDV1N0Y
+            wakanim: {
+                DE: null
+                FR: null
+                RU: null
+                SC: null
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: nattadasu
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
+
+    commiter:
+    {
+        name: nattadasu
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
 }
