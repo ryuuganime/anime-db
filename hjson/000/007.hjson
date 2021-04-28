@@ -24,7 +24,7 @@
 |   "deleted" and changed to    | //    the machine.
 |   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
 | <nbl>: this value can not be  | //    on HJSON.
-|   "deleted" or changed to     | // For easier on filling, see on hjson/000/014.hjson or latest
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/001.hjson or latest
 |   null value because it is    | //    for example.
 |   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
 |   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
