@@ -1,0 +1,68 @@
+name: Repository Validator
+on: [push]
+
+jobs:
+  validateYaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run YAML Linter
+        uses: ibiqlik/action-yamllint@v3
+      - name: Validate YAML
+        uses: nwisbeta/validate-yaml-schema@v1.0.3
+        with:
+          yamlSchemasJson: |
+            {
+              "https://schema.ryuuganime.my.id/entry/v2.1-s.json": ["yaml/*"],
+              "https://schema.ryuuganime.my.id/index/v2.1-s.json": ["index.yaml"]
+            }
+
+  validateJson:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate JSON Entry
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /schemas/entry/v2.1-s.json
+          INPUT_JSONS: /json/*/*.json
+      - name: Validate JSON Index
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /schemas/index/v2.1-s.json
+          INPUT_JSONS: /index.json
+
+  validateCodeOwners:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate CODEOWNERS File
+        uses: mszostok/codeowners-validator@v0.6.0
+        with:
+          checks: "files,owners,duppatterns"
+          experimental_checks: "notowned"
+
+  validateLinks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find Files with Links
+        shell: bash
+        run: |
+          echo 'FILES_TO_CHECK<<EOF' >> $GITHUB_ENV
+          
+          # --- This is where we define what files to check ---
+
+          # $GITHUB_WORKSPACE is where our files live
+          # Ignore dirs and only include markdown files
+          
+          files_to_check=$(find $GITHUB_WORKSPACE -type f \
+          -not -path '*/\.git/*' -not -path '*/\.github/*'\
+          -not -path '*/.dictionary/*' -not -path '*/schemas/*')
+          
+          echo $files_to_check >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+      - name: Validate Links
+        uses: simeg/urlsup-action@v1.0.0
+        with:
+          # Pass the files and any additional arguments to urlsup
+          args: ${{ env.FILES_TO_CHECK }} --threads 10 --allow 429 --white-list http://localhost

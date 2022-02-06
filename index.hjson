@@ -1,4 +1,9 @@
+#hjson
 /*------------------------------------*\
+|      RYUUGANIME ENTRY INDEX LIST     |
+|             Version 1.3-r            |
+|       Latest Update: 2020-10-09      |
+|- - - - - - - - — - - - - - - - - - - |
 |         //Scheme Template//          |
 |   Copy  this "schema"  for  accessi- |
 | bility  to   fills  machine-friendly |
@@ -16,12 +21,11 @@
             en_US: ""
             native: ""
         }
-        ryuuganime: 0
+        ryid: 0
         path:
         {
             json: /json/000/000.json
             hjson: /hjson/000/000.hjson
-            xml: /xml/000/000.xml
             yaml: /yaml/000/000.yaml
         }
     }
@@ -40,12 +44,11 @@
             en_US: The Millionaire Detective – Balance: UNLIMITED
             native: 富豪刑事 Balance:UNLIMITED
         }
-        ryuuganime: 1
+        ryid: 1
         path:
         {
             json: /json/000/001.json
             hjson: /hjson/000/001.hjson
-            xml: /xml/000/001.xml
             yaml: /yaml/000/001.yaml
         }
     }
@@ -61,12 +64,11 @@
             en_US: Sword Art Online: Alicization
             native: ソードアート・オンライン アリシゼーション
         }
-        ryuuganime: 2
+        ryid: 2
         path:
         {
             json: /json/000/002.json
             hjson: /hjson/000/002.hjson
-            xml: /xml/000/002.xml
             yaml: /yaml/000/002.yaml
         }
     }
@@ -82,12 +84,11 @@
             en_US: My Hero Academia
             native: 僕のヒーローアカデミア
         }
-        ryuuganime: 3
+        ryid: 3
         path:
         {
             json: /json/000/003.json
             hjson: /hjson/000/003.hjson
-            xml: /xml/000/003.xml
             yaml: /yaml/000/003.yaml
         }
     }
@@ -103,12 +104,11 @@
             en_US: Kaguya-sama: Love is War Season 2
             native: かぐや様は告らせたい？～天才たちの恋愛頭脳戦～
         }
-        ryuuganime: 4
+        ryid: 4
         path:
         {
             json: /json/000/004.json
             hjson: /hjson/000/004.hjson
-            xml: /xml/000/004.xml
             yaml: /yaml/000/004.yaml
         }
     }
@@ -124,12 +124,11 @@
             en_US: Gleipnir
             native: グレイプニル
         }
-        ryuuganime: 5
+        ryid: 5
         path:
         {
             json: /json/000/005.json
             hjson: /hjson/000/005.hjson
-            xml: /xml/000/005.xml
             yaml: /yaml/000/005.yaml
         }
     }
@@ -145,12 +144,11 @@
             en_US: "Tower of God"
             native: "神之塔"
         }
-        ryuuganime: 6
+        ryid: 6
         path:
         {
             json: /json/000/006.json
             hjson: /hjson/000/006.hjson
-            xml: /xml/000/006.xml
             yaml: /yaml/000/006.yaml
         }
     }
@@ -166,12 +164,11 @@
             en_US: Sing "Yesterday" for Me
             native: "イエスタデイをうたって"
         }
-        ryuuganime: 7
+        ryid: 7
         path:
         {
             json: /json/000/007.json
             hjson: /hjson/000/007.hjson
-            xml: /xml/000/007.xml
             yaml: /yaml/000/007.yaml
         }
     }
@@ -187,12 +184,11 @@
             en_US: "I want to eat your pancreas"
             native: "君の膵臓をたべたい"
         }
-        ryuuganime: 8
+        ryid: 8
         path:
         {
             json: /json/000/008.json
             hjson: /hjson/000/008.hjson
-            xml: /xml/000/008.xml
             yaml: /yaml/000/008.yaml
         }
     }
@@ -208,12 +204,11 @@
             en_US: "Everyday Life With Monster Girls"
             native: "モンスター娘のいる日常"
         }
-        ryuuganime: 9
+        ryid: 9
         path:
         {
             json: /json/000/009.json
             hjson: /hjson/000/009.hjson
-            xml: /xml/000/009.xml
             yaml: /yaml/000/009.yaml
         }
     }
@@ -229,12 +224,11 @@
             en_US: "Sarazanmai"
             native: "さらざんまい"
         }
-        ryuuganime: 10
+        ryid: 10
         path:
         {
             json: /json/000/010.json
             hjson: /hjson/000/010.hjson
-            xml: /xml/000/010.xml
             yaml: /yaml/000/010.yaml
         }
     }
@@ -250,12 +244,11 @@
             en_US: "Dakaichi: I'm Being Harassed by the Sexiest Man of the Year"
             native: "抱かれたい男1位に脅されています。"
         }
-        ryuuganime: 11
+        ryid: 11
         path:
         {
             json: /json/000/011.json
             hjson: /hjson/000/011.hjson
-            xml: /xml/000/011.xml
             yaml: /yaml/000/011.yaml
         }
     }
@@ -271,12 +264,11 @@
             en_US: "Uchitama?! Have You Seen My Tama?"
             native: "うちタマ?! 〜うちのタマ知りませんか？〜"
         }
-        ryuuganime: 12
+        ryid: 12
         path:
         {
             json: /json/000/012.json
             hjson: /hjson/000/012.hjson
-            xml: /xml/000/012.xml
             yaml: /yaml/000/012.yaml
         }
     }
@@ -292,12 +284,11 @@
             en_US: "Somali and the Forest Spirit"
             native: "ソマリと森の神様"
         }
-        ryuuganime: 13
+        ryid: 13
         path:
         {
             json: /json/000/013.json
             hjson: /hjson/000/013.hjson
-            xml: /xml/000/013.xml
             yaml: /yaml/000/013.yaml
         }
     }
@@ -313,12 +304,11 @@
             en_US: "Adventure Time"
             native: "Adventure Time"
         }
-        ryuuganime: 14
+        ryid: 14
         path:
         {
             json: /json/000/014.json
             hjson: /hjson/000/014.hjson
-            xml: /xml/000/014.xml
             yaml: /yaml/000/014.yaml
         }
     }
@@ -334,12 +324,11 @@
             en_US: "The Amazing World of Gumball"
             native: "The Amazing World of Gumball"
         }
-        ryuuganime: 15
+        ryid: 15
         path:
         {
             json: /json/000/015.json
             hjson: /hjson/000/015.hjson
-            xml: /xml/000/015.xml
             yaml: /yaml/000/015.yaml
         }
     }
@@ -355,12 +344,11 @@
             en_US: "Future Folktales"
             native: "أساطير في قادم الزمان"
         }
-        ryuuganime: 17
+        ryid: 17
         path:
         {
             json: /json/000/017.json
             hjson: /hjson/000/017.hjson
-            xml: /xml/000/017.xml
             yaml: /yaml/000/017.yaml
         }
     }
@@ -376,12 +364,11 @@
             en_US: "Hidden Things"
             native: "かくしごと"
         }
-        ryuuganime: 18
+        ryid: 18
         path:
         {
             json: /json/000/018.json
             hjson: /hjson/000/018.hjson
-            xml: /xml/000/018.xml
             yaml: /yaml/000/018.yaml
         }
     }

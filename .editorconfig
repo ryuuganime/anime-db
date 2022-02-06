@@ -2,15 +2,12 @@
 charset = utf-8
 end_of_line = lf
 insert_final_newline = false
-
-[{xml,yaml,json}/**.{xml,yaml,json}]
 indent_style = space
 indent_size = 4
+root = false
 
-[hjson/**.hjson]
+[**.{json,yaml}]
 indent_size = 2
-indent_style = space
 
-[index.{xml,yaml,hjson,json}]
-indent_style = space
+[**.hjson]
 indent_size = 4

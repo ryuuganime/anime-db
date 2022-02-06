@@ -1,10 +1,10 @@
 <h1>ryuuganime-db</h1>
-Head Database Repository of Ryuuganime based on JSON, HJSON, YAML, XML, XLSX and HTML format.
+Head Database Repository of Ryuuganime based on JSON, HJSON (Human Javascript Object Notation), and YAML file format.
 
 __TOC__
 
 = File format =
-This database is using [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>) for repository documentation markup format. For indexing, Ryuuganime is using [[/json|JSON]], [[hjson|HJSON]], [[yaml|YAML]], and [[xml|XML]] for current release. [[html|HTML]] and [[xlsx|XLSX]] files are deprecated. 
+This database is using [https://en.wikipedia.org/wiki/MediaWiki MediaWiki] (<code>.wiki</code>) for repository documentation markup format. For indexing, Ryuuganime is using [[/json|JSON]], [[hjson|HJSON]], and [[yaml|YAML]].
 
 File structuring on this repo is using <code>fileExt/id1/id2.ext</code>.
 
@@ -23,7 +23,7 @@ This project and everyone participating in it is governed by the [[CODE_OF_CONDU
 
 = List of anime database entries =
 <!--Google translated, oof-->To see the anime database that has been recorded in this repository, please head to [[index.wiki]].
-For machine-readable files, you can use the JSON version, namely [[index.json]] (recommended); on YAML format, [[index.yaml]]; and [[index.xml]] on XML (not recommended).
+For machine-readable files, you can use the JSON version, namely [[index.json]] (recommended); on YAML format, [[index.yaml]]; and [[index.hjson]] on HJSON (not recommended).
 
 = License =
 

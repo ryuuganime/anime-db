@@ -1,829 +1,57 @@
-#hjson
-/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+#hjson {"version":"2.1-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
-|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
-|                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
-|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
-| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
-|   non-developer to contribute | | [arr] is an array value. It  | |                              |
-|   on filling related anime    | |   is a combination of        | | '''                          |
-|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
-|   on each of values in as a   | |   in one value               | |       lines text value       |
-|   comment                     | | [obj] is an object value.    | |                          ''' |
-|                               | |   Signifies that this value  | | is a syntax that allows user |
-\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
-|                               | |                              | |   pointer                    |
-| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
-|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
-| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
-|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
-|   on a value is more than one | //    mistakes without even realizing it.
-| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
-|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
-|   null, if possible           | //    itself. It's intended to be used like a user interface for
-| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
-|   "deleted" or changed to     | //    the machine.
-|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
-|   essential for the file      | //    on HJSON. 
-|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
-|                               | //    for example.
-\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
-{ 
-  # $schema [str] <nbl> <url>
-  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
-  $schema: ../../schemas/entry.json
-  // Optional value, tick a comment syntax of above value, and untick value below.
-  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.1-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON.
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/001.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <uri>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
+    #;   JSON!
+    $schema: https://schema.ryuuganime.my.id/entry/v2.1-s.json
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry/v2.1-s.json
 
-  # title [obj] <nbl>
-  # title of serial... in several languages. Based on ICU locales.
-  title:
-  {
-    # native [str] <nbl>
-    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native:  僕のヒーローアカデミア
-
-    # en_Latn [str] <nbl>
-    # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Boku no Hero Academia
-
-    # ar_001 [str] <nab>
-    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
-    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: أكاديميتي للأبطال
-
-    hu_HU: Hősakadémia
-
-    he_IL: אקדמיית הגיבורים שלי
-
-    # id_ID [str] <nab>
-    # = Serial title in Indonesian (un/official)
-    //  REGEX: ^[\w\s\S]+$
-    id_ID: Pahlawanku Academia
-
-    # en_US [str] <nab>
-    # = Serial title in English.
-    //  REGEX: ^[\w\s\S]+$
-    en_US: My Hero Academia
-
-    # ja_JP [str] <nab>
-    # = Serial title in Japanese.
-    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: 僕のヒーローアカデミア
-
-    # de_DE [str] <nab>
-    # = Serial title in German (un/official).
-    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: Boku no Hero Academia
-
-    # ko_KR [str] <nab>
-    # = Serial title in South/North Korean.
-    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 나의 히어로 아카데미아
-
-    # fr_FR [str] <nab>
-    # = Serial title in French (or other accent).
-    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: My Hero Academia
-
-    # pt_PT [str] <nab>
-    # = Serial title in Portuguese.
-    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Minha Academia de Heróis
-
-    # ru_RU [str] <nab>
-    # = Serial title in Russian (un/official). 
-    //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Моя геройская академия
-
-    # es_ES [str] <nab>
-    # = Serial title in Spanish (or other accent).
-    //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: Моя геройская академия
-
-    # zh_Hans [str] <nab>
-    # = Serial title in Simplified Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 我的英雄学院
-
-    # zh_Hant [str] <nab>
-    # = Serial title in Traditional Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 我的英雄學院
-
-    # vi_VN [str] <nab>
-    # = Serial title in Vietnamese.
-    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Học Viện Siêu Anh Hùng
-  }
-
-  # backdrop [str] <url> <nbl>
-  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/fanart/original/305074-11.jpg
-
-  # visualKey [str] <url> <nbl>
-  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/posters/305074-5.jpg
-
-  # synopsis [obj] <nbl>
-  # = A synopsis/plot of story of serial in several languages. 
-  synopsis:
-  {
-    # ar_001 [str] <nab>
-    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
-    #   Wikipedia for Arabic synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''إيزوكو ميدوريا كان مجرد تلميذ عادي في المرحلة المتوسطة في عالم يسكنه أناس غير عاديين لديهم قوى خارقه للطبيعه كأبطال المجلات المصورة الأمريكية، لطالما أراد أن يكون بطلاً على الرغم من أن زملاءه يسخرون منه و يتنمرون عليه لأنه لا يمتلك قوة خارقه للطبيعه، في أحد الأيام شاهد وحش شرير يهاجم صديق طفولته كاتوسكي فتدخل ايزوكو وأنقذه، أقوى بطل خارق في العالم أوول مايت شاهد ايزوكو و أعجب بشجاعته فطلب منه وراثه قوته الخارقة و ساعده بعد ذلك على الاندراج في أكاديمية يو إيه التي تتخصص في تخريج أبطال خارقين'''
-
-    hu_HU: null
-
-    he_IL: '''בנקודה מסויימת בהיסטוריה, האנושות החלה לפתח לעצמה כוחות על-טבעיים, כאשר 80% מהאוכלוסיה רכשו את אותן היכולות. תופעה זו הובילה לעלייתם של גיבורי על ונבלים הנאבקים זה בזה, ובכדי לשמר את הסדר הציבורי, נפתחו מוסדות שונים להכשרת הגיבורים לעתיד. איזוקו מידוריה שואף להפוך לגיבור ולהתקבל לתיכון היוקרתי לגיבורים "יו.איי", אך לצערו הוא משתייך ל-20% מהאוכלוסיה ללא התכונות האינדיבידואליות. יחד עם זאת, אין בכוונתו לוותר על חלומו, ומצבו מקבל תפנית כאשר הוא פוגש בגיבור העל "אול-מייט" אשר מסכים להכשירו.'''
-
-    # id_ID [str] <nab>
-    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
-    #   fanshare for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Midoriya Izuku hanya seorang siswa biasa yang hidup di dunia dimana banyak orang memiliki kekuatan super yang disebut dengan "Quirk" (Kosei). Meskipun tidak memiliki kekuatan super, namun ia bermimpi suatu hari nanti bisa menjadi hero (pahlawan).
-    Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seorang pahlawan terkuat bernama All Might memberikan kekuatan padanya. Setelah kejadian itu, Izuku melanjutkan sekolah di SMA Yuuei (U.A), sebuah sekolah khusus yang mendidik para calon hero masa depan.'''
-
-    # en_US [str] <nab>
-    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
-    #   synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''Mankind has developed superpowers known as "Quirks" with 80% of the population having some kind of superpower. These new abilities see the rise of both superheroes and villains. A prestigious school known as the The Hero Academy trains superpowered hopefuls into the heroes the world needs. Middle school student Izuku Midoriya wants to be a hero more than anything, but he's part the 20% without a Quirk. Unwilling to give up his dream, he plans to take the exam and be accepted into a high school for budding heroes. Through a series of serendipitous events, he catches the eye of the greatest hero, All Might, who agrees to train him.'''
-
-    # ja_JP [str] <nab>
-    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''事の始まりは中国、軽慶市。『発光する赤児が産まれた』というニュースだった。 以降各地で「超常」は発見され、いつしか「超常」は「日常」に、「架空(ゆめ)」は「現実」となった。 世界総人口の約八割が何らかの「特異体質」である現在、個性を悪用する敵(ヴィラン)により混乱渦巻く世の中で、かつて誰もが空想し憧れた一つの職業が、脚光を浴びていた。そう、「ヒーロー」と呼ばれる職業である！ 主人公である「緑谷出久」(通称デク)もまた、将来ヒーローになりたいと願う少年。 しかし彼は、今の世の中では珍しい完全な「無個性」の人間だった。 高校入試を控え、夢と現実の間で悩むデクは、ふとしたきっかけからトップヒーローである「オールマイト」と出会う。 オールマイトにヒーローの素質を見出されたデクは、１０ヶ月に及ぶ特訓の末に彼の”譲渡する個性”「ワン・フォー・オール」を引継ぐ。 ぶっつけ本番で挑んだ実技入試において、同会場で知り合った少女「麗日お茶子」のピンチを救おうと飛び出した勇気が認められ、デクは見事憧れの名門「雄英高校」に合格する。'''
-
-    # de_DE [str] <nab>
-    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Izuku ist ein schwächlicher „Normalo“. In einer Welt, in der die Mehrzahl der Menschen mit übermenschlichen Fähigkeiten geboren werden, besitzt er leider überhaupt keine angeborene „Spezialität“. Trotzdem möchte er ein Superheld werden und andere Menschen retten – so wie sein großes Idol „All Might“ - der mächtigste aller Superhelden. Izuku hat Glück: All Might nimmt ihn unter seine Fittiche und macht Izuku für die superschwere Aufnahmeprüfung an der elitären Hero Academy fit.'''
-
-    # ko_KR [str] <nab>
-    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''가공의 세계가 현실로!이것은 내가 최고의 히어로가 되기까지의 이야기다.시작은 중국의 경경 시에서 빛을 내뿜는 아기가 태어났다는 뉴스였다. 이후에 각지에서 초현실적 현상이 발견되고 원인도 밝혀지지 않은 채 세월이 흐른다.세계 총인구의 80%가 어떤 형태로든 특이체질인 초인사회가 된 현재.선천적으로 타고난 특별한 힘인 ‘개성’을 악용하는 범죄자 ‘빌런’이 갈수록 늘어난다. 이에 마찬가지로 ‘개성’을 가진 자들이 ‘히어로’로서 빌런과 재해에 맞서며 사람들을 구하는 사회를 확립한다.일찍이 누구나 상상하며 동경하는 ‘히어로’가 현실이 된 세계에서 미도리야 이즈쿠도 히어로가 되는 것을 꿈꾼다. 유명한 히어로를 다수 배출한 유에이 고교에 입학을 목표로 삼고 있지만 아무런 특이체질도 아닌 ‘무개성’의 낙오자로 절망에 빠진다. 그러던 어느 날, 자신이 가장 동경하는 최고의 히어로 올마이트를 우연히 만난 것을 계기로 운명을 크게 바꾸게 된다. 친구, 스승, 라이벌, 빌런... 가지각색의 인물, 수많은 시련과 마주하면서 미도리야 이즈쿠는 최고의 히어로가 되기 위해 성장해 간다. 신세대의 열띤 히어로 스토리가 지금 시작된다!'''
-
-    # fr_FR [str] <nab>
-    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''Dans un monde où le paranormal est normal, où l'humanité est souvent menacée par l'attaque de divers monstres, chaque humain est doté d'un pouvoir particulier nommé "Alters". Grâce à celui-ci, devenir un héros n'est pas impossible pour eux. Le manga suit les aventures d'Izuku Midoriya, l'un des rares humains ne possédant pas d'alter, qui rêve pourtant de rejoindre la filière super-héroïque du grand lycée Yūei et de devenir un jour un grand héros.'''
-
-    # pt_PT [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''Por toda a sua vida, Izuku sonhou ser um heroi, um objetivo ambicioso para qualquer um, mas especialmente desafiador para um garoto sem superpoderes. Isso mesmo: em um mundo onde 80% da população tem algum tipo de Dom especial, Izuku teve a má sorte de nascer completamente normal. Mas isso não vai impedi-lo de se matricular em uma das academias de herois mais prestigiosas do mundo.'''
-
-    # ru_RU [str] <nab>
-    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Четырнадцатилетний Идзуку Мидория рано осознал, что люди не рождаются равными. А пришло это понимание, когда его начали дразнить одноклассники, одарённые особой силой. Несмотря на то, что большинство людей в этом мире рождаются с необычными способностями, Идзуку оказался среди тех немногих, кто напрочь их лишён. Однако это не стало помехой для мальчика в стремлении стать таким же легендарным героем, как Всемогущий. Для осуществления мечты, Идзуку, не без помощи своего кумира, поступает в самую престижную академию героев — Юэй, но это, как известно, лишь начало его удивительных приключений.'''
-
-    # es_ES [str] <nab>
-    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''En un mundo en el que la mayor parte de la población nace con un Don, una habilidad extraordinaria diferente en cada cual, no tardaron en aparecer tanto villanos como héroes dispuestos a detenerlos. Con el tiempo los héroes pasaron a ser funcionarios del gobierno, estando regulados y viviendo de su trabajo, además de convertirse en objeto de admiración de muchos. Ahora, ser héroe es el sueño de la gran mayoría de niños, que esperan desde muy pequeños a que su Don se manifieste para comenzar a entrenar y soñar con convertirse en los héroes número uno.'''
-
-    # zh_Hans [str] <nab>
-    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hant (Traditional Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''这个世界从某一天开始，新生的人们突然开始展现出名为「个性」的特殊能力，本该只出现在架空故事中的超能力者成为现实的存在，让整个人类社会陷入变化与动盪。在一片混乱之际，心怀邪念的人开始以「个性」为非作歹，而就在政府对这些突如其来的灾祸束手无策之际，身负力量与正义感的人开始如同超人漫画般的揭竿而起，展现正义的「英雄」也相继而生。现今，有五分之四的人都拥有「个性」的超人社会俨然成形，为了对抗滥用「个性」於犯罪用途的罪犯，政府将英雄定位为特殊的公务职员，依其功绩给予报酬。丰厚的报酬与体现正义的荣耀，加上享有民众的声援与支持，英雄成为所有人嚮往的最棒职业。 主角绿谷出久是个没有个性的少年，但他仍憧憬并渴望成为一位英雄，也期望自己能进入培育英雄的菁英学校雄英高校就读。但周围的人都不看好没有个性的他能成为英雄，让他总是在他人的嘲笑与轻视中度过。直到他遇上了自己最仰慕的英雄，被人称为「和平的象徵」的欧尔麦特，他的梦想将因此获得会化为现实的可能性。'''
-
-    # zh_Hant [str] <nab>
-    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hans (Simplified Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''這個世界從某一天開始，新生的人們突然開始展現出名為「個性」的特殊能力，本該只出現在架空故事中的超能力者成為現實的存在，讓整個人類社會陷入變化與動盪。在一片混亂之際，心懷邪念的人開始以「個性」為非作歹，而就在政府對這些突如其來的災禍束手無策之際，身負力量與正義感的人開始如同超人漫畫般的揭竿而起，展現正義的「英雄」也相繼而生。現今，有五分之四的人都擁有「個性」的超人社會儼然成形，為了對抗濫用「個性」於犯罪用途的罪犯，政府將英雄定位為特殊的公務職員，依其功績給予報酬。豐厚的報酬與體現正義的榮耀，加上享有民眾的聲援與支持，英雄成為所有人嚮往的最棒職業。 主角綠谷出久是個沒有個性的少年，但他仍憧憬並渴望成為一位英雄，也期望自己能進入培育英雄的菁英學校雄英高校就讀。但周圍的人都不看好沒有個性的他能成為英雄，讓他總是在他人的嘲笑與輕視中度過。直到他遇上了自己最仰慕的英雄，被人稱為「和平的象徵」的歐爾麥特，他的夢想將因此獲得會化為現實的可能性。'''
-
-    # vi_VN [str] <nab>
-    # = Synopsis in Vietnamese.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Trong thế giới mà 80% dân số đều sở hữu những khả năng đặc biệt được gọi là "Quirks" (cá tính) và nó đã chuẩn mực của xã hội. Thông thường các nhân vật anh hùng sẽ có vẻ ngoài soái khí ngời ngời, nhưng Midoriya Izuku, một học sinh cấp 2 lại là ngoại lệ. Mặt cậu có quá nhiều tàn nhang, tóc hình con nhím có chút quê mùa khó tả. Thậm chí khi câu chuyện mới bắt đầu, cậu còn không có cá tính gì nổi bật, bị bạn bè bắt nạt vì không có năng lực, nói chung khá là thảm hại. Tuy nhiên, Midoriya Izuku vẫn thu hút khán giả bởi tính cách lạc quan, yêu đời, thích giúp đỡ người khác. Cậu có ước mơ trở thành một anh hùng (ヒーロー Hīrō). Cứ tưởng chừng không có cơ hội để thực hiện mơ ước, All Might, anh hùng số một thế giới và cũng là thần tượng của Izuku, đã ban cho cậu năng lực "One for All". Câu chuyện theo chân Izuku cùng với những người bạn mới tại Học viện U.A, ngôi trường danh tiếng đào đạo các hệ anh hùng tương lai.'''
-  }
-
-  # information [obj] <nbl>
-  # = Is a collection of information about serial.
-  information:
-  {
-    # synonyms [obj] <nbl> => [arr] <nab>
-    # = Synonym, other titles that well-known on the public.
-    synonyms:
-    {
-      en_Latn: [
-        BNHA
-        Boku no hîrô akademia
-      ]
-      ar_001: [
-        أبطال الغد
-        أكاديمية بطلي
-      ]
-      hu_HU: null
-      he_IL: null
-      id_ID: [
-        Bokuaka
-      ]
-      en_US: [
-        MHA
-        heroaca
-      ]
-      ja_JP: [
-        ヒロアカ
-      ]
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: [
-        Моята академия на героите
-      ]
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+    // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
+    version: {
+        stage: stable
+        version: 2.1
     }
+    // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
-    # type [obj] <nbl> => [str] <nbl>
-    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
-    type:
-    {
-      // Allowed values are:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+    #: id [num] <nbl>
+    #; = Serial ID number on Ryuuganime Database.
+    id: 3
 
-      // Allowed values are:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
-    }
-
-    # status [obj] > [str] <nbl>
-    # = Describes the serial broadcast status.
-    status:
-    {
-      // Allowed values are:
-      // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Aired
-
-      // Allowed values are:
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Ditayangkan
-    }
-
-    # serialGenre [obj]
-    # = Is genre(s) of serial. See the wiki for more information.
-    serialGenre:
-    {
-      # en_US [arr] <nbl>
-      # = Serial genre in English.
-      //  Allowed values are:
-      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
-      //  Supernatural, Thriller, War
-      en_US:
-      [
-        Action
-        Adventure
-        Comedy
-        Fantasy
-        Science Fiction
-        Drama
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial genre in Indonesian.
-      //  Allowed values are:
-      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
-      //  Olahraga, Supernatural, Thriller, Peperangan
-      id_ID:
-      [
-        Aksi
-        Petualangan
-        Komedi
-        Fantasi
-        Fiksi Ilmiah
-        Drama
-      ]
-    }
-
-    # serialTags [obj]
-    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
-    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
-    #   present on serialTags. See the wiki for more information.
-    serialTags:
-    {
-      # en_US [arr] <nbl>
-      # = Serial tags in English.
-      en_US:
-      [
-        Superhero
-        Superpower
-        Shounen
-        School Life
-        High School
-        Martial Arts
-        Future
-        Monster
-        Psi-Powers
-        Slapstick
-        Present
-        Revenge
-        Teamwork
-        Training
-        Bullying
-        Violence
-        Fighting
-        Competition
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial tags in Indonesian.
-      id_ID:
-      [
-        Pahlawan Super
-        Kekuatan Super
-        Shounen
-        Kehidupan Sekolah
-        SMA
-        Bela Diri
-        Masa Depan
-        Monster
-        Kekuatan Psikis
-        Dagelan
-        Sekarang
-        Balas Dendam
-        Kerja Tim
-        Pelatihan
-        Pembulian
-        Kekerasan
-        Perkelahian
-        Kompetisi
-      ]
-    }
-
-    # releaseSeason [obj] <nbl> => [str] <nbl>
-    # = Season of serial releases.
-    releaseSeason:
-    {
-      // Allowed values are
-      // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Spring
-
-      // Allowed values are
-      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Semi
-
-      // Allowed values are
-      // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 春
-
-      // Allowed values are
-      // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 봄
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 春天
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 春天
-    }
-
-    # releaseYear [num] <nbl>
-    # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2016
-
-    # episode [num] <nbl>
-    # = Total episodes of serial. If unknown, fill null.
-    episode: 13
-
-    # releaseDate [str]
-    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2016-04-03
-
-    # endDate [str]
-    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: 2016-06-26
-
-    # duration [num] <nab>
-    # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 24
-
-    # totalDuration [num] <nab>
-    # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 312
-
-    # studio [str] <arb> <nab>
-    # = Studio producing series.
-    studio: Bones
-
-    # rating [str] <nab>
-    # = Broadcast content rating of serial. See the wiki for more information.
-    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
-
-    # isNsfw [boo] <nbl>
-    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
-    #   known as safe.
-    //  Allowed values are "true" and "false"
-    isNsfw: false
-
-    # adaptation [obj] > [str] <arb> <nab>
-    # = Is the original adaptation of the show.
-    adaptation:
-    {
-      // Allowed values are:
-      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
-      //   4-koma, Fairy Tale, and null
-      en_US: Manga
-
-      // Allowed values are:
-      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
-      //   4-panel, Dongeng, and null
-      id_ID: Manga
-    }
-
-    # country [str] <nbl>
-    # = Country of origin of serial. There are no country restrictions here.
-    country:
-    {
-      en_US: Japan
-      id_ID: Jepang
-    }
-
-    # officialWebsite [str] <url> <nab>
-    # = Links to official website of current entry.
-    officialWebsite: http://www.heroaca.com/
-
-    # promotionalVideos [arr] <nab> > [str] <url>
-    # = List of promotional videos of current entry.
-    promotionalVideos: [
-      https://youtu.be/AhqVltWDqFA
-    ]
-
-    # producers [arr] <nab> > [str]
-    # = Producers that involved to current entry/project
-    producers: [
-      Dentsu
-      Mainichi Broadcasting System
-      Movic
-      TOHO animation
-      Shueisha
-    ]
-  }
-
-  # scores [obj] > [str]/[num] <nab>
-  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
-  //  and on the score.
-  scores:
-  {
-    // https://anidb.net
-    aniDB:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 11739
-      score: 7.67
-    }
-    
-    // https://anilist.co
-    AniList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 21459
-      score: 81
-    }
-
-    // https://anime-planet.com
-    AnimePlanet:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/my-hero-academia
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 7585
-      score: 4.515
-    }
-    ANN:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 17786
-      score: 8.218
-    }
-
-    // https://anisearch.com
-    aniSearch:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/10978,my-hero-academia
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 10978
-      score: 82
-    }
-
-    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
-    Annict:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 4616
-      score: 83.93
-    }
-
-    // https://imdb.com
-    IMDb:
-    {
-      # code [str] <nab>
-      # = Similar to ID, but the only difference is there is an additional identification character
-      #   that used by IMDB.
-      code: tt5626028
-      score: 8.5
-    }
-
-    // https://kinopoisk.ru
-    KinoPoisk:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 975897
-      score: 7.651
-    }
-
-    // https://kitsu.io
-    Kitsu:
-    {
-      # slug [str]
-      # = Is a human readable version of the linked index URL.
-      slug: boku-no-hero-academia
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 11469
-      score: 84.69
-    }
-
-    // https://livechart.me
-    LiveChart:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1895
-      score: 8.45
-    }
-
-    // https://myanimelist.net
-    MyAnimeList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 31964
-      score: 8.29
-    }
-    
-    // https://en.myshows.me/
-    MyShows:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 48577
-      score: 4.49
-    }
-
-    // http://nautiljon.com/
-    Nautiljon:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/boku+no+hero+academia.html
-      score: 8.83
-    }
-
-    // https://notify.moe/
-    Notify:
-    {
-      # base64 [str]
-      # = This is a unique numbering system that Notify.moe uses on their website
-      base64: 9iIjtFiig
-      score: 8.38
-    }
-
-    // http://otakotaku.com/
-    OtakOtaku:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 245
-      score: 8.2
-    }
-
-    // http://shikimori.org/
-    Shikimori:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 31964
-      score: 8.29
-    }
-
-    // https://simkl.com
-    SIMKL:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 532942
-      isAnime: true
-      score: 8.5
-    }
-
-    // https://www.themoviedb.org/
-    TMDB:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/65930
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 65930
-      score: null
-    }
-
-    // https://trakt.tv/
-    Trakt:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://trakt.tv/shows/my-hero-academia
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 104311
-      score: 87
-    }
-
-    // https://www.tvtime.com/en
-    TVTime:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 305074
-      score: 9.68
-    }
-  }
-
-  # updatedDate [str] <nbl>
-  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
-  #   format. See the guide below for more information.
-  // Procedure for filling data
-  // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Which:
-  // YYYY = year (2020)
-  // MM   = month (12)
-  // DD   = date (21)
-  // hh   = hour, format 24 hour (22)
-  // mm   = minute (45)
-  // ss   = second (33)
-  // TZD  = time zone designator based on UTC (WIB: +07:00)
-  // so, 2020-12-21T22:45:33+07:00 is valid.
-  // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-09T19:20:07+07:00
-
-  # streamLinks [obj] <nbl>
-  # = Lists of official streaming sites.
-  streamLinks:
-  {
-    Abematv: null
-    AdultSwim: null
-    AISPlay: null
-    All4: null
-    AniMe: null
-    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/mha_tv
-    AnimeLab: https://www.animelab.com/shows/my-hero-academia
-    AnimeLog: null
-    AnimeOnDemand: null
-    AnimePlanet: null
-    animeteleto: null
-    AniOne: null
-    ANIPLUS: null
-    AniPlusAsia: null
-    AsianCrush: null
-    BahamutAnimeCrazy: null
-    BandaiChannel: null
-    BandaiSpirits: null
-    bilibili: null
-    Coalise: null
-    ComicFestaAnimeZone: null
-    ConTV: null
-    Coolmic: null
-    Crunchyroll: https://www.crunchyroll.com/my-hero-academia
-    dAnimeStore: null
-    DMM: null
-    FOD: null
-    Funimation: https://www.funimation.com/shows/my-hero-academia/
-    Genflix: https://genflix.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
-    GundamInfo: null
-    Gyao: null
-    HIDIVE: null
-    Hulu: https://www.hulu.com/series/my-hero-academia-36e318dc-3daf-47fb-8219-9e3cb5cd28f2
-    iflix: null
-    iQIYI: null
-    JapaneseAnimatedFilmClassic: null
-    JBOX: http://www.jbox.co.kr/v2/Content/Detail/5861
-    Mangas: null
-    MBSDougaizm: null
-    MidnightPulp: null
-    MuseAsia:
-    {
-      en_001: null
-      vi_VN: null
-      ms_MY: null
-      th_TH: null
-      zh_Hant_HK: null
-      zh_Hant_TW: null
-    }
-    Netflix: https://www.netflix.com/title/80135674
-    NicoNico: http://ch.nicovideo.jp/heroaca
-    PrimeVideo: null
-    ProSiebenMAXX: https://www.prosiebenmaxx.de/anime/my-hero-academia
-    RetroCrush: null
-    SelectaVision: null
-    STARZPLAY: https://arabia.starzplay.com/series/my-hero-academia/90098216105/season-1 
-    Sushiroll: https://sushiroll.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
-    Telasa: null
-    TencentVideo: null
-    TVNOW: null
-    Vimeo: null
-    VIZ: null
-    VRV: https://vrv.co/series/G6NQ5DWZ6
-    VVVVID: https://www.vvvvid.it/show/505/my-hero-academia
-    Wakanim:
-    {
-      fr: null
-      sc: https://www.wakanim.tv/sc/v2/catalogue/show/778
-      de: null
-      ru: null
-    }
-    WeTV: null
-    YamatoAnimation: null
-    YouTube:
-    {
-      link: null
-      isChannel: false
-    }
-  }
-
-  # signature
-  # = Is an object that provides information regarding the contributors to the entry.
-  signature:
-  {
-    # name [str] <nbl>
-    # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
-
-    # username [str] <nbl>
-    # = Your username on GitHub
-    username: @nattadasu
-
-    # discordId [num] <nbl>
-    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
-    #   ID: 594442535615725579
-    discordId: 384089845527478272
-
-    # submissionDateTime [str] <nbl>
-    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
-    #   for more information.
+    #: createdAt [str] <nbl>
+    #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
+    #;   See the guide below for more information.
     // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
     // Which:
@@ -836,11 +64,657 @@
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-05T18:12:00+07:00
+    createdAt: 2020-05-05T18:12:00+07:00
 
-    # sign [str][num] <nbl>
-    # = These are the unique characters that contributors use to "sign" data. Can use characters 
-    #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
-  }
+    #: modifiedAt [str] <nbl>
+    #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
+    #;   information.
+    // See instruction on createdAt property to see procedure for filling data
+    modifiedAt: 2020-12-21T15:49:57+07:00
+
+    series:
+    {
+        #: titles [obj] <nbl>
+        #; = Serial title in several languages based on ICU locales identifier.
+        titles:
+        {
+            #: main [obj] <nbl>
+            #; = Serial title in main languages
+            main:
+            {
+                #: native [str] <nbl>
+                #; = Serial title in native (canonical) language based on origin of studio and/or
+                #    airing first.
+                native: 僕のヒーローアカデミア
+
+                #: en_Latn [str] <nbl>
+                #; = Serial title in romanized text. Required for main title on entry list.
+                en_Latn: Boku no Hero Academia
+
+                en_US: My Hero Academia
+
+                id_ID: Pahlawanku Academia
+
+                ja_JP: 僕のヒーローアカデミア
+
+                ru_RU: Моя геройская академия
+
+                zh_Hans: 我的英雄学院
+
+                zh_Hant: 我的英雄學院
+            }
+
+            #: additional [obj] <nab>
+            #; = Serial title in several additional languages based on ICU locales identifier that
+            #;   does not categorized as main languages.
+            additional:
+            {
+                ar_001: أكاديميتي للأبطال
+
+                de_DE: Boku no Hero Academia
+
+                es_ES: Boku no Hero Academia
+
+                fr_FR: My Hero Academia
+
+                #: ja_Kana_JP [str] <nab>
+                #; = Serial title in Japanese Katakana-Hiragana writing system, "removing" kanji
+                #    from text.
+                ja_Kana_JP: ぼくのヒーローアカデミア
+
+                ko_KR: 나의 히어로 아카데미아
+
+                vi_VN: Học Viện Siêu Anh Hùng
+
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+                pt_PT: Boku no Hero Academia
+            }
+
+            #: synonyms [obj] <nbl> => [arr] <nab>
+            #; = Synonym, other titles that well-known on the public.
+            synonyms:
+            {
+                en_Latn:
+                [
+                    BNHA
+                    Boku no hîrô akademia
+                ]
+                ar_001:
+                [
+                    أبطال الغد
+                    أكاديمية بطلي
+                ]
+                id_ID:
+                [
+                    Bokuaka
+                ]
+                en_US:
+                [
+                    MHA
+                    heroaca
+                ]
+                ja_JP:
+                [
+                    ヒロアカ
+                ]
+                de_DE: null
+                ko_KR: null
+                fr_FR: null
+                pt_PT: null
+                ru_RU:
+                [
+                    Моята академия на героите
+                ]
+                es_ES: null
+                zh_Hans: null
+                zh_Hant: null
+                vi_VN: null
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+            }
+        }
+
+        #: synopsis [obj] <nbl>
+        #; = A synopsis/plot of story of serial in several languages.
+        synopsis:
+        {
+            ar_001: '''إيزوكو ميدوريا كان مجرد تلميذ عادي في المرحلة المتوسطة في عالم يسكنه أناس غير عاديين لديهم قوى خارقه للطبيعه كأبطال المجلات المصورة الأمريكية، لطالما أراد أن يكون بطلاً على الرغم من أن زملاءه يسخرون منه و يتنمرون عليه لأنه لا يمتلك قوة خارقه للطبيعه، في أحد الأيام شاهد وحش شرير يهاجم صديق طفولته كاتوسكي فتدخل ايزوكو وأنقذه، أقوى بطل خارق في العالم أوول مايت شاهد ايزوكو و أعجب بشجاعته فطلب منه وراثه قوته الخارقة و ساعده بعد ذلك على الاندراج في أكاديمية يو إيه التي تتخصص في تخريج أبطال خارقين'''
+
+            id_ID: '''Midoriya Izuku hanya seorang siswa biasa yang hidup di dunia dimana banyak orang memiliki kekuatan super yang disebut dengan "Quirk" (Kosei). Meskipun tidak memiliki kekuatan super, namun ia bermimpi suatu hari nanti bisa menjadi hero (pahlawan).
+            Suatu ketika, saat ia berusaha menyelamatkan temannya dari seorang Villain, seorang pahlawan terkuat bernama All Might memberikan kekuatan padanya. Setelah kejadian itu, Izuku melanjutkan sekolah di SMA Yuuei (U.A), sebuah sekolah khusus yang mendidik para calon hero masa depan.'''
+
+            en_US: '''Mankind has developed superpowers known as "Quirks" with 80% of the population having some kind of superpower. These new abilities see the rise of both superheroes and villains. A prestigious school known as the The Hero Academy trains superpowered hopefuls into the heroes the world needs. Middle school student Izuku Midoriya wants to be a hero more than anything, but he's part the 20% without a Quirk. Unwilling to give up his dream, he plans to take the exam and be accepted into a high school for budding heroes. Through a series of serendipitous events, he catches the eye of the greatest hero, All Might, who agrees to train him.'''
+
+            ja_JP: '''事の始まりは中国、軽慶市。『発光する赤児が産まれた』というニュースだった。 以降各地で「超常」は発見され、いつしか「超常」は「日常」に、「架空(ゆめ)」は「現実」となった。 世界総人口の約八割が何らかの「特異体質」である現在、個性を悪用する敵(ヴィラン)により混乱渦巻く世の中で、かつて誰もが空想し憧れた一つの職業が、脚光を浴びていた。そう、「ヒーロー」と呼ばれる職業である！ 主人公である「緑谷出久」(通称デク)もまた、将来ヒーローになりたいと願う少年。 しかし彼は、今の世の中では珍しい完全な「無個性」の人間だった。 高校入試を控え、夢と現実の間で悩むデクは、ふとしたきっかけからトップヒーローである「オールマイト」と出会う。 オールマイトにヒーローの素質を見出されたデクは、１０ヶ月に及ぶ特訓の末に彼の”譲渡する個性”「ワン・フォー・オール」を引継ぐ。 ぶっつけ本番で挑んだ実技入試において、同会場で知り合った少女「麗日お茶子」のピンチを救おうと飛び出した勇気が認められ、デクは見事憧れの名門「雄英高校」に合格する。'''
+
+            de_DE: '''Izuku ist ein schwächlicher „Normalo“. In einer Welt, in der die Mehrzahl der Menschen mit übermenschlichen Fähigkeiten geboren werden, besitzt er leider überhaupt keine angeborene „Spezialität“. Trotzdem möchte er ein Superheld werden und andere Menschen retten – so wie sein großes Idol „All Might“ - der mächtigste aller Superhelden. Izuku hat Glück: All Might nimmt ihn unter seine Fittiche und macht Izuku für die superschwere Aufnahmeprüfung an der elitären Hero Academy fit.'''
+
+            ko_KR: '''가공의 세계가 현실로!이것은 내가 최고의 히어로가 되기까지의 이야기다.시작은 중국의 경경 시에서 빛을 내뿜는 아기가 태어났다는 뉴스였다. 이후에 각지에서 초현실적 현상이 발견되고 원인도 밝혀지지 않은 채 세월이 흐른다.세계 총인구의 80%가 어떤 형태로든 특이체질인 초인사회가 된 현재.선천적으로 타고난 특별한 힘인 ‘개성’을 악용하는 범죄자 ‘빌런’이 갈수록 늘어난다. 이에 마찬가지로 ‘개성’을 가진 자들이 ‘히어로’로서 빌런과 재해에 맞서며 사람들을 구하는 사회를 확립한다.일찍이 누구나 상상하며 동경하는 ‘히어로’가 현실이 된 세계에서 미도리야 이즈쿠도 히어로가 되는 것을 꿈꾼다. 유명한 히어로를 다수 배출한 유에이 고교에 입학을 목표로 삼고 있지만 아무런 특이체질도 아닌 ‘무개성’의 낙오자로 절망에 빠진다. 그러던 어느 날, 자신이 가장 동경하는 최고의 히어로 올마이트를 우연히 만난 것을 계기로 운명을 크게 바꾸게 된다. 친구, 스승, 라이벌, 빌런... 가지각색의 인물, 수많은 시련과 마주하면서 미도리야 이즈쿠는 최고의 히어로가 되기 위해 성장해 간다. 신세대의 열띤 히어로 스토리가 지금 시작된다!'''
+
+            fr_FR: '''Dans un monde où le paranormal est normal, où l'humanité est souvent menacée par l'attaque de divers monstres, chaque humain est doté d'un pouvoir particulier nommé "Alters". Grâce à celui-ci, devenir un héros n'est pas impossible pour eux. Le manga suit les aventures d'Izuku Midoriya, l'un des rares humains ne possédant pas d'alter, qui rêve pourtant de rejoindre la filière super-héroïque du grand lycée Yūei et de devenir un jour un grand héros.'''
+
+            ru_RU: '''Четырнадцатилетний Идзуку Мидория рано осознал, что люди не рождаются равными. А пришло это понимание, когда его начали дразнить одноклассники, одарённые особой силой. Несмотря на то, что большинство людей в этом мире рождаются с необычными способностями, Идзуку оказался среди тех немногих, кто напрочь их лишён. Однако это не стало помехой для мальчика в стремлении стать таким же легендарным героем, как Всемогущий. Для осуществления мечты, Идзуку, не без помощи своего кумира, поступает в самую престижную академию героев — Юэй, но это, как известно, лишь начало его удивительных приключений.'''
+
+            es_ES: '''En un mundo en el que la mayor parte de la población nace con un Don, una habilidad extraordinaria diferente en cada cual, no tardaron en aparecer tanto villanos como héroes dispuestos a detenerlos. Con el tiempo los héroes pasaron a ser funcionarios del gobierno, estando regulados y viviendo de su trabajo, además de convertirse en objeto de admiración de muchos. Ahora, ser héroe es el sueño de la gran mayoría de niños, que esperan desde muy pequeños a que su Don se manifieste para comenzar a entrenar y soñar con convertirse en los héroes número uno.'''
+
+            zh_Hans: '''这个世界从某一天开始，新生的人们突然开始展现出名为「个性」的特殊能力，本该只出现在架空故事中的超能力者成为现实的存在，让整个人类社会陷入变化与动盪。在一片混乱之际，心怀邪念的人开始以「个性」为非作歹，而就在政府对这些突如其来的灾祸束手无策之际，身负力量与正义感的人开始如同超人漫画般的揭竿而起，展现正义的「英雄」也相继而生。现今，有五分之四的人都拥有「个性」的超人社会俨然成形，为了对抗滥用「个性」於犯罪用途的罪犯，政府将英雄定位为特殊的公务职员，依其功绩给予报酬。丰厚的报酬与体现正义的荣耀，加上享有民众的声援与支持，英雄成为所有人嚮往的最棒职业。 主角绿谷出久是个没有个性的少年，但他仍憧憬并渴望成为一位英雄，也期望自己能进入培育英雄的菁英学校雄英高校就读。但周围的人都不看好没有个性的他能成为英雄，让他总是在他人的嘲笑与轻视中度过。直到他遇上了自己最仰慕的英雄，被人称为「和平的象徵」的欧尔麦特，他的梦想将因此获得会化为现实的可能性。'''
+
+            zh_Hant: '''這個世界從某一天開始，新生的人們突然開始展現出名為「個性」的特殊能力，本該只出現在架空故事中的超能力者成為現實的存在，讓整個人類社會陷入變化與動盪。在一片混亂之際，心懷邪念的人開始以「個性」為非作歹，而就在政府對這些突如其來的災禍束手無策之際，身負力量與正義感的人開始如同超人漫畫般的揭竿而起，展現正義的「英雄」也相繼而生。現今，有五分之四的人都擁有「個性」的超人社會儼然成形，為了對抗濫用「個性」於犯罪用途的罪犯，政府將英雄定位為特殊的公務職員，依其功績給予報酬。豐厚的報酬與體現正義的榮耀，加上享有民眾的聲援與支持，英雄成為所有人嚮往的最棒職業。 主角綠谷出久是個沒有個性的少年，但他仍憧憬並渴望成為一位英雄，也期望自己能進入培育英雄的菁英學校雄英高校就讀。但周圍的人都不看好沒有個性的他能成為英雄，讓他總是在他人的嘲笑與輕視中度過。直到他遇上了自己最仰慕的英雄，被人稱為「和平的象徵」的歐爾麥特，他的夢想將因此獲得會化為現實的可能性。'''
+
+            vi_VN: '''Trong thế giới mà 80% dân số đều sở hữu những khả năng đặc biệt được gọi là "Quirks" (cá tính) và nó đã chuẩn mực của xã hội. Thông thường các nhân vật anh hùng sẽ có vẻ ngoài soái khí ngời ngời, nhưng Midoriya Izuku, một học sinh cấp 2 lại là ngoại lệ. Mặt cậu có quá nhiều tàn nhang, tóc hình con nhím có chút quê mùa khó tả. Thậm chí khi câu chuyện mới bắt đầu, cậu còn không có cá tính gì nổi bật, bị bạn bè bắt nạt vì không có năng lực, nói chung khá là thảm hại. Tuy nhiên, Midoriya Izuku vẫn thu hút khán giả bởi tính cách lạc quan, yêu đời, thích giúp đỡ người khác. Cậu có ước mơ trở thành một anh hùng (ヒーロー Hīrō). Cứ tưởng chừng không có cơ hội để thực hiện mơ ước, All Might, anh hùng số một thế giới và cũng là thần tượng của Izuku, đã ban cho cậu năng lực "One for All". Câu chuyện theo chân Izuku cùng với những người bạn mới tại Học viện U.A, ngôi trường danh tiếng đào đạo các hệ anh hùng tương lai.'''
+
+            /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+            pt_PT: '''Por toda a sua vida, Izuku sonhou ser um heroi, um objetivo ambicioso para qualquer um, mas especialmente desafiador para um garoto sem superpoderes. Isso mesmo: em um mundo onde 80% da população tem algum tipo de Dom especial, Izuku teve a má sorte de nascer completamente normal. Mas isso não vai impedi-lo de se matricular em uma das academias de herois mais prestigiosas do mundo.'''
+        }
+
+        #: isAnime [boo] <nbl>
+        #; = Explain that url is using /anime path or not. Used for SIMKL URL path. Default: true.
+        isAnime: true
+
+        #: type [str] <nab>
+        #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
+        // Allowed values are:
+        // TV, ONA, OVA, Special, Movie, Music, and Unknown.
+        type: TV
+
+        #: status [str] <nbl>
+        #; = Describes serial broadcast status.
+        // Allowed values are:
+        // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
+        status: Finished
+
+        #: source [str] <nbl>
+        #; = Source type the media was adapted from.
+        // Allowed values are:
+        // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
+        source: Manga
+
+        #: ageRating [str] <nab>
+        #; = Broadcast content rating of serial. See Docuwiki for more information.
+        // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
+        ageRating: PG13+
+
+        #: isNsfw [boo] <nbl>
+        #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
+        #;   known as safe.
+        isNsfw: false
+
+        #: isLicensed [boo] <nbl>
+        #; = Explains if the work/serial is legally licensed, if not (case: fanwork) then value
+        #;   turns false. Default: true.
+        isLicensed: true
+
+        media:
+        {
+            #: posterImage [str] <uri> <nab>
+            #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
+            posterImage: https://artworks.thetvdb.com/banners/posters/305074-5.jpg
+
+            #: coverImage [str] <uri> <nab>
+            #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
+            coverImage: https://artworks.thetvdb.com/banners/fanart/original/305074-11.jpg
+
+            #: promotionalVideos [arr] <nab> > [obj] > [str]
+            #; = List of promotional videos of current entry.
+            promotionalVideo:
+            [
+                {
+                    id: AhqVltWDqFA
+                    provider: youtube
+                }
+            ]
+
+            soundtracks:
+            [
+                {
+                    title: THE DAY
+                    mbid: c3d5a968-c7e5-4d08-8fd0-1a60e5fde371
+                    isrc: JPU901600984
+                    bpm: 93
+                    artists: [
+                        {
+                            mbid: 95de09ab-3142-4798-9c70-c2e8e1d7374d
+                            name: Porno Graffiti (ポルノグラフィティ)
+                        }
+                    ]
+                    type: theme
+                    position: opening
+                    episodes:
+                    {
+                        from: 1
+                        to: 13
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 1tjOClAkdMxDfYPO0xvGbG
+                        youtubeMusic: 2SVZ_2z79rQ
+                    }
+                }
+                {
+                    title: HEROES
+                    mbid: 3e9eb7ae-282d-4c90-97f4-503651b5c39c
+                    isrc: JPU901601169
+                    bpm: 99
+                    artists: [
+                        {
+                            mbid: df01d1dd-85be-43f0-88fe-236d8aabe0df
+                            name: Brian the Sun
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 1
+                        to: 13
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 4grrgOFDvIVvw807GmqT1X
+                        youtubeMusic: Dmy9zi-LQ4M
+                    }
+                }
+            ]
+        }
+
+        release:
+        {
+            #: year [num] <nbl>
+            #; = The year of the serial release, using a integrer/numeral format. If unknown, use 0.
+            year: 2016
+
+            #: season [str] <nab>
+            #; = Season of serial releases.
+            // Allowed values are
+            // Winter, Spring, Summer, Fall, and Unknown
+            season: Spring
+
+            #: startDate [str] <nab>
+            #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            startDate: 2016-04-03
+
+            #: dayOfTheWeek [str] <nab> <arb>
+            // Allowed values are
+            // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, and null.
+            dayOfTheWeek: Sunday
+
+            #: broadcastTime [str] <nab>
+            #; Local time of show broadcasted.
+            // FORMAT: hh:mm:ssTZD
+            // See instruction on createdAt property to see procedure for filling data
+            broadcastTime: 17:00:00+09:00
+
+            #: endDate [str] <nab>
+            #; = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            endDate: 2016-06-26
+        }
+
+        episode:
+        {
+            #: count [num] <nab>
+            #; = Total episodes of serial. If unknown, fill null.
+            count: 13
+
+            #: duration [num] <nab>
+            #; = Duration per serial episode, using minute format. If unknown, fill null.
+            duration: 25
+
+            #: totalDuration [num] <nab>
+            #; = The total duration of the series, using the minute format. If unknown, fill null.
+            totalDuration: 325
+        }
+
+        #: countryOfOrigin [str] <nbl>
+        #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
+        #    format.
+        countryOfOrigin: JP
+
+        #: genres [obj] <nbl> > [str]
+        #; = Is genre(s) of serial. See docuwiki for more information.
+        // Allowed values are:
+        // Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+        // Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+        // Supernatural, Thriller, War
+        genres: [
+            Action
+            Adventure
+            Comedy
+            Fantasy
+            Science Fiction
+            Drama
+        ]
+
+        #: serialTags [arr] <nbl> > [obj] <nbl>
+        #; = Represents serial specific tags/content. Similar to the `.genres`, but usually more
+        #;   focused on content, storyline, or themes. But, all of `.genres` value will be ignored
+        #;   ignored if present on `.tags`. See docuwiki for more information.
+        tags: [
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Superhero
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Superpower
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Shounen
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: School Life
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: High School
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Martial Arts
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Future
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Monster
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Psi-Powers
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Slapstick
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Revenge
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Teamwork
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Training
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Bullying
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Violence
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Fighting
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Competition
+            }
+        ]
+
+        companies:
+        {
+            #: studios [arr] <nbl>
+            #; = Studios of producing series.
+            studios:
+            [
+                Bones
+            ]
+
+            licensors:
+            [
+                Funimation
+            ]
+
+            #: producers [arr] <nab> > [str]
+            #; = Producers that involved to current entry/project.
+            producers:
+            [
+                Dentsu
+                Mainichi Broadcasting System
+                Movic
+                TOHO animation
+                Shueisha
+            ]
+        }
+
+        social:
+        {
+            #: twitter [str] <nab>
+            // Please to ignore @ sign while input username
+            twitter: heroaca_anime
+
+            facebook: null
+
+            #: instagram [str] <nab>
+            // Please to ignore @ sign while input username
+            instagram: null
+
+            #: hashtag [arr] <nab>
+            #; = Social media hashtag of shows. Sometimes used for campaign. Applicable for each SNS.
+            // Please to ignore # sign while input hashtag(s)
+            hashtag:
+            [
+                heroaca_a
+            ]
+        }
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: TVアニメ『僕のヒーローアカデミア』
+                url: http://heroaca.com/
+                language: ja_JP
+            }
+        ]
+
+        databases:
+        {
+            allCinema: 354657
+
+            aniDb: 11739
+
+            aniList: 21459
+
+            animePlanet: {
+                showUrl: https://www.anime-planet.com/anime/my-hero-academia
+                showId: 7585
+            }
+
+            animeNewsNetwork: 17786
+
+            aniSearch: 10978
+
+            anison: 18982
+
+            annict: 4616
+
+            fanartTv: 305074
+
+            imdb: {
+                seasonNumber: 1
+                showId: tt5626028
+                offset: 0
+            }
+
+            kinoPoisk: {
+                seasonNumber: 1
+                showId: 975897
+                offset: 0
+            }
+
+            kitsu: {
+                showSlug: boku-no-hero-academia
+                showId: 11469
+            }
+
+            liveChart: 1895
+
+            myAnimeList: 31964
+
+            myShows: {
+                seasonNumber: 1
+                showId: 48577
+                offset: 0
+            }
+
+            nautiljon: https://www.nautiljon.com/animes/boku+no+hero+academia.html
+
+            notifyMoe: 9iIjtFiig
+
+            otakOtaku: 245
+
+            perpusIndo: 31964
+
+            reelgood: {
+                showSlug: my-hero-academia-2016
+                showUuid: d0f7056a-168c-4c79-bc38-eb6bc778793c
+                seasonNumber: 1
+                offset: 0
+            }
+
+            shikimori: {
+                showId: 31964
+                isMoved: false
+                newShowId: null
+            }
+
+            shoboi: 4133
+
+            silverYasha: 1606
+            
+            simkl: {
+                showId: 532942
+
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                seasonNumber: 0
+                offset: 0
+            }
+            
+
+            tmdb: {
+                showId: 65930
+                seasonNumber: 1
+                seasonId: 75441
+                offset: 0
+            }
+
+            tvdb: {
+                showId: 305074
+                seasonNumber: 1
+                seasonId: 651039
+                offset: 0
+            }
+
+            trakt:
+            {
+                showSlug: my-hero-academia
+                showId: 104311
+                seasonId: 121142
+                seasonNumber: 1
+                offset: 0
+            }
+        }
+
+        streamLinks:
+        {
+            amazonPrime: 
+            animeDigitalNetwork: https://animedigitalnetwork.fr/video/mha_tv
+            animeLab: https://www.animelab.com/shows/my-hero-academia
+            animeOnDemand: 
+            aniOne: 
+            aniPlus: 
+            aniPlusAsia: 
+            bahamutAnimeCrazy: 
+            biliBili: 
+            crunchyroll: https://www.crunchyroll.com/my-hero-academia
+            fod: 
+            funimation: https://www.funimation.com/shows/my-hero-academia/
+            genFlix: https://genflix.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+            hidive: 
+            hulu: https://www.hulu.com/series/my-hero-academia-36e318dc-3daf-47fb-8219-9e3cb5cd28f2
+            iQiyi: 
+            iflix: 
+            museAsia: {
+                en_001: 
+                id_ID: 
+                ms_MY: 
+                th_TH: 
+                vi_VN: 
+                zh_Hant_HK: 
+                zh_Hant_TW: 
+            }
+            netflix: {
+                US: https://www.netflix.com/title/80135674
+                ID: null
+            }
+            nicoNico: http://ch.nicovideo.jp/heroaca
+            sushiroll: https://sushiroll.co.id/series/7afca625-87ab-449f-bd16-e98da2ee8e10
+            vvvvid: https://www.vvvvid.it/show/505/my-hero-academia
+            vrv: https://vrv.co/series/G6NQ5DWZ6
+            wakanim: {
+                DE: 
+                FR: 
+                RU: 
+                SC: https://www.wakanim.tv/sc/v2/catalogue/show/778
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
+
+    commiter:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
 }

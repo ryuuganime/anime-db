@@ -8,7 +8,7 @@ Currently, we don't have any API for accessing database. Instead, you can use Gi
 
 For machine-readable index listing, please to use [[index.json]] (recommended) or [[index.yaml]].
 
-We currently provide data in [[/hjson|HJSON]], [[/json|JSON]], [[/yaml|YAML]], and [[/xml|XML]] file format. at the moment. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
+We currently provide data in [[/hjson|HJSON]], [[/json|JSON]], and [[/yaml|YAML]]. Thus, all data were standardized by our [[schemas/entry.json|JSON Schema for entry]]. 
 
 This document will covers AIO solution on your project in any programming language.
 
@@ -33,6 +33,7 @@ Ryuuganime does not need to create any client first to request API. You only nee
 
 = Using ryuuganime-db anime entry JSON file =
 == Introduction ==
+<h1>THIS SECTION IS OUTDATES, PLEASE TO VISIT [https://docuwiki.ryuuganime.my.id RYUUGANIME DOCUWIKI] FRO CURRENT VERSION!</h1>
 For our basic usage introduction, we will using <code>RYU-1</code> (Ryuuganime ID: 1) on [[/json/000/001.json|<code>/json/000/001.json</code>]]. 
 
 First, you need to get the latest metadata by request <code>GET</code> HTML data from GitHub Raw:

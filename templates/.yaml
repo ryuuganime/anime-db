@@ -1,234 +1,229 @@
----
-"$schema": https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
-title:
-    native: ''
-    en_Latn: ''
-    ar_001: ''
-    id_ID: ''
-    en_US: ''
-    ja_JP: ''
-    de_DE: ''
-    ko_KR: ''
-    fr_FR: ''
-    pt_PT: ''
-    ru_RU: ''
-    es_ES: ''
-    zh_Hans: ''
-    zh_Hant: ''
-    vi_VN: ''
-backdrop: ''
-visualKey: ''
-synopsis:
-    ar_001: ''
-    id_ID: ''
-    en_US: ''
-    ja_JP: ''
-    de_DE: ''
-    ko_KR: ''
-    fr_FR: ''
-    pt_PT: ''
-    ru_RU: ''
-    es_ES: ''
-    zh_Hans: ''
-    zh_Hant: ''
-    vi_VN: ''
-information:
+"$schema": https://schema.ryuuganime.my.id/entry/v2.1-s.json
+version:
+  stage: stable
+  version: 2.1
+id: 0
+createdAt: ''
+modifiedAt: ''
+series:
+  titles:
+    main:
+      native: ''
+      en_Latn: ''
+      en_US: ''
+      id_ID: ''
+      ja_JP: ''
+      ru_RU: ''
+      zh_Hans: ''
+      zh_Hant: ''
+    additional:
+      ar_001: ''
+      de_DE: ''
+      es_ES: ''
+      fr_FR: ''
+      ja_Kana_JP: ''
+      ko_KR: ''
+      vi_VN: ''
     synonyms:
-        en_Latn: []
-        ar_001: []
-        id_ID: []
-        en_US: []
-        ja_JP: []
-        de_DE: []
-        ko_KR: []
-        fr_FR: []
-        pt_PT: []
-        ru_RU: []
-        es_ES: []
-        zh_Hans: []
-        zh_Hant: []
-        vi_VN: []
-    type:
-        en_US: ''
-        id_ID: ''
-    status:
-        en_US: ''
-        id_ID: ''
-    serialGenre:
-        en_US: []
-        id_ID: []
-    serialTags:
-        en_US: []
-        id_ID: []
-    releaseSeason:
-        en_US: ''
-        id_ID: ''
-        ja_JP: ''
-        ko_KR: ''
-        zh_Hans: ''
-        zh_Hant: ''
-    releaseYear: 0
-    episode: 0
-    releaseDate: ''
+      en_Latn: []
+      ar_001: []
+      id_ID: []
+      en_US: []
+      ja_JP: []
+      de_DE: []
+      ko_KR: []
+      fr_FR: []
+      ru_RU: []
+      es_ES: []
+      zh_Hans: []
+      zh_Hant: []
+      vi_VN: []
+  synopsis:
+    ar_001: ''
+    id_ID: ''
+    en_US: ''
+    ja_JP: ''
+    de_DE: ''
+    ko_KR: ''
+    fr_FR: ''
+    ru_RU: ''
+    es_ES: ''
+    zh_Hans: ''
+    zh_Hant: ''
+    vi_VN: ''
+  isAnime: true
+  type: TV
+  status: Finished
+  source: Manga
+  ageRating: PG13+
+  isNsfw: false
+  isLicensed: true
+  media:
+    posterImage: ''
+    coverImage: ''
+    promotionalVideo:
+      - id: 0
+        provider: youtube
+    soundtracks:
+      - title: ''
+        mbid: ''
+        isrc: ''
+        bpm: 0
+        artists:
+          - mbid: ''
+            name: ''
+        type: theme
+        position: ''
+        episodes:
+          from: 0
+          to: 0
+          only:
+            - 0
+          not:
+            - 0
+        links:
+          spotify: ''
+          youtubeMusic: ''
+  release:
+    year: 2020
+    season: Unknown
+    startDate: ''
+    dayOfTheWeek: ''
+    broadcastTime: ''
     endDate: ''
-    duration: 0
-    totalDuration: 0
-    studio: ''
-    rating: ''
-    isNsfw: false
-    adaptation:
-        en_US: ''
-        id_ID: ''
-    country:
-        en_US: ''
-        id_ID: ''
-    officialWebsite: 
-    promotionalVideos: []
+  episode:
+    count: 12
+    duration: 24
+    totalDuration: 288
+  countryOfOrigin: JP
+  genres: []
+  tags:
+    - isSpoiler: false
+      isNsfw: false
+      name: ''
+  companies:
+    studios: []
+    licensors: []
     producers: []
-scores:
-    aniDB:
-        id: 0
-        score: 0
-    AniList:
-        id: 0
-        score: 0
-    AnimePlanet:
-        url: ''
-        id: 0
-        score: 0
-    ANN:
-        id: 0
-        score: 0
-    aniSearch:
-        url: ''
-        id: 0
-        score: 0
-    Annict:
-        id: 0
-        score: 0
-    IMDb:
-        code: ''
-        score: 0
-    KinoPoisk:
-        id: 0
-        score: 0
-    Kitsu:
-        slug: ''
-        id: 0
-        score: 0
-    LiveChart:
-        id: 0
-        score: 0
-    MyAnimeList:
-        id: 0
-        score: 0
-    MyShows:
-        id: 0
-        score: 0
-    Nautiljon:
-        url: ''
-        score: 0
-    Notify:
-        base64: ''
-        score: 0
-    OtakOtaku:
-        id: 0
-        score: 0
-    Shikimori:
-        id: 0
-        score: 0
-    SIMKL:
-        id: 0
-        isAnime: true
-        score: 0
-    TMDB:
-        url: ''
-        id: 0
-        score: 0
-    Trakt:
-        url: ''
-        id: 0
-        score: 0
-    TVTime:
-        id: 0
-        score: 0
-updatedDate: ''
-streamLinks:
-    Abematv: ''
-    AdultSwim: ''
-    AISPlay: ''
-    All4: ''
-    AniMe: ''
-    AnimeDigitalNetwork: ''
-    AnimeLab: ''
-    AnimeLog: ''
-    AnimeOnDemand: ''
-    AnimePlanet: ''
-    animeteleto: ''
-    AniOne: ''
-    ANIPLUS: ''
-    AniPlusAsia: ''
-    AsianCrush: ''
-    BahamutAnimeCrazy: ''
-    BandaiChannel: ''
-    BandaiSpirits: ''
-    bilibili: ''
-    Coalise: ''
-    ComicFestaAnimeZone: ''
-    ConTV: ''
-    Coolmic: ''
-    Crunchyroll: ''
-    dAnimeStore: ''
-    DMM: ''
-    FOD: ''
-    Funimation: ''
-    Genflix: ''
-    GundamChannel: ''
-    GundamInfo: ''
-    Gyao: ''
-    HIDIVE: ''
-    Hulu: ''
+  social:
+    twitter: ''
+    facebook: ''
+    instagram: ''
+    hashtag: []
+externalLinks:
+  officialWebsite:
+    - title: ''
+      url: ''
+      language: ja_JP
+  databases:
+    allCinema: 0
+    aniDb: 0
+    aniList: 0
+    animePlanet:
+      showUrl: ''
+      showId: 0
+    animeNewsNetwork: 0
+    aniSearch: 0
+    anison: 0
+    annict: 0
+    fanartTv: 0
+    imdb:
+      seasonNumber: 0
+      showId: 0
+      offset: 0
+    kinoPoisk:
+      seasonNumber: 0
+      showId: 0
+      offset: 0
+    kitsu:
+      showSlug: ''
+      showId: 0
+    liveChart: 0
+    myAnimeList: 0
+    myShows:
+      seasonNumber: 0
+      showId: 0
+      offset: 0
+    nautiljon: ''
+    notifyMoe: ''
+    otakOtaku: 0
+    perpusIndo: 0
+    reelgood:
+      showSlug: ''
+      showUuid: ''
+      seasonNumber: 0
+      offset: 0
+    shikimori:
+      showId: 0
+      isMoved: false
+      newShowId: null
+    shoboi: 0
+    silverYasha: 0
+    simkl:
+      showId: 0
+      seasonNumber: 0
+      offset: 0
+    tmdb:
+      showId: 0
+      seasonNumber: 0
+      seasonId: 0
+      offset: 0
+    tvdb:
+      showId: 0
+      seasonNumber: 0
+      seasonId: 0
+      offset: 0
+    trakt:
+      showSlug: ''
+      showId: 0
+      seasonId: 0
+      seasonNumber: 0
+      offset: 0
+  streamLinks:
+    amazonPrime: ''
+    animeDigitalNetwork: ''
+    animeLab: ''
+    animeOnDemand: ''
+    aniOne: ''
+    aniPlus: ''
+    aniPlusAsia: ''
+    bahamutAnimeCrazy: ''
+    biliBili: ''
+    crunchyroll: ''
+    fod: ''
+    funimation: ''
+    genFlix: ''
+    hidive: ''
+    hulu: ''
+    iQiyi: ''
     iflix: ''
-    iQIYI: ''
-    JapaneseAnimatedFilmClassic: ''
-    Mangas: ''
-    MBSDougaizm: ''
-    MidnightPulp: ''
-    MuseAsia: 
-        en_001: ''
-        vi_VN: ''
-        ms_MY: ''
-        th_TH: ''
-        zh_Hant_HK: ''
-        zh_Hant_TW: ''
-    Netflix: ''
-    NicoNico: ''
-    PrimeVideo: ''
-    RetroCrush: ''
-    SelectaVision: ''
-    Sushiroll: ''
-    Telasa: ''
-    TencentVideo: ''
-    TVNOW: ''
-    Vimeo: ''
-    VIZ: ''
-    VRV: ''
-    VVVVID: ''
-    Wakanim: 
-        fr: 
-        sc: 
-        de: 
-        ru: 
-    Watchbox: ''
-    WeTV: ''
-    YamatoAnimation: ''
-    YouTube: 
-        url: 
-        isChannel: false
-signature:
-    name: ''
-    username: ''
-    discordId: 594442535615725600
-    submissionDateTime: ''
-    sign: ''
-...
+    museAsia:
+      en_001: ''
+      id_ID: ''
+      ms_MY: ''
+      th_TH: ''
+      vi_VN: ''
+      zh_Hant_HK: ''
+      zh_Hant_TW: ''
+    netflix:
+      US: ''
+      ID: ''
+    nicoNico: ''
+    sushiroll: ''
+    vvvvid: ''
+    vrv: ''
+    wakanim:
+      DE: ''
+      FR: ''
+      RU: ''
+      SC: ''
+modifier:
+  name: ''
+  github: ''
+  discordId: 0
+  sign: 0
+commiter:
+  name: ''
+  github: ''
+  discordId: 0
+  sign: 0

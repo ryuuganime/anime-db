@@ -1,836 +1,57 @@
-#hjson
-/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+#hjson {"version":"2.1-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
-|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
-|                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
-|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
-| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
-|   non-developer to contribute | | [arr] is an array value. It  | |                              |
-|   on filling related anime    | |   is a combination of        | | '''                          |
-|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
-|   on each of values in as a   | |   in one value               | |       lines text value       |
-|   comment                     | | [obj] is an object value.    | |                          ''' |
-|                               | |   Signifies that this value  | | is a syntax that allows user |
-\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
-|                               | |                              | |   pointer                    |
-| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
-|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
-| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
-|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
-|   on a value is more than one | //    mistakes without even realizing it.
-| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
-|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
-|   null, if possible           | //    itself. It's intended to be used like a user interface for
-| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
-|   "deleted" or changed to     | //    the machine.
-|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
-|   essential for the file      | //    on HJSON. 
-|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
-|                               | //    for example.
-\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.1-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON.
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/001.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <uri>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
+    #;   JSON!
+    $schema: https://schema.ryuuganime.my.id/entry/v2.1-s
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry/v2.1-s.json
 
-{ 
-  # $schema [str] <nbl> <url>
-  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
-  $schema: ../../schemas/entry.json
-  // Optional value, tick a comment syntax of above value, and untick value below.
-  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
-
-  # title [obj] <nbl>
-  # title of serial... in several languages. Based on ICU locales.
-  title: 
-  {
-    # native [str] <nbl>
-    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native: 神之塔
-
-    # en_Latn [str] <nbl>
-    # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Kami no Tou
-
-    # ar_001 [str] <nab>
-    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
-    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: برج السيد
-
-    # id_ID [str] <nab>
-    # = Serial title in Indonesian (un/official)
-    //  REGEX: ^[\w\s\S]+$
-    id_ID: Tower of God
-
-    # en_US [str] <nab>
-    # = Serial title in English.
-    //  REGEX: ^[\w\s\S]+$
-    en_US: Tower of God
-
-    # ja_JP [str] <nab>
-    # = Serial title in Japanese.
-    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: 神之塔
-
-    # de_DE [str] <nab>
-    # = Serial title in German (un/official).
-    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: Tower of God
-
-    # ko_KR [str] <nab>
-    # = Serial title in South/North Korean.
-    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 신의 탑
-
-    # fr_FR [str] <nab>
-    # = Serial title in French (or other accent).
-    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: Tower of God
-
-    # pt_PT [str] <nab>
-    # = Serial title in Portuguese.
-    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: Torre de Deus
-
-    # ru_RU [str] <nab>
-    # = Serial title in Russian (un/official). 
-    //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Башня Бога
-
-    # es_ES [str] <nab>
-    # = Serial title in Spanish (or other accent).
-    //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: Torre de Dios
-
-    # zh_Hans [str] <nab>
-    # = Serial title in Simplified Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 神之塔
-
-    # zh_Hant [str] <nab>
-    # = Serial title in Traditional Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 神之塔
-
-    # vi_VN [str] <nab>
-    # = Serial title in Vietnamese.
-    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Tower of God
-  }
-
-  # backdrop [str] <url> <nbl>
-  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/series/376729/backgrounds/5e83e84259d99.jpg
-
-  # visualKey [str] <url> <nbl>
-  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/series/376729/posters/62106354.jpg
-
-  # synopsis [obj] <nbl>
-  # = A synopsis/plot of story of serial in several languages. 
-  synopsis:
-  {
-    # ar_001 [str] <nab>
-    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
-    #   Wikipedia for Arabic synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.'''
-
-    # id_ID [str] <nab>
-    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
-    #   fanshare for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya, Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk menemukan teman dekatnya.'''
-
-    # en_US [str] <nab>
-    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
-    #   synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''There is a tower that summons chosen people called "Regulars" with the promise of granting their deepest desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.
-
-Twenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.
-
-Thus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind "Irregulars"—beings that have shaken the very foundation of the Tower each time they set foot inside it.'''
-
-    # ja_JP [str] <nab>
-    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）'''
-
-    # de_DE [str] <nab>
-    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.
-
-Der Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm lebend zu verlassen. <br>Quelle: <a href="https://www.anisearch.de/anime/14974,kami-no-tou">aniSearch.de</a>'''
-
-    # ko_KR [str] <nab>
-    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''탑에 오르면, 모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서 탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.'''
-
-    # fr_FR [str] <nab>
-    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''Afin de retrouver Rachel, la seule personne chère à ses yeux, Bam décide de prendre tous les risques pour atteindre le sommet d'une mystérieuse tour. Pour passer chaque étage, il devra réussir un test complexe dans lequel il jouera à chaque fois sa vie.
-
-Bam en sortira t-il indemne ?'''
-
-    # pt_PT [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos "regulares", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam "regulares" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um "irregular" - ele entrou sem ser convidado, abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!'''
-
-    # ru_RU [str] <nab>
-    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''Башня бога — место, в котором сбываются мечты и разбиваются сердца, только сильный духом сможет добраться до самого верха. Именно этого всю жизнь хотела Рахиль, и Двадцать пятый Баам отправился за ней, потому как эта девушка была для него единственным лучиком света в этом мрачном и недружелюбном мире. При входе в башню больше не будет пути назад — только наверх, к новым испытаниям. Многое здесь ждёт главных героев: радость и волнения, победы и поражения, боль и утрата. Смогут ли они добраться до вершины?'''
-
-    # es_ES [str] <nab>
-    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''La serie se centra en el viaje de un chico mientras se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.'''
-
-    # zh_Hans [str] <nab>
-    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hant (Traditional Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''如果登上塔，一切就都可以得到。 塔顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。'''
-
-    # zh_Hant [str] <nab>
-    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hans (Simplified Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。'''
-
-    # vi_VN [str] <nab>
-    # = Synopsis in Vietnamese.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Tower of God xoay quanh một cậu bé tên là Twenty-Fifth Bam, người dành phần lớn cuộc đời mắc kẹt dưới một tòa tháp rộng lớn và bí ẩn cùng người bạn thân Rachel. Khi Rachel vào Tháp, Bam cũng theo sau vào đó và kết cục cậu phải đối mặt với thử thách ở mỗi tầng tòa tháp này với mong muốn tìm lại người bạn đồng hành của mình.'''
-  }
-
-  # information [obj] <nbl>
-  # = Is a collection of information about serial.
-  information:
-  {
-    # synonyms [obj] <nbl> => [arr] <nab>
-    # = Synonym, other titles that well-known on the public.
-    synonyms:
-    {
-      en_Latn: [
-        Kami no Tō
-        ToG
-      ]
-      ar_001: [
-        برج الإله
-      ]
-      hu_HU: null
-      he_IL: null
-      id_ID: [
-        Menara Dewa
-      ]
-      en_US: null
-      ja_JP: [
-        神之塔 -Tower of God-
-        タワーオブ・ゴッド
-        神の塔
-      ]
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: null
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+    // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
+    version: {
+        stage: stable
+        version: 2.1
     }
+    // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
-    # type [obj] <nbl> => [str] <nbl>
-    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
-    type:
-    {
-      // Allowed values are:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+    #: id [num] <nbl>
+    #; = Serial ID number on Ryuuganime Database.
+    id: 6
 
-      // Allowed values are:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
-    }
-
-    # status [obj] > [str] <nbl>
-    # = Describes the serial broadcast status.
-    status:
-    {
-      // Allowed values are:
-      // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Airing
-
-      // Allowed values are:
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Mengudara
-    }
-
-    # serialGenre [obj]
-    # = Is genre(s) of serial. See the wiki for more information.
-    serialGenre:
-    {
-      # en_US [arr] <nbl>
-      # = Serial genre in English.
-      //  Allowed values are:
-      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
-      //  Supernatural, Thriller, War
-      en_US:
-      [
-        Action
-        Adventure
-        Drama
-        Fantasy
-        Mystery
-        Comedy
-        Romance
-        Science Fiction
-        Supernatural
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial genre in Indonesian.
-      //  Allowed values are:
-      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
-      //  Olahraga, Supernatural, Thriller, Peperangan
-      id_ID:
-      [
-        Aksi
-        Petualangan
-        Drama
-        Fantasi
-        Misteri
-        Komedi
-        Romansa
-        Fiksi Ilmiah
-        Supernatural
-      ]
-    }
-
-    # serialTags [obj]
-    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
-    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
-    #   present on serialTags. See the wiki for more information.
-    serialTags:
-    {
-      # en_US [arr] <nbl>
-      # = Serial tags in English.
-      en_US:
-      [
-        Super Power
-        Shounen
-        Magic
-        Conspiracy
-        Battle Royale
-        Politics
-        Tsundere
-        Swordplay
-        Tragedy
-        Circus
-        PVP
-        PVE
-        Guns
-        Monster
-        Martial Arts
-        Beastmen
-        Psi-Powers
-        Fantasy World
-        Dreams
-        Friendship
-        Survival
-        Violence
-        Dark Fantasy
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial tags in Indonesian.
-      id_ID:
-      [
-        Kekuatan Super
-        Shounen
-        Sihir
-        Konspirasi
-        Battle Royale
-        Politik
-        Tsundere
-        Permainan Anggar
-        Tragedi
-        Sirkus
-        PVT
-        PVE
-        Senjata Api
-        Monster
-        Seni bela diri
-        Manusia Buas
-        Kekuatan Psikis
-        Dunia Fantasi
-        Mimpi
-        Persahabatan
-        Bertahan Hidup
-        Kekerasan
-        Fantasi Gelap
-      ]
-    }
-
-    # releaseSeason [obj] <nbl> => [str] <nbl>
-    # = Season of serial releases.
-    releaseSeason:
-    {
-      // Allowed values are
-      // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Spring
-
-      // Allowed values are
-      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Semi
-
-      // Allowed values are
-      // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 春
-
-      // Allowed values are
-      // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 봄
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 春天
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 春天
-    }
-
-    # releaseYear [num] <nbl>
-    # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2020
-
-    # episode [num] <nbl>
-    # = Total episodes of serial. If unknown, fill null.
-    episode: 13
-
-    # releaseDate [str]
-    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2020-04-02
-
-    # endDate [str]
-    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: 2020-06-25
-
-    # duration [num] <nab>
-    # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 24
-
-    # totalDuration [num] <nab>
-    # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: 312
-
-    # studio [str] <arb> <nab>
-    # = Studio producing series.
-    studio: Telecom Animation Film
-
-    # rating [str] <nab>
-    # = Broadcast content rating of serial. See the wiki for more information.
-    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
-
-    # isNsfw [boo] <nbl>
-    # = Merupakan penanda apabila serial tidak aman (NSFW). Preset awal adalah
-    #   false, yakni aman.
-    // Argumen yang diperbolehkan ialah
-    // true dan false
-    isNsfw: false
-
-    # adaptation [obj] > [str] <arb> <nab>
-    # = Is the original adaptation of the show.
-    adaptation:
-    {
-      // Allowed values are
-      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
-      //   4-koma, Fairy Tale, and null
-      en_US: Webtoon
-
-      // Allowed values are
-      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
-      //   4-panel, Dongeng, and null
-      id_ID: Webtoon
-    }
-
-    # country [str] <nbl>
-    # = Country of origin of serial. There are no country restrictions here.
-    country:
-    {
-      en_US: Japan
-      id_ID: Jepang
-    }
-
-    # officialWebsite [str] <url> <nab>
-    # = Links to official website of current entry.
-    officialWebsite: https://tog-anime.com/
-
-    # promotionalVideos [arr] <nab> > [str] <url>
-    # = List of promotional videos of current entry.
-    promotionalVideos: [
-      https://youtu.be/RNyClma6awo
-    ]
-
-    # producers [arr] <nab> > [str]
-    # = Producers that involved to current entry/project
-    producers: [
-      Crunchyroll
-    ]
-  }
-
-  # scores [obj] > [str]/[num] <nab>
-  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
-  //  and on the score.
-  scores:
-  {
-    // https://anidb.net
-    aniDB:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 15391
-      score: 6.15
-    }
-    
-    // https://anilist.co
-    AniList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 115230
-      score: 77
-    }
-
-    // https://anime-planet.com
-    AnimePlanet:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/tower-of-god
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14552
-      score: 4.376
-    }
-    ANN:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 23068
-      score: 6.786
-    }
-
-    // https://anisearch.com
-    aniSearch:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/14974,kami-no-tou
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14974
-      score: 78
-    }
-
-    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
-    Annict:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 7325
-      score: 75.57
-    }
-
-    // https://imdb.com
-    IMDb:
-    {
-      # code [str] <nab>
-      # = Similar to ID, but the only difference is there is an additional identification character
-      #   that used by IMDB.
-      code: tt12057106
-      score: 8.0
-    }
-
-    // https://kinopoisk.ru
-    KinoPoisk:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1363114
-      score: 7.6
-    }
-
-    // https://kitsu.io
-    Kitsu:
-    {
-      # slug [str]
-      # = Is a human readable version of the linked index URL.
-      slug: tower-of-god
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 43004
-      score: 80.84
-    }
-
-    // https://livechart.me
-    LiveChart:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 9793
-      score: 8.41
-    }
-
-    // https://myanimelist.net
-    MyAnimeList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 40221
-      score: 7.87
-    }
-    
-    // https://en.myshows.me/
-    MyShows:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 66157
-      score: 4.41
-    }
-
-    // http://nautiljon.com/
-    Nautiljon:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/kami+no+tou+-+tower+of+god+-.html
-      score: 8.54
-    }
-
-    // https://notify.moe/
-    Notify:
-    {
-      # base64 [str]
-      # = This is a unique numbering system that Notify.moe uses on their website
-      base64: m1ZLrsUWg
-      score: 7.74
-    }
-
-    // http://otakotaku.com/
-    OtakOtaku:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1740
-      score: 7.69
-    }
-
-    // http://shikimori.org/
-    Shikimori:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 40221
-      score: 7.88
-    }
-
-    // https://simkl.com
-    SIMKL:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1255681
-      isAnime: true
-      score: 8.2
-    }
-
-    // https://www.themoviedb.org/
-    TMDB:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/97860
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 97860
-      score: 88
-    }
-
-    // https://trakt.tv/
-    Trakt:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://trakt.tv/shows/tower-of-god
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 158032
-      score: 81
-    }
-
-    // https://www.tvtime.com/en
-    TVTime:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 376729
-      score: 9.82
-    }
-  }
-
-  # updatedDate [str] <nbl>
-  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
-  #   format. See the guide below for more information.
-  // Procedure for filling data
-  // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Which:
-  // YYYY = year (2020)
-  // MM   = month (12)
-  // DD   = date (21)
-  // hh   = hour, format 24 hour (22)
-  // mm   = minute (45)
-  // ss   = second (33)
-  // TZD  = time zone designator based on UTC (WIB: +07:00)
-  // so, 2020-12-21T22:45:33+07:00 is valid.
-  // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-07-28T18:06:30+07:00
-
-  # streamLinks [obj] <nbl>
-  # = Lists of official streaming sites.
-  streamLinks:
-  {
-    Abematv: null
-    AdultSwim: null
-    AISPlay: https://aisplay.ais.co.th/portal/get_section/5e84bc94aae7311bcddcb726/
-    All4: null
-    AniMe: null
-    AnimeDigitalNetwork: https://animedigitalnetwork.fr/video/Tower-of-god
-    AnimeLab: null
-    AnimeLog: null
-    AnimeOnDemand: null
-    AnimePlanet: null
-    animeteleto: null
-    AniOne: null
-    ANIPLUS: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2287
-    AniPlusAsia: https://www.aniplus-asia.com/show/tower-of-god/
-    AsianCrush: null
-    BahamutAnimeCrazy: null
-    BandaiChannel: null
-    BandaiSpirits: null
-    bilibili: null
-    Coalise: null
-    ComicFestaAnimeZone: null
-    ConTV: null
-    Coolmic: null
-    Crunchyroll: https://www.crunchyroll.com/tower-of-god
-    dAnimeStore: null
-    DMM: null
-    FOD: null
-    Funimation: null
-    Genflix: null
-    GundamInfo: null
-    Gyao: null
-    HBOMax: https://play.hbomax.com/series/urn:hbo:series:GXujuJQlLN6UJwwEAAAXi
-    HIDIVE: null
-    Hulu: null
-    iflix: null
-    iQIYI: null
-    JapaneseAnimatedFilmClassic: null
-    Mangas: null
-    MBSDougaizm: null
-    MidnightPulp: null
-    MuseAsia:
-    {
-      en_001: null
-      vi_VN: null
-      ms_MY: null
-      th_TH: null
-      zh_Hant_HK: null
-      zh_Hant_TW: null
-    }
-    Netflix: null
-    NicoNico: null
-    PrimeVideo: null
-    RetroCrush: null
-    SelectaVision: null
-    Sushiroll: null
-    Telasa: null
-    TencentVideo: null
-    TVNOW: null
-    Vimeo: null
-    VIZ: null
-    VRV: https://vrv.co/series/G6J0G49DR
-    VVVVID: null
-    Wakanim:
-    {
-      fr: null
-      sc: null
-      de: null
-      ru: null
-    }
-    WeTV: null
-    YamatoAnimation: null
-    YouTube:
-    {
-      link: null
-      isChannel: false
-    }
-  }
-
-  # signature
-  # = Is an object that provides information regarding the contributors to the entry.
-  signature:
-  {
-    # name [str] <nbl>
-    # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
-
-    # username [str] <nbl>
-    # = Your username on GitHub
-    username: @nattadasu
-
-    # discordId [num] <nbl>
-    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
-    #   ID: 594442535615725579
-    discordId: 384089845527478272
-
-    # submissionDateTime [str] <nbl>
-    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
-    #   for more information.
+    #: createdAt [str] <nbl>
+    #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
+    #;   See the guide below for more information.
     // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
     // Which:
@@ -843,11 +64,742 @@ Bam en sortira t-il indemne ?'''
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-20T18:13:25+07:00
+    createdAt: 2020-05-20T18:13:25+07:00
 
-    # sign [str][num] <nbl>
-    # = These are the unique characters that contributors use to "sign" data. Can use characters 
-    #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
-  }
+    #: modifiedAt [str] <nbl>
+    #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
+    #;   information.
+    // See instruction on createdAt property to see procedure for filling data
+    modifiedAt: 2021-03-20T01:08:17+07:00
+
+    series:
+    {
+        #: titles [obj] <nbl>
+        #; = Serial title in several languages based on ICU locales identifier.
+        titles:
+        {
+            #: main [obj] <nbl>
+            #; = Serial title in main languages
+            main:
+            {
+                #: native [str] <nbl>
+                #; = Serial title in native (canonical) language based on origin of studio and/or
+                #    airing first.
+                native: 神之塔
+
+                #: en_Latn [str] <nbl>
+                #; = Serial title in romanized text. Required for main title on entry list.
+                en_Latn: Kami no Tou
+
+                en_US: Tower of God
+
+                id_ID: Tower of God
+
+                ja_JP: 神之塔
+
+                ru_RU: Башня Бога
+
+                zh_Hans: 神之塔
+
+                zh_Hant: 神之塔
+            }
+
+            #: additional [obj] <nab>
+            #; = Serial title in several additional languages based on ICU locales identifier that
+            #;   does not categorized as main languages.
+            additional:
+            {
+                ar_001: برج السيد
+
+                de_DE: Tower of God
+
+                es_ES: Torre de Dios
+
+                fr_FR: Tower of God
+
+                #: ja_Kana_JP [str] <nab>
+                #; = Serial title in Japanese Katakana-Hiragana writing system, "removing" kanji
+                #    from text.
+                ja_Kana_JP: かみのトウ
+
+                ko_KR: 신의 탑
+
+                vi_VN: Tower of God
+
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+                pt_PT: Torre de Deus
+
+            }
+
+            #: synonyms [obj] <nbl> => [arr] <nab>
+            #; = Synonym, other titles that well-known on the public.
+            synonyms:
+            {
+                en_Latn: [
+                    Kami no Tō
+                    ToG
+                    Sinui Tap
+                ]
+                ar_001:
+                [
+                    برج الإله
+                ]
+                id_ID:
+                [
+                    Menara Dewa
+                ]
+                en_US: null
+                ja_JP:
+                [
+                    神之塔 -Tower of God-
+                    タワーオブ・ゴッド
+                    神の塔
+                ]
+                de_DE: null
+                ko_KR: null
+                fr_FR: null
+                ru_RU: null
+                es_ES: null
+                zh_Hans: null
+                zh_Hant: null
+                vi_VN: null
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+                pt_PT: null
+            }
+        }
+
+        #: synopsis [obj] <nbl>
+        #; = A synopsis/plot of story of serial in several languages.
+        synopsis:
+        {
+            ar_001: '''“يورو”، قضى معظم حياته محاصرًا تحت برج شاسع وغامض، رفقة صديقته المقربة، “راهيرو”، فقط. بعد مدة من دخول “راهيرو” البرج، تمكن “يورو” من فتح الباب للدخول أيضًا، ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته المقربة.'''
+
+            id_ID: '''Twenty-Fifth Bam, seorang anak laki-laki yang menghabiskan sebagian besar hidupnya terperangkap di bawah Menara misterius yang luas bersama teman dekatnya, Rachel. Di dalam menara, Bam menghadapi berbagai tantangan di setiap lantai untuk menemukan teman dekatnya.'''
+
+            en_US: '''There is a tower that summons chosen people called "Regulars" with the promise of granting their deepest desires. Whether it be wealth, fame, authority, or something that surpasses them all—everything awaits those who reach the top.
+
+            Twenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.
+
+            Thus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind "Irregulars"—beings that have shaken the very foundation of the Tower each time they set foot inside it.'''
+
+            ja_JP: '''神の塔はTwenty-Fifth Bamと呼ばれる少年を中心にしています。彼は人生の大部分を、親しい友人であるRachelだけと一緒に広大で神秘的な塔の下に閉じ込められて過ごしています。 レイチェルがタワーに入ると、バムはドアを開けることができ、彼の最も近い仲間を見つけようとすると、このタワーの各階で課題に直面します。 （情報源：ウィキペディア）'''
+
+            de_DE: '''Ruhm, Reichtum, Macht – alles was man sich nicht einmal in den wildesten Träumen vorstellen würde, liegt in greifbarer Nähe, sobald man die Spitze des Tower of God erreicht hat. Diejenigen, denen das besondere Glück zuteil wird, vom Turm auserwählt worden zu sein, können darauf hoffen, dass all ihre Träume wahr werden. Doch um an die Spitze zu gelangen, müssen zuvor alle Ebenen durchquert werden und dort warten tödliche Gefahren.
+
+            Der Junge Bam ist ein sogenannter Irregular, der den Tower of God aus eigenem Willen heraus betreten kann. Nachdem er sein gesamtes Leben am Fuße des Turms verbracht hat, betritt er diesen schließlich, nachdem seine Kindheitsfreundin Rachel eines Tages die Türen des Turms durchschreitet und nicht mehr zurückkehrt. Bam entschließt sich daher, sich den Herausforderungen jeder Ebene des Turms zu stellen, in der Hoffnung, Rachel zu finden. Doch er wird bald feststellen, dass sein gefährlicher Weg ihn in das Fadenkreuz von unerbittlichen Konkurrenten und Furcht erregender Monster führen wird und er es vielleicht nicht mehr schaffen wird, den Turm lebend zu verlassen.'''
+
+            ko_KR: '''탑에 오르면, 모든 것을 얻을 수 있다. 탑의 정상엔 이 세상의 모든 것이 있고, 이 세계를 손에 넣을 수 있다. 신이 될 수도 있다. 이것은, 별을 보고 싶어서 탑을 오르는 소녀 '라헬'과 라헬만 있으면 아무것도 필요 없는 소년 '밤'의 끝과 시작의 이야기다.'''
+
+            fr_FR: '''Afin de retrouver Rachel, la seule personne chère à ses yeux, Bam décide de prendre tous les risques pour atteindre le sommet d'une mystérieuse tour. Pour passer chaque étage, il devra réussir un test complexe dans lequel il jouera à chaque fois sa vie.
+
+            Bam en sortira t-il indemne ?'''
+
+            ru_RU: '''Башня бога — место, в котором сбываются мечты и разбиваются сердца, только сильный духом сможет добраться до самого верха. Именно этого всю жизнь хотела Рахиль, и Двадцать пятый Баам отправился за ней, потому как эта девушка была для него единственным лучиком света в этом мрачном и недружелюбном мире. При входе в башню больше не будет пути назад — только наверх, к новым испытаниям. Многое здесь ждёт главных героев: радость и волнения, победы и поражения, боль и утрата. Смогут ли они добраться до вершины?'''
+
+            es_ES: '''La serie se centra en el viaje de un chico mientras se abre camino a través de la misteriosa Torre, construyendo amistades, descubriendo las reglas que gobiernan dentro de la Torre y enfrentando terribles desafíos, mientras desea encontrar al único amigo que alguna vez tuvo.'''
+
+            zh_Hans: '''如果登上塔，一切就都可以得到。 塔顶上有着这世界上的一切，可以得到这个世界……成为神。 为了欣赏星空而登塔的少女·蕾哈尔，以及如果有蕾哈尔这样的女朋友就什么也不需要了的少年·二十五夜，他们之间的故事开始了。'''
+
+            zh_Hant: '''如果登上塔，一切就都可以得到。 塔頂上有著這世界上的一切，可以得到這個世界……成為神。 為了欣賞星空而登塔的少女·蕾哈爾，以及如果有蕾哈爾這樣的女朋友就什麼也不需要了的少年·二十五夜，他們之間的故事開始了。'''
+
+            vi_VN: '''Tower of God xoay quanh một cậu bé tên là Twenty-Fifth Bam, người dành phần lớn cuộc đời mắc kẹt dưới một tòa tháp rộng lớn và bí ẩn cùng người bạn thân Rachel. Khi Rachel vào Tháp, Bam cũng theo sau vào đó và kết cục cậu phải đối mặt với thử thách ở mỗi tầng tòa tháp này với mong muốn tìm lại người bạn đồng hành của mình.'''
+
+            /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+            pt_PT: '''A Torre de Deus. Um mundo repleto de um misterioso poder chamado Shinsu, e povoado pelos "regulares", os indivíduos dotados desse poder. Dizem as lendas que quem alcançar o topo da Torre terá seus desejos realizados. Os guardiões da Torre selecionam "regulares" para participar das provações da torre e tentar alcançar seu ápice. Mas Bam, o protagonista, é um "irregular" - ele entrou sem ser convidado, abrindo sozinho os portões da Torre, tudo para reencontrar Rachel, sua única amiga no mundo!'''
+
+        }
+
+        #: isAnime [boo] <nbl>
+        #; = Explain that url is using /anime path or not. Used for SIMKL URL path. Default: true.
+        isAnime: true
+
+        #: type [str] <nab>
+        #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
+        // Allowed values are:
+        // TV, ONA, OVA, Special, Movie, Music, and Unknown.
+        type: TV
+
+        #: status [str] <nbl>
+        #; = Describes serial broadcast status.
+        // Allowed values are:
+        // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
+        status: Finished
+
+        #: source [str] <nbl>
+        #; = Source type the media was adapted from.
+        // Allowed values are:
+        // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
+        source: Manga
+
+        #: ageRating [str] <nab>
+        #; = Broadcast content rating of serial. See Docuwiki for more information.
+        // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
+        ageRating: PG13+
+
+        #: isNsfw [boo] <nbl>
+        #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
+        #;   known as safe.
+        isNsfw: false
+
+        #: isLicensed [boo] <nbl>
+        #; = Explains if the work/serial is legally licensed, if not (case: fanwork) then value
+        #;   turns false. Default: true.
+        isLicensed: true
+
+        media:
+        {
+            #: posterImage [str] <uri> <nab>
+            #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
+            posterImage: https://artworks.thetvdb.com/banners/series/376729/posters/62106354.jpg
+
+            #: coverImage [str] <uri> <nab>
+            #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
+            coverImage: https://artworks.thetvdb.com/banners/series/376729/backgrounds/5e83e84259d99.jpg
+
+            #: promotionalVideos [arr] <nab> > [obj] > [str]
+            #; = List of promotional videos of current entry.
+            promotionalVideo:
+            [
+                {
+                    id: Fm_75kwCrLY
+                    provider: youtube
+                }
+            ]
+
+            soundtracks:
+            [
+                {
+                    title: TOP
+                    mbid: 8e2432f6-c1b4-4b7f-a784-512bd5a1ab2c
+                    isrc: US5TA2000032
+                    bpm: 99
+                    artists: [
+                        {
+                            mbid: 142b343d-bf5a-428c-a64f-6d1a7566bbe9
+                            name: Stray Kids
+                        }
+                    ]
+                    type: theme
+                    position: opening
+                    episodes:
+                    {
+                        from: 1
+                        to: 12
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 05E7iRWsq1MYAlJElzCKCv
+                        youtubeMusic: 23gfa6m34io
+                    }
+                }
+                {
+                    title: TOP
+                    mbid: 8e2432f6-c1b4-4b7f-a784-512bd5a1ab2c
+                    isrc: US5TA2000032
+                    bpm: 99
+                    artists: [
+                        {
+                            mbid: 142b343d-bf5a-428c-a64f-6d1a7566bbe9
+                            name: Stray Kids
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 0
+                        to: 0
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            13
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 05E7iRWsq1MYAlJElzCKCv
+                        youtubeMusic: 23gfa6m34io
+                    }
+                }
+                {
+                    title: SLUMP
+                    mbid: b841f598-819e-4b5a-9c2e-4dce6a7d3786
+                    isrc: US5TA2000047
+                    bpm: 160
+                    artists: [
+                        {
+                            mbid: 142b343d-bf5a-428c-a64f-6d1a7566bbe9
+                            name: Stray Kids
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 1
+                        to: 12
+                        // USE THIS PROPERTIES IF ONLY OCCURRED IN A SINGLE EPISODE
+                        only: [
+                            0
+                        ]
+                        // Use this property if there's any episode exception
+                        not: [
+                            0
+                        ]
+                    }
+                    links: {
+                        spotify: 2GpRNFluKholHzpWM7t0t8
+                        youtubeMusic: 63-6y8G7uXY
+                    }
+                }
+            ]
+        }
+
+        release:
+        {
+            #: year [num] <nbl>
+            #; = The year of the serial release, using a integrer/numeral format. If unknown,
+            #;   use 0.
+            year: 2020
+
+            #: season [str] <nab>
+            #; = Season of serial releases.
+            // Allowed values are
+            // Winter, Spring, Summer, Fall, and Unknown
+            season: Spring
+
+            #: startDate [str] <nab>
+            #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            startDate: 2020-04-02
+
+            #: dayOfTheWeek [str] <nab> <arb>
+            // Allowed values are
+            // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, and null.
+            dayOfTheWeek: Thursday
+
+            #: broadcastTime [str] <nab>
+            #; Local time of show broadcasted.
+            // FORMAT: hh:mm:ssTZD
+            // See instruction on createdAt property to see procedure for filling data
+            broadcastTime: 03:00:00+09:00
+
+            #: endDate [str] <nab>
+            #; = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            endDate: 2020-06-25
+        }
+
+        episode:
+        {
+            #: count [num] <nab>
+            #; = Total episodes of serial. If unknown, fill null.
+            count: 13
+
+            #: duration [num] <nab>
+            #; = Duration per serial episode, using minute format. If unknown, fill null.
+            duration: 24
+
+            #: totalDuration [num] <nab>
+            #; = The total duration of the series, using the minute format. If unknown, fill null.
+            totalDuration: 312
+        }
+
+        #: countryOfOrigin [str] <nbl>
+        #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
+        #    format.
+        countryOfOrigin: JP
+
+        #: genres [obj] <nbl> > [str]
+        #; = Is genre(s) of serial. See docuwiki for more information.
+        // Allowed values are:
+        // Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+        // Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+        // Supernatural, Thriller, War
+        genres: [
+            Action
+            Adventure
+            Drama
+            Fantasy
+            Mystery
+            Comedy
+            Romance
+            Science Fiction
+            Supernatural
+        ]
+
+        #: serialTags [arr] <nbl> > [obj] <nbl>
+        #; = Represents serial specific tags/content. Similar to the `.genres`, but usually more
+        #;   focused on content, storyline, or themes. But, all of `.genres` value will be ignored
+        #;   ignored if present on `.tags`. See docuwiki for more information.
+        tags: [
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Super Power
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Shounen
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Magic
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Conspiracy
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Battle Royale
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Politics
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Tsundere
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Swordplay
+            }
+            {
+                isSpoiler: true
+                isNsfw: false
+                name: Tragedy
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Circus
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Cultivation
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: PVP
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: PVE
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Guns
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Monster
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Martial Arts
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Beastmen
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Psi-Powers
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Fantasy World
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Dreams
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Friendship
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Survival
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Violence
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Dark Fantasy
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Goblin
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Coming of Age
+            }
+        ]
+
+        companies:
+        {
+            #: studios [arr] <nbl>
+            #; = Studios of producing series.
+            studios:
+            [
+                Telecom Animation Film
+            ]
+
+            licensors:
+            [
+                Crunchyroll
+            ]
+
+            #: producers [arr] <nab> > [str]
+            #; = Producers that involved to current entry/project.
+            producers:
+            [
+                SEGA
+                Rialto Entertainment
+                Sola Entertainment
+                NAVER Webtoon
+            ]
+        }
+
+        social:
+        {
+            #: twitter [str] <nab>
+            // Please to ignore @ sign while input username
+            twitter: anime_ToG
+
+            facebook: anime.tog
+
+            #: instagram [str] <nab>
+            // Please to ignore @ sign while input username
+            instagram: null
+
+            #: hashtag [arr] <nab>
+            #; = Social media hashtag of shows. Sometimes used for campaign. Applicable for each SNS.
+            // Please to ignore # sign while input hashtag(s)
+            hashtag:
+            [
+                tog
+                神之塔
+                신의탑
+            ]
+        }
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: TVアニメ『神之塔 -Tower of God-』
+                url: https://tog-anime.com/
+                language: ja_JP
+            }
+        ]
+
+        databases:
+        {
+            allCinema: 371577
+
+            aniDb: 15391
+
+            aniList: 115230
+
+            animePlanet: {
+                showUrl: https://www.anime-planet.com/anime/tower-of-god
+                showId: 14552
+            }
+
+            animeNewsNetwork: 23068
+
+            aniSearch: 14974
+
+            anison: 22653
+
+            annict: 7325
+
+            fanartTv: 376729
+
+            imdb: {
+                seasonNumber: 1
+                showId: tt12057106
+                offset: 0
+            }
+
+            kinoPoisk: {
+                seasonNumber: 1
+                showId: 1363114
+                offset: 0
+            }
+
+            kitsu: {
+                showSlug: tower-of-god
+                showId: 43004
+            }
+
+            liveChart: 9793
+
+            myAnimeList: 40221
+
+            myShows: {
+                seasonNumber: 1
+                showId: 66157
+                offset: 0
+            }
+
+            nautiljon: https://www.nautiljon.com/animes/kami+no+tou+-+tower+of+god+-.html
+
+            notifyMoe: m1ZLrsUWg
+
+            otakOtaku: 1740
+
+            perpusIndo: 40221
+
+            reelgood: {
+                showSlug: tower-of-god-2020
+                showUuid: ed853e21-fa41-4474-ab91-748cf59af1e3
+                seasonNumber: 1
+                offset: 0
+            }
+
+            shikimori: {
+                showId: 40221
+                isMoved: false
+                newShowId: null
+            }
+
+            shoboi: 5653
+
+            silverYasha: 276
+            
+            simkl: {
+                showId: 1255681
+
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                seasonNumber: 0
+                offset: 0
+            }
+            
+
+            tmdb: {
+                showId: 97860
+                seasonNumber: 1
+                seasonId: 140865
+                offset: 0
+            }
+
+            tvdb: {
+                showId: 376729
+                seasonNumber: 1
+                seasonId: 1819691
+                offset: 0
+            }
+
+            trakt:
+            {
+                showSlug: tower-of-god
+                showId: 158032
+                seasonId: 210558
+                seasonNumber: 1
+                offset: 0
+            }
+        }
+
+        streamLinks:
+        {
+            amazonPrime: null
+            animeDigitalNetwork: https://animedigitalnetwork.fr/video/Tower-of-god
+            animeLab: null
+            animeOnDemand: null
+            aniOne: null
+            aniPlus: http://www.aniplustv.com/#/tv/program_view.asp?contentSerial=2287
+            aniPlusAsia: https://www.aniplus-asia.com/show/tower-of-god/
+            bahamutAnimeCrazy: null
+            biliBili: null
+            crunchyroll: https://www.crunchyroll.com/tower-of-god
+            fod: null
+            funimation: null
+            genFlix: null
+            hidive: null
+            hulu: null
+            iQiyi: null
+            iflix: null
+            museAsia: {
+                en_001: null
+                id_ID: null
+                ms_MY: null
+                th_TH: null
+                vi_VN: null
+                zh_Hant_HK: null
+                zh_Hant_TW: null
+            }
+            netflix: {
+                US: https://www.netflix.com/title/81329313
+                ID: https://www.netflix.com/title/81329313
+            }
+            nicoNico: null
+            sushiroll: null
+            vvvvid: null
+            vrv: https://vrv.co/series/G6J0G49DR
+            wakanim: {
+                DE: null
+                FR: null
+                RU: null
+                SC: null
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
+
+    commiter:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
 }

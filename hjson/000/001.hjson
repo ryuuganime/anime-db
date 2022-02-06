@@ -1,794 +1,57 @@
-#hjson
-/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆-----NOTE MARKUPS LEGEND----⋆\
+#hjson {"version":"2.1-s","config":{"maxColumn":100}}
+/*--Ryuuganime HJSON Template--⋆\ /⋆----VALUE MARKUPS LEGEND----⋆\ /⋆------ADDITIONAL NOTES------⋆\
 |                               | | [str] is a text value and    | |                              |
-|      Created by @nattadasu    | |   number                     | |   // is an important notes   |
-|                               | | [num] is a only-number value | |    # is a definition notes   |
-| -------VERSION: 1.3-r-------- | | [boo] is a boolean markup    | |                              |
-|                               | |   Consisted by "true" and    | \⋆----------------------------⋆/
-| Targeted on accessibility for | |   "false" value              | /⋆------ADDITIONAL NOTES------⋆\
-|   non-developer to contribute | | [arr] is an array value. It  | |                              |
-|   on filling related anime    | |   is a combination of        | | '''                          |
-|   with some 'helpful' guides  | |   strings, integrer, objects | |       This is a multi        |
-|   on each of values in as a   | |   in one value               | |       lines text value       |
-|   comment                     | | [obj] is an object value.    | |                          ''' |
-|                               | |   Signifies that this value  | | is a syntax that allows user |
-\⋆-----------------------------⋆/ |   has several values inside  | |   to add multi-lines text/   |
-/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | |   string without append \n   |
-|                               | |                              | |   pointer                    |
-| <url>: a string contains URL  | \⋆----------------------------⋆/ |                              |
-|   or URI link                 | // First guide:                  \⋆----------------------------⋆/
-| <arb>: this value that can be | // JSON is easy for humans to read and write... in theory. In 
-|   changed to array if object  | //    practice JSON gives us plenty of opportunities to make 
-|   on a value is more than one | //    mistakes without even realizing it.
-| <nab>: the value can be       | // Hjson is a syntax extension to JSON. It's NOT a proposal to
-|   "deleted" and changed to    | //    replace JSON or to incorporate it into the JSON spec
-|   null, if possible           | //    itself. It's intended to be used like a user interface for
-| <nbl>: this value can not be  | //    humans, to read and edit before passing the JSON data to
-|   "deleted" or changed to     | //    the machine.
-|   null value because it is    | // Comma (,) and quotation marks on the end of value is optional
-|   essential for the file      | //    on HJSON. 
-|   itself                      | // For easier on filling, see on hjson/000/014.hjson or latest
-|                               | //    for example.
-\⋆-----------------------------*/ // See https://hjson.github.io/ for HJSON tl;dr documentations.
-{ 
-  # $schema [str] <nbl> <url>
-  # = Very not recommended to modify this configuration value if not having any knowledge in JSON!
-  $schema: ../../schemas/entry.json
-  // Optional value, tick a comment syntax of above value, and untick value below.
-  //$schema: https://raw.githubusercontent.com/ryuuganime/ryuuganime-db/master/schemas/entry.json
+|      Created by @nattadasu    | |   number                     | | '''                          |
+|                               | | [num] is a only-number value | |       This is a multi        |
+| -------VERSION:  2.1-s------- | | [boo] is a boolean markup    | |       lines text value       |
+|                               | |   Consisted by "true" and    | |                          ''' |
+| Targeted on accessibility for | |   "false" value              | | is a syntax that allows user |
+|   non-developer to contribute | | [arr] is an array value. It  | |   to add multi-lines text/   |
+|   on filling related anime    | |   is a combination of        | |   string without append \n   |
+|   with some 'helpful' guides  | |   strings, integrer, objects | |   pointer                    |
+|   on each of values in as a   | |   in one value               | |                              |
+|   comment                     | | [obj] is an object value.    | \⋆----------------------------⋆/
+|                               | |   Signifies that this value  | // First guide:
+\⋆-----------------------------⋆/ |   has several values inside  | // JSON is easy for humans to
+/⋆----STRINGS MARKUPS LEGEND---⋆\ |   the value itself           | // Read and write... in theory.
+|                               | |                              | //  In practice, JSON gives us
+| <uri>: a string contains URL  | \⋆----------------------------⋆/ //  plenty of opportunities to
+|   or URI link                 | // make mistakes without even realizing it.
+| <arb>: this value that can be | // Hjson is a syntax extension to JSON. It's NOT a proposal to
+|   changed to array if object  | //    replace JSON or to incorporate it into the JSON spec
+|   on a value is more than one | //    itself. It's intended to be used like a user interface for
+| <nab>: the value can be       | //    humans, to read and edit before passing the JSON data to
+|   "deleted" and changed to    | //    the machine.
+|   null, if possible           | // Comma (,) and quotation marks on the end of value is optional
+| <nbl>: this value can not be  | //    on HJSON.
+|   "deleted" or changed to     | // For easier on filling, see on hjson/000/001.hjson or latest
+|   null value because it is    | //    for example.
+|   essential for the file      | // See https://hjson.github.io/ for HJSON tl;dr documentations.
+|   itself                      | // Check https://docuwiki.ryuuganime.my.id for official wiki and
+|                               | //    documentations from Ryuuganime.
+\⋆-----------------------------*/
+{
+    #: $schema [str] <nbl> <uri>
+    #; = Very not recommended to modify this configuration value if not having any knowledge in
+    #;   JSON!
+    $schema: https://schema.ryuuganime.my.id/entry/v2.1-s.json
+    // Optional value, tick a comment syntax of above value, and untick value below.
+    #$schema: ../../schemas/entry/v2.1-s.json
 
-  # title [obj] <nbl>
-  # title of serial... in several languages. Based on ICU locales.
-  title:
-  {
-    # native [str] <nbl>
-    # = Serial title in native (canonical) language based on origin of studio and/or airing first.
-    native: 富豪刑事 Balance:UNLIMITED
-
-    # en_Latn [str] <nbl>
-    # = Serial title in romanized text. Required for main title on entry list.
-    en_Latn: Fugou Keiji: Balance:Unlimited
-
-    # ar_001 [str] <nab>
-    # = Serial title in Modern Standard/Written Arabic (العربية الفصحى).
-    //  REGEX: ^[\w\s\S\p{L}{Arabic}]+$
-    ar_001: المحقق المليونير - الرصيد: غير محدود
-
-    he_IL: בלש מיליונר - איזון: ללא הגבלה
-
-
-    # id_ID [str] <nab>
-    # = Serial title in Indonesian (un/official)
-    //  REGEX: ^[\w\s\S]+$
-    id_ID: Detektif Milyuner - Balance:UNLIMITED
-
-    # en_US [str] <nab>
-    # = Serial title in English.
-    //  REGEX: ^[\w\s\S]+$
-    en_US: The Millionaire Detective – Balance: UNLIMITED
-
-    # ja_JP [str] <nab>
-    # = Serial title in Japanese.
-    //  REGEX: ^[一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+$
-    ja_JP: 富豪刑事 Balance:UNLIMITED
-
-    # de_DE [str] <nab>
-    # = Serial title in German (un/official).
-    //  REGEX: ^[\w\s\SöäüÖÄÜß]+$
-    de_DE: null
-
-    # ko_KR [str] <nab>
-    # = Serial title in South/North Korean.
-    //  REGEX: ^[가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+$
-    ko_KR: 부호형사 Balance:UNLIMITED
-
-    # fr_FR [str] <nab>
-    # = Serial title in French (or other accent).
-    //  REGEX: ^[\w\s\S«»À-Üà-øoù-ÿŒœ]+$
-    fr_FR: null
-
-    # pt_PT [str] <nab>
-    # = Serial title in Portuguese.
-    //  REGEX: ^[\w\s\Sáâãàçéêíóôõú]+$
-    pt_PT: null
-
-    # ru_RU [str] <nab>
-    # = Serial title in Russian (un/official). 
-    //  REGEX: ^[\w\s\SЀ-ӿ]+$
-    ru_RU: Богатый детектив. Баланс: Неограничен
-
-    # es_ES [str] <nab>
-    # = Serial title in Spanish (or other accent).
-    //  REGEX: ^[\w\s\SÀ-ÿ]+$
-    es_ES: El Detective Millonario - Equilibrio:Ilimitado
-
-    # zh_Hans [str] <nab>
-    # = Serial title in Simplified Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hans: 富豪刑事 Balance:UNLIMITED
-
-    # zh_Hant [str] <nab>
-    # = Serial title in Traditional Chinese.
-    //  REGEX: ^[\w\s\S\p{Lo}{Han}]+$
-    zh_Hant: 富豪刑事 Balance:UNLIMITED
-
-    # vi_VN [str] <nab>
-    # = Serial title in Vietnamese.
-    //  REGEX: ^[\w\s\S\p{L}{VN}]+$
-    vi_VN: Thám Tử Triệu Phú
-    /* Vietnamese translation by V1sion */
-  }
-
-  # backdrop [str] <url> <nbl>
-  # = A backdrop/background image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  backdrop: https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg
-
-  # visualKey [str] <url> <nbl>
-  # = A visual key/poster image URL of serial. See Doc/Wiki for more information.
-  //  FORMAT: URI, REGEX: ^(https?)\:\/\/
-  visualKey: https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg
-
-  # synopsis [obj] <nbl>
-  # = A synopsis/plot of story of serial in several languages. 
-  synopsis:
-  {
-    # ar_001 [str] <nab>
-    # = Serial synopsis in Modern Standard/Written Arabic (العربية الفصحى). See TVDB, ArabSama, or
-    #   Wikipedia for Arabic synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{Arabic}]+
-    ar_001: '''قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.'''
-
-    he_IL: null
-
-    # id_ID [str] <nab>
-    # = Serial synopsis in Indonesian. See Otak Otaku, or others Indonesian fansub, fanstream, and
-    #   fanshare for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    id_ID: '''Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.'''
-
-    # en_US [str] <nab>
-    # = Serial synopsis in Inggris. See Anime News Network, AniDB, Kitsu, or MyAnimeList for 
-    #   synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S]+
-    en_US: '''The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.'''
-
-    # ja_JP [str] <nab>
-    # = Serial synopsis in Japanese. See Annict or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [一-龠ぁ-ゔァ-ヴーａ-ｚＡ-Ｚ０-９々〆〤\w\s\S]+
-    ja_JP: '''ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。 そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。 常識を超えた捜査が今、始まる――！'''
-
-    # de_DE [str] <nab>
-    # = Synopsis in German. See aniSearch.de or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SöäüÖÄÜß]+
-    de_DE: '''Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.
-Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können.'''
-
-    # ko_KR [str] <nab>
-    # = Synopsis in South Korean. See Watcha, Namu, The TVDB, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [가-힯ᄀ-ᇿ㄰-㆏ꥠ-꥿ힰ-퟿\w\s\S]+
-    ko_KR: '''부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.
-그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.
-대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.
-상식을 뛰어넘는 수사가 지금, 시작된다-'''
-
-    # fr_FR [str] <nab>
-    # = Synopsis in French. Other accents are allowed. See Nautiljon or The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\S«»À-Üà-øoù-ÿŒœ]+
-    fr_FR: '''Lorsque qu’une personne du Département de la Police métropolitaine de Tokyo pose problème, elle est transférée dans le « Nouveau Quartier Général Anti-Criminalité ». C’est là qu’est envoyé Daisuke, le fils riche et exceptionnel de l’illustre famille Kambe. Contre toute attente, il fera équipe avec le bienveillant Haru Kato. Daisuke, lui, considère que la vie a un prix, alors que Kato pense au contraire qu’elle est inestimable. Deux personnes que tout oppose, unies face aux nombreux mystères et incidents qui se dressent devant eux... C’est le début d’enquêtes défiant toute logique !'''
-
-    # pt_PT [str] <nab>
-    # = Synopsis in Portuguese. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\Sáâãàçéêíóôõú]+
-    pt_PT: '''A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas, testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente insolúveis!'''
-
-    # ru_RU [str] <nab>
-    # = Synopsis in Russian. See Shikimori, Kinopoisk, ru.MyShows.me, or Wikipedia for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SЀ-ӿ]+
-    ru_RU: '''«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить, что финансы он тратит в том числе и на ведение расследований. Вот только не всех в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно сплавляют в Главное управление по борьбе с современными преступлениями, где рано или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно расследуя запутанные криминальные загадки.'''
-
-    # es_ES [str] <nab>
-    # = Synopsis in Spanish Spain. Other accents are allowed. See The TVDB for synopsis.
-    //  MINLENGTH: 20, REGEX: [\w\s\SÀ-ÿ]+
-    es_ES: '''La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos de los demás. Allí, Kanbe se hace compañero de Katou.'''
-
-    # zh_Hans [str] <nab>
-    # = Synopsis in Simplified Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hant (Traditional Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hans: '''本作故事主要讲述刑警神户大助，利用大富豪父亲的巨大资产解决各种案件。
-拥有不可计数资产的神户家大少爷大助即将赴任的地方，是仅会接收警视厅中的问题份子的「现代犯罪对策本部准备室」，通称「现对本部」。
-大助在那里与重感情的男人加藤春组成了搭档。面对用钱衡量一切的大助，加藤以「世上并非只有金钱」加以反驳。各种各样的事件和谜团，阻挡在这对立的2人面前。超越常识的搜查现在开始！'''
-
-    # zh_Hant [str] <nab>
-    # = Synopsis in Traditional Chinese. See Douban, The TVDB, or Wikipedia for synopsis, or
-    #   translate from zh_Hans (Simplified Chinese) using extension.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{Lo}{Han}]+
-    zh_Hant: '''本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。
-擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。
-大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！'''
-
-    # vi_VN [str] <nab>
-    # = Synopsis in Vietnamese.
-    //  MINLENGTH: 20, REGEX: [\w\s\S\p{L}{VN}]+
-    vi_VN: '''Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou, người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng hợp tác giải quyết các vụ án.'''
-  }
-
-  # information [obj] <nbl>
-  # = Is a collection of information about serial.
-  information:
-  {
-    # synonyms [obj] <nbl> => [arr] <nab>
-    # = Synonym, other titles that well-known on the public.
-    synonyms:
-    {
-      en_Latn: [ 
-        Fugō Keiji Balance: Unlimited
-        FugouKeijiBUL 
-      ]
-      ar_001: null
-      hu_HU: null
-      he_IL: null
-      id_ID: null
-      en_US: [
-        Wealthy Detective
-      ]
-      ja_JP: null
-      de_DE: null
-      ko_KR: null
-      fr_FR: null
-      pt_PT: null
-      ru_RU: null
-      es_ES: null
-      zh_Hans: null
-      zh_Hant: null
-      vi_VN: null
+    // DO NOT CHANGE THOSE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
+    version: {
+        stage: stable
+        version: 2.1
     }
+    // DO NOT CHANGE ABOVE VALUES EXCEPT YOU KNOW WHAT ARE YOU DOING!
 
-    # type [obj] <nbl> => [str] <nbl>
-    # = Serial type, is it TV, ONA, OVA/OAD, Special, or Movie
-    type:
-    {
-      // Allowed values are:
-      // TV, ONA, OVA, OAD, Special, Movie, Music, and Unknown
-      en_US: TV
+    #: id [num] <nbl>
+    #; = Serial ID number on Ryuuganime Database.
+    id: 1
 
-      // Allowed values are:
-      // Serial TV, ONA, OVA, OAD, Spesial, Film, Musik, and Tidak Diketahui
-      id_ID: Serial TV
-    }
-
-    # status [obj] > [str] <nbl>
-    # = Describes the serial broadcast status.
-    status:
-    {
-      // Allowed values are:
-      // Aired, Airing, Planned, TBA, and Unknown
-      en_US: Airing
-
-      // Allowed values are:
-      // Ditayangkan, Mengudara, Direncanakan, Akan Diumumkan, and Tidak Diketahui
-      id_ID: Mengudara
-    }
-
-    # serialGenre [obj]
-    # = Is genre(s) of serial. See the wiki for more information.
-    serialGenre:
-    {
-      # en_US [arr] <nbl>
-      # = Serial genre in English.
-      //  Allowed values are:
-      //  Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
-      //  Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
-      //  Supernatural, Thriller, War
-      en_US:
-      [
-        Drama
-        Mystery
-        Comedy
-        Crime
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial genre in Indonesian.
-      //  Allowed values are:
-      //  Aksi, Petualangan, Komedi, Kriminalitas, Dokumentasi, Drama, Fantasi, Sejarah, Horror,
-      //  Dewasa, Musik, Misteri, Psikologis, Romansa, Fiksi Ilmiah, Potongan Kehidupan,
-      //  Olahraga, Supernatural, Thriller, Peperangan
-      id_ID:
-      [
-        Drama
-        Misteri
-        Komedi
-        Kriminalitas
-      ]
-    }
-
-    # serialTags [obj]
-    # = Represents serial specific tags/content. Similar to the serialGenre, but usually more 
-    #   focused on content, storyline, or themes. But, all of serialGenres value will be ignored if 
-    #   present on serialTags. See the wiki for more information.
-    serialTags:
-    {
-      # en_US [arr] <nbl>
-      # = Serial tags in English.
-      en_US:
-      [
-        Detectives
-        Police
-        Billionaire
-        Investigation
-        Male Protagonist
-      ]
-
-      # id_ID [arr] <nbl>
-      # = Serial tags in Indonesian.
-      id_ID:
-      [
-        Detektif
-        Polisi
-        Milyuner
-        Investigasi
-        Tokoh Utama Laki-Laki
-      ]
-    }
-
-    # releaseSeason [obj] <nbl> => [str] <nbl>
-    # = Season of serial releases.
-    releaseSeason:
-    {
-      // Allowed values are
-      // Winter, Spring, Summer, Fall, and Unknown
-      en_US: Spring
-
-      // Allowed values are
-      // Dingin, Semi, Panas, Gugur, and Tidak Diketahui
-      id_ID: Semi
-
-      // Allowed values are
-      // 冬, 春, 夏, 秋, and 不明
-      ja_JP: 春
-
-      // Allowed values are
-      // 겨울, 봄, 여름, 가을, and 알
-      ko_KR: 봄
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hans: 春天
-
-      // Allowed values are
-      // 冬天, 春天, 夏天, 秋天, and 未知
-      zh_Hant: 春天
-    }
-
-    # releaseYear [num] <nbl>
-    # = The year of the serial release, using a integrer/numeral format.
-    releaseYear: 2020
-
-    # episode [num] <nbl>
-    # = Total episodes of serial. If unknown, fill null.
-    episode: 11
-
-    # releaseDate [str]
-    # = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    releaseDate: 2020-04-10
-
-    # endDate [str]
-    # = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
-    endDate: null
-
-    # duration [num] <nab>
-    # = Duration per serial episode, using minute format. If unknown, fill null.
-    duration: 23
-
-    # totalDuration [num] <nab>
-    # = The total duration of the series, using the minute format. If unknown, fill null.
-    totalDuration: null
-
-    # studio [str] <arb> <nab>
-    # = Studio producing series.
-    studio: CloverWorks
-
-    # rating [str] <nab>
-    # = Broadcast content rating of serial. See the wiki for more information.
-    // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
-    rating: PG13+
-
-    # isNsfw [boo] <nbl>
-    # = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false, 
-    #   known as safe.
-    //  Allowed values are "true" and "false"
-    isNsfw: false
-
-    # adaptation [obj] > [str] <arb> <nab>
-    # = Is the original adaptation of the show.
-    adaptation:
-    {
-      // Allowed values are:
-      //   Original, Comic, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Game, Music, Drama,
-      //   4-koma, Fairy Tale, and null
-      en_US: Novel
-
-      // Allowed values are:
-      //   Orisinal, Komik, Manga, Manhwa, Manhua, Webtoon, Doujin, Novel, Gim, Musik, Drama, 
-      //   4-panel, Dongeng, and null
-      id_ID: Novel
-    }
-
-    # country [str] <nbl>
-    # = Country of origin of serial. There are no country restrictions here.
-    country:
-    {
-      en_US: Japan
-      id_ID: Jepang
-    }
-
-    # officialWebsite [str] <url> <nab>
-    # = Links to official website of current entry.
-    officialWebsite: https://www.fugoukeiji-bul.com/
-
-    # promotionalVideos [arr] <nab> > [str] <url>
-    # = List of promotional videos of current entry.
-    promotionalVideos: [
-        https://www.youtube.com/watch?v=Z2GGJHXtOJ8
-    ]
-
-    # producers [arr] <nab> > [str]
-    # = Producers that involved to current entry/project
-    producers: [
-        Aniplex
-        Dentsu
-        Animax
-        Movic
-        Fuji TV
-        Sonilude
-    ]
-  }
-
-  # scores [obj] > [str]/[num] <nab>
-  //  When the entry is empty or not found in specified site, fill null on id/slug/code/base64/url
-  //  and on the score.
-  scores:
-  {
-    // https://anidb.net
-    aniDB:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 15364
-      score: 6.07
-    }
-    
-    // https://anilist.co
-    AniList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 114888
-      score: 73
-    }
-
-    // https://anime-planet.com
-    AnimePlanet:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14492
-      score: 4.207
-    }
-
-    // https://animenewsnetwork.com
-    ANN:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 22980
-      score: null
-    }
-
-    // https://anisearch.com
-    aniSearch:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.anisearch.com/anime/14906,fugou-keiji-balance-unlimited
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 14906
-      score: 71
-    }
-
-    // https://annict.com < Gunakan VPN sebelum memasuki website ini. 
-    Annict:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 7271
-      score: 86.67
-    }
-
-    // https://imdb.com
-    IMDb:
-    {
-      # code [str] <nab>
-      # = Similar to ID, but the only difference is there is an additional identification character
-      #   that used by IMDB.
-      code: tt12117218
-      score: 8.1
-    }
-
-    // https://kinopoisk.ru
-    KinoPoisk:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1368169
-      score: null
-    }
-
-    // https://kitsu.io
-    Kitsu:
-    {
-      # slug [str]
-      # = Is a human readable version of the linked index URL.
-      slug: fugou-keiji-balance-unlimited
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 43056
-      score: 80.56
-    }
-
-    // https://livechart.me
-    LiveChart:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 9777
-      score: 8.27
-    }
-
-    // https://myanimelist.net
-    MyAnimeList:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 41120
-      score: 7.51
-    }
-    
-    // https://en.myshows.me/
-    MyShows:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 66109
-      score: 4.44
-    }
-
-    // http://nautiljon.com/
-    Nautiljon:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html
-      score: 8.97
-    }
-
-    // https://notify.moe/
-    Notify:
-    {
-      # base64 [str]
-      # = This is a unique numbering system that Notify.moe uses on their website
-      base64: TM1LPA8Wg
-      score: 8.32
-    }
-
-    // http://otakotaku.com/
-    OtakOtaku:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1724
-      score: 9
-    }
-
-    // http://shikimori.org/
-    Shikimori:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 41120
-      score: 7.51
-    }
-
-    // https://simkl.com
-    SIMKL:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 1247789
-      isAnime: true
-      score: 8.6
-    }
-
-    // https://www.themoviedb.org/
-    TMDB:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://www.themoviedb.org/tv/98491-balance-unlimited
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 98491
-      score: 80
-    }
-
-    // https://trakt.tv/
-    Trakt:
-    {
-      # url [str] <url>
-      # = URL of entry on the related website.
-      url: https://trakt.tv/shows/157673
-
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 157673
-      score: 73
-    }
-
-    // https://www.tvtime.com/en
-    TVTime:
-    {
-      # id [num]
-      # = Is a serial id on the respective website. Can be taken from URL, or inspecting via poster
-      #   image URI. See Wiki or ask to developer for more information.
-      id: 376211
-      score: 9.76
-    }
-  }
-
-  # updatedDate [str] <nbl>
-  # = Date and Time of data collection, information and score related entries. Uses ISO 8601 
-  #   format. See the guide below for more information.
-  // Procedure for filling data
-  // Format: YYYY-MM-DDThh:mm:ssTZD
-  // Which:
-  // YYYY = year (2020)
-  // MM   = month (12)
-  // DD   = date (21)
-  // hh   = hour, format 24 hour (22)
-  // mm   = minute (45)
-  // ss   = second (33)
-  // TZD  = time zone designator based on UTC (WIB: +07:00)
-  // so, 2020-12-21T22:45:33+07:00 is valid.
-  // WIB = +07:00, WITA = +08:00, WIT = +09:00
-  updatedDate: 2020-05-05T16:54:42+07:00
-
-  # streamLinks [obj] <nbl>
-  # = Lists of official streaming sites.
-  streamLinks:
-  {
-    Abematv: null
-    AdultSwim: null
-    AISPlay: null
-    All4: null
-    AniMe: null
-    AnimeDigitalNetwork: null
-    AnimeLab: https://www.animelab.com/shows/balance-unlimited
-    AnimeLog: null
-    AnimeOnDemand: null
-    AnimePlanet: null
-    animeteleto: null
-    AniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz
-    ANIPLUS: null
-    AniPlusAsia: null
-    AsianCrush: null
-    BahamutAnimeCrazy: null
-    BandaiChannel: null
-    BandaiSpirits: null
-    bilibili: https://www.bilibili.com/bangumi/media/md28228473
-    Coalise: null
-    ComicFestaAnimeZone: null
-    ConTV: null
-    Coolmic: null
-    Crunchyroll: null
-    dAnimeStore: null
-    DMM: null
-    FOD: null
-    Funimation: https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/
-    Genflix: null
-    GundamInfo: null
-    Gyao: null
-    HIDIVE: null
-    Hulu: null
-    iflix: null
-    iQIYI: null
-    JapaneseAnimatedFilmClassic: null
-    Mangas: null
-    MBSDougaizm: null
-    MidnightPulp: null
-    MuseAsia:
-    {
-      en_001:null
-      vi_VN: null
-      ms_MY: null
-      th_TH: null
-      zh_Hant_HK: null
-      zh_Hant_TW: null
-    }
-    Netflix: https://www.netflix.com/jp-en/title/81039113
-    NicoNico: null
-    PrimeVideo: null
-    RetroCrush: null
-    SelectaVision: null
-    Sushiroll: null
-    Telasa: null
-    TencentVideo: null
-    TVNOW: null
-    Vimeo: null
-    VIZ: null
-    VRV: null
-    VVVVID: null
-    Wakanim:
-    {
-      fr: https://www.wakanim.tv/fr/v2/catalogue/show/842
-      sc: https://www.wakanim.tv/sc/v2/catalogue/show/844
-      de: https://www.wakanim.tv/de/v2/catalogue/show/843
-      ru: https://www.wakanim.tv/ru/v2/catalogue/show/845
-    }
-    WeTV: null
-    YamatoAnimation: null
-    YouTube:
-    {
-      link: null
-      isChannel: false
-    }
-  }
-
-  # signature
-  # = Is an object that provides information regarding the contributors to the entry.
-  signature:
-  {
-    # name [str] <nbl>
-    # = Your name, can use pseudonym (pen name).
-    name: Natsu Tadama
-
-    # username [str] <nbl>
-    # = Your username on GitHub
-    username: @nattadasu
-
-    # discordId [num] <nbl>
-    # = This is your unique user ID on Discord. By default, the ID uses from the Ryuuganime server 
-    #   ID: 594442535615725579
-    discordId: 384089845527478272
-
-    # submissionDateTime [str] <nbl>
-    # = Date and time before submission (commit/push). Uses ISO 8601 format. See the guide below 
-    #   for more information.
+    #: createdAt [str] <nbl>
+    #; = Date and time of creation based on first submission (commit/push). Uses ISO 8601 format.
+    #;   See the guide below for more information.
     // Procedure for filling data
     // Format: YYYY-MM-DDThh:mm:ssTZD
     // Which:
@@ -801,11 +64,596 @@ Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlic
     // TZD  = time zone designator based on UTC (WIB: +07:00)
     // so, 2020-12-21T22:45:33+07:00 is valid.
     // WIB = +07:00, WITA = +08:00, WIT = +09:00
-    submissionDateTime: 2020-05-05T17:26:00+07:00
+    createdAt: 2020-05-05T17:26:00+07:00
 
-    # sign [str][num] <nbl>
-    # = These are the unique characters that contributors use to "sign" data. Can use characters 
-    #   other than alphabets and numbers, or use encryption such as Base64.
-    sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
-  }
+    #: modifiedAt [str] <nbl>
+    #; = Date and Time of data modification. Uses ISO 8601 format. See the guide below for more
+    #;   information.
+    // See instruction on createdAt property to see procedure for filling data
+    modifiedAt: 2020-12-17T01:06:31+07:00
+
+    series:
+    {
+        #: titles [obj] <nbl>
+        #; = Serial title in several languages based on ICU locales identifier.
+        titles:
+        {
+            #: main [obj] <nbl>
+            #; = Serial title in main languages
+            main:
+            {
+                #: native [str] <nbl>
+                #; = Serial title in native (canonical) language based on origin of studio and/or
+                #    airing first.
+                native: 富豪刑事 Balance:UNLIMITED
+
+                #: en_Latn [str] <nbl>
+                #; = Serial title in romanized text. Required for main title on entry list.
+                en_Latn: Fugou Keiji: Balance:Unlimited
+
+                en_US: The Millionaire Detective – Balance: UNLIMITED
+
+                id_ID: Detektif Milyuner - Balance:UNLIMITED
+
+                ja_JP: 富豪刑事 Balance:UNLIMITED
+
+                ru_RU: Богатый детектив. Баланс: Неограничен
+
+                zh_Hans: 富豪刑事 Balance:UNLIMITED
+
+                zh_Hant: 富豪刑事 Balance:UNLIMITED
+            }
+
+            #: additional [obj] <nab>
+            #; = Serial title in several additional languages based on ICU locales identifier that
+            #;   does not categorized as main languages.
+            additional:
+            {
+                ar_001: المحقق المليونير - الرصيد: غير محدود
+
+                de_DE: null
+
+                es_ES: El Detective Millonario - Equilibrio:Ilimitado
+
+                fr_FR: null
+
+                #: ja_Kana_JP [str] <nab>
+                #; = Serial title in Japanese Katakana-Hiragana writing system, "removing" kanji
+                #    from text.
+                ja_Kana_JP: ふごうけいじ Balance:UNLIMITED
+
+                ko_KR: 부호형사 Balance:UNLIMITED
+
+                vi_VN: Thám Tử Triệu Phú
+                /* Vietnamese translation by V1sion */
+
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+                he_IL: בלש מיליונר - איזון: ללא הגבלה
+
+                pt_PT: null
+            }
+
+            #: synonyms [obj] <nbl> => [arr] <nab>
+            #; = Synonym, other titles that well-known on the public.
+            synonyms:
+            {
+                en_Latn:
+                [
+                    Fugō Keiji Balance: Unlimited
+                    FugouKeijiBUL
+                ]
+                ar_001: null
+                id_ID: null
+                en_US:
+                [
+                    Wealthy Detective
+                ]
+                ja_JP: null
+                de_DE: null
+                ko_KR: null
+                fr_FR: null
+                pt_PT: null
+                ru_RU: null
+                es_ES: null
+                zh_Hans: null
+                zh_Hant: null
+                vi_VN: null
+                /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+                he_IL: null
+                pt_PT: null
+            }
+        }
+
+        #: synopsis [obj] <nbl>
+        #; = A synopsis/plot of story of serial in several languages.
+        synopsis:
+        {
+            ar_001: '''قصة أنمي Fugou Keiji: Balance:Unlimited تدور حول المحقق دايسكي كانبي المليونير فاحش الثراء الذي يحل القضايا بطرق وقحة غير تقليدية.'''
+
+            id_ID: '''Daisuke Kanbe, seorang detektif dengan aset luar biasa. Daisuke Kanbe ditugaskan ke Markas Besar Pencegahan Kejahatan Modern, hanya mereka yang telah menyebabkan masalah bagi Departemen Kepolisian Metropolitan yang dikirim. Di sana, Daisuke bertemu dengan Haru Katou. Mereka harus bekerja sama untuk mengungkap berbagai kasus misteri.'''
+
+            en_US: '''The incredibly wealthy Daisuke Kanbe audaciously solves cases in unconventional ways. Kanbe is assigned to the "Modern Crimes Task Unit" — a unit created to keep problematic officers away from others. There, Kanbe becomes partners with Katou.'''
+
+            ja_JP: '''ケタ外れの資産をもつ神戸家の御曹司・大助が赴任したのは、 警視庁で問題を起こした人間だけが送り込まれる 「現代犯罪対策本部準備室」、通称「現対本部」。 そこで大助は情に厚い男・加藤 春とバディを組まされる。 人の命すら値踏みする大助に対して「世の中金じゃねぇ」と反発する加藤。 対立する2人の前に立ちはだかる、様々な事件と謎。 常識を超えた捜査が今、始まる――！'''
+
+            de_DE: '''Die Anime-Serie »The Millionaire Detective – Balance: UNLIMITED« dreht sich um den wohlhabenden und materialistisch veranlagten Detektiv Daisuke Kambe. Nachdem Daisuke Probleme auf seiner Polizeibehörde verursacht hat, wird er zum Hauptquartier zur Verhütung moderner Verbrechen gesandt, was eine Art Sammelpool für Leute wie ihn ist, die der Polizei nichts als Ärger bereitet haben.
+            Dort trifft er auf seinen künftigen Partner Haru Kato, die beide unterschiedlicher nicht sein könnten. Denn Kato ist der festen Überzeugung, dass Geld nicht alles auf der Welt ist und daher hat er für Daisukes materiell geprägte Lebensweise nicht viel übrig. Doch die beiden Detektive müssen ihre persönlichen Differenzen überwinden, um gemeinsam die vor ihnen liegenden Kriminalfälle lösen zu können.'''
+
+            ko_KR: '''부유한 자산을 가진 칸베 가문의 후계자 다이스케가 부임하게 된 곳은, 경시청에서 문제를 일으킨 사람들만 보내진다는 현대 범죄 대책 본부 준비실, 통칭 '현대 본부'.
+            그 곳에서 다이스케는 정이 많은 남자 카토 하루와 함께 팀을 이루게 되고, 카토는 사람의 목숨에 값을 매기는 다이스케에게 세상은 돈이 다가 아니라며 반발한다.
+            대립하는 두 사람의 앞을 가로막는 여러가지 사건과 수수께끼.
+            상식을 뛰어넘는 수사가 지금, 시작된다-'''
+
+            fr_FR: '''Lorsque qu’une personne du Département de la Police métropolitaine de Tokyo pose problème, elle est transférée dans le « Nouveau Quartier Général Anti-Criminalité ». C’est là qu’est envoyé Daisuke, le fils riche et exceptionnel de l’illustre famille Kambe. Contre toute attente, il fera équipe avec le bienveillant Haru Kato. Daisuke, lui, considère que la vie a un prix, alors que Kato pense au contraire qu’elle est inestimable. Deux personnes que tout oppose, unies face aux nombreux mystères et incidents qui se dressent devant eux... C’est le début d’enquêtes défiant toute logique !'''
+
+            ru_RU: '''«Деньги могут всё!» — примерно такого девиза придерживается детектив Дайсукэ Камбэ, у которого денег куры не клюют. Однако к чести детектива, надо отметить, что финансы он тратит в том числе и на ведение расследований. Вот только не всех в столичном Управлении полиции устраивает такой подход, и Дайсукэ благополучно сплавляют в Главное управление по борьбе с современными преступлениями, где рано или поздно оказываются все неугодные и проблемные полицейские. В пару Дайсукэ назначают Хару Като, который не одобряет методы Дайсукэ и убеждён, что некоторые вещи не купишь. Двум детективам предстоит как-то притереться друг к другу, параллельно расследуя запутанные криминальные загадки.'''
+
+            es_ES: '''La historia se centra en el increíblemente rico Daisuke Kanbe, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna. Kanbe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, de hecho, fue creada para apartar a los oficiales problemáticos de los demás. Allí, Kanbe se hace compañero de Katou.'''
+
+            zh_Hans: '''本作故事主要讲述刑警神户大助，利用大富豪父亲的巨大资产解决各种案件。
+            拥有不可计数资产的神户家大少爷大助即将赴任的地方，是仅会接收警视厅中的问题份子的「现代犯罪对策本部准备室」，通称「现对本部」。
+            大助在那里与重感情的男人加藤春组成了搭档。面对用钱衡量一切的大助，加藤以「世上并非只有金钱」加以反驳。各种各样的事件和谜团，阻挡在这对立的2人面前。超越常识的搜查现在开始！'''
+
+            zh_Hant: '''本作故事主要講述刑警神戶大助，利用大富豪父親的巨大資產解決各種案件。
+            擁有不可計數資產的神戶家大少爺大助即將赴任的地方，是僅會接收警視廳中的問題份子的「現代犯罪對策本部準備室」，通稱「現對本部」。
+            大助在那裏與重感情的男人加藤春組成了搭檔。面對用錢衡量一切的大助，加藤以「世上並非只有金錢」加以反駁。各種各樣的事件和謎團，阻擋在這對立的2人面前。超越常識的搜查現在開始！'''
+
+            vi_VN: '''Kanbe Daisuke, một thám tử xuất thân từ gia đình giàu có sở hữu khối tài sản lớn không đếm xuể, anh được giao làm thám tử cho Ban phòng chống tội phạm hiện đại tại Sở Cảnh sát Thủ đô Tokyo. Tại đây, Kanbe hợp tác với Haru Katou, người có quan niệm tiền không phải tất cả, không thiện cảm mấy với việc tiêu xài tiền của Kanbe. Những bí ẩn đầy thách thức mở ra trước mắt hai thám tử, họ cùng hợp tác giải quyết các vụ án.'''
+
+            /* FOR OTHER LANGUAGE, TYPE BELOW THIS COMMENT */
+
+            pt_PT: '''A história gira em torno do milionário Daisuke Kambe, herdeiro de uma das famílias mais ricas do Japão, designado como detetive da Força-Tarefa de Prevenção ao Crime Moderno (também conhecida como MCPTF), no Departamento de Polícia Metropolitana de Tóquio. Aproveitando ao máximo sua vasta riqueza, ele não economiza para solucionar crimes complexos e tem a tendência de avaliar tudo, incluindo vidas humanas individuais em termos de seu valor monetário. Haru Katou, um detetive de coração compassivo que acredita que dinheiro não é tudo, é escolhido como parceiro de Kambe, mas é repelido por sua atitude materialista. Tendo personalidades diametralmente opostas, testemunhe como os dois se unem para enfrentar crimes e mistérios aparentemente insolúveis!'''
+
+            he_IL: null
+        }
+
+        #: isAnime [boo] <nbl>
+        #; = Explain that url is using /anime path or not. Used for SIMKL URL path. Default: true.
+        isAnime: true
+
+        #: type [str] <nab>
+        #; = Serial type. Is it TV, ONA, OVA/OAD, Special, Movie, or Music
+        // Allowed values are:
+        // TV, ONA, OVA, Special, Movie, Music, and Unknown.
+        type: TV
+
+        #: status [str] <nbl>
+        #; = Describes serial broadcast status.
+        // Allowed values are:
+        // Finished, Current, TBA, Unreleased, Upcoming, and Paused.
+        status: Finished
+
+        #: source [str] <nbl>
+        #; = Source type the media was adapted from.
+        // Allowed values are:
+        // Original, Manga, LightNovel, VisualNovel, Game, Other, Novel, Doujin, Music, and Book.
+        source: Novel
+
+        #: ageRating [str] <nab>
+        #; = Broadcast content rating of serial. See Docuwiki for more information.
+        // Allowed values are: G0+, PS2+, PG7+, PG13+, R18+, GU21+, and null.
+        ageRating: PG13+
+
+        #: isNsfw [boo] <nbl>
+        #; = Is a marker when the serial is Not Safe for Work (NSFW). The initial preset is false,
+        #;   known as safe.
+        isNsfw: false
+
+        #: isLicensed [boo] <nbl>
+        #; = Explains if the work/serial is legally licensed, if not (case: fanwork) then value
+        #;   turns false. Default: true.
+        isLicensed: true
+
+        media:
+        {
+            #: posterImage [str] <uri> <nab>
+            #; = A poster/visual key image URL of serial. See Docuwiki for detailed information.
+            posterImage: https://artworks.thetvdb.com/banners/series/376211/posters/62114838.jpg
+
+            #: coverImage [str] <uri> <nab>
+            #; = A background/backdrop image URL of serial. See Docuwiki for detailed information.
+            coverImage: https://artworks.thetvdb.com/banners/series/376211/backgrounds/5e8f9ab57e0ed.jpg
+
+            #: promotionalVideos [arr] <nab> > [obj] > [str]
+            #; = List of promotional videos of current entry.
+            promotionalVideo:
+            [
+                {
+                    id: Z2GGJHXtOJ8
+                    provider: youtube
+                }
+            ]
+
+            soundtracks:
+            [
+                {
+                    title: NAVIGATOR
+                    mbid: 18e6ef25-f696-40e3-a87c-6938e66eeaa8
+                    isrc: null
+                    bpm: null
+                    artists: [
+                        {
+                            mbid: 47a3fb29-e36b-440b-9d3c-3a68cec34396
+                            name: SixTONES
+                        }
+                    ]
+                    type: theme
+                    position: opening
+                    episodes:
+                    {
+                        from: 1
+                        to: 11
+                    }
+                    links: {
+                        spotify: null
+                        youtubeMusic: VUrSsrAnq8M
+                    }
+                }
+                {
+                    title: Welcome My Friend
+                    mbid: e768503c-0843-4517-bfc5-5ec8ef5cc992
+                    isrc: JPU902001613
+                    bpm: 109
+                    artists: [
+                        {
+                            mbid: e8dc0742-7038-4d88-83c3-9b7003dcbd14
+                            name: OKAMOTO'S
+                        }
+                    ]
+                    type: theme
+                    position: ending
+                    episodes:
+                    {
+                        from: 1
+                        to: 11
+                    }
+                    links: {
+                        spotify: 1XWhJEC8H3opIXw7UkGD1e
+                        youtubeMusic: aRyzcaLQPYw
+                    }
+                }
+            ]
+        }
+
+        release:
+        {
+            #: year [num] <nbl>
+            #; = The year of the serial release, using a integrer/numeral format. If unknown, use 0.
+            year: 2020
+
+            #: season [str] <nab>
+            #; = Season of serial releases.
+            // Allowed values are
+            // Winter, Spring, Summer, Fall, and Unknown
+            season: Spring
+
+            #: startDate [str] <nab>
+            #; = Start date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            startDate: 2020-04-10
+
+            #: dayOfTheWeek [str] <nab> <arb>
+            // Allowed values are
+            // Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, and null.
+            dayOfTheWeek: Friday
+
+            #: broadcastTime [str] <nab>
+            #; Local time of show broadcasted.
+            // FORMAT: hh:mm:ssTZD
+            // See instruction on createdAt property to see procedure for filling data
+            broadcastTime: 00:55:00+09:00
+
+            #: endDate [str] <nab>
+            #; = End date of serial release, using YYYY-MM-DD format. If unknown, fill null.
+            endDate: 2020-09-25
+        }
+
+        episode:
+        {
+            #: count [num] <nab>
+            #; = Total episodes of serial. If unknown, fill null.
+            count: 11
+
+            #: duration [num] <nab>
+            #; = Duration per serial episode, using minute format. If unknown, fill null.
+            duration: 23
+
+            #: totalDuration [num] <nab>
+            #; = The total duration of the series, using the minute format. If unknown, fill null.
+            totalDuration: 253
+        }
+
+        #: countryOfOrigin [str] <nbl>
+        #; = Country of origin of serial. There are no country restrictions here. Using ISO 3166
+        #    format.
+        countryOfOrigin: JP
+
+        #: genres [obj] <nbl> > [str]
+        #; = Is genre(s) of serial. See docuwiki for more information.
+        // Allowed values are:
+        // Action, Adventure, Comedy, Crime, Documentary, Drama, Fantasy, History, Horror, Mature,
+        // Music, Mystery, Psychological, Romance, Science Fiction, Slice of Life, Sport,
+        // Supernatural, Thriller, War
+        genres: [
+            Drama
+            Mystery
+            Comedy
+            Crime
+        ]
+
+        #: serialTags [arr] <nbl> > [obj] <nbl>
+        #; = Represents serial specific tags/content. Similar to the `.genres`, but usually more
+        #;   focused on content, storyline, or themes. But, all of `.genres` value will be ignored
+        #;   ignored if present on `.tags`. See docuwiki for more information.
+        tags: [
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Detective
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Police
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Urban
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Yakuza
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Billionaire
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Investigation
+            }
+            {
+                isSpoiler: false
+                isNsfw: false
+                name: Male Protagonist
+            }
+        ]
+
+        companies:
+        {
+            #: studios [arr] <nbl>
+            #; = Studios of producing series.
+            studios:
+            [
+                CloverWorks
+                A-1 Pictures
+            ]
+
+            licensors:
+            [
+                Aniplex of America
+            ]
+
+            #: producers [arr] <nab> > [str]
+            #; = Producers that involved to current entry/project.
+            producers:
+            [
+                Aniplex
+                Dentsu
+                Animax
+                Movic
+                Fuji TV
+                Sonilude
+            ]
+        }
+
+        social:
+        {
+            #: twitter [str] <nab>
+            // Please to ignore @ sign while input username
+            twitter: fugoukeiji_bul
+
+            facebook: null
+
+            #: instagram [str] <nab>
+            // Please to ignore @ sign while input username
+            instagram: fugoukeiji_bul
+
+            #: hashtag [arr] <nab>
+            #; = Social media hashtag of shows. Sometimes used for campaign. Applicable for each SNS.
+            // Please to ignore # sign while input hashtag(s)
+            hashtag:
+            [
+                富豪刑事BUL
+            ]
+        }
+    }
+
+    externalLinks:
+    {
+        officialWebsite:
+        [
+            {
+                title: TVアニメ「富豪刑事 Balance:UNLIMITED」公式サイト
+                url: https://www.fugoukeiji-bul.com/
+                language: ja_JP
+            }
+            {
+                title: The Millionaire Detective - Balance: UNLIMITED Official USA Website
+                url: https://millionairedetective-anime.com/
+                language: en_US
+            }
+        ]
+
+        databases:
+        {
+            allCinema: 371405
+
+            aniDb: 15364
+
+            aniList: 114888
+
+            animePlanet: {
+                showUrl: https://www.anime-planet.com/anime/the-millionaire-detective-balance-unlimited
+                showId: 14492
+            }
+
+            animeNewsNetwork: 22980
+
+            aniSearch: 14906
+
+            anison: 22650
+
+            annict: 7271
+
+            fanartTv: 376211
+
+            imdb: {
+                showId: tt12117218
+                seasonNumber: 1
+                offset: 0
+            }
+
+            kinoPoisk: {
+                showId: 1368169
+                seasonNumber: 1
+                offset: 0
+            }
+
+            kitsu: {
+                showSlug: fugou-keiji-balance-unlimited
+                showId: 43056
+            }
+
+            liveChart: 9777
+
+            myAnimeList: 41120
+
+            myShows: {
+                showId: 66109
+                seasonNumber: 1
+                offset: 0
+            }
+
+            nautiljon: https://www.nautiljon.com/animes/fugou+keiji+balance+-+unlimited.html
+
+            notifyMoe: TM1LPA8Wg
+
+            otakOtaku: 1724
+
+            perpusIndo: 41120
+
+            reelgood: {
+                showSlug: the-millionaire-detective-balance-unlimited-2020
+                showUuid: 80bd1c14-00bd-46c6-a31c-eaf6f3d259cd
+                seasonNumber: 1
+                offset: 0
+            }
+
+            shikimori: {
+                showId: 41120
+                isMoved: false
+                newShowId: null
+            }
+
+            shoboi: 5653
+
+            silverYasha: 283
+            
+            simkl: {
+                showId: 1247789
+
+                // USE AND FILL THIS PROPERTIES FOR SIMKL IF SHOWS IS NOT ANIME:
+                seasonNumber: 0
+                offset: 0
+            }
+            
+
+            tmdb: {
+                showId: 98491
+                seasonNumber: 1
+                seasonId: 141772
+                offset: 0
+            }
+
+            tvdb: {
+                showId: 157673
+                seasonNumber: 1
+                seasonId: 1817244
+                offset: 0
+            }
+
+            trakt:
+            {
+                showSlug: the-millionaire-detective-balance-unlimited
+                showId: 157673
+                seasonId: 209577
+                seasonNumber: 1
+                offset: 0
+            }
+        }
+
+        streamLinks:
+        {
+            amazonPrime: null
+            animeDigitalNetwork: null
+            animeLab: https://www.animelab.com/shows/balance-unlimited
+            animeOnDemand: null
+            aniOne: https://www.youtube.com/playlist?list=PLxSscENEp7JjK6AR9OjeYkwGCVTgCFEWz
+            aniPlus: null
+            aniPlusAsia: null
+            bahamutAnimeCrazy: null
+            biliBili: https://www.bilibili.com/bangumi/media/md28228473
+            crunchyroll: null
+            fod: null
+            funimation: https://www.funimation.com/shows/the-millionaire-detective-balance-unlimited/
+            genFlix: null
+            hidive: null
+            hulu: null
+            iQiyi: null
+            iflix: null
+            museAsia: {
+                en_001: null
+                id_ID: null
+                ms_MY: null
+                th_TH: null
+                vi_VN: null
+                zh_Hant_HK: null
+                zh_Hant_TW: null
+            }
+            netflix: {
+                US: https://www.netflix.com/id-en/title/81039113
+                ID: https://www.netflix.com/id-en/title/81039113
+            }
+            nicoNico: null
+            sushiroll: null
+            vvvvid: null
+            vrv: null
+            wakanim: {
+                DE: https://www.wakanim.tv/de/v2/catalogue/show/843
+                FR: https://www.wakanim.tv/fr/v2/catalogue/show/842
+                RU: https://www.wakanim.tv/ru/v2/catalogue/show/845
+                SC: https://www.wakanim.tv/sc/v2/catalogue/show/844
+            }
+        }
+    }
+
+    modifier:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
+
+    commiter:
+    {
+        name: Natsu Tadama
+        github: nattadasu
+        discordId: 384089845527478272
+        sign: RGlnaXRhbGx5IFNpZ25lZCBieSBOYXRzdSBUYWRhbWEgQCBBY2VoLCBJbmRvbmVzaWE=
+    }
 }
